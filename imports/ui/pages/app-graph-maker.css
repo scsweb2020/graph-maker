@@ -6,11 +6,11 @@ body {
     width: 100%;
     font-family: helvetica;
     font-size: 12px;
+    overflow: hidden;
 }
  
 h1 {
     text-align: center;
-    left: 50%;
 }
  
 #instructions {
@@ -19,6 +19,7 @@ h1 {
     position: absolute;
     left:0;
     top: 50;
+    height: 100%;
     width:300px;
     background-color: #eee;
     padding: 15px;
@@ -30,8 +31,8 @@ h1 {
     width: 100%;
     height: 100%;
     position: absolute;
-    left: 330;
-    top: 50;
+    /*left: 0;
+    top: 0;*/
     z-index: 999;
 }
  
