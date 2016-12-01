@@ -1,0 +1,33 @@
+<template name="App_graphMaker">
+    <h1>Problem Graph Your Project or Paper!</h1>
+    <div id="instructions">
+        <h1>About</h1>
+        <p>Learn more about problem graphs <a target="_blank" href="http://bit.ly/2fATznP">here</a>. Click <a target="_blank" href="lib/example-web-2020.png">here</a> to see some examples.</p>
+        <h3>How to make a graph:</h3>
+        <ul>
+            <li>To <strong>create</strong> a new node: right click anywhere and select "add node".</li>
+            <li>To <strong>edit</strong> the label for a node: right click on a node and select "edit label".</li>
+            <li>To <strong>draw an edge</strong> between nodes:</li>
+            <ul>
+                <li>Hover over a node. An 'anchor' point will appear. Click and drag from the anchor point to the desired target node.</li>
+                <li>Click "draw on" button at the bottom of the page and click and drag between nodes.</li>
+            </ul>
+            <li>To <strong>delete</strong> a node or edge, right click on the element and select "remove".</li>
+        </ul>
+        <h3>Other actions:</h3>
+        <ul>
+            <li>To <strong>move</strong> a node, select it by clicking on it, then click and drag to desired location.</li>
+            <li>To <strong>pan</strong> the canvas, left-click and drag.</li>
+            <li>To <strong>zoom in/out</strong> on the canvas, scroll up/down.</li>
+            <li>To <strong>select multiple nodes</strong>, hold the 'option' key and drag to create a selection box.</li>
+        </ul>
+        <div id="buttons">
+            <button id="record-json">Export as JSON</button>
+            <button id="record-png">Export as PNG</button>
+            <a id="export-json" target="_blank" href="" style="display:none;"></a>
+            <a id="export-png" target="_blank" href="" style="display:none;"></a>
+            <button id="draw-mode" data-draw-mode="drawoff">Draw mode: OFF</button>
+        </div>
+    </div>
+    <div id="cy"></div>
+</template>
