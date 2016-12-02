@@ -1,0 +1,261 @@
+{
+    "id": "example-graph",
+    "metadata": "Example graph",
+    "creation_time": "2016-12-01 20:00:00",
+    "updated_time": "2016-12-01 20:00:00",
+    "history": [],
+    "name": "Example Graph",
+    "description": "Example graph for demo purposes",
+    "graph": {
+        "elements": {
+            "nodes": [
+                {
+                    "data": {
+                        "id": "node-1",
+                        "name": "Support exploratory search and discovery of \"who is doing X at CMU\""
+                    },
+                    "position": {
+                        "x": 192.16666666666666,
+                        "y": 75.75
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                },
+                {
+                    "data": {
+                        "id": "node-2",
+                        "name": "Construct a map of the problems that people are working on"
+                    },
+                    "position": {
+                        "x": 576.5,
+                        "y": 75.75
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                },
+                {
+                    "data": {
+                        "id": "node-3",
+                        "name": "Re-represent each paper as a problem graph"
+                    },
+                    "position": {
+                        "x": 960.8333333333333,
+                        "y": 75.75
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                },
+                {
+                    "data": {
+                        "id": "node-4",
+                        "name": "Extract them from the paper"
+                    },
+                    "position": {
+                        "x": 192.16666666666666,
+                        "y": 227.25
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                },
+                {
+                    "data": {
+                        "id": "node-5",
+                        "name": "Specify relationships between problem nodes"
+                    },
+                    "position": {
+                        "x": 576.5,
+                        "y": 227.25
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                },
+                {
+                    "data": {
+                        "id": "node-6",
+                        "name": "Distributed approach: infer hierarchy from local \"path\" questions"
+                    },
+                    "position": {
+                        "x": 960.8333333333333,
+                        "y": 227.25
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": "why-hard"
+                },
+                {
+                    "data": {
+                        "id": "node-7",
+                        "name": "Ensure accuracy"
+                    },
+                    "position": {
+                        "x": 192.16666666666666,
+                        "y": 378.75
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                },
+                {
+                    "data": {
+                        "id": "node-8",
+                        "name": "Model and account for noise rates"
+                    },
+                    "position": {
+                        "x": 576.5,
+                        "y": 378.75
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                },
+                {
+                    "data": {
+                        "id": "node-9",
+                        "name": "Understand workers' error rates"
+                    },
+                    "position": {
+                        "x": 960.8333333333333,
+                        "y": 378.75
+                    },
+                    "group": "nodes",
+                    "removed": false,
+                    "selected": false,
+                    "selectable": true,
+                    "locked": false,
+                    "grabbable": true,
+                    "classes": ""
+                }
+            ]
+        },
+        "style": [
+            {
+                "selector": "node",
+                "style": {
+                    "label": "data(name)",
+                    "height": "100px",
+                    "width": "100px",
+                    "text-valign": "center",
+                    "text-halign": "center",
+                    "background-color": "#eee",
+                    "text-wrap": "wrap",
+                    "text-max-width": "200px",
+                    "text-outline-color": "#eee",
+                    "text-outline-width": "3px",
+                    "border-width": "1px",
+                    "border-color": "#ccc"
+                }
+            },
+            {
+                "selector": "node:selected",
+                "style": {
+                    "label": "data(name)",
+                    "height": "100px",
+                    "width": "100px",
+                    "text-valign": "center",
+                    "text-halign": "center",
+                    "background-color": "#eee",
+                    "text-wrap": "wrap",
+                    "text-max-width": "200px",
+                    "text-outline-color": "#eee",
+                    "text-outline-width": "3px",
+                    "border-width": "4px",
+                    "border-color": "blue"
+                }
+            },
+            {
+                "selector": "node.why-hard",
+                "style": {
+                    "shape": "triangle",
+                    "background-color": "#ffb3b3"
+                }
+            },
+            {
+                "selector": "edge",
+                "style": {
+                    "curve-style": "bezier",
+                    "target-arrow-shape": "triangle",
+                    "width": "8px"
+                }
+            },
+            {
+                "selector": ".edgehandles-hover",
+                "style": {}
+            },
+            {
+                "selector": ".edgehandles-source",
+                "style": {
+                    "border-width": "2px",
+                    "border-color": "maroon"
+                }
+            },
+            {
+                "selector": ".edgehandles-target",
+                "style": {
+                    "border-width": "2px",
+                    "border-color": "maroon"
+                }
+            },
+            {
+                "selector": ".edgehandles-preview, .edgehandles-ghost-edge",
+                "style": {
+                    "line-color": "maroon",
+                    "target-arrow-color": "maroon",
+                    "source-arrow-color": "maroon"
+                }
+            }
+        ],
+        "zoomingEnabled": true,
+        "userZoomingEnabled": true,
+        "zoom": 0.7029690567785344,
+        "minZoom": 1e-50,
+        "maxZoom": 1e+50,
+        "panningEnabled": true,
+        "userPanningEnabled": true,
+        "pan": {
+            "x": -1.1005190859987317,
+            "y": 94.0042171449223
+        },
+        "boxSelectionEnabled": true,
+        "renderer": {
+            "name": "canvas"
+        },
+        "wheelSensitivity": 0.3
+    }
+}
