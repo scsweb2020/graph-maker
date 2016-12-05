@@ -1,4 +1,10 @@
 <template name="App_body">
-    {{> Template.dynamic template=top}}
-    {{> Template.dynamic template=main}}
+    <!-- {{> Template.dynamic template=top}} -->
+    <!-- {{> Template.dynamic template=main}} -->
+    <div class="container">
+      {{> header}}
+      <div id="main">
+        {{> yield}}
+      </div>
+    </div>
 </template>

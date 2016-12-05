@@ -1,0 +1,14 @@
+#landingContainer {
+  margin:auto;
+  width:50%;
+  text-align: center;
+}
+
+.login-input {
+    /*margin-right: 300px;*/
+    /*margin-left: 300px;*/
+    margin:auto;
+    width:50%;
+    font-size: 24px;
+    /*margin-top: 8px;*/
+}

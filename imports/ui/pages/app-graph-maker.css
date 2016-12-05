@@ -8,11 +8,11 @@ body {
     font-size: 12px;
     overflow: hidden;
 }
- 
+
 h1 {
     text-align: center;
 }
- 
+
 #instructions {
     display: block;
     z-index: 99999;
@@ -25,7 +25,7 @@ h1 {
     padding: 15px;
     border: 1px solid #ccc;
 }
- 
+
 #cy {
     border: 1px solid #ccc;
     width: 100%;
@@ -33,9 +33,9 @@ h1 {
     position: absolute;
     /*left: 0;
     top: 0;*/
-    z-index: 999;
+    z-index: 9999999999;
 }
- 
+
 #buttons {
 
 }
