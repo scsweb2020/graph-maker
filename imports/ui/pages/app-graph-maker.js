@@ -34,23 +34,10 @@ Template.App_graphMaker.rendered = function() {
   if (currentGraph.graphData === "EMPTY") {
       initial_nodes = sampleGraph;
   }
-  // get initial data
-  // $.ajax({
-  //     type: "GET",
-  //     url: "input/nodes.json",
-  //     dataType: "json",
-  //     async: false,
-  //     success: function (data) {
-  //         initial_nodes = data;
-  //     }})
-  //     .fail(function(xhr, status, error) {
-  //         var err = status + ", " + error;
-  //         console.log("Request failed: " + err)
-  // });
   var row_count = Math.floor(Math.sqrt(initial_nodes.length)) + 1;
 
   // initialize the graph
-  cy = cytoscape({
+  cyGraph = cytoscape({
 
       container: document.getElementById('cy'),
 
@@ -169,17 +156,19 @@ Template.App_graphMaker.rendered = function() {
   //     console.log(target.json());
   //     target.remove();
   // });
+
+  // load the current graph from the mongoDB into cytoscape object, if available
   let toAdd = currentGraph.graphData
   if (toAdd != "EMPTY") {
     toAdd.elements.nodes.forEach(function(node) {
-      cy.add(node);
+      cyGraph.add(node);
     });
     toAdd.elements.edges.forEach(function(edge) {
-      cy.add(edge);
+      cyGraph.add(edge);
     });
   }
 
-  cy.edgehandles({
+  cyGraph.edgehandles({
       toggleOffOnLeave: true,
       handleNodes: "node",
       handleSize: 10,
@@ -188,18 +177,8 @@ Template.App_graphMaker.rendered = function() {
       edgeType: function(){ return 'flat'; }
   });
 
-  var selectAllOfTheSameType = function(ele) {
-      cy.elements().unselect();
-      if(ele.isNode()) {
-          cy.nodes().select();
-      }
-      else if(ele.isEdge()) {
-          cy.edges().select();
-      }
-  };
-
   // controllers for context menus
-  cy.contextMenus({
+  cyGraph.contextMenus({
       menuItems: [
         {
           id: 'remove',
@@ -241,15 +220,6 @@ Template.App_graphMaker.rendered = function() {
             event.cyTarget.toggleClass("why-hard");
           }
         },
-        // {
-        //   id: 'hide',
-        //   title: 'hide',
-        //   selector: '*',
-        //   onClickFunction: function (event) {
-        //     event.cyTarget.hide();
-        //   },
-        //   disabled: false
-        // },
         {
           id: 'add-action',
           title: 'add node',
@@ -261,7 +231,7 @@ Template.App_graphMaker.rendered = function() {
                 name: newName
             };
 
-            cy.add({
+            cyGraph.add({
                 data: data,
                 position: {
                     x: event.cyPosition.x,
@@ -281,7 +251,7 @@ Template.App_graphMaker.rendered = function() {
                 name: newName
             };
 
-            cy.add({
+            cyGraph.add({
                 data: data,
                 position: {
                     x: event.cyPosition.x,
@@ -298,7 +268,7 @@ Template.App_graphMaker.rendered = function() {
           onClickFunction: function (event) {
             var ok = confirm("Are you sure? You cannot undo this action.");
             if (ok) {
-              cy.$(':selected').remove();
+              cyGraph.$(':selected').remove();
             }
           }
         },
@@ -321,6 +291,16 @@ Template.App_graphMaker.rendered = function() {
     ]
   });
 
+  var selectAllOfTheSameType = function(ele) {
+      cyGraph.elements().unselect();
+      if(ele.isNode()) {
+          cyGraph.nodes().select();
+      }
+      else if(ele.isEdge()) {
+          cyGraph.edges().select();
+      }
+  };
+
   // initiate "draw mode" for drawing edges
   document.querySelector('#draw-mode').addEventListener('click', function(e) {
       var draw_button = e.target;
@@ -334,45 +314,10 @@ Template.App_graphMaker.rendered = function() {
           draw_mode = "drawon";
           draw_button_switch = "ON";
       }
-      cy.edgehandles(draw_mode);
+      cyGraph.edgehandles(draw_mode);
       draw_button.setAttribute("data-draw-mode", draw_mode);
       draw_button.innerHTML = "Draw mode: " + draw_button_switch;
   });
-
-  // print the current state of the graph to console
-  // when user clicks on the "record" button
-  document.getElementById('record-json').addEventListener('click', function(){
-      //this is an object, not an iterable
-      var nodes = cy.nodes();
-      var nodes_arr = [];
-      for (var i = 0; i < nodes.length; i++) {
-        nodes_arr.push(nodes[i].data());
-      }
-      var edges = cy.edges();
-            var edges_arr = [];
-      for (var i = 0; i < edges.length; i++) {
-        edges_arr.push(edges[i].data());
-      }
-
-      //console.log(edges.json());
-      console.log(JSON.stringify(nodes_arr));
-      console.log(JSON.stringify(edges_arr));
-      //export the graph in a JSON format comparable to that
-      //when initialized
-      console.log(JSON.stringify(cy.json()));
-      var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(cy.json(), null, 3));
-      var dlAnchorElem = document.getElementById('export-json');
-      dlAnchorElem.setAttribute("href", dataStr);
-      dlAnchorElem.setAttribute("download", "my-graph.json");
-      dlAnchorElem.click();
-      // document.getElementById("export-json").setAttribute("href", cy.json());
-      // document.getElementById("export-json").click();
-  });
-
-  // document.getElementById('record-png').addEventListener('click', function(){
-  //   document.getElementById("export-png").setAttribute("href", cy.png());
-  //   document.getElementById("export-png").click();
-  // });
 
 }
 
@@ -385,16 +330,16 @@ Template.App_graphMaker.helpers({
 
 Template.App_graphMaker.events({
   'click #record-png': function() {
-     document.getElementById("export-png").setAttribute("href", cy.png());
+     document.getElementById("export-png").setAttribute("href", cyGraph.png());
     document.getElementById("export-png").click();
   },
   'click #record-json': function() {
-    var nodes = cy.nodes();
+    var nodes = cyGraph.nodes();
     var nodes_arr = [];
     for (var i = 0; i < nodes.length; i++) {
       nodes_arr.push(nodes[i].data());
     }
-    var edges = cy.edges();
+    var edges = cyGraph.edges();
           var edges_arr = [];
     for (var i = 0; i < edges.length; i++) {
       edges_arr.push(edges[i].data());
@@ -405,8 +350,8 @@ Template.App_graphMaker.events({
     console.log(JSON.stringify(edges_arr));
     //export the graph in a JSON format comparable to that
     //when initialized
-    console.log(JSON.stringify(cy.json()));
-    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(cy.json(), null, 3));
+    console.log(JSON.stringify(cyGraph.json()));
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(cyGraph.json(), null, 3));
     var dlAnchorElem = document.getElementById('export-json');
     dlAnchorElem.setAttribute("href", dataStr);
     dlAnchorElem.setAttribute("download", "my-graph.json");
@@ -414,7 +359,10 @@ Template.App_graphMaker.events({
   },
   'click #save-changes': function() {
     let newName = prompt("(Optional) name this graph", "Untitled graph");
-    Graphs.update({_id: Session.get("currentGraph")._id},{$set: {graphData: cy.json()}});
+    Graphs.update({_id: Session.get("currentGraph")._id},{$set: {graphData: cyGraph.json()}});
     alert("Successfully saved!");
+  },
+  'contextmenu': function() {
+    console.log("right click!");
   }
 });
