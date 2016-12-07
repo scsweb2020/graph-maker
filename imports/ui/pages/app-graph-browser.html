@@ -13,16 +13,17 @@
 </template>
 
 <template name="userGraphEntry">
-  <div class="userGraphEntry">
-    <div class="col-md-6">
-      <h4>{{title}}</h4>
-      <p>{{description}}</p>
+  <div class="row userGraphEntry" id={{_id}}>
+    <div class="col-md-3 graph-info">
+      <h4 class="graph-title">{{title}}</h4>
+      <p class="graph-description">{{description}}</p>
+      <p>Created: {{createTimeStr}}</p>
+      <p>Last update: {{lastEditTimeStr}}</p>
     </div>
     <div class="col-md-3">
-      Created: {{createTime}}
-    </div>
-    <div class="col-md-3">
-      Last update: {{lastEditTime}}
+      <button class="btn btn-large open-graph">
+        OPEN GRAPH
+      </button>
     </div>
   </div>
 </template>

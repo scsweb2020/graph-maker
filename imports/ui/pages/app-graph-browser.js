@@ -32,3 +32,31 @@ Template.App_graphBrowser.events({
     Router.go("App.graphMaker", {'userID': currentUser._id, 'graphID': newGraphID});
   }
 });
+
+Template.userGraphEntry.helpers({
+  createTimeStr: function() {
+    return toTimeStampStr(this.createTime);
+  },
+  lastEditTimeStr: function() {
+    return toTimeStampStr(this.lastEditTime);
+  },
+})
+
+Template.userGraphEntry.events({
+  'click .open-graph': function(event) {
+    let currentUser = Session.get("currentUser");
+    let graph = $(event.target).parent().parent()[0];
+    console.log(graph);
+    Router.go("App.graphMaker", {'userID': currentUser._id, 'graphID': graph.id});
+  }
+});
+
+var toTimeStampStr = function(time_stamp) {
+  let date = new Date(time_stamp);
+  let hours = date.getHours();
+  let minutes = '0' + date.getMinutes();
+  let day = date.getDay();
+  let month = date.getMonth();
+  let year = date.getFullYear();
+  return hours + ":" + minutes.substr(-2) + ", " + month + "/" + day + "/" + year;
+}
