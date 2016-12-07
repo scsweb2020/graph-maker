@@ -169,6 +169,45 @@ Template.App_graphMaker.rendered = function() {
   //     console.log(target.json());
   //     target.remove();
   // });
+  // cy.on('keydown', 'nodes', function(evnt) {
+  //     // Key codes for backspace and delete
+  //     delete_keys = [8,46];
+  //     console.log(evnt);
+  //     if (delete_keys.indexOf(evnt.keyCode) > -1) {
+  //         //cy.selected().remove();
+  //         console.log("DELETE!");
+  //         cy.$(':selected').remove();
+  //     }
+  // });
+
+  window.addEventListener('keydown', function(event) {
+      // Key codes for backspace and delete
+      delete_keys = [8,46];
+      console.log(event);
+      if (delete_keys.indexOf(event.keyCode) > -1) {
+          //cy.selected().remove();
+          console.log("DELETE!");
+          cy.$(':selected').remove();
+      }
+  });
+  
+  // Add node on "canvas" double click
+  document.getElementById('cy').addEventListener('dblclick', function(event) {
+      console.log("Double click event.");
+      var data = {
+          group: 'nodes',
+          name: 'new node'
+      };
+
+      cy.add({
+          data: data,
+          position: {
+              x: event.pageX,
+              y: event.pageY
+          }
+      });
+  });
+
   let toAdd = currentGraph.graphData
   if (toAdd != "EMPTY") {
     toAdd.elements.nodes.forEach(function(node) {
