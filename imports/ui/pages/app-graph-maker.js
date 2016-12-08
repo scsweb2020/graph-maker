@@ -12,17 +12,6 @@ Template.App_graphMaker.onCreated(function appGraphMakerOnCreated() {
     self.autorun(function() {
       self.subscribe('allGraphs');
     })
-    // const graph_data = Graphs.find();
-    // // const graph_data = Graphs.example();
-    // // const graph_data = Graphs.findOne({id: 'example-graph'});
-    // console.log("LOOK AT ME! LOOK HERE! HEY HEY! I'm the CLIENT!!!");
-    // console.log(graph_data);
-    // if (graph_data.count() === 0) {
-    //     console.log("No data. Sorry.");
-    // }
-    // else {
-    //     console.log("Pa-ching! Data found!")
-    // }
 });
 
 Template.App_graphMaker.rendered = function() {
@@ -150,7 +139,7 @@ Template.App_graphMaker.rendered = function() {
       },
   });
 
-  // Track the position of the last click
+  // Track the x,y position of the last click
   var clickPosition;
   cy.on('click', function(event) {
     clickPosition = event.cyPosition;
@@ -176,8 +165,6 @@ Template.App_graphMaker.rendered = function() {
 
       // Check if node or edge has focus
       if (delete_keys.indexOf(event.keyCode) > -1) {
-          //cy.selected().remove();
-          console.log("DELETE!");
           cy.$(':selected').remove();
       }
   });
@@ -359,20 +346,7 @@ Template.App_graphMaker.events({
     document.getElementById("export-png").click();
   },
   'click #record-json': function() {
-    var nodes = cy.nodes();
-    var nodes_arr = [];
-    for (var i = 0; i < nodes.length; i++) {
-      nodes_arr.push(nodes[i].data());
-    }
-    var edges = cy.edges();
-          var edges_arr = [];
-    for (var i = 0; i < edges.length; i++) {
-      edges_arr.push(edges[i].data());
-    }
 
-    //console.log(edges.json());
-    console.log(JSON.stringify(nodes_arr));
-    console.log(JSON.stringify(edges_arr));
     //export the graph in a JSON format comparable to that
     //when initialized
     console.log(JSON.stringify(cy.json()));
