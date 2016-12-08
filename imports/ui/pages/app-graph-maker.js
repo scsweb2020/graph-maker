@@ -161,10 +161,11 @@ Template.App_graphMaker.rendered = function() {
 
   window.addEventListener('keydown', function(event) {
       // Key codes for backspace and delete
-      delete_keys = [8,46];
+      var deleteKeys = [8,46];
 
-      // Check if node or edge has focus
-      if (delete_keys.indexOf(event.keyCode) > -1) {
+      // Check that focus is not in an input element
+      if (deleteKeys.indexOf(event.keyCode) > -1 &&
+        event.target.nodeName !== 'INPUT') {
           cy.$(':selected').remove();
       }
   });
