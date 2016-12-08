@@ -358,8 +358,12 @@ Template.App_graphMaker.events({
     dlAnchorElem.click();
   },
   'click #save-changes': function() {
-    let newName = prompt("(Optional) name this graph", "Untitled graph");
-    Graphs.update({_id: Session.get("currentGraph")._id},{$set: {graphData: cyGraph.json()}});
+    let currentName = Session.get("currentGraph").title;
+    let newName = prompt("(Optional) (re)name this graph", currentName);
+    Graphs.update({_id: Session.get("currentGraph")._id},
+    {$set: {graphData: cyGraph.json(),
+      lastEditTime: new Date().getTime(),
+      title: newName}});
     alert("Successfully saved!");
   },
   'contextmenu': function() {
