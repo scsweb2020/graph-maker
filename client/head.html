@@ -25,6 +25,20 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand">GraphMaker</a>
+            <!-- <nav id="nav"> -->
+              <ul>
+                <div class="col-lg-9" id="nav-right" style="width: 100%; margin-top: -5%;">
+                  <div class="login" id="login-info">
+                    {{#if loggedIn }}
+                      <span class="userName">
+                        <strong>Welcome,</strong>
+                          {{currentUserName}}
+                      </span>
+                      {{/if}}
+                    </div>
+                </div>
+              </ul>
+            <!-- </nav> -->
         </div>
         <!-- <div class="collapse navbar-collapse" id="navigation">
             <ul class="nav navbar-nav navbar-right">

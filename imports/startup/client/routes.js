@@ -63,7 +63,7 @@ Router.map(function() {
             if(this.ready()) {
               let currentGraph = Graphs.findOne({_id: this.params.graphID});
               Session.set("currentGraph", currentGraph);
-              setCurrentUser();
+              setCurrentUser(this.params.userID);
                 // $('.navbar-brand').text("Annotator: Welcome >> Tutorial");
                 // setCurrentUser(this.params.userID);
                 this.next();

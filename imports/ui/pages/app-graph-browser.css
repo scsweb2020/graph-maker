@@ -1,5 +1,30 @@
+.browser-header {
+  border-bottom: solid 1px grey;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
 .userGraphEntry {
-  width: 1000px;
+  width: 500px;
   border: 1px solid grey;
   font-size: 16px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.control-btn {
+  margin-top: 5px;
+  float: right;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.graph-title {
+  font-size: 18px;
+}
+
+.graph-metadata {
+  font-size: 12px;
+  font-style: italic;
 }

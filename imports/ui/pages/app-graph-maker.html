@@ -1,7 +1,7 @@
 <template name="App_graphMaker">
     <div id="instructions">
-        <h1>About</h1>
-        <h1>There are {{graph}} graphs in the db</h1>
+        <h2>About</h2>
+        <!-- <h1>There are {{graph}} graphs in the db</h1> -->
         <p>Learn more about problem graphs <a target="_blank" href="http://bit.ly/2fATznP">here</a>. Click <a target="_blank" href="lib/example-web-2020.png">here</a> to see some examples.</p>
         <h3>How to make a graph:</h3>
         <ul>
@@ -22,12 +22,12 @@
             <li>To <strong>select multiple nodes</strong>, hold the 'option' key and drag to create a selection box.</li>
         </ul>
         <div id="buttons">
-            <button id="record-json">Export as JSON</button>
-            <button id="record-png">Export as PNG</button>
+            <button class="btn btn-default" id="record-json">Export as JSON</button>
+            <button class="btn btn-default" id="record-png">Export as PNG</button>
             <a id="export-json" target="_blank" href="" style="display:none;"></a>
             <a id="export-png" target="_blank" href="" style="display:none;"></a>
-            <button id="draw-mode" data-draw-mode="drawoff">Draw mode: OFF</button>
-            <button id="save-changes">Save changes</button>
+            <button class="btn btn-default" id="draw-mode" data-draw-mode="drawoff">Draw mode: OFF</button>
+            <button class="btn btn-default" id="save-changes">Save changes</button>
         </div>
     </div>
     <div id="cy"></div>
