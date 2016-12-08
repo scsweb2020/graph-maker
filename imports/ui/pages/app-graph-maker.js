@@ -180,18 +180,13 @@ Template.App_graphMaker.rendered = function() {
   //     }
   // });
 
-  window.addEventListener('keydown', function(event) {
-      // Key codes for backspace and delete
-      delete_keys = [8,46];
-      console.log(event);
-      if (delete_keys.indexOf(event.keyCode) > -1) {
-          //cy.selected().remove();
-          console.log("DELETE!");
-          cy.$(':selected').remove();
-      }
+  // Track the position of the last click
+  var clickPosition;
+  cy.on('click', function(event) {
+    clickPosition = event.cyPosition;
   });
-  
-  // Add node on "canvas" double click
+
+  // Add node on double click
   document.getElementById('cy').addEventListener('dblclick', function(event) {
       console.log("Double click event.");
       var data = {
@@ -201,11 +196,20 @@ Template.App_graphMaker.rendered = function() {
 
       cy.add({
           data: data,
-          position: {
-              x: event.pageX,
-              y: event.pageY
-          }
+          position: clickPosition
       });
+  });
+
+  window.addEventListener('keydown', function(event) {
+      // Key codes for backspace and delete
+      delete_keys = [8,46];
+
+      // Check if node or edge has focus
+      if (delete_keys.indexOf(event.keyCode) > -1) {
+          //cy.selected().remove();
+          console.log("DELETE!");
+          cy.$(':selected').remove();
+      }
   });
 
   let toAdd = currentGraph.graphData
