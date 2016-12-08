@@ -37,7 +37,7 @@ Template.App_graphMaker.rendered = function() {
   var row_count = Math.floor(Math.sqrt(initial_nodes.length)) + 1;
 
   // initialize the graph
-  cyGraph = cytoscape({
+  cy = window.cy = cytoscape({
 
       container: document.getElementById('cy'),
 
@@ -150,25 +150,50 @@ Template.App_graphMaker.rendered = function() {
       },
   });
 
-  // remove an edge when it's clicked on
-  // cy.on('click', 'edge', function(evnt) {
-  //     var target = evnt.cyTarget;
-  //     console.log(target.json());
-  //     target.remove();
-  // });
+  // Track the position of the last click
+  var clickPosition;
+  cy.on('click', function(event) {
+    clickPosition = event.cyPosition;
+  });
+
+  // Add node on double click
+  document.getElementById('cy').addEventListener('dblclick', function(event) {
+      console.log("Double click event.");
+      var data = {
+          group: 'nodes',
+          name: 'new node'
+      };
+
+      cy.add({
+          data: data,
+          position: clickPosition
+      });
+  });
+
+  window.addEventListener('keydown', function(event) {
+      // Key codes for backspace and delete
+      delete_keys = [8,46];
+
+      // Check if node or edge has focus
+      if (delete_keys.indexOf(event.keyCode) > -1) {
+          //cy.selected().remove();
+          console.log("DELETE!");
+          cy.$(':selected').remove();
+      }
+  });
 
   // load the current graph from the mongoDB into cytoscape object, if available
   let toAdd = currentGraph.graphData
   if (toAdd != "EMPTY") {
     toAdd.elements.nodes.forEach(function(node) {
-      cyGraph.add(node);
+      cy.add(node);
     });
     toAdd.elements.edges.forEach(function(edge) {
-      cyGraph.add(edge);
+      cy.add(edge);
     });
   }
 
-  cyGraph.edgehandles({
+  cy.edgehandles({
       toggleOffOnLeave: true,
       handleNodes: "node",
       handleSize: 10,
@@ -178,7 +203,7 @@ Template.App_graphMaker.rendered = function() {
   });
 
   // controllers for context menus
-  cyGraph.contextMenus({
+  cy.contextMenus({
       menuItems: [
         {
           id: 'remove',
@@ -231,7 +256,7 @@ Template.App_graphMaker.rendered = function() {
                 name: newName
             };
 
-            cyGraph.add({
+            cy.add({
                 data: data,
                 position: {
                     x: event.cyPosition.x,
@@ -251,7 +276,7 @@ Template.App_graphMaker.rendered = function() {
                 name: newName
             };
 
-            cyGraph.add({
+            cy.add({
                 data: data,
                 position: {
                     x: event.cyPosition.x,
@@ -268,7 +293,7 @@ Template.App_graphMaker.rendered = function() {
           onClickFunction: function (event) {
             var ok = confirm("Are you sure? You cannot undo this action.");
             if (ok) {
-              cyGraph.$(':selected').remove();
+              cy.$(':selected').remove();
             }
           }
         },
@@ -292,12 +317,12 @@ Template.App_graphMaker.rendered = function() {
   });
 
   var selectAllOfTheSameType = function(ele) {
-      cyGraph.elements().unselect();
+      cy.elements().unselect();
       if(ele.isNode()) {
-          cyGraph.nodes().select();
+          cy.nodes().select();
       }
       else if(ele.isEdge()) {
-          cyGraph.edges().select();
+          cy.edges().select();
       }
   };
 
@@ -314,7 +339,7 @@ Template.App_graphMaker.rendered = function() {
           draw_mode = "drawon";
           draw_button_switch = "ON";
       }
-      cyGraph.edgehandles(draw_mode);
+      cy.edgehandles(draw_mode);
       draw_button.setAttribute("data-draw-mode", draw_mode);
       draw_button.innerHTML = "Draw mode: " + draw_button_switch;
   });
@@ -330,16 +355,16 @@ Template.App_graphMaker.helpers({
 
 Template.App_graphMaker.events({
   'click #record-png': function() {
-     document.getElementById("export-png").setAttribute("href", cyGraph.png());
+     document.getElementById("export-png").setAttribute("href", cy.png());
     document.getElementById("export-png").click();
   },
   'click #record-json': function() {
-    var nodes = cyGraph.nodes();
+    var nodes = cy.nodes();
     var nodes_arr = [];
     for (var i = 0; i < nodes.length; i++) {
       nodes_arr.push(nodes[i].data());
     }
-    var edges = cyGraph.edges();
+    var edges = cy.edges();
           var edges_arr = [];
     for (var i = 0; i < edges.length; i++) {
       edges_arr.push(edges[i].data());
@@ -350,8 +375,8 @@ Template.App_graphMaker.events({
     console.log(JSON.stringify(edges_arr));
     //export the graph in a JSON format comparable to that
     //when initialized
-    console.log(JSON.stringify(cyGraph.json()));
-    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(cyGraph.json(), null, 3));
+    console.log(JSON.stringify(cy.json()));
+    var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(cy.json(), null, 3));
     var dlAnchorElem = document.getElementById('export-json');
     dlAnchorElem.setAttribute("href", dataStr);
     dlAnchorElem.setAttribute("download", "my-graph.json");
@@ -361,7 +386,7 @@ Template.App_graphMaker.events({
     let currentName = Session.get("currentGraph").title;
     let newName = prompt("(Optional) (re)name this graph", currentName);
     Graphs.update({_id: Session.get("currentGraph")._id},
-    {$set: {graphData: cyGraph.json(),
+    {$set: {graphData: cy.json(),
       lastEditTime: new Date().getTime(),
       title: newName}});
     alert("Successfully saved!");
