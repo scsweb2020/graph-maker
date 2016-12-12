@@ -12,16 +12,9 @@ Graph = function(user, graphData, title, description) {
   let currentTime = new Date().getTime();
   this.createTime = currentTime;
   this.lastEditTime = currentTime;
-  if (title) {
-    this.title = ""
-  } else {
-    this.title = "Untitled graph"
-  }
-  if (description) {
-    this.description = ""
-  } else {
-    this.description = "Untitled graph"
-  }
+  this.title = title ? "" : "Untitled graph";
+  this.description = description ? "" : "Untitled graph";
+
 }
 
 Graphs.helpers({
