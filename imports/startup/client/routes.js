@@ -12,13 +12,10 @@ import '../../ui/pages/app-not-found.js';
 
 Router.configure({
   layoutTemplate: 'App_body',
-  // loadingTemplate: 'loading',
+
   waitOn: function() {
     return [
         Meteor.subscribe('myUsers'),
-        // Meteor.subscribe('documents'),
-        // Meteor.subscribe('sentences'),
-        // Meteor.subscribe('words')
     ];
   }
 });
@@ -29,11 +26,10 @@ Router.map(function() {
         path: '/',
         template: 'landingPage',
         subscriptions: function()  {
-            // this.subscribe("documents");
+
         },
         onBeforeAction: function() {
             if (this.ready()) {
-                // $('.navbar-brand').text("Annotator: Welcome");
                 this.next();
             }
         }
@@ -64,9 +60,7 @@ Router.map(function() {
               let currentGraph = Graphs.findOne({_id: this.params.graphID});
               Session.set("currentGraph", currentGraph);
               setCurrentUser(this.params.userID);
-                // $('.navbar-brand').text("Annotator: Welcome >> Tutorial");
-                // setCurrentUser(this.params.userID);
-                this.next();
+              this.next();
             }
         },
     });
@@ -77,26 +71,3 @@ var setCurrentUser = function(userID) {
     var user = MyUsers.findOne({_id: userID});
     Session.set("currentUser", user);
 }
-
-// // Index is currently set to the Meteor installation test page
-// FlowRouter.route('/', {
-//     name: 'App.land',
-//     action() {
-//         BlazeLayout.render('App_body', { main: "landingPage"});
-//     },
-// });
-//
-// // Go to graph page
-// FlowRouter.route('/graph', {
-//     name: 'App.graphMaker',
-//     action() {
-//         BlazeLayout.render('App_body', { main: "App_graphMaker"});
-//     },
-// });
-//
-// // the App_notFound template is used for unknown routes and missing lists
-// FlowRouter.notFound = {
-//   action() {
-//     BlazeLayout.render('App_body', { main: 'App_notFound' });
-//   },
-// };
