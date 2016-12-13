@@ -59,12 +59,12 @@ Template.userGraphEntry.events({
   }
 });
 
-var toTimeStampStr = function(time_stamp) {
+toTimeStampStr = function(time_stamp) {
   let date = new Date(time_stamp);
   let hours = date.getHours();
   let minutes = '0' + date.getMinutes();
   let day = date.getDay();
   let month = date.getMonth();
   let year = date.getFullYear();
-  return hours + ":" + minutes.substr(-2) + ", " + month + "/" + day + "/" + year;
+  return hours + ":" + minutes.substr(-2) + ", " + date.toDateString();
 }

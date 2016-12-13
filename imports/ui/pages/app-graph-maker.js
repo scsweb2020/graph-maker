@@ -309,15 +309,15 @@ Template.App_graphMaker.rendered = function() {
           title: 'remove selected',
           coreAsWell: true,
           onClickFunction: function (event) {
-            bootbox.confirm({
-              size: "small",
-              message: "Are you sure you want to remove these element? You cannot undo this action.",
-              callback: function(ok) {
-                if (ok) {
+            // bootbox.confirm({
+            //   size: "small",
+            //   message: "Are you sure you want to remove these element? You cannot undo this action.",
+            //   callback: function(ok) {
+            //     if (ok) {
                   event.cyTarget.remove();
-                }
-              }
-            });
+                // }
+              // }
+            // });
           }
         },
         {
@@ -370,9 +370,10 @@ Template.App_graphMaker.rendered = function() {
 }
 
 Template.App_graphMaker.helpers({
-  graph: function() {
-    console.log(Graphs.findOne());
-    return Graphs.find().count();
+  lastSaved: function() {
+    // console.log(Graphs.findOne());
+    let timeStr = Session.get("currentGraph").lastEditTime;
+    return toTimeStampStr(timeStr);
   }
 });
 
@@ -394,14 +395,29 @@ Template.App_graphMaker.events({
   },
   'click #save-changes': function() {
     let currentName = Session.get("currentGraph").title;
-    let newName = prompt("(Optional) (re)name this graph", currentName);
-    Graphs.update({_id: Session.get("currentGraph")._id},
-    {$set: {graphData: cy.json(),
-      lastEditTime: new Date().getTime(),
-      title: newName}});
-    alert("Successfully saved!");
+    bootbox.prompt({
+      size: "small",
+      title: "(Optional) (Re)name this graph",
+      // inputType: "textarea",
+      value: currentName,
+      callback: function(newName) {
+        if (newName != null) {
+          Graphs.update({_id: Session.get("currentGraph")._id},
+          {$set: {graphData: cy.json(),
+            lastEditTime: new Date().getTime(),
+            title: newName}});
+        }
+      }
+    });
+
+    // let newName = prompt("(Optional) (re)name this graph", currentName);
+    // Graphs.update({_id: Session.get("currentGraph")._id},
+    // {$set: {graphData: cy.json(),
+    //   lastEditTime: new Date().getTime(),
+    //   title: newName}});
+    // alert("Successfully saved!");
   },
-  'contextmenu': function() {
-    console.log("right click!");
-  }
+  // 'contextmenu': function() {
+  //   console.log("right click!");
+  // }
 });
