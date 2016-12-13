@@ -148,15 +148,34 @@ Template.App_graphMaker.rendered = function() {
   // Add node on double click
   document.getElementById('cy').addEventListener('dblclick', function(event) {
       console.log("Double click event.");
-      var data = {
-          group: 'nodes',
-          name: 'new node'
-      };
+      bootbox.prompt({
+        size: "small",
+        title: "(Re) name this node",
+        inputType: "textarea",
+        value: "New untitled node",
+        callback: function(newName) {
+          if (newName != null) {
+            var data = {
+                group: 'nodes',
+                name: newName
+            };
 
-      cy.add({
-          data: data,
-          position: clickPosition
+            cy.add({
+                data: data,
+                position: clickPosition
+            });
+          }
+        }
       });
+      // var data = {
+      //     group: 'nodes',
+      //     name: 'new node'
+      // };
+      //
+      // cy.add({
+      //     data: data,
+      //     position: clickPosition
+      // });
   });
 
   window.addEventListener('keydown', function(event) {
@@ -350,22 +369,22 @@ Template.App_graphMaker.rendered = function() {
   };
 
   // initiate "draw mode" for drawing edges
-  document.querySelector('#draw-mode').addEventListener('click', function(e) {
-      var draw_button = e.target;
-      var draw_mode = draw_button.getAttribute("data-draw-mode");
-      console.log(draw_mode);
-      if (draw_mode === "drawon") {
-          draw_mode = "drawoff";
-          draw_button_switch = "OFF";
-      }
-      else {
-          draw_mode = "drawon";
-          draw_button_switch = "ON";
-      }
-      cy.edgehandles(draw_mode);
-      draw_button.setAttribute("data-draw-mode", draw_mode);
-      draw_button.innerHTML = "Draw mode: " + draw_button_switch;
-  });
+  // document.querySelector('#draw-mode').addEventListener('click', function(e) {
+  //     var draw_button = e.target;
+  //     var draw_mode = draw_button.getAttribute("data-draw-mode");
+  //     console.log(draw_mode);
+  //     if (draw_mode === "drawon") {
+  //         draw_mode = "drawoff";
+  //         draw_button_switch = "OFF";
+  //     }
+  //     else {
+  //         draw_mode = "drawon";
+  //         draw_button_switch = "ON";
+  //     }
+  //     cy.edgehandles(draw_mode);
+  //     draw_button.setAttribute("data-draw-mode", draw_mode);
+  //     draw_button.innerHTML = "Draw mode: " + draw_button_switch;
+  // });
 
 }
 
