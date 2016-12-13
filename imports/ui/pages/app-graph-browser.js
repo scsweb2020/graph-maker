@@ -53,7 +53,7 @@ Template.userGraphEntry.events({
     let graph = $(event.target).parent().parent()[0];
     // change to server-side for later
     let confirmDelete = confirm("Are you sure? This action cannot be undone.")
-    if (confirm) {
+    if (confirmDelete) {
       Graphs.remove({_id: graph.id});
     }
   }
