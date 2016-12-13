@@ -1,27 +1,29 @@
 <template name="App_graphBrowser">
-  <div class="container">
+  <!-- <div class="container" id="graph-browser-container"> -->
     <div class="row" id="browserControls">
-      <button class="btn btn-large btn-success" id="createNewGraph">Create a new graph</button>
-      <button class="btn btn-large btn-disabled" disabled=True id="createNewGraph">Upload a new graph</button>
+      <button class="browser-control-btn btn btn-large btn-success" id="createNewGraph">Create a new graph</button>
+      <button class="browser-control-btn btn btn-large btn-disabled" disabled=True id="createNewGraph">Upload a new graph</button>
+    </div>
+    <div class="row" id="browserDataHeader">
+      <h1 class="browser-header">My graphs</h1>
     </div>
     <div class="row" id="browserData">
-      <h3 class="browser-header">My graphs</h3>
       {{#each userGraphs}}
         {{> userGraphEntry}}
       {{/each}}
     </div>
-  </div>
+  <!-- </div> -->
 </template>
 
 <template name="userGraphEntry">
   <div class="row userGraphEntry" id={{_id}}>
-    <div class="col-md-8 graph-info">
+    <div class="col-md-9 graph-info">
       <label class="graph-title">{{title}}</label>
       <p class="graph-metadata">{{description}}</p>
       <p class="graph-metadata"><strong>Created on</strong>: {{createTimeStr}}</p>
       <p class="graph-metadata"><strong>Last updated on</strong>: {{lastEditTimeStr}}</p>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-3">
       <button class="btn btn-large btn-primary open-graph control-btn">
         OPEN GRAPH
       </button>

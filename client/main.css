@@ -1,0 +1,49 @@
+body {
+  /*padding-top: 80px;*/
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+}
+
+h1, h2 {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h3 {
+  font-size: 1.2em;
+}
+
+#nav-right {
+  text-align: right;
+  width:100%;
+  margin-top: 0%;
+}
+
+.navbar {
+    background: #464646; /* dark gray */
+    color: #eee; /* light gray */
+    margin-bottom: 0px;
+    border-color: #464646;
+}
+
+.navbar .navbar-brand {
+  color: #eee; /* light gray */
+  font-size: 25px;
+}
+
+.submitLogout {
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+#main {
+  margin-top: 48.75px;
+}

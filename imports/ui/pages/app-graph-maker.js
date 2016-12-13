@@ -198,10 +198,15 @@ Template.App_graphMaker.rendered = function() {
           title: 'remove',
           selector: 'node, edge',
           onClickFunction: function (event) {
-            var ok = confirm("Are you sure? You cannot undo this action.");
-            if (ok) {
-              event.cyTarget.remove();
-            }
+            bootbox.confirm({
+              size: "small",
+              message: "Are you sure you want to remove this element? You cannot undo this action.",
+              callback: function(ok) {
+                if (ok) {
+                  event.cyTarget.remove();
+                }
+              }
+            });
           },
           // hasTrailingDivider: true
         },
@@ -211,18 +216,22 @@ Template.App_graphMaker.rendered = function() {
           selector: 'node',
           onClickFunction: function (event) {
             // get the current name of the node
-            var currentName = event.cyTarget.data('name');
+            let currentName = event.cyTarget.data('name');
             // prompt the user for a new name
             // (provide current name as default)
-            var newName = prompt("Edit node label", currentName);
-            if (!newName) {
-                // use the old name if the user cancels
-                event.cyTarget.data('name', currentName);
-            } else {
-                // put in the new name
-                event.cyTarget.data('name', newName);
-            }
-
+            bootbox.prompt({
+              size: "small",
+              title: "(Re) name this node",
+              inputType: "textarea",
+              value: currentName,
+              callback: function(newName) {
+                if (newName != null) {
+                  event.cyTarget.data('name', newName);
+                } else {
+                  event.cyTarget.data('name', currentName);
+                }
+              }
+            });
           }
         },
         {
@@ -238,18 +247,28 @@ Template.App_graphMaker.rendered = function() {
           title: 'add node',
           coreAsWell: true,
           onClickFunction: function (event) {
-            var newName = prompt("Name this node");
-            var data = {
-                group: 'nodes',
-                name: newName
-            };
+            // var newName = prompt("Name this node");
+            bootbox.prompt({
+              size: "small",
+              title: "(Re) name this node",
+              inputType: "textarea",
+              value: "New untitled node",
+              callback: function(newName) {
+                if (newName != null) {
+                  var data = {
+                      group: 'nodes',
+                      name: newName
+                  };
 
-            cy.add({
-                data: data,
-                position: {
-                    x: event.cyPosition.x,
-                    y: event.cyPosition.y
+                  cy.add({
+                      data: data,
+                      position: {
+                          x: event.cyPosition.x,
+                          y: event.cyPosition.y
+                      },
+                  });
                 }
+              }
             });
           }
         },
@@ -258,20 +277,31 @@ Template.App_graphMaker.rendered = function() {
           title: 'add why-hard',
           coreAsWell: true,
           onClickFunction: function (event) {
-            var newName = prompt("Name this node");
-            var data = {
-                group: 'nodes',
-                name: newName
-            };
+            bootbox.prompt({
+              size: "small",
+              title: "(Re) name this node",
+              inputType: "textarea",
+              value: "New untitled node",
+              callback: function(newName) {
+                if (newName != null) {
+                  var data = {
+                      group: 'nodes',
+                      name: newName
+                  };
 
-            cy.add({
-                data: data,
-                position: {
-                    x: event.cyPosition.x,
-                    y: event.cyPosition.y
-                },
-                classes: "why-hard"
+                  cy.add({
+                      data: data,
+                      position: {
+                          x: event.cyPosition.x,
+                          y: event.cyPosition.y
+                      },
+                      classes: "why-hard"
+                  });
+                }
+              }
             });
+            // var newName = prompt("Name this node");
+
           }
         },
         {
@@ -279,10 +309,15 @@ Template.App_graphMaker.rendered = function() {
           title: 'remove selected',
           coreAsWell: true,
           onClickFunction: function (event) {
-            var ok = confirm("Are you sure? You cannot undo this action.");
-            if (ok) {
-              cy.$(':selected').remove();
-            }
+            bootbox.confirm({
+              size: "small",
+              message: "Are you sure you want to remove these element? You cannot undo this action.",
+              callback: function(ok) {
+                if (ok) {
+                  event.cyTarget.remove();
+                }
+              }
+            });
           }
         },
         {

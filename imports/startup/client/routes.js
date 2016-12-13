@@ -66,7 +66,8 @@ Router.map(function() {
               setCurrentUser(this.params.userID);
                 // $('.navbar-brand').text("Annotator: Welcome >> Tutorial");
                 // setCurrentUser(this.params.userID);
-                this.next();
+              Session.set("isGraphMaker", true);
+              this.next();
             }
         },
     });

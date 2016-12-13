@@ -1,0 +1,458 @@
+/*#lpcontainer {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 0px;
+	background: #f5f5f5;
+}*/
+
+
+/*#lpcontainer, input, select, textarea {
+		color: #777;
+		font-family: "Source Sans Pro", sans-serif;
+		font-size: 16pt;
+		font-weight: 300;
+		line-height: 1.65em;
+		letter-spacing: -0.015em;
+	}*/
+
+
+	#lpheader {
+		background: #444;
+		opacity: 0.95;
+		color: #bbb;
+		cursor: default;
+		height: 3.25em;
+		left: 0;
+		line-height: 3.25em;
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 10000;
+	}
+
+		#lpheader h1 {
+			color: inherit;
+			height: inherit;
+			left: 1.25em;
+			line-height: inherit;
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			top: 0;
+		}
+
+			#lpheader h1 a {
+				color: #fff;
+				font-weight: 400;
+				border: 0;
+			}
+
+		#lpheader nav {
+			height: inherit;
+			line-height: inherit;
+			position: absolute;
+			right: 0.75em;
+			top: 0;
+			vertical-align: middle;
+		}
+
+			#lpheader nav > ul {
+				list-style: none;
+				margin: 0;
+				padding-left: 0;
+			}
+
+				#lpheader nav > ul > li {
+					display: inline-block;
+					padding-left: 0;
+				}
+
+					#lpheader nav > ul > li > ul {
+						display: none;
+					}
+
+					#lpheader nav > ul > li a {
+						display: inline-block;
+						height: 2em;
+						line-height: 1.95em;
+						padding: 0 1em;
+						border-radius: 6px;
+					}
+
+					#lpheader nav > ul > li a:not(.button) {
+						color: darkgrey;
+						display: inline-block;
+						text-decoration: none;
+						border: 0;
+					}
+
+						#lpheader nav > ul > li a:not(.button).icon:before {
+							color: #999;
+							margin-right: 0.5em;
+						}
+
+					#lpheader nav > ul > li:first-child {
+						margin-left: 0;
+					}
+
+					#lpheader nav > ul > li.active a:not(.button) {
+						background-color: rgba(153, 153, 153, 0.25);
+					}
+
+					#lpheader nav > ul > li .button {
+						margin: 0 0 0 0.5em;
+						position: relative;
+						background-color: white;
+						color: rgba(50,123,191, 1);
+						font-weight: 100;
+					}
+
+					#lpheader nav > ul > li .button.special {
+						margin: 0 0 0 0.5em;
+						position: relative;
+						background-color: rgba(50,123,191, 1);
+						color: white;
+					}
+
+					#lpheader nav > ul > li .button.special:hover {
+						background-color: rgba(255,153,51, 0.8);
+						color: white;
+					}
+					#lpheader nav > ul > li .button.sign-up:hover {
+						background-color: rgba(255,153,51, 0.8);
+						color: white;
+					}
+
+		#lpheader input[type="submit"],
+		#lpheader input[type="reset"],
+		#lpheader input[type="button"],
+		#lpheader .button {
+			background-color: transparent;
+			box-shadow: inset 0 0 0 2px #999;
+			color: #fff;
+		}
+
+			#lpheader input[type="submit"]:hover,
+			#lpheader input[type="reset"]:hover,
+			#lpheader input[type="button"]:hover,
+			#lpheader .button:hover {
+				background-color: rgba(255,153,51, 0.8);
+				color: white;
+			}
+
+			#lpheader input[type="submit"]:active,
+			#lpheader input[type="reset"]:active,
+			#lpheader input[type="button"]:active,
+			#lpheader .button:active {
+				background-color: rgba(255,153,51, 0.8);
+				color: white;
+			}
+
+		#lpheader .container {
+			position: relative;
+		}
+
+			#lpheader .container h1 {
+				left: 0;
+			}
+
+			#lpheader .container nav {
+				right: 0;
+			}
+
+		#lpheader.reveal {
+			-moz-animation: reveal-header 0.5s;
+			-webkit-animation: reveal-header 0.5s;
+			-o-animation: reveal-header 0.5s;
+			-ms-animation: reveal-header 0.5s;
+			animation: reveal-header 0.5s;
+		}
+
+		#lpheader.alt {
+			-moz-animation: none;
+			-webkit-animation: none;
+			-o-animation: none;
+			-ms-animation: none;
+			animation: none;
+			background: none;
+			color: rgba(255, 255, 255, 0.75);
+			position: absolute;
+		}
+
+			#lpheader.alt nav > ul > li a:not(.button).icon:before {
+				color: rgba(255, 255, 255, 0.75);
+			}
+
+			#lpheader.alt nav > ul > li.active a:not(.button) {
+				background-color: rgba(255, 255, 255, 0.2);
+			}
+
+			#lpheader.alt input[type="submit"],
+			#lpheader.alt input[type="reset"],
+			#lpheader.alt input[type="button"],
+			#lpheader.alt .button {
+				box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+			}
+
+				#lpheader.alt input[type="submit"]:hover,
+				#lpheader.alt input[type="reset"]:hover,
+				#lpheader.alt input[type="button"]:hover,
+				#lpheader.alt .button:hover {
+					background-color: rgba(255, 255, 255, 0.1);
+				}
+
+				#lpheader.alt input[type="submit"]:active,
+				#lpheader.alt input[type="reset"]:active,
+				#lpheader.alt input[type="button"]:active,
+				#lpheader.alt .button:active {
+					background-color: rgba(255, 255, 255, 0.2);
+				}
+
+
+/* Banner */
+
+	/*#lpbanner {
+		background-attachment: scroll,							fixed;
+		background-color: #666;
+		background-image: url("images/background.jpg");
+		background-position: top left,						center center;
+		background-repeat: repeat,							no-repeat;
+		background-size: cover;
+		color: #fff;
+		padding: 12em 0 20em 0;
+		text-align: center;
+	}
+
+		#lpbanner :last-child {
+			margin-bottom: 0;
+		}
+
+		#lpbanner h2, #lpbanner h3, #lpbanner h4, #lpbanner h5, #lpbanner h6 {
+			color: #fff;
+		}
+
+		#lpbanner h2 {
+			font-size: 3.5em;
+			line-height: 1em;
+			margin: 0 0 0.5em 0;
+			padding: 0;
+		}
+
+		#lpbanner p {
+			font-size: 1.25em;
+			margin-bottom: 1.75em;
+		}
+
+		#lpbanner input[type="submit"],
+		#lpbanner input[type="reset"],
+		#lpbanner input[type="button"],
+		#lpbanner .button {
+			background-color: rgba(255,255,255,0.9);
+			box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.5);
+			color: rgb(50,123,191);
+			min-width: 12em;
+		}
+
+		#lpbanner input[type="submit"].special,
+			#lpbanner input[type="reset"].special,
+			#lpbanner input[type="button"].special,
+			#lpbanner .button.special {
+				background-color: rgba(50,123,191, 1);
+			}
+
+			#lpbanner input[type="submit"].special:hover,
+			#lpbanner input[type="reset"].special:hover,
+			#lpbanner input[type="button"].special:hover,
+			#lpbanner .button.special:hover {
+				background-color: rgba(255,153,51, 0.8);
+			}
+
+			#lpbanner input[type="submit"]:active,
+			#lpbanner input[type="reset"]:active,
+			#lpbanner input[type="button"]:active,
+			#lpbanner .button:active {
+				background-color: rgba(255, 255, 255, 1);
+			}
+
+			#lpbanner input[type="submit"]:hover,
+			#lpbanner input[type="reset"]:hover,
+			#lpbanner input[type="button"]:hover,
+			#lpbanner .button:hover {
+				background-color: rgba(255,153,51, 0.8);
+				color: white;
+			}*/
+
+			/* Main */
+
+	/*#lpmain {
+		padding: 4em 0;
+	}
+
+		#lpmain > header {
+			text-align: center;
+			margin: 0 0 3em 0;
+		}
+
+			#lpmain > header h2 {
+				font-size: 2.75em;
+				margin: 0;
+			}
+
+			#lpmain > header p {
+				border-top: solid 2px #e5e5e5;
+				color: #777;
+				display: inline-block;
+				font-style: normal;
+				margin: 1em 0 0 0;
+				padding: 1em 0 1.25em 0;
+			}
+
+	#lpcontainer #lpmain {
+		margin-top: -14em;
+	}
+
+	#lpmain .button:hover {
+		background-color: rgba(255,153,51, 0.8);
+	}
+	#lpmain .howitworksintro {
+		margin-bottom: 100px;
+	}
+	#lpmain .description-section {
+		display: inline-block;
+		margin-bottom: 100px;
+		height: 250px;
+	}
+	#lpmain .description-screenshot {
+		width: 58%;
+		height: 100%;
+	}
+	#lpmain .description-screenshot img{
+		max-height: 100%;
+		max-width: 100%;
+	}
+	#lpmain .description-info {
+		width: 40%;
+		height: 100%;
+	}
+	#lpmain .description-info p {
+		text-align: center;
+	    position: relative;
+	    top: 30%;
+	}
+
+	#lpmain #ideator .description-screenshot{
+		float: right;
+		clear: right;
+	}
+	#lpmain #ideator .description-info {
+		float: left;
+		clear: left;
+	}
+	#lpmain #facilitator .description-screenshot {
+		float: left;
+		clear: left;
+	}
+	#lpmain #facilitator .description-info {
+		float: right;
+		clear: right;
+	}
+	#lpmain #synthesizer .description-screenshot {
+		float: right;
+		clear: right;
+	}
+	#lpmain #synthesizer .description-info {
+		float: left;
+		clear: left;
+	}
+	#lpmain #visualize .description-screenshot {
+		float: left;
+		clear: left;
+	}
+	#lpmain #visualize .description-info {
+		float: right;
+		clear: right;
+	}*/
+
+/*Box*/
+
+/* Box */
+
+	/*.box {
+		background-color: rgba(255,255,255,1);
+		border-radius: 6px;
+		box-shadow: 0 2px 0 0 #e5e5e5;
+		margin: 0 0 2em 0;
+		padding: 3em;
+		overflow: hidden;
+	}
+
+		.box > :last-child {
+			margin-bottom: 0;
+		}
+
+			background: none !important;
+			border-radius: 0 !important;
+				.box.alt {
+			box-shadow: none !important;
+			margin: 0 0 2em 0;
+			padding: 0 !important;
+		}
+
+		.box.features .features-row {*/
+			/*border-top: solid 2px #e5e5e5;*/
+			/*position: relative;
+		}
+
+			.box.features .features-row:after {
+				clear: both;*/
+			/*	content: '';
+				display: block;*/
+			/*}
+
+			.box.features .features-row section {
+				float: left;
+				padding-left: 2em;
+				padding-right: 2em;
+				width: 33.333%;
+			}
+
+
+
+		.box.special {
+			text-align: center;
+		}
+
+		.box .image.featured {
+			border-radius: 0;
+			display: block;
+			margin: 3em 0 3em -3em;
+			position: relative;
+			width: calc(100% + 6em);
+		}
+
+			.box .image.featured img {
+				border-radius: 0;
+				display: block;
+				width: 100%;
+			}
+
+			.box .image.featured:first-child {
+				border-radius: 6px 6px 0 0;
+				margin-bottom: 3em;
+				margin-top: -3em;
+			}
+
+				.box .image.featured:first-child img {
+					border-radius: 6px 6px 0 0;
+				}
+
+			.box .image.featured:last-child {
+				border-radius: 0 0 6px 6px;
+				margin-bottom: -3em;
+				margin-top: 3em;
+			}
+
+				.box .image.featured:last-child img {
+					border-radius: 0 0 6px 6px;
+				}*/

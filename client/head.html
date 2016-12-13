@@ -3,11 +3,15 @@
     <title>Graph Maker</title>
     <meta name="description" content="It's a graph maker!">
     <link href="/styles/cytoscape-context-menus.css" rel="stylesheet">
+    <link href="/styles/bootstrap-drawer.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
     <script src="/scripts/cytoscape.min.js"></script>
     <script src="/scripts/cytoscape-edgehandles.js"></script>
     <script src="/scripts/cytoscape-context-menus.js"></script>
+    <script src="/scripts/bootstrap.min.js"></script>
+    <script src="/scripts/bootbox.min.js"></script>
+    <script src="/scripts/drawer.min.js"></script>
     <!-- <script src="/scripts/main.js"></script> -->
     <!--
     <link rel="shortcut icon" type="image/png" href="favicon.png?v1" sizes="16x16 32x32 64x64">
@@ -16,6 +20,24 @@
 </head>
 
 <template name="header">
+  <div id="lpheader">
+      <!-- <h1><img src="/images/ideagenslogopic.png" width="125px"></h1> -->
+      <h1>GraphMaker</h1>
+      <nav id="nav">
+        <ul>
+          <div class="col-lg-9" id="nav-right" style="width: 100%; margin-top: -5%;">
+            <div class="login" id="login-info">
+              {{#if loggedIn }}
+                <span class="userName">
+                  <strong>Welcome,</strong>
+                    {{currentUserName}}
+                </span>
+                {{/if}}
+              </div>
+          </div>
+        </ul>
+      </nav>
+  </div>
     <nav class="navbar navbar-default" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation">

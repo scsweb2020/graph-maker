@@ -1,10 +1,38 @@
 <template name="App_body">
     <!-- {{> Template.dynamic template=top}} -->
     <!-- {{> Template.dynamic template=main}} -->
-    <div class="container">
+    <div id="lpheader">
+        <!-- <h1><img src="/images/ideagenslogopic.png" width="125px"></h1> -->
+        <h1>GraphMaker</h1>
+        <nav id="nav">
+          <ul>
+            <div class="col-lg-9" id="nav-right">
+              <div class="login" id="login-info">
+                {{#if loggedIn }}
+                  <span class="userName">
+                    <strong>Welcome,</strong>
+                      {{currentUserName}}
+                  </span>
+                  {{/if}}
+                </div>
+            </div>
+          </ul>
+        </nav>
+    </div>
+    <!-- {{#if isGraphMaker}}
+      <div class="container-fluid has-inner-drawer" id="main">
+        {{> yield}}
+      </div>
+    {{else}} -->
+      <div class="container-fluid" id="main">
+        {{> yield}}
+      </div>
+    <!-- {{/if}} -->
+
+    <!-- <div class="container">
       {{> header}}
       <div id="main">
         {{> yield}}
       </div>
-    </div>
+    </div> -->
 </template>
