@@ -93,9 +93,44 @@ Template.App_graphMaker.rendered = function() {
               css: {
                   'curve-style': 'bezier',
                   'target-arrow-shape': 'triangle',
-                  //'line-color': '#eee',
+                  'target-arrow-color': 'green',
+                  'line-color': 'green',
                   'width': 8
               }
+          },
+
+          {
+            selector: 'edge:selected',
+            css: {
+              // 'line-color': 'blue',
+              'line-color': 'blue',
+              'target-arrow-color': 'blue',
+              // 'background-color': 'green',
+              // 'border-width': 10,
+              // 'border-color': 'blue',
+              // 'overlay-color': 'blue',
+              // 'overlay-padding': '5px',
+            }
+          },
+
+          // {
+          //   selector: 'edge.negative:selected',
+          //   css: {
+          //     // 'line-color': 'blue',
+          //     'background-color': 'red',
+          //     // 'border-width': 10,
+          //     // 'border-color': 'blue',
+          //     'overlay-color': 'blue',
+          //     'overlay-padding': '5px',
+          //   }
+          // },
+
+          {
+            selector: 'edge.negative',
+            css: {
+              'line-color': 'red',
+              'target-arrow-color': 'red',
+            }
           },
 
           // some style for the ext
@@ -139,6 +174,19 @@ Template.App_graphMaker.rendered = function() {
       },
   });
 
+  // handles = new CytoscapeEdgeEditation;
+  // handles.init(cy);
+
+  // handles.registerHandle({
+  //   positionX: "left",          //horizontal position of the handle  (left | center | right)
+  //   positionY: "center",        //vertical position of the handle  (top | center | bottom)
+  //   color: "#48FF00",           //color of the handle
+  //   type: "some_type",          //stored as data() attribute, can be used for styling
+  //   single: true,               //wheter only one edge of this type can start from same node (default false)
+  //   nodeTypeNames: ["action", "why-hard"],    //which types of nodes will contain this handle
+  //   noMultigraph: false         //whereter two nodes can't be connected with multiple edges (does not consider orientation)
+  // });
+
   // Track the x,y position of the last click
   var clickPosition;
   cy.on('click', function(event) {
@@ -157,6 +205,7 @@ Template.App_graphMaker.rendered = function() {
           if (newName != null) {
             var data = {
                 group: 'nodes',
+                type: 'action',
                 name: newName
             };
 
@@ -276,6 +325,7 @@ Template.App_graphMaker.rendered = function() {
                 if (newName != null) {
                   var data = {
                       group: 'nodes',
+                      type: 'action',
                       name: newName
                   };
 
@@ -305,6 +355,7 @@ Template.App_graphMaker.rendered = function() {
                 if (newName != null) {
                   var data = {
                       group: 'nodes',
+                      type: 'why-hard',
                       name: newName
                   };
 
@@ -353,8 +404,18 @@ Template.App_graphMaker.rendered = function() {
           selector: 'edge',
           onClickFunction: function (event) {
             selectAllOfTheSameType(event.cyTarget);
-          }
-        }
+          },
+          hasTrailingDivider: true
+        },
+        // for edges
+        {
+          id: 'toggle-type',
+          title: 'change type',
+          selector: 'edge',
+          onClickFunction: function (event) {
+            event.cyTarget.toggleClass("negative");
+          },
+        },
     ]
   });
 
