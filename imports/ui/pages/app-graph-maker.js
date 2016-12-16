@@ -99,32 +99,8 @@ Template.App_graphMaker.rendered = function() {
               }
           },
 
-          {
-            selector: 'edge:selected',
-            css: {
-              'line-color': 'blue',
-              'target-arrow-color': 'blue',
-            }
-          },
-
-          {
-            selector: 'edge.negative:selected',
-            css: {
-              'line-color': 'blue',
-              'target-arrow-color': 'blue',
-            }
-          },
-
-          {
-            selector: 'edge.uncertain:selected',
-            css: {
-              'line-color': 'blue',
-              'target-arrow-color': 'blue',
-            }
-          },
-
           // styles for advanced edge options
-          // TODO: programmatically map to the values
+          // need to programmatically map to the values
           {
             selector: 'edge.negative',
             css: {
@@ -136,8 +112,22 @@ Template.App_graphMaker.rendered = function() {
           {
             selector: 'edge.uncertain',
             css: {
-              'opacity': 0.33,
+              'opacity': 0.20,
+              'line-style': 'dashed',
               // 'overlay-padding': '5px',
+            }
+          },
+
+          // apparently order of this matters. if we put this before the
+          // style options for the negative and uncertain classes,
+          // conflicting style options are resolved by defaulting to the
+          // earlier specified one.
+          {
+            selector: 'edge:selected',
+            css: {
+              'line-color': 'blue',
+              'target-arrow-color': 'blue',
+              'width': 16
             }
           },
 
