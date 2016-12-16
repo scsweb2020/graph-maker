@@ -102,34 +102,42 @@ Template.App_graphMaker.rendered = function() {
           {
             selector: 'edge:selected',
             css: {
-              // 'line-color': 'blue',
               'line-color': 'blue',
               'target-arrow-color': 'blue',
-              // 'background-color': 'green',
-              // 'border-width': 10,
-              // 'border-color': 'blue',
-              // 'overlay-color': 'blue',
-              // 'overlay-padding': '5px',
             }
           },
 
-          // {
-          //   selector: 'edge.negative:selected',
-          //   css: {
-          //     // 'line-color': 'blue',
-          //     'background-color': 'red',
-          //     // 'border-width': 10,
-          //     // 'border-color': 'blue',
-          //     'overlay-color': 'blue',
-          //     'overlay-padding': '5px',
-          //   }
-          // },
+          {
+            selector: 'edge.negative:selected',
+            css: {
+              'line-color': 'blue',
+              'target-arrow-color': 'blue',
+            }
+          },
 
+          {
+            selector: 'edge.uncertain:selected',
+            css: {
+              'line-color': 'blue',
+              'target-arrow-color': 'blue',
+            }
+          },
+
+          // styles for advanced edge options
+          // TODO: programmatically map to the values
           {
             selector: 'edge.negative',
             css: {
               'line-color': 'red',
               'target-arrow-color': 'red',
+            }
+          },
+
+          {
+            selector: 'edge.uncertain',
+            css: {
+              'opacity': 0.33,
+              // 'overlay-padding': '5px',
             }
           },
 
@@ -407,14 +415,23 @@ Template.App_graphMaker.rendered = function() {
           },
           hasTrailingDivider: true
         },
-        // for edges
+        // advanced options for edges
         {
           id: 'toggle-type',
-          title: 'change type',
+          title: 'switch pos/neg',
           selector: 'edge',
           onClickFunction: function (event) {
             event.cyTarget.toggleClass("negative");
           },
+        },
+
+        {
+          id: 'toggle-certainty',
+          title: 'switch certainty',
+          selector: 'edge',
+          onClickFunction: function(event) {
+            event.cyTarget.toggleClass("uncertain");
+          }
         },
     ]
   });

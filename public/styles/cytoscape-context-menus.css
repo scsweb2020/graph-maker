@@ -10,8 +10,8 @@
 .cy-context-menus-cxt-menuitem{
     display:block;
     z-index:1000;
-    width:110px;
-    padding: 3px 20px;
+    width:125px;
+    padding: 3px 15px;
     position:relative;
     margin:0;
     background-color:#F2F2F2;
