@@ -47,3 +47,7 @@ body {
 .drawer-controls {
   margin-top: -3%;
 }
+
+.drawer-control {
+  margin-bottom: 5px;
+}

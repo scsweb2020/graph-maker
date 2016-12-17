@@ -1,16 +1,27 @@
 <template name="App_graphMaker">
   <div id="instructionsDrawer" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="instructionsDrawer">
         <div class="drawer-controls">
-            <a href="#instructionsDrawer" data-toggle="drawer" aria-foldedopen="false" aria-controls="instructionsDrawer" class="btn btn-default btn-lg"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+            <a href="#instructionsDrawer" data-toggle="drawer" aria-foldedopen="false" aria-controls="instructionsDrawer" class="btn btn-default drawer-control"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
+            <button title="AutoLayout as hierarchy using breadth-first search" class="btn btn-default drawer-control" id="auto-layout"><i class="glyphicon glyphicon-road"></i></button>
+            <button title="Fit to viewport" class="btn btn-default drawer-control" id="center-graph"><i class="glyphicon glyphicon-fullscreen"></i></button>
         </div>
         <div class="drawer-contents">
           <div id="buttons">
-              <button class="btn btn-default" id="record-json">Export as JSON</button>
-              <button class="btn btn-default" id="record-png">Export as PNG</button>
+              <!-- <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Export
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                  <a class="dropdown-item" href="#" id="record-json">as JSON</a>
+                  <a class="dropdown-item" href="#" id="record-png">as PNG</a>
+                </div>
+              </div> -->
+              <button title="Export as JSON" class="btn btn-default" id="record-json"><i class="glyphicon glyphicon-download-alt"></i></button>
+              <button title="Export as PNG" class="btn btn-default" id="record-png"><i class="glyphicon glyphicon-picture"></i></button>
               <a id="export-json" target="_blank" href="" style="display:none;"></a>
               <a id="export-png" target="_blank" href="" style="display:none;"></a>
               <!-- <button class="btn btn-default" id="draw-mode" data-draw-mode="drawoff">Draw mode: OFF</button> -->
-              <button class="btn btn-success" id="save-changes">Save changes</button>
+              <button title="Save changes" class="btn btn-success" id="save-changes"><i class="glyphicon glyphicon-floppy-disk"></i></button>
               <p style="margin-top:10px;">Last saved: {{lastSaved}}</p>
           </div>
             <div class="drawer-heading">

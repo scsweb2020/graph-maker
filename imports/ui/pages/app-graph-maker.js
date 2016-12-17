@@ -448,6 +448,13 @@ Template.App_graphMaker.rendered = function() {
       }
   };
 
+  bf = cy.makeLayout({
+    name: 'breadthfirst',
+    directed: true,
+    animate: true,
+    spacingFactor: 1.25,
+  });
+
   // initiate "draw mode" for drawing edges
   // document.querySelector('#draw-mode').addEventListener('click', function(e) {
   //     var draw_button = e.target;
@@ -477,8 +484,15 @@ Template.App_graphMaker.helpers({
 });
 
 Template.App_graphMaker.events({
+  'click #auto-layout': function() {
+    bf.run();
+  },
+  'click #center-graph': function() {
+    cy.fit(75);
+  },
   'click #record-png': function() {
-     document.getElementById("export-png").setAttribute("href", cy.png());
+    let png = cy.png({full: true})
+     document.getElementById("export-png").setAttribute("href", png);
     document.getElementById("export-png").click();
   },
   'click #record-json': function() {
