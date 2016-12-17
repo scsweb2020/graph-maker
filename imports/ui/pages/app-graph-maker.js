@@ -194,6 +194,9 @@ Template.App_graphMaker.rendered = function() {
   // Add node on double click
   document.getElementById('cy').addEventListener('dblclick', function(event) {
       console.log("Double click event.");
+      // unselect all currently selected stuff so it doesn't conflict
+      // with the delete key listener
+      cy.$(':selected').unselect();
       bootbox.prompt({
         size: "small",
         title: "(Re) name this node",
@@ -281,6 +284,9 @@ Template.App_graphMaker.rendered = function() {
           title: 'edit label',
           selector: 'node',
           onClickFunction: function (event) {
+            // unselect all currently selected stuff so it doesn't conflict
+            // with the delete key listener
+            cy.$(':selected').unselect();
             // get the current name of the node
             let currentName = event.cyTarget.data('name');
             // prompt the user for a new name
@@ -314,6 +320,9 @@ Template.App_graphMaker.rendered = function() {
           coreAsWell: true,
           onClickFunction: function (event) {
             // var newName = prompt("Name this node");
+            // unselect all currently selected stuff so it doesn't conflict
+            // with the delete key listener
+            cy.$(':selected').unselect();
             bootbox.prompt({
               size: "small",
               title: "(Re) name this node",
@@ -344,6 +353,9 @@ Template.App_graphMaker.rendered = function() {
           title: 'add why-hard',
           coreAsWell: true,
           onClickFunction: function (event) {
+            // unselect all currently selected stuff so it doesn't conflict
+            // with the delete key listener
+            cy.$(':selected').unselect();
             bootbox.prompt({
               size: "small",
               title: "(Re) name this node",
@@ -481,6 +493,7 @@ Template.App_graphMaker.events({
     dlAnchorElem.click();
   },
   'click #save-changes': function() {
+    cy.$(':selected').unselect();
     let currentName = Session.get("currentGraph").title;
     bootbox.prompt({
       size: "small",
