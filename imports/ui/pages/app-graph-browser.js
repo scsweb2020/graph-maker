@@ -17,9 +17,9 @@ Template.App_graphBrowser.helpers({
     console.log(currentUser);
     console.log(Graphs.find().fetch());
     if (currentUser.userName === "ADMIN") {
-      return Graphs.find();
+      return Graphs.find({}, {sort: { lastEditTime : -1 }});
     } else {
-      return Graphs.find({userID: currentUser._id});
+      return Graphs.find({userID: currentUser._id}, {sort: { lastEditTime : -1 }});
     }
   }
 });
@@ -40,6 +40,10 @@ Template.userGraphEntry.helpers({
   lastEditTimeStr: function() {
     return toTimeStampStr(this.lastEditTime);
   },
+  routeData: function() {
+    let currentUser = Session.get("currentUser");
+    return {userID: currentUser._id, graphID: this._id};
+  }
 })
 
 Template.userGraphEntry.events({

@@ -20,12 +20,13 @@
     <div class="col-md-9 graph-info">
       <label class="graph-title">{{title}}</label>
       <p class="graph-metadata">{{description}}</p>
+      <p class="graph-metadata"><strong>Author</strong>: {{userName}}</p>
       <p class="graph-metadata"><strong>Created on</strong>: {{createTimeStr}}</p>
       <p class="graph-metadata"><strong>Last updated on</strong>: {{lastEditTimeStr}}</p>
     </div>
     <div class="col-md-3">
       <button class="btn btn-large btn-primary open-graph control-btn">
-        OPEN GRAPH
+        <a href="{{urlFor route='App.graphMaker' data=routeData}}">OPEN GRAPH</a>
       </button>
       <button class="btn btn-large btn-default edit-metadata control-btn" disabled=True>
         EDIT METADATA

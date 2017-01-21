@@ -43,6 +43,11 @@
   display: block;
 }
 
+.control-btn a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .graph-title {
   font-size: 18px;
 }
