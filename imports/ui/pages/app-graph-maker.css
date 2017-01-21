@@ -51,3 +51,7 @@ body {
 .drawer-control {
   margin-bottom: 5px;
 }
+
+.form-container {
+  padding: 10px;
+}

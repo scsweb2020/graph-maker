@@ -307,6 +307,35 @@ Template.App_graphMaker.rendered = function() {
           }
         },
         {
+          id: 'edit-metadata',
+          title: 'edit metadata',
+          selector: 'node',
+          coreAsWell: true,
+          onClickFunction: function (event) {
+            // unselect all currently selected stuff so it doesn't conflict
+            // with the delete key listener
+            // cy.$(':selected').unselect();
+            // get the current name of the node
+            console.log(event.cyTarget);
+            // let currentName = event.cyTarget.data('name');
+            // prompt the user for a new name
+            // (provide current name as default)
+            bootbox.prompt({
+              size: "small",
+              title: "Set paper ID",
+              // inputType: "textarea",
+              // value: currentName,
+              callback: function(id) {
+                if (id != null) {
+                  event.cyTarget.data('paperID', id);
+                // } else {
+                //   event.cyTarget.data('name', currentName);
+                }
+              }
+            });
+          }
+        },
+        {
           id: 'change-type',
           title: 'change type',
           selector: 'node',
@@ -480,6 +509,16 @@ Template.App_graphMaker.helpers({
     // console.log(Graphs.findOne());
     let timeStr = Session.get("currentGraph").lastEditTime;
     return toTimeStampStr(timeStr);
+  },
+  title: function() {
+    return Session.get("currentGraph").title;
+  },
+  paperID: function() {
+    if (Session.get("currentGraph").metaData['paperID']) {
+      return Session.get("currentGraph").metaData['paperID'];
+    } else {
+      return "";
+    }
   }
 });
 
@@ -506,32 +545,118 @@ Template.App_graphMaker.events({
     dlAnchorElem.setAttribute("download", "my-graph.json");
     dlAnchorElem.click();
   },
-  'click #save-changes': function() {
-    cy.$(':selected').unselect();
-    let currentName = Session.get("currentGraph").title;
-    bootbox.prompt({
-      size: "small",
-      title: "(Optional) (Re)name this graph",
-      // inputType: "textarea",
-      value: currentName,
-      callback: function(newName) {
-        if (newName != null) {
-          Graphs.update({_id: Session.get("currentGraph")._id},
-          {$set: {graphData: cy.json(),
-            lastEditTime: new Date().getTime(),
-            title: newName}});
-        }
-      }
-    });
-
-    // let newName = prompt("(Optional) (re)name this graph", currentName);
-    // Graphs.update({_id: Session.get("currentGraph")._id},
-    // {$set: {graphData: cy.json(),
-    //   lastEditTime: new Date().getTime(),
-    //   title: newName}});
-    // alert("Successfully saved!");
-  },
+  // 'click .save-changes': function() {
+  //   // cy.$(':selected').unselect();
+  //   let currentName = Session.get("currentGraph").title;
+  //   let currentPaperID = "";
+  //   if (Session.get("currentGraph").metaData['paperID']) {
+  //     currentPaperID = Session.get("currentGraph").metaData['paperID'];
+  //   }
+  //   let message = '<div class="bootbox-form"><div class="form-group row"><label for="graph-title" class="col-2 col-form-label">Title</label><div class="col-10"><input class="bootbox-input bootbox-input-text form-control" type="text" value="' + currentName +
+  //   '" id="graph-title"></div></div><div class="form-group row"><label for="graph-paper-ID" class="col-2 col-form-label">PaperID</label><div class="col-10"><input class="bootbox-input bootbox-input-text form-control" type="text" value="' + currentPaperID + '" id="graph-paper-ID"></div></div></div></div>'
+  //   // let message = '<div class="form-container"><div class="form-group row"><label for="graph-title" class="col-2 col-form-label">Title</label><div class="col-10"><input class="form-control" type="text" value="' + currentName +
+  //   // '" id="graph-title"></div></div><div class="form-group row"><label for="graph-paper-ID" class="col-2 col-form-label">PaperID</label><div class="col-10"><input class="form-control" type="text" value="' + currentPaperID + '" id="graph-paper-ID"></div></div></div></div>'
+  //   // console.log("saving changes");
+  //   bootbox.dialog({
+  //     title: "Save changes",
+  //     message: message,
+  //     buttons: {
+  //       confirm: {
+  //           label: 'Save',
+  //           className: 'btn-success'
+  //       },
+  //       cancel: {
+  //           label: 'Cancel',
+  //           className: 'btn-danger'
+  //       }
+  //     },
+  //     callback: function(result) {
+  //       console.log("doing callback stuff with " + result);
+  //       let title = $('#graph-title').val();
+  //       let paperID = $('#graph-paper-ID').val();
+  //       cy.nodes().forEach(function(node) {
+  //         node.data('paperID', paperID);
+  //       });
+  //       Graphs.update({_id: Session.get("currentGraph")._id},
+  //       {$set: {graphData: cy.json(),
+  //         lastEditTime: new Date().getTime(),
+  //         title: title,
+  //         "metadata.paperID": paperID
+  //       }});
+  //     }
+  //   })
+  //
+  //   //     bootbox.prompt({
+  //   //   size: "small",
+  //   //   title: "(Optional) (Re)name this graph",
+  //   //   // inputType: "textarea",
+  //   //   value: currentName,
+  //   //   callback: function(newName) {
+  //   //     if (newName != null) {
+  //   //       Graphs.update({_id: Session.get("currentGraph")._id},
+  //   //       {$set: {graphData: cy.json(),
+  //   //         lastEditTime: new Date().getTime(),
+  //   //         title: newName}});
+  //   //     }
+  //   //   }
+  //   // });
+  //
+  //   // let newName = prompt("(Optional) (re)name this graph", currentName);
+  //   // Graphs.update({_id: Session.get("currentGraph")._id},
+  //   // {$set: {graphData: cy.json(),
+  //   //   lastEditTime: new Date().getTime(),
+  //   //   title: newName}});
+  //   // alert("Successfully saved!");
+  // },
   // 'contextmenu': function() {
   //   console.log("right click!");
   // }
+  'click #save-changes': function() {
+    let title = $('#graph-title').val();
+    let paperID = $('#graph-paper-ID').val();
+    cy.nodes().forEach(function(node) {
+      node.data('paperID', paperID);
+    });
+    Graphs.update({_id: Session.get("currentGraph")._id},
+    {$set: {graphData: cy.json(),
+      lastEditTime: new Date().getTime(),
+      title: title,
+      "metaData.paperID": paperID
+    }});
+    $('#save-dialog').removeClass("in");
+  },
+  'click #cancel-save': function() {
+    $('#save-dialog').removeClass("in");
+  }
+});
+
+Template.EditGraphMetadata.helpers({
+  title: function() {
+    let graph = Graphs.findOne({_id: Session.get("currentGraph")._id});
+    return graph.title;
+  },
+  paperID: function() {
+    let graph = Graphs.findOne({_id: Session.get("currentGraph")._id});
+    if (graph.metaData['paperID']) {
+      return graph.metaData['paperID'];
+    } else {
+      return "";
+    }
+  }
+});
+
+Template.EditGraphMetadata.events({
+  'click #save-changes': function() {
+    let title = $('#graph-title').val();
+    let paperID = $('#graph-paper-ID').val();
+    cy.nodes().forEach(function(node) {
+      node.data('paperID', paperID);
+    });
+    Graphs.update({_id: Session.get("currentGraph")._id},
+    {$set: {graphData: cy.json(),
+      lastEditTime: new Date().getTime(),
+      title: title,
+      "metadata.paperID": paperID
+    }});
+  }
 });

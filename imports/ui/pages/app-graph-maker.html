@@ -1,5 +1,5 @@
 <template name="App_graphMaker">
-  <div id="instructionsDrawer" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="instructionsDrawer">
+    <div id="instructionsDrawer" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold" aria-labelledby="instructionsDrawer">
         <div class="drawer-controls">
             <a href="#instructionsDrawer" data-toggle="drawer" aria-foldedopen="false" aria-controls="instructionsDrawer" class="btn btn-default drawer-control"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
             <button title="AutoLayout as hierarchy using breadth-first search" class="btn btn-default drawer-control" id="auto-layout"><i class="glyphicon glyphicon-road"></i></button>
@@ -21,7 +21,28 @@
               <a id="export-json" target="_blank" href="" style="display:none;"></a>
               <a id="export-png" target="_blank" href="" style="display:none;"></a>
               <!-- <button class="btn btn-default" id="draw-mode" data-draw-mode="drawoff">Draw mode: OFF</button> -->
-              <button title="Save changes" class="btn btn-success" id="save-changes"><i class="glyphicon glyphicon-floppy-disk"></i></button>
+              <!-- <button title="Save changes" class="btn btn-success save-changes"><i class="glyphicon glyphicon-floppy-disk" type="button" data-toggle="modal" data-target="#myModal"></i></button> -->
+              <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#save-dialog" aria-expanded="false" aria-controls="save-dialog">
+                <i class="glyphicon glyphicon-floppy-disk"></i>
+              </button>
+              <div class="collapse" id="save-dialog">
+                <div class="form-container">
+                  <div class="form-group">
+                    <label for="graph-title" class="col-2 col-form-label">Title</label>
+                    <div class="col-10">
+                      <input class="form-control" type="text" value="{{title}}" id="graph-title">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="graph-paper-ID" class="col-2 col-form-label">PaperID</label>
+                    <div class="col-10">
+                      <input class="form-control" type="text" value="{{paperID}}" id="graph-paper-ID">
+                    </div>
+                  </div>
+                  <button type="button" id="save-changes" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+                  <button type="button" class="btn btn-default" id="cancel-save">Cancel</button>
+                </div>
+              </div>
               <p style="margin-top:10px;">Last saved: {{lastSaved}}</p>
           </div>
             <div class="drawer-heading">
@@ -48,45 +69,41 @@
                   <li>To <strong>select multiple nodes</strong>, hold the 'option' key and drag to create a selection box.</li>
               </ul>
             </div>
-            <!-- <ul class="drawer-nav">
-                <li role="presentation" class="active"><a href="#">Home</a></li>
-                <li role="presentation"><a href="#">Profile</a></li>
-                <li role="presentation"><a href="#">Messages</a></li>
-            </ul>
-            <div class="drawer-footer">
-                <small>&copy; Caroline Amaba</small>
-            </div> -->
         </div>
     </div>
-    <!-- <div id="instructions">
-        <h2>About</h2>
-        <p>Learn more about problem graphs <a target="_blank" href="http://bit.ly/2fATznP">here</a>. Click <a target="_blank" href="lib/example-web-2020.png">here</a> to see some examples.</p>
-        <h3>How to make a graph:</h3>
-        <ul>
-            <li>To <strong>create</strong> a new node: right click anywhere and select "add node".</li>
-            <li>To <strong>edit</strong> the label for a node: right click on a node and select "edit label".</li>
-            <li>To <strong>draw an edge</strong> between nodes:</li>
-            <ul>
-                <li>Hover over a node. An 'anchor' point will appear. Click and drag from the anchor point to the desired target node.</li>
-                <li>Click "draw on" button at the bottom of the page and click and drag between nodes.</li>
-            </ul>
-            <li>To <strong>delete</strong> a node or edge, right click on the element and select "remove".</li>
-        </ul>
-        <h3>Other actions:</h3>
-        <ul>
-            <li>To <strong>move</strong> a node, select it by clicking on it, then click and drag to desired location.</li>
-            <li>To <strong>pan</strong> the canvas, left-click and drag.</li>
-            <li>To <strong>zoom in/out</strong> on the canvas, scroll up/down.</li>
-            <li>To <strong>select multiple nodes</strong>, hold the 'option' key and drag to create a selection box.</li>
-        </ul>
-        <div id="buttons">
-            <button class="btn btn-default" id="record-json">Export as JSON</button>
-            <button class="btn btn-default" id="record-png">Export as PNG</button>
-            <a id="export-json" target="_blank" href="" style="display:none;"></a>
-            <a id="export-png" target="_blank" href="" style="display:none;"></a>
-            <button class="btn btn-default" id="draw-mode" data-draw-mode="drawoff">Draw mode: OFF</button>
-            <button class="btn btn-default" id="save-changes">Save changes</button>
-        </div>
-    </div> -->
     <div id="cy"></div>
+    <!-- {{> EditGraphMetadata}} -->
+</template>
+
+<template name="EditGraphMetadata">
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Save changes</h4>
+        </div>
+        <div class="modal-body">
+          <div class="form-container">
+            <div class="form-group row">
+              <label for="graph-title" class="col-2 col-form-label">Title</label>
+              <div class="col-10">
+                <input class="form-control" type="text" value="{{title}}" id="graph-title">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="graph-paper-ID" class="col-2 col-form-label">PaperID</label>
+              <div class="col-10">
+                <input class="form-control" type="text" value="{{paperID}}" id="graph-paper-ID">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+          <button type="button" id="save-changes" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
