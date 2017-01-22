@@ -167,7 +167,8 @@ Template.App_graphMaker.rendered = function() {
       ],
 
       elements: {
-          nodes: initial_nodes,
+          // nodes: initial_nodes,
+          nodes: [],
           edges: []
       },
   });

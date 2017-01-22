@@ -43,6 +43,13 @@ Template.userGraphEntry.helpers({
   routeData: function() {
     let currentUser = Session.get("currentUser");
     return {userID: currentUser._id, graphID: this._id};
+  },
+  url: function() {
+    let currentUser = Session.get("currentUser");
+    Router.routes['App.graphMaker'].url({
+      userID: currentUser._id,
+      graphID: this._id
+    });
   }
 })
 

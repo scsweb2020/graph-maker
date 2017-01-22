@@ -18,15 +18,18 @@
 <template name="userGraphEntry">
   <div class="row userGraphEntry" id={{_id}}>
     <div class="col-md-9 graph-info">
-      <label class="graph-title">{{title}}</label>
-      <p class="graph-metadata">{{description}}</p>
+      <p><label class="graph-title">{{title}}</label></p>
+      <!-- <p class="graph-metadata">{{description}}</p> -->
+      <p class="graph-metadata"><strong>URL</strong>:
+        <a href="{{urlFor route='App.graphMaker' data=routeData}}">{{urlFor route='App.graphMaker' data=routeData}}</a>
+      </p>
       <p class="graph-metadata"><strong>Author</strong>: {{userName}}</p>
-      <p class="graph-metadata"><strong>Created on</strong>: {{createTimeStr}}</p>
-      <p class="graph-metadata"><strong>Last updated on</strong>: {{lastEditTimeStr}}</p>
+      <p class="graph-metadata"><strong>Created</strong>: {{createTimeStr}}</p>
+      <p class="graph-metadata"><strong>Last updated</strong>: {{lastEditTimeStr}}</p>
     </div>
     <div class="col-md-3">
       <button class="btn btn-large btn-primary open-graph control-btn">
-        <a href="{{urlFor route='App.graphMaker' data=routeData}}">OPEN GRAPH</a>
+        OPEN GRAPH
       </button>
       <button class="btn btn-large btn-default edit-metadata control-btn" disabled=True>
         EDIT METADATA
