@@ -503,6 +503,9 @@ Template.App_graphMaker.rendered = function() {
   //     draw_button.innerHTML = "Draw mode: " + draw_button_switch;
   // });
 
+  // default to opening the instructions drawer to start with
+  // $('#open-instructions-drawer').click();
+
 }
 
 Template.App_graphMaker.helpers({
