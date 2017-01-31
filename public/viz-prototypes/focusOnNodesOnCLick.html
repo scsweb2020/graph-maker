@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+  .links line {
+    stroke: #aaa;
+  }
+  
+  .nodes circle {
+    pointer-events: all;
+    stroke: none;
+    stroke-width: 40px;
+  }
+  
+  .active {
+    fill: yellow;
+  }
+</style>
+
+<body>
+    <div id="info">Here</div>
+<svg width="960" height="600"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+  var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height");
+
+  var zoom = d3.zoom()
+    .scaleExtent([1 / 2, 4])
+    .on("zoom", zoomed);
+
+  var g = svg.append("g");
+
+  var simulation = d3.forceSimulation()
+    .force("link", d3.forceLink().id(function(d) {
+      return d.id;
+    }))
+    .force("charge", d3.forceManyBody())
+    .force("center", d3.forceCenter(width / 2, height / 2));
+
+  var graph = {
+      
+    "papers": [{
+    "author_arr": [
+      "Zhu, Haiyi", 
+      "Kraut, Robert E.", 
+      "Kittur, Aniket"
+    ], 
+    "paperID": "6UGSWD8D", 
+    "year": 2016, 
+    "title": "A Contingency View of Transferring and Adapting Best Practices Within Online Communities"
+  }, 
+  {
+    "author_arr": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "paperID": "7V9JCFSV", 
+    "year": 2016, 
+    "title": "Improving Crowd Innovation with Expert Facilitation"
+  }, 
+  {
+    "author_arr": [
+      "Dai, Peng", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Paritosh, Praveen", 
+      "Chi, Ed H."
+    ], 
+    "paperID": "AFWXF8CH", 
+    "year": 2015, 
+    "title": "And Now for Something Completely Different: Improving Crowdsourcing Workflows with Micro-Diversions"
+  }, 
+  {
+    "author_arr": [
+      "Ma, Xiaojuan", 
+      "Yu, Li", 
+      "Forlizzi, Jodi L.", 
+      "Dow, Steven P."
+    ], 
+    "paperID": "HTFNIQDD", 
+    "year": 2015, 
+    "title": "Exiting the Design Studio: Leveraging Online Participants for Early-Stage Design Feedback"
+  }],  
+      
+      
+    "nodes": [{
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "name": "Increase quality of work on crowdsourcing platforms"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "name": "Many crowdsourcing tasks are repetitive and tedious, and doing many of these in a row leads to fatigue and poorer work quality"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "f5c41da2-0a85-47b1-a439-e2a213952a40", 
+    "name": "Introduce short diversions that contain small amounts of entertainment"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "name": "Workers want to maximize earnings"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "0e91b787-6490-4776-b37c-b7963846927f", 
+    "name": "Searching for and learning new tasks is time-consuming"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29", 
+    "name": "Workers complete many tasks in a single, prolonged setting"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "22f43593-1736-440c-a23c-8c6266cdf0a6", 
+    "name": "Reduce fatigue"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "6c880340-76d1-44c0-8847-c73e68250577", 
+    "name": "Improve alertness"
+  }, 
+  {
+    "paperID": "AFWXF8CH", 
+    "type": "action", 
+    "id": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
+    "name": "Refresh workers' cognitive resources"
+  }, 
+  {
+    "paperID": "6UGSWD8D", 
+    "type": "action", 
+    "id": "509ac4f8-f4cd-488c-877a-657d3aa32153", 
+    "name": "Improve performance of online community units"
+  }, 
+  {
+    "paperID": "6UGSWD8D", 
+    "type": "action", 
+    "id": "349995f8-2338-4af3-b3be-ea0488460953", 
+    "name": "Transfer \"best practices\" from other units in the community"
+  }, 
+  {
+    "paperID": "6UGSWD8D", 
+    "type": "why-hard", 
+    "id": "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+    "name": "Modifying a practice from another environment may introduce problems and undercut its effectiveness"
+  }, 
+  {
+    "paperID": "6UGSWD8D", 
+    "type": "action", 
+    "id": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a", 
+    "name": "Adapt the transferred practice to fit the local environment"
+  }, 
+  {
+    "paperID": "6UGSWD8D", 
+    "type": "action", 
+    "id": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4", 
+    "name": "Wait until the receiving project has had experience with the imported practice"
+  }, 
+  {
+    "paperID": "6UGSWD8D", 
+    "type": "action", 
+    "id": "73c0bf94-6395-4840-8dde-d050206f7067", 
+    "name": "Ensure practice is introduced by members who have experience in a variety of other projects"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "5c21af6a-ffde-485e-9e33-af152b0db5b9", 
+    "name": "Increase innovation"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "040ba0b2-754f-45ec-82b8-ee72aaeb7504", 
+    "name": "Collect good ideas from crowds"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "name": "Enable crowd members to build on other (good) ideas within the crowd"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "why-hard", 
+    "id": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+    "name": "Novice workers may not know how to productively build on ideas"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "why-hard", 
+    "id": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "name": "Novice workers may rely on the wrong signals (e.g., community upvotes) to find good ideas to build on"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "name": "Enable broad exploration of ideas"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "name": "Enable deep exploration of ideas"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "name": "Enable many crowd workers to participate"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "d2223f81-eece-4b3c-a1db-58255e0aec32", 
+    "name": "Provide gold standard examples"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
+    "name": "Experts provide personalized feedback on individual ideas"
+  }, 
+  {
+    "paperID": "7V9JCFSV", 
+    "type": "action", 
+    "id": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
+    "name": "Experts highlight which promising ideas to build on, and how to build on them"
+  }, 
+  {
+    "paperID": "HTFNIQDD", 
+    "type": "action", 
+    "id": "dd1c9ad1-cfc0-4a54-a19b-d9c319ca09c8", 
+    "name": "Improve design work"
+  }, 
+  {
+    "paperID": "HTFNIQDD", 
+    "type": "action", 
+    "id": "45777434-63c8-41e3-a571-7b24557a325f", 
+    "name": "Provide diverse feedback to designers during needfinding"
+  }, 
+  {
+    "paperID": "HTFNIQDD", 
+    "type": "why-hard", 
+    "id": "d5f06177-4480-4395-9ec8-ec9eeb401e34", 
+    "name": "In-person feedback-providers are difficult to recruit, leading designers to resort to convenience samples"
+  }, 
+  {
+    "paperID": "HTFNIQDD", 
+    "type": "action", 
+    "id": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b", 
+    "name": "Obtain early-stage feedback from online crowds"
+  }, 
+  {
+    "paperID": "HTFNIQDD", 
+    "type": "why-hard", 
+    "id": "76c17d41-f63c-42cf-8c2c-c521917c331f", 
+    "name": "Workers may not know how to clearly articulate needs"
+  }, 
+  {
+    "paperID": "HTFNIQDD", 
+    "type": "action", 
+    "id": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6", 
+    "name": "Workers may feel more comfortable providing feedback in-person"
+  }, 
+  {
+    "paperID": "HTFNIQDD", 
+    "type": "action", 
+    "id": "a5d98044-ac28-44e8-9d3d-d00305a46b3a", 
+    "name": "Workers videorecord responses to constructed scenarios that describe the design situation and a possible solution"
+  }],
+  
+  
+  "links": [{
+    "source": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "946307e7-fc90-45de-8437-68c8758867bd", 
+    "target": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
+  }, 
+  {
+    "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "14b6f110-86cb-41af-9d12-3c5179ab5c21", 
+    "target": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
+  }, 
+  {
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "3fe81ab0-f0e5-4cf0-a599-f31f14b15291", 
+    "target": "0e91b787-6490-4776-b37c-b7963846927f"
+  }, 
+  {
+    "source": "0e91b787-6490-4776-b37c-b7963846927f", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "af318500-39c7-4d35-bbec-144c59ccb585", 
+    "target": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29"
+  }, 
+  {
+    "source": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "972410db-702b-4e09-8376-850b8ad4f11b", 
+    "target": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
+  }, 
+  {
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "661416a5-86d8-4d8a-8191-bb04c04769e9", 
+    "target": "22f43593-1736-440c-a23c-8c6266cdf0a6"
+  }, 
+  {
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "534e9ee8-ede1-4738-b9da-9a26939a3e80", 
+    "target": "6c880340-76d1-44c0-8847-c73e68250577"
+  }, 
+  {
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "56410285-2f66-49f6-8317-7ad552e98029", 
+    "target": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
+  }, 
+  {
+    "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "ca9f6bab-c01f-4fd9-b396-6c178b8ee55c", 
+    "target": "22f43593-1736-440c-a23c-8c6266cdf0a6"
+  }, 
+  {
+    "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "bfee448d-865f-4647-ac96-3db13b7d28f1", 
+    "target": "6c880340-76d1-44c0-8847-c73e68250577"
+  }, 
+  {
+    "source": "22f43593-1736-440c-a23c-8c6266cdf0a6", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "19c7938f-652b-4769-9860-d33af8ad8fc0", 
+    "target": "f5c41da2-0a85-47b1-a439-e2a213952a40"
+  }, 
+  {
+    "source": "6c880340-76d1-44c0-8847-c73e68250577", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "79736379-1ecf-494c-b155-1beaa12e7cde", 
+    "target": "f5c41da2-0a85-47b1-a439-e2a213952a40"
+  }, 
+  {
+    "source": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "0893a62d-7c9b-48e3-8218-6edcf9166c0a", 
+    "target": "f5c41da2-0a85-47b1-a439-e2a213952a40"
+  }, 
+  {
+    "source": "349995f8-2338-4af3-b3be-ea0488460953", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "f092dab0-f49f-49e7-845a-0c86ac123105", 
+    "target": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a"
+  }, 
+  {
+    "source": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "9633c2e5-61d1-46f4-8138-d325897f468b", 
+    "target": "9bdb9c66-7adc-4da1-b800-56ea238d5678"
+  }, 
+  {
+    "source": "509ac4f8-f4cd-488c-877a-657d3aa32153", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "bf1ce9b6-1aaa-4376-8489-14328d09d3e1", 
+    "target": "349995f8-2338-4af3-b3be-ea0488460953"
+  }, 
+  {
+    "source": "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "bce3c8e1-719d-4b4e-ab66-beda92f93252", 
+    "target": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4"
+  }, 
+  {
+    "source": "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "c7fa9926-a230-4eb1-9676-94cfdfa7df70", 
+    "target": "73c0bf94-6395-4840-8dde-d050206f7067"
+  }, 
+  {
+    "source": "5c21af6a-ffde-485e-9e33-af152b0db5b9", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "0d8e1234-d32e-4729-b0b1-ff1ed7ea405f", 
+    "target": "040ba0b2-754f-45ec-82b8-ee72aaeb7504"
+  }, 
+  {
+    "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "2f774e65-d1fd-49e3-9600-2124c722f432", 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
+  }, 
+  {
+    "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "84a7042c-1fc8-4a74-8177-a59443897a00", 
+    "target": "df366ec9-124a-4155-b1ba-45a4fc23c7f5"
+  }, 
+  {
+    "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "8d8146a4-34e1-4e55-8233-f5d48f020501", 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+  }, 
+  {
+    "source": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "217b5ead-7837-4f36-a7f3-9510d0fc4016", 
+    "target": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f"
+  }, 
+  {
+    "source": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "f0f57977-b2aa-40f3-931c-d51c99239673", 
+    "target": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890"
+  }, 
+  {
+    "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "6d1b1dbd-ce7a-4669-b7d7-c139c461b324", 
+    "target": "952361c9-05ff-4914-a626-51a7aa796366"
+  }, 
+  {
+    "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "cf811e86-7f0b-4817-b80e-b0d4758cfe1f", 
+    "target": "3a7e20ac-6f84-41d9-b38d-ddb6654989af"
+  }, 
+  {
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "certainty": "uncertain", 
+    "valence": "negative", 
+    "id": "472190ac-3468-46bb-a555-1eea21748b83", 
+    "target": "952361c9-05ff-4914-a626-51a7aa796366"
+  }, 
+  {
+    "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "f9706504-d4d0-438e-b0cd-9abefb0b22cf", 
+    "target": "b936752d-d9fe-47b3-874d-af45a86a4074"
+  }, 
+  {
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "0456a637-fad5-41d8-ad35-07f8f3d91c0e", 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
+  }, 
+  {
+    "source": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "51780af5-a2da-436c-919f-ddf9a6655624", 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
+  }, 
+  {
+    "source": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "fcb3d683-6c94-4b69-b90f-aae2ec8b5e11", 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+  }, 
+  {
+    "source": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "0c03251e-4ffb-415a-84d7-06ea4494c9dd", 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
+  }, 
+  {
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "2b877bbe-1749-4fa1-8b89-3a8c38efb8c9", 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+  }, 
+  {
+    "source": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "cafdedaf-80f4-4483-8e06-fc53cb13d299", 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+  }, 
+  {
+    "source": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "certainty": "uncertain", 
+    "valence": "positive", 
+    "id": "e4fbcefb-c61f-4685-b9e6-60f208180e4c", 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+  }, 
+  {
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "04e3bffc-38db-4679-8a89-b927baae091d", 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+  }, 
+  {
+    "source": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "ce2cc4d3-bf18-4715-be2c-98b1a88644c7", 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+  }, 
+  {
+    "source": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "878fa46e-da2b-4731-af58-477d01ab841f", 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+  }, 
+  {
+    "source": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "c02db17f-b047-495c-8a71-63a8e9617c01", 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+  }, 
+  {
+    "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "65e5eecc-fd4c-43f6-8951-0b72b73f21f2", 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+  }, 
+  {
+    "source": "dd1c9ad1-cfc0-4a54-a19b-d9c319ca09c8", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "2bbe6dd7-cd15-4250-a3ac-6cf124455b33", 
+    "target": "45777434-63c8-41e3-a571-7b24557a325f"
+  }, 
+  {
+    "source": "45777434-63c8-41e3-a571-7b24557a325f", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "9868689a-e7c3-40fc-b376-08fdbfcc4773", 
+    "target": "d5f06177-4480-4395-9ec8-ec9eeb401e34"
+  }, 
+  {
+    "source": "d5f06177-4480-4395-9ec8-ec9eeb401e34", 
+    "certainty": "certain", 
+    "valence": "positive", 
+    "id": "2a42b722-4422-40ce-bab7-380078e6b8d2", 
+    "target": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b"
+  }, 
+  {
+    "source": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "ed125115-e765-42b7-a9a8-eefa869443f8", 
+    "target": "76c17d41-f63c-42cf-8c2c-c521917c331f"
+  }, 
+  {
+    "source": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "70a0f6ae-3e4f-4a8c-9e86-716169bc27e9", 
+    "target": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6"
+  }, 
+  {
+    "source": "76c17d41-f63c-42cf-8c2c-c521917c331f", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "201b9e18-b714-49b9-a3e2-397e4e1c2048", 
+    "target": "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
+  }, 
+  {
+    "source": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6", 
+    "certainty": "certain", 
+    "valence": "negative", 
+    "id": "430b7de8-b049-4f13-9100-a261a552c328", 
+    "target": "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
+  }]
+  }
+  
+  
+  //////////////////////////////////////////////////////////////////////
+  
+  
+  var scaleFactor=6;
+  var radius=3;    
+
+  var link = g.append("g")
+    .attr("class", "links")
+    .selectAll("line")
+    .data(graph.links)
+    .enter().append("line");
+
+  var node = g.append("g")
+    .attr("class", "nodes")
+    .selectAll("circle")
+    .data(graph.nodes)
+    .enter().append("circle")
+    .attr("r", radius)
+    .on('click', clicked);
+
+  var text = g.append("g")
+    .attr("class", "labels")
+    .selectAll("text")
+    .data(graph.nodes)
+    .enter().append("text")
+    .attr("font-size","6px")
+    .attr("dx", 6)
+    .attr("dy", ".15em")
+    .text(function(d) { return d.name });
+
+  simulation
+    .nodes(graph.nodes)
+    .on("tick", ticked);
+
+  simulation.force("link")
+    .links(graph.links);
+
+  function ticked() {
+    link
+      .attr("x1", function(d) {
+        return d.source.x;
+      })
+      .attr("y1", function(d) {
+        return d.source.y;
+      })
+      .attr("x2", function(d) {
+        return d.target.x;
+      })
+      .attr("y2", function(d) {
+        return d.target.y;
+      });
+
+    node
+      .attr("cx", function(d) {
+        return d.x;
+      })
+      .attr("cy", function(d) {
+        return d.y;
+      });
+      
+    text.attr("x", function(d) { return d.x; })
+        .attr("y", function(d) { return d.y; });  
+  }
+
+  var active = d3.select(null);
+
+  function clicked(d) {
+
+    if (active.node() === this){
+      active.classed("active", false);
+      return reset();
+    }
+    
+    active = d3.select(this).classed("active", true);
+
+    svg.transition()
+      .duration(750)
+      .call(zoom.transform,
+        d3.zoomIdentity
+        .translate(width / 2, height / 2)
+        .scale(scaleFactor)
+        .translate(-(+active.attr('cx')), -(+active.attr('cy')))
+      );
+      
+      d3.select("#info").text(d.id);
+  }
+
+  function reset() {
+    svg.transition()
+      .duration(750)
+      .call(zoom.transform,
+        d3.zoomIdentity
+        .translate(0, 0)
+        .scale(1)
+      );
+  }
+
+  function zoomed() {
+    g.attr("transform", d3.event.transform);
+  }
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> 
+</body>
