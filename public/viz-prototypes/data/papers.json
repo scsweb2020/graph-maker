@@ -1,0 +1,44 @@
+[
+  {
+    "author_arr": [
+      "Zhu, Haiyi", 
+      "Kraut, Robert E.", 
+      "Kittur, Aniket"
+    ], 
+    "paperID": "6UGSWD8D", 
+    "year": 2016, 
+    "title": "A Contingency View of Transferring and Adapting Best Practices Within Online Communities"
+  }, 
+  {
+    "author_arr": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "paperID": "7V9JCFSV", 
+    "year": 2016, 
+    "title": "Improving Crowd Innovation with Expert Facilitation"
+  }, 
+  {
+    "author_arr": [
+      "Dai, Peng", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Paritosh, Praveen", 
+      "Chi, Ed H."
+    ], 
+    "paperID": "AFWXF8CH", 
+    "year": 2015, 
+    "title": "And Now for Something Completely Different: Improving Crowdsourcing Workflows with Micro-Diversions"
+  }, 
+  {
+    "author_arr": [
+      "Ma, Xiaojuan", 
+      "Yu, Li", 
+      "Forlizzi, Jodi L.", 
+      "Dow, Steven P."
+    ], 
+    "paperID": "HTFNIQDD", 
+    "year": 2015, 
+    "title": "Exiting the Design Studio: Leveraging Online Participants for Early-Stage Design Feedback"
+  }
+]

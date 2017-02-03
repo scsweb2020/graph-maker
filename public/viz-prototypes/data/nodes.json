@@ -1,0 +1,546 @@
+[
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Increase quality of work on crowdsourcing platforms", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "73e89487-f040-40c8-a90d-894451bf167f"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Many crowdsourcing tasks are repetitive and tedious, and doing many of these in a row leads to fatigue and poorer work quality", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Introduce short diversions that contain small amounts of entertainment", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "f5c41da2-0a85-47b1-a439-e2a213952a40"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Workers want to maximize earnings", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "2869074d-26a4-469f-9495-f900cfae2bd5"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Searching for and learning new tasks is time-consuming", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "0e91b787-6490-4776-b37c-b7963846927f"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Workers complete many tasks in a single, prolonged setting", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Reduce fatigue", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "22f43593-1736-440c-a23c-8c6266cdf0a6"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Improve alertness", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "6c880340-76d1-44c0-8847-c73e68250577"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Refresh workers' cognitive resources", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Improve performance of online community units", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "509ac4f8-f4cd-488c-877a-657d3aa32153"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Transfer \"best practices\" from other units in the community", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "349995f8-2338-4af3-b3be-ea0488460953"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Modifying a practice from another environment may introduce problems and undercut its effectiveness", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "why-hard", 
+    "id": "9bdb9c66-7adc-4da1-b800-56ea238d5678"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Adapt the transferred practice to fit the local environment", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Wait until the receiving project has had experience with the imported practice", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Ensure practice is introduced by members who have experience in a variety of other projects", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "73c0bf94-6395-4840-8dde-d050206f7067"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Increase innovation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "5c21af6a-ffde-485e-9e33-af152b0db5b9"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Collect good ideas from crowds", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "040ba0b2-754f-45ec-82b8-ee72aaeb7504"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Enable crowd members to build on other (good) ideas within the crowd", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "df366ec9-124a-4155-b1ba-45a4fc23c7f5"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Novice workers may not know how to productively build on ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "why-hard", 
+    "id": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Novice workers may rely on the wrong signals (e.g., community upvotes) to find good ideas to build on", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "why-hard", 
+    "id": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Enable broad exploration of ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "952361c9-05ff-4914-a626-51a7aa796366"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Enable deep exploration of ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "3a7e20ac-6f84-41d9-b38d-ddb6654989af"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Enable many crowd workers to participate", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "b936752d-d9fe-47b3-874d-af45a86a4074"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Provide gold standard examples", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "d2223f81-eece-4b3c-a1db-58255e0aec32"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Experts provide personalized feedback on individual ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Experts highlight which promising ideas to build on, and how to build on them", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Chan, Joel", 
+      "Dang, Steven", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Improve design work", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "action", 
+    "id": "dd1c9ad1-cfc0-4a54-a19b-d9c319ca09c8"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Provide diverse feedback to designers during needfinding", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "action", 
+    "id": "45777434-63c8-41e3-a571-7b24557a325f"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "In-person feedback-providers are difficult to recruit, leading designers to resort to convenience samples", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "why-hard", 
+    "id": "d5f06177-4480-4395-9ec8-ec9eeb401e34"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Obtain early-stage feedback from online crowds", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "action", 
+    "id": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers may not know how to clearly articulate needs", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "why-hard", 
+    "id": "76c17d41-f63c-42cf-8c2c-c521917c331f"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers may feel more comfortable providing feedback in-person", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "action", 
+    "id": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers videorecord responses to constructed scenarios that describe the design situation and a possible solution", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "action", 
+    "id": "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
+  }
+]
