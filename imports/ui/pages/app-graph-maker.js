@@ -26,7 +26,7 @@ Template.App_graphMaker.rendered = function() {
   var row_count = Math.floor(Math.sqrt(initial_nodes.length)) + 1;
 
   // initialize the graph
-  cy = window.cy = cytoscape({
+  var cy = window.cy = cytoscape({
 
       container: document.getElementById('cy'),
 
@@ -173,6 +173,22 @@ Template.App_graphMaker.rendered = function() {
       },
   });
 
+  var ur = cy.undoRedo({
+    isDebug: true
+  });
+
+  cy.on("afterUndo", function (e, name) {
+      console.log("Undid action: " + name);
+  });
+
+  cy.on("afterRedo", function (e, name) {
+      console.log("Redid action: " + name);
+  });
+
+  cy.on("afterDo", function (e, name) {
+      console.log("Did action: " + name);
+  });
+
   // handles = new CytoscapeEdgeEditation;
   // handles.init(cy);
 
@@ -190,6 +206,15 @@ Template.App_graphMaker.rendered = function() {
   var clickPosition;
   cy.on('click', function(event) {
     clickPosition = event.cyPosition;
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (e.ctrlKey && e.target.nodeName === 'BODY') {
+      if (e.which === 90)
+          ur.undo();
+      else if (e.which === 89)
+          ur.redo();
+    }
   });
 
   // Add node on double click
@@ -210,11 +235,14 @@ Template.App_graphMaker.rendered = function() {
                 type: 'action',
                 name: newName
             };
-
-            cy.add({
-                data: data,
-                position: clickPosition
+            ur.do("add", {
+              data: data,
+              position: clickPosition
             });
+            // cy.add({
+            //     data: data,
+            //     position: clickPosition
+            // });
           }
         }
       });
@@ -236,7 +264,8 @@ Template.App_graphMaker.rendered = function() {
       // Check that focus is not in an input element
       if (deleteKeys.indexOf(event.keyCode) > -1 &&
         event.target.nodeName !== 'INPUT') {
-          cy.$(':selected').remove();
+          // cy.$(':selected').remove();
+          ur.do("remove", cy.$(':selected'));
       }
   });
 
@@ -273,7 +302,8 @@ Template.App_graphMaker.rendered = function() {
               message: "Are you sure you want to remove this element? You cannot undo this action.",
               callback: function(ok) {
                 if (ok) {
-                  event.cyTarget.remove();
+                  // event.cyTarget.remove();
+                  ur.do("remove", event.cyTarget);
                 }
               }
             });
@@ -424,7 +454,8 @@ Template.App_graphMaker.rendered = function() {
             //   message: "Are you sure you want to remove these element? You cannot undo this action.",
             //   callback: function(ok) {
             //     if (ok) {
-                  event.cyTarget.remove();
+                  // event.cyTarget.remove();
+                  ur.do("remove", event.cyTarget);
                 // }
               // }
             // });
