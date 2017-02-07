@@ -36,13 +36,13 @@ d3.json("data/graph.json", function(error, graph) {
     .on("end", dragended));
 
 
-    var text =svg.append("g")
-     .attr("class", "textNode")
-    .data(graph.nodes)
-    .enter().append("text")
-    .text(function (d) { return d.name; })
-    .attr("x", 12)
-    .attr("dy", ".35em");
+//    var text =svg.append("g")
+//     .attr("class", "textNode")
+//    .data(graph.nodes)
+//    .enter().append("text")
+//    .text(function (d) { return d.name; })
+//    .attr("x", 12)
+//    .attr("dy", ".35em");
     
     
   simulation

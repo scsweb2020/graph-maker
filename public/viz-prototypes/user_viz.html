@@ -18,6 +18,16 @@
 
 <body>
     <div id="info">Here</div>
+    
+     <div id="dropdownMenu" >
+        <select id="dropdownValue"  onchange="triggerFilter()">
+  <option value="Paritosh, Praveen">Paritosh</option>
+  <option value="Kittur, Aniket">Kittur</option>
+  <option value="Chan, Joel">Chan</option>
+  <option value="Forlizzi, Jodi L.">Forlizzi</option>
+</select>
+    </div>
+    
 <svg width="960" height="600"></svg>
 <script src="https://d3js.org/d3.v4.min.js"></script>
 <script>
@@ -646,6 +656,15 @@
     .data(graph.nodes)
     .enter().append("circle")
     .attr("r", radius)
+    .attr("class", "dataNodes")
+    .attr('id', function(d){ return 'id' + d.id; })
+    .style("fill", function(d){
+        if(d.type=='action')
+            return 'green';
+        
+        else if(d.type=='why-hard')
+            return 'red';
+    })
     .on('click', clicked); // set event handler for click event
 
   // define visual properties of node labels
@@ -741,6 +760,35 @@
         .scale(1)
       );
   }
+    
+    
+var toggleTime=500;  //set toggle time for transition (in milliseconds)
+
+function triggerFilter(){    
+
+d3.json("data/author_connections.json", function(d) {
+
+var listOfNodes=(d[document.getElementById("dropdownValue").value]); 
+    
+    for(i=0; i< listOfNodes.length; i++){
+    listOfNodes[i]= '#id' + listOfNodes[i];
+    }
+    
+    var stringOfNodes= listOfNodes.toString();
+    console.log(stringOfNodes);
+    
+    filterByName(stringOfNodes);    
+});
+}
+    
+
+
+function filterByName(relevantArray){
+         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
+         d3.selectAll(relevantArray).transition().duration(toggleTime).style("opacity", 1);
+                  
+}  
+    
 
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
