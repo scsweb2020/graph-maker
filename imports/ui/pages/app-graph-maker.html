@@ -45,6 +45,16 @@
               </div>
               <p style="margin-top:10px;">Last saved: {{lastSaved}}</p>
           </div>
+          <div id="importer">
+            <div class="drawer-heading">
+                <h2 class="drawer-title">Import other graphs</h2>
+            </div>
+            <div class="drawer-body">
+              {{#each userGraphs}}
+                {{> importGraphEntry}}
+              {{/each}}
+            </div>
+          </div>
             <div class="drawer-heading">
                 <h2 class="drawer-title">Instructions</h2>
             </div>
@@ -104,6 +114,26 @@
           <button type="button" id="save-changes" class="btn btn-primary" data-dismiss="modal">Save changes</button>
         </div>
       </div>
+    </div>
+  </div>
+</template>
+
+<template name="importGraphEntry">
+  <div class="row importGraphEntry" id={{_id}}>
+    <div class="col-md-9 graph-info">
+      <p><label class="graph-title">{{title}}</label></p>
+      <!-- <p class="graph-metadata">{{description}}</p> -->
+    </div>
+    <div class="col-md-3">
+      {{#if imported}}
+        <button class="btn btn-secondary import-graph control-btn" disabled>
+          Imported
+        </button>
+      {{else}}
+        <button class="btn btn-primary import-graph control-btn">
+          Import
+        </button>
+      {{/if}}
     </div>
   </div>
 </template>

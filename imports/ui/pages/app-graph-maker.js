@@ -26,7 +26,7 @@ Template.App_graphMaker.rendered = function() {
   var row_count = Math.floor(Math.sqrt(initial_nodes.length)) + 1;
 
   // initialize the graph
-  var cy = window.cy = cytoscape({
+  cy = window.cy = cytoscape({
 
       container: document.getElementById('cy'),
 
@@ -173,7 +173,7 @@ Template.App_graphMaker.rendered = function() {
       },
   });
 
-  var ur = cy.undoRedo({
+  ur = cy.undoRedo({
     isDebug: true
   });
 
@@ -188,19 +188,6 @@ Template.App_graphMaker.rendered = function() {
   cy.on("afterDo", function (e, name) {
       console.log("Did action: " + name);
   });
-
-  // handles = new CytoscapeEdgeEditation;
-  // handles.init(cy);
-
-  // handles.registerHandle({
-  //   positionX: "left",          //horizontal position of the handle  (left | center | right)
-  //   positionY: "center",        //vertical position of the handle  (top | center | bottom)
-  //   color: "#48FF00",           //color of the handle
-  //   type: "some_type",          //stored as data() attribute, can be used for styling
-  //   single: true,               //wheter only one edge of this type can start from same node (default false)
-  //   nodeTypeNames: ["action", "why-hard"],    //which types of nodes will contain this handle
-  //   noMultigraph: false         //whereter two nodes can't be connected with multiple edges (does not consider orientation)
-  // });
 
   // Track the x,y position of the last click
   var clickPosition;
@@ -239,22 +226,9 @@ Template.App_graphMaker.rendered = function() {
               data: data,
               position: clickPosition
             });
-            // cy.add({
-            //     data: data,
-            //     position: clickPosition
-            // });
           }
         }
       });
-      // var data = {
-      //     group: 'nodes',
-      //     name: 'new node'
-      // };
-      //
-      // cy.add({
-      //     data: data,
-      //     position: clickPosition
-      // });
   });
 
   window.addEventListener('keydown', function(event) {
@@ -516,27 +490,6 @@ Template.App_graphMaker.rendered = function() {
     spacingFactor: 1.25,
   });
 
-  // initiate "draw mode" for drawing edges
-  // document.querySelector('#draw-mode').addEventListener('click', function(e) {
-  //     var draw_button = e.target;
-  //     var draw_mode = draw_button.getAttribute("data-draw-mode");
-  //     console.log(draw_mode);
-  //     if (draw_mode === "drawon") {
-  //         draw_mode = "drawoff";
-  //         draw_button_switch = "OFF";
-  //     }
-  //     else {
-  //         draw_mode = "drawon";
-  //         draw_button_switch = "ON";
-  //     }
-  //     cy.edgehandles(draw_mode);
-  //     draw_button.setAttribute("data-draw-mode", draw_mode);
-  //     draw_button.innerHTML = "Draw mode: " + draw_button_switch;
-  // });
-
-  // default to opening the instructions drawer to start with
-  // $('#open-instructions-drawer').click();
-
 }
 
 Template.App_graphMaker.helpers({
@@ -553,6 +506,15 @@ Template.App_graphMaker.helpers({
       return Session.get("currentGraph").metaData['paperID'];
     } else {
       return "";
+    }
+  },
+  userGraphs: function() {
+    let currentUser = Session.get("currentUser");
+    if (currentUser.userName === "ADMIN") {
+      return Graphs.find({_id: {$ne: Session.get("currentGraph")._id}}, {sort: { lastEditTime : -1 }});
+    } else {
+      return Graphs.find({_id: {$ne: Session.get("currentGraph")._id},
+                userID: currentUser._id}, {sort: { lastEditTime : -1 }});
     }
   }
 });
@@ -580,78 +542,14 @@ Template.App_graphMaker.events({
     dlAnchorElem.setAttribute("download", "my-graph.json");
     dlAnchorElem.click();
   },
-  // 'click .save-changes': function() {
-  //   // cy.$(':selected').unselect();
-  //   let currentName = Session.get("currentGraph").title;
-  //   let currentPaperID = "";
-  //   if (Session.get("currentGraph").metaData['paperID']) {
-  //     currentPaperID = Session.get("currentGraph").metaData['paperID'];
-  //   }
-  //   let message = '<div class="bootbox-form"><div class="form-group row"><label for="graph-title" class="col-2 col-form-label">Title</label><div class="col-10"><input class="bootbox-input bootbox-input-text form-control" type="text" value="' + currentName +
-  //   '" id="graph-title"></div></div><div class="form-group row"><label for="graph-paper-ID" class="col-2 col-form-label">PaperID</label><div class="col-10"><input class="bootbox-input bootbox-input-text form-control" type="text" value="' + currentPaperID + '" id="graph-paper-ID"></div></div></div></div>'
-  //   // let message = '<div class="form-container"><div class="form-group row"><label for="graph-title" class="col-2 col-form-label">Title</label><div class="col-10"><input class="form-control" type="text" value="' + currentName +
-  //   // '" id="graph-title"></div></div><div class="form-group row"><label for="graph-paper-ID" class="col-2 col-form-label">PaperID</label><div class="col-10"><input class="form-control" type="text" value="' + currentPaperID + '" id="graph-paper-ID"></div></div></div></div>'
-  //   // console.log("saving changes");
-  //   bootbox.dialog({
-  //     title: "Save changes",
-  //     message: message,
-  //     buttons: {
-  //       confirm: {
-  //           label: 'Save',
-  //           className: 'btn-success'
-  //       },
-  //       cancel: {
-  //           label: 'Cancel',
-  //           className: 'btn-danger'
-  //       }
-  //     },
-  //     callback: function(result) {
-  //       console.log("doing callback stuff with " + result);
-  //       let title = $('#graph-title').val();
-  //       let paperID = $('#graph-paper-ID').val();
-  //       cy.nodes().forEach(function(node) {
-  //         node.data('paperID', paperID);
-  //       });
-  //       Graphs.update({_id: Session.get("currentGraph")._id},
-  //       {$set: {graphData: cy.json(),
-  //         lastEditTime: new Date().getTime(),
-  //         title: title,
-  //         "metadata.paperID": paperID
-  //       }});
-  //     }
-  //   })
-  //
-  //   //     bootbox.prompt({
-  //   //   size: "small",
-  //   //   title: "(Optional) (Re)name this graph",
-  //   //   // inputType: "textarea",
-  //   //   value: currentName,
-  //   //   callback: function(newName) {
-  //   //     if (newName != null) {
-  //   //       Graphs.update({_id: Session.get("currentGraph")._id},
-  //   //       {$set: {graphData: cy.json(),
-  //   //         lastEditTime: new Date().getTime(),
-  //   //         title: newName}});
-  //   //     }
-  //   //   }
-  //   // });
-  //
-  //   // let newName = prompt("(Optional) (re)name this graph", currentName);
-  //   // Graphs.update({_id: Session.get("currentGraph")._id},
-  //   // {$set: {graphData: cy.json(),
-  //   //   lastEditTime: new Date().getTime(),
-  //   //   title: newName}});
-  //   // alert("Successfully saved!");
-  // },
-  // 'contextmenu': function() {
-  //   console.log("right click!");
-  // }
   'click #save-changes': function() {
     let title = $('#graph-title').val();
     let paperID = $('#graph-paper-ID').val();
-    cy.nodes().forEach(function(node) {
-      node.data('paperID', paperID);
-    });
+    if (paperID != "aggregate") {
+      cy.nodes().forEach(function(node) {
+        node.data('paperID', paperID);
+      });
+    }
     Graphs.update({_id: Session.get("currentGraph")._id},
     {$set: {graphData: cy.json(),
       lastEditTime: new Date().getTime(),
@@ -684,14 +582,152 @@ Template.EditGraphMetadata.events({
   'click #save-changes': function() {
     let title = $('#graph-title').val();
     let paperID = $('#graph-paper-ID').val();
-    cy.nodes().forEach(function(node) {
-      node.data('paperID', paperID);
-    });
+    if (paperID != "aggregate") {
+      cy.nodes().forEach(function(node) {
+        node.data('paperID', paperID);
+      });
+    }
     Graphs.update({_id: Session.get("currentGraph")._id},
     {$set: {graphData: cy.json(),
       lastEditTime: new Date().getTime(),
       title: title,
-      "metadata.paperID": paperID
+      "metaData.paperID": paperID
     }});
   }
 });
+
+Template.importGraphEntry.helpers({
+  imported: function() {
+    let result = false;
+    if (!Session.get("currentGraph").metaData.hasOwnProperty("componentPapers")) {
+      result = false;
+    } else {
+      let componentPapers = Session.get("currentGraph").metaData.componentPapers;
+      console.log("Component papers: " + JSON.stringify(componentPapers));
+      console.log("This paper ID: " + this.metaData.paperID);
+      if (componentPapers.indexOf(this.metaData.paperID) > -1) {
+        result = true;
+      } else {
+        result = false;
+      }
+    }
+    return result;
+  }
+})
+
+Template.importGraphEntry.events({
+  'click .import-graph': function(event) {
+    console.log("Importing graph!")
+    console.log(this);
+    importElements(this);
+  },
+});
+
+let overlapID = function(targetID, destinationElements) {
+  let result = false;
+  destinationElements.forEach(function(d) {
+    if (targetID === d.data.id) {
+      console.log(targetID);
+      console.log(d.data.id);
+      result = true;
+    }
+  })
+  return result;
+}
+
+let propagateNodeIDchange = function(oldID, newID, edges) {
+  console.log("Propagating node ID changes");
+  let modifiedEdges = [];
+  edges.forEach(function(e) {
+    if (e.data.source === oldID) {
+      console.log("Old edge: " + JSON.stringify(e));
+      e.data.source = newID;
+      console.log("New edge: " + JSON.stringify(e));
+    } else if (e.data.target === newID) {
+      console.log("Old edge: " + JSON.stringify(e));
+      e.data.target = newID;
+      console.log("New edge: " + JSON.stringify(e));
+    } else {
+      //
+    }
+    modifiedEdges.push(e);
+  });
+  return modifiedEdges;
+}
+
+let importElements = function(sourceGraph) {
+    let destinationGraph = Session.get("currentGraph").graphData;
+    let destNodes = destinationGraph.elements.nodes;
+    let destEdges = destinationGraph.elements.edges;
+    let srcEdges = sourceGraph.graphData.elements.edges;
+    let newNodes = [];
+
+    if (!destNodes) {
+      newNodes = sourceGraph.graphData.elements.nodes;
+    } else {
+      // first make sure nodes don't overlap
+      // propagate changes
+      sourceGraph.graphData.elements.nodes.forEach(function(n) {
+        let copy = n;
+        if (overlapID(n.data.id, destNodes)) {
+          console.log("Overlapping node ID from source graph! Fixing...");
+          let oldID = n.data.id;
+          let newID = Random.hexString(20).toLowerCase();
+          while (overlapID(newID, newNodes)) {
+            newID = Random.hexString(20).toLowerCase();
+          }
+          copy.data.id = newID;
+          srcEdges = propagateNodeIDchange(oldID, newID, srcEdges);
+        }
+        newNodes.push(copy);
+      });
+    }
+
+    let newEdges = [];
+    if (!destEdges) {
+      newEdges = sourceGraph.graphData.elements.edges;
+    } else {
+      // then make sure edge ids don't overlap
+      srcEdges.forEach(function(e) {
+        let copy = e;
+        if (overlapID(e.data.id, destEdges)) {
+          console.log("Overlapping edge ID from source graph! Fixing...");
+          let oldID = e.data.id;
+          let newID = Random.hexString(20).toLowerCase();
+          while (overlapID(newID, newEdges)) {
+            newID = Random.hexString(20).toLowerCase();
+          }
+          copy.data.id = newID;
+        }
+        newEdges.push(copy);
+      });
+    }
+    console.log({'newNodes': newNodes, 'newEdges': newEdges});
+    newNodes.forEach(function(n) {
+      ur.do("add", n);
+    });
+    newEdges.forEach(function(e) {
+      ur.do("add", e);
+    });
+    // autosave
+    if (Session.get("currentGraph").metaData.hasOwnProperty("componentPapers")) {
+      let componentPapers = Session.get("currentGraph").metaData.componentPapers;
+      if (componentPapers.indexOf(sourceGraph.metaData.paperID) < 0) {
+        componentPapers.push(sourceGraph.metaData.paperID);
+      }
+
+      Graphs.update({_id: Session.get("currentGraph")._id},
+      {$set: {graphData: cy.json(),
+        lastEditTime: new Date().getTime(),
+        "metaData.componentPapers": componentPapers
+      }});
+    } else {
+      Graphs.update({_id: Session.get("currentGraph")._id},
+      {$set: {graphData: cy.json(),
+        lastEditTime: new Date().getTime(),
+        "metaData.componentPapers": [sourceGraph.metaData.paperID]
+      }});
+    }
+
+
+}
