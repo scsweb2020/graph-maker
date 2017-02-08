@@ -322,17 +322,33 @@ Template.App_graphMaker.rendered = function() {
             // cy.$(':selected').unselect();
             // get the current name of the node
             console.log(event.cyTarget);
-            // let currentName = event.cyTarget.data('name');
+            let currentPaperIDs = event.cyTarget.data('paperID');
+            if (!currentPaperIDs) {
+              currentPaperIDs = "";
+            }
             // prompt the user for a new name
             // (provide current name as default)
             bootbox.prompt({
               size: "small",
-              title: "Set paper ID",
+              title: "Set paper ID(s) (if more than one, separate with commas)",
               // inputType: "textarea",
-              // value: currentName,
-              callback: function(id) {
-                if (id != null) {
-                  event.cyTarget.data('paperID', id);
+              value: currentPaperIDs,
+              callback: function(ids) {
+                if (ids != null) {
+                  let toAdd = ids.split(",");
+                  let newIDs = event.cyTarget.data('paperID');
+                  if (newIDs) {
+                    toAdd.forEach(function(i) {
+                      if (newIDs.indexOf(i) < 0) {
+                        newIDs.push(i);
+                      }
+                    });
+                    event.cyTarget.data('paperID', newIDs);
+                  } else {
+                    event.cyTarget.data('paperID', toAdd);
+                  }
+
+
                 // } else {
                 //   event.cyTarget.data('name', currentName);
                 }
@@ -436,6 +452,14 @@ Template.App_graphMaker.rendered = function() {
           }
         },
         {
+          id: 'merge-selected',
+          title: 'merged selected',
+          coreAsWell: true,
+          onClickFunction: function(event) {
+            console.log(cy.$(':selected'));
+          }
+        },
+        {
           id: 'select-all-nodes',
           title: 'select all nodes',
           selector: 'node',
@@ -508,6 +532,13 @@ Template.App_graphMaker.helpers({
       return "";
     }
   },
+  componentPapers: function() {
+    if (Session.get("currentGraph").metaData['componentPapers']) {
+      return Session.get("currentGraph").metaData['componentPapers'];
+    } else {
+      return "";
+    }
+  },
   userGraphs: function() {
     let currentUser = Session.get("currentUser");
     if (currentUser.userName === "ADMIN") {
@@ -545,16 +576,29 @@ Template.App_graphMaker.events({
   'click #save-changes': function() {
     let title = $('#graph-title').val();
     let paperID = $('#graph-paper-ID').val();
+    let componentPapers = $('#graph-component-papers').val().split(",");
     if (paperID != "aggregate") {
       cy.nodes().forEach(function(node) {
-        node.data('paperID', paperID);
+        let currentID = node.data('paperID');
+        let newIDs;
+        if(Object.prototype.toString.call(currentID) != '[object Array]') {
+          newIDs = [currentID]
+        } else {
+          newIDs = node.data('paperID');
+        }
+        if (newIDs.indexOf(paperID) < 0) {
+            newIDs.push(paperID);
+        }
+        console.log(newIDs);
+        node.data('paperID', newIDs);
       });
     }
     Graphs.update({_id: Session.get("currentGraph")._id},
     {$set: {graphData: cy.json(),
       lastEditTime: new Date().getTime(),
       title: title,
-      "metaData.paperID": paperID
+      "metaData.paperID": paperID,
+      "metaData.componentPapers": componentPapers,
     }});
     $('#save-dialog').removeClass("in");
   },
@@ -563,38 +607,38 @@ Template.App_graphMaker.events({
   }
 });
 
-Template.EditGraphMetadata.helpers({
-  title: function() {
-    let graph = Graphs.findOne({_id: Session.get("currentGraph")._id});
-    return graph.title;
-  },
-  paperID: function() {
-    let graph = Graphs.findOne({_id: Session.get("currentGraph")._id});
-    if (graph.metaData['paperID']) {
-      return graph.metaData['paperID'];
-    } else {
-      return "";
-    }
-  }
-});
-
-Template.EditGraphMetadata.events({
-  'click #save-changes': function() {
-    let title = $('#graph-title').val();
-    let paperID = $('#graph-paper-ID').val();
-    if (paperID != "aggregate") {
-      cy.nodes().forEach(function(node) {
-        node.data('paperID', paperID);
-      });
-    }
-    Graphs.update({_id: Session.get("currentGraph")._id},
-    {$set: {graphData: cy.json(),
-      lastEditTime: new Date().getTime(),
-      title: title,
-      "metaData.paperID": paperID
-    }});
-  }
-});
+// Template.EditGraphMetadata.helpers({
+//   title: function() {
+//     let graph = Graphs.findOne({_id: Session.get("currentGraph")._id});
+//     return graph.title;
+//   },
+//   paperID: function() {
+//     let graph = Graphs.findOne({_id: Session.get("currentGraph")._id});
+//     if (graph.metaData['paperID']) {
+//       return graph.metaData['paperID'];
+//     } else {
+//       return "";
+//     }
+//   }
+// });
+//
+// Template.EditGraphMetadata.events({
+//   'click #save-changes': function() {
+//     let title = $('#graph-title').val();
+//     let paperID = $('#graph-paper-ID').val();
+//     if (paperID != "aggregate") {
+//       cy.nodes().forEach(function(node) {
+//         node.data('paperID', paperID);
+//       });
+//     }
+//     Graphs.update({_id: Session.get("currentGraph")._id},
+//     {$set: {graphData: cy.json(),
+//       lastEditTime: new Date().getTime(),
+//       title: title,
+//       "metaData.paperID": paperID
+//     }});
+//   }
+// });
 
 Template.importGraphEntry.helpers({
   imported: function() {
@@ -603,14 +647,15 @@ Template.importGraphEntry.helpers({
       result = false;
     } else {
       let componentPapers = Session.get("currentGraph").metaData.componentPapers;
-      console.log("Component papers: " + JSON.stringify(componentPapers));
-      console.log("This paper ID: " + this.metaData.paperID);
+      console.log(componentPapers);
+      console.log(this.metaData.paperID);
       if (componentPapers.indexOf(this.metaData.paperID) > -1) {
         result = true;
       } else {
-        result = false;
+        // result = false;
       }
     }
+    console.log(result);
     return result;
   }
 })
@@ -712,10 +757,11 @@ let importElements = function(sourceGraph) {
     // autosave
     if (Session.get("currentGraph").metaData.hasOwnProperty("componentPapers")) {
       let componentPapers = Session.get("currentGraph").metaData.componentPapers;
-      if (componentPapers.indexOf(sourceGraph.metaData.paperID) < 0) {
-        componentPapers.push(sourceGraph.metaData.paperID);
-      }
-
+      sourceGraph.metaData.paperID.forEach(function(p) {
+        if (componentPapers.indexOf(p) < 0) {
+          componentPapers.push(p);
+        }
+      });
       Graphs.update({_id: Session.get("currentGraph")._id},
       {$set: {graphData: cy.json(),
         lastEditTime: new Date().getTime(),
@@ -725,7 +771,7 @@ let importElements = function(sourceGraph) {
       Graphs.update({_id: Session.get("currentGraph")._id},
       {$set: {graphData: cy.json(),
         lastEditTime: new Date().getTime(),
-        "metaData.componentPapers": [sourceGraph.metaData.paperID]
+        "metaData.componentPapers": sourceGraph.metaData.paperID
       }});
     }
 
