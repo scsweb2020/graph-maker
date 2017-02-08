@@ -757,11 +757,18 @@ let importElements = function(sourceGraph) {
     // autosave
     if (Session.get("currentGraph").metaData.hasOwnProperty("componentPapers")) {
       let componentPapers = Session.get("currentGraph").metaData.componentPapers;
-      sourceGraph.metaData.paperID.forEach(function(p) {
-        if (componentPapers.indexOf(p) < 0) {
-          componentPapers.push(p);
+      console.log(sourceGraph.metaData.paperID);
+      // if(Object.prototype.toString.call(sourceGraph.metaData.paperID) != '[object Array]') {
+      //   sourceGraph.metaData.paperID.forEach(function(p) {
+      //     if (componentPapers.indexOf(p) < 0) {
+      //       componentPapers.push(p);
+      //     }
+      //   });
+      // } else {
+        if (componentPapers.indexOf(sourceGraph.metaData.paperID) < 0) {
+          componentPapers.push(sourceGraph.metaData.paperID);
         }
-      });
+      // }
       Graphs.update({_id: Session.get("currentGraph")._id},
       {$set: {graphData: cy.json(),
         lastEditTime: new Date().getTime(),
