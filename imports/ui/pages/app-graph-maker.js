@@ -336,17 +336,17 @@ Template.App_graphMaker.rendered = function() {
               callback: function(ids) {
                 if (ids != null) {
                   let toAdd = ids.split(",");
-                  let newIDs = event.cyTarget.data('paperID');
-                  if (newIDs) {
-                    toAdd.forEach(function(i) {
-                      if (newIDs.indexOf(i) < 0) {
-                        newIDs.push(i);
-                      }
-                    });
-                    event.cyTarget.data('paperID', newIDs);
-                  } else {
+                  // let newIDs = event.cyTarget.data('paperID');
+                  // if (newIDs) {
+                  //   toAdd.forEach(function(i) {
+                  //     if (newIDs.indexOf(i) < 0) {
+                  //       newIDs.push(i);
+                  //     }
+                  //   });
+                  //   event.cyTarget.data('paperID', newIDs);
+                  // } else {
                     event.cyTarget.data('paperID', toAdd);
-                  }
+                  // }
 
 
                 // } else {
