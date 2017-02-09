@@ -61,7 +61,8 @@ Template.App_graphMaker.rendered = function() {
                   'text-outline-color': '#eee',
                   'text-outline-width': 3,
                   'border-width': 1,
-                  'border-color': '#ccc'
+                  'border-color': '#ccc',
+                  'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*3 },
               }
           },
           {
@@ -81,7 +82,8 @@ Template.App_graphMaker.rendered = function() {
               'text-outline-color': '#eee',
               'text-outline-width': 3,
               'border-width': 4,
-              'border-color': 'blue'
+              'border-color': 'blue',
+              'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*3 },
             }
           },
           {
@@ -99,7 +101,7 @@ Template.App_graphMaker.rendered = function() {
                   'target-arrow-shape': 'triangle',
                   'target-arrow-color': 'green',
                   'line-color': 'green',
-                  'width': 8
+                  'width': 5
               }
           },
 
@@ -131,7 +133,7 @@ Template.App_graphMaker.rendered = function() {
             css: {
               'line-color': 'blue',
               'target-arrow-color': 'blue',
-              'width': 16
+              'width': 10
             }
           },
 
@@ -257,7 +259,7 @@ Template.App_graphMaker.rendered = function() {
       cy.add(edge);
     });
   }
-  
+
   cy.edgehandles({
       toggleOffOnLeave: true,
       handleNodes: "node",
