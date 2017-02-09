@@ -236,6 +236,13 @@ Template.App_graphMaker.helpers({
       return "";
     }
   },
+  numComponentPapers: function() {
+    if (Session.get("currentGraph").metaData['componentPapers']) {
+      return Session.get("currentGraph").metaData['componentPapers'].length;
+    } else {
+      return 0;
+    }
+  },
   componentPapers: function() {
     if (Session.get("currentGraph").metaData['componentPapers']) {
       return Session.get("currentGraph").metaData['componentPapers'].join("\n");
