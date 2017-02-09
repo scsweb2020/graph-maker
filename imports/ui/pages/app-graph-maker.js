@@ -49,9 +49,21 @@ Template.App_graphMaker.rendered = function() {
               css: {
                   'content': 'data(name)',
                   // 'height': 100,
-                  'height': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
+                  'height': function(ele) {
+                    if (ele.data('paperID')) {
+                      return 100+(ele.data('paperID').length-1)*75;
+                    } else {
+                      return 100;
+                    }
+                  },
                   // 'width': 100,
-                  'width': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
+                  'width': function(ele) {
+                    if (ele.data('paperID')) {
+                      return 100+(ele.data('paperID').length-1)*75;
+                    } else {
+                      return 100;
+                    }
+                  },
                   'text-valign': 'center',
                   'text-halign': 'center',
                   'text-align': 'justify',
@@ -62,7 +74,13 @@ Template.App_graphMaker.rendered = function() {
                   'text-outline-width': 3,
                   'border-width': 1,
                   'border-color': '#ccc',
-                  'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*4 },
+                  'font-size': function(ele) {
+                    if (ele.data('paperID')) {
+                      return 14+(ele.data('paperID').length-1)*4
+                    } else {
+                      return 14;
+                    }
+                  },
               }
           },
           {
@@ -70,9 +88,21 @@ Template.App_graphMaker.rendered = function() {
             css: {
               'content': 'data(name)',
               // 'height': 100,
-              'height': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
+              'height': function(ele) {
+                if (ele.data('paperID')) {
+                  return 100+(ele.data('paperID').length-1)*75;
+                } else {
+                  return 100;
+                }
+              },
               // 'width': 100,
-              'width': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
+              'width': function(ele) {
+                if (ele.data('paperID')) {
+                  return 100+(ele.data('paperID').length-1)*75;
+                } else {
+                  return 100;
+                }
+              },
               'text-valign': 'center',
               'text-halign': 'center',
               'text-align': 'justify',
@@ -83,7 +113,13 @@ Template.App_graphMaker.rendered = function() {
               'text-outline-width': 3,
               'border-width': 4,
               'border-color': 'blue',
-              'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*4 },
+              'font-size': function(ele) {
+                if (ele.data('paperID')) {
+                  return 14+(ele.data('paperID').length-1)*4
+                } else {
+                  return 14;
+                }
+              },
             }
           },
           {
@@ -205,6 +241,7 @@ Template.App_graphMaker.rendered = function() {
   document.addEventListener("keydown", function (e) {
     if (e.ctrlKey && e.target.nodeName === 'BODY') {
       controlKeyDown = true;
+      console.log("control key down: " + controlKeyDown);
       if (e.which === 90)
           ur.undo();
       else if (e.which === 89)
@@ -213,8 +250,9 @@ Template.App_graphMaker.rendered = function() {
   });
 
   document.addEventListener("keyup", function (e) {
-    if (e.ctrlKey && e.target.nodeName === 'BODY') {
+    if (e.ctrlKey) {
       controlKeyDown = false;
+      console.log("control key down: " + controlKeyDown);
     }
   });
 
@@ -339,6 +377,8 @@ Template.App_graphMaker.rendered = function() {
             let currentPaperIDs = event.cyTarget.data('paperID');
             if (!currentPaperIDs) {
               currentPaperIDs = "";
+            } else {
+              currentPaperIDs = currentPaperIDs.join("\n");
             }
             // prompt the user for a new name
             // (provide current name as default)
@@ -346,7 +386,7 @@ Template.App_graphMaker.rendered = function() {
               size: "large",
               title: "Set paper ID(s) (if more than one, separate with commas)",
               inputType: "textarea",
-              value: currentPaperIDs.join("\n"),
+              value: currentPaperIDs,
               callback: function(ids) {
                 if (ids != null) {
                   let toAdd = ids.split("\n");
@@ -512,8 +552,10 @@ Template.App_graphMaker.rendered = function() {
   });
 
   cy.on("click", 'node', function(event) {
-    if (controlKeyDown === true) {
+    if (controlKeyDown == true) {
       cy.center(event.cyTarget.closedNeighborhood());
+      controlKeyDown = false;
+      console.log("control key down: " + controlKeyDown);
     }
   })
 
