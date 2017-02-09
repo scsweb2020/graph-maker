@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
+<head><link href="nouislider/nouislider.min.css" rel="stylesheet">
+</head>
 <style>
   .links line {
     stroke: #aaa;
@@ -17,6 +19,11 @@
 </style>
 
 <body>
+   
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="nouislider/nouislider.min.js"></script>
+    <div id="slider"></div>
     <div id="info">Here</div>
     
      <div id="dropdownMenu" >
@@ -29,7 +36,7 @@
     </div>
     
 <svg width="960" height="600"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
+
 <script>
   var svg = d3.select("svg"),
     width = +svg.attr("width"),
@@ -1021,6 +1028,12 @@
       );
   }
     
+//slider
+    
+  
+    
+ 
+    
     
 var toggleTime=500;  //set toggle time for transition (in milliseconds)
 
@@ -1035,21 +1048,77 @@ var listOfNodes=(d[document.getElementById("dropdownValue").value]);
     }
     
     var stringOfNodes= listOfNodes.toString();
-    console.log(stringOfNodes);
+    //console.log(stringOfNodes);
     
-    filterByName(stringOfNodes);    
+    filterByName(stringOfNodes);
+    //console.log(stringOfNodes);
 });
 }
     
 
 
 function filterByName(relevantArray){
+    
+        //console.log(relevantArray);
          d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
          d3.selectAll(relevantArray).transition().duration(toggleTime).style("opacity", 1);
+//    
+//        link.style("stroke-opacity", function(o) {
+//                return o.source === d || o.target === d ? 1 : opacity;
+//            });
                   
-}  
+} 
+    
+    
+var slider = document.getElementById('slider');
+
+noUiSlider.create(slider, {
+	start: [2015, 2016],
+	connect: true,
+	range: {
+		'min': 2000,
+		'max': 2020
+	}
+});
+    
+slider.noUiSlider.on('change', function(){
+	var rangeValues=slider.noUiSlider.get(); 
+    var min=rangeValues[0];
+    var max=rangeValues[1];
+
+   filterByYear(min,max);
+    
+});      
+ 
+
+    
+function filterByYear(min,max){
+    
+     console.log(min);
+     console.log(max);
+   
+    d3.json("data/graph.json", function(d) {
+        var counter=0;
+        var listOfFilteredNodeIDs=[];
+        var listOfNodes = d.nodes;
+        
+        for(i=0; i< listOfNodes.length; i++){
+            if(listOfNodes[i].year<max && listOfNodes[i].year>min)
+               listOfFilteredNodeIDs.push(listOfNodes[i].id);
+        }
+//        console.log(listOfFilteredNodeIDs);
+         //console.log(listOfFilteredNodeIDs.length);
+         for(i=0; i< listOfFilteredNodeIDs.length; i++){
+            listOfFilteredNodeIDs[i]= '#id' + listOfFilteredNodeIDs[i];
+         }
+        
+         var stringOfNodes= listOfFilteredNodeIDs.toString();
+         filterByName(stringOfNodes);    
+});
+}
+            
     
 
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 </body>
