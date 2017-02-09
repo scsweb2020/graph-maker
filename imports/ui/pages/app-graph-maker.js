@@ -49,9 +49,9 @@ Template.App_graphMaker.rendered = function() {
               css: {
                   'content': 'data(name)',
                   // 'height': 100,
-                  'height': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
+                  'height': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
                   // 'width': 100,
-                  'width': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
+                  'width': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
                   'text-valign': 'center',
                   'text-halign': 'center',
                   'text-align': 'justify',
@@ -62,7 +62,7 @@ Template.App_graphMaker.rendered = function() {
                   'text-outline-width': 3,
                   'border-width': 1,
                   'border-color': '#ccc',
-                  'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*3 },
+                  'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*4 },
               }
           },
           {
@@ -70,9 +70,9 @@ Template.App_graphMaker.rendered = function() {
             css: {
               'content': 'data(name)',
               // 'height': 100,
-              'height': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
+              'height': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
               // 'width': 100,
-              'width': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
+              'width': function(ele) { return 100+(ele.data('paperID').length-1)*75 },
               'text-valign': 'center',
               'text-halign': 'center',
               'text-align': 'justify',
@@ -83,7 +83,7 @@ Template.App_graphMaker.rendered = function() {
               'text-outline-width': 3,
               'border-width': 4,
               'border-color': 'blue',
-              'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*3 },
+              'font-size': function(ele) { return 14+(ele.data('paperID').length-1)*4 },
             }
           },
           {
