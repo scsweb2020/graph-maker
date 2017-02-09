@@ -512,7 +512,7 @@ Template.App_graphMaker.rendered = function() {
   });
 
   cy.on("click", 'node', function(event) {
-    if (controlKeyDown) {
+    if (controlKeyDown === true) {
       cy.center(event.cyTarget.closedNeighborhood());
     }
   })
