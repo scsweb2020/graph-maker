@@ -201,12 +201,20 @@ Template.App_graphMaker.rendered = function() {
     clickPosition = event.cyPosition;
   });
 
+  var controlKeyDown;
   document.addEventListener("keydown", function (e) {
     if (e.ctrlKey && e.target.nodeName === 'BODY') {
+      controlKeyDown = true;
       if (e.which === 90)
           ur.undo();
       else if (e.which === 89)
           ur.redo();
+    }
+  });
+
+  document.addEventListener("keyup", function (e) {
+    if (e.ctrlKey && e.target.nodeName === 'BODY') {
+      controlKeyDown = false;
     }
   });
 
@@ -335,13 +343,13 @@ Template.App_graphMaker.rendered = function() {
             // prompt the user for a new name
             // (provide current name as default)
             bootbox.prompt({
-              size: "small",
+              size: "large",
               title: "Set paper ID(s) (if more than one, separate with commas)",
-              // inputType: "textarea",
-              value: currentPaperIDs,
+              inputType: "textarea",
+              value: currentPaperIDs.join("\n"),
               callback: function(ids) {
                 if (ids != null) {
-                  let toAdd = ids.split(",");
+                  let toAdd = ids.split("\n");
                   // let newIDs = event.cyTarget.data('paperID');
                   // if (newIDs) {
                   //   toAdd.forEach(function(i) {
@@ -503,6 +511,12 @@ Template.App_graphMaker.rendered = function() {
     ]
   });
 
+  cy.on("click", 'node', function(event) {
+    if (controlKeyDown) {
+      cy.center(event.cyTarget.closedNeighborhood());
+    }
+  })
+
   var selectAllOfTheSameType = function(ele) {
       cy.elements().unselect();
       if(ele.isNode()) {
@@ -540,7 +554,7 @@ Template.App_graphMaker.helpers({
   },
   componentPapers: function() {
     if (Session.get("currentGraph").metaData['componentPapers']) {
-      return Session.get("currentGraph").metaData['componentPapers'];
+      return Session.get("currentGraph").metaData['componentPapers'].join("\n");
     } else {
       return "";
     }
@@ -582,7 +596,7 @@ Template.App_graphMaker.events({
   'click #save-changes': function() {
     let title = $('#graph-title').val();
     let paperID = $('#graph-paper-ID').val();
-    let componentPapers = $('#graph-component-papers').val().split(",");
+    let componentPapers = $('#graph-component-papers').val().split("\n");
     if (paperID != "aggregate") {
       cy.nodes().forEach(function(node) {
         let currentID = node.data('paperID');
