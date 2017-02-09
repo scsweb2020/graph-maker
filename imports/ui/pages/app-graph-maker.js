@@ -48,8 +48,10 @@ Template.App_graphMaker.rendered = function() {
               selector: 'node',
               css: {
                   'content': 'data(name)',
-                  'height': 100,
-                  'width': 100,
+                  // 'height': 100,
+                  'height': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
+                  // 'width': 100,
+                  'width': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
                   'text-valign': 'center',
                   'text-halign': 'center',
                   'text-align': 'justify',
@@ -66,8 +68,10 @@ Template.App_graphMaker.rendered = function() {
             selector: 'node:selected',
             css: {
               'content': 'data(name)',
-              'height': 100,
-              'width': 100,
+              // 'height': 100,
+              'height': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
+              // 'width': 100,
+              'width': function(ele) { return 100+(ele.data('paperID').length-1)*50 },
               'text-valign': 'center',
               'text-halign': 'center',
               'text-align': 'justify',
@@ -253,7 +257,7 @@ Template.App_graphMaker.rendered = function() {
       cy.add(edge);
     });
   }
-
+  
   cy.edgehandles({
       toggleOffOnLeave: true,
       handleNodes: "node",
