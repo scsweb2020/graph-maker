@@ -55,3 +55,17 @@ body {
 .form-container {
   padding: 10px;
 }
+
+#importer {
+  max-height: 400px;
+  overflow: auto;
+}
+
+.importGraphEntry {
+  border: 1px solid grey;
+  /*font-size: 16px;*/
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: white;
+}
