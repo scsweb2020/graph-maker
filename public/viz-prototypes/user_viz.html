@@ -16,15 +16,29 @@
   .active {
     fill: yellow;
   }
+    
+    
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  font: 12px sans-serif;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}    
 </style>
 
 <body>
-   
+    
     <script src="https://d3js.org/d3.v4.min.js"></script>
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="nouislider/nouislider.min.js"></script>
     <div id="slider"></div>
-    <div id="info">Here</div>
+    <div id="info">Info</div>
+    <div id="info2">Info2</div>
     
      <div id="dropdownMenu" >
         <select id="dropdownValue"  onchange="triggerFilter()">
@@ -38,9 +52,25 @@
 <svg width="960" height="600"></svg>
 
 <script>
+    
+var div = d3.select("body").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
+    
+    
   var svg = d3.select("svg"),
     width = +svg.attr("width"),
-    height = +svg.attr("height");
+    height = +svg.attr("height")
+
+  
+  svg.append("rect")
+    .attr("width", width)
+    .attr("height", height)
+    .style("fill", "none")
+    .style("pointer-events", "all")
+    .call(d3.zoom()
+        .scaleExtent([1 / 2, 4])
+        .on("zoom", zoomed));
 
   var zoom = d3.zoom()
     .scaleExtent([1 / 2, 4])
@@ -932,8 +962,23 @@
         else if(d.type=='topic')
             return '#00BFFF';
     })
+    .on("mouseover", function(d) {
+       div.transition()
+         .duration(200)
+         .style("opacity", .9);
+         div.html(d.name)
+         .style("left", (d3.event.pageX) + "px")
+         .style("top", (d3.event.pageY - 28) + "px");
+       })
+     .on("mouseout", function(d) {
+       div.transition()
+         .duration(500)
+         .style("opacity", 0);
+       })
     .on('click', clicked); // set event handler for click event
 
+ 
+    
   // define visual properties of node labels
   var text = g.append("g")
     .attr("class", "labels")
@@ -943,7 +988,14 @@
     .attr("font-size","6px")
     .attr("dx", 6)
     .attr("dy", ".15em")
-    .text(function(d) { return d.name });
+    .text(function(d) { 
+        var string = d.name
+        
+        if (string.length > 5)
+            return string.substring(0,7)+'...';
+        else
+            return string;
+       });
 
   // apply force-directed layout
   simulation
@@ -982,6 +1034,8 @@
     text.attr("x", function(d) { return d.x; })
         .attr("y", function(d) { return d.y; });
   }
+    
+ 
 
   // unselect all nodes
   var active = d3.select(null);
@@ -1013,6 +1067,8 @@
 
       // populate info box with relevant info from node
       d3.select("#info").text(d.id);
+      
+        d3.select("#info2").text(d.authors);
   }
 
   /***
@@ -1027,12 +1083,6 @@
         .scale(1)
       );
   }
-    
-//slider
-    
-  
-    
- 
     
     
 var toggleTime=500;  //set toggle time for transition (in milliseconds)
@@ -1073,7 +1123,7 @@ function filterByName(relevantArray){
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
-	start: [2015, 2016],
+	start: [2008, 2016],
 	connect: true,
 	range: {
 		'min': 2000,
@@ -1087,6 +1137,7 @@ slider.noUiSlider.on('change', function(){
     var max=rangeValues[1];
 
    filterByYear(min,max);
+   //console.log(min + max);
     
 });      
  
@@ -1098,7 +1149,7 @@ function filterByYear(min,max){
      console.log(max);
    
     d3.json("data/graph.json", function(d) {
-        var counter=0;
+       
         var listOfFilteredNodeIDs=[];
         var listOfNodes = d.nodes;
         
@@ -1106,7 +1157,7 @@ function filterByYear(min,max){
             if(listOfNodes[i].year<max && listOfNodes[i].year>min)
                listOfFilteredNodeIDs.push(listOfNodes[i].id);
         }
-//        console.log(listOfFilteredNodeIDs);
+        console.log(listOfFilteredNodeIDs);
          //console.log(listOfFilteredNodeIDs.length);
          for(i=0; i< listOfFilteredNodeIDs.length; i++){
             listOfFilteredNodeIDs[i]= '#id' + listOfFilteredNodeIDs[i];
