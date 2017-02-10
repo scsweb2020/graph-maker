@@ -1,3 +1,5 @@
+import { Graphs } from '/imports/api/graphs.js';
+
 overlapID = function(targetID, destinationElements) {
   let result = false;
   destinationElements.forEach(function(d) {
