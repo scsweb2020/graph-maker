@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head><link href="nouislider/nouislider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 </head>
 <style>
   .links line {
@@ -33,12 +35,25 @@ div.tooltip {
 <body>
     
     <script src="https://d3js.org/d3.v4.min.js"></script>
+   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="nouislider/nouislider.min.js"></script>
     <div id="slider"></div>
-    <div id="info">Info</div>
-    <div id="info2">Info2</div>
+   
+    <div id="tabs">
+    <ul>
+    <li><a href="#tabs-1">Author</a></li>
+    <li><a href="#tabs-2">Paper Details</a></li>
+    
+    </ul>
+  <div id="tabs-1">
+    <p>Author </p>
+  </div>
+  <div id="tabs-2">
+    <p>Paper Details</p>
+  </div>
+</div>
     
      <div id="dropdownMenu" >
         <select id="dropdownValue"  onchange="triggerFilter()">
@@ -49,9 +64,18 @@ div.tooltip {
 </select>
     </div>
     
+<div class="ui-widget">
+  <label for="tags">Tags: </label>
+  <input  id="tags">
+</div>     
+    
 <svg width="960" height="600"></svg>
 
 <script>
+    
+function test(){
+    alert(document.getElementById("tags").value)
+}    
     
 var div = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -1054,7 +1078,9 @@ var div = d3.select("body").append("div")
 
     // grab the active node(s)
     active = d3.select(this).classed("active", true);
-
+      
+      
+//    if(d.type=='action' || d.type=='why-hard')  {
     // focus around the spot of the selected node(s)
     svg.transition()
       .duration(750)
@@ -1063,12 +1089,13 @@ var div = d3.select("body").append("div")
         .translate(width / 2, height / 2)
         .scale(scaleFactor)
         .translate(-(+active.attr('cx')), -(+active.attr('cy')))
+           
       );
-
+       console.log(active.attr('cx'));
+//  }
       // populate info box with relevant info from node
-      d3.select("#info").text(d.id);
-      
-        d3.select("#info2").text(d.authors);
+      d3.select("#tabs-1").text(d.id);
+      d3.select("#tabs-2").text(d.authors + "<br>" + d.id);
   }
 
   /***
@@ -1091,7 +1118,7 @@ function triggerFilter(){
 
 d3.json("data/author_connections.json", function(d) {
 
-var listOfNodes=(d[document.getElementById("dropdownValue").value]); 
+var listOfNodes=(d[document.getElementById("tags").value]); 
     
     for(i=0; i< listOfNodes.length; i++){
     listOfNodes[i]= '#id' + listOfNodes[i];
@@ -1167,9 +1194,36 @@ function filterByYear(min,max){
          filterByName(stringOfNodes);    
 });
 }
+    
+$( function() {
+    $( "#tabs" ).tabs();
+  } );
+    
+$( function() {
+    var availableTags = [
+      "Kittur, Aniket",
+      "Paritosh, Praveen",
+      "Chan, Joel",
+      "Forlizzi, Jodi L."
+    ];
+    $( "#tags" ).autocomplete({
+      source: availableTags
+    });
+  } );
+
+    
+$( "#tags" ).on( "autocompleteselect", function( event, ui ) {
+    triggerFilter();
+} );    
+  
+
+
+ 
+   
             
     
 
 </script>
+
 
 </body>
