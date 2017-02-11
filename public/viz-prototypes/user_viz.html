@@ -54,7 +54,9 @@ div.tooltip {
     <p>Paper Details</p>
   </div>
 </div>
+  
     
+<!--
      <div id="dropdownMenu" >
         <select id="dropdownValue"  onchange="triggerFilter()">
   <option value="Paritosh, Praveen">Paritosh</option>
@@ -63,11 +65,15 @@ div.tooltip {
   <option value="Forlizzi, Jodi L.">Forlizzi</option>
 </select>
     </div>
+-->
     
 <div class="ui-widget">
-  <label for="tags">Tags: </label>
+  <label for="tags">Authors: </label>
   <input  id="tags">
-</div>     
+</div> 
+<div>
+    <button id="clearfilter" type="button" onclick="clearFilter()">Clear Filter</button>
+</div>      
     
 <svg width="960" height="600"></svg>
 
@@ -1094,8 +1100,8 @@ var div = d3.select("body").append("div")
        console.log(active.attr('cx'));
 //  }
       // populate info box with relevant info from node
-      d3.select("#tabs-1").text(d.id);
-      d3.select("#tabs-2").text(d.authors + "<br>" + d.id);
+      d3.select("#tabs-1").text(d.authors);
+      d3.select("#tabs-2").text(d.id);
   }
 
   /***
@@ -1145,6 +1151,11 @@ function filterByName(relevantArray){
 //            });
                   
 } 
+    
+function clearFilter(){
+     d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1);
+    
+}    
     
     
 var slider = document.getElementById('slider');
