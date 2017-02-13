@@ -275,7 +275,7 @@ Template.App_graphMaker.events({
       let matching = false;
       if(element.isNode())  {
         query.forEach(function(q) {
-          if (element.data("name").indexOf(q) > -1) {
+          if (element.data("name").toLowerCase().indexOf(q.toLowerCase()) > -1) {
             matching = true;
           }
         })
