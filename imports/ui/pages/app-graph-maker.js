@@ -212,13 +212,13 @@ Template.App_graphMaker.rendered = function() {
     spacingFactor: 1.25,
   });
 
+  /************************************************
+  *
+  * highlights plugin
+  *
+  ************************************************/
+  highlighter = cy.viewUtilities();
 }
-
-/************************************************
-*
-* Undo/redo plugin
-*
-************************************************/
 
 Template.App_graphMaker.helpers({
   lastSaved: function() {
@@ -262,6 +262,25 @@ Template.App_graphMaker.helpers({
 });
 
 Template.App_graphMaker.events({
+  'click #apply-search': function() {
+    let query = $('#search-query').val().split(" ");
+    matches = cy.filter(function(i, element){
+      let matching = false;
+      if(element.isNode())  {
+        query.forEach(function(q) {
+          if (element.data("name").indexOf(q) > -1) {
+            matching = true;
+          }
+        })
+      }
+      return matching;
+    });
+    ur.do("highlight", matches);
+  },
+  'click #clear-search': function() {
+    $('#search-query').val("");
+    ur.do("removeHighlights");
+  },
   'click #auto-layout': function() {
     bf.run();
   },

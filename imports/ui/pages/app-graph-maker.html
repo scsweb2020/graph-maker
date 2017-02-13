@@ -1,6 +1,19 @@
 <template name="App_graphMaker">
     <div id="instructionsDrawer" class="drawer dw-xs-10 dw-sm-6 dw-md-4 fold open" aria-labelledby="instructionsDrawer">
         <div class="drawer-controls">
+            <div class="input-group">
+              <input id="search-query" type="text" class="form-control" placeholder="Search for a node..." style="width:150px;">
+              <span class="input-group-btn">
+                <button class="btn btn-default drawer-control" id="apply-search">
+                  <i class="glyphicon glyphicon-search"></i>
+                </button>
+              </span>
+              <span class="input-group-btn">
+                <button class="btn btn-default drawer-control" id="clear-search">
+                  <i class="glyphicon glyphicon-remove"></i>
+                </button>
+              </span>
+            </div>
             <a href="#instructionsDrawer" data-toggle="drawer" aria-foldedopen="true" aria-controls="instructionsDrawer" class="btn btn-default drawer-control" id="open-instructions-drawer"><i class="glyphicon glyphicon-menu-hamburger"></i></a>
             <button title="AutoLayout as hierarchy using breadth-first search" class="btn btn-default drawer-control" id="auto-layout"><i class="glyphicon glyphicon-road"></i></button>
             <button title="Fit to viewport" class="btn btn-default drawer-control" id="center-graph"><i class="glyphicon glyphicon-fullscreen"></i></button>
@@ -86,6 +99,9 @@
               </ul>
             </div>
         </div>
+    </div>
+    <div id="searchBox">
+      <input type="text">
     </div>
     <div id="cy"></div>
     <!-- {{> EditGraphMetadata}} -->
