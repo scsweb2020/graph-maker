@@ -159,6 +159,12 @@ Template.App_graphMaker.rendered = function() {
       }
   });
 
+  $('#search-query').keydown(function(e) {
+    if (e.keyCode === 13) {
+      $('#apply-search').click();
+    }
+  });
+
   /************************************************
   *
   * Edgehandles plugin
@@ -263,6 +269,7 @@ Template.App_graphMaker.helpers({
 
 Template.App_graphMaker.events({
   'click #apply-search': function() {
+    ur.do("removeHighlights");
     let query = $('#search-query').val().split(" ");
     matches = cy.filter(function(i, element){
       let matching = false;
