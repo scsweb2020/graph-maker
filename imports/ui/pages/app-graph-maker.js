@@ -88,11 +88,11 @@ Template.App_graphMaker.rendered = function() {
   });
 
   // listener for undo/redo --> CTRL+Z/Y
-  var controlKeyDown;
+  // var controlKeyDown;
   document.addEventListener("keydown", function (e) {
     if (e.ctrlKey && e.target.nodeName === 'BODY') {
-      controlKeyDown = true;
-      console.log("control key down: " + controlKeyDown);
+      // controlKeyDown = true;
+      // console.log("control key down: " + controlKeyDown);
       if (e.which === 90)
           ur.undo();
       else if (e.which === 89)
@@ -188,10 +188,10 @@ Template.App_graphMaker.rendered = function() {
   cy.contextMenus(userContextMenuOptions);
 
   cy.on("click", 'node', function(event) {
-    if (controlKeyDown == true) {
+    if (Session.equals("focusState", true)) {
       cy.center(event.cyTarget.closedNeighborhood());
-      controlKeyDown = false;
-      console.log("control key down: " + controlKeyDown);
+      // controlKeyDown = false;
+      // console.log("control key down: " + controlKeyDown);
     }
   })
 
@@ -227,6 +227,9 @@ Template.App_graphMaker.rendered = function() {
 }
 
 Template.App_graphMaker.helpers({
+  isFocus: function() {
+    return Session.get("focusState");
+  },
   lastSaved: function() {
     // console.log(Graphs.findOne());
     let timeStr = Session.get("currentGraph").lastEditTime;
@@ -293,6 +296,10 @@ Template.App_graphMaker.events({
   },
   'click #center-graph': function() {
     cy.fit(75);
+  },
+  'click #focus-state': function() {
+    let currentState = Session.get("focusState");
+    Session.set("focusState", !currentState);
   },
   'click #record-png': function() {
     let png = cy.png({full: true})
