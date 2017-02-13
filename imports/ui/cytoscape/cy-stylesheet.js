@@ -114,6 +114,16 @@ userGraphStyle = [
         // 'overlay-padding': '5px',
       }
     },
+    {
+      selector: 'edge.analog',
+      css: {
+          'opacity': 0.50,
+          'line-color': 'grey',
+          'line-style': 'dashed',
+          'target-arrow-shape': 'none',
+          'width': 3
+      }
+    },
 
     // apparently order of this matters. if we put this before the
     // style options for the negative and uncertain classes,

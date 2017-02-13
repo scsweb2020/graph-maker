@@ -214,14 +214,13 @@ userContextMenuOptions = {
       },
       // advanced options for edges
       {
-        id: 'toggle-type',
+        id: 'toggle-valence',
         title: 'switch pos/neg',
         selector: 'edge',
         onClickFunction: function (event) {
           event.cyTarget.toggleClass("negative");
         },
       },
-
       {
         id: 'toggle-certainty',
         title: 'switch certainty',
@@ -230,5 +229,14 @@ userContextMenuOptions = {
           event.cyTarget.toggleClass("uncertain");
         }
       },
+      {
+        id: 'toggle-analog',
+        title: 'switch cause/related',
+        selector: 'edge',
+        onClickFunction: function(event) {
+          event.cyTarget.toggleClass("analog");
+        }
+      },
+
   ]
 }
