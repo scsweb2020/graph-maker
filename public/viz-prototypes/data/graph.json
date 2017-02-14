@@ -1,205 +1,2216 @@
 {
     
-"papers": [{
-      "author_arr": [
-        "Zhu, Haiyi",
-        "Kraut, Robert E.",
-        "Kittur, Aniket"
-      ],
-      "paperID": "6UGSWD8D",
-      "year": 2016,
-      "title": "A Contingency View of Transferring and Adapting Best Practices Within Online Communities"
-    },
-    {
-      "author_arr": [
-        "Chan, Joel",
-        "Dang, Steven",
-        "Dow, Steven P."
-      ],
-      "paperID": "7V9JCFSV",
-      "year": 2016,
-      "title": "Improving Crowd Innovation with Expert Facilitation"
-    },
-    {
-      "author_arr": [
-        "Dai, Peng",
-        "Rzeszotarski, Jeffrey M.",
-        "Paritosh, Praveen",
-        "Chi, Ed H."
-      ],
-      "paperID": "AFWXF8CH",
-      "year": 2015,
-      "title": "And Now for Something Completely Different: Improving Crowdsourcing Workflows with Micro-Diversions"
-    },
-    {
-      "author_arr": [
-        "Ma, Xiaojuan",
-        "Yu, Li",
-        "Forlizzi, Jodi L.",
-        "Dow, Steven P."
-      ],
-      "paperID": "HTFNIQDD",
-      "year": 2015,
-      "title": "Exiting the Design Studio: Leveraging Online Participants for Early-Stage Design Feedback"
-    }],
-
-
-      "nodes": [
+  "nodes": [
   {
     "paperID": [
-      "AFWXF8CH"
+      "T4S3K5ZT", 
+      "HTFNIQDD", 
+      "56QUJEMP", 
+      "2017_5", 
+      "Z56T9MF4", 
+      "356QDHJ7", 
+      "7V9JCFSV", 
+      "GCGB74CJ", 
+      "FQVMU8GU", 
+      "2017_8"
+    ], 
+    "name": "Obtain data from online crowds", 
+    "years": [
+      2016, 
+      2017, 
+      2015
     ], 
     "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "73e89487-f040-40c8-a90d-894451bf167f", 
-    "name": "Increase quality of work on crowdsourcing platforms"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
-    "name": "Many crowdsourcing tasks are repetitive and tedious, and doing many of these in a row leads to fatigue and poorer work quality"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "f5c41da2-0a85-47b1-a439-e2a213952a40", 
-    "name": "Introduce short diversions that contain small amounts of entertainment"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "2869074d-26a4-469f-9495-f900cfae2bd5", 
-    "name": "Workers want to maximize earnings"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "topic", 
-    "id": "0e91b787-6490-4776-b37c-b7963846927f", 
-    "name": "TOPIC 4"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29", 
-    "name": "Workers complete many tasks in a single, prolonged setting"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "22f43593-1736-440c-a23c-8c6266cdf0a6", 
-    "name": "Reduce fatigue"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "6c880340-76d1-44c0-8847-c73e68250577", 
-    "name": "Improve alertness"
-  }, 
-  {
-    "paperID": [
-      "AFWXF8CH"
-    ], 
-    "authors": [
-      "Paritosh, Praveen", 
-      "Chi, Ed H.", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Dai, Peng"
-    ], 
-    "type": "action", 
-    "id": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
-    "name": "Refresh workers' cognitive resources"
-  }, 
-  {
-    "paperID": [
-      "6UGSWD8D"
-    ], 
-    "authors": [
+      "", 
+      "Laur H. Fisher, MIT", 
+      "Dang, Steven", 
+      "Forlizzi, Jodi L.", 
+      "Yue Han, Stevens Institute of Technology", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc.", 
+      "Tolentino, Jari-Lee", 
+      "W. Ben Towne, Carnegie Mellon University", 
+      "Yu, Lixiu", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Yim, Jinyeong", 
+      "Hartmann, Bjrn", 
+      "Krause, Markus", 
+      "Xu, Anbang", 
+      "Leung, Winnie", 
+      "Dow, Steven P", 
+      "Wu, Wei", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Chan, Joel", 
+      "Bigham, Jeffrey P.", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjorn", 
+      "Yu, Li", 
+      "Luther, Kurt", 
+      "Lim, Ellen", 
+      "Pavel, Amy", 
+      "Koutra, Danai", 
+      "Thomas W. Malone, MIT", 
+      "Jasani, Jeel", 
+      "Jeffrey V. Nickerson, Stevens Institute of Technology", 
+      "Vennix, Sophie Isabel", 
+      "Ma, Xiaojuan", 
+      "Gordon, Mitchell", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Rao, Huaming", 
       "Kraut, Robert E.", 
       "Kittur, Aniket", 
-      "Zhu, Haiyi"
-    ], 
-    "type": "topic", 
-    "id": "509ac4f8-f4cd-488c-877a-657d3aa32153", 
-    "name": "TOPIC 3"
-  }, 
-  {
-    "paperID": [
-      "6UGSWD8D"
-    ], 
-    "authors": [
-      "Kraut, Robert E.", 
-      "Kittur, Aniket", 
-      "Zhu, Haiyi"
+      "Yuan, Alvin", 
+      "Patrick de Boer, University of Zurich", 
+      "Lasecki, Walter S.", 
+      "Agrawala, Maneesh", 
+      "Henderson, Aubrey", 
+      "Robert J. Laubacher, MIT"
     ], 
     "type": "action", 
-    "id": "349995f8-2338-4af3-b3be-ea0488460953", 
-    "name": "Transfer \"best practices\" from other units in the community"
+    "id": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4"
+    ], 
+    "name": "Expert feedback is hard to obtain", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Krause, Markus", 
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Rao, Huaming", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjorn", 
+      "Yuan, Alvin", 
+      "Luther, Kurt", 
+      "Xu, Anbang", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh", 
+      "Dow, Steven P", 
+      "Hartmann, Bjrn", 
+      "Vennix, Sophie Isabel"
+    ], 
+    "type": "action", 
+    "id": "ff970b2e-c50c-4358-9a2e-81291071895f"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4"
+    ], 
+    "name": "Provide timely, affordable feedback to designers", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Krause, Markus", 
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Rao, Huaming", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjorn", 
+      "Yuan, Alvin", 
+      "Luther, Kurt", 
+      "Xu, Anbang", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh", 
+      "Dow, Steven P", 
+      "Hartmann, Bjrn", 
+      "Vennix, Sophie Isabel"
+    ], 
+    "type": "action", 
+    "id": "e9a7ad9f-9905-4ded-b2a9-a3cc8a93126b"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "HTFNIQDD", 
+      "56QUJEMP", 
+      "2017_5", 
+      "Z56T9MF4"
+    ], 
+    "name": "Improve design work", 
+    "years": [
+      2016, 
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "", 
+      "Forlizzi, Jodi L.", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc.", 
+      "Tolentino, Jari-Lee", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Hartmann, Bjrn", 
+      "Krause, Markus", 
+      "Xu, Anbang", 
+      "Dow, Steven P", 
+      "Wu, Wei", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjorn", 
+      "Yu, Li", 
+      "Luther, Kurt", 
+      "Pavel, Amy", 
+      "Vennix, Sophie Isabel", 
+      "Ma, Xiaojuan", 
+      "Rao, Huaming", 
+      "Yuan, Alvin", 
+      "Agrawala, Maneesh"
+    ], 
+    "type": "action", 
+    "id": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "HTFNIQDD"
+    ], 
+    "name": "Provide diverse feedback to designers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Rao, Huaming", 
+      "Forlizzi, Jodi L.", 
+      "Bailey, Brian P.", 
+      "Yu, Li", 
+      "Xu, Anbang"
+    ], 
+    "type": "action", 
+    "id": "b2a7a62a-a541-4569-a51f-372e7456dd9d"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4"
+    ], 
+    "name": "Collect feedback in structured micro-tasks that focus on specific aspects of the design", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Krause, Markus", 
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Rao, Huaming", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjorn", 
+      "Yuan, Alvin", 
+      "Luther, Kurt", 
+      "Xu, Anbang", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh", 
+      "Dow, Steven P", 
+      "Hartmann, Bjrn", 
+      "Vennix, Sophie Isabel"
+    ], 
+    "type": "action", 
+    "id": "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT"
+    ], 
+    "name": "Ensure that feedback providers explain their perception of the meaning of the design", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Bailey, Brian P.", 
+      "Xu, Anbang", 
+      "Dow, Steven P.", 
+      "Rao, Huaming"
+    ], 
+    "type": "action", 
+    "id": "3623b8dd-8074-4aec-98c7-4b8f5245b5c6"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4"
+    ], 
+    "name": "Workers may lack relevant domain knowledge and experience", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Krause, Markus", 
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Rao, Huaming", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjorn", 
+      "Yuan, Alvin", 
+      "Luther, Kurt", 
+      "Xu, Anbang", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh", 
+      "Dow, Steven P", 
+      "Hartmann, Bjrn", 
+      "Vennix, Sophie Isabel"
+    ], 
+    "type": "why-hard", 
+    "id": "eb09c956-1e10-416d-83d0-1bce470be200"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT"
+    ], 
+    "name": "Provide critical feedback to designers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Bailey, Brian P.", 
+      "Xu, Anbang", 
+      "Dow, Steven P.", 
+      "Rao, Huaming"
+    ], 
+    "type": "action", 
+    "id": "7a20fa77-b380-4641-ba03-d738403ac715"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Broaden participation in crowdsourcing", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "3a087f09-474d-4bba-8e0c-0de6d7afcc61"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Improve accessibility of crowdsourcing sites", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Crowdsourcing sites frequently point workers to external requester-built webpages that may not be accessible", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "why-hard", 
+    "id": "6288c5d5-d36b-4b8f-8e98-efe157be1e99"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Identify which available tasks are most appropriate to a given worker's abilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "9d4e0b32-3203-478a-840d-2dffb66e5643"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Manage multi-tasking and switching among several different apps and user interfaces", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "c469c384-ccc1-4be3-a459-b3da2cad8ae6"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Allow for more flexibility in task time limits", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "34300bf8-e026-4242-b95c-02cf9e7bfae7"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Enable more people to learn about the availability of crowdwork", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "c96a771e-237e-44a6-9bcb-8013c719d829"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Job coaches view crowdwork more negatively than people with disabilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "why-hard", 
+    "id": "3cb41ca7-ed09-4149-83cc-342ebe13a38c"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Reputation ratings do not account for accessibility-related challenges with workflows", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "why-hard", 
+    "id": "3a006a00-fd55-4350-8342-6c2d94822868"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Increase the efficiency of crowd labor markets", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "830c3722-97df-4c15-acee-ded740cb2aa1"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Introduce metadata fields that indicate what types of abilities a task requires", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "7908be61-0552-4dc4-9080-aa8cb61f65fe"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Employ crowdworkers to add skill requirement labels to existing tasks", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "fba6b283-a360-4237-a2fe-a058a2544637"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Use recommender algorithms to identify tasks matching a worker's abilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "3cb5fcb1-bc90-4b16-af44-ab2856869959"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Develop an online community for crowdworkers with different disabilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "ef22ca5a-9321-42ed-87de-62c6c63b8cb6"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Allow people to optionally identify disabilities as part of their worker profile", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "cbf32a80-50bc-49eb-9148-ddd665f1b472"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "People with disabilities have concerns about disclosing disability information in employment situations", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "why-hard", 
+    "id": "ce74bd01-964d-41a4-9ca8-1d9231221efa"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Provide an adjudication process for workers with disabilities to seek removal of negative reputation points due to disability issues", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "5efde148-d226-41bb-908b-c4e427b33413"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Allow for partial completions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kane, Shaun K.", 
+      "Bigham, Jeffrey P.", 
+      "Zyskowski, Kathryn", 
+      "Morris, Meredith Ringel", 
+      "Gray, Mary L."
+    ], 
+    "type": "action", 
+    "id": "61a60898-184e-4f25-9535-c4463a444186"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "In-person feedback-providers are difficult to recruit, leading designers to resort to convenience samples", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "why-hard", 
+    "id": "d5f06177-4480-4395-9ec8-ec9eeb401e34"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers may not know how to clearly articulate needs", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "why-hard", 
+    "id": "76c17d41-f63c-42cf-8c2c-c521917c331f"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers may feel more comfortable providing feedback in-person", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "action", 
+    "id": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers videorecord responses to constructed scenarios that describe the design situation and a possible solution", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Forlizzi, Jodi L.", 
+      "Ma, Xiaojuan", 
+      "Dow, Steven P.", 
+      "Yu, Li"
+    ], 
+    "type": "action", 
+    "id": "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Crowd feedback produces large volumes of feedback", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjrn", 
+      "Luther, Kurt", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh"
+    ], 
+    "type": "why-hard", 
+    "id": "18a2d116-77d4-467c-99dd-116e8faffcad"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Aggregate feedback across workers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjrn", 
+      "Luther, Kurt", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh"
+    ], 
+    "type": "action", 
+    "id": "ef6c4ea6-ce3d-4718-a617-79441ab4e99f"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Enable designers to review feedback in a meaningful way", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjrn", 
+      "Luther, Kurt", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh"
+    ], 
+    "type": "action", 
+    "id": "f36d8f26-8ede-4dda-98d6-bb3fbc93209b"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Avoid overwhelming the user with details", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjrn", 
+      "Luther, Kurt", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh"
+    ], 
+    "type": "action", 
+    "id": "6767d22e-ac3c-4b81-bb50-21f701307bde"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Progressively disclose details to the user on demand", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Wu, Wei", 
+      "Dow, Steven P.", 
+      "Bailey, Brian P.", 
+      "Hartmann, Bjrn", 
+      "Luther, Kurt", 
+      "Tolentino, Jari-Lee", 
+      "Pavel, Amy", 
+      "Agrawala, Maneesh"
+    ], 
+    "type": "action", 
+    "id": "6f7185b4-c214-49eb-8729-db7c6fcbf420"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH", 
+      "2017_9", 
+      "7V9JCFSV"
+    ], 
+    "name": "Increase quality of work on crowdsourcing platforms", 
+    "years": [
+      2016, 
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Dang, Steven", 
+      "Chan, Joel", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Dai, Peng", 
+      "Alipta Ballav, Independent Researcher", 
+      "Dow, Steven P.", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Chi, Ed H.", 
+      "Aaron Gilbee, Independent Researcher", 
+      "Michael S Bernstein, Stanford University", 
+      "Rzeszotarski, Jeffrey M."
+    ], 
+    "type": "action", 
+    "id": "73e89487-f040-40c8-a90d-894451bf167f"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Many crowdsourcing tasks are repetitive and tedious, and doing many of these in a row leads to fatigue and poorer work quality", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Introduce short diversions that contain small amounts of entertainment", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "f5c41da2-0a85-47b1-a439-e2a213952a40"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH", 
+      "2017_9"
+    ], 
+    "name": "Workers want to maximize earnings", 
+    "years": [
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Dai, Peng", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Chi, Ed H.", 
+      "Aaron Gilbee, Independent Researcher", 
+      "Michael S Bernstein, Stanford University", 
+      "Rzeszotarski, Jeffrey M."
+    ], 
+    "type": "action", 
+    "id": "2869074d-26a4-469f-9495-f900cfae2bd5"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Searching for and learning new tasks is time-consuming", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "0e91b787-6490-4776-b37c-b7963846927f"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Workers complete many tasks in a single, prolonged setting", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Reduce fatigue", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "22f43593-1736-440c-a23c-8c6266cdf0a6"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Improve alertness", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "6c880340-76d1-44c0-8847-c73e68250577"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Refresh workers' cognitive resources", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Chi, Ed H.", 
+      "Rzeszotarski, Jeffrey M.", 
+      "Dai, Peng"
+    ], 
+    "type": "action", 
+    "id": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E", 
+      "AFWXF8CH"
+    ], 
+    "name": "Improve crowdsourcing work", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Paritosh, Praveen", 
+      "Bigham, Jeffrey P.", 
+      "Gray, Mary L.", 
+      "Dai, Peng", 
+      "Kane, Shaun K.", 
+      "Morris, Meredith Ringel", 
+      "Chi, Ed H.", 
+      "Zyskowski, Kathryn", 
+      "Rzeszotarski, Jeffrey M."
+    ], 
+    "type": "action", 
+    "id": "9b8926e2-0d49-46c1-9af6-5041e7282b02"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Ensure effective performance in virtual teams on crowdsourcing platforms", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Naudet, Yannick", 
+      "Lykourentzou, Ioanna", 
+      "Robert E Kraut, Carnegie Mellon University", 
+      "Antoniou, Angeliki", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology"
+    ], 
+    "type": "action", 
+    "id": "37ac70e9-6344-40ab-b8c4-b4ebf97fa84a"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Form effective teams", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Naudet, Yannick", 
+      "Lykourentzou, Ioanna", 
+      "Robert E Kraut, Carnegie Mellon University", 
+      "Antoniou, Angeliki", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology"
+    ], 
+    "type": "action", 
+    "id": "c6f1c438-4e85-418d-b4de-598a3561367b"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Crowdsourcing assignments are typically short-lived but people need time to build trust", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Naudet, Yannick", 
+      "Lykourentzou, Ioanna", 
+      "Robert E Kraut, Carnegie Mellon University", 
+      "Antoniou, Angeliki", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology"
+    ], 
+    "type": "why-hard", 
+    "id": "3eb400bd-9967-4b7b-af9c-918dc1b6b523"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB"
+    ], 
+    "name": "Measure personality beforehand with DISC personality test", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Dow, Steven P.", 
+      "Antoniou, Angeliki", 
+      "Naudet, Yannick", 
+      "Lykourentzou, Ioanna"
+    ], 
+    "type": "action", 
+    "id": "8df893a4-8f0b-490c-987f-af902096cb2a"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Ensure a balance of personality types in the team", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Naudet, Yannick", 
+      "Lykourentzou, Ioanna", 
+      "Robert E Kraut, Carnegie Mellon University", 
+      "Antoniou, Angeliki", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology"
+    ], 
+    "type": "action", 
+    "id": "de873c48-8ca9-4e60-a279-034e53b2c4e9"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Minimize barriers to building and maintaining trust", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Naudet, Yannick", 
+      "Lykourentzou, Ioanna", 
+      "Robert E Kraut, Carnegie Mellon University", 
+      "Antoniou, Angeliki", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology"
+    ], 
+    "type": "action", 
+    "id": "7b981689-daf7-47ab-9bea-6430ab017d3e"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Minimize interpersonal tensions and conflict", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Naudet, Yannick", 
+      "Lykourentzou, Ioanna", 
+      "Robert E Kraut, Carnegie Mellon University", 
+      "Antoniou, Angeliki", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology"
+    ], 
+    "type": "action", 
+    "id": "6cd2ee83-5635-4b51-861c-beb8f95a3ba4"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Allow people to express preferences about team members based on interactions in a brief task", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology", 
+      "Steven P Dow, UC San Diego", 
+      "Robert E Kraut, Carnegie Mellon University"
+    ], 
+    "type": "action", 
+    "id": "7fabfae8-c63a-4be1-8d90-2ef190a2bba7"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Ensure a balance of skills on the team", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology", 
+      "Steven P Dow, UC San Diego", 
+      "Robert E Kraut, Carnegie Mellon University"
+    ], 
+    "type": "action", 
+    "id": "8e4783c9-4af7-4ba1-9bde-2b8d6deacf99"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Prior data on skills and personality is not always available or easy to obtain", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology", 
+      "Steven P Dow, UC San Diego", 
+      "Robert E Kraut, Carnegie Mellon University"
+    ], 
+    "type": "why-hard", 
+    "id": "84be16d8-102c-46bc-bd08-74c6bd128728"
+  }, 
+  {
+    "paperID": [
+      "2017_9", 
+      "7V9JCFSV"
+    ], 
+    "name": "Optimize performance of online crowds", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Dang, Steven", 
+      "Chan, Joel", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Alipta Ballav, Independent Researcher", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher", 
+      "Dow, Steven P."
+    ], 
+    "type": "action", 
+    "id": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Use worker reputation scores to filter work", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "e90c2122-0271-417e-8aab-195291e77b94"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Reputation scores from decentralized workers are typically inflated and uninformative", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "why-hard", 
+    "id": "b33eca1b-b213-453e-bd91-5293a734d52d"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Centralize workers into guilds that work on common tasks", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "a099a23d-1403-4a2d-9e57-bbaf73c8be8c"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Enable workers to certify each others' quality", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "083bdc4e-9d45-498b-a448-70d3422d4e26"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Workers may seek to game the reputation system", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "why-hard", 
+    "id": "476bdd52-da6a-4896-b08b-a61ade123f15"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Use double-blind peer review", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "1b8cadfd-7fd3-4747-ad15-7fcdbe5c929c"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Enable workers to bargain for better pay for tasks", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "78ae09cc-7cb8-4706-ab9e-118441c7a628"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Workers collectively reject tasks that pay too little", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "3432384d-5e8c-4cb5-b199-726631f424c7"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Ensure workers' well-being", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "490cfcac-4e3f-4767-b319-f9ded78b2553"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Enable senior workers to mentor more novice workers", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "78699c35-befe-4b31-8631-2298aba411ca"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Workers provide social support to each other", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Shirish Goyal, Stanford University", 
+      "Dilrukshi Gamage, University of Moratuwa", 
+      "Alipta Ballav, Independent Researcher", 
+      "Mark E Whiting, Carnegie Mellon University", 
+      "Snehalkumar (Neil) S Gaikwad, Massachusetts Institute of Technology", 
+      "Michael S Bernstein, Stanford University", 
+      "Nalin Chhibber, Independent Researcher", 
+      "Rajan Vaish, Stanford University", 
+      "Dinesh Majeti, University of Houston", 
+      "Aaron Gilbee, Independent Researcher"
+    ], 
+    "type": "action", 
+    "id": "7da93321-805d-4c20-b8a3-a79f1ea1ff15"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase recipient's positive emotions", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "6dbfcbfb-ffc8-4c6c-8093-5f001332ef29"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "reduce recipient's annoyance and frustration", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "139031e5-e8e0-4db2-bbd9-1e7d185c402a"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "use positive affective language in feedback", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "2cb05a02-29f4-42ec-9537-e95a53388968"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "anonymize feedback provider", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "6813ceda-32ae-40b4-8754-a6b50368f183"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived fairness of feedback", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "86370122-6799-476c-b361-777c8c33426e"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived fairness of feedback provider", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "a93364dd-0bc2-4a0a-ab10-f2b97435e96c"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived expertise of feedback provider", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "770d84b4-bfc3-4140-86ce-13e43b8cc633"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived usefulness of feedback", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Felicia Y Ng, Carnegie Mellon University", 
+      "Laura A. Dabbish, Carnegie Mellon University", 
+      "Thomas Garncarz, Carnegie Mellon University", 
+      "Duyen T. Nguyen, Facebook Inc."
+    ], 
+    "type": "action", 
+    "id": "de9b0a0a-d2b0-4356-80dd-25a5e42c2fd7"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure self-disclosure on social network sites", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "90a96d11-f22b-4048-9f68-3855e48219ed"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Enable social scientists to understand the conditions that encourage or discourage self-disclosure", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "f3c607fc-7273-4fd4-84f7-477c855c8fbf"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Give feedback to members of social network sites about whether their content is revealing more or less about themselves than they desire", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "be3a7418-d9c8-4f89-9c31-fad9acf7cd35"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Enable service providers to track how changes to the design of their sites influences users' self-disclosure", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "e5e24b15-0241-4bd9-a1e9-9cc5860ce8bf"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Improve social network sites", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "57ba11bd-8a07-441e-83ee-bfcb867d80c2"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measuring self-disclosure is costly and difficult", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "why-hard", 
+    "id": "b2dc11e3-d553-426e-85bb-3ac643201459"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Approximate human judgments", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "12384341-c780-4112-970f-e225cb7a2256"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Create a parsimonious model (using a small number of features of the text)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "ac9cd08f-523e-4630-a44f-30168c08b559"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Create an interpretable model", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "2d20d07c-3616-4f7c-8ff9-124eba62c668"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Create a domain-independent model", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "61a99fdc-9574-4c36-8254-82a61f99b6b2"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Enable measurement of posts at scale", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "8ab5ca4e-2007-4705-9d30-4b844d104e4e"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Select predictive features", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "866980f8-4816-4120-b7c8-5c698e27ab65"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Calculate cross-entropy of the post with the corpus", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "68e8b95a-ce7e-4562-88d9-3beca97a7e34"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Apply machine learning models to status updates", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "e41552c3-0f85-47c9-82af-a369c6ec6b99"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use a small number of theory-driven features", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "39074c3a-980e-4e03-abd8-bd37e2c459ce"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure emotional valence", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "c446575b-6efa-48fd-bf33-c197535d8ced"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure social distance between poster and people mentioned in the post", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "4caff84d-8880-4a77-ba53-d65d5491d4d2"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure language similarity between the post and the community", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "d575debf-833a-42a3-b43e-b56aa0e29101"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure post topics", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "f6ceeebc-5037-4d9d-a129-61511fbf4ffd"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure post length", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "8b4d21aa-34e8-4dc2-a6c4-a9bacc98016b"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use Latent Dirichlet Allocation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "c13496fb-2871-4a69-9abd-e285fb63c6fb"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use Linguistic Inquiry Word Count dictionary", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "e2e36f9f-9041-4689-8595-efd7b280773d"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure references to self, family, and friends", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "11f84eea-3a89-46a3-86da-2c936eef96c1"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Build language model of corpus", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "5eea279e-474d-46f2-ad4b-8f63f93bff6e"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use bigram language model with Good-Turing smoothing", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira"
+    ], 
+    "type": "action", 
+    "id": "3f11cdb7-658f-4413-a5a5-ef7e12a6a882"
+  }, 
+  {
+    "paperID": [
+      "Z56T9MF4"
+    ], 
+    "name": "Provide emotionally positive feedback to designers", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Krause, Markus", 
+      "Hartmann, Bjorn", 
+      "Yuan, Alvin", 
+      "Luther, Kurt", 
+      "Dow, Steven P", 
+      "Vennix, Sophie Isabel"
+    ], 
+    "type": "action", 
+    "id": "1786d402-7643-45b2-901d-8d7681ba20ac"
+  }, 
+  {
+    "paperID": [
+      "Z56T9MF4"
+    ], 
+    "name": "Provide specific feedback to designers", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Krause, Markus", 
+      "Hartmann, Bjorn", 
+      "Yuan, Alvin", 
+      "Luther, Kurt", 
+      "Dow, Steven P", 
+      "Vennix, Sophie Isabel"
+    ], 
+    "type": "action", 
+    "id": "24318074-ac15-43bc-a108-3434112607eb"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Quantitatively assess interactions from video data", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Gordon, Mitchell", 
+      "Dow, Steven P.", 
+      "Yim, Jinyeong", 
+      "Lasecki, Walter S.", 
+      "Leung, Winnie", 
+      "Bigham, Jeffrey P.", 
+      "Koutra, Danai", 
+      "Lim, Ellen", 
+      "Henderson, Aubrey", 
+      "Jasani, Jeel"
+    ], 
+    "type": "action", 
+    "id": "a4dd71d7-0d23-4ea1-a1d8-6e8231a5bfe2"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Annotate behavioral events in the video data", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Gordon, Mitchell", 
+      "Dow, Steven P.", 
+      "Yim, Jinyeong", 
+      "Lasecki, Walter S.", 
+      "Leung, Winnie", 
+      "Bigham, Jeffrey P.", 
+      "Koutra, Danai", 
+      "Lim, Ellen", 
+      "Henderson, Aubrey", 
+      "Jasani, Jeel"
+    ], 
+    "type": "action", 
+    "id": "5a497452-5a6d-409b-8e14-60f5a0b16189"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Manual annotation is effortful and time-consuming", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Gordon, Mitchell", 
+      "Dow, Steven P.", 
+      "Yim, Jinyeong", 
+      "Lasecki, Walter S.", 
+      "Leung, Winnie", 
+      "Bigham, Jeffrey P.", 
+      "Koutra, Danai", 
+      "Lim, Ellen", 
+      "Henderson, Aubrey", 
+      "Jasani, Jeel"
+    ], 
+    "type": "action", 
+    "id": "770fd8b6-df17-4034-99e8-93e137aa1a0a"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Judgments are typically complex", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Gordon, Mitchell", 
+      "Dow, Steven P.", 
+      "Yim, Jinyeong", 
+      "Lasecki, Walter S.", 
+      "Leung, Winnie", 
+      "Bigham, Jeffrey P.", 
+      "Koutra, Danai", 
+      "Lim, Ellen", 
+      "Henderson, Aubrey", 
+      "Jasani, Jeel"
+    ], 
+    "type": "why-hard", 
+    "id": "228301dc-a290-4946-80d7-a9456cccc49b"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7", 
+      "XGBBFQWX"
+    ], 
+    "name": "Measure human behavior", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Gordon, Mitchell", 
+      "Dow, Steven P.", 
+      "Yim, Jinyeong", 
+      "Lasecki, Walter S.", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira", 
+      "Kraut, Robert", 
+      "Leung, Winnie", 
+      "Bigham, Jeffrey P.", 
+      "Koutra, Danai", 
+      "Lim, Ellen", 
+      "Henderson, Aubrey", 
+      "Jasani, Jeel"
+    ], 
+    "type": "action", 
+    "id": "f16fc32d-f11a-42f5-b9b4-0dabba45bda6"
   }, 
   {
     "paperID": [
       "6UGSWD8D"
+    ], 
+    "name": "Modifying a practice from another environment may introduce problems and undercut its effectiveness", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Kraut, Robert E.", 
@@ -207,12 +2218,15 @@
       "Zhu, Haiyi"
     ], 
     "type": "why-hard", 
-    "id": "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
-    "name": "Modifying a practice from another environment may introduce problems and undercut its effectiveness"
+    "id": "9bdb9c66-7adc-4da1-b800-56ea238d5678"
   }, 
   {
     "paperID": [
       "6UGSWD8D"
+    ], 
+    "name": "Adapt the transferred practice to fit the local environment", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Kraut, Robert E.", 
@@ -220,12 +2234,15 @@
       "Zhu, Haiyi"
     ], 
     "type": "action", 
-    "id": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a", 
-    "name": "Adapt the transferred practice to fit the local environment"
+    "id": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a"
   }, 
   {
     "paperID": [
       "6UGSWD8D"
+    ], 
+    "name": "Wait until the receiving project has had experience with the imported practice", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Kraut, Robert E.", 
@@ -233,12 +2250,15 @@
       "Zhu, Haiyi"
     ], 
     "type": "action", 
-    "id": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4", 
-    "name": "Wait until the receiving project has had experience with the imported practice"
+    "id": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4"
   }, 
   {
     "paperID": [
       "6UGSWD8D"
+    ], 
+    "name": "Ensure practice is introduced by members who have experience in a variety of other projects", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Kraut, Robert E.", 
@@ -246,51 +2266,66 @@
       "Zhu, Haiyi"
     ], 
     "type": "action", 
-    "id": "73c0bf94-6395-4840-8dde-d050206f7067", 
-    "name": "Ensure practice is introduced by members who have experience in a variety of other projects"
+    "id": "73c0bf94-6395-4840-8dde-d050206f7067"
   }, 
   {
     "paperID": [
-      "7V9JCFSV"
+      "7V9JCFSV", 
+      "GCGB74CJ", 
+      "FQVMU8GU", 
+      "2017_8"
+    ], 
+    "name": "Increase innovation", 
+    "years": [
+      2016, 
+      2017
     ], 
     "authors": [
+      "", 
+      "W. Ben Towne, Carnegie Mellon University", 
+      "Laur H. Fisher, MIT", 
+      "Dow, Steven P.", 
+      "Yu, Lixiu", 
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yue Han, Stevens Institute of Technology", 
       "Chan, Joel", 
-      "Dang, Steven", 
-      "Dow, Steven P."
-    ], 
-    "type": "topic", 
-    "id": "5c21af6a-ffde-485e-9e33-af152b0db5b9", 
-    "name": "TOPIC 2"
-  }, 
-  {
-    "paperID": [
-      "7V9JCFSV"
-    ], 
-    "authors": [
-      "Chan, Joel", 
-      "Dang, Steven", 
-      "Dow, Steven P."
+      "Patrick de Boer, University of Zurich", 
+      "Thomas W. Malone, MIT", 
+      "Robert J. Laubacher, MIT", 
+      "Jeffrey V. Nickerson, Stevens Institute of Technology", 
+      "Dang, Steven"
     ], 
     "type": "action", 
-    "id": "040ba0b2-754f-45ec-82b8-ee72aaeb7504", 
-    "name": "Collect good ideas from crowds"
+    "id": "5c21af6a-ffde-485e-9e33-af152b0db5b9"
   }, 
   {
     "paperID": [
-      "7V9JCFSV"
+      "7V9JCFSV", 
+      "6UGSWD8D"
+    ], 
+    "name": "Enable community members to build on other (good) ideas within the community", 
+    "years": [
+      2016
     ], 
     "authors": [
+      "Dow, Steven P.", 
+      "Zhu, Haiyi", 
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
       "Chan, Joel", 
-      "Dang, Steven", 
-      "Dow, Steven P."
+      "Dang, Steven"
     ], 
     "type": "action", 
-    "id": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
-    "name": "Enable crowd members to build on other (good) ideas within the crowd"
+    "id": "df366ec9-124a-4155-b1ba-45a4fc23c7f5"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Novice workers may not know how to productively build on ideas", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -298,12 +2333,15 @@
       "Dow, Steven P."
     ], 
     "type": "why-hard", 
-    "id": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
-    "name": "Novice workers may not know how to productively build on ideas"
+    "id": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Novice workers may rely on the wrong signals (e.g., community upvotes) to find good ideas to build on", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -311,12 +2349,15 @@
       "Dow, Steven P."
     ], 
     "type": "why-hard", 
-    "id": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
-    "name": "Novice workers may rely on the wrong signals (e.g., community upvotes) to find good ideas to build on"
+    "id": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Enable broad exploration of ideas", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -324,12 +2365,15 @@
       "Dow, Steven P."
     ], 
     "type": "action", 
-    "id": "952361c9-05ff-4914-a626-51a7aa796366", 
-    "name": "Enable broad exploration of ideas"
+    "id": "952361c9-05ff-4914-a626-51a7aa796366"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Enable deep exploration of ideas", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -337,12 +2381,15 @@
       "Dow, Steven P."
     ], 
     "type": "action", 
-    "id": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
-    "name": "Enable deep exploration of ideas"
+    "id": "3a7e20ac-6f84-41d9-b38d-ddb6654989af"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Enable many crowd workers to participate", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -350,12 +2397,15 @@
       "Dow, Steven P."
     ], 
     "type": "action", 
-    "id": "b936752d-d9fe-47b3-874d-af45a86a4074", 
-    "name": "Enable many crowd workers to participate"
+    "id": "b936752d-d9fe-47b3-874d-af45a86a4074"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Provide gold standard examples", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -363,12 +2413,15 @@
       "Dow, Steven P."
     ], 
     "type": "action", 
-    "id": "d2223f81-eece-4b3c-a1db-58255e0aec32", 
-    "name": "Provide gold standard examples"
+    "id": "d2223f81-eece-4b3c-a1db-58255e0aec32"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Experts provide personalized feedback on individual ideas", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -376,12 +2429,15 @@
       "Dow, Steven P."
     ], 
     "type": "action", 
-    "id": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
-    "name": "Experts provide personalized feedback on individual ideas"
+    "id": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
   }, 
   {
     "paperID": [
       "7V9JCFSV"
+    ], 
+    "name": "Experts highlight which promising ideas to build on, and how to build on them", 
+    "years": [
+      2016
     ], 
     "authors": [
       "Chan, Joel", 
@@ -389,437 +2445,3234 @@
       "Dow, Steven P."
     ], 
     "type": "action", 
-    "id": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
-    "name": "Experts highlight which promising ideas to build on, and how to build on them"
+    "id": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
   }, 
   {
     "paperID": [
-      "HTFNIQDD"
+      "GCGB74CJ", 
+      "FQVMU8GU"
+    ], 
+    "name": "Increase analogical innovation", 
+    "years": [
+      2016
     ], 
     "authors": [
-      "Forlizzi, Jodi L.", 
-      "Ma, Xiaojuan", 
-      "Dow, Steven P.", 
-      "Yu, Li"
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
     ], 
     "type": "action", 
-    "id": "dd1c9ad1-cfc0-4a54-a19b-d9c319ca09c8", 
-    "name": "Improve design work"
+    "id": "e78de520-2447-42f7-90f8-acf0f44b6714"
   }, 
   {
     "paperID": [
-      "HTFNIQDD"
+      "GCGB74CJ", 
+      "FQVMU8GU"
+    ], 
+    "name": "Individuals are limited in their cognitive capacity", 
+    "years": [
+      2016
     ], 
     "authors": [
-      "Forlizzi, Jodi L.", 
-      "Ma, Xiaojuan", 
-      "Dow, Steven P.", 
-      "Yu, Li"
-    ], 
-    "type": "action", 
-    "id": "45777434-63c8-41e3-a571-7b24557a325f", 
-    "name": "Provide diverse feedback to designers during needfinding"
-  }, 
-  {
-    "paperID": [
-      "HTFNIQDD"
-    ], 
-    "authors": [
-      "Forlizzi, Jodi L.", 
-      "Ma, Xiaojuan", 
-      "Dow, Steven P.", 
-      "Yu, Li"
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
     ], 
     "type": "why-hard", 
-    "id": "d5f06177-4480-4395-9ec8-ec9eeb401e34", 
-    "name": "In-person feedback-providers are difficult to recruit, leading designers to resort to convenience samples"
+    "id": "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f"
   }, 
   {
     "paperID": [
-      "HTFNIQDD"
+      "GCGB74CJ"
+    ], 
+    "name": "Difficult for crowd to search large idea repositories (e.g., the web)", 
+    "years": [
+      2016
     ], 
     "authors": [
-      "Forlizzi, Jodi L.", 
-      "Ma, Xiaojuan", 
-      "Dow, Steven P.", 
-      "Yu, Li"
-    ], 
-    "type": "action", 
-    "id": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b", 
-    "name": "Obtain early-stage feedback from online crowds"
-  }, 
-  {
-    "paperID": [
-      "HTFNIQDD"
-    ], 
-    "authors": [
-      "Forlizzi, Jodi L.", 
-      "Ma, Xiaojuan", 
-      "Dow, Steven P.", 
-      "Yu, Li"
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
     ], 
     "type": "why-hard", 
-    "id": "76c17d41-f63c-42cf-8c2c-c521917c331f", 
-    "name": "Workers may not know how to clearly articulate needs"
+    "id": "3f20a874-986a-4bf1-9798-b6cf1b365030"
   }, 
   {
     "paperID": [
-      "HTFNIQDD"
+      "GCGB74CJ"
+    ], 
+    "name": "Identify remote domains of possibly relevant expertise (e.g., origami folding)", 
+    "years": [
+      2016
     ], 
     "authors": [
-      "Forlizzi, Jodi L.", 
-      "Ma, Xiaojuan", 
-      "Dow, Steven P.", 
-      "Yu, Li"
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
     ], 
     "type": "action", 
-    "id": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6", 
-    "name": "Workers may feel more comfortable providing feedback in-person"
+    "id": "69e7f84a-ca58-4dff-8696-bed3754be543"
   }, 
   {
     "paperID": [
-      "HTFNIQDD"
+      "GCGB74CJ"
+    ], 
+    "name": "Use crowds to search web within identified domains", 
+    "years": [
+      2016
     ], 
     "authors": [
-      "Forlizzi, Jodi L.", 
-      "Ma, Xiaojuan", 
-      "Dow, Steven P.", 
-      "Yu, Li"
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
     ], 
-    "type": "topic", 
-    "id": "a5d98044-ac28-44e8-9d3d-d00305a46b3a", 
-    "name": "TOPIC 1"
+    "type": "action", 
+    "id": "7172ad3e-93fd-41ae-84b2-294306e3ccfd"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Real world problems involve multiple constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
+    ], 
+    "type": "action", 
+    "id": "node-6"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Distributed process for eliciting constraints about a problem", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
+    ], 
+    "type": "action", 
+    "id": "d7727869-4038-47b8-825d-a4161d9c60ef"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Don't know which level of abstraction is useful to represent constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
+    ], 
+    "type": "why-hard", 
+    "id": "b21ecc21-62ca-4730-8b8c-19b93a4ff577"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Don't know whether to elicit constraints from original problem or abstracted problem schema", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
+    ], 
+    "type": "why-hard", 
+    "id": "1f15f5b8-8c7e-400a-bc92-b064ea479cec"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Maximum creativity if use abstracted problem schema and concrete constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Yu, Lixiu"
+    ], 
+    "type": "action", 
+    "id": "c367351d-7f62-4ce9-ad0a-c4e20d4bf906"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3", 
+      "6UGSWD8D", 
+      "XGBBFQWX"
+    ], 
+    "name": "Online communities", 
+    "years": [
+      2016, 
+      2012
+    ], 
+    "authors": [
+      "Zhu, Haiyi", 
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Wang, Yi-Chia", 
+      "Burke, Moira", 
+      "Kraut, Robert"
+    ], 
+    "type": "action", 
+    "id": "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3", 
+      "MXXBE2S3"
+    ], 
+    "name": "Volunteer production communities (e.g., Wikipedia, open source)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "0f5d7524-c494-4c7b-892d-de963c7fba1f"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Individuals might not want to do what the group needs (e.g., unpopular tasks)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "why-hard", 
+    "id": "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Managerial control (as in offline organizations)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "2ecf1b9c-9851-4bc0-8a16-f1ad4631a6ea"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Online volunteers may leave", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "why-hard", 
+    "id": "0a1bb031-b822-4908-975b-6d351ac6f758"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Group identification (as in sports)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "4d8b9bbd-549d-4e0e-b3fe-070ceb08643f"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Increases motivation but does not provide direction what to work on", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "why-hard", 
+    "id": "2ce88f98-b137-4970-bb31-699186fe979b"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Direction setting (what to work on)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "eefa0bfd-f5dd-43f6-b550-40d3040b3573"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Provides direction what to work on but not motivation", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "why-hard", 
+    "id": "c9af2507-05e4-4481-8b7e-d1fcd245f701"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Public group goals (explicit)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "2dffe0d4-9be0-4a7d-b50b-97a938f041b9"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Role modeling (implicit)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "b08345c4-4b85-423c-9d56-bf140d84ce09"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Highlighting group goals strongly motivate members who self-identify with the group (compared to those that don't)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "e70d8ea1-a9ea-4467-ac7f-8f53beff8365"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Spillover effect to non-goal related tasks", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "b1434369-908c-4db2-9191-663289bf85f6"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Members exposed to prototypical group members act more like them on group-relevant behaviors", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Kraut, Robert", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "321acb3f-02ed-4b16-8925-e52bc5c3ed44"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW"
+    ], 
+    "name": "Ensure content quality", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Ding, Xianghua", 
+      "Li, Guo", 
+      "Lu, Tun", 
+      "Gu, Ning", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "55327c5c-7331-4b14-a55b-b20bea74c8b8"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW", 
+      "MXXBE2S3"
+    ], 
+    "name": "Encourage user contributions", 
+    "years": [
+      2012, 
+      2015
+    ], 
+    "authors": [
+      "Li, Guo", 
+      "Gu, Ning", 
+      "Zhu, Haiyi", 
+      "Kittur, Aniket", 
+      "Ding, Xianghua", 
+      "Kraut, Robert", 
+      "Lu, Tun"
+    ], 
+    "type": "action", 
+    "id": "c2efe6a6-ef85-4f2d-a42d-796993374f2c"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW"
+    ], 
+    "name": "Allow Wikipedia-like collaborative editing on questions and answers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Ding, Xianghua", 
+      "Li, Guo", 
+      "Lu, Tun", 
+      "Gu, Ning", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "dbdb7a27-d630-4ef9-b7a4-5216de0d0b7a"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Improve performance of online community units", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kraut, Robert E.", 
+      "Kittur, Aniket", 
+      "Zhu, Haiyi"
+    ], 
+    "type": "action", 
+    "id": "509ac4f8-f4cd-488c-877a-657d3aa32153"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Enable remote collaboration", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lee, Min Kyung", 
+      "Fruchter, Nathaniel", 
+      "Dabbish, Laura"
+    ], 
+    "type": "action", 
+    "id": "c353bdb1-0dae-4db2-b83c-626ebdf053bb"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure appropriate judgments of risk harm for collaborators", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lee, Min Kyung", 
+      "Fruchter, Nathaniel", 
+      "Dabbish, Laura"
+    ], 
+    "type": "action", 
+    "id": "f976117f-c783-4967-9c1c-95a2a004f4ac"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure humanization of collaborators", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lee, Min Kyung", 
+      "Fruchter, Nathaniel", 
+      "Dabbish, Laura"
+    ], 
+    "type": "action", 
+    "id": "fc86e953-0450-47e4-a21b-cdd112c0ecb0"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Provide technologically mediated interaction to people who see themselves as defined through their relationships", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lee, Min Kyung", 
+      "Fruchter, Nathaniel", 
+      "Dabbish, Laura"
+    ], 
+    "type": "action", 
+    "id": "85bd7ad4-917c-4131-b238-2af755603f43"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q", 
+      "T9IJMSRB", 
+      "2017_11", 
+      "2017_10"
+    ], 
+    "name": "Improve collaborative work", 
+    "years": [
+      2016, 
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Fruchter, Nathaniel", 
+      "", 
+      "Steven P Dow, UC San Diego", 
+      "Dow, Steven P.", 
+      "Naudet, Yannick", 
+      "Naomi McArthur, Riot Games", 
+      "Lykourentzou, Ioanna", 
+      "Thomas W. Malone, Massachusetts Institute of Technology", 
+      "Dabbish, Laura", 
+      "Young Ji Kim, Massachusetts Institute of Technology", 
+      "Anita Williams Woolley, Carnegie Mellon University", 
+      "Jeffrey Yu-Ting Lin, Magic Leap", 
+      "David Engel, Massachusetts Institute of Technology", 
+      "Robert E Kraut, Carnegie Mellon University", 
+      "Antoniou, Angeliki", 
+      "Lee, Min Kyung", 
+      "Ioanna Lykourentzou, Luxembourg Institute of Science and Technology"
+    ], 
+    "type": "action", 
+    "id": "99b94c34-6a98-4aad-a6b4-bd867d747a9b"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure engagement and immersion in interactions with collaborators", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lee, Min Kyung", 
+      "Fruchter, Nathaniel", 
+      "Dabbish, Laura"
+    ], 
+    "type": "action", 
+    "id": "b037271c-ec88-4bac-8a85-bb82e0070f39"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure maximal bandwidth of communication signals in interactions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lee, Min Kyung", 
+      "Fruchter, Nathaniel", 
+      "Dabbish, Laura"
+    ], 
+    "type": "action", 
+    "id": "110bdf5b-d42c-4aa1-a3f5-516f67285ff9"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Increase collective intelligence", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Anita Williams Woolley, Carnegie Mellon University", 
+      "Naomi McArthur, Riot Games", 
+      "Young Ji Kim, Massachusetts Institute of Technology", 
+      "Jeffrey Yu-Ting Lin, Magic Leap", 
+      "David Engel, Massachusetts Institute of Technology", 
+      "Thomas W. Malone, Massachusetts Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "9f3832ff-2745-4511-bb5f-047ed31ff6b3"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Increase team members' social perceptiveness", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Anita Williams Woolley, Carnegie Mellon University", 
+      "Naomi McArthur, Riot Games", 
+      "Young Ji Kim, Massachusetts Institute of Technology", 
+      "Jeffrey Yu-Ting Lin, Magic Leap", 
+      "David Engel, Massachusetts Institute of Technology", 
+      "Thomas W. Malone, Massachusetts Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "d0fb9517-65f9-43cd-ab21-a9aca387db55"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Ensure presence of female team members", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Anita Williams Woolley, Carnegie Mellon University", 
+      "Naomi McArthur, Riot Games", 
+      "Young Ji Kim, Massachusetts Institute of Technology", 
+      "Jeffrey Yu-Ting Lin, Magic Leap", 
+      "David Engel, Massachusetts Institute of Technology", 
+      "Thomas W. Malone, Massachusetts Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "cbffe84e-387e-4243-ba41-65b5989b7f42"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Enable tacit coordination", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Anita Williams Woolley, Carnegie Mellon University", 
+      "Naomi McArthur, Riot Games", 
+      "Young Ji Kim, Massachusetts Institute of Technology", 
+      "Jeffrey Yu-Ting Lin, Magic Leap", 
+      "David Engel, Massachusetts Institute of Technology", 
+      "Thomas W. Malone, Massachusetts Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "ae115850-acd0-44e2-a011-9649604803cd"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Enable verbal communication between team members", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Anita Williams Woolley, Carnegie Mellon University", 
+      "Naomi McArthur, Riot Games", 
+      "Young Ji Kim, Massachusetts Institute of Technology", 
+      "Jeffrey Yu-Ting Lin, Magic Leap", 
+      "David Engel, Massachusetts Institute of Technology", 
+      "Thomas W. Malone, Massachusetts Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "9e2b0638-1151-4734-8d90-dd366cd0f9ff"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Divide the problem into parts", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "W. Ben Towne, Carnegie Mellon University", 
+      "Laur H. Fisher, MIT", 
+      "Patrick de Boer, University of Zurich", 
+      "Yue Han, Stevens Institute of Technology", 
+      "Thomas W. Malone, MIT", 
+      "Robert J. Laubacher, MIT", 
+      "Jeffrey V. Nickerson, Stevens Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "cff701f4-1995-4e0f-b2a5-2cbd389a2c5c"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Combine the parts into a solution for the whole problem", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "W. Ben Towne, Carnegie Mellon University", 
+      "Laur H. Fisher, MIT", 
+      "Patrick de Boer, University of Zurich", 
+      "Yue Han, Stevens Institute of Technology", 
+      "Thomas W. Malone, MIT", 
+      "Robert J. Laubacher, MIT", 
+      "Jeffrey V. Nickerson, Stevens Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "b7440833-5f46-40a0-b54d-3a4fccbf4036"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Incentivize people to reuse work done by themselves and others", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "W. Ben Towne, Carnegie Mellon University", 
+      "Laur H. Fisher, MIT", 
+      "Patrick de Boer, University of Zurich", 
+      "Yue Han, Stevens Institute of Technology", 
+      "Thomas W. Malone, MIT", 
+      "Robert J. Laubacher, MIT", 
+      "Jeffrey V. Nickerson, Stevens Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "35d91d25-1676-4f2c-8821-f1654e75228f"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Incentivize people to simultaneously explore multiple ways of combining interchangeable parts", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "W. Ben Towne, Carnegie Mellon University", 
+      "Laur H. Fisher, MIT", 
+      "Patrick de Boer, University of Zurich", 
+      "Yue Han, Stevens Institute of Technology", 
+      "Thomas W. Malone, MIT", 
+      "Robert J. Laubacher, MIT", 
+      "Jeffrey V. Nickerson, Stevens Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "7d8a6bf4-1287-4b04-98c6-5d2bd2c3a9d3"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Incentivize people to work on the parts of the problem where they can contribute the most", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "W. Ben Towne, Carnegie Mellon University", 
+      "Laur H. Fisher, MIT", 
+      "Patrick de Boer, University of Zurich", 
+      "Yue Han, Stevens Institute of Technology", 
+      "Thomas W. Malone, MIT", 
+      "Robert J. Laubacher, MIT", 
+      "Jeffrey V. Nickerson, Stevens Institute of Technology"
+    ], 
+    "type": "action", 
+    "id": "e8d1fcee-48e7-44ee-afce-6163542c813c"
   }
 ],
 
 
-    "links": [{
-      "source": "73e89487-f040-40c8-a90d-894451bf167f",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "946307e7-fc90-45de-8437-68c8758867bd",
-      "target": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
-    },
-    {
-      "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "14b6f110-86cb-41af-9d12-3c5179ab5c21",
-      "target": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
-    },
-    {
-      "source": "2869074d-26a4-469f-9495-f900cfae2bd5",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "3fe81ab0-f0e5-4cf0-a599-f31f14b15291",
-      "target": "0e91b787-6490-4776-b37c-b7963846927f"
-    },
-    {
-      "source": "0e91b787-6490-4776-b37c-b7963846927f",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "af318500-39c7-4d35-bbec-144c59ccb585",
-      "target": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29"
-    },
-    {
-      "source": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "972410db-702b-4e09-8376-850b8ad4f11b",
-      "target": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
-    },
-    {
-      "source": "2869074d-26a4-469f-9495-f900cfae2bd5",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "661416a5-86d8-4d8a-8191-bb04c04769e9",
-      "target": "22f43593-1736-440c-a23c-8c6266cdf0a6"
-    },
-    {
-      "source": "2869074d-26a4-469f-9495-f900cfae2bd5",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "534e9ee8-ede1-4738-b9da-9a26939a3e80",
-      "target": "6c880340-76d1-44c0-8847-c73e68250577"
-    },
-    {
-      "source": "2869074d-26a4-469f-9495-f900cfae2bd5",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "56410285-2f66-49f6-8317-7ad552e98029",
-      "target": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
-    },
-    {
-      "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "ca9f6bab-c01f-4fd9-b396-6c178b8ee55c",
-      "target": "22f43593-1736-440c-a23c-8c6266cdf0a6"
-    },
-    {
-      "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "bfee448d-865f-4647-ac96-3db13b7d28f1",
-      "target": "6c880340-76d1-44c0-8847-c73e68250577"
-    },
-    {
-      "source": "22f43593-1736-440c-a23c-8c6266cdf0a6",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "19c7938f-652b-4769-9860-d33af8ad8fc0",
-      "target": "f5c41da2-0a85-47b1-a439-e2a213952a40"
-    },
-    {
-      "source": "6c880340-76d1-44c0-8847-c73e68250577",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "79736379-1ecf-494c-b155-1beaa12e7cde",
-      "target": "f5c41da2-0a85-47b1-a439-e2a213952a40"
-    },
-    {
-      "source": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "0893a62d-7c9b-48e3-8218-6edcf9166c0a",
-      "target": "f5c41da2-0a85-47b1-a439-e2a213952a40"
-    },
-    {
-      "source": "349995f8-2338-4af3-b3be-ea0488460953",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "f092dab0-f49f-49e7-845a-0c86ac123105",
-      "target": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a"
-    },
-    {
-      "source": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "9633c2e5-61d1-46f4-8138-d325897f468b",
-      "target": "9bdb9c66-7adc-4da1-b800-56ea238d5678"
-    },
-    {
-      "source": "509ac4f8-f4cd-488c-877a-657d3aa32153",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "bf1ce9b6-1aaa-4376-8489-14328d09d3e1",
-      "target": "349995f8-2338-4af3-b3be-ea0488460953"
-    },
-    {
-      "source": "9bdb9c66-7adc-4da1-b800-56ea238d5678",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "bce3c8e1-719d-4b4e-ab66-beda92f93252",
-      "target": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4"
-    },
-    {
-      "source": "9bdb9c66-7adc-4da1-b800-56ea238d5678",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "c7fa9926-a230-4eb1-9676-94cfdfa7df70",
-      "target": "73c0bf94-6395-4840-8dde-d050206f7067"
-    },
-    {
-      "source": "5c21af6a-ffde-485e-9e33-af152b0db5b9",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "0d8e1234-d32e-4729-b0b1-ff1ed7ea405f",
-      "target": "040ba0b2-754f-45ec-82b8-ee72aaeb7504"
-    },
-    {
-      "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "2f774e65-d1fd-49e3-9600-2124c722f432",
-      "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
-    },
-    {
-      "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "84a7042c-1fc8-4a74-8177-a59443897a00",
-      "target": "df366ec9-124a-4155-b1ba-45a4fc23c7f5"
-    },
-    {
-      "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "8d8146a4-34e1-4e55-8233-f5d48f020501",
-      "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
-    },
-    {
-      "source": "df366ec9-124a-4155-b1ba-45a4fc23c7f5",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "217b5ead-7837-4f36-a7f3-9510d0fc4016",
-      "target": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f"
-    },
-    {
-      "source": "df366ec9-124a-4155-b1ba-45a4fc23c7f5",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "f0f57977-b2aa-40f3-931c-d51c99239673",
-      "target": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890"
-    },
-    {
-      "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "6d1b1dbd-ce7a-4669-b7d7-c139c461b324",
-      "target": "952361c9-05ff-4914-a626-51a7aa796366"
-    },
-    {
-      "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "cf811e86-7f0b-4817-b80e-b0d4758cfe1f",
-      "target": "3a7e20ac-6f84-41d9-b38d-ddb6654989af"
-    },
-    {
-      "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af",
-      "certainty": "uncertain",
-      "valence": "negative",
-      "id": "472190ac-3468-46bb-a555-1eea21748b83",
-      "target": "952361c9-05ff-4914-a626-51a7aa796366"
-    },
-    {
-      "source": "040ba0b2-754f-45ec-82b8-ee72aaeb7504",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "f9706504-d4d0-438e-b0cd-9abefb0b22cf",
-      "target": "b936752d-d9fe-47b3-874d-af45a86a4074"
-    },
-    {
-      "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "0456a637-fad5-41d8-ad35-07f8f3d91c0e",
-      "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
-    },
-    {
-      "source": "952361c9-05ff-4914-a626-51a7aa796366",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "51780af5-a2da-436c-919f-ddf9a6655624",
-      "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
-    },
-    {
-      "source": "b936752d-d9fe-47b3-874d-af45a86a4074",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "fcb3d683-6c94-4b69-b90f-aae2ec8b5e11",
-      "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
-    },
-    {
-      "source": "b936752d-d9fe-47b3-874d-af45a86a4074",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "0c03251e-4ffb-415a-84d7-06ea4494c9dd",
-      "target": "d2223f81-eece-4b3c-a1db-58255e0aec32"
-    },
-    {
-      "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "2b877bbe-1749-4fa1-8b89-3a8c38efb8c9",
-      "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
-    },
-    {
-      "source": "952361c9-05ff-4914-a626-51a7aa796366",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "cafdedaf-80f4-4483-8e06-fc53cb13d299",
-      "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
-    },
-    {
-      "source": "952361c9-05ff-4914-a626-51a7aa796366",
-      "certainty": "uncertain",
-      "valence": "positive",
-      "id": "e4fbcefb-c61f-4685-b9e6-60f208180e4c",
-      "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
-    },
-    {
-      "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "04e3bffc-38db-4679-8a89-b927baae091d",
-      "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
-    },
-    {
-      "source": "b936752d-d9fe-47b3-874d-af45a86a4074",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "ce2cc4d3-bf18-4715-be2c-98b1a88644c7",
-      "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
-    },
-    {
-      "source": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "878fa46e-da2b-4731-af58-477d01ab841f",
-      "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
-    },
-    {
-      "source": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "c02db17f-b047-495c-8a71-63a8e9617c01",
-      "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
-    },
-    {
-      "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "65e5eecc-fd4c-43f6-8951-0b72b73f21f2",
-      "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
-    },
-    {
-      "source": "dd1c9ad1-cfc0-4a54-a19b-d9c319ca09c8",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "2bbe6dd7-cd15-4250-a3ac-6cf124455b33",
-      "target": "45777434-63c8-41e3-a571-7b24557a325f"
-    },
-    {
-      "source": "45777434-63c8-41e3-a571-7b24557a325f",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "9868689a-e7c3-40fc-b376-08fdbfcc4773",
-      "target": "d5f06177-4480-4395-9ec8-ec9eeb401e34"
-    },
-    {
-      "source": "d5f06177-4480-4395-9ec8-ec9eeb401e34",
-      "certainty": "certain",
-      "valence": "positive",
-      "id": "2a42b722-4422-40ce-bab7-380078e6b8d2",
-      "target": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b"
-    },
-    {
-      "source": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "ed125115-e765-42b7-a9a8-eefa869443f8",
-      "target": "76c17d41-f63c-42cf-8c2c-c521917c331f"
-    },
-    {
-      "source": "7eeeac77-ee4d-4d3e-b9ec-8efaa6cfd45b",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "70a0f6ae-3e4f-4a8c-9e86-716169bc27e9",
-      "target": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6"
-    },
-    {
-      "source": "76c17d41-f63c-42cf-8c2c-c521917c331f",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "201b9e18-b714-49b9-a3e2-397e4e1c2048",
-      "target": "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
-    },
-    {
-      "source": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6",
-      "certainty": "certain",
-      "valence": "negative",
-      "id": "430b7de8-b049-4f13-9100-a261a552c328",
-      "target": "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
-    }]
+    "links": [
+  {
+    "elements": [
+      "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+      "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+    ], 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
+    "certainty": "certain", 
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "valence": "positive", 
+    "id": "2b877bbe-1749-4fa1-8b89-3a8c38efb8c9"
+  }, 
+  {
+    "elements": [
+      "b936752d-d9fe-47b3-874d-af45a86a4074", 
+      "d2223f81-eece-4b3c-a1db-58255e0aec32"
+    ], 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32", 
+    "certainty": "certain", 
+    "source": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "valence": "positive", 
+    "id": "0c03251e-4ffb-415a-84d7-06ea4494c9dd"
+  }, 
+  {
+    "elements": [
+      "b936752d-d9fe-47b3-874d-af45a86a4074", 
+      "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+    ], 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
+    "certainty": "certain", 
+    "source": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "valence": "negative", 
+    "id": "fcb3d683-6c94-4b69-b90f-aae2ec8b5e11"
+  }, 
+  {
+    "elements": [
+      "952361c9-05ff-4914-a626-51a7aa796366", 
+      "d2223f81-eece-4b3c-a1db-58255e0aec32"
+    ], 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32", 
+    "certainty": "certain", 
+    "source": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "valence": "negative", 
+    "id": "51780af5-a2da-436c-919f-ddf9a6655624"
+  }, 
+  {
+    "elements": [
+      "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+      "d2223f81-eece-4b3c-a1db-58255e0aec32"
+    ], 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32", 
+    "certainty": "certain", 
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "valence": "positive", 
+    "id": "0456a637-fad5-41d8-ad35-07f8f3d91c0e"
+  }, 
+  {
+    "elements": [
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+      "952361c9-05ff-4914-a626-51a7aa796366"
+    ], 
+    "target": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "certainty": "certain", 
+    "source": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "valence": "positive", 
+    "id": "7a1ca2f5-a9a2-45d3-a732-33e8435c8990"
+  }, 
+  {
+    "elements": [
+      "1786d402-7643-45b2-901d-8d7681ba20ac", 
+      "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+    ], 
+    "target": "81e1ca32-8c18-4498-afeb-0ad421b29a65", 
+    "certainty": "certain", 
+    "source": "1786d402-7643-45b2-901d-8d7681ba20ac", 
+    "valence": "positive", 
+    "id": "b0e30036-81b3-4452-8d7f-94f182413af7"
+  }, 
+  {
+    "elements": [
+      "24318074-ac15-43bc-a108-3434112607eb", 
+      "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+    ], 
+    "target": "81e1ca32-8c18-4498-afeb-0ad421b29a65", 
+    "certainty": "certain", 
+    "source": "24318074-ac15-43bc-a108-3434112607eb", 
+    "valence": "positive", 
+    "id": "468a0415-4bc9-4e01-b988-d6459d74c846"
+  }, 
+  {
+    "elements": [
+      "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+      "24318074-ac15-43bc-a108-3434112607eb"
+    ], 
+    "target": "24318074-ac15-43bc-a108-3434112607eb", 
+    "certainty": "certain", 
+    "source": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+    "valence": "positive", 
+    "id": "3fc401d5-6622-4867-bf64-b250bf3e6d10"
+  }, 
+  {
+    "elements": [
+      "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+      "1786d402-7643-45b2-901d-8d7681ba20ac"
+    ], 
+    "target": "1786d402-7643-45b2-901d-8d7681ba20ac", 
+    "certainty": "certain", 
+    "source": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+    "valence": "positive", 
+    "id": "a010dc21-11ff-4f07-8e25-0b8e7241b3d9"
+  }, 
+  {
+    "elements": [
+      "952361c9-05ff-4914-a626-51a7aa796366", 
+      "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+    ], 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
+    "certainty": "certain", 
+    "source": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "valence": "negative", 
+    "id": "cafdedaf-80f4-4483-8e06-fc53cb13d299"
+  }, 
+  {
+    "elements": [
+      "952361c9-05ff-4914-a626-51a7aa796366", 
+      "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+    ], 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
+    "certainty": "uncertain", 
+    "source": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "valence": "positive", 
+    "id": "e4fbcefb-c61f-4685-b9e6-60f208180e4c"
+  }, 
+  {
+    "elements": [
+      "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+      "7a20fa77-b380-4641-ba03-d738403ac715"
+    ], 
+    "target": "7a20fa77-b380-4641-ba03-d738403ac715", 
+    "certainty": "certain", 
+    "source": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+    "valence": "positive", 
+    "id": "55b4a219-6477-450d-9fa4-687f50461acb"
+  }, 
+  {
+    "elements": [
+      "eb09c956-1e10-416d-83d0-1bce470be200", 
+      "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+    ], 
+    "target": "81e1ca32-8c18-4498-afeb-0ad421b29a65", 
+    "certainty": "certain", 
+    "source": "eb09c956-1e10-416d-83d0-1bce470be200", 
+    "valence": "negative", 
+    "id": "3df9a0e8-0d10-4fd1-b603-f6e889e67cb9"
+  }, 
+  {
+    "elements": [
+      "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+      "3623b8dd-8074-4aec-98c7-4b8f5245b5c6"
+    ], 
+    "target": "3623b8dd-8074-4aec-98c7-4b8f5245b5c6", 
+    "certainty": "certain", 
+    "source": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+    "valence": "positive", 
+    "id": "1302fe06-a5a8-4da3-8178-309746e645ea"
+  }, 
+  {
+    "elements": [
+      "b2a7a62a-a541-4569-a51f-372e7456dd9d", 
+      "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+    ], 
+    "target": "81e1ca32-8c18-4498-afeb-0ad421b29a65", 
+    "certainty": "certain", 
+    "source": "b2a7a62a-a541-4569-a51f-372e7456dd9d", 
+    "valence": "positive", 
+    "id": "ce984bb3-e2de-471f-93a4-0dec997aaec1"
+  }, 
+  {
+    "elements": [
+      "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+      "e9a7ad9f-9905-4ded-b2a9-a3cc8a93126b"
+    ], 
+    "target": "e9a7ad9f-9905-4ded-b2a9-a3cc8a93126b", 
+    "certainty": "certain", 
+    "source": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+    "valence": "positive", 
+    "id": "05104fd9-c098-476f-bc5b-f2dab70f5af9"
+  }, 
+  {
+    "elements": [
+      "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+      "b2a7a62a-a541-4569-a51f-372e7456dd9d"
+    ], 
+    "target": "b2a7a62a-a541-4569-a51f-372e7456dd9d", 
+    "certainty": "certain", 
+    "source": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+    "valence": "positive", 
+    "id": "b13f8754-a373-47a8-82b1-b97c95e213a8"
+  }, 
+  {
+    "elements": [
+      "7a20fa77-b380-4641-ba03-d738403ac715", 
+      "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+    ], 
+    "target": "81e1ca32-8c18-4498-afeb-0ad421b29a65", 
+    "certainty": "certain", 
+    "source": "7a20fa77-b380-4641-ba03-d738403ac715", 
+    "valence": "positive", 
+    "id": "7006361d-c71a-4252-a942-6861f7178862"
+  }, 
+  {
+    "elements": [
+      "3623b8dd-8074-4aec-98c7-4b8f5245b5c6", 
+      "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+    ], 
+    "target": "81e1ca32-8c18-4498-afeb-0ad421b29a65", 
+    "certainty": "certain", 
+    "source": "3623b8dd-8074-4aec-98c7-4b8f5245b5c6", 
+    "valence": "positive", 
+    "id": "f5d04fe3-f2c8-4cff-baee-c78134a9dde0"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "eb09c956-1e10-416d-83d0-1bce470be200"
+    ], 
+    "target": "eb09c956-1e10-416d-83d0-1bce470be200", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "negative", 
+    "id": "d2dd1a22-dba2-4963-89d2-1a410a53e16b"
+  }, 
+  {
+    "elements": [
+      "ff970b2e-c50c-4358-9a2e-81291071895f", 
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c"
+    ], 
+    "target": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "certainty": "certain", 
+    "source": "ff970b2e-c50c-4358-9a2e-81291071895f", 
+    "valence": "positive", 
+    "id": "3786466b-254f-4cfe-ad74-8e7c56174de4"
+  }, 
+  {
+    "elements": [
+      "e9a7ad9f-9905-4ded-b2a9-a3cc8a93126b", 
+      "ff970b2e-c50c-4358-9a2e-81291071895f"
+    ], 
+    "target": "ff970b2e-c50c-4358-9a2e-81291071895f", 
+    "certainty": "certain", 
+    "source": "e9a7ad9f-9905-4ded-b2a9-a3cc8a93126b", 
+    "valence": "positive", 
+    "id": "1f5f3be0-6709-4a8a-b153-e02059ea07ad"
+  }, 
+  {
+    "elements": [
+      "3a087f09-474d-4bba-8e0c-0de6d7afcc61", 
+      "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7"
+    ], 
+    "target": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+    "certainty": "certain", 
+    "source": "3a087f09-474d-4bba-8e0c-0de6d7afcc61", 
+    "valence": "positive", 
+    "id": "1ae92001-a17b-4898-8341-78e98c68debb"
+  }, 
+  {
+    "elements": [
+      "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+      "9d4e0b32-3203-478a-840d-2dffb66e5643"
+    ], 
+    "target": "9d4e0b32-3203-478a-840d-2dffb66e5643", 
+    "certainty": "certain", 
+    "source": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+    "valence": "positive", 
+    "id": "c63fa4d0-3ea0-4576-9fdd-8509713ff43f"
+  }, 
+  {
+    "elements": [
+      "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+      "c469c384-ccc1-4be3-a459-b3da2cad8ae6"
+    ], 
+    "target": "c469c384-ccc1-4be3-a459-b3da2cad8ae6", 
+    "certainty": "certain", 
+    "source": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+    "valence": "positive", 
+    "id": "79a2726a-d2fd-47af-8c17-7f7ee5e9d215"
+  }, 
+  {
+    "elements": [
+      "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+      "34300bf8-e026-4242-b95c-02cf9e7bfae7"
+    ], 
+    "target": "34300bf8-e026-4242-b95c-02cf9e7bfae7", 
+    "certainty": "certain", 
+    "source": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+    "valence": "positive", 
+    "id": "a4e076d4-3602-429b-aa52-65be057c77d8"
+  }, 
+  {
+    "elements": [
+      "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+      "6288c5d5-d36b-4b8f-8e98-efe157be1e99"
+    ], 
+    "target": "6288c5d5-d36b-4b8f-8e98-efe157be1e99", 
+    "certainty": "certain", 
+    "source": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+    "valence": "negative", 
+    "id": "6cc5d9ad-f31b-4405-8872-ed6ff7d0cfe3"
+  }, 
+  {
+    "elements": [
+      "c96a771e-237e-44a6-9bcb-8013c719d829", 
+      "3cb41ca7-ed09-4149-83cc-342ebe13a38c"
+    ], 
+    "target": "3cb41ca7-ed09-4149-83cc-342ebe13a38c", 
+    "certainty": "certain", 
+    "source": "c96a771e-237e-44a6-9bcb-8013c719d829", 
+    "valence": "positive", 
+    "id": "e4669a7e-e428-46b5-8adc-4949b7838f13"
+  }, 
+  {
+    "elements": [
+      "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+      "3a006a00-fd55-4350-8342-6c2d94822868"
+    ], 
+    "target": "3a006a00-fd55-4350-8342-6c2d94822868", 
+    "certainty": "certain", 
+    "source": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+    "valence": "negative", 
+    "id": "cf4bf5bb-e718-483a-bf5a-32391893339b"
+  }, 
+  {
+    "elements": [
+      "830c3722-97df-4c15-acee-ded740cb2aa1", 
+      "3a087f09-474d-4bba-8e0c-0de6d7afcc61"
+    ], 
+    "target": "3a087f09-474d-4bba-8e0c-0de6d7afcc61", 
+    "certainty": "certain", 
+    "source": "830c3722-97df-4c15-acee-ded740cb2aa1", 
+    "valence": "positive", 
+    "id": "61f44958-b5e0-4404-a091-98ec9eb2015f"
+  }, 
+  {
+    "elements": [
+      "9d4e0b32-3203-478a-840d-2dffb66e5643", 
+      "7908be61-0552-4dc4-9080-aa8cb61f65fe"
+    ], 
+    "target": "7908be61-0552-4dc4-9080-aa8cb61f65fe", 
+    "certainty": "uncertain", 
+    "source": "9d4e0b32-3203-478a-840d-2dffb66e5643", 
+    "valence": "positive", 
+    "id": "51be4c24-088a-4263-8552-f2220d176a97"
+  }, 
+  {
+    "elements": [
+      "9d4e0b32-3203-478a-840d-2dffb66e5643", 
+      "fba6b283-a360-4237-a2fe-a058a2544637"
+    ], 
+    "target": "fba6b283-a360-4237-a2fe-a058a2544637", 
+    "certainty": "uncertain", 
+    "source": "9d4e0b32-3203-478a-840d-2dffb66e5643", 
+    "valence": "positive", 
+    "id": "ac6818dd-feaa-428d-8fef-0d8329ddcf0e"
+  }, 
+  {
+    "elements": [
+      "9d4e0b32-3203-478a-840d-2dffb66e5643", 
+      "3cb5fcb1-bc90-4b16-af44-ab2856869959"
+    ], 
+    "target": "3cb5fcb1-bc90-4b16-af44-ab2856869959", 
+    "certainty": "uncertain", 
+    "source": "9d4e0b32-3203-478a-840d-2dffb66e5643", 
+    "valence": "positive", 
+    "id": "a435f67a-d071-4db7-bce4-e75ba64c56c8"
+  }, 
+  {
+    "elements": [
+      "3cb41ca7-ed09-4149-83cc-342ebe13a38c", 
+      "ef22ca5a-9321-42ed-87de-62c6c63b8cb6"
+    ], 
+    "target": "ef22ca5a-9321-42ed-87de-62c6c63b8cb6", 
+    "certainty": "uncertain", 
+    "source": "3cb41ca7-ed09-4149-83cc-342ebe13a38c", 
+    "valence": "positive", 
+    "id": "554acbc0-6968-465b-bb61-e60735110b08"
+  }, 
+  {
+    "elements": [
+      "3cb5fcb1-bc90-4b16-af44-ab2856869959", 
+      "cbf32a80-50bc-49eb-9148-ddd665f1b472"
+    ], 
+    "target": "cbf32a80-50bc-49eb-9148-ddd665f1b472", 
+    "certainty": "uncertain", 
+    "source": "3cb5fcb1-bc90-4b16-af44-ab2856869959", 
+    "valence": "positive", 
+    "id": "cac89483-dd29-45cf-80cc-d18d90b62bd1"
+  }, 
+  {
+    "elements": [
+      "34300bf8-e026-4242-b95c-02cf9e7bfae7", 
+      "cbf32a80-50bc-49eb-9148-ddd665f1b472"
+    ], 
+    "target": "cbf32a80-50bc-49eb-9148-ddd665f1b472", 
+    "certainty": "uncertain", 
+    "source": "34300bf8-e026-4242-b95c-02cf9e7bfae7", 
+    "valence": "positive", 
+    "id": "175eadae-338e-4dbd-9718-d1e21a4a62a3"
+  }, 
+  {
+    "elements": [
+      "cbf32a80-50bc-49eb-9148-ddd665f1b472", 
+      "ce74bd01-964d-41a4-9ca8-1d9231221efa"
+    ], 
+    "target": "ce74bd01-964d-41a4-9ca8-1d9231221efa", 
+    "certainty": "uncertain", 
+    "source": "cbf32a80-50bc-49eb-9148-ddd665f1b472", 
+    "valence": "negative", 
+    "id": "62a461f4-3b9f-4a74-a8af-72700febb004"
+  }, 
+  {
+    "elements": [
+      "3a006a00-fd55-4350-8342-6c2d94822868", 
+      "5efde148-d226-41bb-908b-c4e427b33413"
+    ], 
+    "target": "5efde148-d226-41bb-908b-c4e427b33413", 
+    "certainty": "uncertain", 
+    "source": "3a006a00-fd55-4350-8342-6c2d94822868", 
+    "valence": "positive", 
+    "id": "9be6b6ce-c1c9-43a1-bb92-bc6f64f06c89"
+  }, 
+  {
+    "elements": [
+      "3a006a00-fd55-4350-8342-6c2d94822868", 
+      "61a60898-184e-4f25-9535-c4463a444186"
+    ], 
+    "target": "61a60898-184e-4f25-9535-c4463a444186", 
+    "certainty": "uncertain", 
+    "source": "3a006a00-fd55-4350-8342-6c2d94822868", 
+    "valence": "positive", 
+    "id": "fddeeb80-5d82-4228-9b88-ff8adf09e1fd"
+  }, 
+  {
+    "elements": [
+      "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+      "c96a771e-237e-44a6-9bcb-8013c719d829"
+    ], 
+    "target": "c96a771e-237e-44a6-9bcb-8013c719d829", 
+    "certainty": "certain", 
+    "source": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7", 
+    "valence": "positive", 
+    "id": "793cd1b8-8deb-4d42-8423-831ecef8ac4f"
+  }, 
+  {
+    "elements": [
+      "11f84eea-3a89-46a3-86da-2c936eef96c1", 
+      "e2e36f9f-9041-4689-8595-efd7b280773d"
+    ], 
+    "target": "e2e36f9f-9041-4689-8595-efd7b280773d", 
+    "certainty": "certain", 
+    "source": "11f84eea-3a89-46a3-86da-2c936eef96c1", 
+    "valence": "positive", 
+    "id": "8b164ee1-5b33-477a-867c-6f61887e4f05"
+  }, 
+  {
+    "elements": [
+      "4caff84d-8880-4a77-ba53-d65d5491d4d2", 
+      "11f84eea-3a89-46a3-86da-2c936eef96c1"
+    ], 
+    "target": "11f84eea-3a89-46a3-86da-2c936eef96c1", 
+    "certainty": "certain", 
+    "source": "4caff84d-8880-4a77-ba53-d65d5491d4d2", 
+    "valence": "positive", 
+    "id": "4f794746-1f7e-478f-9037-704a3b616a3e"
+  }, 
+  {
+    "elements": [
+      "f6ceeebc-5037-4d9d-a129-61511fbf4ffd", 
+      "c13496fb-2871-4a69-9abd-e285fb63c6fb"
+    ], 
+    "target": "c13496fb-2871-4a69-9abd-e285fb63c6fb", 
+    "certainty": "certain", 
+    "source": "f6ceeebc-5037-4d9d-a129-61511fbf4ffd", 
+    "valence": "positive", 
+    "id": "c5c2f265-80b3-4518-aa29-44958af11449"
+  }, 
+  {
+    "elements": [
+      "b2a7a62a-a541-4569-a51f-372e7456dd9d", 
+      "d5f06177-4480-4395-9ec8-ec9eeb401e34"
+    ], 
+    "target": "d5f06177-4480-4395-9ec8-ec9eeb401e34", 
+    "certainty": "certain", 
+    "source": "b2a7a62a-a541-4569-a51f-372e7456dd9d", 
+    "valence": "positive", 
+    "id": "58d267bd-c306-4040-8889-73249f51db82"
+  }, 
+  {
+    "elements": [
+      "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6", 
+      "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
+    ], 
+    "target": "a5d98044-ac28-44e8-9d3d-d00305a46b3a", 
+    "certainty": "certain", 
+    "source": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6", 
+    "valence": "negative", 
+    "id": "430b7de8-b049-4f13-9100-a261a552c328"
+  }, 
+  {
+    "elements": [
+      "76c17d41-f63c-42cf-8c2c-c521917c331f", 
+      "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
+    ], 
+    "target": "a5d98044-ac28-44e8-9d3d-d00305a46b3a", 
+    "certainty": "certain", 
+    "source": "76c17d41-f63c-42cf-8c2c-c521917c331f", 
+    "valence": "negative", 
+    "id": "201b9e18-b714-49b9-a3e2-397e4e1c2048"
+  }, 
+  {
+    "elements": [
+      "d5f06177-4480-4395-9ec8-ec9eeb401e34", 
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c"
+    ], 
+    "target": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "certainty": "certain", 
+    "source": "d5f06177-4480-4395-9ec8-ec9eeb401e34", 
+    "valence": "positive", 
+    "id": "215027ec-92b2-46be-952e-ac694c827d17"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6"
+    ], 
+    "target": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "negative", 
+    "id": "ca0f13c3-12a4-4236-a779-3fe69e525512"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "76c17d41-f63c-42cf-8c2c-c521917c331f"
+    ], 
+    "target": "76c17d41-f63c-42cf-8c2c-c521917c331f", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "negative", 
+    "id": "6a01cb95-cdcc-4675-abbc-233be56ccf2f"
+  }, 
+  {
+    "elements": [
+      "f36d8f26-8ede-4dda-98d6-bb3fbc93209b", 
+      "18a2d116-77d4-467c-99dd-116e8faffcad"
+    ], 
+    "target": "18a2d116-77d4-467c-99dd-116e8faffcad", 
+    "certainty": "certain", 
+    "source": "f36d8f26-8ede-4dda-98d6-bb3fbc93209b", 
+    "valence": "positive", 
+    "id": "3348fb48-1c5c-4608-b726-b555b4d0ec45"
+  }, 
+  {
+    "elements": [
+      "18a2d116-77d4-467c-99dd-116e8faffcad", 
+      "6767d22e-ac3c-4b81-bb50-21f701307bde"
+    ], 
+    "target": "6767d22e-ac3c-4b81-bb50-21f701307bde", 
+    "certainty": "certain", 
+    "source": "18a2d116-77d4-467c-99dd-116e8faffcad", 
+    "valence": "positive", 
+    "id": "ffe98685-579d-4b7d-a6c5-5e9cff0930d5"
+  }, 
+  {
+    "elements": [
+      "6767d22e-ac3c-4b81-bb50-21f701307bde", 
+      "6f7185b4-c214-49eb-8729-db7c6fcbf420"
+    ], 
+    "target": "6f7185b4-c214-49eb-8729-db7c6fcbf420", 
+    "certainty": "certain", 
+    "source": "6767d22e-ac3c-4b81-bb50-21f701307bde", 
+    "valence": "positive", 
+    "id": "6862b30b-a9ac-41a7-a277-625c12fca1b5"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "f36d8f26-8ede-4dda-98d6-bb3fbc93209b"
+    ], 
+    "target": "f36d8f26-8ede-4dda-98d6-bb3fbc93209b", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "fb50cae7-59fd-450e-8ac1-734828f2722d"
+  }, 
+  {
+    "elements": [
+      "eb09c956-1e10-416d-83d0-1bce470be200", 
+      "ef6c4ea6-ce3d-4718-a617-79441ab4e99f"
+    ], 
+    "target": "ef6c4ea6-ce3d-4718-a617-79441ab4e99f", 
+    "certainty": "certain", 
+    "source": "eb09c956-1e10-416d-83d0-1bce470be200", 
+    "valence": "negative", 
+    "id": "6549cbbe-95c5-415a-aaef-73b43589c710"
+  }, 
+  {
+    "elements": [
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+      "8b4d21aa-34e8-4dc2-a6c4-a9bacc98016b"
+    ], 
+    "target": "8b4d21aa-34e8-4dc2-a6c4-a9bacc98016b", 
+    "certainty": "certain", 
+    "source": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "valence": "positive", 
+    "id": "192fc003-4e8d-4a1b-a1b2-3172490f52ae"
+  }, 
+  {
+    "elements": [
+      "9b8926e2-0d49-46c1-9af6-5041e7282b02", 
+      "73e89487-f040-40c8-a90d-894451bf167f"
+    ], 
+    "target": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "certainty": "certain", 
+    "source": "9b8926e2-0d49-46c1-9af6-5041e7282b02", 
+    "valence": "positive", 
+    "id": "571c0bfc-a360-466e-ab7a-844aba2f38fa"
+  }, 
+  {
+    "elements": [
+      "73e89487-f040-40c8-a90d-894451bf167f", 
+      "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
+    ], 
+    "target": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "certainty": "certain", 
+    "source": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "valence": "negative", 
+    "id": "946307e7-fc90-45de-8437-68c8758867bd"
+  }, 
+  {
+    "elements": [
+      "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+      "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
+    ], 
+    "target": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
+    "certainty": "certain", 
+    "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "valence": "negative", 
+    "id": "14b6f110-86cb-41af-9d12-3c5179ab5c21"
+  }, 
+  {
+    "elements": [
+      "2869074d-26a4-469f-9495-f900cfae2bd5", 
+      "0e91b787-6490-4776-b37c-b7963846927f"
+    ], 
+    "target": "0e91b787-6490-4776-b37c-b7963846927f", 
+    "certainty": "certain", 
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "valence": "negative", 
+    "id": "3fe81ab0-f0e5-4cf0-a599-f31f14b15291"
+  }, 
+  {
+    "elements": [
+      "0e91b787-6490-4776-b37c-b7963846927f", 
+      "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29"
+    ], 
+    "target": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29", 
+    "certainty": "certain", 
+    "source": "0e91b787-6490-4776-b37c-b7963846927f", 
+    "valence": "negative", 
+    "id": "af318500-39c7-4d35-bbec-144c59ccb585"
+  }, 
+  {
+    "elements": [
+      "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29", 
+      "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
+    ], 
+    "target": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "certainty": "certain", 
+    "source": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29", 
+    "valence": "negative", 
+    "id": "972410db-702b-4e09-8376-850b8ad4f11b"
+  }, 
+  {
+    "elements": [
+      "2869074d-26a4-469f-9495-f900cfae2bd5", 
+      "22f43593-1736-440c-a23c-8c6266cdf0a6"
+    ], 
+    "target": "22f43593-1736-440c-a23c-8c6266cdf0a6", 
+    "certainty": "certain", 
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "valence": "positive", 
+    "id": "661416a5-86d8-4d8a-8191-bb04c04769e9"
+  }, 
+  {
+    "elements": [
+      "2869074d-26a4-469f-9495-f900cfae2bd5", 
+      "6c880340-76d1-44c0-8847-c73e68250577"
+    ], 
+    "target": "6c880340-76d1-44c0-8847-c73e68250577", 
+    "certainty": "certain", 
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "valence": "positive", 
+    "id": "534e9ee8-ede1-4738-b9da-9a26939a3e80"
+  }, 
+  {
+    "elements": [
+      "2869074d-26a4-469f-9495-f900cfae2bd5", 
+      "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
+    ], 
+    "target": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
+    "certainty": "certain", 
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "valence": "positive", 
+    "id": "56410285-2f66-49f6-8317-7ad552e98029"
+  }, 
+  {
+    "elements": [
+      "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+      "22f43593-1736-440c-a23c-8c6266cdf0a6"
+    ], 
+    "target": "22f43593-1736-440c-a23c-8c6266cdf0a6", 
+    "certainty": "certain", 
+    "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "valence": "negative", 
+    "id": "ca9f6bab-c01f-4fd9-b396-6c178b8ee55c"
+  }, 
+  {
+    "elements": [
+      "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+      "6c880340-76d1-44c0-8847-c73e68250577"
+    ], 
+    "target": "6c880340-76d1-44c0-8847-c73e68250577", 
+    "certainty": "certain", 
+    "source": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+    "valence": "negative", 
+    "id": "bfee448d-865f-4647-ac96-3db13b7d28f1"
+  }, 
+  {
+    "elements": [
+      "22f43593-1736-440c-a23c-8c6266cdf0a6", 
+      "f5c41da2-0a85-47b1-a439-e2a213952a40"
+    ], 
+    "target": "f5c41da2-0a85-47b1-a439-e2a213952a40", 
+    "certainty": "certain", 
+    "source": "22f43593-1736-440c-a23c-8c6266cdf0a6", 
+    "valence": "positive", 
+    "id": "19c7938f-652b-4769-9860-d33af8ad8fc0"
+  }, 
+  {
+    "elements": [
+      "6c880340-76d1-44c0-8847-c73e68250577", 
+      "f5c41da2-0a85-47b1-a439-e2a213952a40"
+    ], 
+    "target": "f5c41da2-0a85-47b1-a439-e2a213952a40", 
+    "certainty": "certain", 
+    "source": "6c880340-76d1-44c0-8847-c73e68250577", 
+    "valence": "positive", 
+    "id": "79736379-1ecf-494c-b155-1beaa12e7cde"
+  }, 
+  {
+    "elements": [
+      "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
+      "f5c41da2-0a85-47b1-a439-e2a213952a40"
+    ], 
+    "target": "f5c41da2-0a85-47b1-a439-e2a213952a40", 
+    "certainty": "certain", 
+    "source": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
+    "valence": "positive", 
+    "id": "0893a62d-7c9b-48e3-8218-6edcf9166c0a"
+  }, 
+  {
+    "elements": [
+      "9b8926e2-0d49-46c1-9af6-5041e7282b02", 
+      "830c3722-97df-4c15-acee-ded740cb2aa1"
+    ], 
+    "target": "830c3722-97df-4c15-acee-ded740cb2aa1", 
+    "certainty": "certain", 
+    "source": "9b8926e2-0d49-46c1-9af6-5041e7282b02", 
+    "valence": "positive", 
+    "id": "856e1c8c-4511-40d7-af85-b338693bad36"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "73e89487-f040-40c8-a90d-894451bf167f"
+    ], 
+    "target": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "7db07199-77e1-4814-a075-fe21a050a5bb"
+  }, 
+  {
+    "elements": [
+      "c6f1c438-4e85-418d-b4de-598a3561367b", 
+      "3eb400bd-9967-4b7b-af9c-918dc1b6b523"
+    ], 
+    "target": "3eb400bd-9967-4b7b-af9c-918dc1b6b523", 
+    "certainty": "certain", 
+    "source": "c6f1c438-4e85-418d-b4de-598a3561367b", 
+    "valence": "positive", 
+    "id": "209dd455-32b7-4097-92ce-c521bc28b376"
+  }, 
+  {
+    "elements": [
+      "de873c48-8ca9-4e60-a279-034e53b2c4e9", 
+      "8df893a4-8f0b-490c-987f-af902096cb2a"
+    ], 
+    "target": "8df893a4-8f0b-490c-987f-af902096cb2a", 
+    "certainty": "certain", 
+    "source": "de873c48-8ca9-4e60-a279-034e53b2c4e9", 
+    "valence": "positive", 
+    "id": "d567bc68-3036-4d15-887a-2fc4844bd0cc"
+  }, 
+  {
+    "elements": [
+      "37ac70e9-6344-40ab-b8c4-b4ebf97fa84a", 
+      "c6f1c438-4e85-418d-b4de-598a3561367b"
+    ], 
+    "target": "c6f1c438-4e85-418d-b4de-598a3561367b", 
+    "certainty": "certain", 
+    "source": "37ac70e9-6344-40ab-b8c4-b4ebf97fa84a", 
+    "valence": "positive", 
+    "id": "da7384df-b157-42b3-be85-ab5bcf81d6de"
+  }, 
+  {
+    "elements": [
+      "3eb400bd-9967-4b7b-af9c-918dc1b6b523", 
+      "7b981689-daf7-47ab-9bea-6430ab017d3e"
+    ], 
+    "target": "7b981689-daf7-47ab-9bea-6430ab017d3e", 
+    "certainty": "certain", 
+    "source": "3eb400bd-9967-4b7b-af9c-918dc1b6b523", 
+    "valence": "positive", 
+    "id": "faa20f95-517f-436c-9318-7c3dd98fea1b"
+  }, 
+  {
+    "elements": [
+      "7b981689-daf7-47ab-9bea-6430ab017d3e", 
+      "6cd2ee83-5635-4b51-861c-beb8f95a3ba4"
+    ], 
+    "target": "6cd2ee83-5635-4b51-861c-beb8f95a3ba4", 
+    "certainty": "certain", 
+    "source": "7b981689-daf7-47ab-9bea-6430ab017d3e", 
+    "valence": "positive", 
+    "id": "ac85f62d-2760-4853-b9eb-f3c901e555e8"
+  }, 
+  {
+    "elements": [
+      "6cd2ee83-5635-4b51-861c-beb8f95a3ba4", 
+      "de873c48-8ca9-4e60-a279-034e53b2c4e9"
+    ], 
+    "target": "de873c48-8ca9-4e60-a279-034e53b2c4e9", 
+    "certainty": "certain", 
+    "source": "6cd2ee83-5635-4b51-861c-beb8f95a3ba4", 
+    "valence": "positive", 
+    "id": "ea55171a-289a-4c1a-b278-4aba5a1fe88f"
+  }, 
+  {
+    "elements": [
+      "73e89487-f040-40c8-a90d-894451bf167f", 
+      "37ac70e9-6344-40ab-b8c4-b4ebf97fa84a"
+    ], 
+    "target": "37ac70e9-6344-40ab-b8c4-b4ebf97fa84a", 
+    "certainty": "certain", 
+    "source": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "valence": "positive", 
+    "id": "c5975a44-d401-40c2-8a42-e639b20d4a78"
+  }, 
+  {
+    "elements": [
+      "de873c48-8ca9-4e60-a279-034e53b2c4e9", 
+      "84be16d8-102c-46bc-bd08-74c6bd128728"
+    ], 
+    "target": "84be16d8-102c-46bc-bd08-74c6bd128728", 
+    "certainty": "certain", 
+    "source": "de873c48-8ca9-4e60-a279-034e53b2c4e9", 
+    "valence": "positive", 
+    "id": "505a97fe-9af9-42da-9a8d-28d294b3ebe7"
+  }, 
+  {
+    "elements": [
+      "c6f1c438-4e85-418d-b4de-598a3561367b", 
+      "8e4783c9-4af7-4ba1-9bde-2b8d6deacf99"
+    ], 
+    "target": "8e4783c9-4af7-4ba1-9bde-2b8d6deacf99", 
+    "certainty": "certain", 
+    "source": "c6f1c438-4e85-418d-b4de-598a3561367b", 
+    "valence": "positive", 
+    "id": "2d210f54-e7a0-42d2-bbae-a0e2d136fb45"
+  }, 
+  {
+    "elements": [
+      "84be16d8-102c-46bc-bd08-74c6bd128728", 
+      "7fabfae8-c63a-4be1-8d90-2ef190a2bba7"
+    ], 
+    "target": "7fabfae8-c63a-4be1-8d90-2ef190a2bba7", 
+    "certainty": "certain", 
+    "source": "84be16d8-102c-46bc-bd08-74c6bd128728", 
+    "valence": "positive", 
+    "id": "776754ea-269f-4a5a-b372-6f13d25d22f5"
+  }, 
+  {
+    "elements": [
+      "8e4783c9-4af7-4ba1-9bde-2b8d6deacf99", 
+      "84be16d8-102c-46bc-bd08-74c6bd128728"
+    ], 
+    "target": "84be16d8-102c-46bc-bd08-74c6bd128728", 
+    "certainty": "certain", 
+    "source": "8e4783c9-4af7-4ba1-9bde-2b8d6deacf99", 
+    "valence": "positive", 
+    "id": "c9ee3d41-a897-4f16-bdcf-4ce0b628b405"
+  }, 
+  {
+    "elements": [
+      "b2dc11e3-d553-426e-85bb-3ac643201459", 
+      "8ab5ca4e-2007-4705-9d30-4b844d104e4e"
+    ], 
+    "target": "8ab5ca4e-2007-4705-9d30-4b844d104e4e", 
+    "certainty": "certain", 
+    "source": "b2dc11e3-d553-426e-85bb-3ac643201459", 
+    "valence": "positive", 
+    "id": "92416ba0-4f19-4deb-936b-414937bd77fe"
+  }, 
+  {
+    "elements": [
+      "e90c2122-0271-417e-8aab-195291e77b94", 
+      "b33eca1b-b213-453e-bd91-5293a734d52d"
+    ], 
+    "target": "b33eca1b-b213-453e-bd91-5293a734d52d", 
+    "certainty": "certain", 
+    "source": "e90c2122-0271-417e-8aab-195291e77b94", 
+    "valence": "positive", 
+    "id": "2808f4a4-1dc6-4e8e-ac0d-af0b7d3e7dc1"
+  }, 
+  {
+    "elements": [
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+      "e90c2122-0271-417e-8aab-195291e77b94"
+    ], 
+    "target": "e90c2122-0271-417e-8aab-195291e77b94", 
+    "certainty": "certain", 
+    "source": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "valence": "positive", 
+    "id": "25089d9c-8136-4ea5-80bd-0140c0b78925"
+  }, 
+  {
+    "elements": [
+      "476bdd52-da6a-4896-b08b-a61ade123f15", 
+      "1b8cadfd-7fd3-4747-ad15-7fcdbe5c929c"
+    ], 
+    "target": "1b8cadfd-7fd3-4747-ad15-7fcdbe5c929c", 
+    "certainty": "certain", 
+    "source": "476bdd52-da6a-4896-b08b-a61ade123f15", 
+    "valence": "positive", 
+    "id": "021919ef-9ef4-4b4d-8ae6-d7c44b5a1b1d"
+  }, 
+  {
+    "elements": [
+      "083bdc4e-9d45-498b-a448-70d3422d4e26", 
+      "476bdd52-da6a-4896-b08b-a61ade123f15"
+    ], 
+    "target": "476bdd52-da6a-4896-b08b-a61ade123f15", 
+    "certainty": "certain", 
+    "source": "083bdc4e-9d45-498b-a448-70d3422d4e26", 
+    "valence": "positive", 
+    "id": "0bfd86a3-cdd0-40ce-86c5-39fa6cadf464"
+  }, 
+  {
+    "elements": [
+      "b33eca1b-b213-453e-bd91-5293a734d52d", 
+      "a099a23d-1403-4a2d-9e57-bbaf73c8be8c"
+    ], 
+    "target": "a099a23d-1403-4a2d-9e57-bbaf73c8be8c", 
+    "certainty": "certain", 
+    "source": "b33eca1b-b213-453e-bd91-5293a734d52d", 
+    "valence": "positive", 
+    "id": "7dff8fa9-9a29-45b7-8f4f-05dc236bf149"
+  }, 
+  {
+    "elements": [
+      "b33eca1b-b213-453e-bd91-5293a734d52d", 
+      "083bdc4e-9d45-498b-a448-70d3422d4e26"
+    ], 
+    "target": "083bdc4e-9d45-498b-a448-70d3422d4e26", 
+    "certainty": "certain", 
+    "source": "b33eca1b-b213-453e-bd91-5293a734d52d", 
+    "valence": "positive", 
+    "id": "57d79423-c9ac-4f28-bb65-bf11334cb5eb"
+  }, 
+  {
+    "elements": [
+      "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+      "7da93321-805d-4c20-b8a3-a79f1ea1ff15"
+    ], 
+    "target": "7da93321-805d-4c20-b8a3-a79f1ea1ff15", 
+    "certainty": "certain", 
+    "source": "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+    "valence": "positive", 
+    "id": "e865436e-c4e0-47dd-9004-91dcdfaca204"
+  }, 
+  {
+    "elements": [
+      "7da93321-805d-4c20-b8a3-a79f1ea1ff15", 
+      "a099a23d-1403-4a2d-9e57-bbaf73c8be8c"
+    ], 
+    "target": "a099a23d-1403-4a2d-9e57-bbaf73c8be8c", 
+    "certainty": "uncertain", 
+    "source": "7da93321-805d-4c20-b8a3-a79f1ea1ff15", 
+    "valence": "positive", 
+    "id": "45f4f72f-72fa-4e46-9424-0a06b598c1bf"
+  }, 
+  {
+    "elements": [
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+      "490cfcac-4e3f-4767-b319-f9ded78b2553"
+    ], 
+    "target": "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+    "certainty": "certain", 
+    "source": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "valence": "positive", 
+    "id": "7040c9ce-2523-4819-a585-7b2e397d45f2"
+  }, 
+  {
+    "elements": [
+      "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+      "78ae09cc-7cb8-4706-ab9e-118441c7a628"
+    ], 
+    "target": "78ae09cc-7cb8-4706-ab9e-118441c7a628", 
+    "certainty": "certain", 
+    "source": "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+    "valence": "positive", 
+    "id": "23666628-946b-4ab4-b337-d3234249c2f3"
+  }, 
+  {
+    "elements": [
+      "78ae09cc-7cb8-4706-ab9e-118441c7a628", 
+      "3432384d-5e8c-4cb5-b199-726631f424c7"
+    ], 
+    "target": "3432384d-5e8c-4cb5-b199-726631f424c7", 
+    "certainty": "certain", 
+    "source": "78ae09cc-7cb8-4706-ab9e-118441c7a628", 
+    "valence": "positive", 
+    "id": "a2af810c-d1e3-4a02-b1b6-316de6d3fee8"
+  }, 
+  {
+    "elements": [
+      "3432384d-5e8c-4cb5-b199-726631f424c7", 
+      "a099a23d-1403-4a2d-9e57-bbaf73c8be8c"
+    ], 
+    "target": "a099a23d-1403-4a2d-9e57-bbaf73c8be8c", 
+    "certainty": "uncertain", 
+    "source": "3432384d-5e8c-4cb5-b199-726631f424c7", 
+    "valence": "positive", 
+    "id": "4db5b365-04f1-4982-b73f-704447be84d6"
+  }, 
+  {
+    "elements": [
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+      "78699c35-befe-4b31-8631-2298aba411ca"
+    ], 
+    "target": "78699c35-befe-4b31-8631-2298aba411ca", 
+    "certainty": "certain", 
+    "source": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "valence": "positive", 
+    "id": "8a40a6d1-213a-457b-bf88-a60e83a3e634"
+  }, 
+  {
+    "elements": [
+      "78699c35-befe-4b31-8631-2298aba411ca", 
+      "a099a23d-1403-4a2d-9e57-bbaf73c8be8c"
+    ], 
+    "target": "a099a23d-1403-4a2d-9e57-bbaf73c8be8c", 
+    "certainty": "uncertain", 
+    "source": "78699c35-befe-4b31-8631-2298aba411ca", 
+    "valence": "positive", 
+    "id": "4749cf59-c840-4788-a605-a1b0977400b1"
+  }, 
+  {
+    "elements": [
+      "73e89487-f040-40c8-a90d-894451bf167f", 
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e"
+    ], 
+    "target": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "certainty": "certain", 
+    "source": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "valence": "positive", 
+    "id": "bf4f83b4-1e81-465b-94b7-ba4c5b00fc68"
+  }, 
+  {
+    "elements": [
+      "73e89487-f040-40c8-a90d-894451bf167f", 
+      "490cfcac-4e3f-4767-b319-f9ded78b2553"
+    ], 
+    "target": "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+    "certainty": "certain", 
+    "source": "73e89487-f040-40c8-a90d-894451bf167f", 
+    "valence": "positive", 
+    "id": "d114983b-bb64-4910-8a54-6be7262c15eb"
+  }, 
+  {
+    "elements": [
+      "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+      "2869074d-26a4-469f-9495-f900cfae2bd5"
+    ], 
+    "target": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "certainty": "certain", 
+    "source": "490cfcac-4e3f-4767-b319-f9ded78b2553", 
+    "valence": "positive", 
+    "id": "2ff68443-d28d-400b-b696-3f2982ebf5e7"
+  }, 
+  {
+    "elements": [
+      "2869074d-26a4-469f-9495-f900cfae2bd5", 
+      "78ae09cc-7cb8-4706-ab9e-118441c7a628"
+    ], 
+    "target": "78ae09cc-7cb8-4706-ab9e-118441c7a628", 
+    "certainty": "certain", 
+    "source": "2869074d-26a4-469f-9495-f900cfae2bd5", 
+    "valence": "positive", 
+    "id": "049ce4ed-d430-4102-83d2-4a42417ff40b"
+  }, 
+  {
+    "elements": [
+      "68e8b95a-ce7e-4562-88d9-3beca97a7e34", 
+      "5eea279e-474d-46f2-ad4b-8f63f93bff6e"
+    ], 
+    "target": "5eea279e-474d-46f2-ad4b-8f63f93bff6e", 
+    "certainty": "certain", 
+    "source": "68e8b95a-ce7e-4562-88d9-3beca97a7e34", 
+    "valence": "positive", 
+    "id": "9661f230-1a46-4f62-93eb-f29a24ddd403"
+  }, 
+  {
+    "elements": [
+      "c446575b-6efa-48fd-bf33-c197535d8ced", 
+      "e2e36f9f-9041-4689-8595-efd7b280773d"
+    ], 
+    "target": "e2e36f9f-9041-4689-8595-efd7b280773d", 
+    "certainty": "certain", 
+    "source": "c446575b-6efa-48fd-bf33-c197535d8ced", 
+    "valence": "positive", 
+    "id": "be275a9b-dfa4-45d0-b39b-fd9c5a93542c"
+  }, 
+  {
+    "elements": [
+      "de9b0a0a-d2b0-4356-80dd-25a5e42c2fd7", 
+      "6813ceda-32ae-40b4-8754-a6b50368f183"
+    ], 
+    "target": "6813ceda-32ae-40b4-8754-a6b50368f183", 
+    "certainty": "certain", 
+    "source": "de9b0a0a-d2b0-4356-80dd-25a5e42c2fd7", 
+    "valence": "positive", 
+    "id": "eb7c7e08-b452-42ae-b907-c9ef075d8577"
+  }, 
+  {
+    "elements": [
+      "139031e5-e8e0-4db2-bbd9-1e7d185c402a", 
+      "6813ceda-32ae-40b4-8754-a6b50368f183"
+    ], 
+    "target": "6813ceda-32ae-40b4-8754-a6b50368f183", 
+    "certainty": "certain", 
+    "source": "139031e5-e8e0-4db2-bbd9-1e7d185c402a", 
+    "valence": "positive", 
+    "id": "6f0292fc-b1f1-473f-a1d3-860c05469440"
+  }, 
+  {
+    "elements": [
+      "a93364dd-0bc2-4a0a-ab10-f2b97435e96c", 
+      "2cb05a02-29f4-42ec-9537-e95a53388968"
+    ], 
+    "target": "2cb05a02-29f4-42ec-9537-e95a53388968", 
+    "certainty": "certain", 
+    "source": "a93364dd-0bc2-4a0a-ab10-f2b97435e96c", 
+    "valence": "positive", 
+    "id": "f1f5f6b1-d642-45e0-a878-a2119d942cfb"
+  }, 
+  {
+    "elements": [
+      "770d84b4-bfc3-4140-86ce-13e43b8cc633", 
+      "2cb05a02-29f4-42ec-9537-e95a53388968"
+    ], 
+    "target": "2cb05a02-29f4-42ec-9537-e95a53388968", 
+    "certainty": "certain", 
+    "source": "770d84b4-bfc3-4140-86ce-13e43b8cc633", 
+    "valence": "positive", 
+    "id": "8d5f7421-b246-410c-8007-cfa473ac472c"
+  }, 
+  {
+    "elements": [
+      "6dbfcbfb-ffc8-4c6c-8093-5f001332ef29", 
+      "2cb05a02-29f4-42ec-9537-e95a53388968"
+    ], 
+    "target": "2cb05a02-29f4-42ec-9537-e95a53388968", 
+    "certainty": "certain", 
+    "source": "6dbfcbfb-ffc8-4c6c-8093-5f001332ef29", 
+    "valence": "positive", 
+    "id": "dd33581e-aa95-4fea-9722-fc12ab459c88"
+  }, 
+  {
+    "elements": [
+      "5eea279e-474d-46f2-ad4b-8f63f93bff6e", 
+      "3f11cdb7-658f-4413-a5a5-ef7e12a6a882"
+    ], 
+    "target": "3f11cdb7-658f-4413-a5a5-ef7e12a6a882", 
+    "certainty": "certain", 
+    "source": "5eea279e-474d-46f2-ad4b-8f63f93bff6e", 
+    "valence": "positive", 
+    "id": "112e7e4a-d7e5-4f91-942e-0d6832228f89"
+  }, 
+  {
+    "elements": [
+      "139031e5-e8e0-4db2-bbd9-1e7d185c402a", 
+      "2cb05a02-29f4-42ec-9537-e95a53388968"
+    ], 
+    "target": "2cb05a02-29f4-42ec-9537-e95a53388968", 
+    "certainty": "certain", 
+    "source": "139031e5-e8e0-4db2-bbd9-1e7d185c402a", 
+    "valence": "positive", 
+    "id": "140f909d-f378-4876-b1b4-bf6aee7c12f3"
+  }, 
+  {
+    "elements": [
+      "86370122-6799-476c-b361-777c8c33426e", 
+      "2cb05a02-29f4-42ec-9537-e95a53388968"
+    ], 
+    "target": "2cb05a02-29f4-42ec-9537-e95a53388968", 
+    "certainty": "certain", 
+    "source": "86370122-6799-476c-b361-777c8c33426e", 
+    "valence": "positive", 
+    "id": "18db5878-958f-4d22-b946-dd96cff4251c"
+  }, 
+  {
+    "elements": [
+      "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+      "770d84b4-bfc3-4140-86ce-13e43b8cc633"
+    ], 
+    "target": "770d84b4-bfc3-4140-86ce-13e43b8cc633", 
+    "certainty": "certain", 
+    "source": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
+    "valence": "positive", 
+    "id": "344095b1-564e-4086-8ffa-8ad73987d792"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "de9b0a0a-d2b0-4356-80dd-25a5e42c2fd7"
+    ], 
+    "target": "de9b0a0a-d2b0-4356-80dd-25a5e42c2fd7", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "2e628894-6e6f-4886-b009-121a01d389ff"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "139031e5-e8e0-4db2-bbd9-1e7d185c402a"
+    ], 
+    "target": "139031e5-e8e0-4db2-bbd9-1e7d185c402a", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "389d3694-7f1b-4de4-b726-49f46ae5a866"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "6dbfcbfb-ffc8-4c6c-8093-5f001332ef29"
+    ], 
+    "target": "6dbfcbfb-ffc8-4c6c-8093-5f001332ef29", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "0d483c27-623b-4fbf-9757-4df46ef32d15"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "86370122-6799-476c-b361-777c8c33426e"
+    ], 
+    "target": "86370122-6799-476c-b361-777c8c33426e", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "e4aa1ae9-af58-4602-8c41-87ede2a20e9a"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "a93364dd-0bc2-4a0a-ab10-f2b97435e96c"
+    ], 
+    "target": "a93364dd-0bc2-4a0a-ab10-f2b97435e96c", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "f8e18d46-0f30-413c-8d25-b77171629fd2"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "770d84b4-bfc3-4140-86ce-13e43b8cc633"
+    ], 
+    "target": "770d84b4-bfc3-4140-86ce-13e43b8cc633", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "03bee941-2a6a-4c1f-84d1-90ca419ec83f"
+  }, 
+  {
+    "elements": [
+      "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
+      "f3c607fc-7273-4fd4-84f7-477c855c8fbf"
+    ], 
+    "target": "f3c607fc-7273-4fd4-84f7-477c855c8fbf", 
+    "certainty": "certain", 
+    "source": "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
+    "valence": "positive", 
+    "id": "9bc93626-4077-40cd-b364-221c5745109e"
+  }, 
+  {
+    "elements": [
+      "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
+      "be3a7418-d9c8-4f89-9c31-fad9acf7cd35"
+    ], 
+    "target": "be3a7418-d9c8-4f89-9c31-fad9acf7cd35", 
+    "certainty": "certain", 
+    "source": "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
+    "valence": "positive", 
+    "id": "0db38d4c-1992-49c2-9c66-153ddbd05232"
+  }, 
+  {
+    "elements": [
+      "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
+      "e5e24b15-0241-4bd9-a1e9-9cc5860ce8bf"
+    ], 
+    "target": "e5e24b15-0241-4bd9-a1e9-9cc5860ce8bf", 
+    "certainty": "certain", 
+    "source": "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
+    "valence": "positive", 
+    "id": "6a0b9417-f9ba-46dc-8012-4cc9334c4876"
+  }, 
+  {
+    "elements": [
+      "f3c607fc-7273-4fd4-84f7-477c855c8fbf", 
+      "90a96d11-f22b-4048-9f68-3855e48219ed"
+    ], 
+    "target": "90a96d11-f22b-4048-9f68-3855e48219ed", 
+    "certainty": "certain", 
+    "source": "f3c607fc-7273-4fd4-84f7-477c855c8fbf", 
+    "valence": "positive", 
+    "id": "fed5e736-26bd-4cf2-aaad-b60520a9a87d"
+  }, 
+  {
+    "elements": [
+      "be3a7418-d9c8-4f89-9c31-fad9acf7cd35", 
+      "90a96d11-f22b-4048-9f68-3855e48219ed"
+    ], 
+    "target": "90a96d11-f22b-4048-9f68-3855e48219ed", 
+    "certainty": "certain", 
+    "source": "be3a7418-d9c8-4f89-9c31-fad9acf7cd35", 
+    "valence": "positive", 
+    "id": "d74bd765-5e95-4498-9a46-240c593dc7ba"
+  }, 
+  {
+    "elements": [
+      "e5e24b15-0241-4bd9-a1e9-9cc5860ce8bf", 
+      "90a96d11-f22b-4048-9f68-3855e48219ed"
+    ], 
+    "target": "90a96d11-f22b-4048-9f68-3855e48219ed", 
+    "certainty": "certain", 
+    "source": "e5e24b15-0241-4bd9-a1e9-9cc5860ce8bf", 
+    "valence": "positive", 
+    "id": "e476a68c-c934-464b-acc9-93a5fce02c94"
+  }, 
+  {
+    "elements": [
+      "90a96d11-f22b-4048-9f68-3855e48219ed", 
+      "b2dc11e3-d553-426e-85bb-3ac643201459"
+    ], 
+    "target": "b2dc11e3-d553-426e-85bb-3ac643201459", 
+    "certainty": "certain", 
+    "source": "90a96d11-f22b-4048-9f68-3855e48219ed", 
+    "valence": "positive", 
+    "id": "43b1b09b-a26c-4f1f-bf88-dc8f56e50f8f"
+  }, 
+  {
+    "elements": [
+      "90a96d11-f22b-4048-9f68-3855e48219ed", 
+      "12384341-c780-4112-970f-e225cb7a2256"
+    ], 
+    "target": "12384341-c780-4112-970f-e225cb7a2256", 
+    "certainty": "certain", 
+    "source": "90a96d11-f22b-4048-9f68-3855e48219ed", 
+    "valence": "positive", 
+    "id": "7999e277-2cf8-485d-a9b5-91e9ba35b79b"
+  }, 
+  {
+    "elements": [
+      "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+      "866980f8-4816-4120-b7c8-5c698e27ab65"
+    ], 
+    "target": "866980f8-4816-4120-b7c8-5c698e27ab65", 
+    "certainty": "certain", 
+    "source": "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+    "valence": "positive", 
+    "id": "aa401fa9-e4a6-4462-a550-661dd0fc2665"
+  }, 
+  {
+    "elements": [
+      "8ab5ca4e-2007-4705-9d30-4b844d104e4e", 
+      "e41552c3-0f85-47c9-82af-a369c6ec6b99"
+    ], 
+    "target": "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+    "certainty": "certain", 
+    "source": "8ab5ca4e-2007-4705-9d30-4b844d104e4e", 
+    "valence": "positive", 
+    "id": "16aabd2e-148c-4d0b-a830-c558d61ceee9"
+  }, 
+  {
+    "elements": [
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+      "d575debf-833a-42a3-b43e-b56aa0e29101"
+    ], 
+    "target": "d575debf-833a-42a3-b43e-b56aa0e29101", 
+    "certainty": "certain", 
+    "source": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "valence": "positive", 
+    "id": "acc1edeb-c196-4838-9b60-73f5282edd36"
+  }, 
+  {
+    "elements": [
+      "d575debf-833a-42a3-b43e-b56aa0e29101", 
+      "68e8b95a-ce7e-4562-88d9-3beca97a7e34"
+    ], 
+    "target": "68e8b95a-ce7e-4562-88d9-3beca97a7e34", 
+    "certainty": "certain", 
+    "source": "d575debf-833a-42a3-b43e-b56aa0e29101", 
+    "valence": "positive", 
+    "id": "d41bb1e8-b718-49a3-b043-9adb74273033"
+  }, 
+  {
+    "elements": [
+      "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+      "ac9cd08f-523e-4630-a44f-30168c08b559"
+    ], 
+    "target": "ac9cd08f-523e-4630-a44f-30168c08b559", 
+    "certainty": "certain", 
+    "source": "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+    "valence": "positive", 
+    "id": "89402b45-e4d7-4f4c-8ec4-7a39d63205b7"
+  }, 
+  {
+    "elements": [
+      "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+      "2d20d07c-3616-4f7c-8ff9-124eba62c668"
+    ], 
+    "target": "2d20d07c-3616-4f7c-8ff9-124eba62c668", 
+    "certainty": "certain", 
+    "source": "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+    "valence": "positive", 
+    "id": "b134d673-640d-4b21-ab6e-060b2ddedeef"
+  }, 
+  {
+    "elements": [
+      "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+      "61a99fdc-9574-4c36-8254-82a61f99b6b2"
+    ], 
+    "target": "61a99fdc-9574-4c36-8254-82a61f99b6b2", 
+    "certainty": "certain", 
+    "source": "e41552c3-0f85-47c9-82af-a369c6ec6b99", 
+    "valence": "positive", 
+    "id": "00b9568a-41cd-46b4-84cb-82083bb8c73e"
+  }, 
+  {
+    "elements": [
+      "ac9cd08f-523e-4630-a44f-30168c08b559", 
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce"
+    ], 
+    "target": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "certainty": "certain", 
+    "source": "ac9cd08f-523e-4630-a44f-30168c08b559", 
+    "valence": "positive", 
+    "id": "dc5239ea-1713-4063-8535-d044ad51665a"
+  }, 
+  {
+    "elements": [
+      "2d20d07c-3616-4f7c-8ff9-124eba62c668", 
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce"
+    ], 
+    "target": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "certainty": "certain", 
+    "source": "2d20d07c-3616-4f7c-8ff9-124eba62c668", 
+    "valence": "positive", 
+    "id": "6e2c44be-2ec5-48cd-a4d5-5aec27ed6eda"
+  }, 
+  {
+    "elements": [
+      "61a99fdc-9574-4c36-8254-82a61f99b6b2", 
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce"
+    ], 
+    "target": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "certainty": "certain", 
+    "source": "61a99fdc-9574-4c36-8254-82a61f99b6b2", 
+    "valence": "positive", 
+    "id": "84e15d8d-84cf-4de7-830c-94294704f5cc"
+  }, 
+  {
+    "elements": [
+      "866980f8-4816-4120-b7c8-5c698e27ab65", 
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce"
+    ], 
+    "target": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "certainty": "certain", 
+    "source": "866980f8-4816-4120-b7c8-5c698e27ab65", 
+    "valence": "positive", 
+    "id": "3ef6acbc-677e-4e76-b362-ff434ca254eb"
+  }, 
+  {
+    "elements": [
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+      "c446575b-6efa-48fd-bf33-c197535d8ced"
+    ], 
+    "target": "c446575b-6efa-48fd-bf33-c197535d8ced", 
+    "certainty": "certain", 
+    "source": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "valence": "positive", 
+    "id": "3672e3ca-cd2f-41da-a793-dcd4aa5ebd63"
+  }, 
+  {
+    "elements": [
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+      "4caff84d-8880-4a77-ba53-d65d5491d4d2"
+    ], 
+    "target": "4caff84d-8880-4a77-ba53-d65d5491d4d2", 
+    "certainty": "certain", 
+    "source": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "valence": "positive", 
+    "id": "eee8b9a2-6130-4d33-997f-43bcf47bb5f5"
+  }, 
+  {
+    "elements": [
+      "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+      "f6ceeebc-5037-4d9d-a129-61511fbf4ffd"
+    ], 
+    "target": "f6ceeebc-5037-4d9d-a129-61511fbf4ffd", 
+    "certainty": "certain", 
+    "source": "39074c3a-980e-4e03-abd8-bd37e2c459ce", 
+    "valence": "positive", 
+    "id": "1da278af-959c-45aa-8df8-8739d029df48"
+  }, 
+  {
+    "elements": [
+      "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+      "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+    ], 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
+    "certainty": "certain", 
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "valence": "positive", 
+    "id": "04e3bffc-38db-4679-8a89-b927baae091d"
+  }, 
+  {
+    "elements": [
+      "b936752d-d9fe-47b3-874d-af45a86a4074", 
+      "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+    ], 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
+    "certainty": "certain", 
+    "source": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "valence": "positive", 
+    "id": "ce2cc4d3-bf18-4715-be2c-98b1a88644c7"
+  }, 
+  {
+    "elements": [
+      "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+      "74ddeb09-a146-40fd-9be5-1ca01f3fca8a"
+    ], 
+    "target": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a", 
+    "certainty": "certain", 
+    "source": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "valence": "positive", 
+    "id": "157a8b0b-9cd6-4017-bde8-637c3fe27bbf"
+  }, 
+  {
+    "elements": [
+      "a4dd71d7-0d23-4ea1-a1d8-6e8231a5bfe2", 
+      "5a497452-5a6d-409b-8e14-60f5a0b16189"
+    ], 
+    "target": "5a497452-5a6d-409b-8e14-60f5a0b16189", 
+    "certainty": "certain", 
+    "source": "a4dd71d7-0d23-4ea1-a1d8-6e8231a5bfe2", 
+    "valence": "positive", 
+    "id": "e540dc1a-3c91-45b0-95ff-9c07de372015"
+  }, 
+  {
+    "elements": [
+      "228301dc-a290-4946-80d7-a9456cccc49b", 
+      "770fd8b6-df17-4034-99e8-93e137aa1a0a"
+    ], 
+    "target": "770fd8b6-df17-4034-99e8-93e137aa1a0a", 
+    "certainty": "certain", 
+    "source": "228301dc-a290-4946-80d7-a9456cccc49b", 
+    "valence": "positive", 
+    "id": "e91b52bb-1246-474f-96f2-7ec0c01df6a5"
+  }, 
+  {
+    "elements": [
+      "5a497452-5a6d-409b-8e14-60f5a0b16189", 
+      "228301dc-a290-4946-80d7-a9456cccc49b"
+    ], 
+    "target": "228301dc-a290-4946-80d7-a9456cccc49b", 
+    "certainty": "certain", 
+    "source": "5a497452-5a6d-409b-8e14-60f5a0b16189", 
+    "valence": "positive", 
+    "id": "c14fa22a-d518-4a89-a6c7-8942f0f62f22"
+  }, 
+  {
+    "elements": [
+      "770fd8b6-df17-4034-99e8-93e137aa1a0a", 
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c"
+    ], 
+    "target": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "certainty": "certain", 
+    "source": "770fd8b6-df17-4034-99e8-93e137aa1a0a", 
+    "valence": "positive", 
+    "id": "714c185f-365b-43de-accd-28641fa9c355"
+  }, 
+  {
+    "elements": [
+      "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
+      "90a96d11-f22b-4048-9f68-3855e48219ed"
+    ], 
+    "target": "90a96d11-f22b-4048-9f68-3855e48219ed", 
+    "certainty": "certain", 
+    "source": "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
+    "valence": "positive", 
+    "id": "7e17225a-4e8f-422b-9917-ad8b27cddf9c"
+  }, 
+  {
+    "elements": [
+      "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
+      "a4dd71d7-0d23-4ea1-a1d8-6e8231a5bfe2"
+    ], 
+    "target": "a4dd71d7-0d23-4ea1-a1d8-6e8231a5bfe2", 
+    "certainty": "certain", 
+    "source": "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
+    "valence": "positive", 
+    "id": "d23f4292-3c3c-4dcf-9efa-e10da5cd3695"
+  }, 
+  {
+    "elements": [
+      "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
+      "c2efe6a6-ef85-4f2d-a42d-796993374f2c"
+    ], 
+    "target": "c2efe6a6-ef85-4f2d-a42d-796993374f2c", 
+    "certainty": "certain", 
+    "source": "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
+    "valence": "positive", 
+    "id": "2f9fdbf8-d439-4a07-ae34-5d2233be2721"
+  }, 
+  {
+    "elements": [
+      "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+      "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+    ], 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
+    "certainty": "certain", 
+    "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "valence": "positive", 
+    "id": "65e5eecc-fd4c-43f6-8951-0b72b73f21f2"
+  }, 
+  {
+    "elements": [
+      "55327c5c-7331-4b14-a55b-b20bea74c8b8", 
+      "dbdb7a27-d630-4ef9-b7a4-5216de0d0b7a"
+    ], 
+    "target": "dbdb7a27-d630-4ef9-b7a4-5216de0d0b7a", 
+    "certainty": "certain", 
+    "source": "55327c5c-7331-4b14-a55b-b20bea74c8b8", 
+    "valence": "positive", 
+    "id": "4764ddf9-b76f-4bfb-9459-ec0f8975c08b"
+  }, 
+  {
+    "elements": [
+      "74ddeb09-a146-40fd-9be5-1ca01f3fca8a", 
+      "9bdb9c66-7adc-4da1-b800-56ea238d5678"
+    ], 
+    "target": "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+    "certainty": "certain", 
+    "source": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a", 
+    "valence": "positive", 
+    "id": "9633c2e5-61d1-46f4-8138-d325897f468b"
+  }, 
+  {
+    "elements": [
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+      "df366ec9-124a-4155-b1ba-45a4fc23c7f5"
+    ], 
+    "target": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "certainty": "certain", 
+    "source": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "valence": "positive", 
+    "id": "e6350cfe-0daf-4b8b-948b-4915c575c0df"
+  }, 
+  {
+    "elements": [
+      "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+      "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4"
+    ], 
+    "target": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4", 
+    "certainty": "certain", 
+    "source": "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+    "valence": "positive", 
+    "id": "bce3c8e1-719d-4b4e-ab66-beda92f93252"
+  }, 
+  {
+    "elements": [
+      "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+      "73c0bf94-6395-4840-8dde-d050206f7067"
+    ], 
+    "target": "73c0bf94-6395-4840-8dde-d050206f7067", 
+    "certainty": "certain", 
+    "source": "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+    "valence": "positive", 
+    "id": "c7fa9926-a230-4eb1-9676-94cfdfa7df70"
+  }, 
+  {
+    "elements": [
+      "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+      "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+    ], 
+    "target": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
+    "certainty": "certain", 
+    "source": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+    "valence": "positive", 
+    "id": "878fa46e-da2b-4731-af58-477d01ab841f"
+  }, 
+  {
+    "elements": [
+      "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+      "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+    ], 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
+    "certainty": "certain", 
+    "source": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+    "valence": "positive", 
+    "id": "c02db17f-b047-495c-8a71-63a8e9617c01"
+  }, 
+  {
+    "elements": [
+      "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+      "d2223f81-eece-4b3c-a1db-58255e0aec32"
+    ], 
+    "target": "d2223f81-eece-4b3c-a1db-58255e0aec32", 
+    "certainty": "certain", 
+    "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "valence": "positive", 
+    "id": "2f774e65-d1fd-49e3-9600-2124c722f432"
+  }, 
+  {
+    "elements": [
+      "5c21af6a-ffde-485e-9e33-af152b0db5b9", 
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c"
+    ], 
+    "target": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "certainty": "certain", 
+    "source": "5c21af6a-ffde-485e-9e33-af152b0db5b9", 
+    "valence": "positive", 
+    "id": "d78e950e-54f7-478e-941b-d4553e257f45"
+  }, 
+  {
+    "elements": [
+      "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+      "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+    ], 
+    "target": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
+    "certainty": "certain", 
+    "source": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "valence": "positive", 
+    "id": "8d8146a4-34e1-4e55-8233-f5d48f020501"
+  }, 
+  {
+    "elements": [
+      "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+      "3aa9653a-0b5f-48da-ab44-5f278aed7e2f"
+    ], 
+    "target": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
+    "certainty": "certain", 
+    "source": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "valence": "positive", 
+    "id": "217b5ead-7837-4f36-a7f3-9510d0fc4016"
+  }, 
+  {
+    "elements": [
+      "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+      "eb4b7223-e843-44bf-9d80-ad8f8b6c2890"
+    ], 
+    "target": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
+    "certainty": "certain", 
+    "source": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "valence": "positive", 
+    "id": "f0f57977-b2aa-40f3-931c-d51c99239673"
+  }, 
+  {
+    "elements": [
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+      "b936752d-d9fe-47b3-874d-af45a86a4074"
+    ], 
+    "target": "b936752d-d9fe-47b3-874d-af45a86a4074", 
+    "certainty": "certain", 
+    "source": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "valence": "positive", 
+    "id": "ee7b52a2-2b01-4b42-9883-bcb9c3345b5e"
+  }, 
+  {
+    "elements": [
+      "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+      "3a7e20ac-6f84-41d9-b38d-ddb6654989af"
+    ], 
+    "target": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "certainty": "certain", 
+    "source": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
+    "valence": "positive", 
+    "id": "2e520c0d-98da-45ae-9d96-da7334532661"
+  }, 
+  {
+    "elements": [
+      "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+      "952361c9-05ff-4914-a626-51a7aa796366"
+    ], 
+    "target": "952361c9-05ff-4914-a626-51a7aa796366", 
+    "certainty": "uncertain", 
+    "source": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
+    "valence": "negative", 
+    "id": "472190ac-3468-46bb-a555-1eea21748b83"
+  }, 
+  {
+    "elements": [
+      "3f20a874-986a-4bf1-9798-b6cf1b365030", 
+      "7172ad3e-93fd-41ae-84b2-294306e3ccfd"
+    ], 
+    "target": "7172ad3e-93fd-41ae-84b2-294306e3ccfd", 
+    "certainty": "certain", 
+    "source": "3f20a874-986a-4bf1-9798-b6cf1b365030", 
+    "valence": "positive", 
+    "id": "b358f2fb-47e5-4f49-8015-63d2ced086d6"
+  }, 
+  {
+    "elements": [
+      "3f20a874-986a-4bf1-9798-b6cf1b365030", 
+      "69e7f84a-ca58-4dff-8696-bed3754be543"
+    ], 
+    "target": "69e7f84a-ca58-4dff-8696-bed3754be543", 
+    "certainty": "certain", 
+    "source": "3f20a874-986a-4bf1-9798-b6cf1b365030", 
+    "valence": "positive", 
+    "id": "56c77415-bc0c-4a13-846f-09e81132d773"
+  }, 
+  {
+    "elements": [
+      "5c21af6a-ffde-485e-9e33-af152b0db5b9", 
+      "e78de520-2447-42f7-90f8-acf0f44b6714"
+    ], 
+    "target": "e78de520-2447-42f7-90f8-acf0f44b6714", 
+    "certainty": "certain", 
+    "source": "5c21af6a-ffde-485e-9e33-af152b0db5b9", 
+    "valence": "positive", 
+    "id": "27db955c-19d0-4bef-8011-02d58de42ef4"
+  }, 
+  {
+    "elements": [
+      "e78de520-2447-42f7-90f8-acf0f44b6714", 
+      "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f"
+    ], 
+    "target": "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f", 
+    "certainty": "certain", 
+    "source": "e78de520-2447-42f7-90f8-acf0f44b6714", 
+    "valence": "positive", 
+    "id": "00a0e4a3-14c4-410e-85d0-8c87dfb28775"
+  }, 
+  {
+    "elements": [
+      "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f", 
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c"
+    ], 
+    "target": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "certainty": "certain", 
+    "source": "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f", 
+    "valence": "positive", 
+    "id": "49778bbe-4f75-4123-9aca-a44972063ff3"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "3f20a874-986a-4bf1-9798-b6cf1b365030"
+    ], 
+    "target": "3f20a874-986a-4bf1-9798-b6cf1b365030", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "0920505b-a9db-416e-83f1-f46c6a43750d"
+  }, 
+  {
+    "elements": [
+      "d7727869-4038-47b8-825d-a4161d9c60ef", 
+      "b21ecc21-62ca-4730-8b8c-19b93a4ff577"
+    ], 
+    "target": "b21ecc21-62ca-4730-8b8c-19b93a4ff577", 
+    "certainty": "certain", 
+    "source": "d7727869-4038-47b8-825d-a4161d9c60ef", 
+    "valence": "positive", 
+    "id": "a2193f98-a7d1-4a27-a0c3-d6b00648d7e6"
+  }, 
+  {
+    "elements": [
+      "d7727869-4038-47b8-825d-a4161d9c60ef", 
+      "1f15f5b8-8c7e-400a-bc92-b064ea479cec"
+    ], 
+    "target": "1f15f5b8-8c7e-400a-bc92-b064ea479cec", 
+    "certainty": "certain", 
+    "source": "d7727869-4038-47b8-825d-a4161d9c60ef", 
+    "valence": "positive", 
+    "id": "e3ba6482-f615-47ca-80b2-d555761c0565"
+  }, 
+  {
+    "elements": [
+      "node-6", 
+      "d7727869-4038-47b8-825d-a4161d9c60ef"
+    ], 
+    "target": "d7727869-4038-47b8-825d-a4161d9c60ef", 
+    "certainty": "certain", 
+    "source": "node-6", 
+    "valence": "positive", 
+    "id": "d4f5ee95-9029-4480-925c-fee6d31a9a2e"
+  }, 
+  {
+    "elements": [
+      "b21ecc21-62ca-4730-8b8c-19b93a4ff577", 
+      "c367351d-7f62-4ce9-ad0a-c4e20d4bf906"
+    ], 
+    "target": "c367351d-7f62-4ce9-ad0a-c4e20d4bf906", 
+    "certainty": "certain", 
+    "source": "b21ecc21-62ca-4730-8b8c-19b93a4ff577", 
+    "valence": "positive", 
+    "id": "2f4b87c5-b928-41a0-b34b-173ea2c85d02"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "node-6"
+    ], 
+    "target": "node-6", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "2724a9c6-35ab-4e7d-920f-caac5890e864"
+  }, 
+  {
+    "elements": [
+      "1f15f5b8-8c7e-400a-bc92-b064ea479cec", 
+      "c367351d-7f62-4ce9-ad0a-c4e20d4bf906"
+    ], 
+    "target": "c367351d-7f62-4ce9-ad0a-c4e20d4bf906", 
+    "certainty": "certain", 
+    "source": "1f15f5b8-8c7e-400a-bc92-b064ea479cec", 
+    "valence": "positive", 
+    "id": "9a63c4d3-4e9d-4f0e-a774-785e13bf43b8"
+  }, 
+  {
+    "elements": [
+      "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
+      "0f5d7524-c494-4c7b-892d-de963c7fba1f"
+    ], 
+    "target": "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
+    "certainty": "certain", 
+    "source": "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
+    "valence": "positive", 
+    "id": "b41999b9-77f9-458c-bc85-342c2bcf2d37"
+  }, 
+  {
+    "elements": [
+      "c2efe6a6-ef85-4f2d-a42d-796993374f2c", 
+      "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287"
+    ], 
+    "target": "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+    "certainty": "certain", 
+    "source": "c2efe6a6-ef85-4f2d-a42d-796993374f2c", 
+    "valence": "positive", 
+    "id": "fa8c3db0-577d-4935-94ff-bb326a82bea0"
+  }, 
+  {
+    "elements": [
+      "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+      "2ecf1b9c-9851-4bc0-8a16-f1ad4631a6ea"
+    ], 
+    "target": "2ecf1b9c-9851-4bc0-8a16-f1ad4631a6ea", 
+    "certainty": "certain", 
+    "source": "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+    "valence": "positive", 
+    "id": "9d08745e-f4c1-4734-8c26-c8e445a0f5c1"
+  }, 
+  {
+    "elements": [
+      "2ecf1b9c-9851-4bc0-8a16-f1ad4631a6ea", 
+      "0a1bb031-b822-4908-975b-6d351ac6f758"
+    ], 
+    "target": "0a1bb031-b822-4908-975b-6d351ac6f758", 
+    "certainty": "certain", 
+    "source": "2ecf1b9c-9851-4bc0-8a16-f1ad4631a6ea", 
+    "valence": "positive", 
+    "id": "8789fbb0-0234-4e40-917f-cea4a53e3d8d"
+  }, 
+  {
+    "elements": [
+      "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+      "4d8b9bbd-549d-4e0e-b3fe-070ceb08643f"
+    ], 
+    "target": "4d8b9bbd-549d-4e0e-b3fe-070ceb08643f", 
+    "certainty": "certain", 
+    "source": "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+    "valence": "positive", 
+    "id": "0fe083e7-1c40-4c57-bda3-e9b23b67884f"
+  }, 
+  {
+    "elements": [
+      "4d8b9bbd-549d-4e0e-b3fe-070ceb08643f", 
+      "2ce88f98-b137-4970-bb31-699186fe979b"
+    ], 
+    "target": "2ce88f98-b137-4970-bb31-699186fe979b", 
+    "certainty": "certain", 
+    "source": "4d8b9bbd-549d-4e0e-b3fe-070ceb08643f", 
+    "valence": "positive", 
+    "id": "93aaaea8-6e2b-4694-a71a-4855bb8ee12c"
+  }, 
+  {
+    "elements": [
+      "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+      "eefa0bfd-f5dd-43f6-b550-40d3040b3573"
+    ], 
+    "target": "eefa0bfd-f5dd-43f6-b550-40d3040b3573", 
+    "certainty": "certain", 
+    "source": "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+    "valence": "positive", 
+    "id": "cdbb68e7-7f31-4278-850f-d2040125dc18"
+  }, 
+  {
+    "elements": [
+      "eefa0bfd-f5dd-43f6-b550-40d3040b3573", 
+      "c9af2507-05e4-4481-8b7e-d1fcd245f701"
+    ], 
+    "target": "c9af2507-05e4-4481-8b7e-d1fcd245f701", 
+    "certainty": "certain", 
+    "source": "eefa0bfd-f5dd-43f6-b550-40d3040b3573", 
+    "valence": "positive", 
+    "id": "e0d2be75-d438-4998-844c-4caf11671e03"
+  }, 
+  {
+    "elements": [
+      "2ce88f98-b137-4970-bb31-699186fe979b", 
+      "2dffe0d4-9be0-4a7d-b50b-97a938f041b9"
+    ], 
+    "target": "2dffe0d4-9be0-4a7d-b50b-97a938f041b9", 
+    "certainty": "certain", 
+    "source": "2ce88f98-b137-4970-bb31-699186fe979b", 
+    "valence": "positive", 
+    "id": "0ab0aa97-bb21-4ad2-afd9-b225ae7a156a"
+  }, 
+  {
+    "elements": [
+      "c9af2507-05e4-4481-8b7e-d1fcd245f701", 
+      "2dffe0d4-9be0-4a7d-b50b-97a938f041b9"
+    ], 
+    "target": "2dffe0d4-9be0-4a7d-b50b-97a938f041b9", 
+    "certainty": "certain", 
+    "source": "c9af2507-05e4-4481-8b7e-d1fcd245f701", 
+    "valence": "positive", 
+    "id": "08b32467-65a3-4fce-aee6-a15b746656dc"
+  }, 
+  {
+    "elements": [
+      "2ce88f98-b137-4970-bb31-699186fe979b", 
+      "b08345c4-4b85-423c-9d56-bf140d84ce09"
+    ], 
+    "target": "b08345c4-4b85-423c-9d56-bf140d84ce09", 
+    "certainty": "certain", 
+    "source": "2ce88f98-b137-4970-bb31-699186fe979b", 
+    "valence": "positive", 
+    "id": "b8dc02a8-c93e-4328-9f19-331cac30783d"
+  }, 
+  {
+    "elements": [
+      "c9af2507-05e4-4481-8b7e-d1fcd245f701", 
+      "b08345c4-4b85-423c-9d56-bf140d84ce09"
+    ], 
+    "target": "b08345c4-4b85-423c-9d56-bf140d84ce09", 
+    "certainty": "certain", 
+    "source": "c9af2507-05e4-4481-8b7e-d1fcd245f701", 
+    "valence": "positive", 
+    "id": "77a1b8fb-abf9-442f-b59d-d0e368a6b0b9"
+  }, 
+  {
+    "elements": [
+      "2dffe0d4-9be0-4a7d-b50b-97a938f041b9", 
+      "e70d8ea1-a9ea-4467-ac7f-8f53beff8365"
+    ], 
+    "target": "e70d8ea1-a9ea-4467-ac7f-8f53beff8365", 
+    "certainty": "certain", 
+    "source": "2dffe0d4-9be0-4a7d-b50b-97a938f041b9", 
+    "valence": "positive", 
+    "id": "acffda39-70c9-4cfc-8746-38c80686268e"
+  }, 
+  {
+    "elements": [
+      "e70d8ea1-a9ea-4467-ac7f-8f53beff8365", 
+      "b1434369-908c-4db2-9191-663289bf85f6"
+    ], 
+    "target": "b1434369-908c-4db2-9191-663289bf85f6", 
+    "certainty": "certain", 
+    "source": "e70d8ea1-a9ea-4467-ac7f-8f53beff8365", 
+    "valence": "positive", 
+    "id": "bc122b21-b9db-41f6-9417-d739e9b1796a"
+  }, 
+  {
+    "elements": [
+      "b08345c4-4b85-423c-9d56-bf140d84ce09", 
+      "2dffe0d4-9be0-4a7d-b50b-97a938f041b9"
+    ], 
+    "target": "2dffe0d4-9be0-4a7d-b50b-97a938f041b9", 
+    "certainty": "certain", 
+    "source": "b08345c4-4b85-423c-9d56-bf140d84ce09", 
+    "valence": "positive", 
+    "id": "d0132259-34df-4f17-b9b9-e62887384d80"
+  }, 
+  {
+    "elements": [
+      "b08345c4-4b85-423c-9d56-bf140d84ce09", 
+      "321acb3f-02ed-4b16-8925-e52bc5c3ed44"
+    ], 
+    "target": "321acb3f-02ed-4b16-8925-e52bc5c3ed44", 
+    "certainty": "certain", 
+    "source": "b08345c4-4b85-423c-9d56-bf140d84ce09", 
+    "valence": "positive", 
+    "id": "c6a8ee68-eb60-4210-adc4-371894019a9f"
+  }, 
+  {
+    "elements": [
+      "c2efe6a6-ef85-4f2d-a42d-796993374f2c", 
+      "dbdb7a27-d630-4ef9-b7a4-5216de0d0b7a"
+    ], 
+    "target": "dbdb7a27-d630-4ef9-b7a4-5216de0d0b7a", 
+    "certainty": "uncertain", 
+    "source": "c2efe6a6-ef85-4f2d-a42d-796993374f2c", 
+    "valence": "negative", 
+    "id": "fe6306c8-0a6e-4e93-a92e-d136b4b1727c"
+  }, 
+  {
+    "elements": [
+      "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
+      "55327c5c-7331-4b14-a55b-b20bea74c8b8"
+    ], 
+    "target": "55327c5c-7331-4b14-a55b-b20bea74c8b8", 
+    "certainty": "certain", 
+    "source": "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
+    "valence": "positive", 
+    "id": "bcdf0268-a6f1-48d7-9051-8a6db0da1b56"
+  }, 
+  {
+    "elements": [
+      "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
+      "509ac4f8-f4cd-488c-877a-657d3aa32153"
+    ], 
+    "target": "509ac4f8-f4cd-488c-877a-657d3aa32153", 
+    "certainty": "certain", 
+    "source": "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
+    "valence": "positive", 
+    "id": "fcb02795-187a-4387-89e4-3c7e9a40d7ac"
+  }, 
+  {
+    "elements": [
+      "509ac4f8-f4cd-488c-877a-657d3aa32153", 
+      "df366ec9-124a-4155-b1ba-45a4fc23c7f5"
+    ], 
+    "target": "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
+    "certainty": "certain", 
+    "source": "509ac4f8-f4cd-488c-877a-657d3aa32153", 
+    "valence": "positive", 
+    "id": "c963b816-b7c9-4fc5-b8a2-063933d3e6cb"
+  }, 
+  {
+    "elements": [
+      "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+      "fc86e953-0450-47e4-a21b-cdd112c0ecb0"
+    ], 
+    "target": "fc86e953-0450-47e4-a21b-cdd112c0ecb0", 
+    "certainty": "certain", 
+    "source": "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+    "valence": "positive", 
+    "id": "58ff3502-532b-470d-8892-bd4002d6ccbb"
+  }, 
+  {
+    "elements": [
+      "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+      "c353bdb1-0dae-4db2-b83c-626ebdf053bb"
+    ], 
+    "target": "c353bdb1-0dae-4db2-b83c-626ebdf053bb", 
+    "certainty": "certain", 
+    "source": "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+    "valence": "positive", 
+    "id": "2965b3bc-f3c0-474f-a580-aa10d74860b5"
+  }, 
+  {
+    "elements": [
+      "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+      "f976117f-c783-4967-9c1c-95a2a004f4ac"
+    ], 
+    "target": "f976117f-c783-4967-9c1c-95a2a004f4ac", 
+    "certainty": "certain", 
+    "source": "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+    "valence": "positive", 
+    "id": "cdc3a676-e237-436b-9b7b-a448c76c56b9"
+  }, 
+  {
+    "elements": [
+      "c353bdb1-0dae-4db2-b83c-626ebdf053bb", 
+      "85bd7ad4-917c-4131-b238-2af755603f43"
+    ], 
+    "target": "85bd7ad4-917c-4131-b238-2af755603f43", 
+    "certainty": "certain", 
+    "source": "c353bdb1-0dae-4db2-b83c-626ebdf053bb", 
+    "valence": "positive", 
+    "id": "7fab5336-6b28-41e6-91f4-1c1ba7b1fd73"
+  }, 
+  {
+    "elements": [
+      "f976117f-c783-4967-9c1c-95a2a004f4ac", 
+      "b037271c-ec88-4bac-8a85-bb82e0070f39"
+    ], 
+    "target": "b037271c-ec88-4bac-8a85-bb82e0070f39", 
+    "certainty": "certain", 
+    "source": "f976117f-c783-4967-9c1c-95a2a004f4ac", 
+    "valence": "negative", 
+    "id": "8cfe6859-b2d4-4a96-a278-4fbdfd1d7999"
+  }, 
+  {
+    "elements": [
+      "b037271c-ec88-4bac-8a85-bb82e0070f39", 
+      "110bdf5b-d42c-4aa1-a3f5-516f67285ff9"
+    ], 
+    "target": "110bdf5b-d42c-4aa1-a3f5-516f67285ff9", 
+    "certainty": "certain", 
+    "source": "b037271c-ec88-4bac-8a85-bb82e0070f39", 
+    "valence": "positive", 
+    "id": "77420516-7512-41f3-8487-81d8617e5a29"
+  }, 
+  {
+    "elements": [
+      "fc86e953-0450-47e4-a21b-cdd112c0ecb0", 
+      "b037271c-ec88-4bac-8a85-bb82e0070f39"
+    ], 
+    "target": "b037271c-ec88-4bac-8a85-bb82e0070f39", 
+    "certainty": "certain", 
+    "source": "fc86e953-0450-47e4-a21b-cdd112c0ecb0", 
+    "valence": "negative", 
+    "id": "cf002c14-11f9-40ef-855e-c9c69d4f99a3"
+  }, 
+  {
+    "elements": [
+      "110bdf5b-d42c-4aa1-a3f5-516f67285ff9", 
+      "85bd7ad4-917c-4131-b238-2af755603f43"
+    ], 
+    "target": "85bd7ad4-917c-4131-b238-2af755603f43", 
+    "certainty": "certain", 
+    "source": "110bdf5b-d42c-4aa1-a3f5-516f67285ff9", 
+    "valence": "negative", 
+    "id": "9b76c1e8-8ec6-49f1-b537-b90866e4ba44"
+  }, 
+  {
+    "elements": [
+      "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+      "c6f1c438-4e85-418d-b4de-598a3561367b"
+    ], 
+    "target": "c6f1c438-4e85-418d-b4de-598a3561367b", 
+    "certainty": "certain", 
+    "source": "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+    "valence": "positive", 
+    "id": "e797a6f8-c6b3-4c19-a79d-f7c0f8146986"
+  }, 
+  {
+    "elements": [
+      "9f3832ff-2745-4511-bb5f-047ed31ff6b3", 
+      "d0fb9517-65f9-43cd-ab21-a9aca387db55"
+    ], 
+    "target": "d0fb9517-65f9-43cd-ab21-a9aca387db55", 
+    "certainty": "certain", 
+    "source": "9f3832ff-2745-4511-bb5f-047ed31ff6b3", 
+    "valence": "positive", 
+    "id": "43d8e097-06e2-41c8-ab93-fac89d286583"
+  }, 
+  {
+    "elements": [
+      "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+      "9f3832ff-2745-4511-bb5f-047ed31ff6b3"
+    ], 
+    "target": "9f3832ff-2745-4511-bb5f-047ed31ff6b3", 
+    "certainty": "certain", 
+    "source": "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+    "valence": "positive", 
+    "id": "78700d07-d51a-4633-9cb5-defe994db74b"
+  }, 
+  {
+    "elements": [
+      "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+      "ae115850-acd0-44e2-a011-9649604803cd"
+    ], 
+    "target": "ae115850-acd0-44e2-a011-9649604803cd", 
+    "certainty": "certain", 
+    "source": "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+    "valence": "positive", 
+    "id": "044719f0-fc85-47d8-8545-cc48aaddf085"
+  }, 
+  {
+    "elements": [
+      "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+      "9e2b0638-1151-4734-8d90-dd366cd0f9ff"
+    ], 
+    "target": "9e2b0638-1151-4734-8d90-dd366cd0f9ff", 
+    "certainty": "uncertain", 
+    "source": "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
+    "valence": "positive", 
+    "id": "97e47c83-c78a-44b4-b70a-5067530642cd"
+  }, 
+  {
+    "elements": [
+      "9f3832ff-2745-4511-bb5f-047ed31ff6b3", 
+      "cbffe84e-387e-4243-ba41-65b5989b7f42"
+    ], 
+    "target": "cbffe84e-387e-4243-ba41-65b5989b7f42", 
+    "certainty": "certain", 
+    "source": "9f3832ff-2745-4511-bb5f-047ed31ff6b3", 
+    "valence": "positive", 
+    "id": "a9d58269-a749-4ff7-b635-3e35a85864a7"
+  }, 
+  {
+    "elements": [
+      "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
+      "57ba11bd-8a07-441e-83ee-bfcb867d80c2"
+    ], 
+    "target": "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
+    "certainty": "certain", 
+    "source": "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
+    "valence": "positive", 
+    "id": "fcf66b80-80bd-461f-a73d-1610ea56a06d"
+  }, 
+  {
+    "elements": [
+      "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+      "e8d1fcee-48e7-44ee-afce-6163542c813c"
+    ], 
+    "target": "e8d1fcee-48e7-44ee-afce-6163542c813c", 
+    "certainty": "certain", 
+    "source": "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
+    "valence": "positive", 
+    "id": "a1c7bca8-4353-4a10-aa1f-abb361e32173"
+  }, 
+  {
+    "elements": [
+      "b7440833-5f46-40a0-b54d-3a4fccbf4036", 
+      "7d8a6bf4-1287-4b04-98c6-5d2bd2c3a9d3"
+    ], 
+    "target": "7d8a6bf4-1287-4b04-98c6-5d2bd2c3a9d3", 
+    "certainty": "certain", 
+    "source": "b7440833-5f46-40a0-b54d-3a4fccbf4036", 
+    "valence": "positive", 
+    "id": "7ef49d56-54d2-4a25-8516-e491ec3f8179"
+  }, 
+  {
+    "elements": [
+      "b7440833-5f46-40a0-b54d-3a4fccbf4036", 
+      "35d91d25-1676-4f2c-8821-f1654e75228f"
+    ], 
+    "target": "35d91d25-1676-4f2c-8821-f1654e75228f", 
+    "certainty": "certain", 
+    "source": "b7440833-5f46-40a0-b54d-3a4fccbf4036", 
+    "valence": "positive", 
+    "id": "3a171dec-6d8f-4ee8-915b-7eb3fa3f2f7c"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "cff701f4-1995-4e0f-b2a5-2cbd389a2c5c"
+    ], 
+    "target": "cff701f4-1995-4e0f-b2a5-2cbd389a2c5c", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "8be045bd-6eec-4e7d-b9dd-025dccffa4fe"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "b7440833-5f46-40a0-b54d-3a4fccbf4036"
+    ], 
+    "target": "b7440833-5f46-40a0-b54d-3a4fccbf4036", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "d595833f-375d-489b-b96c-522f2c366b2a"
+  }, 
+  {
+    "elements": [
+      "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "e8d1fcee-48e7-44ee-afce-6163542c813c"
+    ], 
+    "target": "e8d1fcee-48e7-44ee-afce-6163542c813c", 
+    "certainty": "certain", 
+    "source": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+    "valence": "positive", 
+    "id": "dbcabf09-1645-400e-8ffd-cc0caca17d90"
+  }
+]
 }

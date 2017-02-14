@@ -2,35 +2,9 @@
 <meta charset="utf-8">
 <head><link href="nouislider/nouislider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="css/user_viz.css">
 </head>
-<style>
-  .links line {
-    stroke: #aaa;
-  }
-
-  .nodes circle {
-    pointer-events: all;
-    stroke: none;
-    stroke-width: 40px;
-  }
-
-  .active {
-    fill: yellow;
-  }
-    
-    
-div.tooltip {
-  position: absolute;
-  text-align: center;
-  padding: 2px;
-  font: 12px sans-serif;
-  background: lightsteelblue;
-  border: 0px;
-  border-radius: 8px;
-  pointer-events: none;
-}    
-</style>
 
 <body>
     
@@ -54,18 +28,7 @@ div.tooltip {
     <p>Paper Details</p>
   </div>
 </div>
-  
-    
-<!--
-     <div id="dropdownMenu" >
-        <select id="dropdownValue"  onchange="triggerFilter()">
-  <option value="Paritosh, Praveen">Paritosh</option>
-  <option value="Kittur, Aniket">Kittur</option>
-  <option value="Chan, Joel">Chan</option>
-  <option value="Forlizzi, Jodi L.">Forlizzi</option>
-</select>
-    </div>
--->
+
     
 <div class="ui-widget">
   <label for="tags">Authors: </label>
@@ -75,7 +38,7 @@ div.tooltip {
     <button id="clearfilter" type="button" onclick="clearFilter()">Clear Filter</button>
 </div>      
     
-<svg width="960" height="600"></svg>
+<svg width="1000" height="1000"></svg>
 
 <script>
     
@@ -120,36 +83,40 @@ var div = d3.select("body").append("div")
     .force("link", d3.forceLink().id(function(d) {
       return d.id;
     }))
-    .force("charge", d3.forceManyBody())
+    .force("charge", d3.forceManyBody().strength(-20))
     .force("center", d3.forceCenter(width / 2, height / 2));
+    
+//    .force('link', d3.forceLink(heart.links).distance(0).strength(0.1))
 
     // define the graph
     /// TODO: read in from separate json/js file
     
-
   var scaleFactor=6;
     
   var defaultRadius=3;
     
   var topicRadius = 15;
-    
-  var link;
-  var node;
-  var text;
+
 
 d3.json("data/graph.json", function(error, graph){
     if (error) throw error;
  
   // define visual properties of edges
-  link = g.append("g")
+  var link = g.append("g")
     .attr("class", "links")
+    //.selectAll("link")
+    .data(graph.nodes)
+    .attr("id", function(d){
+          return 'link' + d.source;
+          })
+    //.attr("class", "dataLinks")
     .selectAll("line")
     .data(graph.links)
     .enter().append("line");
  
     
   // define properties of nodes
-  node = g.append("g")
+  var node = g.append("g")
     .attr("class", "nodes")
     .selectAll("circle")
     .data(graph.nodes)
@@ -160,8 +127,8 @@ d3.json("data/graph.json", function(error, graph){
     
         if(d.type=='topic')
             return topicRadius;})
-    .attr("class", "dataNodes")
-    .attr('id', function(d){ return 'id' + d.id; })
+   .attr("class", "dataNodes")
+   .attr('id', function(d){ return 'id' + d.id; })
     .style("fill", function(d){
         if(d.type=='action')
             return 'green';
@@ -176,7 +143,7 @@ d3.json("data/graph.json", function(error, graph){
        div.transition()
          .duration(200)
          .style("opacity", .9);
-         div.html(d.name)
+       div.html(d.name)
          .style("left", (d3.event.pageX) + "px")
          .style("top", (d3.event.pageY - 28) + "px");
        })
@@ -190,13 +157,16 @@ d3.json("data/graph.json", function(error, graph){
  
     
   // define visual properties of node labels
- text = g.append("g")
+
+ var text = g.append("g")
     .attr("class", "labels")
     .selectAll("text")
     .data(graph.nodes)
     .enter().append("text")
+    .attr("class", "dataLabels")
     .attr("font-size","6px")
     .attr("dx", 6)
+    .attr('id', function(d){ return 'label' + d.id; })
     .attr("dy", ".15em")
     .text(function(d) { 
         var string = d.name
@@ -266,8 +236,8 @@ d3.json("data/graph.json", function(error, graph){
     active = d3.select(this).classed("active", true);
       
       
-//    if(d.type=='action' || d.type=='why-hard')  {
-    // focus around the spot of the selected node(s)
+    if(d.type=='action' || d.type=='why-hard')  {
+     //focus around the spot of the selected node(s)
     svg.transition()
       .duration(750)
       .call(zoom.transform,
@@ -277,12 +247,58 @@ d3.json("data/graph.json", function(error, graph){
         .translate(-(+active.attr('cx')), -(+active.attr('cy')))
            
       );
-       console.log(active.attr('cx'));
+       console.log(active);
+  }
+      
+//       if(d.type=='topic')  {
+     //focus around the spot of the selected node(s)
+//    svg.transition()
+//      .duration(750)
+//      .call(zoom.transform,
+//        d3.zoomIdentity
+//        .translate(width / 2, height / 2)
+//        .scale(scaleFactor)
+//        .translate(positionX(active), positionY(active))
+//           
+//      );
+//        positionX(active);   
+       //console.log(active.attr('cx'));
 //  }
+      
+      
+      
       // populate info box with relevant info from node
       d3.select("#tabs-1").text(d.authors);
       d3.select("#tabs-2").text(d.id);
   }
+    
+function positionX(clickedNode){
+    //console.log('clcikedNode'+clickedNode);
+    var sum=0;
+   d3.json("data/node_connections.json", function(d) {
+       var str=clickedNode.attr('id');
+       var x=clickedNode.attr('cx');
+       
+       console.log('cx'+x);
+    var nodeID=str.substring('id'.length);
+    //alert(nodeID);
+    var listOfNodes=(d[nodeID]);
+    //console.log(listOfNodes);
+       
+    for(i=0; i< listOfNodes.length; i++){
+    listOfNodes[i]= 'id' + listOfNodes[i];
+    }
+      console.log(listOfNodes); 
+       
+    for(i=0; i< listOfNodes.length; i++){
+        console.log((listOfNodes[i]).attr('cx'));
+    }   
+//       console.log(sum);
+       
+});
+
+    
+}    
 
   /***
   Reset to master view
@@ -305,26 +321,61 @@ function triggerFilter(){
 d3.json("data/author_connections.json", function(d) {
 
 var listOfNodes=(d[document.getElementById("tags").value]); 
-    
+
     for(i=0; i< listOfNodes.length; i++){
     listOfNodes[i]= '#id' + listOfNodes[i];
     }
     
-    var stringOfNodes= listOfNodes.toString();
-    //console.log(stringOfNodes);
     
-    filterByName(stringOfNodes);
+    var stringOfNodes= listOfNodes.toString();
+    
+    var listOfLabels=(d[document.getElementById("tags").value]);     
+    //console.log('labels='+listOfLabels);
+    
+    
+     
+var listOfLabels=listOfNodes;    
+    
+    for(i=0; i< listOfLabels.length; i++){
+    listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
+       
+    }
+   
+    
+    var stringOfLabels= listOfLabels.toString();
+    
+    
+var listOfLinks=listOfNodes;    
+    
+    for(i=0; i< listOfLinks.length; i++){
+    listOfLinks[i]= listOfLinkss[i].replace('#id', '#link');
+       
+    }
+   
+    
+    var stringOfLinks= listOfLinks.toString();    
+    // console.log(stringOfLabels);
+    //console.log(stringOfLabels);
+    filterByName(stringOfNodes, stringOfLabels, stringOfLinks );
     //console.log(stringOfNodes);
 });
 }
     
 
 
-function filterByName(relevantArray){
+function filterByName(nodes, labels, links){
     
-        //console.log(relevantArray);
-         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
-         d3.selectAll(relevantArray).transition().duration(toggleTime).style("opacity", 1);
+        console.log('nodes='+nodes);
+        console.log('labels='+labels);
+        
+        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
+        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
+         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
+        
+        d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
+        d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1);
+        d3.selectAll(links).transition().duration(toggleTime).style("opacity", 1);;
+        
 //    
 //        link.style("stroke-opacity", function(o) {
 //                return o.source === d || o.target === d ? 1 : opacity;
@@ -333,8 +384,7 @@ function filterByName(relevantArray){
 } 
     
 function clearFilter(){
-     d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1);
-    
+     d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1); 
 }    
     
     
@@ -392,10 +442,34 @@ $( function() {
     
 $( function() {
     var availableTags = [
-      "Kittur, Aniket",
-      "Paritosh, Praveen",
-      "Chan, Joel",
-      "Forlizzi, Jodi L."
+        "Burke, Moira",
+        "Henderson, Aubrey",
+        "Agrawala, Maneesh",
+        "Laur H. Fisher, MIT",
+        "Rajan Vaish, Stanford University",
+        "Shirish Goyal, Stanford University",
+        "Thomas W. Malone, Massachusetts Institute of Technology",
+        "Dang, Steven",
+        "Young Ji Kim, Massachusetts Institute of Technology",
+        "Aaron Gilbee, Independent Researcher",
+        "Forlizzi, Jodi L.",
+        "Jeffrey Yu-Ting Lin, Magic Leap",
+        "Lykourentzou, Ioanna",
+        "Dabbish, Laura",
+        "Ding, Xianghua",
+        "Ding, Xianghua",
+         "Yue Han, Stevens Institute of Technology",
+        "Felicia Y Ng, Carnegie Mellon University",
+        "Kraut, Robert E.",
+        "Mark E Whiting, Carnegie Mellon University",
+        "Lim, Ellen",
+        "Koutra, Danai",
+        "Jasani, Jeel",
+        "Kittur, Aniket",
+        "Paritosh, Praveen",
+        "Chan, Joel",
+        "Zhu, Haiyi"
+      
     ];
     $( "#tags" ).autocomplete({
       source: availableTags
