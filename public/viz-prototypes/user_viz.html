@@ -326,12 +326,13 @@ var listOfNodes=(d[document.getElementById("tags").value]);
     listOfNodes[i]= '#id' + listOfNodes[i];
     }
     
-    
     var stringOfNodes= listOfNodes.toString();
     
-    var listOfLabels=(d[document.getElementById("tags").value]);     
-    //console.log('labels='+listOfLabels);
-    
+    var listOfLabels=(d[document.getElementById("tags").value]);   
+
+// link.style("stroke-opacity", function(o) {
+//                return o.source === d || o.target === d ? 1 : opacity;
+//            });    
     
      
 var listOfLabels=listOfNodes;    
@@ -345,41 +346,38 @@ var listOfLabels=listOfNodes;
     var stringOfLabels= listOfLabels.toString();
     
     
-var listOfLinks=listOfNodes;    
-    
-    for(i=0; i< listOfLinks.length; i++){
-    listOfLinks[i]= listOfLinkss[i].replace('#id', '#link');
-       
-    }
+//var listOfLinks=listOfNodes;    
+//    
+//    for(i=0; i< listOfLinks.length; i++){
+//    listOfLinks[i]= listOfLinks[i].replace('#id', '#link');
+//       
+//    }
+//   
+//    
+//    var stringOfLinks= listOfLinks.toString();    
+
+    filterByName(stringOfNodes, stringOfLabels);
    
-    
-    var stringOfLinks= listOfLinks.toString();    
-    // console.log(stringOfLabels);
-    //console.log(stringOfLabels);
-    filterByName(stringOfNodes, stringOfLabels, stringOfLinks );
-    //console.log(stringOfNodes);
 });
 }
     
 
 
-function filterByName(nodes, labels, links){
+function filterByName(nodes, labels){
     
-        console.log('nodes='+nodes);
-        console.log('labels='+labels);
+//        console.log('nodes='+nodes);
+//        console.log('labels='+labels);
         
         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
-         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
+         //d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
         
         d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
         d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1);
-        d3.selectAll(links).transition().duration(toggleTime).style("opacity", 1);;
-        
+        //d3.selectAll(links).transition().duration(toggleTime).style("opacity", 1);;
+        //console.log(link);
 //    
-//        link.style("stroke-opacity", function(o) {
-//                return o.source === d || o.target === d ? 1 : opacity;
-//            });
+
                   
 } 
     
@@ -405,7 +403,6 @@ slider.noUiSlider.on('change', function(){
     var max=rangeValues[1];
 
    filterByYear(min,max);
-   //console.log(min + max);
     
 });      
  
