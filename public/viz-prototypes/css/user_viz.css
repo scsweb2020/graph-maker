@@ -14,12 +14,103 @@
     
     
 div.tooltip {
+  font-family: "Open Sans";
   position: absolute;
   text-align: center;
   padding: 2px;
-  font: 12px sans-serif;
+  font: 12px;
   background: lightsteelblue;
   border: 0px;
   border-radius: 8px;
   pointer-events: none;
 } 
+
+.totalContainer{
+     position: relative;
+}
+
+.mainContainer{
+     position: absolute;
+    
+    float: left;
+}
+
+.graphContainer{
+    position: absolute;
+    float: left;
+    z-index: -1;
+}
+
+
+.container1{
+    position: absolute;
+    left: 0px;
+}
+
+
+
+.ui-widget{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Open Sans";
+    max-width: 300px;
+    margin: auto;
+   
+    border-style: solid;
+    border-color: black;
+      border-width: 1px 0.2px 1px 0.2px;
+}
+
+#tabs{
+    font-family: "Open Sans";
+    max-width: 300px;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+     border-width: 1px 0.2px 1px 0.2px;
+}
+
+.labelAuthors{
+         font-family: "Open Sans";
+    text-align: center;
+    font-weight: bold;
+}
+
+.mainContainer{ 
+    width: 300px;
+    height: 380px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    background-color: #e8e8e8;
+}
+
+.yearRange{
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 40px;
+    
+}
+
+.filterButton{
+    margin-left: 90px;
+    margin-top: 20px;
+    background-color: #067; /* CMUred */
+    
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.yearFilter{
+
+     font-weight: bold;
+     margin-top: 20px;
+     margin-left: 110px;
+     font-family: "Open Sans";
+}
+

@@ -4,6 +4,8 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/user_viz.css">
+    <link href="jquery-ui.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -13,38 +15,46 @@
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
    
     <script src="nouislider/nouislider.min.js"></script>
-    <div id="slider"></div>
+<div class="totalContainer">    
+<div class="mainContainer">
    
-    <div id="tabs">
-    <ul>
-    <li><a href="#tabs-1">Author</a></li>
-    <li><a href="#tabs-2">Paper Details</a></li>
-    
-    </ul>
-  <div id="tabs-1">
-    <p>Author </p>
-  </div>
-  <div id="tabs-2">
-    <p>Paper Details</p>
-  </div>
-</div>
+    <div class="container1" id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Author</a></li>
+            <li><a href="#tabs-2">Paper Details</a></li> 
+        </ul>
 
+        <div id="tabs-1">
+            <p>Author </p>
+        </div>
+        <div id="tabs-2">
+            <p>Paper Details</p>
+        </div>
+    </div>
+     <label class="yearFilter">Year Filter </label>
+    <div class="yearRange" id="slider">
+         
+    </div>
     
-<div class="ui-widget">
-  <label for="tags">Authors: </label>
-  <input  id="tags">
-</div> 
+    <div class="ui-widget">
+        <div class="labelAuthors"> 
+            <label class ="labelClass" for="tags">Author </label>
+            </div>       
+            <input  id="tags">
+    </div> 
+    
+   
+     
 <div>
-    <button id="clearfilter" type="button" onclick="clearFilter()">Clear Filter</button>
-</div>      
-    
-<svg width="1000" height="1000"></svg>
+    <button class="filterButton" id="clearfilter" type="button" onclick="clearFilter()">Clear Filters</button>
+</div>  
+</div>        
 
+<div class="graphContainer">
+<svg width="1200" height="1000"></svg>
+</div>
+</div>    
 <script>
-    
-function test(){
-    alert(document.getElementById("tags").value)
-}    
     
 var div = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -83,7 +93,7 @@ var div = d3.select("body").append("div")
     .force("link", d3.forceLink().id(function(d) {
       return d.id;
     }))
-    .force("charge", d3.forceManyBody().strength(-20))
+    .force("charge", d3.forceManyBody().strength(-10))
     .force("center", d3.forceCenter(width / 2, height / 2));
     
 //    .force('link', d3.forceLink(heart.links).distance(0).strength(0.1))
@@ -106,9 +116,9 @@ d3.json("data/graph.json", function(error, graph){
     .attr("class", "links")
     //.selectAll("link")
     .data(graph.nodes)
-    .attr("id", function(d){
-          return 'link' + d.source;
-          })
+//    .attr("id", function(d){
+//          return 'link' + d.source;
+//          })
     //.attr("class", "dataLinks")
     .selectAll("line")
     .data(graph.links)
@@ -131,7 +141,7 @@ d3.json("data/graph.json", function(error, graph){
    .attr('id', function(d){ return 'id' + d.id; })
     .style("fill", function(d){
         if(d.type=='action')
-            return 'green';
+            return '#247';
         
         else if(d.type=='why-hard')
             return 'red';
@@ -139,6 +149,8 @@ d3.json("data/graph.json", function(error, graph){
         else if(d.type=='topic')
             return '#00BFFF';
     })
+    
+    .attr('cy', function(d) { return d.distance_from_root; })
     .on("mouseover", function(d) {
        div.transition()
          .duration(200)
@@ -329,13 +341,8 @@ var listOfNodes=(d[document.getElementById("tags").value]);
     var stringOfNodes= listOfNodes.toString();
     
     var listOfLabels=(d[document.getElementById("tags").value]);   
-
-// link.style("stroke-opacity", function(o) {
-//                return o.source === d || o.target === d ? 1 : opacity;
-//            });    
-    
      
-var listOfLabels=listOfNodes;    
+    var listOfLabels=listOfNodes;    
     
     for(i=0; i< listOfLabels.length; i++){
     listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
@@ -344,17 +351,7 @@ var listOfLabels=listOfNodes;
    
     
     var stringOfLabels= listOfLabels.toString();
-    
-    
-//var listOfLinks=listOfNodes;    
-//    
-//    for(i=0; i< listOfLinks.length; i++){
-//    listOfLinks[i]= listOfLinks[i].replace('#id', '#link');
-//       
-//    }
-//   
-//    
-//    var stringOfLinks= listOfLinks.toString();    
+      
 
     filterByName(stringOfNodes, stringOfLabels);
    
@@ -364,36 +361,32 @@ var listOfLabels=listOfNodes;
 
 
 function filterByName(nodes, labels){
-    
-//        console.log('nodes='+nodes);
-//        console.log('labels='+labels);
-        
+
         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
-         //d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
+        
         
         d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
         d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1);
-        //d3.selectAll(links).transition().duration(toggleTime).style("opacity", 1);;
-        //console.log(link);
-//    
-
+    
                   
 } 
     
 function clearFilter(){
      d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1); 
+     d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 1); 
 }    
     
     
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
-	start: [2008, 2016],
+	start: [2013, 2017],
 	connect: true,
+    step: 1,  
 	range: {
-		'min': 2000,
-		'max': 2020
+		'min': 2013,
+		'max': 2017
 	}
 });
     
@@ -417,13 +410,21 @@ function filterByYear(min,max){
        
         var listOfFilteredNodeIDs=[];
         var listOfNodes = d.nodes;
+        //console.log(listOfNodes);
         
         for(i=0; i< listOfNodes.length; i++){
-            if(listOfNodes[i].year<max && listOfNodes[i].year>min)
-               listOfFilteredNodeIDs.push(listOfNodes[i].id);
+            
+            
+            for(j=0; j<(listOfNodes[i].years).length; j++){
+                if(listOfNodes[i].years[j]<max && listOfNodes[i].years[j]>min){
+                    listOfFilteredNodeIDs.push(listOfNodes[i].id);
+                  
+                }
+            }
+                
         }
         console.log(listOfFilteredNodeIDs);
-         //console.log(listOfFilteredNodeIDs.length);
+       
          for(i=0; i< listOfFilteredNodeIDs.length; i++){
             listOfFilteredNodeIDs[i]= '#id' + listOfFilteredNodeIDs[i];
          }
@@ -436,6 +437,7 @@ function filterByYear(min,max){
 $( function() {
     $( "#tabs" ).tabs();
   } );
+    
     
 $( function() {
     var availableTags = [
