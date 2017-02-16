@@ -164,7 +164,8 @@ d3.json("data/graph.json", function(error, graph){
          .duration(500)
          .style("opacity", 0);
        })
-    .on('click', clicked); // set event handler for click event
+  .on("click", fade(.1))
+    .on('dblclick', clicked); // set event handler for click event
 
  
     
@@ -226,6 +227,31 @@ d3.json("data/graph.json", function(error, graph){
     text.attr("x", function(d) { return d.x; })
         .attr("y", function(d) { return d.y; });
   }
+    
+    
+var linkedByIndex = {};
+    graph.links.forEach(function(d) {
+        linkedByIndex[d.source.index + "," + d.target.index] = 1;
+    });
+
+    function isConnected(a, b) {
+        return linkedByIndex[a.index + "," + b.index] || linkedByIndex[b.index + "," + a.index] || a.index == b.index;
+    } 
+    
+    function fade(opacity) {
+        return function(d) {
+            node.style("stroke-opacity", function(o) {
+                thisOpacity = isConnected(d, o) ? 1 : opacity;
+                this.setAttribute('fill-opacity', thisOpacity);
+                return thisOpacity;
+            });
+
+            link.style("stroke-opacity", function(o) {
+                return o.source === d || o.target === d ? 1 : opacity;
+            });
+        };
+    }    
+  
     
  }); 
 
@@ -374,7 +400,8 @@ function filterByName(nodes, labels){
     
 function clearFilter(){
      d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1); 
-     d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 1); 
+     d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 1);
+    
 }    
     
     
@@ -478,8 +505,11 @@ $( function() {
     
 $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     triggerFilter();
-} );    
-  
+} );  
+    
+    
+    
+
   
 
 </script>
