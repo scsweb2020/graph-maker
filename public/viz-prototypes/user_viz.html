@@ -99,7 +99,14 @@ var div = d3.select("body").append("div")
     .force("link", d3.forceLink().id(function(d) {
       return d.id;
     }))
-    .force("charge", d3.forceManyBody().strength(-20))
+    .force("charge", d3.forceManyBody().strength(function(d) {
+      // return -20;
+      return -19-d.paperID.length*20; // give greater repulsion for larger nodes
+    }))
+    // .force("collision", d3.forceCollide().strength(function(d) {
+    //   // -20
+    //   return 0.2;
+    // }))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 //    .force('link', d3.forceLink(heart.links).distance(0).strength(0.1))
@@ -460,7 +467,7 @@ function filterByNeighbors(nodes, labels){
 
         //d3.selectAll(".highlighted").transition().duration(toggleTime).attr("stroke", 3);
         // TODO: recompute force layout so that nodes don't overlap.
-
+        simulation.restart()
 }
 
 
