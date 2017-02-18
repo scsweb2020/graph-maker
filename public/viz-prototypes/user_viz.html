@@ -9,19 +9,19 @@
 </head>
 
 <body>
-    
+
     <script src="https://d3js.org/d3.v4.min.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-   
+
     <script src="nouislider/nouislider.min.js"></script>
-<div class="totalContainer">    
+<div class="totalContainer">
 <div class="mainContainer">
-   
+
     <div class="container1" id="tabs">
         <ul>
             <li><a href="#tabs-1">Author</a></li>
-            <li><a href="#tabs-2">Paper Details</a></li> 
+            <li><a href="#tabs-2">Paper Details</a></li>
         </ul>
 
         <div id="tabs-1">
@@ -33,45 +33,45 @@
     </div>
      <label class="yearFilter">Year Filter </label>
     <div class="yearRange" id="slider">
-         
+
     </div>
-    
+
     <div class="ui-widget">
-        <div class="labelAuthors"> 
+        <div class="labelAuthors">
             <label class ="labelClass" for="tags">Author </label>
-            </div>       
+            </div>
             <input  id="tags">
-    </div> 
-    
+    </div>
+
  <div>
      <select id="drop">
         <option value="1">Level 1</option>
         <option value="2">Level 2</option>
-        <option value="3">Level 3</option>  
+        <option value="3">Level 3</option>
      </select>
-</div>  
-     
+</div>
+
 <div>
     <button class="filterButton" id="clearfilter" type="button" onclick="clearFilter()">Clear Filters</button>
-</div>  
-</div>        
+</div>
+</div>
 
 <div class="graphContainer">
 <svg width="1200" height="1000"></svg>
 </div>
-</div>    
+</div>
 <script>
-    
+
 var div = d3.select("body").append("div")
     .attr("class", "tooltip")
     .style("opacity", 0);
-    
-    
+
+
   var svg = d3.select("svg"),
     width = +svg.attr("width"),
     height = +svg.attr("height")
 
-  
+
   svg.append("rect")
     .attr("width", width)
     .attr("height", height)
@@ -99,24 +99,24 @@ var div = d3.select("body").append("div")
     .force("link", d3.forceLink().id(function(d) {
       return d.id;
     }))
-    .force("charge", d3.forceManyBody().strength(-10))
+    .force("charge", d3.forceManyBody().strength(-20))
     .force("center", d3.forceCenter(width / 2, height / 2));
-    
+
 //    .force('link', d3.forceLink(heart.links).distance(0).strength(0.1))
 
     // define the graph
     /// TODO: read in from separate json/js file
-    
+
   var scaleFactor=6;
-    
+
   var defaultRadius=3;
-    
+
   var topicRadius = 15;
 
 
 d3.json("data/graph.json", function(error, graph){
     if (error) throw error;
- 
+
   // define visual properties of edges
   var link = g.append("g")
     .attr("class", "links")
@@ -129,18 +129,19 @@ d3.json("data/graph.json", function(error, graph){
     .selectAll("line")
     .data(graph.links)
     .enter().append("line");
- 
-    
+
+
   // define properties of nodes
   var node = g.append("g")
     .attr("class", "nodes")
     .selectAll("circle")
     .data(graph.nodes)
     .enter().append("circle")
-    .attr("r", function(d){ 
+    .attr("r", function(d){
         if(d.type=='action' || d.type=='why-hard')
-        return defaultRadius;
-    
+        // return defaultRadius;
+        return defaultRadius+Math.log(d.paperID.length)*10;
+
         if(d.type=='topic')
             return topicRadius;})
    .attr("class", "dataNodes")
@@ -148,14 +149,14 @@ d3.json("data/graph.json", function(error, graph){
     .style("fill", function(d){
         if(d.type=='action')
             return '#247';
-        
+
         else if(d.type=='why-hard')
             return 'red';
-        
+
         else if(d.type=='topic')
             return '#00BFFF';
     })
-    
+
     .attr('cy', function(d) { return d.distance_from_root; })
     .on("mouseover", function(d) {
        div.transition()
@@ -174,8 +175,8 @@ d3.json("data/graph.json", function(error, graph){
   //.on("click", fade(.1))
     .on('dblclick', clicked); // set event handler for click event
 
- 
-    
+
+
   // define visual properties of node labels
 
  var text = g.append("g")
@@ -184,15 +185,18 @@ d3.json("data/graph.json", function(error, graph){
     .data(graph.nodes)
     .enter().append("text")
     .attr("class", "dataLabels")
-    .attr("font-size","6px")
+    // .attr("font-size","6px")
+    .attr("font-size", function(d) {
+      return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+    })
     .attr("dx", 6)
     .attr('id', function(d){ return 'label' + d.id; })
     .attr("dy", ".15em")
-    .text(function(d) { 
+    .text(function(d) {
         var string = d.name
-        
-        if (string.length > 5)
-            return string.substring(0,7)+'...';
+
+        if (string.length > 15)
+            return string.substring(0,17)+'...';
         else
             return string;
        });
@@ -234,8 +238,7 @@ d3.json("data/graph.json", function(error, graph){
     text.attr("x", function(d) { return d.x; })
         .attr("y", function(d) { return d.y; });
   }
-    
-    
+
 var linkedByIndex = {};
     graph.links.forEach(function(d) {
         linkedByIndex[d.source.index + "," + d.target.index] = 1;
@@ -243,8 +246,8 @@ var linkedByIndex = {};
 
     function isConnected(a, b) {
         return linkedByIndex[a.index + "," + b.index] || linkedByIndex[b.index + "," + a.index] || a.index == b.index;
-    } 
-    
+    }
+
     function fade(opacity) {
         return function(d) {
             node.style("stroke-opacity", function(o) {
@@ -257,12 +260,12 @@ var linkedByIndex = {};
                 return o.source === d || o.target === d ? 1 : opacity;
             });
         };
-    }    
-  
-    
- }); 
-    
-   
+    }
+
+
+ });
+
+
   // unselect all nodes
   var active = d3.select(null);
 
@@ -280,8 +283,8 @@ var linkedByIndex = {};
 
     // grab the active node(s)
     active = d3.select(this).classed("active", true);
-      
-      
+
+
     if(d.type=='action' || d.type=='why-hard')  {
      //focus around the spot of the selected node(s)
     svg.transition()
@@ -291,11 +294,11 @@ var linkedByIndex = {};
         .translate(width / 2, height / 2)
         .scale(scaleFactor)
         .translate(-(+active.attr('cx')), -(+active.attr('cy')))
-           
+
       );
        console.log(active);
   }
-      
+
 //       if(d.type=='topic')  {
      //focus around the spot of the selected node(s)
 //    svg.transition()
@@ -305,46 +308,46 @@ var linkedByIndex = {};
 //        .translate(width / 2, height / 2)
 //        .scale(scaleFactor)
 //        .translate(positionX(active), positionY(active))
-//           
+//
 //      );
-//        positionX(active);   
+//        positionX(active);
        //console.log(active.attr('cx'));
 //  }
-      
-      
-      
+
+
+
       // populate info box with relevant info from node
       d3.select("#tabs-1").text(d.authors);
       d3.select("#tabs-2").text(d.id);
   }
-    
+
 function positionX(clickedNode){
     //console.log('clcikedNode'+clickedNode);
     var sum=0;
    d3.json("data/node_connections.json", function(d) {
        var str=clickedNode.attr('id');
        var x=clickedNode.attr('cx');
-       
+
        console.log('cx'+x);
     var nodeID=str.substring('id'.length);
     //alert(nodeID);
     var listOfNodes=(d[nodeID]);
     //console.log(listOfNodes);
-       
+
     for(i=0; i< listOfNodes.length; i++){
     listOfNodes[i]= 'id' + listOfNodes[i];
     }
-      console.log(listOfNodes); 
-       
+      console.log(listOfNodes);
+
     for(i=0; i< listOfNodes.length; i++){
         console.log((listOfNodes[i]).attr('cx'));
-    }   
+    }
 //       console.log(sum);
-       
+
 });
 
-    
-}    
+
+}
 
   /***
   Reset to master view
@@ -358,182 +361,185 @@ function positionX(clickedNode){
         .scale(1)
       );
   }
-    
-    
+
+
 var toggleTime=500;  //set toggle time for transition (in milliseconds)
 
-function triggerFilter(){    
+function triggerFilter(){
 
 d3.json("data/author_connections.json", function(d) {
 
-var listOfNodes=(d[document.getElementById("tags").value]); 
+var listOfNodes=(d[document.getElementById("tags").value]);
 
     for(i=0; i< listOfNodes.length; i++){
     listOfNodes[i]= '#id' + listOfNodes[i];
     }
-    
+
     var stringOfNodes= listOfNodes.toString();
-    
-    var listOfLabels=(d[document.getElementById("tags").value]);   
-     
-    var listOfLabels=listOfNodes;    
-    
+
+    var listOfLabels=(d[document.getElementById("tags").value]);
+
+    var listOfLabels=listOfNodes;
+
     for(i=0; i< listOfLabels.length; i++){
     listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
-       
+
     }
-   
-    
+
+
     var stringOfLabels= listOfLabels.toString();
-      
+
 
     filterByName(stringOfNodes, stringOfLabels);
-   
+
 });
 }
-    
+
 
 
 function filterByName(nodes, labels){
 
         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
-        
-        
+
+
         d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
         d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1);
-    
-                  
-} 
+
+}
 
 function filterByNeighbors(nodes, labels){
-        
-        
+
+
 
         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3).attr("r", defaultRadius);
-        
+
 //        d3.selectAll(".highlighted").transition().duration(toggleTime).style("opacity", 1);
 //        d3.selectAll(".highlighted").transition().duration(toggleTime).style("fill", '#FFC200');
         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3).attr("font-size","6px");
-        
-        
+
+
         d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1).attr("r", defaultRadius+5);
         d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1).attr("font-size","10px");
-    
+
         //d3.selectAll(".highlighted").transition().duration(toggleTime).attr("stroke", 3);
-        
-        
-                  
-} 
-        
-    
+
+
+
+}
+
+
 function clearFilter(){
-     d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1); 
+     d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1);
      d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 1);
-    
-}    
-    
-    
+
+}
+
 var slider = document.getElementById('slider');
 
 noUiSlider.create(slider, {
 	start: [2013, 2017],
 	connect: true,
-    step: 1,  
+    step: 1,
 	range: {
 		'min': 2013,
 		'max': 2017
 	}
 });
-    
+
 slider.noUiSlider.on('change', function(){
-	var rangeValues=slider.noUiSlider.get(); 
+	var rangeValues=slider.noUiSlider.get();
     var min=rangeValues[0];
     var max=rangeValues[1];
 
    filterByYear(min,max);
-    
-});      
- 
 
-    
+});
+
+
+
 function filterByYear(min,max){
-   
+
     d3.json("data/graph.json", function(d) {
-       
+
         var listOfFilteredNodeIDs=[];
         var listOfNodes = d.nodes;
         //console.log(listOfNodes);
-        
+
         for(i=0; i< listOfNodes.length; i++){
-            
-            
+
+
             for(j=0; j<(listOfNodes[i].years).length; j++){
                 if(listOfNodes[i].years[j]<max && listOfNodes[i].years[j]>min){
                     listOfFilteredNodeIDs.push(listOfNodes[i].id);
-                  
+
                 }
             }
-                
+
         }
         console.log(listOfFilteredNodeIDs);
-       
+
          for(i=0; i< listOfFilteredNodeIDs.length; i++){
             listOfFilteredNodeIDs[i]= '#id' + listOfFilteredNodeIDs[i];
          }
-        
+
          var stringOfNodes= listOfFilteredNodeIDs.toString();
-         filterByName(stringOfNodes);    
+         filterByName(stringOfNodes);
 });
 }
-    
+
 $( function() {
     $( "#tabs" ).tabs();
   } );
-    
-    
+
+
 $( function() {
     var availableTags = [
-        "Burke, Moira",
-        "Henderson, Aubrey",
-        "Agrawala, Maneesh",
-        "Laur H. Fisher, MIT",
-        "Rajan Vaish, Stanford University",
-        "Shirish Goyal, Stanford University",
-        "Thomas W. Malone, Massachusetts Institute of Technology",
-        "Dang, Steven",
-        "Young Ji Kim, Massachusetts Institute of Technology",
-        "Aaron Gilbee, Independent Researcher",
-        "Forlizzi, Jodi L.",
-        "Jeffrey Yu-Ting Lin, Magic Leap",
-        "Lykourentzou, Ioanna",
-        "Dabbish, Laura",
-        "Ding, Xianghua",
-        "Ding, Xianghua",
-         "Yue Han, Stevens Institute of Technology",
-        "Felicia Y Ng, Carnegie Mellon University",
-        "Kraut, Robert E.",
-        "Mark E Whiting, Carnegie Mellon University",
-        "Lim, Ellen",
-        "Koutra, Danai",
-        "Jasani, Jeel",
-        "Kittur, Aniket",
-        "Paritosh, Praveen",
-        "Chan, Joel",
-        "Zhu, Haiyi"
-      
-    ];
+    "Jodi L. Forlizzi",
+    "Walter Lasecki",
+    "Aniket Kittur",
+    "Alessandro Acquisti",
+    "Lorrie Faith Cranor",
+    "Kurt Luther",
+    "Sophie Vennix",
+    "Robert E. Kraut",
+    "Sara Kiesler",
+    "Laura Dabbish",
+    "Gabriela Marcu",
+    "Scott Hudson",
+    "Nathaniel Fruchter",
+    "Felicia Y Ng",
+    "W. Ben Towne",
+    "Jeffrey M. Rzeszotarski",
+    "Anita Williams Woolley",
+    "Steven Dang",
+    "Manya Sleeper",
+    "Jeffrey Bigham",
+    "Anind Dey",
+    "Winnie Leung",
+    "Laura A. Dabbish",
+    "Thomas Garncarz",
+    "Lixiu Yu",
+    "Min Kyung Lee",
+    "Yi-Chia Wang",
+    "Mark E Whiting",
+    "Joel Chan",
+    "Steven P. Dow",
+    "Anind K. Dey",
+    "Haiyi Zhu",
+    "Jeffrey P. Bigham"
+  ];
     $( "#tags" ).autocomplete({
       source: availableTags
     });
   } );
 
-    
+
 $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     triggerFilter();
-} );  
-    
-    
+} );
+
+
 
     function neighboring(d){
         //d3.select(this).attr("class", "highlighted");
@@ -541,57 +547,54 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
         //d.attr('class', 'highlighted');
         var nodeID=d.id;
         console.log(nodeID);
-        
+
          d3.json("data/node_neighborhoods.json", function(d) {
-             
+
              if(document.getElementById("drop").value=='1'){
                   var listOfNodes=d[nodeID][1];
              }
-             
+
               if(document.getElementById("drop").value=='2'){
                   var listOfNodes=d[nodeID][1];
                   listOfNodes=listOfNodes.concat(d[nodeID][2]);
              }
-             
+
              if(document.getElementById("drop").value=='3'){
                   var listOfNodes=d[nodeID][1];
                   listOfNodes=listOfNodes.concat(d[nodeID][2]);
                   listOfNodes=listOfNodes.concat(d[nodeID][3]);
              }
-             
+
             listOfNodes=listOfNodes.concat(nodeID);
-            
+
              for(var i=0; i<listOfNodes.length; i++){
                  listOfNodes[i]= '#id' + listOfNodes[i];
              }
              //console.log(listOfNodes.length);
-             
+
              var stringOfNodes= listOfNodes.toString();
              //console.log(listOfNodes);
-             
-              var listOfLabels=listOfNodes; 
-             
+
+              var listOfLabels=listOfNodes;
+
              listOfLabels=listOfLabels.concat('#id'+ nodeID);
              //console.log(listOfLabels);
-    
+
               for(i=0; i< listOfLabels.length; i++){
                     listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
-       
+
               }
-   
-    
+
+
               var stringOfLabels= listOfLabels.toString();
-             
+
               filterByNeighbors(stringOfNodes, stringOfLabels);
-             
-             
-             
+
+
+
          });
-       
+
    } 
-
-
-  
 
 </script>
 
