@@ -1,19 +1,102 @@
 [
   {
     "author_arr": [
-      "Zhu, Haiyi", 
-      "Kraut, Robert E.", 
-      "Kittur, Aniket"
+      "Haiyi Zhu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
     ], 
     "paperID": "6UGSWD8D", 
     "year": 2016, 
     "title": "A Contingency View of Transferring and Adapting Best Practices Within Online Communities"
   }, 
   {
+    "author_arr": "", 
+    "paperID": "X49N6IXM", 
+    "year": 2016, 
+    "title": "Algorithms at Work: Empirical Diversity, Analytic Vocabularies, Design Implications"
+  }, 
+  {
     "author_arr": [
-      "Chan, Joel", 
-      "Dang, Steven", 
-      "Dow, Steven P."
+      "Kurt Luther", 
+      "Sophie Vennix", 
+      "Steven P. Dow"
+    ], 
+    "paperID": "Z56T9MF4", 
+    "year": 2016, 
+    "title": "Almost an Expert: The Effects of Rubrics and Expertise on Perceived Value of Crowdsourced Design Critiques"
+  }, 
+  {
+    "author_arr": [
+      "Steven P. Dow", 
+      "Winnie Leung", 
+      "Jeffrey Bigham", 
+      "Walter Lasecki"
+    ], 
+    "paperID": "356QDHJ7", 
+    "year": 2016, 
+    "title": "Coding Varied Behavior Types Using the Crowd"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "ASN4NII9", 
+    "year": 2016, 
+    "title": "Constantly Connected: At What Price and with What Rewards?"
+  }, 
+  {
+    "author_arr": [
+      "Lixiu Yu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
+    ], 
+    "paperID": "FQVMU8GU", 
+    "year": 2016, 
+    "title": "Distributed Analogical Idea Generation with Multiple Constraints"
+  }, 
+  {
+    "author_arr": [
+      "Lixiu Yu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
+    ], 
+    "paperID": "GCGB74CJ", 
+    "year": 2016, 
+    "title": "Encouraging Outside-The-Box Thinking in Crowd Innovation Through Identifying Domains of Expertise"
+  }, 
+  {
+    "author_arr": [
+      "Erik Trainer", 
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb"
+    ], 
+    "paperID": "EWDTT8PI", 
+    "year": 2016, 
+    "title": "How to Hackathon: Socio-technical Tradeoffs in Brief, Intensive Collocation"
+  }, 
+  {
+    "author_arr": [
+      "Joel Chan", 
+      "Steven Dang", 
+      "Steven P. Dow"
+    ], 
+    "paperID": "MUV234CD", 
+    "year": 2016, 
+    "title": "IdeaGens: Enabling Expert Facilitation of Crowd Brainstorming"
+  }, 
+  {
+    "author_arr": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "paperID": "F96H6I58", 
+    "year": 2016, 
+    "title": "IdeaHound: Self-sustainable Idea Generation in Creative Online Communities"
+  }, 
+  {
+    "author_arr": [
+      "Joel Chan", 
+      "Steven Dang", 
+      "Steven P. Dow"
     ], 
     "paperID": "7V9JCFSV", 
     "year": 2016, 
@@ -21,10 +104,50 @@
   }, 
   {
     "author_arr": [
-      "Dai, Peng", 
-      "Rzeszotarski, Jeffrey M.", 
-      "Paritosh, Praveen", 
-      "Chi, Ed H."
+      "Yi-Chia Wang", 
+      "Robert E. Kraut"
+    ], 
+    "paperID": "XGBBFQWX", 
+    "year": 2016, 
+    "title": "Modeling Self-Disclosure in Social Networking Sites"
+  }, 
+  {
+    "author_arr": [
+      "Steven P. Dow"
+    ], 
+    "paperID": "T9IJMSRB", 
+    "year": 2016, 
+    "title": "Personality Matters: Balancing for Personality Types Leads to Better Outcomes for Crowd Teams"
+  }, 
+  {
+    "author_arr": [
+      "Gabriela Marcu", 
+      "Anind K. Dey", 
+      "Sara Kiesler"
+    ], 
+    "paperID": "AMDVNRNA", 
+    "year": 2016, 
+    "title": "Time to Reflect: Supporting Health Services over Time by Focusing on Collaborative Reflection"
+  }, 
+  {
+    "author_arr": [
+      "Steven P. Dow"
+    ], 
+    "paperID": "T4S3K5ZT", 
+    "year": 2015, 
+    "title": "A Classroom Study of Using Crowd Feedback in the Iterative Design Process"
+  }, 
+  {
+    "author_arr": [
+      "Jeffrey P. Bigham"
+    ], 
+    "paperID": "UQ4WC79E", 
+    "year": 2015, 
+    "title": "Accessible Crowdwork?: Understanding the Value in and Challenge of Microtask Employment for People with Disabilities"
+  }, 
+  {
+    "author_arr": [
+      "Jeffrey M. Rzeszotarski"
     ], 
     "paperID": "AFWXF8CH", 
     "year": 2015, 
@@ -32,13 +155,852 @@
   }, 
   {
     "author_arr": [
-      "Ma, Xiaojuan", 
-      "Yu, Li", 
-      "Forlizzi, Jodi L.", 
-      "Dow, Steven P."
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow"
     ], 
     "paperID": "HTFNIQDD", 
     "year": 2015, 
     "title": "Exiting the Design Studio: Leveraging Online Participants for Early-Stage Design Feedback"
+  }, 
+  {
+    "author_arr": [
+      "Erik Trainer", 
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb"
+    ], 
+    "paperID": "SMZ5P2JC", 
+    "year": 2015, 
+    "title": "From Personal Tool to Community Resource: What's the Extra Work and Who Will Do It?"
+  }, 
+  {
+    "author_arr": [
+      "Manya Sleeper", 
+      "Alessandro Acquisti", 
+      "Lorrie Faith Cranor"
+    ], 
+    "paperID": "CZQ57NCZ", 
+    "year": 2015, 
+    "title": "I Would Like To..., I Shouldn'T..., I Wish I...: Exploring Behavior-Change Goals for Social Networking Sites"
+  }, 
+  {
+    "author_arr": [
+      "Haiyi Zhu"
+    ], 
+    "paperID": "9T2T3NWW", 
+    "year": 2015, 
+    "title": "Is It Good to Be Like Wikipedia?: Exploring the Trade-offs of Introducing Collaborative Editing Model to Q&A Sites"
+  }, 
+  {
+    "author_arr": [
+      "Min Kyung Lee", 
+      "Nathaniel Fruchter", 
+      "Laura Dabbish"
+    ], 
+    "paperID": "9895DC6Q", 
+    "year": 2015, 
+    "title": "Making Decisions From a Distance: The Impact of Technological Mediation on Riskiness and Dehumanization"
+  }, 
+  {
+    "author_arr": [
+      "Xuanchong Li", 
+      "Kai-min Chang"
+    ], 
+    "paperID": "5G8U33QZ", 
+    "year": 2015, 
+    "title": "Massive Open Online Proctor: Protecting the Credibility of MOOCs Certificates"
+  }, 
+  {
+    "author_arr": [
+      "Jodi L. Forlizzi", 
+      "Scott Hudson", 
+      "Anind Dey"
+    ], 
+    "paperID": "GPBS8H6W", 
+    "year": 2015, 
+    "title": "Social Eye Tracking: Gaze Recall with Online Crowds"
+  }, 
+  {
+    "author_arr": [
+      "Steven P. Dow"
+    ], 
+    "paperID": "56QUJEMP", 
+    "year": 2015, 
+    "title": "Structuring, Aggregating, and Evaluating Crowdsourced Design Critique"
+  }, 
+  {
+    "author_arr": [
+      "Marlow, Jennifer", 
+      "Dabbish, Laura A."
+    ], 
+    "paperID": "T8P7HT8E", 
+    "year": 2015, 
+    "title": "The Effects of Visualizing Activity History on Attitudes and Behaviors in a Peer Production Context"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "D7TDBDC7", 
+    "year": 2015, 
+    "title": "The Future of Networked Privacy: Challenges and Opportunities"
+  }, 
+  {
+    "author_arr": [
+      "system"
+    ], 
+    "paperID": "8M9FQCNU", 
+    "year": 2015, 
+    "title": "The Group Context Framework: An Extensible Toolkit for Opportunistic Grouping and Collaboration"
+  }, 
+  {
+    "author_arr": [
+      "Nguyen, Duyen T.", 
+      "Dabbish, Laura A.", 
+      "Kiesler, Sara"
+    ], 
+    "paperID": "VM7EP4IA", 
+    "year": 2015, 
+    "title": "The Perverse Effects of Social Transparency on Online Advice Taking"
+  }, 
+  {
+    "author_arr": [
+      "Das, Sauvik.", 
+      "Dabbish, Laura A.", 
+      "Hong, Jason I."
+    ], 
+    "paperID": "4IR7FP3G", 
+    "year": 2015, 
+    "title": "The Role of Social Influence in Security Feature Adoption"
+  }, 
+  {
+    "author_arr": [
+      "Dow, Steven P."
+    ], 
+    "paperID": "F5SXURFA", 
+    "year": 2015, 
+    "title": "Toward Collaborative Ideation at Scale: Leveraging Ideas from Others to Generate More Creative and Diverse Ideas"
+  }, 
+  {
+    "author_arr": [
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
+    ], 
+    "paperID": "NX42RPT2", 
+    "year": 2015, 
+    "title": "Using Multiple Contexts to Detect and Form Opportunistic Groups"
+  }, 
+  {
+    "author_arr": [
+      "Jason Wiese", 
+      "Jun-Ki Min", 
+      "Jason I. Hong", 
+      "John Zimmerman"
+    ], 
+    "paperID": "4C8T6PTV", 
+    "year": 2015, 
+    "title": "You Never Call, You Never Write: Call and SMS Logs Do Not Always Indicate Tie Strength"
+  }, 
+  {
+    "author_arr": [
+      "Lixiu Yu", 
+      "Paul Andre", 
+      "Aniket Kittur", 
+      "Robert E. Kraut"
+    ], 
+    "paperID": "QVXBKCSS", 
+    "year": 2014, 
+    "title": "A Comparison of Social, Learning, and Financial Strategies on Crowd Engagement and Output Quality"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "GQPNFE6B", 
+    "year": 2014, 
+    "title": "Building Loyalty to Online Communities Through Bond and Identity-based Attachment to Sub-groups"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "KF3CZPHV", 
+    "year": 2014, 
+    "title": "Characterizing the Life Cycle of Online News Stories Using Social Media Reactions"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "ABX4R7K5", 
+    "year": 2014, 
+    "title": "Collaborative Problem Solving: A Study of MathOverflow"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "NINP5I8I", 
+    "year": 2014, 
+    "title": "Conceptual Distance Matters when Building on Others' Ideas in Crowd-collaborative Innovation Platforms"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "DW9W8Z9I", 
+    "year": 2014, 
+    "title": "Crowd Synthesis: Extracting Categories and Clusters from Complex Data"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "XSJ9KCBQ", 
+    "year": 2014, 
+    "title": "Motivating Contribution in a Participatory Sensing System via Quid-pro-quo"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "KUFJGTHN", 
+    "year": 2014, 
+    "title": "Sharing, Re-use and Circulation of Resources in Cooperative Scientific Work"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "H3HIEFKV", 
+    "year": 2014, 
+    "title": "Standing on the Schemas of Giants: Socially Augmented Information Foraging"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "HTVE4WHV", 
+    "year": 2014, 
+    "title": "Teammate Inaccuracy Blindness: When Information Sharing Tools Hinder Collaborative Analysis"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "XXFW3TXP", 
+    "year": 2014, 
+    "title": "The Identification of Deviance and Its Impact on Retention in a Multiplayer Game"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "ZG3TF6TC", 
+    "year": 2014, 
+    "title": "The Role of Founders in Building Online Groups"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "N7BVZCU4", 
+    "year": 2014, 
+    "title": "Understanding Factors of Successful Engagement Around Energy Consumption Between and Among Households"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "E6PHTSZ7", 
+    "year": 2013, 
+    "title": "Co-worker Transparency in a Microtask Marketplace"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "CMZF22K2", 
+    "year": 2013, 
+    "title": "Community, Impact and Credit: Where Should I Submit My Papers?"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "TTQWXHH5", 
+    "year": 2013, 
+    "title": "CrowdCamp 2013: Rapidly Iterating Crowd Ideas"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "SFF232HX", 
+    "year": 2013, 
+    "title": "HomeProxy: A Physical Proxy for Video Messaging in the Home"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "5XDKB62D", 
+    "year": 2013, 
+    "title": "Impression Formation in Online Peer Production: Activity Traces and Personal Profiles in Github"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "CDAJEXM8", 
+    "year": 2013, 
+    "title": "Impression Formation in Social Work-sharing Sites"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "9QNHS3MS", 
+    "year": 2013, 
+    "title": "Incentives and Integration in Scientific Software Production"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "2UGE25MS", 
+    "year": 2013, 
+    "title": "Micro-volunteering: Helping the Helpers in Development"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "2BCWNDR9", 
+    "year": 2013, 
+    "title": "Mining Smartphone Data to Classify Life-facets of Social Relationships"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "ARW8S66I", 
+    "year": 2013, 
+    "title": "Redistributing Leadership in Online Creative Collaboration"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "3M6SH2W8", 
+    "year": 2013, 
+    "title": "Sensr: Evaluating a Flexible Framework for Authoring Mobile Data-collection Tools for Citizen Science"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "I364T5QF", 
+    "year": 2013, 
+    "title": "The Future of Crowd Work"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "P6KICF93", 
+    "year": 2013, 
+    "title": "The Post That Wasn'T: Exploring Self-censorship on Facebook"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "J7SB3TH5", 
+    "year": 2013, 
+    "title": "Tweets Are Forever: A Large-scale Quantitative Analysis of Deleted Tweets"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "795GJNA5", 
+    "year": 2013, 
+    "title": "Using Facebook After Losing a Job: Differential Benefits of Strong and Weak Ties"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "IHT6UK3P", 
+    "year": 2013, 
+    "title": "What is a File?"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "687EGCD6", 
+    "year": 2013, 
+    "title": "Your Process is Showing: Controversy Management and Perceived Quality in Wikipedia"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "MGSI73FJ", 
+    "year": 2012, 
+    "title": "All-for-one and One-for-all?: A Multi-level Analysis of Communication Patterns and Individual Performance in Geographically Distributed Software Development"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "NE9XTH9J", 
+    "year": 2012, 
+    "title": "Boundary Regulation in Social Media"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "TZ9DXU4R", 
+    "year": 2012, 
+    "title": "Collaborative Workflow for Crowdsourcing Translation"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "6DR463PF", 
+    "year": 2012, 
+    "title": "Conflict, Criticism, or Confidence: An Empirical Examination of the Gender Gap in Wikipedia Contributions"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "D6FQQZ8G", 
+    "year": 2012, 
+    "title": "Coordination and Beyond: Social Functions of Groups in Open Content Production"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "JH5NITQJ", 
+    "year": 2012, 
+    "title": "CrowdWeaver: Visually Managing Complex Crowd Work"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "HJ6ERRAG", 
+    "year": 2012, 
+    "title": "Designing Interventions to Reduce Psychological Distance in Globally Distributed Teams"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "RZS3VM87", 
+    "year": 2012, 
+    "title": "Do Collaborators' Annotations Help or Hurt Asynchronous Analysis"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "X73RI9CZ", 
+    "year": 2012, 
+    "title": "Effectiveness of Shared Leadership in Online Communities"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "5IIFTNBS", 
+    "year": 2012, 
+    "title": "Fresh Faces in the Crowd: Turnover, Identity, and Commitment in Online Groups"
+  }, 
+  {
+    "author_arr": [
+      "Haiyi Zhu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
+    ], 
+    "paperID": "MXXBE2S3", 
+    "year": 2012, 
+    "title": "Organizing Without Formal Organization: Group Identification, Goal Setting and Social Modeling in Directing Online Production"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "KCUKNW5I", 
+    "year": 2012, 
+    "title": "Shepherding the Crowd Yields Better Work"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "4CE8HZGD", 
+    "year": 2012, 
+    "title": "Shepherding the Crowd Yields Better Work"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "S6UIGWCN", 
+    "year": 2012, 
+    "title": "Social Coding in GitHub: Transparency and Collaboration in an Open Software Repository"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "XXZFS2F4", 
+    "year": 2012, 
+    "title": "Social Media and Success in Open Source Projects"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "W26S9CFK", 
+    "year": 2012, 
+    "title": "Social Transparency in Networked Information Exchange: A Theoretical Framework"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "X7935HC7", 
+    "year": 2012, 
+    "title": "The Future of Collaborative Software Development"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "26QMQC76", 
+    "year": 2012, 
+    "title": "To Stay or Leave?: The Relationship of Emotional and Informational Support to Commitment in Online Health Support Groups"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "WB4M3REZ", 
+    "year": 2012, 
+    "title": "Tweeting is Believing?: Understanding Microblog Credibility Perceptions"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "3XDC3HN4", 
+    "year": 2012, 
+    "title": "Who Gives a Tweet?: Evaluating Microblog Content Value"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "AGH4BWW7", 
+    "year": 2011, 
+    "title": "Increasing Commitment to Online Communities by Designing for Social Presence"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "BEDMB927", 
+    "year": 2011, 
+    "title": "Managing Multi-jurisdictional Requirements in the Cloud: Towards a Computational Legal Landscape"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "NH6TW75Q", 
+    "year": 2011, 
+    "title": "Photo Sharing in Diverse Distributed Teams"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "SCDK9PTS", 
+    "year": 2011, 
+    "title": "Research Team Integration: What It is and Why It Matters"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "TAWTVXP6", 
+    "year": 2011, 
+    "title": "SISO: Simple Service Orchestration (Video Showcase)"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "7WIJMGJ7", 
+    "year": 2010, 
+    "title": "Beyond Wikipedia: Coordination and Conflict in Online Production Groups"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "RVXCBNVX", 
+    "year": 2010, 
+    "title": "Pitfalls of Information Access with Visualizations in Remote Collaborative Analysis"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "R5VKZPK6", 
+    "year": 2010, 
+    "title": "Receptionist or Information Kiosk: How Do People Talk with a Robot?"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "E5FXJZW2", 
+    "year": 2010, 
+    "title": "Social Use of Computer-mediated Communication by Adults on the Autism Spectrum"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "CE8VBHWS", 
+    "year": 2010, 
+    "title": "Socialization Tactics in Wikipedia and Their Effects"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "MS5QJZ9S", 
+    "year": 2008, 
+    "title": "Are You Sleeping?: Sharing Portrayed Sleeping Status Within a Social Network"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "WBZBDU5I", 
+    "year": 2008, 
+    "title": "Can Markets Help?: Applying Market Mechanisms to Improve Synchronous Communication"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "CGUVT7DH", 
+    "year": 2008, 
+    "title": "Can You Ever Trust a Wiki?: Impacting Perceived Trustworthiness in Wikipedia"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "MDSAGZ4M", 
+    "year": 2008, 
+    "title": "Communication Networks in Geographically Distributed Software Development"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "3AH8QZMH", 
+    "year": 2008, 
+    "title": "IM Waiting: Timing and Responsiveness in Semi-synchronous Communication"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "4KSBZB6C", 
+    "year": 2008, 
+    "title": "Investigating the Effect of Discussion Forum Interface Affordances on Patterns of Conversational Interactions"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "2JKM2BKC", 
+    "year": 2008, 
+    "title": "Jumpstarting Relationships with Online Games: Evidence from a Laboratory Investigation"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "64TE26NS", 
+    "year": 2008, 
+    "title": "Mind Your Ps and Qs: The Impact of Politeness and Rudeness in Online Communities"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "FBF53XIR", 
+    "year": 2008, 
+    "title": "Mopping Up: Modeling Wikipedia Promotion Decisions"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "AGZ5D4HI", 
+    "year": 2008, 
+    "title": "Pushing Relevant Artifact Annotations in Collaborative Software Development"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "7T4RUQWU", 
+    "year": 2008, 
+    "title": "Where Did We Turn Wrong?: Unpacking the Effect of Culture and Technology on Attributions of Team Performance"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "IE5H28ZR", 
+    "year": 2008, 
+    "title": "Who Collaborates Successfully?: Prior Experience Reduces Collaboration Barriers in Distributed Interdisciplinary Research"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "UFDIHFKK", 
+    "year": 2006, 
+    "title": "Communication Characteristics of Instant Messaging: Effects and Predictions of Interpersonal Relationships"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "D5K8KP6W", 
+    "year": 2006, 
+    "title": "Cultural Differences in the Use of Instant Messaging in Asia and North America"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "XRH7NFVF", 
+    "year": 2006, 
+    "title": "Email Overload at Work: An Analysis of Factors Associated with Email Strain"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "NZ9BDT62", 
+    "year": 2006, 
+    "title": "Identification of Coordination Requirements: Implications for the Design of Collaboration and Awareness Tools"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "96QH4VVE", 
+    "year": 2004, 
+    "title": "Action As Language in a Shared Visual Space"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "A9P9Z8EV", 
+    "year": 2004, 
+    "title": "Collaborative Knowledge Management Supporting Mars Mission Scientists"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "FJ6KKZBW", 
+    "year": 2004, 
+    "title": "Controlling Interruptions: Awareness Displays and Social Motivation for Coordination"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "CVS89IVI", 
+    "year": 2004, 
+    "title": "Does CSCW Need Organization Theory?"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "7A4HN6H5", 
+    "year": 2004, 
+    "title": "QnA: Augmenting an Instant Messaging Client to Balance User Responsiveness and Performance"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "GDDFURG2", 
+    "year": 2004, 
+    "title": "Taking It out of Context: Collaborating Within and Across Cultures in Face-to-face Settings and via Instant Messaging"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "IVK8BMQ8", 
+    "year": 2004, 
+    "title": "Using Social Psychology to Motivate Contributions to Online Communities"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "S7KJGVP7", 
+    "year": 2002, 
+    "title": "Markets for Attention: Will Postage for Email Help?"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "E6ZFJ3DZ", 
+    "year": 2002, 
+    "title": "The Use of Visual Information in Shared Visual Spaces: Informing the Development of Virtual Co-presence"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "GTPQ2A8I", 
+    "year": 2002, 
+    "title": "What is Chat Doing in the Workplace?"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "M3IA59X7", 
+    "year": 2000, 
+    "title": "Coordination of Communication: Effects of Shared Visual Context on Collaborative Work"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "V6SG9V7D", 
+    "year": 1998, 
+    "title": "Collaboration Using Multiple PDAs Connected to a PC"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "9VRQTUUZ", 
+    "year": 1998, 
+    "title": "Coordination, Overload and Team Performance: Effects of Team Communication Strategies"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "RDR787FB", 
+    "year": 1998, 
+    "title": "Envisioning Communication: Task-tailorable Representations of Communication in Asynchronous Work"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "R7PIXQ6M", 
+    "year": 1998, 
+    "title": "Ubiquitous Collaboration via Surface Representations"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "9P5ZXWZP", 
+    "year": 1996, 
+    "title": "Collaboration in Performance of Physical Tasks: Effects on Outcomes and Communication"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "CMCIN8Q9", 
+    "year": 1996, 
+    "title": "My Partner is a Real Dog: Cooperation with Social Agents"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "TRDCUDKK", 
+    "year": 1994, 
+    "title": "Computer Support for Distributed Collaborative Writing: Defining Parameters of Interaction"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "982STA32", 
+    "year": 1994, 
+    "title": "Life and Death of New Technology: Task, Utility and Social Influences on the Use of a Communication Medium"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "E3WSMEQZ", 
+    "year": 1992, 
+    "title": "Flexible Diff-ing in a Collaborative Writing System"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "8ZV6BSV7", 
+    "year": 1992, 
+    "title": "Problem or Solution? CSCW and the Paradox of Stalled Productivity"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "26D8QGFP", 
+    "year": 1990, 
+    "title": "Determinants and Patterns of Control over Technology in a Computerized Meeting Room"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "A4X7UUFK", 
+    "year": 1990, 
+    "title": "Issues in the Design of Computer Support for Co-authoring and Commenting"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "5AU89DEC", 
+    "year": 1988, 
+    "title": "Cooperative Work in the Andrew Message System"
+  }, 
+  {
+    "author_arr": [
+      "Joseph R Seering", 
+      "Robert E Kraut", 
+      "Laura A. Dabbish"
+    ], 
+    "paperID": "2017_1", 
+    "year": 2017, 
+    "title": "Shaping Pro and Anti-Social Behavior on Twitch Through Moderation and Example-Setting"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "2017_2", 
+    "year": 2017, 
+    "title": "The Impact of Assistive Technology on Communication Quality Between Deaf and Hearing Individuals"
+  }, 
+  {
+    "author_arr": "", 
+    "paperID": "2017_3", 
+    "year": 2017, 
+    "title": "Photo Sharing in the Arab Gulf:  Expressing the Collective and Autonomous Selves"
+  }, 
+  {
+    "author_arr": [
+      "Prerna Chikersal", 
+      "Maria Tomprou", 
+      "Anita Williams Woolley", 
+      "Laura A. Dabbish"
+    ], 
+    "paperID": "2017_4", 
+    "year": 2017, 
+    "title": "Deep Structures of Collaboration: Physiological Correlates of Collective Intelligence and Group Satisfaction"
+  }, 
+  {
+    "author_arr": [
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Laura A. Dabbish", 
+      "Felicia Y Ng", 
+      ""
+    ], 
+    "paperID": "2017_5", 
+    "year": 2017, 
+    "title": "Fruitful Feedback: Positive Affective Language and Source Anonymity Improve Critique Reception and Work Outcomes"
+  }, 
+  {
+    "author_arr": [
+      "Min Kyung Lee"
+    ], 
+    "paperID": "2017_6", 
+    "year": 2017, 
+    "title": "Algorithmic Mediation in Group Decisions: Fairness Perceptions of Algorithmically Mediated vs. Discussion-Based Social Division"
+  }, 
+  {
+    "author_arr": [
+      "Wei Wei", 
+      "Kathleen M. Carley"
+    ], 
+    "paperID": "2017_7", 
+    "year": 2017, 
+    "title": "Girls rule, boys drool: Extracting semantic and affective stereotypes from Twitter"
+  }, 
+  {
+    "author_arr": [
+      "W. Ben Towne"
+    ], 
+    "paperID": "2017_8", 
+    "year": 2017, 
+    "title": "Putting the Pieces Back Together Again:  Contest Webs for Large-Scale Problem Solving"
+  }, 
+  {
+    "author_arr": [
+      "Mark E Whiting"
+    ], 
+    "paperID": "2017_9", 
+    "year": 2017, 
+    "title": "Crowd Guilds: Worker-led Reputation and Feedback on Crowdsourcing Platforms"
+  }, 
+  {
+    "author_arr": [
+      "Anita Williams Woolley"
+    ], 
+    "paperID": "2017_10", 
+    "year": 2017, 
+    "title": "What Makes a Strong Team? Using Collective Intelligence to Predict Team Performance in League of Legends"
+  }, 
+  {
+    "author_arr": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "paperID": "2017_11", 
+    "year": 2017, 
+    "title": "Team Dating Leads to Better Online Ad Hoc Collaborations"
   }
 ]
