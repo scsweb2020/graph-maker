@@ -451,7 +451,7 @@ function filterByNeighbors(nodes, labels){
         .attr("r", function(d){
             if(d.type=='action' || d.type=='why-hard')
             // return defaultRadius;
-            return 10+defaultRadius+Math.log(d.paperID.length)*10;
+            return 2+defaultRadius+Math.log(d.paperID.length)*10;
 
             if(d.type=='topic')
                 return topicRadius;})
@@ -462,7 +462,7 @@ function filterByNeighbors(nodes, labels){
         .style("opacity", 1)
         // .attr("font-size","10px");
         .attr("font-size", function(d) {
-          return parseInt(10+Math.log(d.paperID.length)*10).toString() + 'px';
+          return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
         })
 
         //d3.selectAll(".highlighted").transition().duration(toggleTime).attr("stroke", 3);
