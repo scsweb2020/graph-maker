@@ -95,7 +95,7 @@ var div = d3.select("body").append("div")
   var g = svg.append("g");
 
   // control the force-directed layout properties
-  var simulation = d3.forceSimulation()
+  simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function(d) {
       return d.id;
     }))
@@ -412,26 +412,79 @@ function filterByNeighbors(nodes, labels){
 
 
 
-        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3).attr("r", defaultRadius);
+        d3.selectAll(".dataNodes")
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 0.15)
+        .attr("r", function(d){
+            if(d.type=='action' || d.type=='why-hard')
+            // return defaultRadius;
+            return defaultRadius+Math.log(d.paperID.length)*10;
+
+            if(d.type=='topic')
+                return topicRadius;})
+        // .attr("r", defaultRadius);
 
 //        d3.selectAll(".highlighted").transition().duration(toggleTime).style("opacity", 1);
 //        d3.selectAll(".highlighted").transition().duration(toggleTime).style("fill", '#FFC200');
-        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3).attr("font-size","6px");
+        d3.selectAll(".dataLabels")
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 0.15)
+        // .attr("font-size","6px");
+        .attr("font-size", function(d) {
+          return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+        })
 
+        d3.selectAll(nodes)
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 1)
+        // .attr("r", defaultRadius+5);
+        .attr("r", function(d){
+            if(d.type=='action' || d.type=='why-hard')
+            // return defaultRadius;
+            return 10+defaultRadius+Math.log(d.paperID.length)*10;
 
-        d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1).attr("r", defaultRadius+5);
-        d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1).attr("font-size","10px");
+            if(d.type=='topic')
+                return topicRadius;})
+
+        d3.selectAll(labels)
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 1)
+        // .attr("font-size","10px");
+        .attr("font-size", function(d) {
+          return parseInt(10+Math.log(d.paperID.length)*10).toString() + 'px';
+        })
 
         //d3.selectAll(".highlighted").transition().duration(toggleTime).attr("stroke", 3);
-
-
+        // TODO: recompute force layout so that nodes don't overlap.
 
 }
 
 
 function clearFilter(){
-     d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1);
-     d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 1);
+     d3.selectAll(".dataNodes")
+     .transition()
+     .duration(toggleTime)
+     .style("opacity", 1)
+     .attr("r", function(d){
+         if(d.type=='action' || d.type=='why-hard')
+         // return defaultRadius;
+         return defaultRadius+Math.log(d.paperID.length)*10;
+
+         if(d.type=='topic')
+             return topicRadius;
+           });
+
+     d3.selectAll(".dataLabels")
+     .transition()
+     .duration(toggleTime)
+     .style("opacity", 1)
+     .attr("font-size", function(d) {
+       return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+     });
 
 }
 
@@ -594,7 +647,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
          });
 
-   } 
+   }
 
 </script>
 
