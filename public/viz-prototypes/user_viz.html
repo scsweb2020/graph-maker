@@ -410,14 +410,19 @@ function filterByNeighbors(nodes, labels){
         
         
 
-        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
-        //d3.selectAll(".highlighted").transition().duration(toggleTime).style("opacity", 1);
-        //d3.selectAll(".highlighted").transition().duration(toggleTime).style("fill", '#FFC200');
-        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
+        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3).attr("r", defaultRadius);
+        
+//        d3.selectAll(".highlighted").transition().duration(toggleTime).style("opacity", 1);
+//        d3.selectAll(".highlighted").transition().duration(toggleTime).style("fill", '#FFC200');
+        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3).attr("font-size","6px");
         
         
-        d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
-        d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1);
+        d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1).attr("r", defaultRadius+5);
+        d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1).attr("font-size","10px");
+    
+        //d3.selectAll(".highlighted").transition().duration(toggleTime).attr("stroke", 3);
+        
+        
                   
 } 
         
