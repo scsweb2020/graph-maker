@@ -43,7 +43,13 @@
             <input  id="tags">
     </div> 
     
-   
+ <div>
+     <select id="drop">
+        <option value="1">Level 1</option>
+        <option value="2">Level 2</option>
+        <option value="3">Level 3</option>  
+     </select>
+</div>  
      
 <div>
     <button class="filterButton" id="clearfilter" type="button" onclick="clearFilter()">Clear Filters</button>
@@ -164,7 +170,8 @@ d3.json("data/graph.json", function(error, graph){
          .duration(500)
          .style("opacity", 0);
        })
-  .on("click", fade(.1))
+  .on("click", neighboring)
+  //.on("click", fade(.1))
     .on('dblclick', clicked); // set event handler for click event
 
  
@@ -254,7 +261,8 @@ var linkedByIndex = {};
   
     
  }); 
-
+    
+   
   // unselect all nodes
   var active = d3.select(null);
 
@@ -397,6 +405,22 @@ function filterByName(nodes, labels){
     
                   
 } 
+
+function filterByNeighbors(nodes, labels){
+        
+        
+
+        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
+        //d3.selectAll(".highlighted").transition().duration(toggleTime).style("opacity", 1);
+        //d3.selectAll(".highlighted").transition().duration(toggleTime).style("fill", '#FFC200');
+        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
+        
+        
+        d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
+        d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1);
+                  
+} 
+        
     
 function clearFilter(){
      d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 1); 
@@ -429,9 +453,6 @@ slider.noUiSlider.on('change', function(){
 
     
 function filterByYear(min,max){
-    
-     console.log(min);
-     console.log(max);
    
     d3.json("data/graph.json", function(d) {
        
@@ -508,7 +529,62 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 } );  
     
     
+
+    function neighboring(d){
+        //d3.select(this).attr("class", "highlighted");
+        //console.log(d);
+        //d.attr('class', 'highlighted');
+        var nodeID=d.id;
+        console.log(nodeID);
+        
+         d3.json("data/node_neighborhoods.json", function(d) {
+             
+             if(document.getElementById("drop").value=='1'){
+                  var listOfNodes=d[nodeID][1];
+             }
+             
+              if(document.getElementById("drop").value=='2'){
+                  var listOfNodes=d[nodeID][1];
+                  listOfNodes=listOfNodes.concat(d[nodeID][2]);
+             }
+             
+             if(document.getElementById("drop").value=='3'){
+                  var listOfNodes=d[nodeID][1];
+                  listOfNodes=listOfNodes.concat(d[nodeID][2]);
+                  listOfNodes=listOfNodes.concat(d[nodeID][3]);
+             }
+             
+            listOfNodes=listOfNodes.concat(nodeID);
+            
+             for(var i=0; i<listOfNodes.length; i++){
+                 listOfNodes[i]= '#id' + listOfNodes[i];
+             }
+             //console.log(listOfNodes.length);
+             
+             var stringOfNodes= listOfNodes.toString();
+             //console.log(listOfNodes);
+             
+              var listOfLabels=listOfNodes; 
+             
+             listOfLabels=listOfLabels.concat('#id'+ nodeID);
+             //console.log(listOfLabels);
     
+              for(i=0; i< listOfLabels.length; i++){
+                    listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
+       
+              }
+   
+    
+              var stringOfLabels= listOfLabels.toString();
+             
+              filterByNeighbors(stringOfNodes, stringOfLabels);
+             
+             
+             
+         });
+       
+   } 
+
 
   
 
