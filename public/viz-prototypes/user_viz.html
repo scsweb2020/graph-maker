@@ -135,7 +135,8 @@ d3.json("data/graph.json", function(error, graph){
     //.attr("class", "dataLinks")
     .selectAll("line")
     .data(graph.links)
-    .enter().append("line");
+    .enter().append("line")
+    .attr("marker-end", "url(#arrow)");;
 
 
   // define properties of nodes
@@ -182,6 +183,18 @@ d3.json("data/graph.json", function(error, graph){
   //.on("click", fade(.1))
     .on('dblclick', clicked); // set event handler for click event
 
+    
+    svg.append("defs").append("marker")
+    .attr("id", "arrow")
+    .attr("viewBox", "0 -5 10 10")
+    .attr("refX", 20)
+    .attr("refY", 0)
+    .attr("markerWidth", 8)
+    .attr("markerHeight", 8)
+    .attr("orient", "auto")
+    .append("svg:path")
+    .attr("d", "M0,-5L10,0L0,5");
+    
 
 
   // define visual properties of node labels
