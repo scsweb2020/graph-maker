@@ -246,30 +246,6 @@ d3.json("data/graph.json", function(error, graph){
         .attr("y", function(d) { return d.y; });
   }
 
-var linkedByIndex = {};
-    graph.links.forEach(function(d) {
-        linkedByIndex[d.source.index + "," + d.target.index] = 1;
-    });
-
-    function isConnected(a, b) {
-        return linkedByIndex[a.index + "," + b.index] || linkedByIndex[b.index + "," + a.index] || a.index == b.index;
-    }
-
-    function fade(opacity) {
-        return function(d) {
-            node.style("stroke-opacity", function(o) {
-                thisOpacity = isConnected(d, o) ? 1 : opacity;
-                this.setAttribute('fill-opacity', thisOpacity);
-                return thisOpacity;
-            });
-
-            link.style("stroke-opacity", function(o) {
-                return o.source === d || o.target === d ? 1 : opacity;
-            });
-        };
-    }
-
-
  });
 
 
@@ -406,8 +382,8 @@ var listOfNodes=(d[document.getElementById("tags").value]);
 
 function filterByName(nodes, labels){
 
-        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.3);
-        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.3);
+        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.2);
+        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.2);
 
 
         d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
@@ -497,12 +473,14 @@ function clearFilter(){
 
 var slider = document.getElementById('slider');
 
+
 noUiSlider.create(slider, {
-	start: [2013, 2017],
+	start: [2012, 2017],
+    tooltips: true,
 	connect: true,
     step: 1,
 	range: {
-		'min': 2013,
+		'min': 2012,
 		'max': 2017
 	}
 });
@@ -516,6 +494,8 @@ slider.noUiSlider.on('change', function(){
 
 });
 
+    
+    
 
 
 function filterByYear(min,max){
@@ -524,33 +504,42 @@ function filterByYear(min,max){
 
         var listOfFilteredNodeIDs=[];
         var listOfNodes = d.nodes;
-        //console.log(listOfNodes);
-
+       
         for(i=0; i< listOfNodes.length; i++){
 
 
             for(j=0; j<(listOfNodes[i].years).length; j++){
-                if(listOfNodes[i].years[j]<max && listOfNodes[i].years[j]>min){
+                if(listOfNodes[i].years[j]<=max && listOfNodes[i].years[j]>=min){
                     listOfFilteredNodeIDs.push(listOfNodes[i].id);
 
                 }
             }
 
         }
-        console.log(listOfFilteredNodeIDs);
 
          for(i=0; i< listOfFilteredNodeIDs.length; i++){
             listOfFilteredNodeIDs[i]= '#id' + listOfFilteredNodeIDs[i];
          }
 
          var stringOfNodes= listOfFilteredNodeIDs.toString();
-         filterByName(stringOfNodes);
+        
+         var listOfLabels=listOfFilteredNodeIDs;
+
+         for(i=0; i< listOfLabels.length; i++){
+              listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
+
+          }
+
+
+        var stringOfLabels= listOfLabels.toString();
+        
+         filterByName(stringOfNodes, stringOfLabels);
 });
 }
 
 $( function() {
     $( "#tabs" ).tabs();
-  } );
+});
 
 
 $( function() {
@@ -625,38 +614,34 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
                   listOfNodes=listOfNodes.concat(d[nodeID][3]);
              }
 
-            listOfNodes=listOfNodes.concat(nodeID);
+             listOfNodes=listOfNodes.concat(nodeID);
 
              for(var i=0; i<listOfNodes.length; i++){
                  listOfNodes[i]= '#id' + listOfNodes[i];
              }
-             //console.log(listOfNodes.length);
-
+        
              var stringOfNodes= listOfNodes.toString();
-             //console.log(listOfNodes);
-
-              var listOfLabels=listOfNodes;
-
+          
+             var listOfLabels=listOfNodes;
+             
              listOfLabels=listOfLabels.concat('#id'+ nodeID);
-             //console.log(listOfLabels);
 
-              for(i=0; i< listOfLabels.length; i++){
+             for(i=0; i< listOfLabels.length; i++){
                     listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
 
-              }
+             }
 
-
-              var stringOfLabels= listOfLabels.toString();
-
-              filterByNeighbors(stringOfNodes, stringOfLabels);
-
-
+             var stringOfLabels= listOfLabels.toString();
+             
+             filterByNeighbors(stringOfNodes, stringOfLabels);
 
          });
 
    }
+    
+    
+
 
 </script>
-
 
 </body>
