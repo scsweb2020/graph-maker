@@ -168,6 +168,8 @@ d3.json("data/graph.json", function(error, graph){
             return topicRadius;})
    .attr("class", "dataNodes")
    .attr('id', function(d){ return 'id' + d.id; })
+    .style("stroke", "black")
+    .style("stroke-width", ".5px")
     .style("fill", function(d){
         if(d.type=='action')
             return '#247';
@@ -178,7 +180,6 @@ d3.json("data/graph.json", function(error, graph){
         else if(d.type=='topic')
             return '#00BFFF';
     })
-
     .attr('cy', function(d) { return d.distance_from_root; })
     .on("mouseover", function(d) {
        div.transition()
@@ -193,8 +194,8 @@ d3.json("data/graph.json", function(error, graph){
          .duration(500)
          .style("opacity", 0);
        })
-  .on("click", neighboring)
-  //.on("click", fade(.1))
+    .on("click", neighboring)
+    //.on("click", fade(.1))
     .on('dblclick', clicked); // set event handler for click event
 
     
@@ -530,7 +531,7 @@ $( function() {
 });
 
 
-$( function() {
+$(function() {
     var availableTags = [
     "Jodi L. Forlizzi",
     "Walter Lasecki",
@@ -579,17 +580,11 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
 
     function neighboring(d){
-        d3.selectAll(".dataNodes").style("fill", function(d){
-        if(d.type=='action')
-            return '#247';
-
-        else if(d.type=='why-hard')
-            return 'red';
-
-        else if(d.type=='topic')
-            return '#00BFFF';
-    })
-        d3.select(this).style("fill", "orange");
+        d3.selectAll(".dataNodes").style("stroke", "black")
+         .style("stroke-width", ".5px")
+        
+        d3.select(this).style("stroke", "orange")
+         .style("stroke-width", "2px")
         //console.log(d);
         //d.attr('class', 'highlighted');
         var nodeID=d.id;
