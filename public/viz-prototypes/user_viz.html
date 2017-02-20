@@ -31,14 +31,14 @@
             <p>Paper Details</p>
         </div>
     </div>
-     <label class="yearFilter">Year Filter </label>
+     <label class="yearFilter">Filter by year</label>
     <div class="yearRange" id="slider">
 
     </div>
 
     <div class="ui-widget">
         <div class="labelAuthors">
-            <label class ="labelClass" for="tags">Author </label>
+            <label class ="labelClass" for="tags">Filter by author </label>
             </div>
             <input  id="tags">
     </div>
@@ -282,55 +282,13 @@ d3.json("data/graph.json", function(error, graph){
        console.log(active);
   }
 
-//       if(d.type=='topic')  {
-     //focus around the spot of the selected node(s)
-//    svg.transition()
-//      .duration(750)
-//      .call(zoom.transform,
-//        d3.zoomIdentity
-//        .translate(width / 2, height / 2)
-//        .scale(scaleFactor)
-//        .translate(positionX(active), positionY(active))
-//
-//      );
-//        positionX(active);
-       //console.log(active.attr('cx'));
-//  }
-
-
-
-      // populate info box with relevant info from node
       d3.select("#tabs-1").text(d.authors);
       d3.select("#tabs-2").text(d.id);
+
+   
+     
   }
 
-function positionX(clickedNode){
-    //console.log('clcikedNode'+clickedNode);
-    var sum=0;
-   d3.json("data/node_connections.json", function(d) {
-       var str=clickedNode.attr('id');
-       var x=clickedNode.attr('cx');
-
-       console.log('cx'+x);
-    var nodeID=str.substring('id'.length);
-    //alert(nodeID);
-    var listOfNodes=(d[nodeID]);
-    //console.log(listOfNodes);
-
-    for(i=0; i< listOfNodes.length; i++){
-    listOfNodes[i]= 'id' + listOfNodes[i];
-    }
-      console.log(listOfNodes);
-
-    for(i=0; i< listOfNodes.length; i++){
-        console.log((listOfNodes[i]).attr('cx'));
-    }
-//       console.log(sum);
-
-});
-
-
-}
 
   /***
   Reset to master view
@@ -378,7 +336,10 @@ var listOfNodes=(d[document.getElementById("tags").value]);
 });
 }
 
-
+function intersection(){
+    
+    
+}
 
 function filterByName(nodes, labels){
 
@@ -595,8 +556,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
         //console.log(d);
         //d.attr('class', 'highlighted');
         var nodeID=d.id;
-        console.log(nodeID);
-
+       
          d3.json("data/node_neighborhoods.json", function(d) {
 
              if(document.getElementById("drop").value=='1'){
@@ -636,8 +596,26 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              filterByNeighbors(stringOfNodes, stringOfLabels);
 
          });
+        
+           d3.select("#tabs-1").text(d.authors);
+           paperDetails(d);
 
    }
+    
+    function paperDetails(d){
+        var papers=[];
+        
+        d3.json("data/papers.json", function(data) {
+          for(i=0; i<data.length; i++){
+              if(d.paperID.indexOf(data[i].paperID)!=-1)
+                  papers.push(data[i].title);
+          }
+             d3.select("#tabs-2").text(papers);        
+         
+       });
+        
+        
+    }
     
     
 
