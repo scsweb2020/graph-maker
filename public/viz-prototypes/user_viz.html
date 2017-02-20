@@ -136,7 +136,21 @@ d3.json("data/graph.json", function(error, graph){
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
-    .attr("marker-end", "url(#arrow)");;
+    .style("stroke", function(d){
+        if(d.valence=="positive"){
+            return "green";
+        } 
+        
+        else if(d.valence=="negative"){
+            return "red";
+        } 
+    })
+    .attr("stroke-dasharray", function(d) {
+          if (d.type=="analogy") {
+              return "5,5";
+          }
+      })
+    .attr("marker-end", "url(#arrow)");
 
 
   // define properties of nodes
@@ -565,7 +579,17 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
 
     function neighboring(d){
-        //d3.select(this).attr("class", "highlighted");
+        d3.selectAll(".dataNodes").style("fill", function(d){
+        if(d.type=='action')
+            return '#247';
+
+        else if(d.type=='why-hard')
+            return 'red';
+
+        else if(d.type=='topic')
+            return '#00BFFF';
+    })
+        d3.select(this).style("fill", "orange");
         //console.log(d);
         //d.attr('class', 'highlighted');
         var nodeID=d.id;
