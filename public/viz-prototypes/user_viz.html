@@ -129,9 +129,7 @@ d3.json("data/graph.json", function(error, graph){
     .attr("class", "links")
     //.selectAll("link")
     .data(graph.nodes)
-//    .attr("id", function(d){
-//          return 'link' + d.source;
-//          })
+
     //.attr("class", "dataLinks")
     .selectAll("line")
     .data(graph.links)
@@ -145,6 +143,9 @@ d3.json("data/graph.json", function(error, graph){
             return "red";
         } 
     })
+        .attr("id", function(d){
+          return 'link' + d.source;
+          })
     .attr("stroke-dasharray", function(d) {
           if (d.type=="analogy") {
               return "5,5";
@@ -330,11 +331,44 @@ d3.json("data/graph.json", function(error, graph){
         .scale(1)
       );
   }
+ 
+    
+var nodesByYearFilter=[]; 
+var nodesByAuthorFilter=[];      
+        
+//var allNodesInGraph=[];
+returnAllNodes();
+    
 
 
+function returnAllNodes(){
+
+d3.json("data/nodes.json", function(d){
+
+for (var i=0; i<d.length; i++){
+    nodesByYearFilter[i]="#id"+(d[i].id);
+}
+//    console.log(nodesByYearFilter); 
+
+for (var i=0; i<d.length; i++){
+    nodesByAuthorFilter[i]="#id"+(d[i].id);
+}
+//    console.log(nodesByAuthorFilter); 
+       
+  
+});
+
+}
+
+
+        
+//console.log(testNodes);    
+    
+  
+    
 var toggleTime=500;  //set toggle time for transition (in milliseconds)
 
-function triggerFilter(){
+function FilterByAuthor(){
 
 d3.json("data/author_connections.json", function(d) {
 
@@ -343,97 +377,15 @@ var listOfNodes=(d[document.getElementById("tags").value]);
     for(i=0; i< listOfNodes.length; i++){
     listOfNodes[i]= '#id' + listOfNodes[i];
     }
+    
+    nodesByAuthorFilter=listOfNodes;
 
-    var stringOfNodes= listOfNodes.toString();
-
-    var listOfLabels=(d[document.getElementById("tags").value]);
-
-    var listOfLabels=listOfNodes;
-
-    for(i=0; i< listOfLabels.length; i++){
-    listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
-
-    }
-
-
-    var stringOfLabels= listOfLabels.toString();
-
-
-    filterByName(stringOfNodes, stringOfLabels);
-
+    
+    finalFilter();
 });
 }
 
-function intersection(){
-    
-    
-}
 
-function filterByName(nodes, labels){
-
-        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.2);
-        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.2);
-
-
-        d3.selectAll(nodes).transition().duration(toggleTime).style("opacity", 1);
-        d3.selectAll(labels).transition().duration(toggleTime).style("opacity", 1);
-
-}
-
-function filterByNeighbors(nodes, labels){
-
-
-
-        d3.selectAll(".dataNodes")
-        .transition()
-        .duration(toggleTime)
-        .style("opacity", 0.15)
-        .attr("r", function(d){
-            if(d.type=='action' || d.type=='why-hard')
-            // return defaultRadius;
-            return defaultRadius+Math.log(d.paperID.length)*10;
-
-            if(d.type=='topic')
-                return topicRadius;})
-        // .attr("r", defaultRadius);
-
-//        d3.selectAll(".highlighted").transition().duration(toggleTime).style("opacity", 1);
-//        d3.selectAll(".highlighted").transition().duration(toggleTime).style("fill", '#FFC200');
-        d3.selectAll(".dataLabels")
-        .transition()
-        .duration(toggleTime)
-        .style("opacity", 0.15)
-        // .attr("font-size","6px");
-        .attr("font-size", function(d) {
-          return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
-        })
-
-        d3.selectAll(nodes)
-        .transition()
-        .duration(toggleTime)
-        .style("opacity", 1)
-        // .attr("r", defaultRadius+5);
-        .attr("r", function(d){
-            if(d.type=='action' || d.type=='why-hard')
-            // return defaultRadius;
-            return 2+defaultRadius+Math.log(d.paperID.length)*10;
-
-            if(d.type=='topic')
-                return topicRadius;})
-
-        d3.selectAll(labels)
-        .transition()
-        .duration(toggleTime)
-        .style("opacity", 1)
-        // .attr("font-size","10px");
-        .attr("font-size", function(d) {
-          return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
-        })
-
-        //d3.selectAll(".highlighted").transition().duration(toggleTime).attr("stroke", 3);
-        // TODO: recompute force layout so that nodes don't overlap.
-        simulation.restart()
-}
 
 
 function clearFilter(){
@@ -493,9 +445,9 @@ function filterByYear(min,max){
 
         var listOfFilteredNodeIDs=[];
         var listOfNodes = d.nodes;
+        
        
         for(i=0; i< listOfNodes.length; i++){
-
 
             for(j=0; j<(listOfNodes[i].years).length; j++){
                 if(listOfNodes[i].years[j]<=max && listOfNodes[i].years[j]>=min){
@@ -504,7 +456,7 @@ function filterByYear(min,max){
                 }
             }
 
-        }
+         }
 
          for(i=0; i< listOfFilteredNodeIDs.length; i++){
             listOfFilteredNodeIDs[i]= '#id' + listOfFilteredNodeIDs[i];
@@ -512,18 +464,11 @@ function filterByYear(min,max){
 
          var stringOfNodes= listOfFilteredNodeIDs.toString();
         
-         var listOfLabels=listOfFilteredNodeIDs;
-
-         for(i=0; i< listOfLabels.length; i++){
-              listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
-
-          }
-
-
-        var stringOfLabels= listOfLabels.toString();
-        
-         filterByName(stringOfNodes, stringOfLabels);
-});
+         nodesByYearFilter=listOfFilteredNodeIDs;
+       
+         finalFilter();
+    });
+    
 }
 
 $( function() {
@@ -574,7 +519,7 @@ $(function() {
 
 
 $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
-    triggerFilter();
+    FilterByAuthor();
 } );
 
 
@@ -585,9 +530,6 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
         
         d3.select(this).style("stroke", "orange")
          .style("stroke-width", "2px")
-        //console.log(d);
-        //d.attr('class', 'highlighted');
-        var nodeID=d.id;
        
          d3.json("data/node_neighborhoods.json", function(d) {
 
@@ -620,11 +562,9 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
              for(i=0; i< listOfLabels.length; i++){
                     listOfLabels[i]= listOfLabels[i].replace('#id', '#label');
-
              }
 
              var stringOfLabels= listOfLabels.toString();
-             
              filterByNeighbors(stringOfNodes, stringOfLabels);
 
          });
@@ -648,6 +588,116 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
         
         
     }
+    
+//    function filterByName(nodes, labels){
+    function finalFilter(){
+        
+    //console.log(allNodesInGraph);        
+    console.log("Year="+nodesByYearFilter); 
+    console.log("Author"+nodesByAuthorFilter);     
+        
+        
+    var finalListOfLabels=[]; 
+    var finalListOfLinks=[];   
+
+
+    var finalListOfNodes=intersect(nodesByAuthorFilter, nodesByYearFilter);  
+    console.log("intersectionOfNodes"+finalListOfNodes);
+     
+    var finalStringOfNodes = finalListOfNodes.toString();  
+        
+
+    for(i=0; i< finalListOfNodes.length; i++){
+        finalListOfLabels[i]= finalListOfNodes[i].replace('#id', '#label');
+
+     } 
+ 
+     var finalStringOfLabels=finalListOfLabels.toString();
+        
+        
+    
+        
+    for(i=0; i< finalListOfNodes.length; i++){
+              finalListOfLinks[i]= finalListOfNodes[i].replace('#id', '#link');
+
+     } 
+   
+       
+     var finalStringOfLinks=finalListOfLinks.toString();    
+
+
+        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.2);
+        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.2);
+        //d3.selectAll(".links").transition().duration(toggleTime).style("opacity", 0.2);
+        
+
+        d3.selectAll(finalStringOfNodes).transition().duration(toggleTime).style("opacity", 1);
+        d3.selectAll(finalStringOfLabels).transition().duration(toggleTime).style("opacity", 1);
+        d3.selectAll(finalStringOfLinks).transition().duration(toggleTime).style("opacity", 1);
+        
+
+}
+    
+    
+    
+    
+function intersect(a, b) {
+    var t;
+    if (b.length > a.length) t = b, b = a, a = t; // indexOf to loop over shorter
+    return a.filter(function (e) {
+        if (b.indexOf(e) !== -1) return true;
+    });
+}    
+    
+//console.log(labelsByYearFilter);    
+
+function filterByNeighbors(nodes, labels){
+
+        d3.selectAll(".dataNodes")
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 0.15)
+        .attr("r", function(d){
+            if(d.type=='action' || d.type=='why-hard')
+            // return defaultRadius;
+            return defaultRadius+Math.log(d.paperID.length)*10;
+
+            if(d.type=='topic')
+                return topicRadius;})
+       
+        d3.selectAll(".dataLabels")
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 0.15)
+        // .attr("font-size","6px");
+        .attr("font-size", function(d) {
+          return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+        })
+
+        d3.selectAll(nodes)
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 1)
+        // .attr("r", defaultRadius+5);
+        .attr("r", function(d){
+            if(d.type=='action' || d.type=='why-hard')
+            // return defaultRadius;
+            return 2+defaultRadius+Math.log(d.paperID.length)*10;
+
+            if(d.type=='topic')
+                return topicRadius;})
+
+        d3.selectAll(labels)
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 1)
+        // .attr("font-size","10px");
+        .attr("font-size", function(d) {
+          return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
+        })
+        simulation.restart()
+}
+
     
     
 
