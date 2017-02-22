@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="stylesheet" href="css/user_viz.css">
     <link href="jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 
@@ -138,11 +139,11 @@ d3.json("data/graph.json", function(error, graph){
     .style("stroke", function(d){
         if(d.valence=="positive"){
             return "green";
-        } 
-        
+        }
+
         else if(d.valence=="negative"){
             return "red";
-        } 
+        }
     })
         .attr("id", function(d){
           return 'link' + d.target;
@@ -200,7 +201,7 @@ d3.json("data/graph.json", function(error, graph){
     //.on("click", fade(.1))
     .on('dblclick', clicked); // set event handler for click event
 
-    
+
     svg.append("defs").append("marker")
     .attr("id", "arrow")
     .attr("viewBox", "0 -5 10 10")
@@ -211,7 +212,7 @@ d3.json("data/graph.json", function(error, graph){
     .attr("orient", "auto")
     .append("svg:path")
     .attr("d", "M0,-5L10,0L0,5");
-    
+
 
 
   // define visual properties of node labels
@@ -315,8 +316,8 @@ d3.json("data/graph.json", function(error, graph){
       d3.select("#tabs-1").text(d.authors);
       d3.select("#tabs-2").text(d.id);
 
-   
-     
+
+
   }
 
 
@@ -332,14 +333,14 @@ d3.json("data/graph.json", function(error, graph){
         .scale(1)
       );
   }
- 
-    
-var nodesByYearFilter=[]; 
-var nodesByAuthorFilter=[];      
-        
+
+
+var nodesByYearFilter=[];
+var nodesByAuthorFilter=[];
+
 //var allNodesInGraph=[];
 returnAllNodes();
-    
+
 
 
 function returnAllNodes(){
@@ -349,24 +350,24 @@ d3.json("data/nodes.json", function(d){
 for (var i=0; i<d.length; i++){
     nodesByYearFilter[i]="#id"+(d[i].id);
 }
-//    console.log(nodesByYearFilter); 
+//    console.log(nodesByYearFilter);
 
 for (var i=0; i<d.length; i++){
     nodesByAuthorFilter[i]="#id"+(d[i].id);
 }
-//    console.log(nodesByAuthorFilter); 
-       
-  
+//    console.log(nodesByAuthorFilter);
+
+
 });
 
 }
 
 
-        
-//console.log(testNodes);    
-    
-  
-    
+
+//console.log(testNodes);
+
+
+
 var toggleTime=500;  //set toggle time for transition (in milliseconds)
 
 function FilterByAuthor(){
@@ -378,10 +379,10 @@ var listOfNodes=(d[document.getElementById("tags").value]);
     for(i=0; i< listOfNodes.length; i++){
     listOfNodes[i]= '#id' + listOfNodes[i];
     }
-    
+
     nodesByAuthorFilter=listOfNodes;
 
-    
+
     finalFilter();
 });
 }
@@ -436,8 +437,8 @@ slider.noUiSlider.on('change', function(){
 
 });
 
-    
-    
+
+
 
 
 function filterByYear(min,max){
@@ -446,8 +447,8 @@ function filterByYear(min,max){
 
         var listOfFilteredNodeIDs=[];
         var listOfNodes = d.nodes;
-        
-       
+
+
         for(i=0; i< listOfNodes.length; i++){
 
             for(j=0; j<(listOfNodes[i].years).length; j++){
@@ -464,12 +465,12 @@ function filterByYear(min,max){
          }
 
          var stringOfNodes= listOfFilteredNodeIDs.toString();
-        
+
          nodesByYearFilter=listOfFilteredNodeIDs;
-       
+
          finalFilter();
     });
-    
+
 }
 
 $( function() {
@@ -526,41 +527,42 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     function neighboring(d){
         d3.selectAll(".dataNodes").style("stroke", "black")
          .style("stroke-width", ".5px");
-        
+
         d3.select(this).style("stroke", "orange")
          .style("stroke-width", "2px");
-       
+
         var nodeID=d.id;
-       
-        
+
+        var listOfNodes;
          d3.json("data/node_neighborhoods.json", function(d) {
-             
-             
+
+
              if(document.getElementById("drop").value=='1'){
-                  var listOfNodes=d[nodeID][1];
+                  listOfNodes=d[nodeID][1];
              }
 
               if(document.getElementById("drop").value=='2'){
-                  var listOfNodes=d[nodeID][1];
+                  listOfNodes=d[nodeID][1];
                   listOfNodes=listOfNodes.concat(d[nodeID][2]);
              }
 
              if(document.getElementById("drop").value=='3'){
-                  var listOfNodes=d[nodeID][1];
+                  listOfNodes=d[nodeID][1];
                   listOfNodes=listOfNodes.concat(d[nodeID][2]);
                   listOfNodes=listOfNodes.concat(d[nodeID][3]);
              }
 
              listOfNodes=listOfNodes.concat(nodeID);
+             console.log(listOfNodes);
 
              for(var i=0; i<listOfNodes.length; i++){
                  listOfNodes[i]= '#id' + listOfNodes[i];
              }
-        
+
              var stringOfNodes= listOfNodes.toString();
-          
+
              var listOfLabels=listOfNodes;
-             
+
              listOfLabels=listOfLabels.concat('#id'+ nodeID);
 
              for(i=0; i< listOfLabels.length; i++){
@@ -571,85 +573,97 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              filterByNeighbors(stringOfNodes, stringOfLabels);
 
          });
-        
+
            d3.select("#tabs-1").text(d.authors);
-           paperDetails(d);
+           var p = document.getElementById("tabs-2");
+           while (p.firstChild) {
+                p.removeChild(p.firstChild);
+            }
+           paperDetails(listOfNodes);
 
    }
-    
-    function paperDetails(d){
-        var papers=[];
-        
+
+    function paperDetails(listOfNodes){
+        var paperIDs=[];
+        var p = document.getElementById("tabs-2");
         d3.json("data/papers.json", function(data) {
-          for(i=0; i<data.length; i++){
-              if(d.paperID.indexOf(data[i].paperID)!=-1)
-                  papers.push(data[i].title);
-          }
-             d3.select("#tabs-2").text(papers);        
-         
-       });
-        
-        
+            console.log(data);
+            for(i=0; i<data.length; i++){
+                if (listOfNodes.some(v => data[i].nodeIDs.indexOf(v) >= 0)) {
+                // }
+                // if(d.paperID.indexOf(papers[i].paperID)!=-1) {
+                    // papers.push(data[i].title);
+                    p.appendChild(newPaper(data[i]));
+                }
+            }
+              //  d3.select("#tabs-2").text(papers);
+        });
     }
-    
+
+    function findOne(haystack, arr) {
+      return arr.some(function (v) {
+          return haystack.indexOf(v) >= 0;
+      });
+};
+
 //    function filterByName(nodes, labels){
     function finalFilter(){
-        
-    //console.log(allNodesInGraph);        
-    console.log("Year="+nodesByYearFilter); 
-    console.log("Author"+nodesByAuthorFilter);     
-        
-        
-    var finalListOfLabels=[]; 
-    var finalListOfLinks=[];   
+
+    //console.log(allNodesInGraph);
+    console.log("Year="+nodesByYearFilter);
+    console.log("Author"+nodesByAuthorFilter);
 
 
-    var finalListOfNodes=intersect(nodesByAuthorFilter, nodesByYearFilter);  
+    var finalListOfLabels=[];
+    var finalListOfLinks=[];
+
+
+    var finalListOfNodes=intersect(nodesByAuthorFilter, nodesByYearFilter);
     console.log("intersectionOfNodes"+finalListOfNodes);
-     
-    var finalStringOfNodes = finalListOfNodes.toString();  
-        
+
+    var finalStringOfNodes = finalListOfNodes.toString();
+
 
     for(i=0; i< finalListOfNodes.length; i++){
         finalListOfLabels[i]= finalListOfNodes[i].replace('#id', '#label');
 
-     } 
- 
+     }
+
      var finalStringOfLabels=finalListOfLabels.toString();
-        
-        
+
+
      for(i=0; i< finalListOfNodes.length; i++){
               finalListOfLinks[i]= finalListOfNodes[i].replace('#id', '#link');
 
-     } 
-     
-     var finalStringOfLinks=finalListOfLinks.toString();    
+     }
+
+     var finalStringOfLinks=finalListOfLinks.toString();
 
 
         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.2);
         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.2);
         d3.selectAll(".dataLinks").transition().duration(toggleTime).style("opacity", 0.2);
-        
+
 
         d3.selectAll(finalStringOfNodes).transition().duration(toggleTime).style("opacity", 1);
         d3.selectAll(finalStringOfLabels).transition().duration(toggleTime).style("opacity", 1);
         d3.selectAll(finalStringOfLinks).transition().duration(toggleTime).style("opacity", 1);
-        
+
 
 }
-    
-    
-    
-    
+
+
+
+
 function intersect(a, b) {
     var t;
     if (b.length > a.length) t = b, b = a, a = t; // indexOf to loop over shorter
     return a.filter(function (e) {
         if (b.indexOf(e) !== -1) return true;
     });
-}    
-    
-//console.log(labelsByYearFilter);    
+}
+
+//console.log(labelsByYearFilter);
 
 function filterByNeighbors(nodes, labels){
 
@@ -664,7 +678,7 @@ function filterByNeighbors(nodes, labels){
 
             if(d.type=='topic')
                 return topicRadius;})
-       
+
         d3.selectAll(".dataLabels")
         .transition()
         .duration(toggleTime)
@@ -698,8 +712,39 @@ function filterByNeighbors(nodes, labels){
         simulation.restart()
 }
 
-    
-    
+function newPaper(item) {
+  var d = document.createElement("div");
+
+  d.setAttribute("class", "paper-metadata");
+  d.setAttribute("id", "paper-" + item.paperID);
+  var outer = document.createElement("div");
+  outer.setAttribute("class", "row");
+  var colTitle = document.createElement("div");
+  colTitle.setAttribute("class", "col-xs-8 col-md-8 title");
+  colTitle.appendChild(document.createTextNode(item.title));
+  outer.appendChild(colTitle);
+  var colYear = document.createElement("div");
+  colYear.setAttribute("class", "col-xs-2 col-md-2 year");
+  colYear.appendChild(document.createTextNode(item.year));
+  outer.appendChild(colYear);
+  var colLink = document.createElement("div");
+  colLink.setAttribute("class", "col-xs-2 col-md-2 link");
+  var span = document.createElement("span");
+  span.setAttribute("class", "glyphicon glyphicon-link")
+  var a = document.createElement("a");
+  a.setAttribute("href", item.link);
+  span.appendChild(a);
+  colLink.appendChild(span);
+  outer.appendChild(colLink);
+
+  d.appendChild(outer);
+
+  return d;
+
+}
+
+
+
 
 
 </script>
