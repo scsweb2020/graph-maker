@@ -145,7 +145,7 @@ d3.json("data/graph.json", function(error, graph){
         } 
     })
         .attr("id", function(d){
-          return 'link' + d.source;
+          return 'link' + d.target;
           })
     .attr("stroke-dasharray", function(d) {
           if (d.type=="analogy") {
