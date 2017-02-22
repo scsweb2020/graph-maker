@@ -134,6 +134,7 @@ d3.json("data/graph.json", function(error, graph){
     .selectAll("line")
     .data(graph.links)
     .enter().append("line")
+    .classed("dataLinks", true)
     .style("stroke", function(d){
         if(d.valence=="positive"){
             return "green";
@@ -522,17 +523,19 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     FilterByAuthor();
 } );
 
-
-
     function neighboring(d){
         d3.selectAll(".dataNodes").style("stroke", "black")
-         .style("stroke-width", ".5px")
+         .style("stroke-width", ".5px");
         
         d3.select(this).style("stroke", "orange")
-         .style("stroke-width", "2px")
+         .style("stroke-width", "2px");
        
+        var nodeID=d.id;
+       
+        
          d3.json("data/node_neighborhoods.json", function(d) {
-
+             
+             
              if(document.getElementById("drop").value=='1'){
                   var listOfNodes=d[nodeID][1];
              }
@@ -615,20 +618,17 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
      var finalStringOfLabels=finalListOfLabels.toString();
         
         
-    
-        
-    for(i=0; i< finalListOfNodes.length; i++){
+     for(i=0; i< finalListOfNodes.length; i++){
               finalListOfLinks[i]= finalListOfNodes[i].replace('#id', '#link');
 
      } 
-   
-       
+     
      var finalStringOfLinks=finalListOfLinks.toString();    
 
 
         d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.2);
         d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.2);
-        //d3.selectAll(".links").transition().duration(toggleTime).style("opacity", 0.2);
+        d3.selectAll(".dataLinks").transition().duration(toggleTime).style("opacity", 0.2);
         
 
         d3.selectAll(finalStringOfNodes).transition().duration(toggleTime).style("opacity", 1);
