@@ -551,6 +551,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
                   listOfNodes=listOfNodes.concat(d[nodeID][3]);
              }
 
+             
              listOfNodes=listOfNodes.concat(nodeID);
 
              for(var i=0; i<listOfNodes.length; i++){
@@ -568,7 +569,20 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              }
 
              var stringOfLabels= listOfLabels.toString();
-             filterByNeighbors(stringOfNodes, stringOfLabels);
+             
+             var listOfLinks=listOfNodes;
+             
+             listOfLinks=listOfLinks.concat('#id'+ nodeID);
+
+             for(i=0; i< listOfLinks.length; i++){
+                    listOfLinks[i]= listOfLinks[i].replace('#id', '#link');
+             }
+
+             var stringOfLinks= listOfLinks.toString();
+             
+             
+             
+             filterByNeighbors(stringOfNodes, stringOfLabels, stringOfLinks);
 
          });
         
@@ -651,7 +665,7 @@ function intersect(a, b) {
     
 //console.log(labelsByYearFilter);    
 
-function filterByNeighbors(nodes, labels){
+function filterByNeighbors(nodes, labels, links){
 
         d3.selectAll(".dataNodes")
         .transition()
@@ -673,6 +687,11 @@ function filterByNeighbors(nodes, labels){
         .attr("font-size", function(d) {
           return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
         })
+        
+        d3.selectAll(".dataLinks")
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 0.15)
 
         d3.selectAll(nodes)
         .transition()
@@ -687,6 +706,7 @@ function filterByNeighbors(nodes, labels){
             if(d.type=='topic')
                 return topicRadius;})
 
+        console.log(links);
         d3.selectAll(labels)
         .transition()
         .duration(toggleTime)
@@ -695,6 +715,13 @@ function filterByNeighbors(nodes, labels){
         .attr("font-size", function(d) {
           return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
         })
+        
+        d3.selectAll(links)
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 1)
+        
+        
         simulation.restart()
 }
 
