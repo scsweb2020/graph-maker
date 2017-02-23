@@ -556,7 +556,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
                   listOfNodes=listOfNodes.concat(d[nodeID][3]);
              }
 
-             
+
              listOfNodes=listOfNodes.concat(nodeID);
 
              listOfNodeIds = [];
@@ -576,9 +576,9 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              }
 
              var stringOfLabels= listOfLabels.toString();
-             
-             var listOfLinks=listOfNodes;
-             
+
+             var listOfLinks=listOfNodeIds;
+
              listOfLinks=listOfLinks.concat('#id'+ nodeID);
 
              for(i=0; i< listOfLinks.length; i++){
@@ -586,9 +586,9 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              }
 
              var stringOfLinks= listOfLinks.toString();
-             
-             
-             
+
+
+
              filterByNeighbors(stringOfNodes, stringOfLabels, stringOfLinks);
 
             //  document.getElementById("tabs-2").innerHTML = "";
@@ -711,7 +711,7 @@ function filterByNeighbors(nodes, labels, links){
         .attr("font-size", function(d) {
           return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
         })
-        
+
         d3.selectAll(".dataLinks")
         .transition()
         .duration(toggleTime)
@@ -739,13 +739,13 @@ function filterByNeighbors(nodes, labels, links){
         .attr("font-size", function(d) {
           return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
         })
-        
+
         d3.selectAll(links)
         .transition()
         .duration(toggleTime)
         .style("opacity", 1)
-        
-        
+
+
         simulation.restart()
 }
 
