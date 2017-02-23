@@ -191,10 +191,12 @@ d3.json("data/graph.json", function(error, graph){
             return topicRadius;})
    .attr("class", "dataNodes")
    .attr('id', function(d){ return 'id' + d.id; })
-    .style("stroke", "black")
-    .style("stroke-width", ".5px")
+    //.style("stroke", "black")
+    //.style("stroke-width", ".5px")
     .style("fill", function(d){
-        if(d.type=='action')
+        if(d.paperID.length < 2)
+            return '#dcdcdc';
+        else if(d.type=='action')
             return '#247';
 
         else if(d.type=='why-hard')
@@ -253,7 +255,9 @@ d3.json("data/graph.json", function(error, graph){
     .text(function(d) {
         var string = d.name
 
-        if (string.length > 15)
+        if (d.paperID.length < 2)
+            return "";
+        else if (string.length > 15)
             return string.substring(0,17)+'...';
         else
             return string;
