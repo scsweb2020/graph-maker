@@ -23,15 +23,15 @@
 
     <div class="container1" id="tabs">
         <ul>
-            <li><a href="#tabs-1">Author</a></li>
-            <li><a href="#tabs-2">Paper Details</a></li>
+            <li><a id="tab-title-authors" href="#tabs-1">Authors <span id="tab-authors-badge" class="badge">0</span></a></li>
+            <li><a id="tab-title-papers" href="#tabs-2">Papers <span id="tab-papers-badge" class="badge">0</span></a></li>
         </ul>
 
         <div id="tabs-1">
-            Select a node to explore related authors
+            Select a node to explore authors in the 'conceptual neighborhood' of the node
         </div>
         <div id="tabs-2">
-            Select a node to explore related papers
+            Select a node to explore papers in the 'conceptual neighborhood' of the node
         </div>
     </div>
      <label class="yearFilter">Filter by year</label>
@@ -437,8 +437,11 @@ function clearFilter(){
      .transition()
      .style("opacity", 1);
 
-     document.getElementById("tabs-1").innerHTML = "Select a node to explore related authors";
-     document.getElementById("tabs-2").innerHTML = "Select a node to explore related papers";
+     document.getElementById("tabs-1").innerHTML = "Select a node to explore authors in the 'conceptual neighborhood' of the node";
+     document.getElementById("tabs-2").innerHTML = "Select a node to explore papers in the 'conceptual neighborhood' of the node";
+
+     document.getElementById("tab-authors-badge").innerText = 0;
+     document.getElementById("tab-papers-badge").innerText = 0;
 
 }
 
@@ -615,11 +618,12 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
             //  document.getElementById("tabs-2").innerHTML = "";
             //  console.log(listOfNodes);
-             paperDetails(listOfNodes);
+             var listOfAuthors = paperDetails(listOfNodes);
+             authorDetails(listOfAuthors);
 
          });
 
-           d3.select("#tabs-1").text(d.authors);
+          //  d3.select("#tabs-1").text(d.authors);
 
 
 
@@ -628,7 +632,9 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     function paperDetails(nodes){
       console.log("calling paperDetails")
       // console.log(papers);
-        var paperIDs=[];
+        var numPapers = 0;
+        var authors=[];
+        var authorNames = [];
         var p = document.getElementById("tabs-2");
         p.innerHTML = "";
         // d3.json("data/papers.json", function(data) {
@@ -639,12 +645,41 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
                 // if(d.paperID.indexOf(papers[i].paperID)!=-1) {
                     // papers.push(data[i].title);
                     // console.log(papers[i])
+                    numPapers += 1;
                     p.appendChild(newPaper(papers[i]));
+                    var paperAuthors = papers[i].author_arr
+                    console.log(paperAuthors);
+                    for (j=0; j<paperAuthors.length; j++) {
+                      if (authorNames.indexOf(paperAuthors[j]) < 0) {
+                        authors.push(
+                          {
+                            'name': paperAuthors[j],
+                            'title': "CMU HCII Faculty",
+                            'url': ""
+                          }
+                        );
+                        authorNames.push(paperAuthors[j]);
+                      }
+                    };
                 }
             }
+            tabBadge = document.getElementById("tab-papers-badge");
+            tabBadge.innerText = numPapers;
+            // tabTitle.appendChild(badge);
               //  d3.select("#tabs-2").text(papers);
         // });
+        return authors;
     }
+
+    function authorDetails(authors) {
+      var p = document.getElementById("tabs-1");
+      p.innerHTML = "";
+      authors.forEach(function(author) {
+        p.appendChild(newAuthor(author));
+      });
+      var tabBadge = document.getElementById("tab-authors-badge");
+      tabBadge.innerText = authors.length;
+    };
 
     function findOne(haystack, arr) {
       return arr.some(function (v) {
@@ -789,32 +824,64 @@ function filterByNeighbors(nodes, labels, links){
 function newPaper(item) {
   var d = document.createElement("div");
 
-  d.setAttribute("class", "paper-metadata");
+  d.setAttribute("class", "node-metadata");
   d.setAttribute("id", "paper-" + item.paperID);
-  var outer = document.createElement("div");
-  outer.setAttribute("class", "row");
-  var colTitle = document.createElement("div");
-  colTitle.setAttribute("class", "col-xs-8 col-md-8 title");
-  colTitle.appendChild(document.createTextNode(item.title));
-  outer.appendChild(colTitle);
-  var colYear = document.createElement("div");
-  colYear.setAttribute("class", "col-xs-2 col-md-2 year");
-  colYear.appendChild(document.createTextNode(item.year));
-  outer.appendChild(colYear);
-  var colLink = document.createElement("div");
-  colLink.setAttribute("class", "col-xs-2 col-md-2 link");
-  var span = document.createElement("span");
-  span.setAttribute("class", "glyphicon glyphicon-link")
+  var title = document.createElement("p");
+  title.setAttribute("class", "title");
+  // var colTitle = document.createElement("div");
+  // colTitle.setAttribute("class", "col-xs-8 col-md-8 title");
+  title.appendChild(document.createTextNode(item.title));
+  d.appendChild(title);
+  var meta = document.createElement("p");
+  meta.setAttribute("class", "meta");
+  meta.appendChild(document.createTextNode("CSCW " + item.year + " | "));
+  // outer.appendChild(colYear);
+  // var colLink = document.createElement("div");
+  // colLink.setAttribute("class", "col-xs-2 col-md-2 link");
   var a = document.createElement("a");
-  a.setAttribute("href", item.link);
-  span.appendChild(a);
-  colLink.appendChild(span);
-  outer.appendChild(colLink);
+  a.setAttribute("href", item.url);
+  a.setAttribute("target", "_blank");
+  a.appendChild(document.createTextNode("more info"));
+  // var span = document.createElement("span");
+  // span.setAttribute("class", "glyphicon glyphicon-link")
+  // a.appendChild(span);
+  meta.appendChild(a);
+  d.appendChild(meta);
 
-  d.appendChild(outer);
+  // d.appendChild(outer);
 
   return d;
 
+}
+
+function newAuthor(item) {
+  var d = document.createElement("div");
+
+  d.setAttribute("class", "node-metadata");
+  d.setAttribute("id", "authorID");
+  var title = document.createElement("p");
+  title.setAttribute("class", "title");
+  // var colTitle = document.createElement("div");
+  // colTitle.setAttribute("class", "col-xs-8 col-md-8 title");
+  title.appendChild(document.createTextNode(item.name));
+  d.appendChild(title);
+  var meta = document.createElement("p");
+  meta.setAttribute("class", "meta");
+  meta.appendChild(document.createTextNode(item.title + " | "));
+  // outer.appendChild(colYear);
+  // var colLink = document.createElement("div");
+  // colLink.setAttribute("class", "col-xs-2 col-md-2 link");
+  var a = document.createElement("a");
+  a.setAttribute("href", item.url);
+  a.setAttribute("target", "_blank");
+  a.appendChild(document.createTextNode("more info"));
+  // var span = document.createElement("span");
+  // span.setAttribute("class", "glyphicon glyphicon-link")
+  // a.appendChild(span);
+  meta.appendChild(a);
+  d.appendChild(meta);
+
+  return d;
 }
 
 

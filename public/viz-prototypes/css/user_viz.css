@@ -14,6 +14,9 @@
     fill: yellow;
   }
 
+.dataLabels {
+  font-family: "Open Sans";
+}
 
 div.tooltip {
   font-family: "Open Sans";
@@ -130,4 +133,27 @@ div.tooltip {
 
 .highlighted{
     stroke: orange;
+}
+
+/*
+For info box
+*/
+
+.node-metadata {
+  margin-bottom: 2px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 0.75em;
+  margin-bottom: 1px;
+}
+
+.meta {
+  font-style: italic;
+  font-size: 0.5em;
+}
+
+.meta a {
+  text-decoration: underline;
 }
