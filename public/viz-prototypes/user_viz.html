@@ -11,6 +11,7 @@
 
 <body>
 
+    <script src="data/papers.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -26,10 +27,10 @@
         </ul>
 
         <div id="tabs-1">
-            <p>Author </p>
+            Select a node to explore related authors
         </div>
         <div id="tabs-2">
-            <p>Paper Details</p>
+            Select a node to explore related papers
         </div>
     </div>
      <label class="yearFilter">Filter by year</label>
@@ -412,6 +413,9 @@ function clearFilter(){
        return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
      });
 
+     document.getElementById("tabs-1").innerHTML("Select a node to explore related authors");
+     document.getElementById("tabs-2").innerHTML("Select a node to explore related papers");
+
 }
 
 var slider = document.getElementById('slider');
@@ -553,15 +557,16 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              }
 
              listOfNodes=listOfNodes.concat(nodeID);
-             console.log(listOfNodes);
 
+             listOfNodeIds = [];
              for(var i=0; i<listOfNodes.length; i++){
-                 listOfNodes[i]= '#id' + listOfNodes[i];
+                //  listOfNodes[i]= '#id' + listOfNodes[i];
+                 listOfNodeIds.push('#id' + listOfNodes[i]);
              }
 
-             var stringOfNodes= listOfNodes.toString();
+             var stringOfNodes= listOfNodeIds.toString();
 
-             var listOfLabels=listOfNodes;
+             var listOfLabels=listOfNodeIds;
 
              listOfLabels=listOfLabels.concat('#id'+ nodeID);
 
@@ -572,32 +577,37 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              var stringOfLabels= listOfLabels.toString();
              filterByNeighbors(stringOfNodes, stringOfLabels);
 
+            //  document.getElementById("tabs-2").innerHTML = "";
+            //  console.log(listOfNodes);
+             paperDetails(listOfNodes);
+
          });
 
            d3.select("#tabs-1").text(d.authors);
-           var p = document.getElementById("tabs-2");
-           while (p.firstChild) {
-                p.removeChild(p.firstChild);
-            }
-           paperDetails(listOfNodes);
+
+
 
    }
 
-    function paperDetails(listOfNodes){
+    function paperDetails(nodes){
+      console.log("calling paperDetails")
+      console.log(papers);
         var paperIDs=[];
         var p = document.getElementById("tabs-2");
-        d3.json("data/papers.json", function(data) {
-            console.log(data);
-            for(i=0; i<data.length; i++){
-                if (listOfNodes.some(v => data[i].nodeIDs.indexOf(v) >= 0)) {
+        p.innerHTML = "";
+        // d3.json("data/papers.json", function(data) {
+            // console.log(data);
+            for(i=0; i<papers.length; i++){
+                if (findOne(papers[i].nodeIDs, nodes)) {
                 // }
                 // if(d.paperID.indexOf(papers[i].paperID)!=-1) {
                     // papers.push(data[i].title);
-                    p.appendChild(newPaper(data[i]));
+                    console.log(papers[i])
+                    p.appendChild(newPaper(papers[i]));
                 }
             }
               //  d3.select("#tabs-2").text(papers);
-        });
+        // });
     }
 
     function findOne(haystack, arr) {
