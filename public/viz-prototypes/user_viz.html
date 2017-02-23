@@ -155,15 +155,15 @@ d3.json("data/graph.json", function(error, graph){
     .data(graph.links)
     .enter().append("line")
     .classed("dataLinks", true)
-    .style("stroke", function(d){
-        if(d.valence=="positive"){
-            return "green";
-        }
-
-        else if(d.valence=="negative"){
-            return "red";
-        }
-    })
+    // .style("stroke", function(d){
+    //     if(d.valence=="positive"){
+    //         return "green";
+    //     }
+    //
+    //     else if(d.valence=="negative"){
+    //         return "red";
+    //     }
+    // })
         .attr("id", function(d){
           return 'link' + d.id;
           })
@@ -172,7 +172,8 @@ d3.json("data/graph.json", function(error, graph){
               return "5,5";
           }
       })
-    .attr("marker-end", "url(#arrow)");
+    .attr("marker-end", "url(#arrow)")
+    .attr("opacity", 0.5);
 
 
   // define properties of nodes
@@ -226,8 +227,8 @@ d3.json("data/graph.json", function(error, graph){
     .attr("viewBox", "0 -5 10 10")
     .attr("refX", 20)
     .attr("refY", 0)
-    .attr("markerWidth", 8)
-    .attr("markerHeight", 8)
+    .attr("markerWidth", 4)
+    .attr("markerHeight", 4)
     .attr("orient", "auto")
     .append("svg:path")
     .attr("d", "M0,-5L10,0L0,5");
@@ -431,11 +432,19 @@ function clearFilter(){
      .style("opacity", 1)
      .attr("font-size", function(d) {
        return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
-     });
+     })
+     .text(function(d) {
+         var string = d.name
+
+         if (string.length > 15)
+             return string.substring(0,17)+'...';
+         else
+             return string;
+        });
 
      d3.selectAll(".dataLinks")
      .transition()
-     .style("opacity", 1);
+     .style("opacity", 0.5);
 
      document.getElementById("tabs-1").innerHTML = "Select a node to explore authors in the 'conceptual neighborhood' of the node";
      document.getElementById("tabs-2").innerHTML = "Select a node to explore papers in the 'conceptual neighborhood' of the node";
@@ -556,7 +565,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
          .style("stroke-width", ".5px");
 
         d3.select(this).style("stroke", "orange")
-         .style("stroke-width", "2px");
+         .style("stroke-width", "5px");
 
         var nodeID=d.id;
 
@@ -630,7 +639,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
    }
 
     function paperDetails(nodes){
-      console.log("calling paperDetails")
+      // console.log("calling paperDetails")
       // console.log(papers);
         var numPapers = 0;
         var authors=[];
@@ -648,7 +657,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
                     numPapers += 1;
                     p.appendChild(newPaper(papers[i]));
                     var paperAuthors = papers[i].author_arr
-                    console.log(paperAuthors);
+                    // console.log(paperAuthors);
                     for (j=0; j<paperAuthors.length; j++) {
                       if (authorNames.indexOf(paperAuthors[j]) < 0) {
                         authors.push(
@@ -736,14 +745,32 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
      var finalStringOfLinks=finalListOfLinks.toString();
 
 
-        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.2);
-        d3.selectAll(".dataLabels").transition().duration(toggleTime).style("opacity", 0.2);
-        d3.selectAll(".dataLinks").transition().duration(toggleTime).style("opacity", 0.2);
+        d3.selectAll(".dataNodes").transition().duration(toggleTime).style("opacity", 0.1);
+        d3.selectAll(".dataLabels").transition().duration(toggleTime)
+          .style("opacity", 0.2)
+          .text(function(d) {
+              var string = d.name
+
+              if (string.length > 15)
+                  return string.substring(0,17)+'...';
+              else
+                  return string;
+             });
+        d3.selectAll(".dataLinks").transition().duration(toggleTime).style("opacity", 0.1);
 
 
         d3.selectAll(finalStringOfNodes).transition().duration(toggleTime).style("opacity", 1);
-        d3.selectAll(finalStringOfLabels).transition().duration(toggleTime).style("opacity", 1);
-        d3.selectAll(finalStringOfLinks).transition().duration(toggleTime).style("opacity", 1);
+        d3.selectAll(finalStringOfLabels).transition().duration(toggleTime)
+          .style("opacity", 1)
+          .text(function(d) {
+              var string = d.name
+
+              if (string.length > 40)
+                  return string.substring(0,42)+'...';
+              else
+                  return string;
+             });;
+        d3.selectAll(finalStringOfLinks).transition().duration(toggleTime).style("opacity", 0.5);
 
 
 }
@@ -766,7 +793,7 @@ function filterByNeighbors(nodes, labels, links){
         d3.selectAll(".dataNodes")
         .transition()
         .duration(toggleTime)
-        .style("opacity", 0.15)
+        .style("opacity", 0.1)
         .attr("r", function(d){
             if(d.type=='action' || d.type=='why-hard')
             // return defaultRadius;
@@ -778,16 +805,24 @@ function filterByNeighbors(nodes, labels, links){
         d3.selectAll(".dataLabels")
         .transition()
         .duration(toggleTime)
-        .style("opacity", 0.15)
+        .style("opacity", 0.1)
         // .attr("font-size","6px");
         .attr("font-size", function(d) {
           return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
         })
+        .text(function(d) {
+            var string = d.name
+
+            if (string.length > 15)
+                return string.substring(0,17)+'...';
+            else
+                return string;
+           });
 
         d3.selectAll(".dataLinks")
         .transition()
         .duration(toggleTime)
-        .style("opacity", 0.15)
+        .style("opacity", 0.1)
 
         d3.selectAll(nodes)
         .transition()
@@ -802,7 +837,6 @@ function filterByNeighbors(nodes, labels, links){
             if(d.type=='topic')
                 return topicRadius;})
 
-        console.log(links);
         d3.selectAll(labels)
         .transition()
         .duration(toggleTime)
@@ -811,11 +845,20 @@ function filterByNeighbors(nodes, labels, links){
         .attr("font-size", function(d) {
           return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
         })
+        .text(function(d) {
+            var string = d.name
 
+            if (string.length > 40)
+                return string.substring(0,42)+'...';
+            else
+                return string;
+           });
+
+        // console.log(links);
         d3.selectAll(links)
         .transition()
         .duration(toggleTime)
-        .style("opacity", 1)
+        .style("opacity", 0.5)
 
 
         simulation.restart()
