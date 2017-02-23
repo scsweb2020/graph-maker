@@ -404,7 +404,9 @@ function clearFilter(){
 
          if(d.type=='topic')
              return topicRadius;
-           });
+           })
+      .attr("stroke", "black")
+       .style("stroke-width", ".5px");
 
      d3.selectAll(".dataLabels")
      .transition()
@@ -413,6 +415,10 @@ function clearFilter(){
      .attr("font-size", function(d) {
        return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
      });
+
+     d3.selectAll(".dataLinks")
+     .transition()
+     .style("opacity", 1);
 
      document.getElementById("tabs-1").innerHTML = "Select a node to explore related authors";
      document.getElementById("tabs-2").innerHTML = "Select a node to explore related papers";
