@@ -12,6 +12,7 @@
 <body>
 
     <script src="data/papers.js"></script>
+    <script src="data/edges.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -147,7 +148,7 @@ d3.json("data/graph.json", function(error, graph){
         }
     })
         .attr("id", function(d){
-          return 'link' + d.target;
+          return 'link' + d.id;
           })
     .attr("stroke-dasharray", function(d) {
           if (d.type=="analogy") {
@@ -577,15 +578,17 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
              var stringOfLabels= listOfLabels.toString();
 
-             var listOfLinks=listOfNodeIds;
+             var listOfLinks=filterLinks(listOfNodes);
 
-             listOfLinks=listOfLinks.concat('#id'+ nodeID);
+            //  listOfLinks=listOfLinks.concat('#id'+ nodeID);
 
              for(i=0; i< listOfLinks.length; i++){
-                    listOfLinks[i]= listOfLinks[i].replace('#id', '#link');
+                    // listOfLinks[i]= listOfLinks[i].replace('#id', '#link');
+                    listOfLinks[i]= '#link' + listOfLinks[i];
              }
 
              var stringOfLinks= listOfLinks.toString();
+             console.log(stringOfLinks);
 
 
 
@@ -605,7 +608,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
     function paperDetails(nodes){
       console.log("calling paperDetails")
-      console.log(papers);
+      // console.log(papers);
         var paperIDs=[];
         var p = document.getElementById("tabs-2");
         p.innerHTML = "";
@@ -616,7 +619,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
                 // }
                 // if(d.paperID.indexOf(papers[i].paperID)!=-1) {
                     // papers.push(data[i].title);
-                    console.log(papers[i])
+                    // console.log(papers[i])
                     p.appendChild(newPaper(papers[i]));
                 }
             }
@@ -628,7 +631,17 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
       return arr.some(function (v) {
           return haystack.indexOf(v) >= 0;
       });
-};
+    };
+
+    function filterLinks(nodes) {
+      var edgeIDs = [];
+      edges.forEach(function(edge) {
+        if (nodes.indexOf(edge.source) >= 0 && nodes.indexOf(edge.target) >= 0) {
+          edgeIDs.push(edge.id);
+        }
+      });
+      return edgeIDs;
+    }
 
 //    function filterByName(nodes, labels){
     function finalFilter(){
@@ -639,7 +652,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
 
     var finalListOfLabels=[];
-    var finalListOfLinks=[];
+    // var finalListOfLinks=[];
 
 
     var finalListOfNodes=intersect(nodesByAuthorFilter, nodesByYearFilter);
@@ -656,8 +669,13 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
      var finalStringOfLabels=finalListOfLabels.toString();
 
 
-     for(i=0; i< finalListOfNodes.length; i++){
-              finalListOfLinks[i]= finalListOfNodes[i].replace('#id', '#link');
+     var nodeList = []
+     finalListOfNodes.forEach(function(n) {
+       nodeList.push(n.replace("#id",""));
+     });
+     var finalListOfLinks=filterLinks(nodeList);
+     for(i=0; i< finalListOfLinks.length; i++){
+              finalListOfLinks[i]= '#link' + finalListOfLinks[i];
 
      }
 
