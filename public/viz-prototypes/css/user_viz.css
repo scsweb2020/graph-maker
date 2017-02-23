@@ -45,23 +45,6 @@ div.tooltip {
     z-index: -1;
 }
 
-.svg-container {
-  display: inline-block;
-  position: relative;
-  width: 100%;
-  padding-bottom: 100%;
-  vertical-align: middle;
-  overflow: hidden;
-}
-
-.svg-content {
-  display:inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-
 .container1{
     position: absolute;
     left: 0px;
@@ -88,6 +71,15 @@ div.tooltip {
     border-style: solid;
     border-color: black;
      border-width: 1px 0.2px 1px 0.2px;
+     /*overflow: auto;*/
+}
+
+#tabs-1 {
+  overflow: auto;
+}
+
+#tabs-2 {
+  overflow: auto;
 }
 
 .labelAuthors{

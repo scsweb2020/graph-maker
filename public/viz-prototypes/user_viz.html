@@ -74,10 +74,13 @@ $('.graphContainer').css("max-height", windowHeight-20);
 $('.graphContainer').width(windowWidth-20);
 $('.graphContainer').css("max-width", windowWidth-20);
 
-$('.graph').height(windowHeight-40);
-$('.graph').css("max-height", windowHeight-40);
-$('.graph').width(windowWidth-40);
-$('.graph').css("max-width", windowWidth-40);
+$('.graph').height(windowHeight-20);
+$('.graph').css("max-height", windowHeight-20);
+$('.graph').width(windowWidth-20);
+$('.graph').css("max-width", windowWidth-20);
+
+$('#tabs-1').css("max-height", windowHeight/3);
+$('#tabs-2').css("max-height", windowHeight/3)
 
 var div = d3.select("body").append("div")
     .attr("class", "tooltip")
