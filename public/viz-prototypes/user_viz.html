@@ -60,10 +60,24 @@
 </div>
 
 <div class="graphContainer">
-<svg width="1200" height="1000"></svg>
+<svg class="graph" width="1200" height="1000"></svg>
 </div>
 </div>
 <script>
+
+var windowHeight = $(window).height();
+var windowWidth = $(window).width();
+console.log("window viewport height = " + windowHeight.toString());
+console.log("window viewport width = " + windowWidth.toString());
+$('.graphContainer').height(windowHeight-20);
+$('.graphContainer').css("max-height", windowHeight-20);
+$('.graphContainer').width(windowWidth-20);
+$('.graphContainer').css("max-width", windowWidth-20);
+
+$('.graph').height(windowHeight-40);
+$('.graph').css("max-height", windowHeight-40);
+$('.graph').width(windowWidth-40);
+$('.graph').css("max-width", windowWidth-40);
 
 var div = d3.select("body").append("div")
     .attr("class", "tooltip")
@@ -447,10 +461,6 @@ slider.noUiSlider.on('change', function(){
    filterByYear(min,max);
 
 });
-
-
-
-
 
 function filterByYear(min,max){
 
