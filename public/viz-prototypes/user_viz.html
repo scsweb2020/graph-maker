@@ -13,6 +13,7 @@
 
     <script src="data/papers.js"></script>
     <script src="data/edges.js"></script>
+    <script src="data/authors.js"></script>
     <script src="https://d3js.org/d3.v4.min.js"></script>
    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -317,6 +318,8 @@ var masterContextNodes;
 var focusNodeID = null;
 var masterContextLabels;
 var masterContextLinks;
+var lastClickedNodeID;
+var lastClickedMetadataID;
 
   // unselect all nodes
   var active = d3.select(null);
@@ -596,6 +599,9 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 } );
 
     function neighboring(d){
+
+        lastClickedNodeID = d.id;
+
         d3.selectAll(".dataNodes").style("stroke", "none")
         //  .style("stroke-width", ".5px");
 
@@ -682,6 +688,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
    function focus(focusNodeID, focusItemID, focusType) {
       // .style("stroke-width", ".5px");
+      $('.node-metadata').removeClass("focused");
 
      // add highlights to related nodes
      var listOfNodes;
@@ -701,6 +708,35 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
 
    }
+
+   function singleAuthorDetails(authors) {
+
+   // for(i=0;i<authors.length; i++){
+   // console.log(authors[i].name);
+   // }
+
+
+     var p = document.getElementById("tabs-1");
+     p.innerHTML = "";
+     authors.sort(function(a, b) { return b.focus-a.focus});
+     authors.forEach(function(author) {
+       var authorDOM = newAuthor(author);
+       if (author.focus == 0) {
+         authorDOM.classList.add("focused");
+       }
+       p.appendChild(authorDOM);
+
+     });
+     var tabBadge = document.getElementById("tab-authors-badge");
+     tabBadge.innerText = authors.length;
+   };
+
+   $('.node-metadata').on("click", function(e, target) {
+     console.log("Clicked!");
+     console.log(this);
+
+    //  focus(focusNodeID, focusItemID, "paper");
+   });
 
     function paperDetails(nodes){
       // console.log("calling paperDetails")
@@ -742,12 +778,20 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
               //  d3.select("#tabs-2").text(papers);
         // });
           $('.node-metadata').on("click", function(e, target) {
-            console.log("Clicked!");
-            console.log(this);
+            // console.log("Clicked!");
+            // console.log(this);
            var focusItemID = this.id.replace("paper-", "");
-            focus(focusNodeID, focusItemID, "paper");
-            $('.node-metadata').removeClass("selected");
-            $(this).addClass("selected");
+           console.log("this metadataID: " + focusItemID);
+           console.log("lastClickedMetadataID: " + lastClickedMetadataID);
+           if (focusItemID === lastClickedMetadataID) {
+              console.log("clear focus!");
+              clearFocus(focusNodeID);
+           } else {
+             focus(focusNodeID, focusItemID, "paper");
+             $('.node-metadata').removeClass("selected");
+             $(this).addClass("selected");
+             lastClickedMetadataID = focusItemID;
+           }
           });
         return authors;
     }
@@ -774,6 +818,87 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
      //  focus(focusNodeID, focusItemID, "paper");
     });
+
+    function singleNodePaperDetails(nodeID, singleNodeNodes){
+      // console.log("calling paperDetails")
+      // console.log(papers);
+        console.log(singleNodeNodes);
+        var combinedNodes = [];
+        singleNodeNodes.forEach(function(n) {
+          combinedNodes.push(n.replace("#id", ""));
+        });
+        // var combinedNodes = contextNodes
+        // combinedNodes.push(nodeID);
+        console.log("number of nodes for singleNodePaperDetails: " + combinedNodes.length);
+        var selectedPapers = [];
+        var authors=[];
+        var authorNames = [];
+        for(i=0; i<papers.length; i++){
+            console.log(papers[i]);
+            console.log(combinedNodes);
+            if (findOne(papers[i].nodeIDs, combinedNodes)) {
+              console.log("found a match!");
+              var copyOf = papers[i];
+              if (papers[i].nodeIDs.indexOf(nodeID) >= 0) {
+                copyOf['focus'] = 1
+              } else {
+                copyOf['focus'] = 0;
+              }
+              selectedPapers.push(copyOf);
+              var paperAuthors = papers[i].author_arr
+              for (j=0; j<paperAuthors.length; j++) {
+                if (authorNames.indexOf(paperAuthors[j]) < 0) {
+                  // TODO: do focus computation here
+                  var authorObj = {
+                      'name': paperAuthors[j],
+                      'title': "CMU HCII Faculty",
+                      'url': "",
+                      'focus': 0
+                  }
+                  if (authors_to_nodes.hasOwnProperty(paperAuthors[j])) {
+                    if (authors_to_nodes[paperAuthors[j]].indexOf(nodeID) >= 0) {
+                      authorObj['focus'] = 1;
+                    }
+                  }
+                  authors.push(authorObj);
+                  authorNames.push(paperAuthors[j]);
+                }
+              };
+            }
+        }
+        var p = document.getElementById("tabs-2");
+        p.innerHTML = "";
+
+        selectedPapers.sort(function(a, b) { return b.focus-a.focus });
+        selectedPapers.forEach(function(paper) {
+          var paperDOM = newPaper(paper);
+          if (paper.focus == 1) {
+            paperDOM.classList.add("focused");
+          }
+          p.appendChild(paperDOM);
+        });
+        tabBadge = document.getElementById("tab-papers-badge");
+        tabBadge.innerText = selectedPapers.length;
+
+        // set up event listener
+        $('.node-metadata').on("click", function(e, target) {
+          // console.log("Clicked!");
+          // console.log(this);
+          var focusItemID = this.id.replace("paper-", "");
+          console.log("this metadataID: " + focusItemID);
+          console.log("lastClickedMetadataID: " + lastClickedMetadataID);
+          if (focusItemID === lastClickedMetadataID) {
+             console.log("clear focus!");
+             clearFocus(focusNodeID);
+          } else {
+            focus(focusNodeID, focusItemID, "paper");
+            $('.node-metadata').removeClass("selected");
+            $(this).addClass("selected");
+            lastClickedMetadataID = focusItemID;
+          }
+        });
+        return authors;
+    }
 
     function findOne(haystack, arr) {
       return arr.some(function (v) {
@@ -1068,6 +1193,99 @@ function filterByFocus(focusNodeID, nodes, links) {
   simulation.restart()
 }
 
+function clearFocus(focusNodeID) {
+
+  $('.node-metadata').removeClass("selected");
+
+  d3.selectAll(".dataNodes")
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.1)
+  .attr("r", function(d){
+      if(d.type=='action' || d.type=='why-hard')
+      // return defaultRadius;
+      return defaultRadius+Math.log(d.paperID.length)*10;
+
+      if(d.type=='topic')
+          return topicRadius;
+    })
+    .style("stroke", "none");
+
+  d3.selectAll(".dataLabels")
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.1)
+  // .attr("font-size","6px");
+  .attr("font-size", function(d) {
+    return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+  })
+  .text(function(d) {
+      var string = d.name
+      if (d.paperID.length > 1) {
+        if (string.length > 15)
+            return string.substring(0,17)+'...';
+        else
+            return string;
+      }
+     });
+
+  d3.selectAll(".dataLinks")
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.1)
+  .style("stroke", "#aaa")
+  .style("stroke-width", "1px")
+
+  d3.selectAll(masterContextNodes.toString())
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 1)
+  // .attr("r", defaultRadius+5);
+  .attr("r", function(d){
+      if(d.type=='action' || d.type=='why-hard')
+      // return defaultRadius;
+      return 2+defaultRadius+Math.log(d.paperID.length)*10;
+
+      if(d.type=='topic')
+          return topicRadius;})
+
+    if (focusNodeID != null) {
+        console.log(focusNodeID);
+        // console.log("focusNode in paper nodes? " + (nodes.indexOf(focusNodeID) >= 0));
+        d3.select("#id" + focusNodeID).transition().duration(toggleTime)
+          .style("stroke-dasharray", ("5,4"))
+         .style("stroke", "orange")
+         .style("stroke-width", "5px");
+    }
+
+  d3.selectAll(masterContextLabels.toString())
+  .transition()
+  .duration(toggleTime)
+  // .style("opacity", function1)
+  // .attr("font-size","10px");
+  .attr("font-size", function(d) {
+    return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
+  })
+  .text(function(d) {
+      var string = d.name
+
+      if (string.length > 40)
+          return string.substring(0,42)+'...';
+      else
+          return string;
+     });
+
+  // console.log(links);
+  d3.selectAll(masterContextLinks.toString())
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.5)
+  .style("stroke", "#aaa")
+  // .style("stroke", "orange");
+
+  simulation.restart()
+}
+
 function newPaper(item) {
   var d = document.createElement("div");
 
@@ -1140,31 +1358,72 @@ function newAuthor(item) {
 //});
 
 function authorHighlight(d){
+  console.log(masterContextNodes);
+  var nodeAuthors = singleNodePaperDetails(d.id, masterContextNodes);
+  singleAuthorDetails(nodeAuthors);
 
+  d3.selectAll(".dataNodes")
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.1)
+  .attr("r", function(d){
+      if(d.type=='action' || d.type=='why-hard')
+      // return defaultRadius;
+      return defaultRadius+Math.log(d.paperID.length)*10;
 
-  var allDivs = document.getElementsByClassName("node-metadata");
-  for (var i = 0; i < allDivs.length; i++) {
-        allDivs[i].style.color = "black";
+      if(d.type=='topic')
+          return topicRadius;
+    })
+    .style("stroke", "none");
+
+    d3.selectAll(masterContextNodes.toString())
+    .transition()
+    .duration(toggleTime)
+    .style("opacity", 1)
+    // .attr("r", defaultRadius+5);
+    .attr("r", function(d){
+        if(d.type=='action' || d.type=='why-hard')
+        // return defaultRadius;
+        return 2+defaultRadius+Math.log(d.paperID.length)*10;
+
+        if(d.type=='topic')
+            return topicRadius;})
+
+    if (focusNodeID != null) {
+        console.log(focusNodeID);
+        // console.log("focusNode in paper nodes? " + (nodes.indexOf(focusNodeID) >= 0));
+        d3.select("#id" + focusNodeID).transition().duration(toggleTime)
+          .style("stroke-dasharray", ("5,4"))
+         .style("stroke", "orange")
+         .style("stroke-width", "5px");
     }
 
-
-  var listAuthors = d.authors;
-
-
-
-  for(i=0; i<listAuthors.length; i++){
-   var x = document.getElementById(listAuthors[i]);
-   x.style.color = "red";
-  }
-
-
-  var listPapers = d.paperID;
-
-
-  for(i=0; i<listPapers.length; i++){
-   var x = document.getElementById('paper-'+listPapers[i]);
-   x.style.color = "red";
-  }
+  d3.select("#id" + d.id).transition()
+    .style("stroke", "#D3D3D3")
+    .style("stroke-width")
+  // var allDivs = document.getElementsByClassName("node-metadata");
+  // for (var i = 0; i < allDivs.length; i++) {
+  //       allDivs[i].style.color = "black";
+  //   }
+  //
+  //
+  // var listAuthors = d.authors;
+  //
+  //
+  //
+  // for(i=0; i<listAuthors.length; i++){
+  //  var x = document.getElementById(listAuthors[i]);
+  //  x.style.color = "red";
+  // }
+  //
+  //
+  // var listPapers = d.paperID;
+  //
+  //
+  // for(i=0; i<listPapers.length; i++){
+  //  var x = document.getElementById('paper-'+listPapers[i]);
+  //  x.style.color = "red";
+  // }
 
 
 }
