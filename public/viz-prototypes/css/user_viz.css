@@ -16,7 +16,6 @@
 
 .dataLabels {
   font-family: "Open Sans";
-  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
 }
 
 div.tooltip {
@@ -86,6 +85,10 @@ div.tooltip {
   overflow: auto;
 }
 
+.tab-data {
+  padding: 2px;
+}
+
 .labelAuthors{
          font-family: "Open Sans";
     text-align: center;
@@ -142,6 +145,14 @@ For info box
 
 .node-metadata {
   margin-bottom: 2px;
+  border: 0.5px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.selected {
+  background-color: #aaa;
 }
 
 .title {

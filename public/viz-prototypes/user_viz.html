@@ -27,10 +27,10 @@
             <li><a id="tab-title-papers" href="#tabs-2">Papers <span id="tab-papers-badge" class="badge">0</span></a></li>
         </ul>
 
-        <div id="tabs-1">
+        <div id="tabs-1" class="tab-data" style="padding:10px;">
             Select a node to explore authors in the 'conceptual neighborhood' of the node
         </div>
-        <div id="tabs-2">
+        <div id="tabs-2" class="tab-data" style="padding:10px;">
             Select a node to explore papers in the 'conceptual neighborhood' of the node
         </div>
     </div>
@@ -228,6 +228,7 @@ d3.json("data/graph.json", function(error, graph){
          .style("opacity", 0);
        })
     .on("dblclick", neighboring)
+    // .on("click", focus);
     //.on("click", fade(.1))
     // .on('dblclick', clicked); // set event handler for click event
 
@@ -312,6 +313,10 @@ d3.json("data/graph.json", function(error, graph){
 
  });
 
+var masterContextNodes;
+var focusNodeID = null;
+var masterContextLabels;
+var masterContextLinks;
 
   // unselect all nodes
   var active = d3.select(null);
@@ -437,8 +442,10 @@ function clearFilter(){
          if(d.type=='topic')
              return topicRadius;
            })
-      .attr("stroke", "black")
-       .style("stroke-width", ".5px")
+      // .attr("stroke", "black")
+      .style("stroke", "none")
+      // .style("stroke-width", "0px")
+      //  .style("stroke-width", ".5px")
        .attr('opacity', function(d) {
          if (d.paperID.length < 2) {
            return 0.25;
@@ -465,13 +472,20 @@ function clearFilter(){
 
      d3.selectAll(".dataLinks")
      .transition()
-     .style("opacity", 0.5);
+     .style("opacity", 0.5)
+     .style("stroke-width", "1px")
+     .style("stroke", "#aaa");
 
      document.getElementById("tabs-1").innerHTML = "Select a node to explore authors in the 'conceptual neighborhood' of the node";
      document.getElementById("tabs-2").innerHTML = "Select a node to explore papers in the 'conceptual neighborhood' of the node";
 
      document.getElementById("tab-authors-badge").innerText = 0;
      document.getElementById("tab-papers-badge").innerText = 0;
+
+     masterContextLinks = [];
+     masterContextNodes = [];
+     masterContextLabels = [];
+     focusNodeID = null;
 
 }
 
@@ -582,13 +596,15 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 } );
 
     function neighboring(d){
-        d3.selectAll(".dataNodes").style("stroke", "black")
-         .style("stroke-width", ".5px");
+        d3.selectAll(".dataNodes").style("stroke", "none")
+        //  .style("stroke-width", ".5px");
 
-        d3.select(this).style("stroke", "orange")
+        d3.select(this).transition().style("stroke-dasharray", ("5,4"))
+         .style("stroke", "orange")
          .style("stroke-width", "5px");
 
         var nodeID=d.id;
+        focusNodeID = d.id;
 
         var listOfNodes;
          d3.json("data/node_neighborhoods.json", function(d) {
@@ -642,6 +658,9 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              var stringOfLinks= listOfLinks.toString();
              console.log(stringOfLinks);
 
+             masterContextNodes = listOfNodeIds;
+             masterContextLabels = listOfLabels;
+             masterContextLinks = listOfLinks;
 
 
              filterByNeighbors(stringOfNodes, stringOfLabels, stringOfLinks);
@@ -655,6 +674,28 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
           //  d3.select("#tabs-1").text(d.authors);
 
+
+
+   }
+
+   function focus(focusNodeID, focusItemID, focusType) {
+      // .style("stroke-width", ".5px");
+
+     // add highlights to related nodes
+     var listOfNodes;
+     var listOfNodeIDs = [];
+     var listOfLinks;
+     if (focusType === "paper") {
+       listOfNodes = papers_to_nodes[focusItemID]
+       for (i=0; i<listOfNodes.length; i++) {
+         listOfNodeIDs.push("#id" + listOfNodes[i]);
+       }
+       listOfLinks = filterLinks(listOfNodes);
+       for (i=0; i<listOfLinks.length; i++) {
+          listOfLinks[i] = "#link" + listOfLinks[i];
+       }
+       filterByFocus(focusNodeID, listOfNodeIDs.toString(), listOfLinks.toString());
+     }
 
 
    }
@@ -698,6 +739,14 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
             // tabTitle.appendChild(badge);
               //  d3.select("#tabs-2").text(papers);
         // });
+          $('.node-metadata').on("click", function(e, target) {
+            console.log("Clicked!");
+            console.log(this);
+           var focusItemID = this.id.replace("paper-", "");
+            focus(focusNodeID, focusItemID, "paper");
+            $('.node-metadata').removeClass("selected");
+            $(this).addClass("selected");
+          });
         return authors;
     }
 
@@ -710,6 +759,13 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
       var tabBadge = document.getElementById("tab-authors-badge");
       tabBadge.innerText = authors.length;
     };
+
+    $('.node-metadata').on("click", function(e, target) {
+      console.log("Clicked!");
+      console.log(this);
+
+     //  focus(focusNodeID, focusItemID, "paper");
+    });
 
     function findOne(haystack, arr) {
       return arr.some(function (v) {
@@ -844,6 +900,8 @@ function filterByNeighbors(nodes, labels, links){
         .transition()
         .duration(toggleTime)
         .style("opacity", 0.1)
+        .style("stroke", "#aaa")
+        .style("stroke-width", "1px")
 
         d3.selectAll(nodes)
         .transition()
@@ -883,6 +941,123 @@ function filterByNeighbors(nodes, labels, links){
 
 
         simulation.restart()
+}
+
+function filterByFocus(focusNodeID, nodes, links) {
+  d3.selectAll(".dataNodes")
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.1)
+  .attr("r", function(d){
+      if(d.type=='action' || d.type=='why-hard')
+      // return defaultRadius;
+      return defaultRadius+Math.log(d.paperID.length)*10;
+
+      if(d.type=='topic')
+          return topicRadius;
+    })
+    .style("stroke", "none");
+
+  d3.selectAll(".dataLabels")
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.1)
+  // .attr("font-size","6px");
+  .attr("font-size", function(d) {
+    return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+  })
+  .text(function(d) {
+      var string = d.name
+      if (d.paperID.length > 1) {
+        if (string.length > 15)
+            return string.substring(0,17)+'...';
+        else
+            return string;
+      }
+     });
+
+  d3.selectAll(".dataLinks")
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.1)
+  .style("stroke", "#aaa")
+  .style("stroke-width", "1px")
+
+  d3.selectAll(masterContextNodes.toString())
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 1)
+  // .attr("r", defaultRadius+5);
+  .attr("r", function(d){
+      if(d.type=='action' || d.type=='why-hard')
+      // return defaultRadius;
+      return 2+defaultRadius+Math.log(d.paperID.length)*10;
+
+      if(d.type=='topic')
+          return topicRadius;})
+
+  d3.selectAll(nodes)
+    .transition()
+    .duration(toggleTime)
+    .style("stroke", "orange")
+    .style("stroke-width", "5px")
+    .style("opacity", function(d) {
+      if (masterContextNodes.indexOf("#id" + d.id) >= 0) {
+        return 1
+      } else {
+        return 0.25 // if outside of the current context
+      }
+    })
+
+    if (focusNodeID != null) {
+        console.log(focusNodeID);
+        console.log("focusNode in paper nodes? " + (nodes.indexOf(focusNodeID) >= 0));
+        d3.select("#id" + focusNodeID).transition().duration(toggleTime)
+          .style("stroke-dasharray", ("5,4"))
+         .style("stroke", "orange")
+         .style("stroke-width", "5px");
+    }
+
+  d3.selectAll(masterContextLabels.toString())
+  .transition()
+  .duration(toggleTime)
+  // .style("opacity", function1)
+  // .attr("font-size","10px");
+  .attr("font-size", function(d) {
+    return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
+  })
+  .text(function(d) {
+      var string = d.name
+
+      if (string.length > 40)
+          return string.substring(0,42)+'...';
+      else
+          return string;
+     });
+
+  // console.log(links);
+  d3.selectAll(masterContextLinks.toString())
+  .transition()
+  .duration(toggleTime)
+  .style("opacity", 0.5)
+  .style("stroke", "#aaa")
+  // .style("stroke", "orange");
+
+  d3.selectAll(links)
+    .transition()
+    .duration(toggleTime)
+    .style("stroke", "orange")
+    .style("stroke-width", "2px")
+    // .style("opacity", function(d) {
+    //     if (masterContextLinks.indexOf(d.id) >= 0) {
+    //       return 1
+    //     } else {
+    //       return 0.25 // if outside the current context
+    //     }
+    // });
+
+
+  simulation.restart()
 }
 
 function newPaper(item) {
