@@ -228,7 +228,7 @@ d3.json("data/graph.json", function(error, graph){
          .style("opacity", 0);
        })
     .on("dblclick", neighboring)
-    // .on("click", focus);
+    .on("click", authorHighlight)
     //.on("click", fade(.1))
     // .on('dblclick', clicked); // set event handler for click event
 
@@ -656,7 +656,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              }
 
              var stringOfLinks= listOfLinks.toString();
-             console.log(stringOfLinks);
+             //console.log(stringOfLinks);
 
              masterContextNodes = listOfNodeIds;
              masterContextLabels = listOfLabels;
@@ -665,9 +665,11 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
              filterByNeighbors(stringOfNodes, stringOfLabels, stringOfLinks);
 
-            //  document.getElementById("tabs-2").innerHTML = "";
-            //  console.log(listOfNodes);
+
              var listOfAuthors = paperDetails(listOfNodes);
+
+             //console.log(listOfAuthors.name);
+
              authorDetails(listOfAuthors);
 
          });
@@ -751,6 +753,12 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     }
 
     function authorDetails(authors) {
+
+    for(i=0;i<authors.length; i++){
+    console.log(authors[i].name);
+    }
+
+
       var p = document.getElementById("tabs-1");
       p.innerHTML = "";
       authors.forEach(function(author) {
@@ -1064,7 +1072,7 @@ function newPaper(item) {
   var d = document.createElement("div");
 
   d.setAttribute("class", "node-metadata");
-  d.setAttribute("id", "paper-" + item.paperID);
+  d.setAttribute("id", 'paper-'+item.paperID);
   var title = document.createElement("p");
   title.setAttribute("class", "title");
   // var colTitle = document.createElement("div");
@@ -1097,12 +1105,13 @@ function newAuthor(item) {
   var d = document.createElement("div");
 
   d.setAttribute("class", "node-metadata");
-  d.setAttribute("id", "authorID");
+
   var title = document.createElement("p");
   title.setAttribute("class", "title");
   // var colTitle = document.createElement("div");
   // colTitle.setAttribute("class", "col-xs-8 col-md-8 title");
   title.appendChild(document.createTextNode(item.name));
+ d.setAttribute("id", item.name);
   d.appendChild(title);
   var meta = document.createElement("p");
   meta.setAttribute("class", "meta");
@@ -1124,7 +1133,41 @@ function newAuthor(item) {
 }
 
 
+//$('#tabs-1 li').click(function() {
+//    var index = $(this).index();
+//    var text = $(this).text();
+//    alert('Index is: ' + index + ' and text is ' + text);
+//});
 
+function authorHighlight(d){
+
+
+  var allDivs = document.getElementsByClassName("node-metadata");
+  for (var i = 0; i < allDivs.length; i++) {
+        allDivs[i].style.color = "black";
+    }
+
+
+  var listAuthors = d.authors;
+
+
+
+  for(i=0; i<listAuthors.length; i++){
+   var x = document.getElementById(listAuthors[i]);
+   x.style.color = "red";
+  }
+
+
+  var listPapers = d.paperID;
+
+
+  for(i=0; i<listPapers.length; i++){
+   var x = document.getElementById('paper-'+listPapers[i]);
+   x.style.color = "red";
+  }
+
+
+}
 
 
 </script>
