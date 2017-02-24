@@ -227,9 +227,9 @@ d3.json("data/graph.json", function(error, graph){
          .duration(500)
          .style("opacity", 0);
        })
-    .on("click", neighboring)
+    .on("dblclick", neighboring)
     //.on("click", fade(.1))
-    .on('dblclick', clicked); // set event handler for click event
+    // .on('dblclick', clicked); // set event handler for click event
 
 
     svg.append("defs").append("marker")
@@ -318,6 +318,7 @@ d3.json("data/graph.json", function(error, graph){
 
   /***
   Control interactions with nodes
+  CURRENTLY INACTIVE
   ***/
   function clicked(d) {
 
