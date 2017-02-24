@@ -121,12 +121,17 @@ var div = d3.select("body").append("div")
     }))
     .force("charge", d3.forceManyBody().strength(function(d) {
       // return -20;
-      return -19-d.paperID.length*20; // give greater repulsion for larger nodes
+      if(d.paperID.length < 3)
+          return 0
+      else
+        return -19-d.paperID.length*150; // give greater repulsion for larger nodes
     }))
     // .force("collision", d3.forceCollide().strength(function(d) {
     //   // -20
     //   return 0.2;
     // }))
+    .force('X', d3.forceX())
+    .force('Y', d3.forceY(0.00001))
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 //    .force('link', d3.forceLink(heart.links).distance(0).strength(0.1))
@@ -301,8 +306,17 @@ d3.json("data/graph.json", function(error, graph){
         .attr("y", function(d) { return d.y; });
   }
 
+  
+
  });
 
+
+function linkArc(d) {
+  var dx = d.target.x - d.source.x,
+      dy = d.target.y - d.source.y,
+      dr = Math.sqrt(dx * dx + dy * dy);
+  return "M" + d.source.x + "," + d.source.y + "A" + dr + "," + dr + " 0 0,1 " + d.target.x + "," + d.target.y;
+}
 
   // unselect all nodes
   var active = d3.select(null);
