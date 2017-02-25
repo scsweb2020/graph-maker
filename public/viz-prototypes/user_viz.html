@@ -179,7 +179,13 @@ d3.json("data/graph.json", function(error, graph){
               return "5,5";
           }
       })
-    .attr("marker-end", "url(#arrow)")
+    .attr("marker-end", function(d) {
+      if (d.type != "analogy" || d.type != "paper-edge") {
+        return "url(#arrow)";
+      } else {
+        return "null";
+      }
+    })
     .attr("opacity", 0.5);
 
 
@@ -234,8 +240,9 @@ d3.json("data/graph.json", function(error, graph){
          .duration(500)
          .style("opacity", 0);
        })
-    .on("dblclick", neighboring)
-    .on("click", authorHighlight)
+     .on("click", neighboring)
+    // .on("dblclick", neighboring)
+    // .on("click", authorHighlight)
     //.on("click", fade(.1))
     // .on('dblclick', clicked); // set event handler for click event
 
@@ -449,20 +456,20 @@ function clearFilter(){
          // return defaultRadius;
          return defaultRadius+Math.log(d.paperID.length)*10;
 
-         if(d.type=='topic')
+         if(d.type=='paper')
              return topicRadius;
            })
       // .attr("stroke", "black")
       .style("stroke", "none")
       // .style("stroke-width", "0px")
       //  .style("stroke-width", ".5px")
-       .attr('opacity', function(d) {
-         if (d.paperID.length < 2) {
-           return 0.25;
-         } else {
-           return 0.5+d.paperID.length/10;
-         }
-       });
+      .attr('opacity', function(d) {
+        if (d.paperID.length >= 2 || d.type === "paper") {
+          return 0.5+d.paperID.length/10;
+        } else {
+          return 0.25;
+        }
+      })
 
      d3.selectAll(".dataLabels")
      .transition()
@@ -473,11 +480,15 @@ function clearFilter(){
      })
      .text(function(d) {
          var string = d.name
-
-         if (string.length > 15)
+         if (d.paperID.length >= 2 || d.type === "paper") {
+           if (string.length > 15) {
              return string.substring(0,17)+'...';
-         else
-             return string;
+           } else {
+             return string
+           }
+         } else {
+           return "";
+         }
         });
 
      d3.selectAll(".dataLinks")
@@ -614,7 +625,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
         d3.select(this).transition().style("stroke-dasharray", ("5,4"))
          .style("stroke", "orange")
-         .style("stroke-width", "5px");
+         .style("stroke-width", "3px");
 
         var nodeID=d.id;
         focusNodeID = d.id;
@@ -1078,6 +1089,7 @@ function filterByNeighbors(nodes, labels, links){
         .transition()
         .duration(toggleTime)
         .style("opacity", 0.5)
+        .style("stroke-width", "3px")
 
 
         simulation.restart()
@@ -1155,7 +1167,7 @@ function filterByFocus(focusNodeID, nodes, links) {
         d3.select("#id" + focusNodeID).transition().duration(toggleTime)
           .style("stroke-dasharray", ("5,4"))
          .style("stroke", "orange")
-         .style("stroke-width", "5px");
+         .style("stroke-width", "3px");
     }
 
   d3.selectAll(masterContextLabels.toString())
@@ -1262,7 +1274,7 @@ function clearFocus(focusNodeID) {
         d3.select("#id" + focusNodeID).transition().duration(toggleTime)
           .style("stroke-dasharray", ("5,4"))
          .style("stroke", "orange")
-         .style("stroke-width", "5px");
+         .style("stroke-width", "3px");
     }
 
   d3.selectAll(masterContextLabels.toString())
@@ -1402,7 +1414,7 @@ function authorHighlight(d){
         d3.select("#id" + focusNodeID).transition().duration(toggleTime)
           .style("stroke-dasharray", ("5,4"))
          .style("stroke", "orange")
-         .style("stroke-width", "5px");
+         .style("stroke-width", "3px");
     }
 
   d3.select("#id" + d.id).transition()
