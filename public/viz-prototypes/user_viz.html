@@ -156,7 +156,13 @@ d3.json("data/graph.json", function(error, graph){
     .data(graph.links)
     .enter().append("line")
     .classed("dataLinks", true)
-    // .style("stroke", function(d){
+    .style("stroke", function(d){
+      if (d.type=="paper-edge") {
+        return "none";
+      } else {
+        return "#aaa";
+      }
+    })
     //     if(d.valence=="positive"){
     //         return "green";
     //     }
@@ -188,15 +194,15 @@ d3.json("data/graph.json", function(error, graph){
         // return defaultRadius;
         return defaultRadius+Math.log(d.paperID.length)*10;
 
-        if(d.type=='topic')
+        if(d.type=='paper')
             return topicRadius;})
    .attr("class", "dataNodes")
    .attr('id', function(d){ return 'id' + d.id; })
    .attr('opacity', function(d) {
-     if (d.paperID.length < 2) {
-       return 0.25;
-     } else {
+     if (d.paperID.length >= 2 || d.type === "paper") {
        return 0.5+d.paperID.length/10;
+     } else {
+       return 0.25;
      }
    })
     //.style("stroke", "black")
@@ -211,7 +217,7 @@ d3.json("data/graph.json", function(error, graph){
         else if(d.type=='why-hard')
             return 'red';
 
-        else if(d.type=='topic')
+        else if(d.type=='paper')
             return '#00BFFF';
     })
     .attr('cy', function(d) { return d.distance_from_root; })
@@ -264,13 +270,14 @@ d3.json("data/graph.json", function(error, graph){
     .attr("dy", ".15em")
     .text(function(d) {
         var string = d.name
-
-        if (d.paperID.length < 2) {
-            return "";
-        } else if (string.length > 15) {
-          return string.substring(0,17)+'...';
+        if (d.paperID.length >= 2 || d.type === "paper") {
+          if (string.length > 15) {
+            return string.substring(0,17)+'...';
+          } else {
+            return string
+          }
         } else {
-          return string;
+          return "";
         }
        });
 
