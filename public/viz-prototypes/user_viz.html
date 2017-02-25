@@ -205,8 +205,10 @@ d3.json("data/graph.json", function(error, graph){
    .attr("class", "dataNodes")
    .attr('id', function(d){ return 'id' + d.id; })
    .attr('opacity', function(d) {
-     if (d.paperID.length >= 2 || d.type === "paper") {
+     if (d.paperID.length >= 2) {
        return 0.5+d.paperID.length/10;
+     } else if (d.type === "paper") {
+       return 0;
      } else {
        return 0.25;
      }
@@ -277,7 +279,7 @@ d3.json("data/graph.json", function(error, graph){
     .attr("dy", ".15em")
     .text(function(d) {
         var string = d.name
-        if (d.paperID.length >= 2 || d.type === "paper") {
+        if (d.paperID.length >= 2) {
           if (string.length > 15) {
             return string.substring(0,17)+'...';
           } else {
@@ -464,8 +466,10 @@ function clearFilter(){
       // .style("stroke-width", "0px")
       //  .style("stroke-width", ".5px")
       .attr('opacity', function(d) {
-        if (d.paperID.length >= 2 || d.type === "paper") {
+        if (d.paperID.length >= 2) {
           return 0.5+d.paperID.length/10;
+        } else if (d.type === "paper") {
+          return 0;
         } else {
           return 0.25;
         }
@@ -480,7 +484,7 @@ function clearFilter(){
      })
      .text(function(d) {
          var string = d.name
-         if (d.paperID.length >= 2 || d.type === "paper") {
+         if (d.paperID.length >= 2) {
            if (string.length > 15) {
              return string.substring(0,17)+'...';
            } else {
@@ -686,15 +690,16 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              masterContextLabels = listOfLabels;
              masterContextLinks = listOfLinks;
 
+             var meta = paperDetails(listOfNodes);
 
-             filterByNeighbors(stringOfNodes, stringOfLabels, stringOfLinks);
+             filterByNeighbors(stringOfNodes, stringOfLabels, stringOfLinks, meta);
 
 
-             var listOfAuthors = paperDetails(listOfNodes);
+
 
              //console.log(listOfAuthors.name);
 
-             authorDetails(listOfAuthors);
+             authorDetails(meta['authors']);
 
          });
 
@@ -727,7 +732,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
 
    }
 
-   function singleAuthorDetails(authors) {
+function singleAuthorDetails(authors) {
 
    // for(i=0;i<authors.length; i++){
    // console.log(authors[i].name);
@@ -759,6 +764,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     function paperDetails(nodes){
       // console.log("calling paperDetails")
       // console.log(papers);
+        var selectedPaperIDs = [];
         var numPapers = 0;
         var authors=[];
         var authorNames = [];
@@ -773,6 +779,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
                     // papers.push(data[i].title);
                     // console.log(papers[i])
                     numPapers += 1;
+                    selectedPaperIDs.push(papers[i].paperID);
                     p.appendChild(newPaper(papers[i]));
                     var paperAuthors = papers[i].author_arr
                     // console.log(paperAuthors);
@@ -811,7 +818,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
              lastClickedMetadataID = focusItemID;
            }
           });
-        return authors;
+        return {'papers': selectedPaperIDs, 'authors': authors};
     }
 
     function authorDetails(authors) {
@@ -935,7 +942,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
     }
 
 //    function filterByName(nodes, labels){
-    function finalFilter(){
+  function finalFilter(){
 
     //console.log(allNodesInGraph);
     console.log("Year="+nodesByYearFilter);
@@ -1016,18 +1023,24 @@ function intersect(a, b) {
 
 //console.log(labelsByYearFilter);
 
-function filterByNeighbors(nodes, labels, links){
+function filterByNeighbors(nodes, labels, links, meta){
 
         d3.selectAll(".dataNodes")
         .transition()
         .duration(toggleTime)
-        .style("opacity", 0.1)
+        .style("opacity", function(d) {
+          if (d.type === "paper") {
+            return 0;
+          } else {
+            return 0.1;
+          }
+        })
         .attr("r", function(d){
             if(d.type=='action' || d.type=='why-hard')
             // return defaultRadius;
             return defaultRadius+Math.log(d.paperID.length)*10;
 
-            if(d.type=='topic')
+            if(d.type=='paper')
                 return topicRadius;})
 
         d3.selectAll(".dataLabels")
@@ -1040,18 +1053,28 @@ function filterByNeighbors(nodes, labels, links){
         })
         .text(function(d) {
             var string = d.name
-
-            if (string.length > 15)
+            if (d.paperID.length >= 2) {
+              if (string.length > 15) {
                 return string.substring(0,17)+'...';
-            else
-                return string;
+              } else {
+                return string
+              }
+            } else {
+              return "";
+            }
            });
 
         d3.selectAll(".dataLinks")
         .transition()
         .duration(toggleTime)
         .style("opacity", 0.1)
-        .style("stroke", "#aaa")
+        .style("stroke", function(d){
+          if (d.type=="paper-edge") {
+            return "none";
+          } else {
+            return "#aaa";
+          }
+        })
         .style("stroke-width", "1px")
 
         d3.selectAll(nodes)
@@ -1064,16 +1087,42 @@ function filterByNeighbors(nodes, labels, links){
             // return defaultRadius;
             return 2+defaultRadius+Math.log(d.paperID.length)*10;
 
-            if(d.type=='topic')
-                return topicRadius;})
+            if(d.type=='paper')
+                return topicRadius;
+        })
 
-        d3.selectAll(labels)
+        // console.log(links);
+        d3.selectAll(links)
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 0.5)
+        .style("stroke-width", "3px")
+
+      // show the papers
+      var metaPaperIDs = [];
+      var metaPaperLabels = [];
+      meta.papers.forEach(function(p) {
+        metaPaperIDs.push("#id" + p);
+        metaPaperLabels.push("#label" + p);
+      });
+      console.log(metaPaperIDs);
+      d3.selectAll(metaPaperIDs.toString())
+        .transition()
+        .style("opacity", 1);
+
+      var labelSelector = labels + "," + metaPaperLabels.toString();
+      console.log(labelSelector);
+      d3.selectAll(labelSelector)
         .transition()
         .duration(toggleTime)
         .style("opacity", 1)
         // .attr("font-size","10px");
         .attr("font-size", function(d) {
-          return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
+          if (d.type === "paper") {
+            return 16;
+          } else {
+            return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
+          }
         })
         .text(function(d) {
             var string = d.name
@@ -1083,13 +1132,6 @@ function filterByNeighbors(nodes, labels, links){
             else
                 return string;
            });
-
-        // console.log(links);
-        d3.selectAll(links)
-        .transition()
-        .duration(toggleTime)
-        .style("opacity", 0.5)
-        .style("stroke-width", "3px")
 
 
         simulation.restart()
@@ -1132,7 +1174,13 @@ function filterByFocus(focusNodeID, nodes, links) {
   .transition()
   .duration(toggleTime)
   .style("opacity", 0.1)
-  .style("stroke", "#aaa")
+  .style("stroke", function(d){
+    if (d.type=="paper-edge") {
+      return "none";
+    } else {
+      return "#aaa";
+    }
+  })
   .style("stroke-width", "1px")
 
   d3.selectAll(masterContextNodes.toString())
