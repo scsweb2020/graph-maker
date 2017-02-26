@@ -180,10 +180,10 @@ d3.json("data/graph.json", function(error, graph){
           }
       })
     .attr("marker-end", function(d) {
-      if (d.type != "analogy" || d.type != "paper-edge") {
-        return "url(#arrow)";
+      if (d.type == "analogy" || d.type == "paper-edge") {
+        return null;
       } else {
-        return "null";
+        return "url(#arrow)";
       }
     })
     .attr("opacity", 0.5);
@@ -204,7 +204,7 @@ d3.json("data/graph.json", function(error, graph){
             return topicRadius;})
    .attr("class", "dataNodes")
    .attr('id', function(d){ return 'id' + d.id; })
-   .attr('opacity', function(d) {
+   .style('fill-opacity', function(d) {
      if (d.paperID.length >= 2) {
        return 0.5+d.paperID.length/10;
      } else if (d.type === "paper") {
@@ -449,10 +449,28 @@ var listOfNodes=(d[document.getElementById("tags").value]);
 
 
 function clearFilter(){
-     d3.selectAll(".dataNodes")
+
+    // make all base state
+    // d3.selectAll(".dataNodes")
+    // .transition()
+    // .attr("opacity", 0)
+
+  d3.selectAll(".dataNodes")
      .transition()
      .duration(toggleTime)
-     .style("opacity", 1)
+    //  .style("opacity", 1)
+    .style("fill-opacity", function(d) {
+      if (d.paperID.length >= 2) {
+        console.log("big node");
+        return 0.5+d.paperID.length/10;
+      } else if (d.type === "paper") {
+        console.log("paper!");
+        return 0;
+      } else {
+        console.log("singleton node");
+        return 0.25;
+      }
+    })
      .attr("r", function(d){
          if(d.type=='action' || d.type=='why-hard')
          // return defaultRadius;
@@ -465,19 +483,22 @@ function clearFilter(){
       .style("stroke", "none")
       // .style("stroke-width", "0px")
       //  .style("stroke-width", ".5px")
-      .attr('opacity', function(d) {
-        if (d.paperID.length >= 2) {
-          return 0.5+d.paperID.length/10;
-        } else if (d.type === "paper") {
-          return 0;
-        } else {
-          return 0.25;
-        }
-      })
+      // .attr("opacity", function(d) {
+      //   if (d.paperID.length >= 2) {
+      //     console.log("big node");
+      //     return 0.5+d.paperID.length/10;
+      //   } else if (d.type === "paper") {
+      //     console.log("paper!");
+      //     return 0;
+      //   } else {
+      //     console.log("singleton node");
+      //     return 0.25;
+      //   }
+      // })
 
      d3.selectAll(".dataLabels")
      .transition()
-     .duration(toggleTime)
+    //  .duration(toggleTime)
      .style("opacity", 1)
      .attr("font-size", function(d) {
        return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
@@ -496,10 +517,23 @@ function clearFilter(){
         });
 
      d3.selectAll(".dataLinks")
-     .transition()
+    //  .transition()
      .style("opacity", 0.5)
      .style("stroke-width", "1px")
-     .style("stroke", "#aaa");
+     .style("stroke", function(d){
+       if (d.type=="paper-edge") {
+         return "none";
+       } else {
+         return "#aaa";
+       }
+     })
+     .attr("marker-end", function(d) {
+       if (d.type == "analogy" || d.type == "paper-edge") {
+         return null;
+       } else {
+         return "url(#arrow)";
+       }
+     })
 
      document.getElementById("tabs-1").innerHTML = "Select a node to explore authors in the 'conceptual neighborhood' of the node";
      document.getElementById("tabs-2").innerHTML = "Select a node to explore papers in the 'conceptual neighborhood' of the node";
@@ -1028,7 +1062,7 @@ function filterByNeighbors(nodes, labels, links, meta){
         d3.selectAll(".dataNodes")
         .transition()
         .duration(toggleTime)
-        .style("opacity", function(d) {
+        .style("fill-opacity", function(d) {
           if (d.type === "paper") {
             return 0;
           } else {
@@ -1076,11 +1110,18 @@ function filterByNeighbors(nodes, labels, links, meta){
           }
         })
         .style("stroke-width", "1px")
+        .attr("marker-end", function(d) {
+          if (d.type == "analogy" || d.type == "paper-edge") {
+            return null;
+          } else {
+            return "url(#arrow)";
+          }
+        })
 
         d3.selectAll(nodes)
         .transition()
         .duration(toggleTime)
-        .style("opacity", 1)
+        .style("fill-opacity", 1)
         // .attr("r", defaultRadius+5);
         .attr("r", function(d){
             if(d.type=='action' || d.type=='why-hard')
@@ -1108,7 +1149,7 @@ function filterByNeighbors(nodes, labels, links, meta){
       console.log(metaPaperIDs);
       d3.selectAll(metaPaperIDs.toString())
         .transition()
-        .style("opacity", 1);
+        .style("fill-opacity", 1);
 
       var labelSelector = labels + "," + metaPaperLabels.toString();
       console.log(labelSelector);
@@ -1141,7 +1182,7 @@ function filterByFocus(focusNodeID, nodes, links) {
   d3.selectAll(".dataNodes")
   .transition()
   .duration(toggleTime)
-  .style("opacity", 0.1)
+  .style("fill-opacity", 0.1)
   .attr("r", function(d){
       if(d.type=='action' || d.type=='why-hard')
       // return defaultRadius;
@@ -1201,7 +1242,7 @@ function filterByFocus(focusNodeID, nodes, links) {
     .duration(toggleTime)
     .style("stroke", "orange")
     .style("stroke-width", "5px")
-    .style("opacity", function(d) {
+    .style("fill-opacity", function(d) {
       if (masterContextNodes.indexOf("#id" + d.id) >= 0) {
         return 1
       } else {
@@ -1267,7 +1308,7 @@ function clearFocus(focusNodeID) {
   d3.selectAll(".dataNodes")
   .transition()
   .duration(toggleTime)
-  .style("opacity", 0.1)
+  .style("fill-opacity", 0.1)
   .attr("r", function(d){
       if(d.type=='action' || d.type=='why-hard')
       // return defaultRadius;
@@ -1306,7 +1347,7 @@ function clearFocus(focusNodeID) {
   d3.selectAll(masterContextNodes.toString())
   .transition()
   .duration(toggleTime)
-  .style("opacity", 1)
+  .style("fill-opacity", 1)
   // .attr("r", defaultRadius+5);
   .attr("r", function(d){
       if(d.type=='action' || d.type=='why-hard')
