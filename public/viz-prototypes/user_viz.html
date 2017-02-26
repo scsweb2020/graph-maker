@@ -432,17 +432,17 @@ function clearFilter(){
      d3.selectAll(".dataNodes")
      .transition()
      .duration(toggleTime)
-     .style("opacity", 1)
-     .attr("r", function(d){
-         if(d.type=='action' || d.type=='why-hard')
-         // return defaultRadius;
-         return defaultRadius+Math.log(d.paperID.length)*10;
+     .style("opacity", 1);
+     // .attr("r", function(d){
+     //     if(d.type=='action' || d.type=='why-hard')
+     //     // return defaultRadius;
+     //     return defaultRadius+Math.log(d.paperID.length)*10;
 
-         if(d.type=='topic')
-             return topicRadius;
-           })
-      .attr("stroke", "black")
-       .style("stroke-width", ".5px");
+     //     if(d.type=='topic')
+     //         return topicRadius;
+     //       })
+     //  .attr("stroke", "black")
+     //   .style("stroke-width", ".5px");
 
      d3.selectAll(".dataLabels")
      .transition()
@@ -451,14 +451,25 @@ function clearFilter(){
      .attr("font-size", function(d) {
        return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
      })
-     .text(function(d) {
-         var string = d.name
+     // .text(function(d) {
+     //     var string = d.name
 
-         if (string.length > 15)
-             return string.substring(0,17)+'...';
-         else
-             return string;
-        });
+     //     if (string.length > 15)
+     //         return string.substring(0,17)+'...';
+     //     else
+     //         return string;
+     //    });
+
+    .text(function(d) {
+        var string = d.name
+
+        if (d.paperID.length < 2)
+            return "";
+        else if (string.length > 15)
+            return string.substring(0,17)+'...';
+        else
+            return string;
+       });
 
      d3.selectAll(".dataLinks")
      .transition()
