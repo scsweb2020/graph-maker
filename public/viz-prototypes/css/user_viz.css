@@ -2,6 +2,7 @@
 
 .links line {
     stroke: #aaa;
+    stroke-opacity:.5;
   }
 
   .nodes circle {
