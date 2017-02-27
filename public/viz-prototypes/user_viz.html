@@ -24,15 +24,16 @@
     <div class="mainContainer">
       <div class="container1" id="tabs">
         <ul>
-          <li><a id="tab-title-authors" href="#tabs-1">Authors <span id="tab-authors-badge" class="badge">0</span></a></li>
-          <li><a id="tab-title-papers" href="#tabs-2">Papers <span id="tab-papers-badge" class="badge">0</span></a></li>
+          <li><a id="tab-title-papers" href="#tabs-1">Papers <span id="tab-papers-badge" class="badge">0</span></a></li>
+          <li><a id="tab-title-authors" href="#tabs-2">Authors <span id="tab-authors-badge" class="badge">0</span></a></li>
         </ul>
         <div id="tabs-1" class="tab-data" style="padding:10px;">
-          Select a node to explore authors in the 'conceptual neighborhood' of the node
+          Click on a node to explore papers in the 'conceptual neighborhood' of the node
         </div>
         <div id="tabs-2" class="tab-data" style="padding:10px;">
-          Select a node to explore papers in the 'conceptual neighborhood' of the node
+          Click on a node to explore authors in the 'conceptual neighborhood' of the node
         </div>
+
       </div>
       <label class="yearFilter">Filter by year</label>
       <div class="yearRange" id="slider">
@@ -113,9 +114,17 @@
       .style("fill", "none")
       .style("pointer-events", "all")
       .call(d3.zoom()
-        .scaleExtent([1 / 2, 4])
+        .scaleExtent([1/2, 4])
         .on("zoom", zoomed)
       );
+
+    // svg.transition()
+    //   .duration(500)
+    //   .call(zoom.transform,
+    //     d3.zoomIdentity
+    //       .translate(500, 0)
+    //       .scale(1/2)
+    //   );
 
     // set the force-directed layout properties
     simulation = d3.forceSimulation()
@@ -124,7 +133,7 @@
       }))
       .force("charge", d3.forceManyBody().strength(function(d) {
         // return -20;
-        return -19-d.paperID.length*20; // give greater repulsion for larger nodes
+        return -19-Math.log(d.paperID.length)*250; // give greater repulsion for larger nodes
       }))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
@@ -469,7 +478,7 @@
       var selectedPaperIDs = [];
       var authors=[];
       var authorNames = [];
-      var p = document.getElementById("tabs-2");
+      var p = document.getElementById("tabs-1");
       p.innerHTML = "";
 
       for(i=0; i<papers.length; i++) {
@@ -503,7 +512,7 @@
 
     function authorDetails(authors) {
 
-      var p = document.getElementById("tabs-1");
+      var p = document.getElementById("tabs-2");
       p.innerHTML = "";
       authors.forEach(function(author) {
         p.appendChild(newAuthor(author));
@@ -570,8 +579,8 @@
           .text(function(d) {
             var string = d.name
 
-            if (string.length > 40) {
-              return string.substring(0,42)+'...';
+            if (string.length > 15) {
+              return string.substring(0,17)+'...';
             } else {
               return string;
             }
@@ -591,8 +600,8 @@
 
       resetBaseLayer("reset");
 
-      document.getElementById("tabs-1").innerHTML = "Select a node to explore authors in the 'conceptual neighborhood' of the node";
-      document.getElementById("tabs-2").innerHTML = "Select a node to explore papers in the 'conceptual neighborhood' of the node";
+      document.getElementById("tabs-1").innerHTML = "Click on a node to explore papers in the 'conceptual neighborhood' of the node";
+      document.getElementById("tabs-2").innerHTML = "Click on a node to explore authors in the 'conceptual neighborhood' of the node";
 
       document.getElementById("tab-authors-badge").innerText = 0;
       document.getElementById("tab-papers-badge").innerText = 0;
@@ -637,8 +646,8 @@
         .style("font-size", "16px")
         .text(function(d) {
             var string = d.name
-            if (string.length > 40) {
-              return string.substring(0,42)+'...';
+            if (string.length > 15) {
+              return string.substring(0,17)+'...';
             } else {
               return string;
             }
@@ -705,8 +714,8 @@
         .style("font-size", "16px")
         .text(function(d) {
             var string = d.name
-            if (string.length > 40) {
-              return string.substring(0,42)+'...';
+            if (string.length > 15) {
+              return string.substring(0,17)+'...';
             } else {
               return string;
             }
@@ -861,8 +870,8 @@
         })
         .text(function(d) {
           var string = d.name
-          if (string.length > 40) {
-            return string.substring(0,42)+'...';
+          if (string.length > 15) {
+            return string.substring(0,17)+'...';
           } else {
             return string;
           }
