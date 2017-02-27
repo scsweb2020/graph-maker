@@ -204,7 +204,7 @@ d3.json("data/graph.json", function(error, graph){
             return topicRadius;})
    .attr("class", "dataNodes")
    .attr('id', function(d){ return 'id' + d.id; })
-   .style('fill-opacity', function(d) {
+   .style('opacity', function(d) {
      if (d.paperID.length >= 2) {
        return 0.5+d.paperID.length/10;
      } else if (d.type === "paper") {
@@ -242,7 +242,26 @@ d3.json("data/graph.json", function(error, graph){
          .duration(500)
          .style("opacity", 0);
        })
-     .on("click", neighboring)
+     .on("click", function(d) {
+       if (d.type == "paper") {
+           // console.log("Clicked!");
+           // console.log(this);
+           var focusItemID = d.id;
+           console.log("this metadataID: " + focusItemID);
+           console.log("lastClickedMetadataID: " + lastClickedMetadataID);
+           if (focusItemID === lastClickedMetadataID) {
+              console.log("clear focus!");
+              clearFocus(focusNodeID);
+           } else {
+             focus(focusNodeID, focusItemID, "paper");
+             $('.node-metadata').removeClass("selected");
+             $(this).addClass("selected");
+             lastClickedMetadataID = focusItemID;
+           }
+       } else {
+          neighboring(d);
+       }
+     })
     // .on("dblclick", neighboring)
     // .on("click", authorHighlight)
     //.on("click", fade(.1))
@@ -331,6 +350,7 @@ d3.json("data/graph.json", function(error, graph){
  });
 
 var masterContextNodes;
+var masterContextPaperIDs;
 var focusNodeID = null;
 var masterContextLabels;
 var masterContextLinks;
@@ -459,7 +479,7 @@ function clearFilter(){
      .transition()
      .duration(toggleTime)
     //  .style("opacity", 1)
-    .style("fill-opacity", function(d) {
+    .style("opacity", function(d) {
       if (d.paperID.length >= 2) {
         console.log("big node");
         return 0.5+d.paperID.length/10;
@@ -661,7 +681,8 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
         d3.selectAll(".dataNodes").style("stroke", "none")
         //  .style("stroke-width", ".5px");
 
-        d3.select(this).transition().style("stroke-dasharray", ("5,4"))
+        d3.select("#id" + d.id).transition()
+         .style("stroke-dasharray", ("5,4"))
          .style("stroke", "orange")
          .style("stroke-width", "3px");
 
@@ -760,7 +781,7 @@ $( "#tags" ).on( "autocompleteselect", function( event, ui ) {
        for (i=0; i<listOfLinks.length; i++) {
           listOfLinks[i] = "#link" + listOfLinks[i];
        }
-       filterByFocus(focusNodeID, listOfNodeIDs.toString(), listOfLinks.toString());
+       filterByFocus(focusItemID, focusNodeID, listOfNodeIDs.toString(), listOfLinks.toString());
      }
 
 
@@ -833,25 +854,27 @@ function singleAuthorDetails(authors) {
             }
             tabBadge = document.getElementById("tab-papers-badge");
             tabBadge.innerText = numPapers;
+
+            masterContextPaperIDs = selectedPaperIDs;
             // tabTitle.appendChild(badge);
               //  d3.select("#tabs-2").text(papers);
         // });
-          $('.node-metadata').on("click", function(e, target) {
-            // console.log("Clicked!");
-            // console.log(this);
-           var focusItemID = this.id.replace("paper-", "");
-           console.log("this metadataID: " + focusItemID);
-           console.log("lastClickedMetadataID: " + lastClickedMetadataID);
-           if (focusItemID === lastClickedMetadataID) {
-              console.log("clear focus!");
-              clearFocus(focusNodeID);
-           } else {
-             focus(focusNodeID, focusItemID, "paper");
-             $('.node-metadata').removeClass("selected");
-             $(this).addClass("selected");
-             lastClickedMetadataID = focusItemID;
-           }
-          });
+          // $('.node-metadata').on("click", function(e, target) {
+          //   // console.log("Clicked!");
+          //   // console.log(this);
+          //  var focusItemID = this.id.replace("paper-", "");
+          //  console.log("this metadataID: " + focusItemID);
+          //  console.log("lastClickedMetadataID: " + lastClickedMetadataID);
+          //  if (focusItemID === lastClickedMetadataID) {
+          //     console.log("clear focus!");
+          //     clearFocus(focusNodeID);
+          //  } else {
+          //    focus(focusNodeID, focusItemID, "paper");
+          //    $('.node-metadata').removeClass("selected");
+          //    $(this).addClass("selected");
+          //    lastClickedMetadataID = focusItemID;
+          //  }
+          // });
         return {'papers': selectedPaperIDs, 'authors': authors};
     }
 
@@ -1062,7 +1085,7 @@ function filterByNeighbors(nodes, labels, links, meta){
         d3.selectAll(".dataNodes")
         .transition()
         .duration(toggleTime)
-        .style("fill-opacity", function(d) {
+        .style("opacity", function(d) {
           if (d.type === "paper") {
             return 0;
           } else {
@@ -1121,7 +1144,7 @@ function filterByNeighbors(nodes, labels, links, meta){
         d3.selectAll(nodes)
         .transition()
         .duration(toggleTime)
-        .style("fill-opacity", 1)
+        .style("opacity", 1)
         // .attr("r", defaultRadius+5);
         .attr("r", function(d){
             if(d.type=='action' || d.type=='why-hard')
@@ -1149,7 +1172,7 @@ function filterByNeighbors(nodes, labels, links, meta){
       console.log(metaPaperIDs);
       d3.selectAll(metaPaperIDs.toString())
         .transition()
-        .style("fill-opacity", 1);
+        .style("opacity", 1);
 
       var labelSelector = labels + "," + metaPaperLabels.toString();
       console.log(labelSelector);
@@ -1178,20 +1201,40 @@ function filterByNeighbors(nodes, labels, links, meta){
         simulation.restart()
 }
 
-function filterByFocus(focusNodeID, nodes, links) {
+function filterByFocus(focusItemID, focusNodeID, nodes, links) {
   d3.selectAll(".dataNodes")
   .transition()
   .duration(toggleTime)
-  .style("fill-opacity", 0.1)
+  .style("opacity", function(d) {
+    if (d.type === "paper") {
+      return 0;
+    } else {
+      return 0.1;
+    }
+  })
   .attr("r", function(d){
       if(d.type=='action' || d.type=='why-hard')
       // return defaultRadius;
       return defaultRadius+Math.log(d.paperID.length)*10;
 
-      if(d.type=='topic')
+      if(d.type=='paper')
           return topicRadius;
-    })
-    .style("stroke", "none");
+  })
+  .style("stroke", "none")
+
+  // make sure hte active papers remain visible
+  var activePapers = [];
+  var activePaperLabels = [];
+  masterContextPaperIDs.forEach(function(p) {
+    activePapers.push("#id" + p);
+    activePaperLabels.push("#label" + p);
+  })
+
+  console.log(activePaperLabels);
+
+  d3.selectAll(activePapers.toString())
+    .transition()
+    .style("opacity", 1)
 
   d3.selectAll(".dataLabels")
   .transition()
@@ -1199,17 +1242,36 @@ function filterByFocus(focusNodeID, nodes, links) {
   .style("opacity", 0.1)
   // .attr("font-size","6px");
   .attr("font-size", function(d) {
-    return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+    if (d.type === "paper") {
+      return 16;
+    } else {
+      return parseInt(8+Math.log(d.paperID.length)*10).toString() + 'px';
+    }
   })
   .text(function(d) {
       var string = d.name
-      if (d.paperID.length > 1) {
-        if (string.length > 15)
-            return string.substring(0,17)+'...';
-        else
-            return string;
+      if (d.paperID.length >= 2) {
+        if (string.length > 15) {
+          return string.substring(0,17)+'...';
+        } else {
+          return string
+        }
+      } else {
+        return "";
       }
      });
+
+   d3.selectAll(activePaperLabels.toString())
+     .transition()
+     .style("opacity", 1)
+     .text(function(d) {
+         var string = d.name
+
+         if (string.length > 40)
+             return string.substring(0,42)+'...';
+         else
+             return string;
+      });
 
   d3.selectAll(".dataLinks")
   .transition()
@@ -1234,15 +1296,16 @@ function filterByFocus(focusNodeID, nodes, links) {
       // return defaultRadius;
       return 2+defaultRadius+Math.log(d.paperID.length)*10;
 
-      if(d.type=='topic')
-          return topicRadius;})
+      if(d.type=='paper')
+          return topicRadius;
+  })
 
   d3.selectAll(nodes)
     .transition()
     .duration(toggleTime)
     .style("stroke", "orange")
-    .style("stroke-width", "5px")
-    .style("fill-opacity", function(d) {
+    .style("stroke-width", "3px")
+    .style("opacity", function(d) {
       if (masterContextNodes.indexOf("#id" + d.id) >= 0) {
         return 1
       } else {
@@ -1258,6 +1321,11 @@ function filterByFocus(focusNodeID, nodes, links) {
          .style("stroke", "orange")
          .style("stroke-width", "3px");
     }
+
+  d3.select("#id" + focusItemID)
+    .transition()
+    .style("stroke", "orange")
+    .style("stroke-width", "3px")
 
   d3.selectAll(masterContextLabels.toString())
   .transition()
@@ -1308,7 +1376,7 @@ function clearFocus(focusNodeID) {
   d3.selectAll(".dataNodes")
   .transition()
   .duration(toggleTime)
-  .style("fill-opacity", 0.1)
+  .style("opacity", 0.1)
   .attr("r", function(d){
       if(d.type=='action' || d.type=='why-hard')
       // return defaultRadius;
@@ -1347,7 +1415,7 @@ function clearFocus(focusNodeID) {
   d3.selectAll(masterContextNodes.toString())
   .transition()
   .duration(toggleTime)
-  .style("fill-opacity", 1)
+  .style("opacity", 1)
   // .attr("r", defaultRadius+5);
   .attr("r", function(d){
       if(d.type=='action' || d.type=='why-hard')
