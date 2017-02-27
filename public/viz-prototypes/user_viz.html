@@ -17,7 +17,7 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
+  <script src="d3-jetpack.js"></script>
   <script src="nouislider/nouislider.min.js"></script>
 
   <div class="totalContainer">
@@ -64,6 +64,7 @@
     scaleFactor=6;
     defaultRadius=3;
     topicRadius = 15;
+    labelWidth = 25;
     var masterContextNodes;
     var masterContextPaperIDs;
     var focusNodeID = null;
@@ -71,6 +72,7 @@
     var masterContextLinks;
     var lastClickedNodeID;
     var lastClickedMetadataID;
+    isFocusing = false;
 
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
@@ -212,9 +214,11 @@
       .on("click", function(d) {
          if (d.type == "paper") {
            var focusItemID = d.id;
-           if (focusItemID === lastClickedMetadataID) {
-              clearFocus(focusNodeID);
+           if (focusItemID === lastClickedMetadataID&& isFocusing) {
+             isFocusing = false;
+             clearFocus(focusNodeID);
            } else {
+              isFocusing = true;
               focus(focusNodeID, focusItemID, "paper");
               $('.node-metadata').removeClass("selected");
               // $(this).addClass("selected");
@@ -253,6 +257,20 @@
         .attr("dx", 6)
         .attr('id', function(d){ return 'label' + d.id; })
         .attr("dy", ".15em")
+        // .tspans(function(d) {
+        //   var string = d.name
+        //   if (d.paperID.length >= 2) {
+        //     if (string.length > 75) {
+        //       var trunc = string.substring(0,77)+'...';
+        //       return d3.wordwrap(trunc, 25);
+        //     } else {
+        //       return d3.wordwrap(string, 25);
+        //     }
+        //   } else {
+        //     return "";
+        //   }
+        //   // return d3.wordwrap(text, 15);  // break line after 15 characters
+        // });
         .text(function(d) {
           var string = d.name
           if (d.paperID.length >= 2) {
@@ -265,6 +283,9 @@
             return "";
           }
         });
+
+      // d3.selectAll("text")
+      //   .call(wrap)
 
       // apply force-directed layout
       simulation
@@ -554,7 +575,14 @@
             } else {
               return string;
             }
-          });
+          })
+          .style("fill", function(d) {
+            if (d.type === "paper") {
+              return "#00BFFF"
+            } else {
+              return "black"
+            }
+          })
 
           simulation.restart()
     }
@@ -682,7 +710,14 @@
             } else {
               return string;
             }
-      });
+        })
+        .style("fill", function(d) {
+          if (d.type === "paper") {
+            return "#00BFFF"
+          } else {
+            return "black"
+          }
+        })
 
       // highlight the focus node
       d3.select("#id" + focusNodeID).transition()
@@ -752,6 +787,13 @@
         })
         .attr("font-size", function(d) {
           return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+        })
+        .style("fill", function(d) {
+          if (d.type === "paper") {
+            return "#00BFFF"
+          } else {
+            return "black"
+          }
         })
         .text(function(d) {
             var string = d.name
@@ -824,7 +866,14 @@
           } else {
             return string;
           }
-        });
+        })
+        .style("fill", function(d) {
+          if (d.type === "paper") {
+            return "#00BFFF"
+          } else {
+            return "black"
+          }
+        })
 
       d3.selectAll(masterContextLinks.toString())
         .transition()
@@ -915,6 +964,31 @@
     function findOne(haystack, arr) {
       return arr.some(function (v) {
         return haystack.indexOf(v) >= 0;
+      });
+    }
+
+    function wrap(text, labelWidth) {
+      console.log("calling wrap");
+      text.each(function() {
+        var text = d3.select(this),
+            words = text.text().split(/\s+/).reverse(),
+            word,
+            line = [],
+            lineNumber = 0,
+            lineHeight = 1.1, // ems
+            y = text.attr("y"),
+            dy = parseFloat(text.attr("dy")),
+            tspan = text.text(null).append("tspan").attr("x", text.attr("x")).attr("y", y).attr("dy", dy + "em");
+        while (word = words.pop()) {
+          line.push(word);
+          tspan.text(line.join(" "));
+          if (tspan.node().getComputedTextLength() > width) {
+            line.pop();
+            tspan.text(line.join(" "));
+            line = [word];
+            tspan = text.append("tspan").attr("x", text.attr("x")).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+          }
+        }
       });
     }
 
@@ -1244,10 +1318,11 @@
           var focusItemID = this.id.replace("paper-", "");
           console.log("this metadataID: " + focusItemID);
           console.log("lastClickedMetadataID: " + lastClickedMetadataID);
-          if (focusItemID === lastClickedMetadataID) {
-             console.log("clear focus!");
-             clearFocus(focusNodeID);
+          if (focusItemID === lastClickedMetadataID && isFocusing) {
+            isFocusing = false;
+            clearFocus(focusNodeID);
           } else {
+            isFocusing = true;
             focus(focusNodeID, focusItemID, "paper");
             $('.node-metadata').removeClass("selected");
             $(this).addClass("selected");
