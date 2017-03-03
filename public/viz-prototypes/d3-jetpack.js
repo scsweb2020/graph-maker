@@ -27,6 +27,7 @@
             .append('tspan')
             .text(function(d) { return d; })
             .attr('x', function(d) { return d.x })
+            .attr('y', function(d) { return d.y })
             .attr('dy', function(d,i) { return i ? lh || 15 : 0; });
     };
 

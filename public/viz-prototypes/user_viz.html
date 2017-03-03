@@ -17,7 +17,8 @@
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script src="d3-jetpack.js"></script>
+  <!-- <script src="d3-jetpack.js"></script> -->
+  <!-- <script src="d3plus.js"></script> -->
   <script src="nouislider/nouislider.min.js"></script>
 
   <div class="totalContainer">
@@ -66,6 +67,8 @@
     defaultRadius=3;
     topicRadius = 15;
     labelWidth = 25;
+    defaultTextLength = 20;
+    focusTextLength = 45
     var masterContextNodes;
     var masterContextPaperIDs;
     var focusNodeID = null;
@@ -259,13 +262,6 @@
         .selectAll("text")
         .data(graph.nodes)
         .enter().append("text")
-        .attr("class", "dataLabels")
-        .attr("font-size", function(d) {
-          return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
-        })
-        .attr("dx", 6)
-        .attr('id', function(d){ return 'label' + d.id; })
-        .attr("dy", ".15em")
         // .tspans(function(d) {
         //   var string = d.name
         //   if (d.paperID.length >= 2) {
@@ -279,12 +275,19 @@
         //     return "";
         //   }
         //   // return d3.wordwrap(text, 15);  // break line after 15 characters
-        // });
+        // })
+        .attr("class", "dataLabels")
+        .attr("font-size", function(d) {
+          return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+        })
+        .attr("dx", 6)
+        .attr('id', function(d){ return 'label' + d.id; })
+        .attr("dy", ".15em")
         .text(function(d) {
           var string = d.name
           if (d.paperID.length >= 2) {
-            if (string.length > 15) {
-              return string.substring(0,17)+'...';
+            if (string.length > defaultTextLength) {
+              return string.substring(0,defaultTextLength+2)+'...';
             } else {
               return string
             }
@@ -540,6 +543,7 @@
 
         // draw focus node
         d3.select("#id" + focusNodeID).transition()
+          .style("opacity", 1)
           .style("stroke-dasharray", ("5,4"))
           .style("stroke", "orange")
           .style("stroke-width", "3px");
@@ -579,8 +583,8 @@
           .text(function(d) {
             var string = d.name
 
-            if (string.length > 15) {
-              return string.substring(0,17)+'...';
+            if (string.length > focusTextLength) {
+              return string.substring(0,focusTextLength+2)+'...';
             } else {
               return string;
             }
@@ -646,8 +650,8 @@
         .style("font-size", "16px")
         .text(function(d) {
             var string = d.name
-            if (string.length > 15) {
-              return string.substring(0,17)+'...';
+            if (string.length > defaultTextLength) {
+              return string.substring(0,defaultTextLength+2)+'...';
             } else {
               return string;
             }
@@ -714,8 +718,8 @@
         .style("font-size", "16px")
         .text(function(d) {
             var string = d.name
-            if (string.length > 15) {
-              return string.substring(0,17)+'...';
+            if (string.length > focusTextLength) {
+              return string.substring(0,focusTextLength+2)+'...';
             } else {
               return string;
             }
@@ -807,8 +811,8 @@
         .text(function(d) {
             var string = d.name
             if (d.paperID.length >= 2) {
-              if (string.length > 15) {
-                return string.substring(0,17)+'...';
+              if (string.length > defaultTextLength) {
+                return string.substring(0,defaultTextLength+2)+'...';
               } else {
                 return string
               }
@@ -870,8 +874,8 @@
         })
         .text(function(d) {
           var string = d.name
-          if (string.length > 15) {
-            return string.substring(0,17)+'...';
+          if (string.length > focusTextLength) {
+            return string.substring(0,focusTextLength+2)+'...';
           } else {
             return string;
           }
@@ -1357,6 +1361,10 @@
        var tabBadge = document.getElementById("tab-authors-badge");
        tabBadge.innerText = authors.length;
     }
+
+    // d3plus.textwrap()
+    //   .container(d3.select(".dataLabels"))
+    //   .draw();
 
   </script>
 
