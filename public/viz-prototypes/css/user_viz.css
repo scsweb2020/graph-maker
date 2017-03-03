@@ -109,10 +109,10 @@ div.tooltip {
 }
 
 .yearRange{
-    margin-top: 20px;
+    margin-top: 40px;
     margin-left: 5px;
     margin-right: 5px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
@@ -123,18 +123,35 @@ div.tooltip {
 
     border: none;
     color: white;
-    padding: 8px 15px;
+    padding: 8px;
     text-align: center;
     display: inline-block;
     font-size: 14px;
 }
 
+.year-filter {
+  margin: auto;
+  text-align: center;
+  padding: 8px;
+  border-bottom: solid 1px black;
+}
+
 .yearFilter{
 
      font-weight: bold;
-     margin-top: 20px;
-     margin-left: 110px;
+     /*margin-top: 20px;*/
+     /*margin-left: 110px;*/
      font-family: "Open Sans";
+}
+
+.neighborhood-size-control {
+  padding: 8px;
+  border-bottom: solid 1px black;
+}
+
+.selectLabel {
+  font-weight: bold;
+  font-family: "Open Sans";
 }
 
 .highlighted{

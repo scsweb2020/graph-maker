@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
-<head><link href="nouislider/nouislider.min.css" rel="stylesheet">
+<head><link href="scripts/nouislider/nouislider.min.css" rel="stylesheet">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
     <link rel="stylesheet" href="css/user_viz.css">
-    <link href="jquery-ui.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
@@ -19,7 +19,8 @@
   <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <!-- <script src="d3-jetpack.js"></script> -->
   <!-- <script src="d3plus.js"></script> -->
-  <script src="nouislider/nouislider.min.js"></script>
+  <script src="scripts/nouislider/nouislider.min.js"></script>
+  <script src="scripts/wNumb.js"></script>
 
   <div class="totalContainer">
     <div class="mainContainer">
@@ -34,26 +35,29 @@
         <div id="tabs-2" class="tab-data" style="padding:10px;">
           Click on a node to explore authors in the 'conceptual neighborhood' of the node
         </div>
-
       </div>
-      <label class="yearFilter">Filter by year</label>
-      <div class="yearRange" id="slider">
+      <div class="neighborhood-size-control">
+         <label class="selectLabel">Show up to</label>
+         <select id="drop">
+            <option value="1">1st</option>
+            <option value="2">2nd</option>
+            <option value="3">3rd</option>
+         </select>
+         <label class="selectLabel"> degree connections</label>
+       </div>
+      <div class="year-filter">
+        <label class="yearFilter">Filter by year</label>
+        <div class="yearRange" id="slider">
+        </div>
       </div>
-      <div class="ui-widget">
+      <!-- <div class="ui-widget">
         <div class="labelAuthors">
           <label class ="labelClass" for="tags">Filter by author </label>
         </div>
         <input id="tags">
-      </div>
-      <div>
-         <select id="drop">
-            <option value="1">Level 1</option>
-            <option value="2">Level 2</option>
-            <option value="3">Level 3</option>
-         </select>
-       </div>
+      </div> -->
        <div>
-         <button class="filterButton" id="clearfilter" type="button" onclick="clearFilter()">Clear Filters</button>
+         <button class="filterButton" id="clearfilter" type="button" onclick="clearFilter()">Clear All Filters</button>
        </div>
      </div> <!-- End info box container  -->
      <div class="graphContainer">
@@ -342,21 +346,22 @@
 
     noUiSlider.create(slider, {
     	start: [2013, 2017],
-        tooltips: true,
+      tooltips: true,
     	connect: true,
-        step: 1,
+      step: 1,
     	range: {
     		'min': 2013,
     		'max': 2017
-    	}
+    	},
+      format: wNumb({ decimals: 0 })
     });
 
     slider.noUiSlider.on('change', function(){
     	var rangeValues=slider.noUiSlider.get();
-        var min=rangeValues[0];
-        var max=rangeValues[1];
+      var min=rangeValues[0];
+      var max=rangeValues[1];
 
-       filterByYear(min,max);
+      filterByYear(min,max);
 
     });
 
