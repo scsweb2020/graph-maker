@@ -6,12 +6,11 @@
     <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
     <link rel="stylesheet" href="css/user_viz.css">
     <link href="css/jquery-ui.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -24,6 +23,24 @@
   <!-- <script src="d3plus.js"></script> -->
   <script src="scripts/nouislider/nouislider.min.js"></script>
   <script src="scripts/wNumb.js"></script>
+
+  <!-- footer  -->
+  <footer class="footer">
+     <div class="container-fluid">
+       <div class="row">
+         <div class="system-name col-md-6 col-xs-6">
+           Knowledge Collider: CMU @ CSCW (2013-2017)
+         </div>
+         <div class="wordmarks col-md-6 col-xs-6 pull-right">
+           <img class="logo" src="assets/logo-hcii.png"></img>
+           <img class="logo" src="assets/CMU_Logo_Horiz_Red.jpg"></img>
+           <!-- <div class="info-icon"> -->
+           <span class="info-icon glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"></span>
+           <!-- </div> -->
+         </div>
+       </div>
+     </div>
+   </footer>
 
   <div class="totalContainer">
     <div class="mainContainer">
@@ -68,42 +85,23 @@
      </div>
    </div>
 
-   <!-- footer  -->
-   <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="system-name col-md-6 col-xs-6">
-            Knowledge Collider: CMU @ CSCW (2013-2017)
-          </div>
-          <div class="wordmarks col-md-6 col-xs-6 pull-right">
-            <img class="logo" src="assets/logo-hcii.png"></img>
-            <img class="logo" src="assets/CMU_Logo_Horiz_Red.jpg"></img>
-          </div>
-        </div>
-      </div>
-    </footer>
-
     <!-- info modal  -->
-    <div class="info-icon">
-      <span class="glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"></span>
-    </div>
-
-    <!-- Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
+            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+              <!-- <span aria-hidden="true">&times;</span> -->
+            <!-- </button> -->
           </div>
           <div class="modal-body">
-            ...
+            <p>The ACM Conference on Computer Supported Cooperative Work (<a href="http://cscw.acm.org" target="_blank">CSCW</a>) is the premier venue for presenting research in the design and use of technologies. The Human-Computer Interaction Institute at Carnegie Mellon University has a long history of collaborating with researchers and industrial professionals to address research problems and explore technical, social, material and theoretical applications that support collaborative work and life activities.</p>
+            <p>This visualization leverages the <a href="" target="_blank">"Knowledge Collider"</a> (an ongoing research project in the HCII) to provide a unique way of exploring CMU research at CSCW. Rather than exploring papers or authors directly, click around to explore <strong>research problems (and associated solutions)</strong> that CMU researchers have examined over the last 5 years. As you explore, you'll discover the people and papers associated with those problems/solutions.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-success" data-dismiss="modal">Get started!</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
           </div>
         </div>
       </div>
@@ -143,6 +141,8 @@
 
     $('#tabs-1').css("max-height", windowHeight/3);
     $('#tabs-2').css("max-height", windowHeight/3)
+
+    $('.info-icon').click();
 
     var div = d3.select("body").append("div")
       .attr("class", "tooltip")

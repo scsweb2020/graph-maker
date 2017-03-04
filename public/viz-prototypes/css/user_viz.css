@@ -7,9 +7,18 @@ body {
   /* Margin bottom by footer height */
   margin-top: 60px;
 }
+
+#myModal {
+  font-family: "Open Sans";
+}
+
+#exampleModalLabel {
+  font-size: 24px;
+}
+
 .footer {
   position: absolute;
-  bottom: 0;
+  top: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
@@ -22,26 +31,33 @@ body {
   font-size: 24px;
   vertical-align: middle;
   padding: 12px 8px;
+  /*padding-top: .75em;*/
+  /*padding-bottom: .75em;*/
 }
 
 .wordmarks {
   padding-top: 1em;
   padding-bottom: 1em;
   text-align: right;
+  vertical-align: middle;
 }
 
 .logo {
-  height: 30px;
+  margin-top: -16px;
+  margin-right: 5px;
+  height: 32px;
 }
 
 .info-icon {
-  position: fixed;
-  top: 0;
-  right: 0;
-  font-size: 42px;
-  padding: 8px;
+  /*position: fixed;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  font-size: 32px;
+  /*padding: 8px;*/
   cursor: pointer;
-  z-index: 9999999;
+  /*padding-top: 5px;*/
+  /*z-index: 9999999;*/
+  /*background-color: white;*/
 }
 
 #myModal {
@@ -87,14 +103,15 @@ div.tooltip {
 }
 
 .mainContainer{
-     position: absolute;
-
+    position: absolute;
+    top: 65px;
     float: left;
 }
 
 .graphContainer{
     position: absolute;
     float: left;
+    top: 60px;
     z-index: -1;
 }
 
