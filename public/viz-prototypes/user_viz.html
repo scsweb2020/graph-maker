@@ -123,6 +123,8 @@
     var lastClickedNodeID;
     var lastClickedMetadataID;
     isFocusing = false;
+    
+    var tooltip_size = 20;
 
     var windowHeight = $(window).height();
     var windowWidth = $(window).width();
@@ -263,7 +265,7 @@
         div.transition()
           .duration(200)
           .style("opacity", .9);
-        div.html(d.name)
+        div.html(htmlWordWrap(d.name, tooltip_size, "<br>"))
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY - 28) + "px");
       })
@@ -1030,6 +1032,16 @@
       });
     }
 
+    // html word wrapping
+    function htmlWordWrap( str, width, brk, cut ) {
+      brk = brk || '\n';
+      width = width || 75;
+      cut = cut || false;
+      if (!str) { return str; }
+      var regex = '.{1,' +width+ '}(\\s|$)' + (cut ? '|.{' +width+ '}|.+$' : '|\\S+?(\\s|$)');
+      return str.match( RegExp(regex, 'g') ).join( brk );
+    }
+    
     function wrap(text, labelWidth) {
       console.log("calling wrap");
       text.each(function() {
