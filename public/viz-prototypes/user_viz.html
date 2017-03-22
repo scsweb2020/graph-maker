@@ -109,11 +109,12 @@
 
   <script>
 
+    // size of graph elements
     scaleFactor=6;
     defaultRadius=3;
     topicRadius = 15;
     labelWidth = 25;
-    defaultTextLength = 20;
+    defaultTextLength = 20; // todo: may need to change this
     focusTextLength = 45
     var masterContextNodes;
     var masterContextPaperIDs;
@@ -294,7 +295,7 @@
         //.on("click", fade(.1))
         // .on('dblclick', clicked); // set event handler for click event
 
-      svg.append("defs").append("marker")
+      svg.append("defs").append("marker") //
         .attr("id", "arrow")
         .attr("viewBox", "0 -5 10 10")
         .attr("refX", 20)
@@ -305,7 +306,7 @@
         .append("svg:path")
         .attr("d", "M0,-5L10,0L0,5");
 
-      // initialize + draw node labels
+      // initialize + draw node labels ***************************************************************
       var text = g.append("g")
         .attr("class", "labels")
         .selectAll("text")
@@ -325,13 +326,14 @@
         //   }
         //   // return d3.wordwrap(text, 15);  // break line after 15 characters
         // })
-        .attr("class", "dataLabels")
+        .attr("class", "dataLabels") //see datalabels in CSS
         .attr("font-size", function(d) {
           return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
         })
         .attr("dx", 6)
         .attr('id', function(d){ return 'label' + d.id; })
         .attr("dy", ".15em")
+        .attr("text-anchor","middle")
         .text(function(d) {
           var string = d.name
           if (d.paperID.length >= 2) {
