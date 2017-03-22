@@ -23,6 +23,7 @@
   <!-- <script src="d3plus.js"></script> -->
   <script src="scripts/nouislider/nouislider.min.js"></script>
   <script src="scripts/wNumb.js"></script>
+  <script src="scripts/collide.js"></script>
 
   <!-- footer  -->
   <footer class="footer">
@@ -353,7 +354,25 @@
       // apply force-directed layout
       simulation
         .nodes(graph.nodes)
-        .on("tick", ticked); //
+        .on("tick", ticked)
+        .on("end", function(){
+            var collide = d3.bboxCollide(function (d,i) {
+                return [[-5, -25],[80, 25]]
+            })
+            .strength(1)
+            .iterations(2)
+
+            labelForce = d3.forceSimulation(graph.nodes)
+              .force("collide", collide)
+              .on('tick', labelTicked)
+              //.force("collide", d3.forceCollide().radius(55).iterations(2))
+            
+            // wrapping label texts
+            // const label_max_size = 80
+            // alltexts = d3.selectAll("text")
+            // wrapLabels(alltexts, label_max_size)
+        })
+
 
       simulation.force("link")
         .links(graph.links);
@@ -384,6 +403,33 @@
         text.attr("x", function(d) { return d.x; })
             .attr("y", function(d) { return d.y; });
       }
+
+      function labelTicked(){
+        node
+          .attr("cx", function(d) {
+            return d.x;
+          })
+          .attr("cy", function(d) {
+            return d.y;
+          });
+
+        text.attr("x", function(d) { return d.x; })
+            .attr("y", function(d) { return d.y; });
+  
+        link
+          .attr("x1", function(d) {
+            return d.source.x;
+          })
+          .attr("y1", function(d) {
+            return d.source.y;
+          })
+          .attr("x2", function(d) {
+            return d.target.x;
+          })
+          .attr("y2", function(d) {
+            return d.target.y;
+          });
+      }  
 
     });
 
@@ -1041,6 +1087,38 @@
       var regex = '.{1,' +width+ '}(\\s|$)' + (cut ? '|.{' +width+ '}|.+$' : '|\\S+?(\\s|$)');
       return str.match( RegExp(regex, 'g') ).join( brk );
     }
+
+    // tspan wrapping
+    function wrapLabels(text, width) {
+      text.each(function() {
+        var text = d3.select(this)
+        var words = text.text().split(/\s+/).reverse()
+        var word,
+            line = [],
+            lineNumber = 0,
+            lineHeight = 1.1, // ems
+            y = text.attr("y"),
+            x = text.attr("x"), 
+            dy = parseFloat(text.attr("dy")),
+            dx = parseFloat(text.attr("dx"))
+            
+            tspan = text.text(null).append("tspan").attr("x", x).attr("y", y).attr("dx", "0em").attr("dy", dy + "0em");
+
+        while (word = words.pop()) {
+            line.push(word);
+            tspan.text(line.join(" "));
+            if (tspan.node().getComputedTextLength() > width) {
+              line.pop();
+              tspan.text(line.join(" "));
+              line = [word];
+              tspan = text.append("tspan").attr("x", x).attr("y", y).attr("dx", "0em").attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+          }
+        }
+      });
+    }
+
+
+
     
     function wrap(text, labelWidth) {
       console.log("calling wrap");
