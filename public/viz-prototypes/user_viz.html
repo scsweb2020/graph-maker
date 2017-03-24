@@ -20,9 +20,10 @@
   <script src="data/authors.js"></script>
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <!-- <script src="d3-jetpack.js"></script> -->
-  <!-- <script src="d3plus.js"></script> -->
+  <!--<script src="http://d3plus.org/js/d3plus.min.js"></script> -->
   <script src="scripts/nouislider/nouislider.min.js"></script>
   <script src="scripts/wNumb.js"></script>
+  <script src="scripts/collide.js"></script>
 
   <!-- footer  -->
   <footer class="footer">
@@ -179,20 +180,57 @@
     //       .scale(1/2)
     //   );
 
-    // set the force-directed layout properties
-    simulation = d3.forceSimulation()
-      .force("link", d3.forceLink().id(function(d) {
-        return d.id;
-      }))
-      .force("charge", d3.forceManyBody().strength(function(d) {
-        // return -20;
-        return -19-Math.log(d.paperID.length)*250; // give greater repulsion for larger nodes
-      }))
-      .force("center", d3.forceCenter(width / 2, height / 2));
 
     // initialize the graph
     var g = svg.append("g");
     d3.json("data/graph.json", function(error, graph){
+      // var fontSizes = graph.nodes.map(d=>parseInt(6+Math.log(d.paperID.length)*10))
+      // console.log(fontSizes)
+      
+      var bboxes = []; //going to fill this with text bounding boxes as d3 puts titles on the nodes
+      graph.nodes.map(function (node) {
+        var fontSize = parseInt(6+Math.log(node.paperID.length)*10) + 'px';
+        var textSizeTest = svg.append("text").attr('font-size', fontSize).attr('class','size-check')
+        .text(function(d) {
+          var string = node.name
+          if (node.paperID.length >= 2) {
+            if (string.length > defaultTextLength) {
+              return string.substring(0,defaultTextLength+2)+'...';
+            } else {
+              return string
+            }
+          } else {
+            return string;
+          }
+        })
+        .attr('transform', function(d){
+         bboxes.push(this.getBBox()) 
+
+         return "translate(0,0)"
+       })
+       textSizeTest.remove()
+      })
+        bbox_array = bboxes.map(x=>[[-x.height,-x.width/2], [x.height,x.width/2]]) //way faster than return [[-bboxes[i].height/2,-bboxes[i].width/2], [[bboxes[i].height/2,bboxes[i].width/2]]]
+      //from center: [[topLeftX, topLeftY(- is up)], [bottomRightX, bottomRightY(+ is down)]]
+      var rectangleCollide = d3.bboxCollide(function (d,i) {
+          return bbox_array[i]
+          // return [[-70, -30], [70, 20]]
+        })
+        .strength(1)
+        .iterations(1)
+
+      // set the force-directed layout properties
+      simulation = d3.forceSimulation()
+        .force("link", d3.forceLink().id(function(d) {
+          return d.id;
+        }))
+        .force("charge", d3.forceManyBody().strength(function(d) {
+          // return -20;
+          return -19-Math.log(d.paperID.length)*250; // give greater repulsion for larger nodes
+        }))
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .force("collide", rectangleCollide)
+
 
       if (error) throw error;
 
@@ -312,20 +350,6 @@
         .selectAll("text")
         .data(graph.nodes)
         .enter().append("text")
-        // .tspans(function(d) {
-        //   var string = d.name
-        //   if (d.paperID.length >= 2) {
-        //     if (string.length > 75) {
-        //       var trunc = string.substring(0,77)+'...';
-        //       return d3.wordwrap(trunc, 25);
-        //     } else {
-        //       return d3.wordwrap(string, 25);
-        //     }
-        //   } else {
-        //     return "";
-        //   }
-        //   // return d3.wordwrap(text, 15);  // break line after 15 characters
-        // })
         .attr("class", "dataLabels") //see datalabels in CSS
         .attr("font-size", function(d) {
           return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
@@ -345,7 +369,20 @@
           } else {
             return "";
           }
-        });
+        })
+        .attr('transform', function(d){
+        //  bb = this.getBBox()
+        //  bboxes.push(bb)
+        //  console.log(bboxes)
+        //  svg.insert("rect","text")
+        //     .attr("x", bb.x)
+        //     .attr("y", bb.y)
+        //     .attr("width", bb.width)
+        //     .attr("height", bb.height)
+        //     .attr("fill", "pink");
+         return "translate(0,0)"
+       })
+       
 
       // d3.selectAll("text")
       //   .call(wrap)
