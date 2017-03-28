@@ -11,6 +11,7 @@
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.7.16/cytoscape.js"></script>
 </head>
 
 <body>
@@ -43,8 +44,9 @@
      </div>
    </footer>
 
-  <div class="totalContainer">
-    <div class="mainContainer">
+  <div class="totalContainer"  >
+    <!--Matt set visibility to hidden to see more of the graph during development-->
+    <div class="mainContainer" style="visibility: hidden">
       <div class="container1" id="tabs">
         <ul>
           <li><a id="tab-title-papers" href="#tabs-1">Papers <span id="tab-papers-badge" class="badge">0</span></a></li>
@@ -86,15 +88,13 @@
      </div>
    </div>
 
-    <!-- info modal  -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <!-- info modal: commented out for developement  -->
+    
+    <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
-            <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
-              <!-- <span aria-hidden="true">&times;</span> -->
-            <!-- </button> -->
           </div>
           <div class="modal-body">
             <p>The ACM Conference on Computer Supported Cooperative Work (<a href="http://cscw.acm.org" target="_blank">CSCW</a>) is the premier venue for presenting research in the design and use of technologies. The Human-Computer Interaction Institute at Carnegie Mellon University has a long history of collaborating with researchers and industrial professionals to address research problems and explore technical, social, material and theoretical applications that support collaborative work and life activities.</p>
@@ -102,11 +102,10 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-success" data-dismiss="modal">Get started!</button>
-            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
 
   <script>
 
@@ -183,12 +182,34 @@
 
     // initialize the graph
     var g = svg.append("g");
-    d3.json("data/graph.json", function(error, graph){
-      // var fontSizes = graph.nodes.map(d=>parseInt(6+Math.log(d.paperID.length)*10))
-      // console.log(fontSizes)
-      
+    d3.queue() //if you want to load more than one file
+    .defer(d3.json, 'data/graph.json')
+    .defer(d3.json, 'data/aggregate-cy-graph.json') 
+    .await(function(error, graph, cyGraph) {
+    //cyGraph is a reference cytoscape object and can be removed
+    var cyNodesFormat = graph.nodes.map(node => {
+      return {data: {id: node.id}}
+    });
+    var cyEdgesFormat = graph.links.map(link => {
+      return {data: {id: link.id, source: link.source, target: link.target}}
+    });
+
+    var cy = cytoscape({elements: cyNodesFormat.concat(cyEdgesFormat)})
+    var dijkstra = cy.elements().dijkstra('#7cc5b2db-fbe1-4d38-8450-8b65b2aa9094'); //root is 'Improve design work'
+
+    var distFromRoot = cy.nodes().map(ele => {
+      return dijkstra.distanceTo(ele);
+    });
+    var scaleY = d3.scaleLinear().domain(d3.extent(distFromRoot)).range([0,height]);
+    console.log(scaleY(0), scaleY(8))
+      // console.log(pathToJ, distToJ, cy.id())
       var bboxes = []; //going to fill this with text bounding boxes as d3 puts titles on the nodes
       graph.nodes.map(function (node) {
+
+        // if (node.name === "Obtain data from online crowds") {
+        //   node.fy = 0;
+        // }
+
         var fontSize = parseInt(6+Math.log(node.paperID.length)*10) + 'px';
         var textSizeTest = svg.append("text").attr('font-size', fontSize).attr('class','size-check')
         .text(function(d) {
@@ -217,7 +238,7 @@
           // return [[-70, -30], [70, 20]]
         })
         .strength(1)
-        .iterations(1)
+        .iterations(2)
 
       // set the force-directed layout properties
       simulation = d3.forceSimulation()
@@ -228,6 +249,9 @@
           // return -20;
           return -19-Math.log(d.paperID.length)*250; // give greater repulsion for larger nodes
         }))
+        .force("y", d3.forceY((d,i) => {
+          return scaleY(distFromRoot[i])
+        }) )
         .force("center", d3.forceCenter(width / 2, height / 2))
         .force("collide", rectangleCollide)
 
@@ -382,7 +406,27 @@
         //     .attr("fill", "pink");
          return "translate(0,0)"
        })
+       .call(d3.drag()
+          .on("start", dragstarted)
+          .on("drag", dragged)
+          .on("end", dragended));
        
+       function dragstarted(d) {
+          if (!d3.event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        }
+
+        function dragged(d) {
+          d.fx = d3.event.x;
+          d.fy = d3.event.y;
+        }
+
+        function dragended(d) {
+          if (!d3.event.active) simulation.alphaTarget(0);
+          d.fx = d.x;
+          d.fy = d.y;
+        }
 
       // d3.selectAll("text")
       //   .call(wrap)
