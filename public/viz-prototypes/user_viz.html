@@ -252,8 +252,10 @@
         .force("y", d3.forceY((d,i) => {
           return scaleY(distFromRoot[i])
         }) )
-        .force("center", d3.forceCenter(width / 2, height / 2))
-        .force("collide", rectangleCollide)
+        .force("x", d3.forceX().strength(.03) )
+        .force("center", d3.forceCenter(width / 2, (height / 2)+300 ))
+
+        // .force("collide", rectangleCollide)
 
 
       if (error) throw error;
@@ -382,6 +384,7 @@
         .attr('id', function(d){ return 'label' + d.id; })
         .attr("dy", ".15em")
         .attr("text-anchor","middle")
+        .attr("visbility","hidden")
         .text(function(d) {
           var string = d.name
           if (d.paperID.length >= 2) {
@@ -406,10 +409,7 @@
         //     .attr("fill", "pink");
          return "translate(0,0)"
        })
-       .call(d3.drag()
-          .on("start", dragstarted)
-          .on("drag", dragged)
-          .on("end", dragended));
+
        
        function dragstarted(d) {
           if (!d3.event.active) simulation.alphaTarget(0.3).restart();
