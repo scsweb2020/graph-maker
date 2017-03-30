@@ -1,0 +1,119 @@
+<head>
+  <script src="data/papers.js"></script>
+  <script src="data/edges.js"></script>
+  <script src="data/authors.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <!-- <script src="d3-jetpack.js"></script> -->
+  <!--<script src="http://d3plus.org/js/d3plus.min.js"></script> -->
+  <script src="scripts/nouislider/nouislider.min.js"></script>
+  <script src="scripts/wNumb.js"></script>
+  <script src="scripts/collide.js"></script>
+  <script src="scripts/mattWordWrap.js"></script>
+  <script src="https://d3plus.org/js/d3plus-text.v0.9.full.min.js"></script>
+
+</head>
+
+<body>
+    <svg>
+
+<g > 
+
+<circle cx="50" cy="50" r="50" fill="none" stroke="black" >
+
+.attr("text-anchor","middle")
+    //     .attr("dominant-baseline","middle")
+</circle>
+<text x="50px" dy="0" style="text-anchor: middle; dominant-baseline: alphabetic">
+        <tspan x="50" dy="1em">
+          hello
+        </tspan>
+        <tspan x="50" dy="1em">
+          hello
+        </tspan>
+      </text>
+</g>
+      
+    </svg>
+
+    <script>
+
+
+
+
+
+
+    // defaultTextLength = 20; // todo: may need to change this
+
+    // var svg = d3.select("body").append("svg").attr("height", 5000).attr("width", 1000),
+    //   width = +svg.attr("width"),
+    //   height = +svg.attr("height")
+
+    // d3.queue() //if you want to load more than one file
+    // .defer(d3.json, 'data/graph.json')
+    // .defer(d3.json, 'data/aggregate-cy-graph.json') 
+    // .await(function(error, graph, cyGraph) {
+    // bboxes = [];   
+
+
+    
+    // // graph.nodes.map(function (node, i) {
+
+    //     // var fontSize = parseInt(6+Math.log(node.paperID.length)*10) + 'px';
+    //     fontSize = "10px"
+    //     var textSizeTest = 
+        
+    //     svg.append("g") //text init
+    //     .selectAll("text")
+    //     .data(graph.nodes)
+    //     .enter()
+    //     .append("text")
+    //     .attr('y', (d,i) => 90 * i) 
+    //     .attr('x', 200)
+    //     .attr("text-anchor","middle")
+    //     .attr("dominant-baseline","middle")
+    //     .attr('font-size', fontSize)
+    //     .attr('class','size-check').style('font-family', "Open Sans")
+    //     .text(d => d.name)
+    //     .attr('dy', "1em") 
+    //     .call(wrap, 110)
+
+    //     svg.append("g") //text init
+    //     .selectAll("circle")
+    //     .data(graph.nodes)
+    //     .enter()
+    //     .append("circle")
+    //     .attr('cy', (d,i) => 90 * i) 
+    //     .attr('cx', 200)
+    //     .attr('r',60)
+    //     .attr('stroke', "black")
+    //     .attr('fill', "none")
+
+
+
+    //     .attr('transform', function(d){
+    //      bboxes.push(this.getBBox()) 
+
+    //      return "translate(0,0)"
+    //    })
+
+        // svg.append("rect")
+        // .attr("stroke", "grey")
+        // .attr("fill", "none")
+        // .attr("width",bboxes[i].width) ////from center: [[topLeftX, topLeftY(- is up)], [bottomRightX, bottomRightY(+ is down)]]
+        // .attr("height",bboxes[i].height)
+        // .attr('y', i*20 - bboxes[i].height)
+        // .attr('x', 0)
+
+
+      // })
+    // })
+    /**
+    @function textWidth
+    @desc Given a text string, returns the predicted pixel width of the string when placed into DOM.
+    @param {String|Array} text Can be either a single string or an array of strings to analyze.
+    @param {Object} [style] An object of CSS font styles to apply. Accepts any of the valid [CSS font property](http://www.w3schools.com/cssref/pr_font_font.asp) values.
+*/
+
+
+    </script>
+</body>
