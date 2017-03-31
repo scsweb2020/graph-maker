@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link href="scripts/nouislider/nouislider.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/user_viz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.7.16/cytoscape.js"></script>
+</head>
+
+<body>
+
+  <script src="data/papers.js"></script>
+  <script src="data/edges.js"></script>
+  <script src="data/authors.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="scripts/nouislider/nouislider.min.js"></script>
+  <script src="scripts/wNumb.js"></script>
+  <script src="scripts/collide.js"></script>
+
+  <!-- footer  -->
+  <footer class="footer">
+     <div class="container-fluid">
+       <div class="row">
+         <div class="system-name col-md-6 col-xs-6">
+           Knowledge Collider: CMU @ CSCW (2013-2017)
+         </div>
+         <div class="wordmarks col-md-6 col-xs-6 pull-right">
+           <img class="logo" src="assets/logo-hcii.png"></img>
+           <img class="logo" src="assets/CMU_Logo_Horiz_Red.jpg"></img>
+           <!-- <div class="info-icon"> -->
+           <span class="info-icon glyphicon glyphicon-info-sign" data-toggle="modal" data-target="#myModal"></span>
+           <!-- </div> -->
+         </div>
+       </div>
+     </div>
+   </footer>
+
+  <div class="totalContainer"  >
+    <!--Matt set visibility to hidden to see more of the graph during development-->
+    <div class="mainContainer" style="visibility: hidden">
+      <div class="container1" id="tabs">
+        <ul>
+          <li><a id="tab-title-papers" href="#tabs-1">Papers <span id="tab-papers-badge" class="badge">0</span></a></li>
+          <li><a id="tab-title-authors" href="#tabs-2">Authors <span id="tab-authors-badge" class="badge">0</span></a></li>
+        </ul>
+        <div id="tabs-1" class="tab-data" style="padding:10px;">
+          Click on a node to explore papers in the 'conceptual neighborhood' of the node
+        </div>
+        <div id="tabs-2" class="tab-data" style="padding:10px;">
+          Click on a node to explore authors in the 'conceptual neighborhood' of the node
+        </div>
+      </div>
+      <div class="neighborhood-size-control">
+         <label class="selectLabel">Show up to</label>
+         <select id="drop">
+            <option value="1">1st</option>
+            <option value="2">2nd</option>
+            <option value="3">3rd</option>
+         </select>
+         <label class="selectLabel"> degree connections</label>
+       </div>
+      <div class="year-filter">
+        <label class="yearFilter">Filter by year</label>
+        <div class="yearRange" id="slider">
+        </div>
+      </div>
+      <!-- <div class="ui-widget">
+        <div class="labelAuthors">
+          <label class ="labelClass" for="tags">Filter by author </label>
+        </div>
+        <input id="tags">
+      </div> -->
+       <div>
+         <button class="filterButton" id="clearfilter" type="button" onclick="clearFilter()">Clear All Filters</button>
+       </div>
+     </div> <!-- End info box container  -->
+     <div class="graphContainer">
+       <svg class="graph" width=1200 height=1000></svg>
+     </div>
+   </div>
+
+    <!-- info modal: commented out for developement  -->
+    
+    <!--<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Welcome!</h5>
+          </div>
+          <div class="modal-body">
+            <p>The ACM Conference on Computer Supported Cooperative Work (<a href="http://cscw.acm.org" target="_blank">CSCW</a>) is the premier venue for presenting research in the design and use of technologies. The Human-Computer Interaction Institute at Carnegie Mellon University has a long history of collaborating with researchers and industrial professionals to address research problems and explore technical, social, material and theoretical applications that support collaborative work and life activities.</p>
+            <p>This visualization leverages the <a href="" target="_blank">"Knowledge Collider"</a> (an ongoing research project in the HCII) to provide a unique way of exploring CMU research at CSCW. Rather than exploring papers or authors directly, click around to explore <strong>research problems (and associated solutions)</strong> that CMU researchers have examined over the last 5 years. As you explore, you'll discover the people and papers associated with those problems/solutions.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-dismiss="modal">Get started!</button>
+          </div>
+        </div>
+      </div>
+    </div>-->
+<script src="src/globalVars.js"></script>
+<script src="src/nodeAttrFuncs.js"></script>
+<script src="src/textAttrFuncs.js"></script>
+<script src="src/linkAttrFuncs.js"></script>
+<script src="src/calcBBoxes.js"></script>
+<script src="src/distFromRoot.js"></script>
+<script src="src/windowSvgSetup.js"></script>
+<script src="src/initGraph.js"></script>
+<script src="src/createSlider.js"></script>
+<script src="src/neighboring.js"></script>
+<script src="src/focus.js"></script>
+<script src="src/filterByYear.js"></script>
+<script src="src/paperDetails.js"></script>
+<script src="src/authorDetails.js"></script>
+<script src="src/filterByNeighbors.js"></script>
+<script src="src/clearFilter.js"></script>
+<script src="src/filterByFocus.js"></script>
+<script src="src/clearFocus.js"></script>
+<script src="src/resetBaseLayer.js"></script>
+<script src="src/drawHighlightedNodes.js"></script>
+<script src="src/filterLinks.js"></script>
+<script src="src/newPaper.js"></script>
+<script src="src/newAuthor.js"></script>
+<script src="src/findOne.js"></script>
+</body>

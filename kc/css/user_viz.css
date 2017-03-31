@@ -1,0 +1,260 @@
+html {
+  /*position: relative;*/
+  /*min-height: 100%;*/
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-top: 60px;
+}
+
+#myModal {
+  font-family: "Open Sans";
+}
+
+#exampleModalLabel {
+  font-size: 24px;
+}
+
+.footer {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+  /*z-index: -5*/
+}
+
+.system-name {
+  font-family: "Open Sans";
+  font-size: 24px;
+  vertical-align: middle;
+  padding: 12px 8px;
+  /*padding-top: .75em;*/
+  /*padding-bottom: .75em;*/
+}
+
+.wordmarks {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.logo {
+  margin-top: -16px;
+  margin-right: 5px;
+  height: 32px;
+}
+
+.info-icon {
+  /*position: fixed;*/
+  /*bottom: 0;*/
+  /*left: 0;*/
+  font-size: 32px;
+  /*padding: 8px;*/
+  cursor: pointer;
+  /*padding-top: 5px;*/
+  /*z-index: 9999999;*/
+  /*background-color: white;*/
+}
+
+#myModal {
+  z-index: 2147483647;
+}
+
+.links line {
+    stroke: #aaa;
+  }
+
+  .nodes circle {
+    pointer-events: all;
+    stroke: none;
+    stroke-width: 40px;
+  }
+
+  .active {
+    fill: yellow;
+  }
+
+.dataLabels {
+  font-family: "Open Sans";
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  pointer-events: none;
+  /*visibility: hidden;*/
+}
+
+div.tooltip {
+  font-family: "Open Sans";
+  position: absolute;
+  text-align: center;
+  padding: 2px;
+  font: 12px;
+  background: lightsteelblue;
+  border: 0px;
+  border-radius: 8px;
+  pointer-events: none;
+}
+
+.totalContainer{
+     position: relative;
+    padding-top: 10px;
+    padding-left: 18px;
+}
+
+.mainContainer{
+    position: absolute;
+    top: 65px;
+    float: left;
+}
+
+.graphContainer{
+    position: absolute;
+    float: left;
+    top: 60px;
+    z-index: -1;
+}
+
+.container1{
+    position: absolute;
+    left: 0px;
+}
+
+
+
+.ui-widget{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: "Open Sans";
+    max-width: 300px;
+    margin: auto;
+
+    border-style: solid;
+    border-color: black;
+      border-width: 1px 0.2px 1px 0.2px;
+}
+
+#tabs{
+    font-family: "Open Sans";
+    max-width: 300px;
+    margin: auto;
+    border-style: solid;
+    border-color: black;
+     border-width: 1px 0.2px 1px 0.2px;
+     /*overflow: auto;*/
+}
+
+#tabs-1 {
+  overflow: auto;
+}
+
+#tabs-2 {
+  overflow: auto;
+}
+
+.tab-data {
+  padding: 2px;
+}
+
+.labelAuthors{
+         font-family: "Open Sans";
+    text-align: center;
+    font-weight: bold;
+}
+
+.mainContainer{
+    width: 300px;
+    height: auto;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 1px 1px 1px;
+    background-color: #e8e8e8;
+    padding-bottom: 20px;
+
+}
+
+.yearRange{
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 20px;
+
+}
+
+.filterButton{
+    margin-left: 90px;
+    margin-top: 20px;
+    background-color: #067; /* CMUred */
+
+    border: none;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.year-filter {
+  margin: auto;
+  text-align: center;
+  padding: 8px;
+  border-bottom: solid 1px black;
+}
+
+.yearFilter{
+
+     font-weight: bold;
+     /*margin-top: 20px;*/
+     /*margin-left: 110px;*/
+     font-family: "Open Sans";
+}
+
+.neighborhood-size-control {
+  padding: 8px;
+  border-bottom: solid 1px black;
+}
+
+.selectLabel {
+  font-weight: bold;
+  font-family: "Open Sans";
+}
+
+.highlighted{
+    stroke: orange;
+}
+
+/*
+For info box
+*/
+
+.node-metadata {
+  margin-bottom: 2px;
+  border: 0.5px solid #aaa;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.selected {
+  background-color: orange;
+}
+
+.focused {
+  border: 2px solid orange;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 0.75em;
+  margin-bottom: 1px;
+}
+
+.meta {
+  font-style: italic;
+  font-size: 0.5em;
+}
+
+.meta a {
+  text-decoration: underline;
+}

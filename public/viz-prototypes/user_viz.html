@@ -408,32 +408,32 @@ radius = 40;
         .attr("d", "M0,-5L10,0L0,5");
 
       // initialize + draw node labels ***************************************************************
-      var text = g.append("g") //text init
-        .attr("class", "labels")
-        .selectAll("text")
-        .data(graph.nodes)
-        .enter().append("text")
-        .attr("class", "dataLabels") //see datalabels in CSS
-        .attr("font-size", function(d) {
-          return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
-        })
-        .attr("dx", 6)
-        .attr('id', function(d){ return 'label' + d.id; })
-        .attr("dy", ".15em")
-        .attr("text-anchor","middle")
-        .style("opacity",0) // going to adjust opacity on node click
-        .text(function(d) {
-          var string = d.name
-          if (d.paperID.length >= 2) {
-            if (string.length > defaultTextLength) {
-              return string.substring(0,defaultTextLength+2)+'...';
-            } else {
-              return string
-            }
-          } else {
-            return "";
-          }
-        })
+      // var text = g.append("g") //text init
+      //   .attr("class", "labels")
+      //   .selectAll("text")
+      //   .data(graph.nodes)
+      //   .enter().append("text")
+      //   .attr("class", "dataLabels") //see datalabels in CSS
+      //   .attr("font-size", function(d) {
+      //     return parseInt(6+Math.log(d.paperID.length)*10).toString() + 'px';
+      //   })
+      //   .attr("dx", 6)
+      //   .attr('id', function(d){ return 'label' + d.id; })
+      //   .attr("dy", ".15em")
+      //   .attr("text-anchor","middle")
+      //   .style("opacity",0) // going to adjust opacity on node click
+      //   .text(function(d) {
+      //     var string = d.name
+      //     if (d.paperID.length >= 2) {
+      //       if (string.length > defaultTextLength) {
+      //         return string.substring(0,defaultTextLength+2)+'...';
+      //       } else {
+      //         return string
+      //       }
+      //     } else {
+      //       return "";
+      //     }
+      //   })
 
       // apply force-directed layout
       simulation
