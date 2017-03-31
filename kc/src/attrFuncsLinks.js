@@ -22,20 +22,20 @@ function linkInit(selection){
         return "url(#arrow)";
       }
     })
-    .attr("opacity", 0.25);
+    .attr("opacity", 0.6);
 }
 
 function linkSelected(selection){
     selection.transition()
         .duration(toggleTime)
-        .style("opacity", 0.5)
+        .style("opacity", 1)
         .style("stroke-width", "3px")
 }
 
 function linkReset(selection){
     selection.transition()
         .duration(toggleTime)
-        .style("opacity", 0.25)
+        .style("opacity", 0.6)
         .style("stroke-width", "1px")
         .style("stroke", function(d){
           if (d.type=="paper-edge") {

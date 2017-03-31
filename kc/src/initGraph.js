@@ -1,9 +1,10 @@
 plotControl = {
   circles: true,
   links: true,
-  text: true,
+  text: false,
   rects:false,
-  pauseTime: 1000
+  divs: true,
+  pauseTime: 25000
 };
 
 var g = svg.append("g");
@@ -16,7 +17,7 @@ d3.queue() //if you want to load more than one file
   bboxes = calcBBoxes(graph);
   bbox_array = bboxes.map(x => [[-x.width /2, -x.height * .6], [x.width /2, x.height *.6]]) // bbox collision in filterByNeighbors needs this
 
-  radius = 40;
+  radius = 30;
   // set the force-directed layout properties
   simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function (d) {
@@ -24,18 +25,20 @@ d3.queue() //if you want to load more than one file
     }))
     .force("charge", d3.forceManyBody().strength(function (d) {
       // return -20;
-      return -19 - Math.log(d.paperID.length) * 250; // give greater repulsion for larger nodes
+      return -19 - Math.log(d.paperID.length) * 250 * 70; // give greater repulsion for larger nodes
     }))
     .force("y", d3.forceY((d, i) => {
       return scaleY(distFromRootArr[i])
     }).strength(1))
-    .force("x", d3.forceX())
+    .force("x", d3.forceX().strength(.8))
     .force("center", d3.forceCenter(width / 2, (height / 2) + 300))
     .velocityDecay(.6)
-    .force("collide", d3.forceCollide(radius))
+    .force("collide", d3.forceCollide(radius).strength(1))
 
 
   if (error) throw error;
+
+
 if (plotControl.links) {
   // initialize and draw edges
   var link = g.append("g")
@@ -91,6 +94,32 @@ if (plotControl.rects) {
     .call(textInit)
   }
 
+  if (plotControl.divs){
+    var divs = g.append("g")
+    .attr("class", "divs")
+    .selectAll("foreignObject")
+    .data(graph.nodes)
+    .enter().append("foreignObject")
+    .attr("width", 50) //2 * node radius
+    .attr("height", 50)
+    .attr('transform','translate(-25,-15)')//offset for circle radius
+
+  divs  
+  .append("xhtml:div")
+      .attr('height', "100%")
+
+  // text-align: center;
+  //   line-height: 200px;
+    .style('line-height', '50px')
+     .style('border-radius','100%')   
+    .style('text-align','center')
+    .style("font", "6px 'Helvetica Neue'")
+    .style("color", "white")
+    .style('pointer-events', 'none')
+    .html((d,i) =>  d.name );
+}
+
+
   // apply force-directed layout
   simulation
     .nodes(graph.nodes)
@@ -134,6 +163,12 @@ if (plotControl.rects) {
     rects.attr("x", function(d,i) { return d.x - bboxes[i].width/2})
         .attr("y", function(d,i) {  return d.y -  bboxes[i].height/2});    
     }
+
+    if (plotControl.divs){
+    divs.attr("x", function (d) { return d.x; })
+      .attr("y", function (d) { return d.y; });
+    }
+
   }
 
 });

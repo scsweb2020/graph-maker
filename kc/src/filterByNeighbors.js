@@ -10,15 +10,15 @@ function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
         return bbox_array[i]
     }).strength(.1).iterations(1)
 
-    simulation.force("collide", rectangleCollide.strength(1).iterations(15))
-        .force("charge", null)
-        .force("y", null)
-        .force("x", null)
-        .force("center", null)
-        .velocityDecay(.8)
-        .alphaDecay(.7)
-        .alpha(1)
-        .restart()
+    // simulation.force("collide", rectangleCollide.strength(1).iterations(15))
+    //     .force("charge", null)
+    //     .force("y", null)
+    //     .force("x", null)
+    //     .force("center", null)
+    //     .velocityDecay(.8)
+    //     .alphaDecay(.7)
+    //     .alpha(1)
+    //     .restart()
 
     // draw focus node //orange dashes on selected node
     d3.select("#id" + focusNodeID).transition()

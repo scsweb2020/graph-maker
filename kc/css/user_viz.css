@@ -258,3 +258,16 @@ For info box
 .meta a {
   text-decoration: underline;
 }
+
+span {
+    line-height: normal;
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.content {
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+}
