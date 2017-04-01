@@ -62,6 +62,7 @@ if (plotControl.links) {
 
 if (plotControl.rects) {
   var rects = g.append("g")
+  .attr("class", "nodes")
   .selectAll("rect")
   .data(graph.nodes)
   .enter().append("rect")
@@ -76,6 +77,7 @@ if (plotControl.rects) {
     // return bboxes[i].height;
     return bbox_array[i][1][1]*2
   })
+  .call(nodeInit)
 }
 
   // initialize and draw nodes
@@ -106,7 +108,6 @@ if (plotControl.rects) {
     .selectAll("text")
     .data(graph.nodes)
     .enter().append("text")
-    .attr("class", "dataLabels")
     .call(textInit)
   }
 
@@ -138,9 +139,7 @@ if (plotControl.rects) {
       console.log(d.name.length)
       return lengthRad + "px 'Helvetica Neue'"
     }
-    
-    
-    
+
     )
     .style("color", "white")
     .style('pointer-events', 'none')
