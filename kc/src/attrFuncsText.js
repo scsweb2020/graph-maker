@@ -1,13 +1,12 @@
 function textInit(selection){
     selection
-    .attr("class", "dataLabels")
     .attr("font-size", d => sizeText(d, 'init'))
-    .attr("dx", 6)
     .attr('id', function (d) { return 'label' + d.id; })
-    .attr("dy", ".15em")
-    .attr("text-anchor", "middle")
-    .text(d => modText(d))
+    .attr('dy', "1em") 
+    .text(d => d.name)
+    .call(wrap, 200)
   }
+
 
   function textSelected(selection){
         selection

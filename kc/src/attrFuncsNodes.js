@@ -1,7 +1,11 @@
+function nodeSizeDefault(d) {
+      var lengthRad = defaultRadius + Math.log(d.paperID.length) * 50;
+      return lengthRad < 30 ? 30 : lengthRad;
+}
+
 function nodeInit(selection) {
     selection
-.attr('r', 30)    
-    // .attr("r",
+    .attr("r", d => nodeSizeDefault(d)
     // function (d) {
     //   if (d.type == 'action' || d.type == 'why-hard')
     //     // return defaultRadius;
@@ -9,7 +13,7 @@ function nodeInit(selection) {
     //   if (d.type == 'paper')
     //     return topicRadius;
     // }
-    // )
+    )
     .attr("class", "dataNodes")
     .attr('id', function (d) { return 'id' + d.id; })
     .style('opacity', .8
@@ -68,7 +72,7 @@ function nodesSelected(selection){
             selection
             .transition()
             .duration(toggleTime)
-            .attr('r', 30) 
+            .attr('r', d => nodeSizeDefault(d)) 
             .attr('stroke', 'black')
         //     .attr("r", function (d) { //click radius change
         //     if (d.type == 'paper') {
@@ -108,7 +112,7 @@ function nodeReset(selection, purpose){
         //   }
         // }
         )
-        .attr('r', 30) 
+        .attr('r', d => nodeSizeDefault(d)) 
         // .attr("r", function(d){ 
         //    if(d.type=='action' || d.type=='why-hard')
         //    return defaultRadius+Math.log(d.paperID.length)*10;

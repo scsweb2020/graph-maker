@@ -1,9 +1,9 @@
 plotControl = {
-  circles: true,
+  circles: false,
   links: true,
-  text: false,
-  rects:false,
-  divs: true,
+  text: true,
+  rects:true,
+  divs: false,
   pauseTime: 25000
 };
 
@@ -15,7 +15,17 @@ d3.queue() //if you want to load more than one file
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);
 
   bboxes = calcBBoxes(graph);
-  bbox_array = bboxes.map(x => [[-x.width /2, -x.height * .6], [x.width /2, x.height *.6]]) // bbox collision in filterByNeighbors needs this
+  bboxes.forEach((box,i) => {
+    graph.nodes[i].boxWidth = box.width;
+    graph.nodes[i].boxHeight = box.height;
+  })
+  bbox_array = bboxes.map(x => [[-x.width /2, -x.height/2], [x.width /2, x.height/2]]) // bbox collision in filterByNeighbors needs this
+  rectangleCollide = d3.bboxCollide(function (d,i) {
+          return bbox_array[i]
+          // return [[-70, -30], [70, 20]]
+        })
+        .strength(.1)
+        .iterations(1)
 
   radius = 30;
   // set the force-directed layout properties
@@ -33,7 +43,7 @@ d3.queue() //if you want to load more than one file
     .force("x", d3.forceX().strength(.8))
     .force("center", d3.forceCenter(width / 2, (height / 2) + 300))
     .velocityDecay(.6)
-    .force("collide", d3.forceCollide(radius).strength(1))
+    .force("collide", rectangleCollide)
 
 
   if (error) throw error;
@@ -58,9 +68,14 @@ if (plotControl.rects) {
   .attr("stroke", "grey")
   .attr("fill", "none")
   .attr("width",(d,i) =>{ 
+    console.log(d)
+    // return bboxes[i].width;
     return bbox_array[i][1][0]*2
     }) ////from center: [[topLeftX, topLeftY(- is up)], [bottomRightX, bottomRightY(+ is down)]]
-  .attr("height",(d,i) =>{ return bbox_array[i][1][1]*2})
+  .attr("height",(d,i) =>{ 
+    // return bboxes[i].height;
+    return bbox_array[i][1][1]*2
+  })
 }
 
   // initialize and draw nodes
@@ -91,6 +106,7 @@ if (plotControl.rects) {
     .selectAll("text")
     .data(graph.nodes)
     .enter().append("text")
+    .attr("class", "dataLabels")
     .call(textInit)
   }
 
@@ -100,9 +116,12 @@ if (plotControl.rects) {
     .selectAll("foreignObject")
     .data(graph.nodes)
     .enter().append("foreignObject")
-    .attr("width", 50) //2 * node radius
-    .attr("height", 50)
-    .attr('transform','translate(-25,-15)')//offset for circle radius
+    .attr("width", d => nodeSizeDefault(d)*2) //2 * node radius
+    .attr("height", d => nodeSizeDefault(d)*2)
+    .attr('transform',d =>{
+      var nodeSize = nodeSizeDefault(d);
+      return  'translate(-' + nodeSize + ',-' + nodeSize/2 + ')'
+    })//offset for circle radius
 
   divs  
   .append("xhtml:div")
@@ -113,7 +132,16 @@ if (plotControl.rects) {
     .style('line-height', '50px')
      .style('border-radius','100%')   
     .style('text-align','center')
-    .style("font", "6px 'Helvetica Neue'")
+    .style("font", (d,i) => {
+      var nodeSize = nodeSizeDefault(d)
+      lengthRad = nodeSize <= 30 ? 6 : 20;
+      console.log(d.name.length)
+      return lengthRad + "px 'Helvetica Neue'"
+    }
+    
+    
+    
+    )
     .style("color", "white")
     .style('pointer-events', 'none')
     .html((d,i) =>  d.name );
@@ -155,8 +183,13 @@ if (plotControl.rects) {
     }
     
     if (plotControl.text) {
-    text.attr("x", function (d) { return d.x; })
-      .attr("y", function (d) { return d.y; });
+    text.attr("x", 0 )
+        .attr("y", 0 )
+        .attr('transform', (d,i) => {
+          var moveX = (d.x-(d.boxWidth/2)) + d.boxWidth*.01;
+          var moveY = (d.y-(d.boxHeight/2));
+          return "translate(" + moveX + ',' + moveY + ")"
+        }) 
     }
 
     if (plotControl.rects) {
