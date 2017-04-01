@@ -69,7 +69,6 @@ if (plotControl.rects) {
   .attr("stroke", "grey")
   .attr("fill", "none")
   .attr("width",(d,i) =>{ 
-    console.log(d)
     // return bboxes[i].width;
     return bbox_array[i][1][0]*2
     }) ////from center: [[topLeftX, topLeftY(- is up)], [bottomRightX, bottomRightY(+ is down)]]

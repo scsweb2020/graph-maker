@@ -50,7 +50,7 @@ function neighboring(d) {
 
         // get paper details
         var meta = paperDetails(listOfNodes);
-
+        console.log(meta)
         // update the viz
         filterByNeighbors(focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta);
 

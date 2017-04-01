@@ -1,20 +1,18 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <head>
-    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <link href="css/jquery-ui.css" rel="stylesheet">
     <link href="scripts/nouislider/nouislider.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
     <link rel="stylesheet" href="css/user_viz.css">
+    <link href="css/jquery-ui.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.7.16/cytoscape.js"></script>
-    <script src="https://d3plus.org/js/d3plus-text.v0.9.full.min.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.7.16/cytoscape.js"></script>
 </head>
 
 <body>
@@ -47,8 +45,7 @@
      </div>
    </footer>
 
-  <div class="totalContainer"  >
-    <!--Matt set visibility to hidden to see more of the graph during development-->
+  <div class="totalContainer">
     <div class="mainContainer">
       <div class="container1" id="tabs">
         <ul>
@@ -76,20 +73,21 @@
         <div class="yearRange" id="slider">
         </div>
       </div>
-       <div class="ui-widget">
+      <!-- <div class="ui-widget">
         <div class="labelAuthors">
           <label class ="labelClass" for="tags">Filter by author </label>
         </div>
         <input id="tags">
-      </div> 
+      </div> -->
        <div>
          <button class="filterButton" id="clearfilter" type="button" onclick="clearFilter()">Clear All Filters</button>
        </div>
      </div> <!-- End info box container  -->
      <div class="graphContainer">
-       <svg class="graph" width=1200 height=2000></svg>
+       <svg class="graph" width=1200 height=1000></svg>
      </div>
    </div>
+
 
     <!-- info modal: commented out for developement  -->
 <!--    
@@ -110,12 +108,13 @@
       </div>
     </div>-->
 <script src="src/globalVars.js"></script>
+<script src="src/windowSvgSetup.js"></script>
+
 <script src="src/attrFuncsNodes.js"></script>
 <script src="src/attrFuncsText.js"></script>
 <script src="src/attrFuncsLinks.js"></script>
 <script src="src/calcBBoxes.js"></script>
 <script src="src/distFromRoot.js"></script>
-<script src="src/windowSvgSetup.js"></script>
 <script src="src/initGraph.js"></script>
 <script src="src/createSlider.js"></script>
 <script src="src/neighboring.js"></script>
@@ -133,4 +132,6 @@
 <script src="src/newPaper.js"></script>
 <script src="src/newAuthor.js"></script>
 <script src="src/findOne.js"></script>
+<script src="src/unused.js"></script>
+
 </body>

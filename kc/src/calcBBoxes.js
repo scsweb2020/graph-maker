@@ -14,6 +14,5 @@
             return "translate(0,0)"
         })
         textSizeTest.remove()
-        console.log(bboxes)
     return bboxes;
   }
