@@ -16,6 +16,8 @@ cy.nodes().forEach(function(n) {
         distances.push(shortest_to_root.distance);
       }
     });
+    distances = distances.sort(function(a, b) { return a-b; });
+    console.log("distances for " + node_id + ": " + distances);
     let total = 0;
     for(let i = 0; i < distances.length; i++) {
         total += distances[i];
@@ -23,7 +25,11 @@ cy.nodes().forEach(function(n) {
     let avg = total/distances.length;
     console.log(node_id + " avg distance from root = " + avg);
     cy.$('#' + node_id).data("avg_distance_from_root", avg);
+    let min = distances[0]
+    console.log(node_id + " min distance from root = " + min);
+    cy.$('#' + node_id).data("min_distance_from_root", min);
   } else {
     cy.$('#' + node_id).data("avg_distance_from_root", 0);
+    cy.$('#' + node_id).data("min_distance_from_root", 0);
   }
 });
