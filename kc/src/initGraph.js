@@ -11,6 +11,7 @@ var g = svg.append("g");
 d3.queue() //if you want to load more than one file
 .defer(d3.json, 'data/graph.json')
 .await(function (error, graph) {
+  console.log('graph',graph)
   var distFromRootArr = distFromRoot(graph); //lots hardcoded
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);
 
@@ -135,7 +136,6 @@ if (plotControl.rects) {
     .style("font", (d,i) => {
       var nodeSize = nodeSizeDefault(d)
       lengthRad = nodeSize <= 30 ? 6 : 20;
-      console.log(d.name.length)
       return lengthRad + "px 'Helvetica Neue'"
     }
 
@@ -184,6 +184,7 @@ if (plotControl.rects) {
     text.attr("x", 0 )
         .attr("y", 0 )
         .attr('transform', (d,i) => {
+          console.log(d)
           var moveX = (d.x-(d.boxWidth/2)) + d.boxWidth*.01;
           var moveY = (d.y-(d.boxHeight/2));
           return "translate(" + moveX + ',' + moveY + ")"
