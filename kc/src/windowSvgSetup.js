@@ -36,7 +36,7 @@
       height = +svg.attr("height")
 
     zoom = d3.zoom()
-      .scaleExtent([1 / 2, 4])
+      .scaleExtent([1 / 10, 4])
       .on("zoom", zoomed);
 
     function zoomed() {
