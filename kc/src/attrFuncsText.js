@@ -6,7 +6,7 @@ function textInit(selection){
     .style('opacity', d => d.paperID.length >= 3 ? .7 : 0)
     .attr("font-size", d => sizeText(d, 'init'))
     .attr('id', function (d) { return 'label' + d.id; })
-    .attr('dy', "1em") 
+    .attr('dy', "1em")
     .attr('fill', (d,i) =>{
       if (d.type === 'action' || d.type === 'paper'){
           return 'white'
@@ -16,7 +16,7 @@ function textInit(selection){
 
     })
     .text(d => d.name)
-    .call(wrap, 250)
+    .call(wrap, 125)
   }
 
 
@@ -40,7 +40,7 @@ function textReset(selection, purpose){
         .style('opacity', d => d.paperID.length >= 3 ? .4 : 0)
     //         .attr("font-size", d => sizeText(d, 'init'))
     // .attr('id', function (d) { return 'label' + d.id; })
-    // .attr('dy', "1em") 
+    // .attr('dy', "1em")
     // .text(d => d.name)
     // .call(wrap, 200)
     //     .style("opacity", function(d) {
@@ -101,4 +101,3 @@ function sizeText(d, state) {
             }
     }
 }
-
