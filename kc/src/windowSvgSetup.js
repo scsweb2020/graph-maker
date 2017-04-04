@@ -49,6 +49,6 @@
       .style("fill", "none")
       .style("pointer-events", "all")
       .call(d3.zoom()
-        .scaleExtent([1/2, 4])
+        .scaleExtent([1/10, 4])
         .on("zoom", zoomed)
       );
