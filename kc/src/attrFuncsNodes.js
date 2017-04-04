@@ -7,6 +7,10 @@ function nodeSizeDefault(d) {
 function nodeInit(selection) {
     selection
     .attr("class", "dataNodes")
+    .classed("selected", (d,i) => {
+      d.selected = false;
+      return d.selected
+    })
     .attr('id', function (d) { return 'id' + d.id; })
     .style('opacity', d => d.paperID.length >= 3 ? .7 : 0)
     .style("fill", function (d) {
@@ -45,6 +49,10 @@ function nodeInit(selection) {
 function nodesSelected(selection){
   console.log('node selection',selection)
             selection
+            .classed("selected", (d,i) => {
+                  d.selected = true;
+                  return d.selected
+                })
             .transition()
             .duration(toggleTime)
             // .attr('r', d => nodeSizeDefault(d)) 
@@ -66,6 +74,10 @@ function nodesSelected(selection){
 
 function nodeReset(selection, purpose){
   selection
+    .classed("selected", (d,i) => {
+                  d.selected = false;
+                  return d.selected
+                })
     .transition()
         .duration(toggleTime)
         .style('opacity', d => d.paperID.length >= 3 ? .4 : 0)
