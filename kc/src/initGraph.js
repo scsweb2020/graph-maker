@@ -22,15 +22,10 @@ console.log(d3.extent(distFromRootArr))
   })
   bbox_array = bboxes.map(x => [[-x.width /2, -x.height/2], [x.width /2, x.height/2]]) // bbox collision in filterByNeighbors needs this
   rectangleCollide = d3.bboxCollide(function (d,i) {
-          if (d.selected){
-            return bbox_array[i]; 
-          } else {
-            var squareSize = 7;
-            return [[-squareSize, -squareSize], [squareSize, squareSize]]
-          }
+          return bbox_array[i]
         })
-        .strength(1)
-        .iterations(3)
+        .strength(.1)
+        .iterations(1)
 
   radius = 30;
   // set the force-directed layout properties

@@ -96,8 +96,6 @@ function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
     // draw related labels (inlcuding paper labels)
     var labelSelector = labels + "," + metaPaperLabels.toString();
     d3.selectAll(labelSelector).call(textSelected)
-
-    simulation.alpha(1).restart()
 }
 
 function resetBaseLayer(purpose) {
