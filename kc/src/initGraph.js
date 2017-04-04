@@ -38,17 +38,26 @@ console.log(d3.extent(distFromRootArr))
     .force("link", d3.forceLink().id(function (d) {
       if (!d.id) debugger
       return d.id;
-    }))
+    })
+      .strength(function(d) {
+        if (d.type == "analogy") {
+          return 0;
+        } else {
+          return 1;
+        }
+      }))
     .force("charge", d3.forceManyBody().strength(function (d) {
       if (!d.paperID.length) debugger
-      return -19 - Math.log(d.paperID.length) * 250 * 70; // give greater repulsion for larger nodes
+      // return -19 - Math.log(d.paperID.length) * 250 * 70; // give greater repulsion for larger nodes
+      return -19 - Math.log(d.paperID.length) * 250 * 4; // give greater repulsion for larger nodes
     }))
-    .force("y", d3.forceY((d, i) => {
-            if (isNaN(scaleY(distFromRootArr[i]))) debugger
-
-      return scaleY(distFromRootArr[i])
-    }).strength(1))
-    .force("x", d3.forceX().strength(.8))
+    // .force("y", d3.forceY().strength(.5))
+    // .force("y", d3.forceY((d, i) => {
+    //         if (isNaN(scaleY(distFromRootArr[i]))) debugger
+    //
+    //   return scaleY(distFromRootArr[i])
+    // }).strength(1))
+    // .force("x", d3.forceX().strength(.8))
     .force("center", d3.forceCenter(width / 2, (height / 2) + 300))
     .velocityDecay(.6)
     .force("collide", rectangleCollide)
@@ -119,7 +128,7 @@ if (plotControl.rects) {
   // setTimeout(() => { //todo: fix position for unselected nodes and restart
   //   simulation.stop()
   //   d3.selectAll('circle').attr('---', (d, i) => {
-  //     //fix position of all nodes 
+  //     //fix position of all nodes
   //     d.fx = d.x;
   //     d.fy = d.y;
   //   })
@@ -135,28 +144,28 @@ if (plotControl.rects) {
       .attr("x2", function (d) { return d.target.x; })
       .attr("y2", function (d) { return d.target.y; });
     }
-    
+
     if (plotControl.circles) {
     node
       .attr("cx", function (d) { return d.x; })
       .attr("cy", function (d) { return d.y; });
     }
-    
+
     if (plotControl.text) {
     text.attr("x", 0 )
         .attr("y", 0 )
         .attr('transform', (d,i) => {
           var moveX = (d.x-(d.boxWidth/2)) + d.boxWidth*.01;
           var moveY = (d.y-(d.boxHeight/2));
-          
+
           return "translate(" + moveX + ',' + moveY + ")"
-        }) 
+        })
     }
 
     if (plotControl.rects) {
-    rects.attr("x", function(d,i) { 
+    rects.attr("x", function(d,i) {
       return d.x - bboxes[i].width/2;})
-        .attr("y", function(d,i) {  return d.y -  bboxes[i].height/2});    
+        .attr("y", function(d,i) {  return d.y -  bboxes[i].height/2});
     }
 
     // if (plotControl.divs){
