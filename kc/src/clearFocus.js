@@ -2,9 +2,7 @@
 function clearFocus(focusNodeID) {
 
     $('.node-metadata').removeClass("selected");
-
     resetBaseLayer("transition");
-
     drawHighlightedNodes();
 
     // make sure the active papers remain visible

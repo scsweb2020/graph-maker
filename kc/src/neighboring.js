@@ -1,13 +1,13 @@
-function neighboring(d) {
+function neighboring(d) { //only function called on nodeClick
 
     lastClickedNodeID = d.id;
-
     var nodeID = d.id;
     focusNodeID = d.id;
 
     // grab related nodes
     var listOfNodes;
-    d3.json("data/node_neighborhoods.json", function (d) {
+    // d = node_neighborhoods;
+    d3.json("data/node_neighborhoods.json", function (d) { //todo: don't load on every click
         if (document.getElementById("drop").value == '1') {
             listOfNodes = d[nodeID][1];
         }
@@ -50,13 +50,57 @@ function neighboring(d) {
 
         // get paper details
         var meta = paperDetails(listOfNodes);
-        console.log(meta)
+        console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )    
         // update the viz
+
         filterByNeighbors(focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta);
 
         // update author details
         authorDetails(meta['authors']);
-
+        // debugger
     });
 
+}
+
+function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
+
+    resetBaseLayer("transition");
+
+
+    // draw related nodes
+
+    d3.selectAll(nodes).call(nodesSelected)
+
+    // draw focus node //orange dashes on selected node
+    d3.select("#id" + focusNodeID).transition()
+        .style("opacity", 1)
+        .style("stroke-dasharray", ("5,4"))
+        .style("stroke", "orange")
+        .style("stroke-width", "2px");
+
+    // draw related links. selected links get thicker and darker
+    d3.selectAll(links).call(linkSelected)
+
+    // show the papers
+    var metaPaperIDs = [];
+    var metaPaperLabels = [];
+    meta.papers.forEach(function (p) {
+        metaPaperIDs.push("#id" + p);
+        metaPaperLabels.push("#label" + p);
+    });
+
+    // d3.selectAll(metaPaperIDs.toString())
+    //     .transition()
+    //     .style("opacity", 1);
+
+    // draw related labels (inlcuding paper labels)
+    var labelSelector = labels + "," + metaPaperLabels.toString();
+    d3.selectAll(labelSelector).call(textSelected)
+}
+
+function resetBaseLayer(purpose) {
+    console.log("calling reset base layer");
+    d3.selectAll(".dataNodes").call(nodeReset, purpose)
+    d3.selectAll(".dataLabels").call(textReset, purpose)
+    d3.selectAll(".dataLinks").call(linkReset)
 }

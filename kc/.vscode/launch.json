@@ -2,13 +2,16 @@
     "version": "0.1.0",
     "configurations": [
         {
-            "name": "Attach",
+            "name": "Launch",
             "type": "chrome",
-            "request": "attach",
+            "request": "launch",
             "port": 9222,
             "url": "localhost:3000",
             "webRoot": "${workspaceRoot}",
-            "sourceMaps": false
+            "sourceMaps": false,
+            "skipFiles": [
+             "*jquery*"   
+            ]
         }
     ]
 }

@@ -1,0 +1,6624 @@
+[
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "HTFNIQDD", 
+      "56QUJEMP", 
+      "2017_5", 
+      "Z56T9MF4", 
+      "356QDHJ7", 
+      "7V9JCFSV", 
+      "GCGB74CJ", 
+      "FQVMU8GU", 
+      "2017_8", 
+      "F96H6I58", 
+      "ABX4R7K5", 
+      "NINP5I8I", 
+      "DW9W8Z9I"
+    ], 
+    "name": "Obtain data from online crowds", 
+    "years": [
+      2016, 
+      2017, 
+      2014, 
+      2015
+    ], 
+    "authors": [
+      "", 
+      "Kurt Luther", 
+      "Jodi L. Forlizzi", 
+      "Sophie Vennix", 
+      "Felicia Y Ng", 
+      "Steven Dang", 
+      "Robert E. Kraut", 
+      "Jeffrey Bigham", 
+      "Walter Lasecki", 
+      "Aniket Kittur", 
+      "Joel Chan", 
+      "Winnie Leung", 
+      "Steven P. Dow", 
+      "Laura A. Dabbish", 
+      "W. Ben Towne", 
+      "Thomas Garncarz", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c"
+  }, 
+  {
+    "paperID": [
+      "Z56T9MF4"
+    ], 
+    "name": "Almost an Expert: The Effects of Rubrics and Expertise on Perceived Value of Crowdsourced Design Critiques", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kurt Luther", 
+      "Sophie Vennix", 
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "Z56T9MF4"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Coding Varied Behavior Types Using the Crowd", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven P. Dow", 
+      "Winnie Leung", 
+      "Jeffrey Bigham", 
+      "Walter Lasecki"
+    ], 
+    "type": "paper", 
+    "id": "356QDHJ7"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Distributed Analogical Idea Generation with Multiple Constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Lixiu Yu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
+    ], 
+    "type": "paper", 
+    "id": "FQVMU8GU"
+  }, 
+  {
+    "paperID": [
+      "GCGB74CJ"
+    ], 
+    "name": "Encouraging Outside-The-Box Thinking in Crowd Innovation Through Identifying Domains of Expertise", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Lixiu Yu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
+    ], 
+    "type": "paper", 
+    "id": "GCGB74CJ"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "IdeaHound: Self-sustainable Idea Generation in Creative Online Communities", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "F96H6I58"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Improving Crowd Innovation with Expert Facilitation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven Dang", 
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "7V9JCFSV"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT"
+    ], 
+    "name": "A Classroom Study of Using Crowd Feedback in the Iterative Design Process", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "T4S3K5ZT"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Exiting the Design Studio: Leveraging Online Participants for Early-Stage Design Feedback", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "HTFNIQDD"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Structuring, Aggregating, and Evaluating Crowdsourced Design Critique", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "56QUJEMP"
+  }, 
+  {
+    "paperID": [
+      "ABX4R7K5"
+    ], 
+    "name": "Collaborative Problem Solving: A Study of MathOverflow", 
+    "years": [
+      2014
+    ], 
+    "authors": "", 
+    "type": "paper", 
+    "id": "ABX4R7K5"
+  }, 
+  {
+    "paperID": [
+      "NINP5I8I"
+    ], 
+    "name": "Conceptual Distance Matters when Building on Others' Ideas in Crowd-collaborative Innovation Platforms", 
+    "years": [
+      2014
+    ], 
+    "authors": "", 
+    "type": "paper", 
+    "id": "NINP5I8I"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Crowd Synthesis: Extracting Categories and Clusters from Complex Data", 
+    "years": [
+      2014
+    ], 
+    "authors": "", 
+    "type": "paper", 
+    "id": "DW9W8Z9I"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "Fruitful Feedback: Positive Affective Language and Source Anonymity Improve Critique Reception and Work Outcomes", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Laura A. Dabbish", 
+      "Felicia Y Ng", 
+      ""
+    ], 
+    "type": "paper", 
+    "id": "2017_5"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Putting the Pieces Back Together Again:  Contest Webs for Large-Scale Problem Solving", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "W. Ben Towne"
+    ], 
+    "type": "paper", 
+    "id": "2017_8"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4"
+    ], 
+    "name": "Expert feedback is hard to obtain", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Kurt Luther", 
+      "Sophie Vennix", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "ff970b2e-c50c-4358-9a2e-81291071895f"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4", 
+      "GPBS8H6W"
+    ], 
+    "name": "Provide timely, affordable feedback to designers", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Kurt Luther", 
+      "Anind Dey", 
+      "Sophie Vennix", 
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow", 
+      "Scott Hudson"
+    ], 
+    "type": "action", 
+    "id": "e9a7ad9f-9905-4ded-b2a9-a3cc8a93126b"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W"
+    ], 
+    "name": "Social Eye Tracking: Gaze Recall with Online Crowds", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Scott Hudson", 
+      "Anind Dey"
+    ], 
+    "type": "paper", 
+    "id": "GPBS8H6W"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "HTFNIQDD", 
+      "56QUJEMP", 
+      "2017_5", 
+      "Z56T9MF4", 
+      "GPBS8H6W"
+    ], 
+    "name": "Improve design work", 
+    "years": [
+      2016, 
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "", 
+      "Kurt Luther", 
+      "Anind Dey", 
+      "Sophie Vennix", 
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow", 
+      "Scott Hudson", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "HTFNIQDD"
+    ], 
+    "name": "Provide diverse feedback to designers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "b2a7a62a-a541-4569-a51f-372e7456dd9d"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4"
+    ], 
+    "name": "Collect feedback in structured micro-tasks that focus on specific aspects of the design", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Kurt Luther", 
+      "Sophie Vennix", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "81e1ca32-8c18-4498-afeb-0ad421b29a65"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT"
+    ], 
+    "name": "Ensure that feedback providers explain their perception of the meaning of the design", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "3623b8dd-8074-4aec-98c7-4b8f5245b5c6"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT", 
+      "56QUJEMP", 
+      "Z56T9MF4", 
+      "DW9W8Z9I"
+    ], 
+    "name": "Workers may lack relevant domain knowledge and experience", 
+    "years": [
+      2016, 
+      2014, 
+      2015
+    ], 
+    "authors": [
+      "Kurt Luther", 
+      "Sophie Vennix", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "eb09c956-1e10-416d-83d0-1bce470be200"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT"
+    ], 
+    "name": "Provide critical feedback to designers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "7a20fa77-b380-4641-ba03-d738403ac715"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Broaden participation in crowdsourcing", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "3a087f09-474d-4bba-8e0c-0de6d7afcc61"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Accessible Crowdwork?: Understanding the Value in and Challenge of Microtask Employment for People with Disabilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "paper", 
+    "id": "UQ4WC79E"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Improve accessibility of crowdsourcing sites", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "ff92827a-9e46-4e18-b0bc-6aaf3b3cdbc7"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Crowdsourcing sites frequently point workers to external requester-built webpages that may not be accessible", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "why-hard", 
+    "id": "6288c5d5-d36b-4b8f-8e98-efe157be1e99"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Identify which available tasks are most appropriate to a given worker's abilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "9d4e0b32-3203-478a-840d-2dffb66e5643"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Manage multi-tasking and switching among several different apps and user interfaces", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "c469c384-ccc1-4be3-a459-b3da2cad8ae6"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Allow for more flexibility in task time limits", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "34300bf8-e026-4242-b95c-02cf9e7bfae7"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Enable more people to learn about the availability of crowdwork", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "c96a771e-237e-44a6-9bcb-8013c719d829"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Job coaches view crowdwork more negatively than people with disabilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "why-hard", 
+    "id": "3cb41ca7-ed09-4149-83cc-342ebe13a38c"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Reputation ratings do not account for accessibility-related challenges with workflows", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "why-hard", 
+    "id": "3a006a00-fd55-4350-8342-6c2d94822868"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Increase the efficiency of crowd labor markets", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "830c3722-97df-4c15-acee-ded740cb2aa1"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Introduce metadata fields that indicate what types of abilities a task requires", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "7908be61-0552-4dc4-9080-aa8cb61f65fe"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Employ crowdworkers to add skill requirement labels to existing tasks", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "fba6b283-a360-4237-a2fe-a058a2544637"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Use recommender algorithms to identify tasks matching a worker's abilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "3cb5fcb1-bc90-4b16-af44-ab2856869959"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Develop an online community for crowdworkers with different disabilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "ef22ca5a-9321-42ed-87de-62c6c63b8cb6"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Allow people to optionally identify disabilities as part of their worker profile", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "cbf32a80-50bc-49eb-9148-ddd665f1b472"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "People with disabilities have concerns about disclosing disability information in employment situations", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "why-hard", 
+    "id": "ce74bd01-964d-41a4-9ca8-1d9231221efa"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Provide an adjudication process for workers with disabilities to seek removal of negative reputation points due to disability issues", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "5efde148-d226-41bb-908b-c4e427b33413"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Allow for partial completions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "61a60898-184e-4f25-9535-c4463a444186"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "In-person feedback-providers are difficult to recruit, leading designers to resort to convenience samples", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "d5f06177-4480-4395-9ec8-ec9eeb401e34"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers may not know how to clearly articulate needs", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "76c17d41-f63c-42cf-8c2c-c521917c331f"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers may feel more comfortable providing feedback in-person", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Workers videorecord responses to constructed scenarios that describe the design situation and a possible solution", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "a5d98044-ac28-44e8-9d3d-d00305a46b3a"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Crowd feedback produces large volumes of feedback", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "18a2d116-77d4-467c-99dd-116e8faffcad"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Aggregate feedback across workers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "ef6c4ea6-ce3d-4718-a617-79441ab4e99f"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Enable designers to review feedback in a meaningful way", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "f36d8f26-8ede-4dda-98d6-bb3fbc93209b"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Avoid overwhelming the user with details", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "6767d22e-ac3c-4b81-bb50-21f701307bde"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Progressively disclose details to the user on demand", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "6f7185b4-c214-49eb-8729-db7c6fcbf420"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH", 
+      "2017_9", 
+      "7V9JCFSV", 
+      "QVXBKCSS", 
+      "DW9W8Z9I"
+    ], 
+    "name": "Increase quality of work on crowdsourcing platforms", 
+    "years": [
+      2016, 
+      2017, 
+      2014, 
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski", 
+      "Lixiu Yu", 
+      "Steven Dang", 
+      "Robert E. Kraut", 
+      "Mark E Whiting", 
+      "Paul Andre", 
+      "Aniket Kittur", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "73e89487-f040-40c8-a90d-894451bf167f"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "And Now for Something Completely Different: Improving Crowdsourcing Workflows with Micro-Diversions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "paper", 
+    "id": "AFWXF8CH"
+  }, 
+  {
+    "paperID": [
+      "QVXBKCSS"
+    ], 
+    "name": "A Comparison of Social, Learning, and Financial Strategies on Crowd Engagement and Output Quality", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Lixiu Yu", 
+      "Paul Andre", 
+      "Aniket Kittur", 
+      "Robert E. Kraut"
+    ], 
+    "type": "paper", 
+    "id": "QVXBKCSS"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Crowd Guilds: Worker-led Reputation and Feedback on Crowdsourcing Platforms", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "paper", 
+    "id": "2017_9"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH", 
+      "DW9W8Z9I"
+    ], 
+    "name": "Many crowdsourcing tasks are repetitive and tedious, and doing many of these in a row leads to fatigue and poorer work quality", 
+    "years": [
+      2014, 
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "1c595cb2-e2a5-4ce6-9747-2cae367d2a51"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Introduce short diversions that contain small amounts of entertainment", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "f5c41da2-0a85-47b1-a439-e2a213952a40"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH", 
+      "2017_9"
+    ], 
+    "name": "Workers want to maximize earnings", 
+    "years": [
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Mark E Whiting", 
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "2869074d-26a4-469f-9495-f900cfae2bd5"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Searching for and learning new tasks is time-consuming", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "0e91b787-6490-4776-b37c-b7963846927f"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Workers complete many tasks in a single, prolonged setting", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Reduce fatigue", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "22f43593-1736-440c-a23c-8c6266cdf0a6"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Improve alertness", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "6c880340-76d1-44c0-8847-c73e68250577"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "Refresh workers' cognitive resources", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski"
+    ], 
+    "type": "action", 
+    "id": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E", 
+      "AFWXF8CH", 
+      "QVXBKCSS"
+    ], 
+    "name": "Improve crowdsourcing work", 
+    "years": [
+      2014, 
+      2015
+    ], 
+    "authors": [
+      "Jeffrey M. Rzeszotarski", 
+      "Lixiu Yu", 
+      "Robert E. Kraut", 
+      "Paul Andre", 
+      "Aniket Kittur", 
+      "Jeffrey P. Bigham"
+    ], 
+    "type": "action", 
+    "id": "9b8926e2-0d49-46c1-9af6-5041e7282b02"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Ensure effective performance in virtual teams on crowdsourcing platforms", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "37ac70e9-6344-40ab-b8c4-b4ebf97fa84a"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB"
+    ], 
+    "name": "Personality Matters: Balancing for Personality Types Leads to Better Outcomes for Crowd Teams", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "T9IJMSRB"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Team Dating Leads to Better Online Ad Hoc Collaborations", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "paper", 
+    "id": "2017_11"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Form effective teams", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "c6f1c438-4e85-418d-b4de-598a3561367b"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Crowdsourcing assignments are typically short-lived but people need time to build trust", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "3eb400bd-9967-4b7b-af9c-918dc1b6b523"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB"
+    ], 
+    "name": "Measure personality beforehand with DISC personality test", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "8df893a4-8f0b-490c-987f-af902096cb2a"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Ensure a balance of personality types in the team", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "de873c48-8ca9-4e60-a279-034e53b2c4e9"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Minimize barriers to building and maintaining trust", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "7b981689-daf7-47ab-9bea-6430ab017d3e"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB", 
+      "2017_11"
+    ], 
+    "name": "Minimize interpersonal tensions and conflict", 
+    "years": [
+      2016, 
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "6cd2ee83-5635-4b51-861c-beb8f95a3ba4"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Allow people to express preferences about team members based on interactions in a brief task", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "7fabfae8-c63a-4be1-8d90-2ef190a2bba7"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Ensure a balance of skills on the team", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "8e4783c9-4af7-4ba1-9bde-2b8d6deacf99"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Prior data on skills and personality is not always available or easy to obtain", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "84be16d8-102c-46bc-bd08-74c6bd128728"
+  }, 
+  {
+    "paperID": [
+      "2017_9", 
+      "7V9JCFSV", 
+      "QVXBKCSS"
+    ], 
+    "name": "Optimize performance of online crowds", 
+    "years": [
+      2016, 
+      2017, 
+      2014
+    ], 
+    "authors": [
+      "Lixiu Yu", 
+      "Steven Dang", 
+      "Robert E. Kraut", 
+      "Mark E Whiting", 
+      "Paul Andre", 
+      "Aniket Kittur", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Use worker reputation scores to filter work", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "e90c2122-0271-417e-8aab-195291e77b94"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Reputation scores from decentralized workers are typically inflated and uninformative", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "why-hard", 
+    "id": "b33eca1b-b213-453e-bd91-5293a734d52d"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Centralize workers into guilds that work on common tasks", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "a099a23d-1403-4a2d-9e57-bbaf73c8be8c"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Enable workers to certify each others' quality", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "083bdc4e-9d45-498b-a448-70d3422d4e26"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Workers may seek to game the reputation system", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "why-hard", 
+    "id": "476bdd52-da6a-4896-b08b-a61ade123f15"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Use double-blind peer review", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "1b8cadfd-7fd3-4747-ad15-7fcdbe5c929c"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Enable workers to bargain for better pay for tasks", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "78ae09cc-7cb8-4706-ab9e-118441c7a628"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Workers collectively reject tasks that pay too little", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "3432384d-5e8c-4cb5-b199-726631f424c7"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Ensure workers' well-being", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "490cfcac-4e3f-4767-b319-f9ded78b2553"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Enable senior workers to mentor more novice workers", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "78699c35-befe-4b31-8631-2298aba411ca"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Workers provide social support to each other", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Mark E Whiting"
+    ], 
+    "type": "action", 
+    "id": "7da93321-805d-4c20-b8a3-a79f1ea1ff15"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase recipient's positive emotions", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "6dbfcbfb-ffc8-4c6c-8093-5f001332ef29"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "reduce recipient's annoyance and frustration", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "139031e5-e8e0-4db2-bbd9-1e7d185c402a"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "use positive affective language in feedback", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "2cb05a02-29f4-42ec-9537-e95a53388968"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "anonymize feedback provider", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "6813ceda-32ae-40b4-8754-a6b50368f183"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived fairness of feedback", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "86370122-6799-476c-b361-777c8c33426e"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived fairness of feedback provider", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "a93364dd-0bc2-4a0a-ab10-f2b97435e96c"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived expertise of feedback provider", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "770d84b4-bfc3-4140-86ce-13e43b8cc633"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "increase perceived usefulness of feedback", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "", 
+      "Laura A. Dabbish", 
+      "Thomas Garncarz", 
+      "Steven P. Dow", 
+      "Felicia Y Ng"
+    ], 
+    "type": "action", 
+    "id": "de9b0a0a-d2b0-4356-80dd-25a5e42c2fd7"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure self-disclosure on social network sites", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "90a96d11-f22b-4048-9f68-3855e48219ed"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Modeling Self-Disclosure in Social Networking Sites", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Yi-Chia Wang", 
+      "Robert E. Kraut"
+    ], 
+    "type": "paper", 
+    "id": "XGBBFQWX"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Enable social scientists to understand the conditions that encourage or discourage self-disclosure", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "f3c607fc-7273-4fd4-84f7-477c855c8fbf"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Give feedback to members of social network sites about whether their content is revealing more or less about themselves than they desire", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "be3a7418-d9c8-4f89-9c31-fad9acf7cd35"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Enable service providers to track how changes to the design of their sites influences users' self-disclosure", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "e5e24b15-0241-4bd9-a1e9-9cc5860ce8bf"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Improve social network sites", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "57ba11bd-8a07-441e-83ee-bfcb867d80c2"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measuring self-disclosure is costly and difficult", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "why-hard", 
+    "id": "b2dc11e3-d553-426e-85bb-3ac643201459"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Approximate human judgments", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "12384341-c780-4112-970f-e225cb7a2256"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Create a parsimonious model (using a small number of features of the text)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "ac9cd08f-523e-4630-a44f-30168c08b559"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Create an interpretable model", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "2d20d07c-3616-4f7c-8ff9-124eba62c668"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Create a domain-independent model", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "61a99fdc-9574-4c36-8254-82a61f99b6b2"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Enable measurement of posts at scale", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "8ab5ca4e-2007-4705-9d30-4b844d104e4e"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Select predictive features", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "866980f8-4816-4120-b7c8-5c698e27ab65"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Calculate cross-entropy of the post with the corpus", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "68e8b95a-ce7e-4562-88d9-3beca97a7e34"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Apply machine learning models to status updates", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "e41552c3-0f85-47c9-82af-a369c6ec6b99"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use a small number of theory-driven features", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "39074c3a-980e-4e03-abd8-bd37e2c459ce"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure emotional valence", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "c446575b-6efa-48fd-bf33-c197535d8ced"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure social distance between poster and people mentioned in the post", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "4caff84d-8880-4a77-ba53-d65d5491d4d2"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure language similarity between the post and the community", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "d575debf-833a-42a3-b43e-b56aa0e29101"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure post topics", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "f6ceeebc-5037-4d9d-a129-61511fbf4ffd"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure post length", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "8b4d21aa-34e8-4dc2-a6c4-a9bacc98016b"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use Latent Dirichlet Allocation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "c13496fb-2871-4a69-9abd-e285fb63c6fb"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use Linguistic Inquiry Word Count dictionary", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "e2e36f9f-9041-4689-8595-efd7b280773d"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Measure references to self, family, and friends", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "11f84eea-3a89-46a3-86da-2c936eef96c1"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Build language model of corpus", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "5eea279e-474d-46f2-ad4b-8f63f93bff6e"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Use bigram language model with Good-Turing smoothing", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Yi-Chia Wang"
+    ], 
+    "type": "action", 
+    "id": "3f11cdb7-658f-4413-a5a5-ef7e12a6a882"
+  }, 
+  {
+    "paperID": [
+      "Z56T9MF4"
+    ], 
+    "name": "Provide emotionally positive feedback to designers", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kurt Luther", 
+      "Sophie Vennix", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "1786d402-7643-45b2-901d-8d7681ba20ac"
+  }, 
+  {
+    "paperID": [
+      "Z56T9MF4"
+    ], 
+    "name": "Provide specific feedback to designers", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Kurt Luther", 
+      "Sophie Vennix", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "24318074-ac15-43bc-a108-3434112607eb"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Quantitatively assess interactions from video data", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Walter Lasecki", 
+      "Winnie Leung", 
+      "Steven P. Dow", 
+      "Jeffrey Bigham"
+    ], 
+    "type": "action", 
+    "id": "a4dd71d7-0d23-4ea1-a1d8-6e8231a5bfe2"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Annotate behavioral events in the video data", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Walter Lasecki", 
+      "Winnie Leung", 
+      "Steven P. Dow", 
+      "Jeffrey Bigham"
+    ], 
+    "type": "action", 
+    "id": "5a497452-5a6d-409b-8e14-60f5a0b16189"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7", 
+      "DW9W8Z9I"
+    ], 
+    "name": "Manual annotation is effortful and time-consuming", 
+    "years": [
+      2016, 
+      2014
+    ], 
+    "authors": [
+      "Walter Lasecki", 
+      "Winnie Leung", 
+      "Steven P. Dow", 
+      "Jeffrey Bigham"
+    ], 
+    "type": "action", 
+    "id": "770fd8b6-df17-4034-99e8-93e137aa1a0a"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Judgments are typically complex", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Walter Lasecki", 
+      "Winnie Leung", 
+      "Steven P. Dow", 
+      "Jeffrey Bigham"
+    ], 
+    "type": "why-hard", 
+    "id": "228301dc-a290-4946-80d7-a9456cccc49b"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7", 
+      "XGBBFQWX", 
+      "GPBS8H6W", 
+      "5G8U33QZ", 
+      "2017_4", 
+      "2017_7", 
+      "4C8T6PTV"
+    ], 
+    "name": "Measure human behavior", 
+    "years": [
+      2016, 
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Scott Hudson", 
+      "Anind Dey", 
+      "Yi-Chia Wang", 
+      "Anita Williams Woolley", 
+      "Kathleen M. Carley", 
+      "Maria Tomprou", 
+      "Robert E. Kraut", 
+      "Wei Wei", 
+      "Jeffrey Bigham", 
+      "Walter Lasecki", 
+      "Kai-min Chang", 
+      "Jason I. Hong", 
+      "Jodi L. Forlizzi", 
+      "Winnie Leung", 
+      "Steven P. Dow", 
+      "Laura A. Dabbish", 
+      "Xuanchong Li", 
+      "Jason Wiese", 
+      "Prerna Chikersal", 
+      "Jun-Ki Min", 
+      "John Zimmerman"
+    ], 
+    "type": "action", 
+    "id": "f16fc32d-f11a-42f5-b9b4-0dabba45bda6"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Massive Open Online Proctor: Protecting the Credibility of MOOCs Certificates", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Xuanchong Li", 
+      "Kai-min Chang"
+    ], 
+    "type": "paper", 
+    "id": "5G8U33QZ"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "You Never Call, You Never Write: Call and SMS Logs Do Not Always Indicate Tie Strength", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason Wiese", 
+      "Jun-Ki Min", 
+      "Jason I. Hong", 
+      "John Zimmerman"
+    ], 
+    "type": "paper", 
+    "id": "4C8T6PTV"
+  }, 
+  {
+    "paperID": [
+      "2017_4"
+    ], 
+    "name": "Deep Structures of Collaboration: Physiological Correlates of Collective Intelligence and Group Satisfaction", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Prerna Chikersal", 
+      "Maria Tomprou", 
+      "Anita Williams Woolley", 
+      "Laura A. Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "2017_4"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Girls rule, boys drool: Extracting semantic and affective stereotypes from Twitter", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Wei Wei", 
+      "Kathleen M. Carley"
+    ], 
+    "type": "paper", 
+    "id": "2017_7"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Modifying a practice from another environment may introduce problems and undercut its effectiveness", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "why-hard", 
+    "id": "9bdb9c66-7adc-4da1-b800-56ea238d5678"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "A Contingency View of Transferring and Adapting Best Practices Within Online Communities", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Haiyi Zhu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
+    ], 
+    "type": "paper", 
+    "id": "6UGSWD8D"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Adapt the transferred practice to fit the local environment", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "74ddeb09-a146-40fd-9be5-1ca01f3fca8a"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Wait until the receiving project has had experience with the imported practice", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Ensure practice is introduced by members who have experience in a variety of other projects", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "73c0bf94-6395-4840-8dde-d050206f7067"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV", 
+      "GCGB74CJ", 
+      "FQVMU8GU", 
+      "2017_8", 
+      "F96H6I58", 
+      "ABX4R7K5", 
+      "NINP5I8I"
+    ], 
+    "name": "Increase innovation", 
+    "years": [
+      2016, 
+      2017, 
+      2014
+    ], 
+    "authors": [
+      "W. Ben Towne", 
+      "Lixiu Yu", 
+      "Steven Dang", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "5c21af6a-ffde-485e-9e33-af152b0db5b9"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV", 
+      "6UGSWD8D", 
+      "F96H6I58", 
+      "NINP5I8I"
+    ], 
+    "name": "Enable community members to build on other (good) ideas within the community", 
+    "years": [
+      2016, 
+      2014
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Joel Chan", 
+      "Steven P. Dow", 
+      "Haiyi Zhu"
+    ], 
+    "type": "action", 
+    "id": "df366ec9-124a-4155-b1ba-45a4fc23c7f5"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Novice workers may not know how to productively build on ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Novice workers may rely on the wrong signals (e.g., community upvotes) to find good ideas to build on", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Enable broad exploration of ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "952361c9-05ff-4914-a626-51a7aa796366"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Enable deep exploration of ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "3a7e20ac-6f84-41d9-b38d-ddb6654989af"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Enable many crowd workers to participate", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "b936752d-d9fe-47b3-874d-af45a86a4074"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Provide gold standard examples", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "d2223f81-eece-4b3c-a1db-58255e0aec32"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Experts provide personalized feedback on individual ideas", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Experts highlight which promising ideas to build on, and how to build on them", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Steven Dang", 
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56"
+  }, 
+  {
+    "paperID": [
+      "GCGB74CJ", 
+      "FQVMU8GU"
+    ], 
+    "name": "Increase analogical innovation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "e78de520-2447-42f7-90f8-acf0f44b6714"
+  }, 
+  {
+    "paperID": [
+      "GCGB74CJ", 
+      "FQVMU8GU"
+    ], 
+    "name": "Individuals are limited in their cognitive capacity", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "why-hard", 
+    "id": "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f"
+  }, 
+  {
+    "paperID": [
+      "GCGB74CJ"
+    ], 
+    "name": "Difficult for crowd to search large idea repositories (e.g., the web)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "why-hard", 
+    "id": "3f20a874-986a-4bf1-9798-b6cf1b365030"
+  }, 
+  {
+    "paperID": [
+      "GCGB74CJ"
+    ], 
+    "name": "Identify remote domains of possibly relevant expertise (e.g., origami folding)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "69e7f84a-ca58-4dff-8696-bed3754be543"
+  }, 
+  {
+    "paperID": [
+      "GCGB74CJ"
+    ], 
+    "name": "Use crowds to search web within identified domains", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "7172ad3e-93fd-41ae-84b2-294306e3ccfd"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Real world problems involve multiple constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "node-6"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Distributed process for eliciting constraints about a problem", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "d7727869-4038-47b8-825d-a4161d9c60ef"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Don't know which level of abstraction is useful to represent constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "why-hard", 
+    "id": "b21ecc21-62ca-4730-8b8c-19b93a4ff577"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Don't know whether to elicit constraints from original problem or abstracted problem schema", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "why-hard", 
+    "id": "1f15f5b8-8c7e-400a-bc92-b064ea479cec"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Maximum creativity if use abstracted problem schema and concrete constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "c367351d-7f62-4ce9-ad0a-c4e20d4bf906"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3", 
+      "6UGSWD8D", 
+      "XGBBFQWX", 
+      "SMZ5P2JC", 
+      "2017_1", 
+      "GQPNFE6B", 
+      "XSJ9KCBQ"
+    ], 
+    "name": "Online communities", 
+    "years": [
+      2016, 
+      2017, 
+      2012, 
+      2014, 
+      2015
+    ], 
+    "authors": [
+      "Robert E Kraut", 
+      "Yi-Chia Wang", 
+      "Arun Kalyanasundaram", 
+      "Robert E. Kraut", 
+      "Joseph R Seering", 
+      "Aniket Kittur", 
+      "James D. Herbsleb", 
+      "Laura A. Dabbish", 
+      "Haiyi Zhu", 
+      "Chalali Chaihirunkarn", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "From Personal Tool to Community Resource: What's the Extra Work and Who Will Do It?", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Erik Trainer", 
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb"
+    ], 
+    "type": "paper", 
+    "id": "SMZ5P2JC"
+  }, 
+  {
+    "paperID": [
+      "GQPNFE6B"
+    ], 
+    "name": "Building Loyalty to Online Communities Through Bond and Identity-based Attachment to Sub-groups", 
+    "years": [
+      2014
+    ], 
+    "authors": "", 
+    "type": "paper", 
+    "id": "GQPNFE6B"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Motivating Contribution in a Participatory Sensing System via Quid-pro-quo", 
+    "years": [
+      2014
+    ], 
+    "authors": "", 
+    "type": "paper", 
+    "id": "XSJ9KCBQ"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Organizing Without Formal Organization: Group Identification, Goal Setting and Social Modeling in Directing Online Production", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Haiyi Zhu", 
+      "Robert E. Kraut", 
+      "Aniket Kittur"
+    ], 
+    "type": "paper", 
+    "id": "MXXBE2S3"
+  }, 
+  {
+    "paperID": [
+      "2017_1"
+    ], 
+    "name": "Shaping Pro and Anti-Social Behavior on Twitch Through Moderation and Example-Setting", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Joseph R Seering", 
+      "Robert E Kraut", 
+      "Laura A. Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "2017_1"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3", 
+      "SMZ5P2JC"
+    ], 
+    "name": "Volunteer production communities (e.g., Wikipedia, open source)", 
+    "years": [
+      2012, 
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "James D. Herbsleb", 
+      "Haiyi Zhu", 
+      "Chalali Chaihirunkarn", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "0f5d7524-c494-4c7b-892d-de963c7fba1f"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Individuals might not want to do what the group needs (e.g., unpopular tasks)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "why-hard", 
+    "id": "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Managerial control (as in offline organizations)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "2ecf1b9c-9851-4bc0-8a16-f1ad4631a6ea"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Online volunteers may leave", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "why-hard", 
+    "id": "0a1bb031-b822-4908-975b-6d351ac6f758"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Group identification (as in sports)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "4d8b9bbd-549d-4e0e-b3fe-070ceb08643f"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Increases motivation but does not provide direction what to work on", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "why-hard", 
+    "id": "2ce88f98-b137-4970-bb31-699186fe979b"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Direction setting (what to work on)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "eefa0bfd-f5dd-43f6-b550-40d3040b3573"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Provides direction what to work on but not motivation", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "why-hard", 
+    "id": "c9af2507-05e4-4481-8b7e-d1fcd245f701"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Public group goals (explicit)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "2dffe0d4-9be0-4a7d-b50b-97a938f041b9"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3", 
+      "2017_1"
+    ], 
+    "name": "Role modeling (implicit)", 
+    "years": [
+      2017, 
+      2012
+    ], 
+    "authors": [
+      "Robert E Kraut", 
+      "Robert E. Kraut", 
+      "Joseph R Seering", 
+      "Aniket Kittur", 
+      "Laura A. Dabbish", 
+      "Haiyi Zhu"
+    ], 
+    "type": "action", 
+    "id": "b08345c4-4b85-423c-9d56-bf140d84ce09"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Highlighting group goals strongly motivate members who self-identify with the group (compared to those that don't)", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "e70d8ea1-a9ea-4467-ac7f-8f53beff8365"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Spillover effect to non-goal related tasks", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "b1434369-908c-4db2-9191-663289bf85f6"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Members exposed to prototypical group members act more like them on group-relevant behaviors", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "321acb3f-02ed-4b16-8925-e52bc5c3ed44"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW", 
+      "SMZ5P2JC"
+    ], 
+    "name": "Ensure content quality", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Haiyi Zhu", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "55327c5c-7331-4b14-a55b-b20bea74c8b8"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW"
+    ], 
+    "name": "Is It Good to Be Like Wikipedia?: Exploring the Trade-offs of Introducing Collaborative Editing Model to Q&A Sites", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Haiyi Zhu"
+    ], 
+    "type": "paper", 
+    "id": "9T2T3NWW"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW", 
+      "MXXBE2S3", 
+      "SMZ5P2JC", 
+      "XSJ9KCBQ"
+    ], 
+    "name": "Encourage user contributions", 
+    "years": [
+      2012, 
+      2014, 
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "James D. Herbsleb", 
+      "Haiyi Zhu", 
+      "Chalali Chaihirunkarn", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "c2efe6a6-ef85-4f2d-a42d-796993374f2c"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW"
+    ], 
+    "name": "Allow Wikipedia-like collaborative editing on questions and answers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Haiyi Zhu"
+    ], 
+    "type": "action", 
+    "id": "dbdb7a27-d630-4ef9-b7a4-5216de0d0b7a"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "Improve performance of online community units", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Haiyi Zhu", 
+      "Aniket Kittur"
+    ], 
+    "type": "action", 
+    "id": "509ac4f8-f4cd-488c-877a-657d3aa32153"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Enable remote collaboration", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Nathaniel Fruchter", 
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
+    "type": "action", 
+    "id": "c353bdb1-0dae-4db2-b83c-626ebdf053bb"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Making Decisions From a Distance: The Impact of Technological Mediation on Riskiness and Dehumanization", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Min Kyung Lee", 
+      "Nathaniel Fruchter", 
+      "Laura Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "9895DC6Q"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure appropriate judgments of risk harm for collaborators", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Nathaniel Fruchter", 
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
+    "type": "action", 
+    "id": "f976117f-c783-4967-9c1c-95a2a004f4ac"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure humanization of collaborators", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Nathaniel Fruchter", 
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
+    "type": "action", 
+    "id": "fc86e953-0450-47e4-a21b-cdd112c0ecb0"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Provide technologically mediated interaction to people who see themselves as defined through their relationships", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Nathaniel Fruchter", 
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
+    "type": "action", 
+    "id": "85bd7ad4-917c-4131-b238-2af755603f43"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q", 
+      "T9IJMSRB", 
+      "2017_11", 
+      "2017_10", 
+      "2017_4"
+    ], 
+    "name": "Improve group work", 
+    "years": [
+      2016, 
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Min Kyung Lee", 
+      "Anita Williams Woolley", 
+      "Robert E. Kraut", 
+      "Laura Dabbish", 
+      "Maria Tomprou", 
+      "Steven P. Dow", 
+      "Laura A. Dabbish", 
+      "Nathaniel Fruchter", 
+      "Prerna Chikersal"
+    ], 
+    "type": "action", 
+    "id": "99b94c34-6a98-4aad-a6b4-bd867d747a9b"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "What Makes a Strong Team? Using Collective Intelligence to Predict Team Performance in League of Legends", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Anita Williams Woolley"
+    ], 
+    "type": "paper", 
+    "id": "2017_10"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure engagement and immersion in interactions with collaborators", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Nathaniel Fruchter", 
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
+    "type": "action", 
+    "id": "b037271c-ec88-4bac-8a85-bb82e0070f39"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Ensure maximal bandwidth of communication signals in interactions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Nathaniel Fruchter", 
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
+    "type": "action", 
+    "id": "110bdf5b-d42c-4aa1-a3f5-516f67285ff9"
+  }, 
+  {
+    "paperID": [
+      "2017_10", 
+      "2017_4"
+    ], 
+    "name": "Increase collective intelligence", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Laura A. Dabbish", 
+      "Prerna Chikersal", 
+      "Maria Tomprou", 
+      "Anita Williams Woolley"
+    ], 
+    "type": "action", 
+    "id": "9f3832ff-2745-4511-bb5f-047ed31ff6b3"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Increase team members' social perceptiveness", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Anita Williams Woolley"
+    ], 
+    "type": "action", 
+    "id": "d0fb9517-65f9-43cd-ab21-a9aca387db55"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Ensure presence of female team members", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Anita Williams Woolley"
+    ], 
+    "type": "action", 
+    "id": "cbffe84e-387e-4243-ba41-65b5989b7f42"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Enable tacit coordination", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Anita Williams Woolley"
+    ], 
+    "type": "action", 
+    "id": "ae115850-acd0-44e2-a011-9649604803cd"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "Enable verbal communication between team members", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Anita Williams Woolley"
+    ], 
+    "type": "action", 
+    "id": "9e2b0638-1151-4734-8d90-dd366cd0f9ff"
+  }, 
+  {
+    "paperID": [
+      "2017_8", 
+      "ABX4R7K5"
+    ], 
+    "name": "Divide the problem into parts", 
+    "years": [
+      2017, 
+      2014
+    ], 
+    "authors": [
+      "W. Ben Towne"
+    ], 
+    "type": "action", 
+    "id": "cff701f4-1995-4e0f-b2a5-2cbd389a2c5c"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Combine the parts into a solution for the whole problem", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "W. Ben Towne"
+    ], 
+    "type": "action", 
+    "id": "b7440833-5f46-40a0-b54d-3a4fccbf4036"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Incentivize people to reuse work done by themselves and others", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "W. Ben Towne"
+    ], 
+    "type": "action", 
+    "id": "35d91d25-1676-4f2c-8821-f1654e75228f"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Incentivize people to simultaneously explore multiple ways of combining interchangeable parts", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "W. Ben Towne"
+    ], 
+    "type": "action", 
+    "id": "7d8a6bf4-1287-4b04-98c6-5d2bd2c3a9d3"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Incentivize people to work on the parts of the problem where they can contribute the most", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "W. Ben Towne"
+    ], 
+    "type": "action", 
+    "id": "e8d1fcee-48e7-44ee-afce-6163542c813c"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W"
+    ], 
+    "name": "Head movements and poor lighting conditions can result in significant data loss and inaccuracies for eye-tracking", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Anind Dey", 
+      "Scott Hudson"
+    ], 
+    "type": "action", 
+    "id": "5986092a-2cc4-40be-9a1c-9fce68a3dcfd"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W"
+    ], 
+    "name": "Reveal people's spatial-temporal distribution of visual attention", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Anind Dey", 
+      "Scott Hudson"
+    ], 
+    "type": "action", 
+    "id": "59513657-b9c7-4b32-bd17-567606e58944"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W"
+    ], 
+    "name": "Estimate eye-tracking measures from mouse click positions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Anind Dey", 
+      "Scott Hudson"
+    ], 
+    "type": "action", 
+    "id": "f2825375-2fa4-4bd5-828c-984fe5666116"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W"
+    ], 
+    "name": "Obtain self-report estimates from crowd participants", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi L. Forlizzi", 
+      "Anind Dey", 
+      "Scott Hudson"
+    ], 
+    "type": "action", 
+    "id": "790776bc-fde2-430f-8313-f68bab578ddc"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "support long-term chronic care with technology", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "e65afe94-b24d-40f1-b5c5-78e8d268d2f5"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Time to Reflect: Supporting Health Services over Time by Focusing on Collaborative Reflection", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Gabriela Marcu", 
+      "Anind K. Dey", 
+      "Sara Kiesler"
+    ], 
+    "type": "paper", 
+    "id": "AMDVNRNA"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Enable decentralized, lateral coordination", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "9bc48d69-9bdd-436f-a3b1-566445842e89"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Coordinate through flexible plans, changing goals, and evaluation over long periods of time", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "436cda37-5123-416d-a1cc-642090c01d64"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "support health services", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "fd02b50a-275e-4296-aa33-f21a35e25761"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Collaborative reflection practices in this context are unstructured", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "cf9f6337-8c09-46ef-8b68-fe5d24b3a7e5"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Collaborative reflection practices in this context are iterative", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "e6c85cf6-ecc2-4806-92a8-b35ca342f332"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Collaborative reflection practices in this context are unpredictable", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "0c4b6bc5-614d-450f-9e6c-abc9e7411093"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Collaborative reflection practices in this context are adaptive", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "8b7a6d00-7611-4375-9756-e61cfcaf70f0"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Monitoring and interpreting progress with behavioral interventions is complex", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "bdedbecc-2c01-440f-91e8-af53ad769cd7"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Behaviors are ever-changing", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "a98b684b-4c64-4682-abba-3c391961ff2a"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Behaviors being monitored are individual and subjective", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "08d49dc7-c09c-4c76-bf73-b5bf83b4ca13"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Data management is difficult to standardize", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "393a595e-bbe8-4587-b7fa-885efbf85f94"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Services are designed to respond to the unique behavioral needs and progress of each individual", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "why-hard", 
+    "id": "1da1b39a-67f4-4459-b30a-e208dab41d0c"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Make roles and responsibilities diffuse, flexible, and changeable through use", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "8b5c1a57-a7a0-4cd7-a700-788337f68fc7"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Make decision-making participative", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "60cc50e1-7cbf-4b9b-96ae-8b47d53a5e9b"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Enable reciprocal interdependencies among stakeholders", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "244efb7e-e9c8-4f04-9efa-45a8b2728551"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Enable cross-functional coordination and nonroutine tasks", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Gabriela Marcu"
+    ], 
+    "type": "action", 
+    "id": "d7c733b2-270f-4661-9cfc-c37325af7b9e"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ", 
+      "AMDVNRNA"
+    ], 
+    "name": "Improve human wellness", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Anind K. Dey", 
+      "Sara Kiesler", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti", 
+      "Gabriela Marcu", 
+      "Lorrie Faith Cranor"
+    ], 
+    "type": "action", 
+    "id": "0043d0e8-23f8-4589-9e56-e507520d87f4"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "I Would Like To..., I Shouldn'T..., I Wish I...: Exploring Behavior-Change Goals for Social Networking Sites", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Manya Sleeper", 
+      "Alessandro Acquisti", 
+      "Lorrie Faith Cranor"
+    ], 
+    "type": "paper", 
+    "id": "CZQ57NCZ"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Spend time more productively", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "bb59499d-484f-4514-8395-1267fbd48f5f"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Improve contact with friends/family", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "21a2f137-6da8-4b3d-80f2-f0eddf8c8c4d"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Ensure positive self presentation", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "7d81dc0c-4551-4d5e-9ab7-ab45b632a576"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Preserve security/privacy", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "1c677e42-28ea-47ec-925c-c43ee075d0bf"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Post more on Facebook", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "8db92965-ec24-4b09-a219-5c0fbac62787"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Reduce Facebook use", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "31888c76-ad14-487e-86bb-c25f567fc52c"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Optimize use of time", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "7afa14c2-896a-477e-aab6-033ba86a4302"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Prevent lost/wasted time", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "d4c6691e-f543-4346-ac7c-b9fe9b4adbbd"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Avoid bothering or annoying others", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "6e769593-6960-47cf-8b5d-2bdbe7b0fa43"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Gain attention from others", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "417363ce-e29b-4d63-b1fc-c2c7b74d2e6e"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Post more on Twitter", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "0f06969e-de56-46d6-976e-ed66704caa1f"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Post more on Instagram", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "5b1f97f1-b056-4fe0-9b38-935c8b2f4845"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Post better content on social media", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "32c36b99-b3d7-4c07-8de2-8bba60bb0e4a"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Improve self", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "4240fc10-c696-4606-bf59-584f83392c30"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ", 
+      "XGBBFQWX"
+    ], 
+    "name": "Avoid posting personal information", 
+    "years": [
+      2016, 
+      2015
+    ], 
+    "authors": [
+      "Robert E. Kraut", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti", 
+      "Yi-Chia Wang", 
+      "Lorrie Faith Cranor"
+    ], 
+    "type": "action", 
+    "id": "e0df529a-b77c-478e-8989-7ba48a647c69"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Improve filtering of what to read", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "11af4fb4-0b6f-49cf-a30c-ce41b698eece"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Take concrete actions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "why-hard", 
+    "id": "f60b4662-b9bf-4bc9-817b-156f5359e637"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Propose changes that fit easily into existing habits", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "why-hard", 
+    "id": "215435d1-9761-4bcd-a7ab-8362b925a035"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Lack of motivation", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "why-hard", 
+    "id": "4583a99f-daae-4985-9f46-c0129bd7c463"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Distraction prevents from making a change or remembering to make the change", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "why-hard", 
+    "id": "2f627d44-2413-4737-80b5-5ad30016ffd2"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "The target behavior to be changed is already a habit or addiction", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "why-hard", 
+    "id": "fdaf618e-62df-4850-8b41-e96f7e905d63"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Change behaviors on social networking sites", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Manya Sleeper", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "action", 
+    "id": "565ded1b-dd6f-43ee-b919-6748f4506428"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Enable everyone to receive high-quality education", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "21ab1330-9661-4420-80d3-122a983cba52"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Provide education in massive open online courses", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "7af835d2-3618-433b-a4a3-f9cd2ddbeb85"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Ensure that students are learning", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "4b2b23ba-a8a1-4376-a5a7-8f4517c4c24e"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Prevent cheating on tests", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "662e63d6-a60b-4203-add0-01f195260325"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Ensure scalability", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "868c651f-924d-4518-b805-631f3ba4872e"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Minimize required expert human judgments", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "9bc89064-5c26-4d0f-91bf-94f4c002ef13"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Classify instances as possibly cheating  or not", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "5e13939d-7f32-41eb-9bf0-f3105dc18e7a"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Verify possible cheating behaviors", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "0cb14e46-0b52-47af-9236-0f86e097ae0a"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Use peer crowdsourcing", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "660027b1-d829-4b6d-b5f5-a32ee9b158af"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Detect possible cheating behaviors", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "f8dc39a4-8887-42ba-9dc9-7141a7519360"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Create machine learning model of cheating", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "9ab7314d-721c-4905-a6b7-9546b6db94c6"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Make final punishing decisions for possible cheating cases", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "e65deff0-689d-47ed-9601-3ce2c0b94047"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Use expert panel", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "e0374431-00da-47e7-a226-b0d1135f9b5b"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Prioritize reduction in false alarm rates over false negative rates", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "db4ded4d-97bd-46bc-ba95-d3d3dc413287"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Instruct raters to flag unnecessary behaviors", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Xuanchong Li"
+    ], 
+    "type": "action", 
+    "id": "888b7b7f-fa9c-41d8-936f-e4d275367c78"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Accelerate scientific discovery", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "51dd6396-9533-4203-b7f9-a2a518a0a070"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Increase accessibility to scientific software", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "328fee9c-4c01-464d-be96-ace5b63f191d"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Manage the community", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "9813e892-ea5a-4b17-8ae5-d136ca4c01e8"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Maintain code", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "ee62f058-cb93-41e8-861f-6a56358a86c6"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Educate and train newcomers", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "c83b7c78-b55e-440a-9d22-4cd5aded4054"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Facilitate interactions between developers and users", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "fc5a6d5e-88c0-4ee0-bef5-ab78b50f758d"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Foresee user needs", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "5bc15282-7a88-4be4-9fd7-1a36b2094c79"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC", 
+      "2017_1"
+    ], 
+    "name": "Enforce community norms and guidelines", 
+    "years": [
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Robert E Kraut", 
+      "Arun Kalyanasundaram", 
+      "Joseph R Seering", 
+      "James D. Herbsleb", 
+      "Laura A. Dabbish", 
+      "Chalali Chaihirunkarn", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "3ed88aef-213d-4172-b1a2-847a17a49771"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Face-to-face meetings", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "6b26431c-72c5-41dd-8f6a-e13bcc121245"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Evaluate submitted contributions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "2581a16e-f5d1-4054-8b72-ef033f1c80d2"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Solicit contributions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "7755ec2f-1e61-4e87-b2b4-bbdc0cefe48f"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Advertise projects", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "25e3ecad-0cf0-4db6-ba9d-17aa5fc6add9"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Demonstrate impact of projects", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "1ed3ba1a-60fc-4756-83cf-08246ba4e6f9"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Announce works in progress", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "63997e7d-52bf-4d83-946c-05504b96bba9"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Monitor contributor activities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "7632c31f-e0ab-4c25-bd72-35c641b66215"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Fix bugs", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "5200ab21-0558-4541-bb12-dd88a9b3edd5"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Manage dependencies", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "4ccae2e8-a9e0-493b-8c47-3c730d54105e"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Monitor code usage", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "b366d911-94d5-48e6-b0fe-dd13266945c3"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Test software", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "7f4e1b7a-3dbc-47ed-a105-432b6f5afd89"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Run tutorials", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "d6ce8913-ce82-4242-86b5-ce514e6ca35a"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Mentor new members", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "ae0ba820-2547-4b48-bd08-cb45e0bc4f93"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Direct contributors to mailing lists", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "f2576022-3338-4dfd-a1c4-241fff0d2049"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Answer user questions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "a250cce3-ba8f-4da6-8a97-56b1673bcca9"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Add user-requested features", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "883ad7a8-62c9-489b-9d05-96ca44699bf8"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Create flexible code", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "e17af7d8-a235-45e6-9f4f-38d2ae3fd5a0"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Create documentation", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "13b369d0-7b4f-4cba-ae60-1071fe1385b8"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Create code use-case examples", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "d7b5fadd-b402-4cdc-8d0d-71ed92b83c74"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "The work serves their interests", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "7bd2b87a-a446-48cd-95ce-e6fc8419ff6d"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "The work serves others' interests", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "6e597223-3839-45e0-aee9-c3a539e82873"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "The work aligns with their job description", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "a4a09c17-b58b-4092-8638-e88b4eb3bf18"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "They are obligated to do the work", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "266579a7-5974-49f3-8589-008d7c5c8f3d"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "The extra work is high priority", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "f1725013-288c-4840-b29f-d78acb4d0054"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "The scientists have the expertise", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "266c43bf-59a8-46c2-bac0-f73511ca5ab9"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Community guidelines vary significantly across communities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "34897a1a-bb62-4510-b45e-72824262bb96"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Guideline descriptions can be ambiguous", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "17494cae-6290-46e5-9055-1550e8424df2"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Sometimes contributors only learn about guidelines after making a contribution", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "cd214ec6-79c9-4e87-a70f-7740d9ea7757"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Provide a short checklist of things to do before submitting a contribution", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "8937bafa-8df6-40ed-96d4-6c8fd6490ef2"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Due to the large volume of emails, users may fail to notice relevant queries", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "94fd2457-b4a8-4512-b740-cd3ca9477b8f"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Provide automated support for asking questions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "9f178d3f-ed52-458d-acad-8d4c42135eb8"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Create Stack Overflow community", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "4ad34eb4-28c4-4352-96af-9c07d4cb2d4d"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Scientists are not always comfortable making the review process public", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "06ec2510-4813-426c-83e6-7afba6a44ab0"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Allow contributors to choose between private and public evaluation", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "ec6c5ee9-853d-4d5d-a93e-f6a785bd5901"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Providing feedback after using the software is effortful", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "597fc278-f612-4580-acad-1138fea17b4c"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Allow users to rate and provide comments directly within the software", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "9a4d4ad4-6319-49e6-a431-3e850941dfcb"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "Users may not know to report issues in formal ways (e.g., Github issues)", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "dc6f612c-9e85-40ed-bc80-18296a114d4b"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Build social ties", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "b803f814-c78c-4f77-a369-40646b1fc5de"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "How to Hackathon: Socio-technical Tradeoffs in Brief, Intensive Collocation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Erik Trainer", 
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb"
+    ], 
+    "type": "paper", 
+    "id": "EWDTT8PI"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Put the entire development team in one room for the whole project (radical collocation)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "44135f82-5ca0-4a3a-b740-a12259a6ad05"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Ensure effective work during hackathon", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "a8221b2e-5e2f-4056-a1ca-d3fba43bd01c"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Allow team members to move easily between activities", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "5b4ade81-f79e-401a-8335-bdaac9d8b4f8"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Allow team members to point to visible artifacts", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "45e27980-9f84-4f2b-b405-d93d669c9042"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Allow team members to mark visible artifacts to reflect agreed-upon changes", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "676e6df7-9c60-41c9-8712-24c9a9ed7cd3"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Allow team members to observe other participants moment to moment", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "355bb50a-6ef5-45a2-bf9f-da7158613f2c"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Allow team members to have impromptu meetings and training sessions around the artifacts themselves", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "86d86065-7951-46c8-8129-cc4cd7e6c165"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Prepare ad-hoc teams to work together", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "9823655e-40e0-4890-a6bc-ed9a4d183714"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Build better software collaboratively", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "a5c77d14-3363-4abe-bfce-1a4c796f0e31"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Use affordances of working face-to-face", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "bc8fa871-7333-474e-9911-58d0ce388b19"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Learn about each teammates' interests and approaches to shared intellectual concerns", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "17195215-ed54-4e0c-93be-c346b8fc7b64"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Reflect on opportunities for collaboration", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "07f34f15-ed0b-447c-b38c-91d8eb805c79"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Socialize during coffee breaks, meals, and bus rides", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "1b8e8ca3-b205-4b4d-b9d6-00bfa55d23d1"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Watch each other code", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "ab440016-f2fc-4ef9-a530-40c238a9c9b7"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Learn about how teammates react to problems", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "67e4833c-6d4a-40db-8901-abd03d701582"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Gauge teammates' expertise", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "d1af15ac-261b-49cb-9cf3-29477b1e0dca"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Learn the programming conventions and practices of experienced programmers", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "56854add-9b93-448e-a429-77dff44ee1f4"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Create opportunities for working under pressure", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "4850920d-a515-4cb5-9fea-81bde1e4114a"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Ensure completion of hackathon tasks beyond the hackathon", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "766d5d54-d71b-4c44-a391-948ed5034c2f"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Preserve as much context and meaning surrounding people and artifacts as possible", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "559cc927-25b2-4c19-9133-1b2fc71758ee"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Many tasks are incomplete when the hackathon ends", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "57f9bcf9-6ed1-4c9e-9eed-4aac4d19d0c3"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Conduct hackathons", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "b6e7ac9d-59d8-4baa-8512-5be0cdf70ee1"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Record needed work to complete and integrate tasks in various digital locations (e.g., software issue trackers, notebooks, wikis, etc.)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "faf40d04-29cf-4b50-947c-103b8259219f"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Continue coordination beyond the hackathon", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "0a582631-e3ff-4683-babf-1811f6f364ad"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Schedule follow-up meetings", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "9f1d8d4d-c426-423a-93d6-5144a9392b70"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Create digital groups (e.g., mailing lists, private Facebook groups)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "1239e975-7dc4-4adb-bc66-a48108633674"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Strengthen interpersonal relationships established at the hackathon", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "e3eb9899-3304-485c-9714-79b230ef4ba7"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Share photos taken during the hackathon", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "0344e2ad-02bf-4e1c-b953-6f6c22071244"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Establish relationships prior to the start of the hackathon", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "7f2ef29c-f2e6-4eae-b7e6-b14cdd1c1acd"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Use digital collaboration tools (e.g., Github)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "536597b8-075f-4cc8-8dde-6678d25017b6"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Introduce team members to each other", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "e2b3dee7-ca85-4ae8-a5bd-9f327ffd6270"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Use event-specific mailing lists", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "37b81814-82d0-4140-839d-eff913ff7399"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Create tasks for the hackathon prior to the event", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "a4cb63ba-d883-4736-9363-9a09493dd492"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Familiarize participants with task process norms", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "58dbb05d-033d-4118-9be4-8d660370c08c"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "Hackathon artifacts are left behind when event ends (only digital artifacts remain)", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Arun Kalyanasundaram", 
+      "Chalali Chaihirunkarn", 
+      "James D. Herbsleb", 
+      "Erik Trainer"
+    ], 
+    "type": "why-hard", 
+    "id": "b579d7d5-e55c-4b89-84c1-03e4089ea317"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "There are too many ideas to sift through manually", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "why-hard", 
+    "id": "507b3291-5409-4eb5-a36f-a1489281f018"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "Create a synthesis of the emerging solution space", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "923d83ea-4c36-4e95-a8dd-3317e2f48698"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "Avoid recruiting external workers", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "652f42a9-f388-48d8-b209-daa7e0354f1c"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "Avoid requiring community members to engage in tasks that detract from the main activity they are motivated to do", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "bbcda949-550b-4b50-89af-97758b4f6a69"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "Integrate synthesis task naturally into ideation process", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "3b17fe07-c841-4f85-ac27-907e56c75e0d"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "Provide a digital whiteboard for ideation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "280a799e-c372-4e80-811b-e28cb1c012bf"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "Harvest semantic relationship information from spatial clustering of ideas on whiteboard", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Joel Chan", 
+      "Steven P. Dow"
+    ], 
+    "type": "action", 
+    "id": "a62a194b-049b-4ea1-9a49-20631bf7780b"
+  }, 
+  {
+    "paperID": [
+      "2017_1"
+    ], 
+    "name": "Encourage or discourage specific behaviors", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Joseph R Seering", 
+      "Laura A. Dabbish", 
+      "Robert E Kraut"
+    ], 
+    "type": "action", 
+    "id": "1c45565f-8e07-4d19-a654-94129a89beec"
+  }, 
+  {
+    "paperID": [
+      "2017_1"
+    ], 
+    "name": "Spam or any other negative behavior", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Joseph R Seering", 
+      "Laura A. Dabbish", 
+      "Robert E Kraut"
+    ], 
+    "type": "why-hard", 
+    "id": "04a932c3-7a25-4f9b-97a2-bf788d10e48b"
+  }, 
+  {
+    "paperID": [
+      "2017_1"
+    ], 
+    "name": "Use deterrents such as bans to influence behavior", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Joseph R Seering", 
+      "Laura A. Dabbish", 
+      "Robert E Kraut"
+    ], 
+    "type": "action", 
+    "id": "8547928e-cc81-490e-aba3-8c95204bf268"
+  }, 
+  {
+    "paperID": [
+      "2017_4"
+    ], 
+    "name": "Examine physiological synchrony", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Laura A. Dabbish", 
+      "Prerna Chikersal", 
+      "Maria Tomprou", 
+      "Anita Williams Woolley"
+    ], 
+    "type": "action", 
+    "id": "ff34c8e5-049b-4f08-873f-1278ceb9904f"
+  }, 
+  {
+    "paperID": [
+      "2017_4"
+    ], 
+    "name": "Control synchrony", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Laura A. Dabbish", 
+      "Prerna Chikersal", 
+      "Maria Tomprou", 
+      "Anita Williams Woolley"
+    ], 
+    "type": "action", 
+    "id": "6ceff84e-07af-4f06-9f6e-392201580f44"
+  }, 
+  {
+    "paperID": [
+      "2017_4"
+    ], 
+    "name": "Synchrony may be unconscious and uncontrollable", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Laura A. Dabbish", 
+      "Prerna Chikersal", 
+      "Maria Tomprou", 
+      "Anita Williams Woolley"
+    ], 
+    "type": "why-hard", 
+    "id": "d67a094c-7edd-46fe-84e3-c51c2c825ad1"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Better understand social processes", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Kathleen M. Carley", 
+      "Wei Wei"
+    ], 
+    "type": "action", 
+    "id": "18e84ee9-1739-4bd4-92a3-7b8c75badd5b"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Examine stereotypes of a twitter population", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Kathleen M. Carley", 
+      "Wei Wei"
+    ], 
+    "type": "action", 
+    "id": "f7bf566f-d87b-4554-96e0-ab4ddccbc47b"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Examine institutional alignment in semantic stereotypes\n", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Kathleen M. Carley", 
+      "Wei Wei"
+    ], 
+    "type": "action", 
+    "id": "5bad02b3-aa28-4bfa-97ad-51fba539bb71"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Analyze affective stereotypes", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Kathleen M. Carley", 
+      "Wei Wei"
+    ], 
+    "type": "action", 
+    "id": "5c89e26e-eabc-4b7d-91a6-ca9bfaead171"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Combine affective and semantic stereotypes", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Kathleen M. Carley", 
+      "Wei Wei"
+    ], 
+    "type": "action", 
+    "id": "a88c4b07-1930-4f2e-911d-e55c197287a5"
+  }, 
+  {
+    "paperID": [
+      "2017_6", 
+      "5G8U33QZ", 
+      "SMZ5P2JC", 
+      "UQ4WC79E"
+    ], 
+    "name": "Incorporate algorithmic mediation", 
+    "years": [
+      2017, 
+      2015
+    ], 
+    "authors": [
+      "Min Kyung Lee", 
+      "James D. Herbsleb", 
+      "Arun Kalyanasundaram", 
+      "Kai-min Chang", 
+      "Jeffrey P. Bigham", 
+      "Xuanchong Li", 
+      "Chalali Chaihirunkarn", 
+      "Erik Trainer"
+    ], 
+    "type": "action", 
+    "id": "48b55918-965b-46a4-9718-395755043726"
+  }, 
+  {
+    "paperID": [
+      "2017_6"
+    ], 
+    "name": "Algorithmic Mediation in Group Decisions: Fairness Perceptions of Algorithmically Mediated vs. Discussion-Based Social Division", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Min Kyung Lee"
+    ], 
+    "type": "paper", 
+    "id": "2017_6"
+  }, 
+  {
+    "paperID": [
+      "2017_6"
+    ], 
+    "name": "Algorithmic decisions are perceived as less than fair", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Min Kyung Lee"
+    ], 
+    "type": "why-hard", 
+    "id": "b281f9ae-76eb-411f-907e-b4a49d9f5a6e"
+  }, 
+  {
+    "paperID": [
+      "2017_6"
+    ], 
+    "name": "Quantifying preferences through interfaces is prone to error", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Min Kyung Lee"
+    ], 
+    "type": "why-hard", 
+    "id": "1099606a-1dc8-4478-a7f9-9c90ff06dd90"
+  }, 
+  {
+    "paperID": [
+      "2017_6"
+    ], 
+    "name": "People may not understand the algorithms", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Min Kyung Lee"
+    ], 
+    "type": "why-hard", 
+    "id": "44d69a1f-f069-4220-b0a6-b5410f9d6f60"
+  }, 
+  {
+    "paperID": [
+      "2017_6"
+    ], 
+    "name": "Create algorithms and interfaces that account for social and altruistic behaviors", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Min Kyung Lee"
+    ], 
+    "type": "action", 
+    "id": "07a87c72-20cd-4aa2-9ccd-b2111c8802c2"
+  }, 
+  {
+    "paperID": [
+      "NX42RPT2"
+    ], 
+    "name": "facilitate frictionless information collaboration between users' devices", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
+    ], 
+    "type": "action", 
+    "id": "ba2c38b5-42c4-4760-99e3-60e977074bef"
+  }, 
+  {
+    "paperID": [
+      "NX42RPT2"
+    ], 
+    "name": "Using Multiple Contexts to Detect and Form Opportunistic Groups", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
+    ], 
+    "type": "paper", 
+    "id": "NX42RPT2"
+  }, 
+  {
+    "paperID": [
+      "NX42RPT2"
+    ], 
+    "name": "Use a single type of context to form groups", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
+    ], 
+    "type": "action", 
+    "id": "191ea86b-d412-4563-9ec2-28b1a078ea96"
+  }, 
+  {
+    "paperID": [
+      "NX42RPT2"
+    ], 
+    "name": "Opportunistically group users with another to exchange information", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
+    ], 
+    "type": "action", 
+    "id": "3ef0628e-f906-48ad-bb0b-b3a603f6fe97"
+  }, 
+  {
+    "paperID": [
+      "NX42RPT2"
+    ], 
+    "name": "Leverage multiple contexts", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
+    ], 
+    "type": "action", 
+    "id": "f225c776-03f6-4057-b3f5-4507a350079f"
+  }, 
+  {
+    "paperID": [
+      "NX42RPT2"
+    ], 
+    "name": "Single-context group membership determination does not work well in all conditions", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
+    ], 
+    "type": "why-hard", 
+    "id": "2b29f775-4244-4bd6-9b5a-38f1cd3d2f3e"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Computationally model tie strength", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "action", 
+    "id": "c1b5845b-9359-49e5-8cca-85af51104202"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Communication and tie strength correlation is a core assumption", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "why-hard", 
+    "id": "d48cedde-2ebe-4d9d-8a16-d522526e8569"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Evaluate assumption; separate strong and weak ties.", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "action", 
+    "id": "a8f1ff55-3511-4eba-b737-4deec28b4b2e"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Analyze call and SMS logs", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "action", 
+    "id": "e866927e-2d21-4b89-9f98-cf28aa315d19"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "many errors occur when separating strong and weak ties via call and SMS logs", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "why-hard", 
+    "id": "f1e3fa90-98fd-4563-8f57-4d7f39587c79"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Use frequent or long-duration communication to confirm strong ties", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "action", 
+    "id": "dffbda43-2e37-48e6-81eb-381d9f62c88e"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Collect data from more communication channels", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "action", 
+    "id": "653e5b4b-cc8c-4f68-bf94-163f21cf1082"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Individual preferences for certain communication channels", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "why-hard", 
+    "id": "ab88fc45-1bbd-49de-b800-b625257c8dc8"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "Use a lot more communication data", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason I. Hong", 
+      "Jason Wiese", 
+      "John Zimmerman", 
+      "Jun-Ki Min"
+    ], 
+    "type": "action", 
+    "id": "5dc9cc85-021f-4dc3-a3dd-867ec18a063f"
+  }, 
+  {
+    "paperID": [
+      "QVXBKCSS"
+    ], 
+    "name": "Use a social strategy", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Paul Andre", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "135af6e0-2b30-442f-a32e-0d6c5f3174b1"
+  }, 
+  {
+    "paperID": [
+      "QVXBKCSS"
+    ], 
+    "name": "Use a learning strategy", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Paul Andre", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "80e1eebb-2b39-48d7-9bfd-f220a4bfe2c8"
+  }, 
+  {
+    "paperID": [
+      "QVXBKCSS"
+    ], 
+    "name": "Use a financial strategy", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Paul Andre", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "3275ce46-222e-4d00-9acb-ece9f5817daa"
+  }, 
+  {
+    "paperID": [
+      "QVXBKCSS"
+    ], 
+    "name": "Ensure engagement", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Paul Andre", 
+      "Robert E. Kraut", 
+      "Aniket Kittur", 
+      "Lixiu Yu"
+    ], 
+    "type": "action", 
+    "id": "90645cdc-9cee-4bf1-9d96-e927017394c1"
+  }, 
+  {
+    "paperID": [
+      "GQPNFE6B"
+    ], 
+    "name": "Build loyalty to online communities", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "3038d66a-99a1-4ef0-a153-df6218742d89"
+  }, 
+  {
+    "paperID": [
+      "GQPNFE6B"
+    ], 
+    "name": "Use bond-attachment", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "d51dae92-8bfd-487c-9ea1-42142070000d"
+  }, 
+  {
+    "paperID": [
+      "GQPNFE6B"
+    ], 
+    "name": "Use identity-based attachment", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "b986cda3-d01f-49fe-b8d0-619926ddd79a"
+  }, 
+  {
+    "paperID": [
+      "KF3CZPHV"
+    ], 
+    "name": "Improve online news", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "1ee7adf3-07bb-4b56-b57c-386401365e45"
+  }, 
+  {
+    "paperID": [
+      "KF3CZPHV"
+    ], 
+    "name": "Characterizing the Life Cycle of Online News Stories Using Social Media Reactions", 
+    "years": [
+      2014
+    ], 
+    "authors": "", 
+    "type": "paper", 
+    "id": "KF3CZPHV"
+  }, 
+  {
+    "paperID": [
+      "KF3CZPHV"
+    ], 
+    "name": "Understand life cycle of news articles", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "aebe5e04-57a0-4226-afd1-338418940134"
+  }, 
+  {
+    "paperID": [
+      "KF3CZPHV"
+    ], 
+    "name": "Classify articles", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "1de5e5ec-4fea-45fc-813a-af984df367ca"
+  }, 
+  {
+    "paperID": [
+      "KF3CZPHV"
+    ], 
+    "name": "Use web visitation and social media patterns", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "523a3c85-4816-4ac6-9b37-47ac5053b5b8"
+  }, 
+  {
+    "paperID": [
+      "KF3CZPHV"
+    ], 
+    "name": "Predict news article traffic", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "1fb0a944-e7ab-4bc9-b27a-3298fb3770bf"
+  }, 
+  {
+    "paperID": [
+      "ABX4R7K5"
+    ], 
+    "name": "Iteratively advance to solution", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "8791dd2f-1fc9-47a5-a05d-1752cdfb94fa"
+  }, 
+  {
+    "paperID": [
+      "NINP5I8I"
+    ], 
+    "name": "Need criteria for selecting helpful inspirations", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "why-hard", 
+    "id": "73bc5ad9-18ef-4ffc-bd57-7f131f37a6b0"
+  }, 
+  {
+    "paperID": [
+      "NINP5I8I"
+    ], 
+    "name": "Utilize conceptually near sources of inspiration", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "173b338d-d3d7-495a-946e-4c7b3491ff2c"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Analyze quantitative data", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "a88085b7-81cd-4202-bc12-d7796fdf40a3"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Faster departure from contribution", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "why-hard", 
+    "id": "1d5cec32-8c24-45fe-860a-f5d08466b1c1"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Use quid pro quo system: trade contributions from users for access to crowdsourced data", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "f1d45c50-9182-477a-8375-24ff9ce71bf0"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Scaffold expertise", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "1308b36d-5374-48a4-88a2-34ce2d8201df"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Create consistent and accurate data categories for workers", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "435a6e17-f11e-4259-9767-8e3e4a6c7988"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Re-represent data; focus on salient dimensions", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "7b55657e-6158-40ff-9752-7e7678d7241d"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Use an interative clustering approach to provide workers with global view of data", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "57b8776c-b769-40bf-8812-842732253e44"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Predictively classify individual items in data", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "ccc63910-57c3-433d-a5a9-d7d65d37c635"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Provide context for individual items", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "90f3ffe5-d739-47c1-9d9e-1a83a5dddd61"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Improve user contributions for smaller PSSs", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "d3ad43f9-34f5-4df3-b2f1-515beeb4e9f9"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Grow and maintain lifespan of Participatory sensing systems (PSS)", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "6002229b-19ed-48e4-bbc1-ec8b9cd71033"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Frequently inject information", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "action", 
+    "id": "46100865-cf58-4950-bd09-c2f665a94ec9"
+  }
+]

@@ -1,5 +1,5 @@
 plotControl = {
-  circles: false,
+  circles: true,
   links: true,
   text: true,
   rects:true,
@@ -10,11 +10,11 @@ plotControl = {
 var g = svg.append("g");
 d3.queue() //if you want to load more than one file
 .defer(d3.json, 'data/graph.json')
-.await(function (error, graph) {
-  console.log('graph',graph)
+.defer(d3.json, "data/node_neighborhoods.json")
+.await(function (error, graph, node_neighborhoods) {
   var distFromRootArr = distFromRoot(graph); //lots hardcoded
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);
-
+console.log(d3.extent(distFromRootArr))
   bboxes = calcBBoxes(graph);
   bboxes.forEach((box,i) => {
     graph.nodes[i].boxWidth = box.width;
@@ -23,7 +23,6 @@ d3.queue() //if you want to load more than one file
   bbox_array = bboxes.map(x => [[-x.width /2, -x.height/2], [x.width /2, x.height/2]]) // bbox collision in filterByNeighbors needs this
   rectangleCollide = d3.bboxCollide(function (d,i) {
           return bbox_array[i]
-          // return [[-70, -30], [70, 20]]
         })
         .strength(.1)
         .iterations(1)
@@ -32,13 +31,16 @@ d3.queue() //if you want to load more than one file
   // set the force-directed layout properties
   simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function (d) {
+      if (!d.id) debugger
       return d.id;
     }))
     .force("charge", d3.forceManyBody().strength(function (d) {
-      // return -20;
+      if (!d.paperID.length) debugger
       return -19 - Math.log(d.paperID.length) * 250 * 70; // give greater repulsion for larger nodes
     }))
     .force("y", d3.forceY((d, i) => {
+            if (isNaN(scaleY(distFromRootArr[i]))) debugger
+
       return scaleY(distFromRootArr[i])
     }).strength(1))
     .force("x", d3.forceX().strength(.8))
@@ -49,7 +51,14 @@ d3.queue() //if you want to load more than one file
 
   if (error) throw error;
 
-
+  // initialize and draw nodes
+  if (plotControl.circles) {
+  var node = g.append("g")
+    .attr("class", "circles")
+    .selectAll("circle")
+    .data(graph.nodes)
+    .enter().append('circle').call(circleInit)
+  }
 if (plotControl.links) {
   // initialize and draw edges
   var link = g.append("g")
@@ -67,28 +76,11 @@ if (plotControl.rects) {
   .selectAll("rect")
   .data(graph.nodes)
   .enter().append("rect")
-  .attr("stroke", "grey")
-  .attr("fill", "none")
-  .attr("width",(d,i) =>{ 
-    // return bboxes[i].width;
-    return bbox_array[i][1][0]*2
-    }) ////from center: [[topLeftX, topLeftY(- is up)], [bottomRightX, bottomRightY(+ is down)]]
-  .attr("height",(d,i) =>{ 
-    // return bboxes[i].height;
-    return bbox_array[i][1][1]*2
-  })
   .call(nodeInit)
+
 }
 
-  // initialize and draw nodes
-  if (plotControl.circles) {
-  var node = g.append("g")
-    .attr("class", "nodes")
-    .selectAll("circle")
-    .data(graph.nodes)
-    .enter().append("circle")
-    .call(nodeInit)
-  }
+
 
   svg.append("defs").append("marker") //
     .attr("id", "arrow")
@@ -111,41 +103,6 @@ if (plotControl.rects) {
     .call(textInit)
   }
 
-  if (plotControl.divs){
-    var divs = g.append("g")
-    .attr("class", "divs")
-    .selectAll("foreignObject")
-    .data(graph.nodes)
-    .enter().append("foreignObject")
-    .attr("width", d => nodeSizeDefault(d)*2) //2 * node radius
-    .attr("height", d => nodeSizeDefault(d)*2)
-    .attr('transform',d =>{
-      var nodeSize = nodeSizeDefault(d);
-      return  'translate(-' + nodeSize + ',-' + nodeSize/2 + ')'
-    })//offset for circle radius
-
-  divs  
-  .append("xhtml:div")
-      .attr('height', "100%")
-
-  // text-align: center;
-  //   line-height: 200px;
-    .style('line-height', '50px')
-     .style('border-radius','100%')   
-    .style('text-align','center')
-    .style("font", (d,i) => {
-      var nodeSize = nodeSizeDefault(d)
-      lengthRad = nodeSize <= 30 ? 6 : 20;
-      return lengthRad + "px 'Helvetica Neue'"
-    }
-
-    )
-    .style("color", "white")
-    .style('pointer-events', 'none')
-    .html((d,i) =>  d.name );
-}
-
-
   // apply force-directed layout
   simulation
     .nodes(graph.nodes)
@@ -154,15 +111,15 @@ if (plotControl.rects) {
   simulation.force("link")
     .links(graph.links);
 
-  setTimeout(() => { //todo: fix position for unselected nodes and restart
-    simulation.stop()
-    d3.selectAll('circle').attr('---', (d, i) => {
-      //fix position of all nodes 
-      d.fx = d.x;
-      d.fy = d.y;
-    })
-  }
-    , plotControl.pauseTime) //how long until stoping the simulation
+  // setTimeout(() => { //todo: fix position for unselected nodes and restart
+  //   simulation.stop()
+  //   d3.selectAll('circle').attr('---', (d, i) => {
+  //     //fix position of all nodes 
+  //     d.fx = d.x;
+  //     d.fy = d.y;
+  //   })
+  // }
+  //   , plotControl.pauseTime) //how long until stoping the simulation
 
 
   function ticked() {
@@ -184,22 +141,23 @@ if (plotControl.rects) {
     text.attr("x", 0 )
         .attr("y", 0 )
         .attr('transform', (d,i) => {
-          console.log(d)
           var moveX = (d.x-(d.boxWidth/2)) + d.boxWidth*.01;
           var moveY = (d.y-(d.boxHeight/2));
+          
           return "translate(" + moveX + ',' + moveY + ")"
         }) 
     }
 
     if (plotControl.rects) {
-    rects.attr("x", function(d,i) { return d.x - bboxes[i].width/2})
+    rects.attr("x", function(d,i) { 
+      return d.x - bboxes[i].width/2;})
         .attr("y", function(d,i) {  return d.y -  bboxes[i].height/2});    
     }
 
-    if (plotControl.divs){
-    divs.attr("x", function (d) { return d.x; })
-      .attr("y", function (d) { return d.y; });
-    }
+    // if (plotControl.divs){
+    // divs.attr("x", function (d) { return d.x; })
+    //   .attr("y", function (d) { return d.y; });
+    // }
 
   }
 

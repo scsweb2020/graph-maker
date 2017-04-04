@@ -110,28 +110,63 @@
 <script src="src/globalVars.js"></script>
 <script src="src/windowSvgSetup.js"></script>
 
+<!--attrNodes calls neighbors.js functions-->
 <script src="src/attrFuncsNodes.js"></script>
 <script src="src/attrFuncsText.js"></script>
 <script src="src/attrFuncsLinks.js"></script>
+<script src="src/attrFuncsCircles.js"></script>
+
 <script src="src/calcBBoxes.js"></script>
 <script src="src/distFromRoot.js"></script>
+
+<!--initGraph calls all the attrFuncs* inits-->
 <script src="src/initGraph.js"></script>
 <script src="src/createSlider.js"></script>
+
+<!--neighboring.js loads json on each click and calls
+filterByNeighbors(focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta);
+focusNodeID is the clicked node
+all the stringOf* are one long string of IDs for the neighborhood
+meta I believe is for the side div showing the papers-->
 <script src="src/neighboring.js"></script>
+
+<!--focus/unfocus unused now that papers are removed-->
 <script src="src/focus.js"></script>
 <script src="src/filterByYear.js"></script>
+
+<!--paperDetails, authorDetails, filterByNeighbors called in neighboring.js-->
 <script src="src/paperDetails.js"></script>
 <script src="src/authorDetails.js"></script>
-<script src="src/filterByNeighbors.js"></script>
+<!--<script src="src/filterByNeighbors.js"></script> moved into neighoring.js-->
+
+<!--clearFilter called on button press-->
 <script src="src/clearFilter.js"></script>
+
+<!--filterByFocus called by focus.js which calls resetBaseLayer, drawHighlightedNodes, and selectAll: not used without papers in the plot-->
 <script src="src/filterByFocus.js"></script>
+
+<!-- clearFocus was used when we had papers in the plot-->
 <script src="src/clearFocus.js"></script>
-<script src="src/resetBaseLayer.js"></script>
+
+<!--resetBaseLayer called by filterByNeighors, both of which were moved to neighboring.js since they are only used together-->
+<!--<script src="src/resetBaseLayer.js"></script>-->
+
+<!--drawHighlighedNodes was called by the *focus*.js which is currently not used -->
 <script src="src/drawHighlightedNodes.js"></script>
+
+<!--filterLinks called by neighoring.js & unused.js-->
 <script src="src/filterLinks.js"></script>
+
+<!-- newPaper called by paperDetails.js-->
 <script src="src/newPaper.js"></script>
+
+<!--newAuthor called by authorDetails-->
 <script src="src/newAuthor.js"></script>
+
+<!--findOne called by paperDetails-->
 <script src="src/findOne.js"></script>
+
+<!--though commented as unused, this code is needed for the side bar interaction-->
 <script src="src/unused.js"></script>
 
 </body>

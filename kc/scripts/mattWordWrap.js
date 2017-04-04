@@ -6,7 +6,7 @@
         word,
         line = [],
         lineNumber = 0,
-        lineHeight = .5, // ems
+        lineHeight = 1.1, // ems
         y = text.attr("y"),
         x = text.attr("x"),
         dy = parseFloat(text.attr("dy")),
@@ -19,7 +19,7 @@
         line.pop();
         tspan.text(line.join(" "));
         line = [word];
-        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy",  dy + "em").text(word); // sometime dy needs to be constant
+        tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word); // sometime dy needs to be constant
       }
     }
   });

@@ -1,6 +1,9 @@
 function textInit(selection){
     selection
+    .attr('x',0)
+    .attr('y',0)
     .attr('class','dataLabels')
+    .style('opacity', d => d.paperID.length >= 3 ? .7 : 0)
     .attr("font-size", d => sizeText(d, 'init'))
     .attr('id', function (d) { return 'label' + d.id; })
     .attr('dy', "1em") 
@@ -13,15 +16,15 @@ function textInit(selection){
 
     })
     .text(d => d.name)
-    .call(wrap, 200)
+    .call(wrap, 250)
   }
 
 
   function textSelected(selection){
-        // selection
-        // .transition()
-        // .duration(toggleTime)
-        // .style("opacity", 1)
+        selection
+        .transition()
+        .duration(toggleTime)
+        .style("opacity", 1)
         // .style("fill", function (d) {
         //     if (d.type === "paper") {
         //         return "#00BFFF"
@@ -32,33 +35,34 @@ function textInit(selection){
   }
 
 function textReset(selection, purpose){
-    // selection.transition()
-    //     .duration(toggleTime)
+    selection.transition()
+        .duration(toggleTime)
+        .style('opacity', d => d.paperID.length >= 3 ? .4 : 0)
     //         .attr("font-size", d => sizeText(d, 'init'))
     // .attr('id', function (d) { return 'label' + d.id; })
     // .attr('dy', "1em") 
     // .text(d => d.name)
     // .call(wrap, 200)
-        // .style("opacity", function(d) {
-        //   if (purpose === "transition") {
-        //     return 0;
-        //   } else {
-        //     if (d.paperID.length >= 2) {
-        //       return 0.5+d.paperID.length/10;
-        //     } else {
-        //       return 0;
-        //     }
-        //   }
-        // })
-        // .attr("font-size", d => sizeText(d, 'reset'))
-        // .style("fill", function(d) {
-        //   if (d.type === "paper") {
-        //     return "#00BFFF"
-        //   } else {
-        //     return "black"
-        //   }
-        // })
-        // .text(d => modText(d));
+    //     .style("opacity", function(d) {
+    //       if (purpose === "transition") {
+    //         return 0;
+    //       } else {
+    //         if (d.paperID.length >= 2) {
+    //           return 0.5+d.paperID.length/10;
+    //         } else {
+    //           return 0;
+    //         }
+    //       }
+    //     })
+    //     .attr("font-size", d => sizeText(d, 'reset'))
+    //     .style("fill", function(d) {
+    //       if (d.type === "paper") {
+    //         return "#00BFFF"
+    //       } else {
+    //         return "black"
+    //       }
+    //     })
+    //     .text(d => modText(d));
 }
 
 function modText(d, state) { //init and reset
@@ -85,7 +89,9 @@ function modFocusedText(d) { //selected
 
 function sizeText(d, state) {
     if (state === 'init' || state === 'reset'){
-         return parseInt(6 + Math.log(d.paperID.length) * 10).toString() + 'px';
+         var logSize = parseInt(6 + Math.log(d.paperID.length) * 10).toString()
+
+         return logSize < 10 ? 10+'px' : logSize+'px';
     }
     if (state === 'selected') {
         if (d.type === "paper") {
