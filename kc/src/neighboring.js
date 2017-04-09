@@ -195,9 +195,9 @@ function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
     // draw focus node //orange dashes on selected node
     d3.select("#id" + focusNodeID).transition()
         .style("opacity", 1)
-        .style("stroke-dasharray", ("5,4"))
+        // .style("stroke-dasharray", ("5,4"))
         .style("stroke", "orange")
-        .style("stroke-width", "7px");
+        .style("stroke-width", "10px");
 
     // draw related links. selected links get thicker and darker
     var linkSelector = links + "," + authorPaperLinks.toString();
