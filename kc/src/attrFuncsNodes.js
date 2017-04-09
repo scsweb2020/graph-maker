@@ -122,7 +122,7 @@ function nodeReset(selection, purpose){
             if (d.type == "paper") {
               return 0;
             } else {
-              if (d.paperID.length >= 3) {
+              if (d.paperID.length >= 3 || d.distance_from_root_min == 0) {
                 return 0.2
               } else {
                 return 0;

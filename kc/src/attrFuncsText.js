@@ -72,7 +72,7 @@ function textReset(selection, purpose){
             } else {
               if (d.type == "author") {
                 return 0.7;
-              } else if (d.paperID.length >= 3) {
+              } else if (d.paperID.length >= 3 || d.distance_from_root_min == 0) {
                 return 0.7
               } else {
                 return 0;
