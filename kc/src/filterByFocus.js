@@ -53,7 +53,7 @@ function filterByFocus(focusItemID, focusNodeID, nodes, labels, links) {
       if (masterContextNodes.indexOf("#id" + d.id) >= 0) {
         return 1
       } else {
-        return 0.25 // if outside of the current context
+        return 0.7 // if outside of the current context
       }
     })
 
@@ -65,7 +65,7 @@ function filterByFocus(focusItemID, focusNodeID, nodes, labels, links) {
       if (masterContextNodes.indexOf("#id" + d.id) >= 0) {
         return 1
       } else {
-        return 0.5 // if outside of the current context
+        return 0.7 // if outside of the current context
       }
     })
 

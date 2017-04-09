@@ -42,22 +42,23 @@ function nodeInit(selection) {
     })
     .attr('ry', '5')
     .on("click", function (d) {
-      if (["action", "why-hard"].indexOf(d.type) >= 0) {
-        neighboring(d);
-      } else {
-        var focusItemID = d.id;
-        if (focusItemID === lastClickedMetadataID && isFocusing) {
-          isFocusing = false;
-          clearFocus(focusNodeID);
-        } else {
-           isFocusing = true;
-           focus(focusNodeID, focusItemID, d.type); //click
-           $('.node-metadata').removeClass("selected");
-           // $(this).addClass("selected");
-           lastClickedMetadataID = focusItemID;
-        // focus(focusNodeID, d.id, d.type);
-        }
-      }
+      neighboring(d);
+      // if (["action", "why-hard"].indexOf(d.type) >= 0) {
+      //   neighboring(d);
+      // } else {
+      //   var focusItemID = d.id;
+      //   if (focusItemID === lastClickedMetadataID && isFocusing) {
+      //     isFocusing = false;
+      //     clearFocus(focusNodeID);
+      //   } else {
+      //      isFocusing = true;
+      //      focus(focusNodeID, focusItemID, d.type); //click
+      //      $('.node-metadata').removeClass("selected");
+      //      // $(this).addClass("selected");
+      //      lastClickedMetadataID = focusItemID;
+      //   // focus(focusNodeID, d.id, d.type);
+      //   }
+      // }
     })
     .on("mouseover", function (d) { // for tooltips
       //  if (d3.select(this).style('opacity') < 1) {
