@@ -50,7 +50,7 @@ function neighboring(d) { //only function called on nodeClick
 
         // get paper details
         var meta = paperDetails(listOfNodes);
-        console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )    
+        console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )
         // update the viz
 
         filterByNeighbors(focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta);
@@ -66,21 +66,6 @@ function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
 
     resetBaseLayer("transition");
 
-
-    // draw related nodes
-
-    d3.selectAll(nodes).call(nodesSelected)
-
-    // draw focus node //orange dashes on selected node
-    d3.select("#id" + focusNodeID).transition()
-        .style("opacity", 1)
-        .style("stroke-dasharray", ("5,4"))
-        .style("stroke", "orange")
-        .style("stroke-width", "2px");
-
-    // draw related links. selected links get thicker and darker
-    d3.selectAll(links).call(linkSelected)
-
     // show the papers
     var metaPaperIDs = [];
     var metaPaperLabels = [];
@@ -88,13 +73,56 @@ function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
         metaPaperIDs.push("#id" + p);
         metaPaperLabels.push("#label" + p);
     });
+    masterContextNodes = masterContextNodes.concat(metaPaperIDs);
+    masterContextLabels = masterContextLabels.concat(metaPaperLabels);
+
+    // show the authors
+    var metaAuthorIDs = [];
+    var metaAuthorLabels = [];
+    meta.authors.forEach(function (a) {
+        metaAuthorIDs.push("#id" + a.id);
+        metaAuthorLabels.push("#label" + a.id);
+    });
+    masterContextNodes = masterContextNodes.concat(metaAuthorIDs);
+    masterContextLabels = masterContextLabels.concat(metaAuthorLabels);
+
+    // show links between authors and papers
+    var authorsAndPapers = [];
+    metaPaperIDs.forEach(function(p) {
+      authorsAndPapers.push(p.replace("#id", ""));
+    });
+    metaAuthorIDs.forEach(function(a) {
+      authorsAndPapers.push(a.replace("#id", ""));
+    });
+    authorPaperLinks = filterLinks(authorsAndPapers);
+    for (i = 0; i < authorPaperLinks.length; i++) {
+        authorPaperLinks[i] = '#link' + authorPaperLinks[i];
+    }
+    masterContextLinks = masterContextLinks.concat(authorPaperLinks);
+
+    // draw related nodes
+    var nodeSelector = nodes + "," + metaPaperIDs.toString() + metaAuthorIDs.toString();
+    d3.selectAll(nodeSelector).call(nodesSelected)
+
+    // draw focus node //orange dashes on selected node
+    d3.select("#id" + focusNodeID).transition()
+        .style("opacity", 1)
+        .style("stroke-dasharray", ("5,4"))
+        .style("stroke", "orange")
+        .style("stroke-width", "7px");
+
+    // draw related links. selected links get thicker and darker
+    var linkSelector = links + "," + authorPaperLinks.toString();
+    d3.selectAll(linkSelector).call(linkSelected)
+
+
 
     // d3.selectAll(metaPaperIDs.toString())
     //     .transition()
     //     .style("opacity", 1);
 
     // draw related labels (inlcuding paper labels)
-    var labelSelector = labels + "," + metaPaperLabels.toString();
+    var labelSelector = labels + "," + metaPaperLabels.toString() + metaAuthorLabels.toString();
     d3.selectAll(labelSelector).call(textSelected)
 }
 

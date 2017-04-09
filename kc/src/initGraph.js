@@ -36,7 +36,7 @@ console.log(d3.extent(distFromRootArr))
     })
       .strength(function(d) {
         if (d.type == "analogy") {
-          return 0;
+          return 0.2;
         } else {
           return 1;
         }
@@ -45,6 +45,7 @@ console.log(d3.extent(distFromRootArr))
       if (!d.paperID.length) debugger
       // return -19 - Math.log(d.paperID.length) * 250 * 70; // give greater repulsion for larger nodes
       return -19 - Math.log(d.paperID.length) * 250 * 4; // give greater repulsion for larger nodes
+      // return -100
     }))
     // .force("y", d3.forceY().strength(.5))
     // .force("y", d3.forceY((d, i) => {

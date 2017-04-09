@@ -16,13 +16,13 @@ function linkInit(selection){
       }
     })
     .attr("marker-end", function (d) {
-      if (d.type == "analogy" || d.type == "paper-edge") {
+      if (d.type == "analogy" || d.type == "paper-edge" || d.type == "author-paper-edge") {
         return null;
       } else {
         return "url(#arrow)";
       }
     })
-    .attr("opacity", 0.6);
+    .attr("opacity", 0.4);
 }
 
 function linkSelected(selection){
@@ -30,12 +30,19 @@ function linkSelected(selection){
         .duration(toggleTime)
         .style("opacity", 1)
         .style("stroke-width", "3px")
+        .style("stroke", function(d){
+          if (d.type=="paper-edge") {
+            return "none";
+          } else {
+            return "#aaa";
+          }
+        })
 }
 
 function linkReset(selection){
     selection.transition()
         .duration(toggleTime)
-        .style("opacity", 0.6)
+        .style("opacity", 0.4)
         .style("stroke-width", "1px")
         .style("stroke", function(d){
           if (d.type=="paper-edge") {
@@ -45,7 +52,7 @@ function linkReset(selection){
           }
         })
         .attr("marker-end", function(d) {
-          if (d.type == "analogy" || d.type == "paper-edge") {
+          if (d.type == "analogy" || d.type == "paper-edge" || d.type == "author-paper-edge") {
             return null;
           } else {
             return "url(#arrow)";

@@ -9,15 +9,18 @@ function circleInit(selection) {
     .attr('r', d => 8)
     .style('opacity', .2)
     .style("fill", function (d) {
-      if (d.type == 'action')
-        return '#247';
-      else if (d.type == 'why-hard')
+      if (d.type == 'author')
         return 'red';
+      else if (d.type == 'paper')
+        return '#00BFFF';
+      else {        
+        return '#247';
+      }
     })
     .on("click", function (d) {
         neighboring(d);
     })
-        .on("mouseover", function (d) { // for tooltips
+    .on("mouseover", function (d) { // for tooltips
       div.transition()
         .duration(200)
         .style("opacity", .9);
@@ -45,6 +48,6 @@ function circleInit(selection) {
 //     .transition()
 //         .duration(toggleTime)
 //         .style("opacity", .25)
-//         // .attr('r', d => nodeSizeDefault(d)) 
+//         // .attr('r', d => nodeSizeDefault(d))
 //         .style("stroke", "none")
 // }

@@ -1,8 +1,8 @@
 
 function paperDetails(nodes){
     var selectedPaperIDs = [];
-    var authors=[];
     var authorNames = [];
+    var authors=[];
     var p = document.getElementById("tabs-1");
     p.innerHTML = "";
 
@@ -10,18 +10,19 @@ function paperDetails(nodes){
     if (findOne(papers[i].nodeIDs, nodes)) {
         selectedPaperIDs.push(papers[i].paperID);
         p.appendChild(newPaper(papers[i]));
-        var paperAuthors = papers[i].author_arr
+        var paperAuthors = papers[i].author_arr_clean;
         for (j=0; j<paperAuthors.length; j++) {
-        if (authorNames.indexOf(paperAuthors[j]) < 0) {
-            authors.push(
-            {
-                'name': paperAuthors[j],
-                'title': "CMU HCII Faculty",
-                'url': ""
-            }
-            );
-            authorNames.push(paperAuthors[j]);
-        }
+          if (authorNames.indexOf(paperAuthors[j]) < 0) {
+              authors.push(
+                {
+                    'id': authorData[paperAuthors[j]]['id'],
+                    'name': paperAuthors[j],
+                    'title': authorData[paperAuthors[j]]['dept'] + " " + authorData[paperAuthors[j]]['position'],
+                    'url': authorData[paperAuthors[j]]['url']
+                }
+              );
+              authorNames.push(paperAuthors[j]);
+          }
         }
     }
     }

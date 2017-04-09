@@ -20,24 +20,11 @@
     "distance_from_root_min": 2, 
     "name": "Obtain data from online crowds", 
     "authors": [
-      "", 
-      "Kurt Luther", 
-      "Jodi L. Forlizzi", 
-      "Sophie Vennix", 
-      "Felicia Y Ng", 
-      "Steven Dang", 
-      "Robert E. Kraut", 
-      "Jeffrey Bigham", 
-      "Dow, Steven P.", 
-      "Walter Lasecki", 
       "Aniket Kittur", 
-      "Joel Chan", 
-      "Winnie Leung", 
-      "Steven P. Dow", 
-      "Laura A. Dabbish", 
-      "W. Ben Towne", 
-      "Thomas Garncarz", 
-      "Lixiu Yu"
+      "Robert Kraut", 
+      "Jodi Forlizzi", 
+      "Jeffrey Bigham", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.785714285714286, 
@@ -57,11 +44,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Expert feedback is hard to obtain", 
-    "authors": [
-      "Kurt Luther", 
-      "Sophie Vennix", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 4.857142857142857, 
     "id": "ff970b2e-c50c-4358-9a2e-81291071895f", 
@@ -80,11 +63,8 @@
     "distance_from_root_min": 2, 
     "name": "Provide timely, affordable feedback to designers", 
     "authors": [
-      "Kurt Luther", 
       "Anind Dey", 
-      "Sophie Vennix", 
-      "Jodi L. Forlizzi", 
-      "Steven P. Dow", 
+      "Jodi Forlizzi", 
       "Scott Hudson"
     ], 
     "type": "action", 
@@ -107,16 +87,10 @@
     "distance_from_root_min": 2, 
     "name": "Improve design work", 
     "authors": [
-      "", 
-      "Kurt Luther", 
       "Anind Dey", 
-      "Sophie Vennix", 
-      "Jodi L. Forlizzi", 
-      "Steven P. Dow", 
+      "Jodi Forlizzi", 
       "Scott Hudson", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.928571428571429, 
@@ -135,8 +109,7 @@
     "distance_from_root_min": 3, 
     "name": "Provide diverse feedback to designers", 
     "authors": [
-      "Jodi L. Forlizzi", 
-      "Steven P. Dow"
+      "Jodi Forlizzi"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -153,11 +126,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Collect feedback in structured micro-tasks that focus on specific aspects of the design", 
-    "authors": [
-      "Kurt Luther", 
-      "Sophie Vennix", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6, 
     "id": "81e1ca32-8c18-4498-afeb-0ad421b29a65", 
@@ -172,9 +141,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Ensure that feedback providers explain their perception of the meaning of the design", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
     "id": "3623b8dd-8074-4aec-98c7-4b8f5245b5c6", 
@@ -192,9 +159,7 @@
     "distance_from_root_min": 3, 
     "name": "Workers may lack relevant domain knowledge and experience", 
     "authors": [
-      "Kurt Luther", 
-      "Sophie Vennix", 
-      "Steven P. Dow"
+      "Aniket Kittur"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -211,9 +176,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Provide critical feedback to designers", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
     "id": "7a20fa77-b380-4641-ba03-d738403ac715", 
@@ -228,7 +191,7 @@
     "distance_from_root_min": 1, 
     "name": "Broaden participation in crowdsourcing", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.285714285714286, 
@@ -244,7 +207,7 @@
     "distance_from_root_min": 2, 
     "name": "Improve accessibility of crowdsourcing sites", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
@@ -260,7 +223,7 @@
     "distance_from_root_min": 3, 
     "name": "Crowdsourcing sites frequently point workers to external requester-built webpages that may not be accessible", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.5, 
@@ -276,7 +239,7 @@
     "distance_from_root_min": 3, 
     "name": "Identify which available tasks are most appropriate to a given worker's abilities", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.142857142857143, 
@@ -292,7 +255,7 @@
     "distance_from_root_min": 3, 
     "name": "Manage multi-tasking and switching among several different apps and user interfaces", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.5, 
@@ -308,7 +271,7 @@
     "distance_from_root_min": 3, 
     "name": "Allow for more flexibility in task time limits", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.5, 
@@ -324,7 +287,7 @@
     "distance_from_root_min": 3, 
     "name": "Enable more people to learn about the availability of crowdwork", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.5, 
@@ -340,7 +303,7 @@
     "distance_from_root_min": 4, 
     "name": "Job coaches view crowdwork more negatively than people with disabilities", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.5, 
@@ -356,7 +319,7 @@
     "distance_from_root_min": 3, 
     "name": "Reputation ratings do not account for accessibility-related challenges with workflows", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -372,7 +335,7 @@
     "distance_from_root_min": 1, 
     "name": "Increase the efficiency of crowd labor markets", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -388,7 +351,7 @@
     "distance_from_root_min": 4, 
     "name": "Introduce metadata fields that indicate what types of abilities a task requires", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.142857142857143, 
@@ -404,7 +367,7 @@
     "distance_from_root_min": 4, 
     "name": "Employ crowdworkers to add skill requirement labels to existing tasks", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.142857142857143, 
@@ -420,7 +383,7 @@
     "distance_from_root_min": 4, 
     "name": "Use recommender algorithms to identify tasks matching a worker's abilities", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6, 
@@ -436,7 +399,7 @@
     "distance_from_root_min": 5, 
     "name": "Develop an online community for crowdworkers with different disabilities", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.5, 
@@ -452,7 +415,7 @@
     "distance_from_root_min": 4, 
     "name": "Allow people to optionally identify disabilities as part of their worker profile", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -468,7 +431,7 @@
     "distance_from_root_min": 5, 
     "name": "People with disabilities have concerns about disclosing disability information in employment situations", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.785714285714286, 
@@ -484,7 +447,7 @@
     "distance_from_root_min": 4, 
     "name": "Provide an adjudication process for workers with disabilities to seek removal of negative reputation points due to disability issues", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.357142857142857, 
@@ -500,7 +463,7 @@
     "distance_from_root_min": 4, 
     "name": "Allow for partial completions", 
     "authors": [
-      "Jeffrey P. Bigham"
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.357142857142857, 
@@ -516,8 +479,7 @@
     "distance_from_root_min": 3, 
     "name": "In-person feedback-providers are difficult to recruit, leading designers to resort to convenience samples", 
     "authors": [
-      "Jodi L. Forlizzi", 
-      "Steven P. Dow"
+      "Jodi Forlizzi"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -533,8 +495,7 @@
     "distance_from_root_min": 3, 
     "name": "Workers may not know how to clearly articulate needs", 
     "authors": [
-      "Jodi L. Forlizzi", 
-      "Steven P. Dow"
+      "Jodi Forlizzi"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -550,8 +511,7 @@
     "distance_from_root_min": 3, 
     "name": "Workers may feel more comfortable providing feedback in-person", 
     "authors": [
-      "Jodi L. Forlizzi", 
-      "Steven P. Dow"
+      "Jodi Forlizzi"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -567,8 +527,7 @@
     "distance_from_root_min": 4, 
     "name": "Workers videorecord responses to constructed scenarios that describe the design situation and a possible solution", 
     "authors": [
-      "Jodi L. Forlizzi", 
-      "Steven P. Dow"
+      "Jodi Forlizzi"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -583,9 +542,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Crowd feedback produces large volumes of feedback", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.142857142857143, 
     "id": "18a2d116-77d4-467c-99dd-116e8faffcad", 
@@ -599,9 +556,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Aggregate feedback across workers", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
     "id": "ef6c4ea6-ce3d-4718-a617-79441ab4e99f", 
@@ -615,9 +570,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Enable designers to review feedback in a meaningful way", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
     "id": "f36d8f26-8ede-4dda-98d6-bb3fbc93209b", 
@@ -631,9 +584,7 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Avoid overwhelming the user with details", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 7.142857142857143, 
     "id": "6767d22e-ac3c-4b81-bb50-21f701307bde", 
@@ -647,9 +598,7 @@
     ], 
     "distance_from_root_min": 6, 
     "name": "Progressively disclose details to the user on demand", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 8.142857142857142, 
     "id": "6f7185b4-c214-49eb-8729-db7c6fcbf420", 
@@ -669,16 +618,8 @@
     "distance_from_root_min": 1, 
     "name": "Increase quality of work on crowdsourcing platforms", 
     "authors": [
-      "Jeffrey M. Rzeszotarski", 
-      "Dow, Steven P.", 
-      "Steven Dang", 
-      "Robert E. Kraut", 
-      "Mark E Whiting", 
-      "Paul Andre", 
       "Aniket Kittur", 
-      "Joel Chan", 
-      "Steven P. Dow", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.714285714285714, 
@@ -698,7 +639,7 @@
     "distance_from_root_min": 2, 
     "name": "Many crowdsourcing tasks are repetitive and tedious, and doing many of these in a row leads to fatigue and poorer work quality", 
     "authors": [
-      "Jeffrey M. Rzeszotarski"
+      "Aniket Kittur"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.571428571428571, 
@@ -714,9 +655,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Introduce short diversions that contain small amounts of entertainment", 
-    "authors": [
-      "Jeffrey M. Rzeszotarski"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 7.571428571428571, 
     "id": "f5c41da2-0a85-47b1-a439-e2a213952a40", 
@@ -731,10 +670,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Workers want to maximize earnings", 
-    "authors": [
-      "Mark E Whiting", 
-      "Jeffrey M. Rzeszotarski"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
     "id": "2869074d-26a4-469f-9495-f900cfae2bd5", 
@@ -749,9 +685,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Searching for and learning new tasks is time-consuming", 
-    "authors": [
-      "Jeffrey M. Rzeszotarski"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.642857142857143, 
     "id": "0e91b787-6490-4776-b37c-b7963846927f", 
@@ -765,9 +699,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Workers complete many tasks in a single, prolonged setting", 
-    "authors": [
-      "Jeffrey M. Rzeszotarski"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.571428571428571, 
     "id": "cfcf44d3-40ed-46d9-b228-a2a4f0c40d29", 
@@ -781,9 +713,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Reduce fatigue", 
-    "authors": [
-      "Jeffrey M. Rzeszotarski"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.571428571428571, 
     "id": "22f43593-1736-440c-a23c-8c6266cdf0a6", 
@@ -797,9 +727,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Improve alertness", 
-    "authors": [
-      "Jeffrey M. Rzeszotarski"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.571428571428571, 
     "id": "6c880340-76d1-44c0-8847-c73e68250577", 
@@ -813,9 +741,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Refresh workers' cognitive resources", 
-    "authors": [
-      "Jeffrey M. Rzeszotarski"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.571428571428571, 
     "id": "f787ea21-3ff2-43db-b1bf-8886acbd2b5d", 
@@ -832,12 +758,9 @@
     "distance_from_root_min": 0, 
     "name": "Improve crowdsourcing work", 
     "authors": [
-      "Jeffrey M. Rzeszotarski", 
-      "Lixiu Yu", 
-      "Robert E. Kraut", 
-      "Paul Andre", 
       "Aniket Kittur", 
-      "Jeffrey P. Bigham"
+      "Robert Kraut", 
+      "Jeffrey Bigham"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -855,8 +778,7 @@
     "distance_from_root_min": 2, 
     "name": "Ensure effective performance in virtual teams on crowdsourcing platforms", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.142857142857143, 
@@ -874,8 +796,7 @@
     "distance_from_root_min": 1, 
     "name": "Form effective teams", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5, 
@@ -893,8 +814,7 @@
     "distance_from_root_min": 2, 
     "name": "Crowdsourcing assignments are typically short-lived but people need time to build trust", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.357142857142857, 
@@ -910,9 +830,7 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Measure personality beforehand with DISC personality test", 
-    "authors": [
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 8.857142857142858, 
     "id": "8df893a4-8f0b-490c-987f-af902096cb2a", 
@@ -928,8 +846,7 @@
     "distance_from_root_min": 4, 
     "name": "Ensure a balance of personality types in the team", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.857142857142857, 
@@ -947,8 +864,7 @@
     "distance_from_root_min": 3, 
     "name": "Minimize barriers to building and maintaining trust", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
@@ -966,8 +882,7 @@
     "distance_from_root_min": 4, 
     "name": "Minimize interpersonal tensions and conflict", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.214285714285714, 
@@ -984,8 +899,7 @@
     "distance_from_root_min": 4, 
     "name": "Allow people to express preferences about team members based on interactions in a brief task", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.785714285714286, 
@@ -1001,8 +915,7 @@
     "distance_from_root_min": 2, 
     "name": "Ensure a balance of skills on the team", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6, 
@@ -1018,8 +931,7 @@
     "distance_from_root_min": 3, 
     "name": "Prior data on skills and personality is not always available or easy to obtain", 
     "authors": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7, 
@@ -1038,15 +950,8 @@
     "distance_from_root_min": 2, 
     "name": "Optimize performance of online crowds", 
     "authors": [
-      "Dow, Steven P.", 
-      "Steven Dang", 
-      "Robert E. Kraut", 
-      "Mark E Whiting", 
-      "Paul Andre", 
       "Aniket Kittur", 
-      "Joel Chan", 
-      "Steven P. Dow", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.785714285714286, 
@@ -1064,9 +969,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Use worker reputation scores to filter work", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
     "id": "e90c2122-0271-417e-8aab-195291e77b94", 
@@ -1080,9 +983,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Reputation scores from decentralized workers are typically inflated and uninformative", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.857142857142857, 
     "id": "b33eca1b-b213-453e-bd91-5293a734d52d", 
@@ -1096,9 +997,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Centralize workers into guilds that work on common tasks", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.5, 
     "id": "a099a23d-1403-4a2d-9e57-bbaf73c8be8c", 
@@ -1112,9 +1011,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Enable workers to certify each others' quality", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.214285714285714, 
     "id": "083bdc4e-9d45-498b-a448-70d3422d4e26", 
@@ -1128,9 +1025,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Workers may seek to game the reputation system", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.214285714285714, 
     "id": "476bdd52-da6a-4896-b08b-a61ade123f15", 
@@ -1144,9 +1039,7 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Use double-blind peer review", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 7.214285714285714, 
     "id": "1b8cadfd-7fd3-4747-ad15-7fcdbe5c929c", 
@@ -1160,9 +1053,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Enable workers to bargain for better pay for tasks", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
     "id": "78ae09cc-7cb8-4706-ab9e-118441c7a628", 
@@ -1176,9 +1067,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Workers collectively reject tasks that pay too little", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 7.071428571428571, 
     "id": "3432384d-5e8c-4cb5-b199-726631f424c7", 
@@ -1192,9 +1081,7 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Ensure workers' well-being", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.357142857142857, 
     "id": "490cfcac-4e3f-4767-b319-f9ded78b2553", 
@@ -1208,9 +1095,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Enable senior workers to mentor more novice workers", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
     "id": "78699c35-befe-4b31-8631-2298aba411ca", 
@@ -1224,9 +1109,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Workers provide social support to each other", 
-    "authors": [
-      "Mark E Whiting"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
     "id": "7da93321-805d-4c20-b8a3-a79f1ea1ff15", 
@@ -1241,11 +1124,7 @@
     "distance_from_root_min": 3, 
     "name": "increase recipient's positive emotions", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -1261,11 +1140,7 @@
     "distance_from_root_min": 3, 
     "name": "reduce recipient's annoyance and frustration", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -1281,11 +1156,7 @@
     "distance_from_root_min": 4, 
     "name": "use positive affective language in feedback", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
@@ -1301,11 +1172,7 @@
     "distance_from_root_min": 4, 
     "name": "anonymize feedback provider", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -1321,11 +1188,7 @@
     "distance_from_root_min": 3, 
     "name": "increase perceived fairness of feedback", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -1341,11 +1204,7 @@
     "distance_from_root_min": 3, 
     "name": "increase perceived fairness of feedback provider", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -1361,11 +1220,7 @@
     "distance_from_root_min": 3, 
     "name": "increase perceived expertise of feedback provider", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.214285714285714, 
@@ -1381,11 +1236,7 @@
     "distance_from_root_min": 3, 
     "name": "increase perceived usefulness of feedback", 
     "authors": [
-      "", 
-      "Laura A. Dabbish", 
-      "Thomas Garncarz", 
-      "Steven P. Dow", 
-      "Felicia Y Ng"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.357142857142857, 
@@ -1401,8 +1252,7 @@
     "distance_from_root_min": 3, 
     "name": "Measure self-disclosure on social network sites", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.214285714285714, 
@@ -1418,8 +1268,7 @@
     "distance_from_root_min": 2, 
     "name": "Enable social scientists to understand the conditions that encourage or discourage self-disclosure", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -1435,8 +1284,7 @@
     "distance_from_root_min": 2, 
     "name": "Give feedback to members of social network sites about whether their content is revealing more or less about themselves than they desire", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
@@ -1452,8 +1300,7 @@
     "distance_from_root_min": 2, 
     "name": "Enable service providers to track how changes to the design of their sites influences users' self-disclosure", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5, 
@@ -1472,11 +1319,11 @@
     "distance_from_root_min": 1, 
     "name": "Improve social network sites", 
     "authors": [
-      "Robert E. Kraut", 
-      "Hong, Jason I.", 
-      "Dabbish, Laura A.", 
-      "Yi-Chia Wang", 
-      "Das, Sauvik."
+      "Norman Sadeh", 
+      "Robert Kraut", 
+      "Jason Hong", 
+      "Alessandro Acquisti", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.142857142857143, 
@@ -1494,8 +1341,7 @@
     "distance_from_root_min": 2, 
     "name": "Measuring self-disclosure is costly and difficult", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.357142857142857, 
@@ -1511,8 +1357,7 @@
     "distance_from_root_min": 4, 
     "name": "Approximate human judgments", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
@@ -1528,8 +1373,7 @@
     "distance_from_root_min": 5, 
     "name": "Create a parsimonious model (using a small number of features of the text)", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.071428571428571, 
@@ -1545,8 +1389,7 @@
     "distance_from_root_min": 4, 
     "name": "Create an interpretable model", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -1562,8 +1405,7 @@
     "distance_from_root_min": 5, 
     "name": "Create a domain-independent model", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -1579,8 +1421,7 @@
     "distance_from_root_min": 3, 
     "name": "Enable measurement of posts at scale", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.285714285714286, 
@@ -1596,8 +1437,7 @@
     "distance_from_root_min": 5, 
     "name": "Select predictive features", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.071428571428571, 
@@ -1613,8 +1453,7 @@
     "distance_from_root_min": 7, 
     "name": "Calculate cross-entropy of the post with the corpus", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 9.214285714285714, 
@@ -1630,8 +1469,7 @@
     "distance_from_root_min": 4, 
     "name": "Apply machine learning models to status updates", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.071428571428571, 
@@ -1647,8 +1485,7 @@
     "distance_from_root_min": 5, 
     "name": "Use a small number of theory-driven features", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.214285714285714, 
@@ -1664,8 +1501,7 @@
     "distance_from_root_min": 6, 
     "name": "Measure emotional valence", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.214285714285714, 
@@ -1681,8 +1517,7 @@
     "distance_from_root_min": 6, 
     "name": "Measure social distance between poster and people mentioned in the post", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.214285714285714, 
@@ -1698,8 +1533,7 @@
     "distance_from_root_min": 6, 
     "name": "Measure language similarity between the post and the community", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.214285714285714, 
@@ -1715,8 +1549,7 @@
     "distance_from_root_min": 6, 
     "name": "Measure post topics", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.214285714285714, 
@@ -1732,8 +1565,7 @@
     "distance_from_root_min": 6, 
     "name": "Measure post length", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.214285714285714, 
@@ -1749,8 +1581,7 @@
     "distance_from_root_min": 7, 
     "name": "Use Latent Dirichlet Allocation", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 9.214285714285714, 
@@ -1766,8 +1597,7 @@
     "distance_from_root_min": 7, 
     "name": "Use Linguistic Inquiry Word Count dictionary", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 9.214285714285714, 
@@ -1783,8 +1613,7 @@
     "distance_from_root_min": 7, 
     "name": "Measure references to self, family, and friends", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 9.214285714285714, 
@@ -1800,8 +1629,7 @@
     "distance_from_root_min": 8, 
     "name": "Build language model of corpus", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 10.214285714285714, 
@@ -1817,8 +1645,7 @@
     "distance_from_root_min": 9, 
     "name": "Use bigram language model with Good-Turing smoothing", 
     "authors": [
-      "Robert E. Kraut", 
-      "Yi-Chia Wang"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 11.214285714285714, 
@@ -1833,11 +1660,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Provide emotionally positive feedback to designers", 
-    "authors": [
-      "Kurt Luther", 
-      "Sophie Vennix", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
     "id": "1786d402-7643-45b2-901d-8d7681ba20ac", 
@@ -1851,11 +1674,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Provide specific feedback to designers", 
-    "authors": [
-      "Kurt Luther", 
-      "Sophie Vennix", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
     "id": "24318074-ac15-43bc-a108-3434112607eb", 
@@ -1870,9 +1689,6 @@
     "distance_from_root_min": 3, 
     "name": "Quantitatively assess interactions from video data", 
     "authors": [
-      "Walter Lasecki", 
-      "Winnie Leung", 
-      "Steven P. Dow", 
       "Jeffrey Bigham"
     ], 
     "type": "action", 
@@ -1889,9 +1705,6 @@
     "distance_from_root_min": 3, 
     "name": "Annotate behavioral events in the video data", 
     "authors": [
-      "Walter Lasecki", 
-      "Winnie Leung", 
-      "Steven P. Dow", 
       "Jeffrey Bigham"
     ], 
     "type": "action", 
@@ -1909,9 +1722,7 @@
     "distance_from_root_min": 1, 
     "name": "Manual annotation is effortful and time-consuming", 
     "authors": [
-      "Walter Lasecki", 
-      "Winnie Leung", 
-      "Steven P. Dow", 
+      "Aniket Kittur", 
       "Jeffrey Bigham"
     ], 
     "type": "action", 
@@ -1929,9 +1740,6 @@
     "distance_from_root_min": 2, 
     "name": "Judgments are typically complex", 
     "authors": [
-      "Walter Lasecki", 
-      "Winnie Leung", 
-      "Steven P. Dow", 
       "Jeffrey Bigham"
     ], 
     "type": "why-hard", 
@@ -1954,27 +1762,19 @@
     "distance_from_root_min": 2, 
     "name": "Measure human behavior", 
     "authors": [
-      "Scott Hudson", 
-      "Anind Dey", 
-      "Yi-Chia Wang", 
+      "Robert Kraut", 
+      "Jason Hong", 
+      "John Zimmerman", 
       "Anita Williams Woolley", 
-      "Kathleen M. Carley", 
-      "Maria Tomprou", 
-      "Robert E. Kraut", 
-      "Wei Wei", 
+      "Jodi Forlizzi", 
       "Jeffrey Bigham", 
-      "Walter Lasecki", 
+      "Laura Dabbish", 
       "Kai-min Chang", 
-      "Jason I. Hong", 
-      "Jodi L. Forlizzi", 
-      "Winnie Leung", 
-      "Steven P. Dow", 
-      "Laura A. Dabbish", 
-      "Xuanchong Li", 
-      "Jason Wiese", 
-      "Prerna Chikersal", 
-      "Jun-Ki Min", 
-      "John Zimmerman"
+      "Anind Dey", 
+      "Maria Tomprou", 
+      "Scott Hudson", 
+      "Alexander Hauptmann", 
+      "Kathleen Carley"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.142857142857143, 
@@ -1992,9 +1792,8 @@
     "distance_from_root_min": 4, 
     "name": "Modifying a practice from another environment may introduce problems and undercut its effectiveness", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -2010,9 +1809,8 @@
     "distance_from_root_min": 3, 
     "name": "Adapt the transferred practice to fit the local environment", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.571428571428571, 
@@ -2028,9 +1826,8 @@
     "distance_from_root_min": 5, 
     "name": "Wait until the receiving project has had experience with the imported practice", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.428571428571429, 
@@ -2046,9 +1843,8 @@
     "distance_from_root_min": 4, 
     "name": "Ensure practice is introduced by members who have experience in a variety of other projects", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -2071,14 +1867,8 @@
     "distance_from_root_min": 1, 
     "name": "Increase innovation", 
     "authors": [
-      "W. Ben Towne", 
-      "Lixiu Yu", 
-      "Steven Dang", 
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Joel Chan", 
-      "Steven P. Dow", 
-      "Dow, Steven P."
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.142857142857143, 
@@ -2101,13 +1891,8 @@
     "distance_from_root_min": 2, 
     "name": "Enable community members to build on other (good) ideas within the community", 
     "authors": [
-      "Dow, Steven P.", 
-      "Steven Dang", 
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Joel Chan", 
-      "Steven P. Dow", 
-      "Haiyi Zhu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.571428571428571, 
@@ -2124,11 +1909,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Novice workers may not know how to productively build on ideas", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.428571428571429, 
     "id": "3aa9653a-0b5f-48da-ab44-5f278aed7e2f", 
@@ -2142,11 +1923,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Novice workers may rely on the wrong signals (e.g., community upvotes) to find good ideas to build on", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.428571428571429, 
     "id": "eb4b7223-e843-44bf-9d80-ad8f8b6c2890", 
@@ -2160,11 +1937,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Enable broad exploration of ideas", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
     "id": "952361c9-05ff-4914-a626-51a7aa796366", 
@@ -2178,11 +1951,7 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Enable deep exploration of ideas", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.214285714285714, 
     "id": "3a7e20ac-6f84-41d9-b38d-ddb6654989af", 
@@ -2196,11 +1965,7 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Enable many crowd workers to participate", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.285714285714286, 
     "id": "b936752d-d9fe-47b3-874d-af45a86a4074", 
@@ -2214,11 +1979,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Provide gold standard examples", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
     "id": "d2223f81-eece-4b3c-a1db-58255e0aec32", 
@@ -2232,11 +1993,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Experts provide personalized feedback on individual ideas", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
     "id": "b4b7bae1-0210-4616-8ca5-8fc80531f8e5", 
@@ -2250,11 +2007,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Experts highlight which promising ideas to build on, and how to build on them", 
-    "authors": [
-      "Steven Dang", 
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
     "id": "d9e7bdda-8a6a-4a49-8c2d-ad59e97ebd56", 
@@ -2270,9 +2023,8 @@
     "distance_from_root_min": 2, 
     "name": "Increase analogical innovation", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.285714285714286, 
@@ -2289,9 +2041,8 @@
     "distance_from_root_min": 2, 
     "name": "Individuals are limited in their cognitive capacity", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.142857142857143, 
@@ -2307,9 +2058,8 @@
     "distance_from_root_min": 3, 
     "name": "Difficult for crowd to search large idea repositories (e.g., the web)", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -2325,9 +2075,8 @@
     "distance_from_root_min": 4, 
     "name": "Identify remote domains of possibly relevant expertise (e.g., origami folding)", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -2343,9 +2092,8 @@
     "distance_from_root_min": 4, 
     "name": "Use crowds to search web within identified domains", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -2361,9 +2109,8 @@
     "distance_from_root_min": 3, 
     "name": "Real world problems involve multiple constraints", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -2379,9 +2126,8 @@
     "distance_from_root_min": 4, 
     "name": "Distributed process for eliciting constraints about a problem", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -2397,9 +2143,8 @@
     "distance_from_root_min": 5, 
     "name": "Don't know which level of abstraction is useful to represent constraints", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.142857142857143, 
@@ -2415,9 +2160,8 @@
     "distance_from_root_min": 5, 
     "name": "Don't know whether to elicit constraints from original problem or abstracted problem schema", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.142857142857143, 
@@ -2433,9 +2177,8 @@
     "distance_from_root_min": 4, 
     "name": "Maximum creativity if use abstracted problem schema and concrete constraints", 
     "authors": [
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -2461,21 +2204,16 @@
     "distance_from_root_min": 0, 
     "name": "Online communities", 
     "authors": [
-      "Hong, Jason I.", 
-      "Yi-Chia Wang", 
-      "Arun Kalyanasundaram", 
-      "Robert E. Kraut", 
-      "Das, Sauvik.", 
-      "Joseph R Seering", 
+      "Robert Kraut", 
+      "Jason Hong", 
+      "John Zimmerman", 
+      "Anthony Tomasic", 
       "Aniket Kittur", 
-      "James D. Herbsleb", 
-      "Laura A. Dabbish", 
-      "Robert E Kraut", 
-      "Haiyi Zhu", 
-      "Dabbish, Laura A.", 
-      "Chalali Chaihirunkarn", 
-      "Erik Trainer", 
-      "Marlow, Jennifer"
+      "Laura Dabbish", 
+      "Aaron Steinfeld", 
+      "James Herbsleb", 
+      "Alessandro Acquisti", 
+      "Norman Sadeh"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -2498,15 +2236,10 @@
     "distance_from_root_min": 1, 
     "name": "Volunteer production communities (e.g., Wikipedia, open source)", 
     "authors": [
-      "Marlow, Jennifer", 
-      "Arun Kalyanasundaram", 
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "James D. Herbsleb", 
-      "Chalali Chaihirunkarn", 
-      "Dabbish, Laura A.", 
-      "Haiyi Zhu", 
-      "Erik Trainer"
+      "Laura Dabbish", 
+      "Robert Kraut", 
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.785714285714286, 
@@ -2523,9 +2256,8 @@
     "distance_from_root_min": 3, 
     "name": "Individuals might not want to do what the group needs (e.g., unpopular tasks)", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.285714285714286, 
@@ -2541,9 +2273,8 @@
     "distance_from_root_min": 4, 
     "name": "Managerial control (as in offline organizations)", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.285714285714286, 
@@ -2559,9 +2290,8 @@
     "distance_from_root_min": 5, 
     "name": "Online volunteers may leave", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.285714285714286, 
@@ -2577,9 +2307,8 @@
     "distance_from_root_min": 4, 
     "name": "Group identification (as in sports)", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.142857142857143, 
@@ -2595,9 +2324,8 @@
     "distance_from_root_min": 3, 
     "name": "Increases motivation but does not provide direction what to work on", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7, 
@@ -2613,9 +2341,8 @@
     "distance_from_root_min": 4, 
     "name": "Direction setting (what to work on)", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.142857142857143, 
@@ -2631,9 +2358,8 @@
     "distance_from_root_min": 3, 
     "name": "Provides direction what to work on but not motivation", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7, 
@@ -2649,9 +2375,8 @@
     "distance_from_root_min": 4, 
     "name": "Public group goals (explicit)", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.857142857142857, 
@@ -2668,12 +2393,9 @@
     "distance_from_root_min": 4, 
     "name": "Role modeling (implicit)", 
     "authors": [
-      "Robert E Kraut", 
-      "Robert E. Kraut", 
-      "Joseph R Seering", 
       "Aniket Kittur", 
-      "Laura A. Dabbish", 
-      "Haiyi Zhu"
+      "Robert Kraut", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.642857142857143, 
@@ -2690,9 +2412,8 @@
     "distance_from_root_min": 5, 
     "name": "Highlighting group goals strongly motivate members who self-identify with the group (compared to those that don't)", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.857142857142858, 
@@ -2708,9 +2429,8 @@
     "distance_from_root_min": 6, 
     "name": "Spillover effect to non-goal related tasks", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 9.857142857142858, 
@@ -2726,9 +2446,8 @@
     "distance_from_root_min": 5, 
     "name": "Members exposed to prototypical group members act more like them on group-relevant behaviors", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.642857142857142, 
@@ -2746,13 +2465,8 @@
     "distance_from_root_min": 1, 
     "name": "Ensure content quality", 
     "authors": [
-      "Marlow, Jennifer", 
-      "Arun Kalyanasundaram", 
-      "James D. Herbsleb", 
-      "Haiyi Zhu", 
-      "Dabbish, Laura A.", 
-      "Chalali Chaihirunkarn", 
-      "Erik Trainer"
+      "Laura Dabbish", 
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.928571428571429, 
@@ -2771,13 +2485,12 @@
     "distance_from_root_min": 2, 
     "name": "Encourage user contributions", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Robert E. Kraut", 
+      "Robert Kraut", 
+      "John Zimmerman", 
+      "Anthony Tomasic", 
       "Aniket Kittur", 
-      "James D. Herbsleb", 
-      "Haiyi Zhu", 
-      "Chalali Chaihirunkarn", 
-      "Erik Trainer"
+      "Aaron Steinfeld", 
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.714285714285714, 
@@ -2796,9 +2509,7 @@
     "distance_from_root_min": 2, 
     "name": "Allow Wikipedia-like collaborative editing on questions and answers", 
     "authors": [
-      "Haiyi Zhu", 
-      "Dabbish, Laura A.", 
-      "Marlow, Jennifer"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.857142857142857, 
@@ -2814,9 +2525,8 @@
     "distance_from_root_min": 2, 
     "name": "Improve performance of online community units", 
     "authors": [
-      "Robert E. Kraut", 
-      "Haiyi Zhu", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.785714285714286, 
@@ -2832,7 +2542,6 @@
     "distance_from_root_min": 1, 
     "name": "Enable remote collaboration", 
     "authors": [
-      "Nathaniel Fruchter", 
       "Min Kyung Lee", 
       "Laura Dabbish"
     ], 
@@ -2850,7 +2559,6 @@
     "distance_from_root_min": 1, 
     "name": "Ensure appropriate judgments of risk harm for collaborators", 
     "authors": [
-      "Nathaniel Fruchter", 
       "Min Kyung Lee", 
       "Laura Dabbish"
     ], 
@@ -2868,7 +2576,6 @@
     "distance_from_root_min": 1, 
     "name": "Ensure humanization of collaborators", 
     "authors": [
-      "Nathaniel Fruchter", 
       "Min Kyung Lee", 
       "Laura Dabbish"
     ], 
@@ -2886,7 +2593,6 @@
     "distance_from_root_min": 2, 
     "name": "Provide technologically mediated interaction to people who see themselves as defined through their relationships", 
     "authors": [
-      "Nathaniel Fruchter", 
       "Min Kyung Lee", 
       "Laura Dabbish"
     ], 
@@ -2909,14 +2615,10 @@
     "name": "Improve group work", 
     "authors": [
       "Min Kyung Lee", 
-      "Anita Williams Woolley", 
-      "Robert E. Kraut", 
-      "Laura Dabbish", 
+      "Robert Kraut", 
       "Maria Tomprou", 
-      "Steven P. Dow", 
-      "Laura A. Dabbish", 
-      "Nathaniel Fruchter", 
-      "Prerna Chikersal"
+      "Anita Williams Woolley", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -2934,7 +2636,6 @@
     "distance_from_root_min": 2, 
     "name": "Ensure engagement and immersion in interactions with collaborators", 
     "authors": [
-      "Nathaniel Fruchter", 
       "Min Kyung Lee", 
       "Laura Dabbish"
     ], 
@@ -2952,7 +2653,6 @@
     "distance_from_root_min": 3, 
     "name": "Ensure maximal bandwidth of communication signals in interactions", 
     "authors": [
-      "Nathaniel Fruchter", 
       "Min Kyung Lee", 
       "Laura Dabbish"
     ], 
@@ -2971,8 +2671,7 @@
     "distance_from_root_min": 1, 
     "name": "Increase collective intelligence", 
     "authors": [
-      "Laura A. Dabbish", 
-      "Prerna Chikersal", 
+      "Laura Dabbish", 
       "Maria Tomprou", 
       "Anita Williams Woolley"
     ], 
@@ -3055,7 +2754,8 @@
     "distance_from_root_min": 3, 
     "name": "Divide the problem into parts", 
     "authors": [
-      "W. Ben Towne"
+      "Aniket Kittur", 
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -3071,9 +2771,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Combine the parts into a solution for the whole problem", 
-    "authors": [
-      "W. Ben Towne"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
     "id": "b7440833-5f46-40a0-b54d-3a4fccbf4036", 
@@ -3087,9 +2785,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Incentivize people to reuse work done by themselves and others", 
-    "authors": [
-      "W. Ben Towne"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
     "id": "35d91d25-1676-4f2c-8821-f1654e75228f", 
@@ -3103,9 +2799,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Incentivize people to simultaneously explore multiple ways of combining interchangeable parts", 
-    "authors": [
-      "W. Ben Towne"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.5, 
     "id": "7d8a6bf4-1287-4b04-98c6-5d2bd2c3a9d3", 
@@ -3119,9 +2813,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Incentivize people to work on the parts of the problem where they can contribute the most", 
-    "authors": [
-      "W. Ben Towne"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 5.285714285714286, 
     "id": "e8d1fcee-48e7-44ee-afce-6163542c813c", 
@@ -3136,8 +2828,8 @@
     "distance_from_root_min": 4, 
     "name": "Head movements and poor lighting conditions can result in significant data loss and inaccuracies for eye-tracking", 
     "authors": [
-      "Jodi L. Forlizzi", 
       "Anind Dey", 
+      "Jodi Forlizzi", 
       "Scott Hudson"
     ], 
     "type": "action", 
@@ -3154,8 +2846,8 @@
     "distance_from_root_min": 3, 
     "name": "Reveal people's spatial-temporal distribution of visual attention", 
     "authors": [
-      "Jodi L. Forlizzi", 
       "Anind Dey", 
+      "Jodi Forlizzi", 
       "Scott Hudson"
     ], 
     "type": "action", 
@@ -3172,8 +2864,8 @@
     "distance_from_root_min": 4, 
     "name": "Estimate eye-tracking measures from mouse click positions", 
     "authors": [
-      "Jodi L. Forlizzi", 
       "Anind Dey", 
+      "Jodi Forlizzi", 
       "Scott Hudson"
     ], 
     "type": "action", 
@@ -3190,8 +2882,8 @@
     "distance_from_root_min": 3, 
     "name": "Obtain self-report estimates from crowd participants", 
     "authors": [
-      "Jodi L. Forlizzi", 
       "Anind Dey", 
+      "Jodi Forlizzi", 
       "Scott Hudson"
     ], 
     "type": "action", 
@@ -3208,9 +2900,8 @@
     "distance_from_root_min": 2, 
     "name": "support long-term chronic care with technology", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7, 
@@ -3226,9 +2917,8 @@
     "distance_from_root_min": 2, 
     "name": "Enable decentralized, lateral coordination", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -3244,9 +2934,8 @@
     "distance_from_root_min": 5, 
     "name": "Coordinate through flexible plans, changing goals, and evaluation over long periods of time", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 10, 
@@ -3262,9 +2951,8 @@
     "distance_from_root_min": 1, 
     "name": "support health services", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.142857142857143, 
@@ -3280,9 +2968,8 @@
     "distance_from_root_min": 5, 
     "name": "Collaborative reflection practices in this context are unstructured", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 8.5, 
@@ -3298,9 +2985,8 @@
     "distance_from_root_min": 4, 
     "name": "Collaborative reflection practices in this context are iterative", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.5, 
@@ -3316,9 +3002,8 @@
     "distance_from_root_min": 4, 
     "name": "Collaborative reflection practices in this context are unpredictable", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7, 
@@ -3334,9 +3019,8 @@
     "distance_from_root_min": 4, 
     "name": "Collaborative reflection practices in this context are adaptive", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 9, 
@@ -3352,9 +3036,8 @@
     "distance_from_root_min": 3, 
     "name": "Monitoring and interpreting progress with behavioral interventions is complex", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.5, 
@@ -3370,9 +3053,8 @@
     "distance_from_root_min": 3, 
     "name": "Behaviors are ever-changing", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.285714285714286, 
@@ -3388,9 +3070,8 @@
     "distance_from_root_min": 3, 
     "name": "Behaviors being monitored are individual and subjective", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.5, 
@@ -3406,9 +3087,8 @@
     "distance_from_root_min": 4, 
     "name": "Data management is difficult to standardize", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.5, 
@@ -3424,9 +3104,8 @@
     "distance_from_root_min": 3, 
     "name": "Services are designed to respond to the unique behavioral needs and progress of each individual", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 8, 
@@ -3442,9 +3121,8 @@
     "distance_from_root_min": 6, 
     "name": "Make roles and responsibilities diffuse, flexible, and changeable through use", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 9.5, 
@@ -3460,9 +3138,8 @@
     "distance_from_root_min": 5, 
     "name": "Make decision-making participative", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.5, 
@@ -3478,9 +3155,8 @@
     "distance_from_root_min": 5, 
     "name": "Enable reciprocal interdependencies among stakeholders", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.5, 
@@ -3496,9 +3172,8 @@
     "distance_from_root_min": 3, 
     "name": "Enable cross-functional coordination and nonroutine tasks", 
     "authors": [
-      "Anind K. Dey", 
       "Sara Kiesler", 
-      "Gabriela Marcu"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.285714285714286, 
@@ -3516,12 +3191,11 @@
     "distance_from_root_min": 0, 
     "name": "Improve human wellness", 
     "authors": [
-      "Anind K. Dey", 
+      "Lorrie Faith Cranor", 
       "Sara Kiesler", 
-      "Manya Sleeper", 
+      "Anind Dey", 
       "Alessandro Acquisti", 
-      "Gabriela Marcu", 
-      "Lorrie Faith Cranor"
+      "Norman Sadeh"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -3540,7 +3214,7 @@
     "name": "Spend time more productively", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3559,7 +3233,7 @@
     "name": "Improve contact with friends/family", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3578,7 +3252,7 @@
     "name": "Ensure positive self presentation", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3596,7 +3270,7 @@
     "name": "Preserve security/privacy", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3614,7 +3288,7 @@
     "name": "Post more on Facebook", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3632,7 +3306,7 @@
     "name": "Reduce Facebook use", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3650,7 +3324,7 @@
     "name": "Optimize use of time", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3668,7 +3342,7 @@
     "name": "Prevent lost/wasted time", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3686,7 +3360,7 @@
     "name": "Avoid bothering or annoying others", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3704,7 +3378,7 @@
     "name": "Gain attention from others", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3722,7 +3396,7 @@
     "name": "Post more on Twitter", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3740,7 +3414,7 @@
     "name": "Post more on Instagram", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3758,7 +3432,7 @@
     "name": "Post better content on social media", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3776,7 +3450,7 @@
     "name": "Improve self", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3794,11 +3468,10 @@
     "distance_from_root_min": 2, 
     "name": "Avoid posting personal information", 
     "authors": [
-      "Robert E. Kraut", 
-      "Manya Sleeper", 
+      "Lorrie Faith Cranor", 
+      "Robert Kraut", 
       "Alessandro Acquisti", 
-      "Yi-Chia Wang", 
-      "Lorrie Faith Cranor"
+      "Norman Sadeh"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -3816,7 +3489,7 @@
     "name": "Improve filtering of what to read", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3834,7 +3507,7 @@
     "name": "Take concrete actions", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "why-hard", 
@@ -3852,7 +3525,7 @@
     "name": "Propose changes that fit easily into existing habits", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "why-hard", 
@@ -3870,7 +3543,7 @@
     "name": "Lack of motivation", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "why-hard", 
@@ -3888,7 +3561,7 @@
     "name": "Distraction prevents from making a change or remembering to make the change", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "why-hard", 
@@ -3906,7 +3579,7 @@
     "name": "The target behavior to be changed is already a habit or addiction", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "why-hard", 
@@ -3924,7 +3597,7 @@
     "name": "Change behaviors on social networking sites", 
     "authors": [
       "Lorrie Faith Cranor", 
-      "Manya Sleeper", 
+      "Norman Sadeh", 
       "Alessandro Acquisti"
     ], 
     "type": "action", 
@@ -3942,7 +3615,7 @@
     "name": "Enable everyone to receive high-quality education", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -3959,7 +3632,7 @@
     "name": "Provide education in massive open online courses", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.071428571428571, 
@@ -3976,7 +3649,7 @@
     "name": "Ensure that students are learning", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.285714285714286, 
@@ -3993,7 +3666,7 @@
     "name": "Prevent cheating on tests", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
@@ -4010,7 +3683,7 @@
     "name": "Ensure scalability", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.428571428571429, 
@@ -4027,7 +3700,7 @@
     "name": "Minimize required expert human judgments", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.214285714285714, 
@@ -4044,7 +3717,7 @@
     "name": "Classify instances as possibly cheating  or not", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.142857142857143, 
@@ -4061,7 +3734,7 @@
     "name": "Verify possible cheating behaviors", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.428571428571429, 
@@ -4078,7 +3751,7 @@
     "name": "Use peer crowdsourcing", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.214285714285714, 
@@ -4095,7 +3768,7 @@
     "name": "Detect possible cheating behaviors", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.857142857142857, 
@@ -4112,7 +3785,7 @@
     "name": "Create machine learning model of cheating", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -4129,7 +3802,7 @@
     "name": "Make final punishing decisions for possible cheating cases", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -4146,7 +3819,7 @@
     "name": "Use expert panel", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.857142857142857, 
@@ -4163,7 +3836,7 @@
     "name": "Prioritize reduction in false alarm rates over false negative rates", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
@@ -4180,7 +3853,7 @@
     "name": "Instruct raters to flag unnecessary behaviors", 
     "authors": [
       "Kai-min Chang", 
-      "Xuanchong Li"
+      "Alexander Hauptmann"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.214285714285714, 
@@ -4196,10 +3869,7 @@
     "distance_from_root_min": 0, 
     "name": "Accelerate scientific discovery", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -4215,10 +3885,7 @@
     "distance_from_root_min": 1, 
     "name": "Increase accessibility to scientific software", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.928571428571429, 
@@ -4234,10 +3901,7 @@
     "distance_from_root_min": 2, 
     "name": "Manage the community", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.357142857142857, 
@@ -4253,10 +3917,7 @@
     "distance_from_root_min": 2, 
     "name": "Maintain code", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
@@ -4272,10 +3933,7 @@
     "distance_from_root_min": 2, 
     "name": "Educate and train newcomers", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
@@ -4291,10 +3949,7 @@
     "distance_from_root_min": 2, 
     "name": "Facilitate interactions between developers and users", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
@@ -4310,10 +3965,7 @@
     "distance_from_root_min": 2, 
     "name": "Foresee user needs", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -4330,13 +3982,9 @@
     "distance_from_root_min": 1, 
     "name": "Enforce community norms and guidelines", 
     "authors": [
-      "Robert E Kraut", 
-      "Arun Kalyanasundaram", 
-      "Joseph R Seering", 
-      "James D. Herbsleb", 
-      "Laura A. Dabbish", 
-      "Chalali Chaihirunkarn", 
-      "Erik Trainer"
+      "Robert Kraut", 
+      "Laura Dabbish", 
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.428571428571429, 
@@ -4353,10 +4001,7 @@
     "distance_from_root_min": 3, 
     "name": "Face-to-face meetings", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -4372,10 +4017,7 @@
     "distance_from_root_min": 3, 
     "name": "Evaluate submitted contributions", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.857142857142857, 
@@ -4391,10 +4033,7 @@
     "distance_from_root_min": 3, 
     "name": "Solicit contributions", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -4410,10 +4049,7 @@
     "distance_from_root_min": 3, 
     "name": "Advertise projects", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -4429,10 +4065,7 @@
     "distance_from_root_min": 3, 
     "name": "Demonstrate impact of projects", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -4448,10 +4081,7 @@
     "distance_from_root_min": 3, 
     "name": "Announce works in progress", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -4467,10 +4097,7 @@
     "distance_from_root_min": 3, 
     "name": "Monitor contributor activities", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -4486,10 +4113,7 @@
     "distance_from_root_min": 3, 
     "name": "Fix bugs", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4505,10 +4129,7 @@
     "distance_from_root_min": 3, 
     "name": "Manage dependencies", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4524,10 +4145,7 @@
     "distance_from_root_min": 3, 
     "name": "Monitor code usage", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4543,10 +4161,7 @@
     "distance_from_root_min": 3, 
     "name": "Test software", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4562,10 +4177,7 @@
     "distance_from_root_min": 3, 
     "name": "Run tutorials", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4581,10 +4193,7 @@
     "distance_from_root_min": 3, 
     "name": "Mentor new members", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4600,10 +4209,7 @@
     "distance_from_root_min": 3, 
     "name": "Direct contributors to mailing lists", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4619,10 +4225,7 @@
     "distance_from_root_min": 3, 
     "name": "Answer user questions", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4638,10 +4241,7 @@
     "distance_from_root_min": 3, 
     "name": "Add user-requested features", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -4657,10 +4257,7 @@
     "distance_from_root_min": 3, 
     "name": "Create flexible code", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -4676,10 +4273,7 @@
     "distance_from_root_min": 3, 
     "name": "Create documentation", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -4695,10 +4289,7 @@
     "distance_from_root_min": 3, 
     "name": "Create code use-case examples", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -4714,10 +4305,7 @@
     "distance_from_root_min": 3, 
     "name": "The work serves their interests", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -4733,10 +4321,7 @@
     "distance_from_root_min": 3, 
     "name": "The work serves others' interests", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -4752,10 +4337,7 @@
     "distance_from_root_min": 3, 
     "name": "The work aligns with their job description", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -4771,10 +4353,7 @@
     "distance_from_root_min": 3, 
     "name": "They are obligated to do the work", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -4790,10 +4369,7 @@
     "distance_from_root_min": 3, 
     "name": "The extra work is high priority", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -4809,10 +4385,7 @@
     "distance_from_root_min": 3, 
     "name": "The scientists have the expertise", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -4828,10 +4401,7 @@
     "distance_from_root_min": 2, 
     "name": "Community guidelines vary significantly across communities", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -4847,10 +4417,7 @@
     "distance_from_root_min": 2, 
     "name": "Guideline descriptions can be ambiguous", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -4866,10 +4433,7 @@
     "distance_from_root_min": 2, 
     "name": "Sometimes contributors only learn about guidelines after making a contribution", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -4885,10 +4449,7 @@
     "distance_from_root_min": 3, 
     "name": "Provide a short checklist of things to do before submitting a contribution", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.428571428571429, 
@@ -4904,10 +4465,7 @@
     "distance_from_root_min": 4, 
     "name": "Due to the large volume of emails, users may fail to notice relevant queries", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.928571428571429, 
@@ -4923,10 +4481,7 @@
     "distance_from_root_min": 3, 
     "name": "Provide automated support for asking questions", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -4942,10 +4497,7 @@
     "distance_from_root_min": 4, 
     "name": "Create Stack Overflow community", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.428571428571429, 
@@ -4961,10 +4513,7 @@
     "distance_from_root_min": 4, 
     "name": "Scientists are not always comfortable making the review process public", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.857142857142857, 
@@ -4980,10 +4529,7 @@
     "distance_from_root_min": 5, 
     "name": "Allow contributors to choose between private and public evaluation", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.857142857142857, 
@@ -4999,10 +4545,7 @@
     "distance_from_root_min": 3, 
     "name": "Providing feedback after using the software is effortful", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.428571428571429, 
@@ -5018,10 +4561,7 @@
     "distance_from_root_min": 4, 
     "name": "Allow users to rate and provide comments directly within the software", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -5037,10 +4577,7 @@
     "distance_from_root_min": 3, 
     "name": "Users may not know to report issues in formal ways (e.g., Github issues)", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -5056,10 +4593,7 @@
     "distance_from_root_min": 2, 
     "name": "Build social ties", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.571428571428571, 
@@ -5075,10 +4609,7 @@
     "distance_from_root_min": 4, 
     "name": "Put the entire development team in one room for the whole project (radical collocation)", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.714285714285714, 
@@ -5094,10 +4625,7 @@
     "distance_from_root_min": 2, 
     "name": "Ensure effective work during hackathon", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
@@ -5113,10 +4641,7 @@
     "distance_from_root_min": 3, 
     "name": "Allow team members to move easily between activities", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -5132,10 +4657,7 @@
     "distance_from_root_min": 3, 
     "name": "Allow team members to point to visible artifacts", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -5151,10 +4673,7 @@
     "distance_from_root_min": 3, 
     "name": "Allow team members to mark visible artifacts to reflect agreed-upon changes", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -5170,10 +4689,7 @@
     "distance_from_root_min": 3, 
     "name": "Allow team members to observe other participants moment to moment", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6, 
@@ -5189,10 +4705,7 @@
     "distance_from_root_min": 3, 
     "name": "Allow team members to have impromptu meetings and training sessions around the artifacts themselves", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -5208,10 +4721,7 @@
     "distance_from_root_min": 2, 
     "name": "Prepare ad-hoc teams to work together", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.428571428571429, 
@@ -5227,10 +4737,7 @@
     "distance_from_root_min": 0, 
     "name": "Build better software collaboratively", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -5246,10 +4753,7 @@
     "distance_from_root_min": 0, 
     "name": "Use affordances of working face-to-face", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -5265,10 +4769,7 @@
     "distance_from_root_min": 3, 
     "name": "Learn about each teammates' interests and approaches to shared intellectual concerns", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.571428571428571, 
@@ -5284,10 +4785,7 @@
     "distance_from_root_min": 2, 
     "name": "Reflect on opportunities for collaboration", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.285714285714286, 
@@ -5303,10 +4801,7 @@
     "distance_from_root_min": 3, 
     "name": "Socialize during coffee breaks, meals, and bus rides", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.285714285714286, 
@@ -5322,10 +4817,7 @@
     "distance_from_root_min": 4, 
     "name": "Watch each other code", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
@@ -5341,10 +4833,7 @@
     "distance_from_root_min": 3, 
     "name": "Learn about how teammates react to problems", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.571428571428571, 
@@ -5360,10 +4849,7 @@
     "distance_from_root_min": 3, 
     "name": "Gauge teammates' expertise", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -5379,10 +4865,7 @@
     "distance_from_root_min": 3, 
     "name": "Learn the programming conventions and practices of experienced programmers", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
@@ -5398,10 +4881,7 @@
     "distance_from_root_min": 4, 
     "name": "Create opportunities for working under pressure", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.571428571428571, 
@@ -5417,10 +4897,7 @@
     "distance_from_root_min": 3, 
     "name": "Ensure completion of hackathon tasks beyond the hackathon", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.214285714285714, 
@@ -5436,10 +4913,7 @@
     "distance_from_root_min": 5, 
     "name": "Preserve as much context and meaning surrounding people and artifacts as possible", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -5455,10 +4929,7 @@
     "distance_from_root_min": 2, 
     "name": "Many tasks are incomplete when the hackathon ends", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -5474,10 +4945,7 @@
     "distance_from_root_min": 1, 
     "name": "Conduct hackathons", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
@@ -5493,10 +4961,7 @@
     "distance_from_root_min": 6, 
     "name": "Record needed work to complete and integrate tasks in various digital locations (e.g., software issue trackers, notebooks, wikis, etc.)", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.642857142857143, 
@@ -5512,10 +4977,7 @@
     "distance_from_root_min": 4, 
     "name": "Continue coordination beyond the hackathon", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
@@ -5531,10 +4993,7 @@
     "distance_from_root_min": 5, 
     "name": "Schedule follow-up meetings", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
@@ -5550,10 +5009,7 @@
     "distance_from_root_min": 3, 
     "name": "Create digital groups (e.g., mailing lists, private Facebook groups)", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -5569,10 +5025,7 @@
     "distance_from_root_min": 2, 
     "name": "Strengthen interpersonal relationships established at the hackathon", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6, 
@@ -5588,10 +5041,7 @@
     "distance_from_root_min": 3, 
     "name": "Share photos taken during the hackathon", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7, 
@@ -5607,10 +5057,7 @@
     "distance_from_root_min": 3, 
     "name": "Establish relationships prior to the start of the hackathon", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.285714285714286, 
@@ -5626,10 +5073,7 @@
     "distance_from_root_min": 4, 
     "name": "Use digital collaboration tools (e.g., Github)", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.214285714285714, 
@@ -5645,10 +5089,7 @@
     "distance_from_root_min": 4, 
     "name": "Introduce team members to each other", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.285714285714286, 
@@ -5664,10 +5105,7 @@
     "distance_from_root_min": 5, 
     "name": "Use event-specific mailing lists", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.285714285714286, 
@@ -5683,10 +5121,7 @@
     "distance_from_root_min": 3, 
     "name": "Create tasks for the hackathon prior to the event", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
@@ -5702,10 +5137,7 @@
     "distance_from_root_min": 2, 
     "name": "Familiarize participants with task process norms", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -5721,10 +5153,7 @@
     "distance_from_root_min": 4, 
     "name": "Hackathon artifacts are left behind when event ends (only digital artifacts remain)", 
     "authors": [
-      "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
-      "James D. Herbsleb", 
-      "Erik Trainer"
+      "James Herbsleb"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.214285714285714, 
@@ -5739,10 +5168,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "There are too many ideas to sift through manually", 
-    "authors": [
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.571428571428571, 
     "id": "507b3291-5409-4eb5-a36f-a1489281f018", 
@@ -5757,11 +5183,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Create a synthesis of the emerging solution space", 
-    "authors": [
-      "Joel Chan", 
-      "Dow, Steven P.", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6, 
     "id": "923d83ea-4c36-4e95-a8dd-3317e2f48698", 
@@ -5776,10 +5198,7 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Avoid recruiting external workers", 
-    "authors": [
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 7, 
     "id": "652f42a9-f388-48d8-b209-daa7e0354f1c", 
@@ -5793,10 +5212,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Avoid requiring community members to engage in tasks that detract from the main activity they are motivated to do", 
-    "authors": [
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6, 
     "id": "bbcda949-550b-4b50-89af-97758b4f6a69", 
@@ -5810,10 +5226,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Integrate synthesis task naturally into ideation process", 
-    "authors": [
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 7, 
     "id": "3b17fe07-c841-4f85-ac27-907e56c75e0d", 
@@ -5827,10 +5240,7 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Provide a digital whiteboard for ideation", 
-    "authors": [
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 8, 
     "id": "280a799e-c372-4e80-811b-e28cb1c012bf", 
@@ -5844,10 +5254,7 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Harvest semantic relationship information from spatial clustering of ideas on whiteboard", 
-    "authors": [
-      "Joel Chan", 
-      "Steven P. Dow"
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 8, 
     "id": "a62a194b-049b-4ea1-9a49-20631bf7780b", 
@@ -5862,9 +5269,8 @@
     "distance_from_root_min": 3, 
     "name": "Encourage or discourage specific behaviors", 
     "authors": [
-      "Joseph R Seering", 
-      "Laura A. Dabbish", 
-      "Robert E Kraut"
+      "Robert Kraut", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.142857142857143, 
@@ -5880,9 +5286,8 @@
     "distance_from_root_min": 2, 
     "name": "Spam or any other negative behavior", 
     "authors": [
-      "Joseph R Seering", 
-      "Laura A. Dabbish", 
-      "Robert E Kraut"
+      "Robert Kraut", 
+      "Laura Dabbish"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.357142857142857, 
@@ -5898,9 +5303,8 @@
     "distance_from_root_min": 4, 
     "name": "Use deterrents such as bans to influence behavior", 
     "authors": [
-      "Joseph R Seering", 
-      "Laura A. Dabbish", 
-      "Robert E Kraut"
+      "Robert Kraut", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8.142857142857142, 
@@ -5916,8 +5320,7 @@
     "distance_from_root_min": 3, 
     "name": "Examine physiological synchrony", 
     "authors": [
-      "Laura A. Dabbish", 
-      "Prerna Chikersal", 
+      "Laura Dabbish", 
       "Maria Tomprou", 
       "Anita Williams Woolley"
     ], 
@@ -5935,8 +5338,7 @@
     "distance_from_root_min": 2, 
     "name": "Control synchrony", 
     "authors": [
-      "Laura A. Dabbish", 
-      "Prerna Chikersal", 
+      "Laura Dabbish", 
       "Maria Tomprou", 
       "Anita Williams Woolley"
     ], 
@@ -5954,8 +5356,7 @@
     "distance_from_root_min": 3, 
     "name": "Synchrony may be unconscious and uncontrollable", 
     "authors": [
-      "Laura A. Dabbish", 
-      "Prerna Chikersal", 
+      "Laura Dabbish", 
       "Maria Tomprou", 
       "Anita Williams Woolley"
     ], 
@@ -5973,8 +5374,7 @@
     "distance_from_root_min": 0, 
     "name": "Better understand social processes", 
     "authors": [
-      "Kathleen M. Carley", 
-      "Wei Wei"
+      "Kathleen Carley"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -5990,8 +5390,7 @@
     "distance_from_root_min": 1, 
     "name": "Examine stereotypes of a twitter population", 
     "authors": [
-      "Kathleen M. Carley", 
-      "Wei Wei"
+      "Kathleen Carley"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6, 
@@ -6007,8 +5406,7 @@
     "distance_from_root_min": 2, 
     "name": "Examine institutional alignment in semantic stereotypes\n", 
     "authors": [
-      "Kathleen M. Carley", 
-      "Wei Wei"
+      "Kathleen Carley"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7, 
@@ -6024,8 +5422,7 @@
     "distance_from_root_min": 2, 
     "name": "Analyze affective stereotypes", 
     "authors": [
-      "Kathleen M. Carley", 
-      "Wei Wei"
+      "Kathleen Carley"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7, 
@@ -6041,8 +5438,7 @@
     "distance_from_root_min": 3, 
     "name": "Combine affective and semantic stereotypes", 
     "authors": [
-      "Kathleen M. Carley", 
-      "Wei Wei"
+      "Kathleen Carley"
     ], 
     "type": "action", 
     "distance_from_root_avg": 8, 
@@ -6061,14 +5457,11 @@
     "distance_from_root_min": 4, 
     "name": "Incorporate algorithmic mediation", 
     "authors": [
-      "Min Kyung Lee", 
-      "James D. Herbsleb", 
-      "Arun Kalyanasundaram", 
       "Kai-min Chang", 
-      "Jeffrey P. Bigham", 
-      "Xuanchong Li", 
-      "Chalali Chaihirunkarn", 
-      "Erik Trainer"
+      "Alexander Hauptmann", 
+      "Min Kyung Lee", 
+      "Jeffrey Bigham", 
+      "James Herbsleb"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.071428571428571, 
@@ -6150,9 +5543,7 @@
     "distance_from_root_min": 1, 
     "name": "facilitate frictionless information collaboration between users' devices", 
     "authors": [
-      "Adrian A. de Freitas", 
-      "system", 
-      "Anind K. Dey"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -6168,8 +5559,7 @@
     "distance_from_root_min": 3, 
     "name": "Use a single type of context to form groups", 
     "authors": [
-      "Adrian A. de Freitas", 
-      "Anind K. Dey"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -6186,9 +5576,7 @@
     "distance_from_root_min": 2, 
     "name": "Opportunistically group users with another to exchange information", 
     "authors": [
-      "Adrian A. de Freitas", 
-      "system", 
-      "Anind K. Dey"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -6204,8 +5592,7 @@
     "distance_from_root_min": 3, 
     "name": "Leverage multiple contexts", 
     "authors": [
-      "Adrian A. de Freitas", 
-      "Anind K. Dey"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -6221,8 +5608,7 @@
     "distance_from_root_min": 4, 
     "name": "Single-context group membership determination does not work well in all conditions", 
     "authors": [
-      "Adrian A. de Freitas", 
-      "Anind K. Dey"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.785714285714286, 
@@ -6238,10 +5624,8 @@
     "distance_from_root_min": 3, 
     "name": "Computationally model tie strength", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.071428571428571, 
@@ -6257,10 +5641,8 @@
     "distance_from_root_min": 4, 
     "name": "Communication and tie strength correlation is a core assumption", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7, 
@@ -6276,10 +5658,8 @@
     "distance_from_root_min": 5, 
     "name": "Evaluate assumption; separate strong and weak ties.", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -6295,10 +5675,8 @@
     "distance_from_root_min": 4, 
     "name": "Analyze call and SMS logs", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.857142857142857, 
@@ -6314,10 +5692,8 @@
     "distance_from_root_min": 5, 
     "name": "many errors occur when separating strong and weak ties via call and SMS logs", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.857142857142857, 
@@ -6333,10 +5709,8 @@
     "distance_from_root_min": 5, 
     "name": "Use frequent or long-duration communication to confirm strong ties", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.857142857142857, 
@@ -6352,10 +5726,8 @@
     "distance_from_root_min": 6, 
     "name": "Collect data from more communication channels", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.857142857142857, 
@@ -6371,10 +5743,8 @@
     "distance_from_root_min": 7, 
     "name": "Individual preferences for certain communication channels", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 8.857142857142858, 
@@ -6390,10 +5760,8 @@
     "distance_from_root_min": 6, 
     "name": "Use a lot more communication data", 
     "authors": [
-      "Jason I. Hong", 
-      "Jason Wiese", 
-      "John Zimmerman", 
-      "Jun-Ki Min"
+      "Jason Hong", 
+      "John Zimmerman"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.857142857142857, 
@@ -6409,10 +5777,8 @@
     "distance_from_root_min": 3, 
     "name": "Use a social strategy", 
     "authors": [
-      "Paul Andre", 
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -6428,10 +5794,8 @@
     "distance_from_root_min": 3, 
     "name": "Use a learning strategy", 
     "authors": [
-      "Paul Andre", 
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.714285714285714, 
@@ -6447,10 +5811,8 @@
     "distance_from_root_min": 3, 
     "name": "Use a financial strategy", 
     "authors": [
-      "Paul Andre", 
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
@@ -6466,10 +5828,8 @@
     "distance_from_root_min": 2, 
     "name": "Ensure engagement", 
     "authors": [
-      "Paul Andre", 
-      "Robert E. Kraut", 
       "Aniket Kittur", 
-      "Lixiu Yu"
+      "Robert Kraut"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -6484,7 +5844,10 @@
     ], 
     "distance_from_root_min": 1, 
     "name": "Build loyalty to online communities", 
-    "authors": [], 
+    "authors": [
+      "Laura Dabbish", 
+      "Robert Kraut"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
     "id": "3038d66a-99a1-4ef0-a153-df6218742d89", 
@@ -6498,7 +5861,10 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Use bond-attachment", 
-    "authors": [], 
+    "authors": [
+      "Laura Dabbish", 
+      "Robert Kraut"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
     "id": "d51dae92-8bfd-487c-9ea1-42142070000d", 
@@ -6512,7 +5878,10 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Use identity-based attachment", 
-    "authors": [], 
+    "authors": [
+      "Laura Dabbish", 
+      "Robert Kraut"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.928571428571429, 
     "id": "b986cda3-d01f-49fe-b8d0-619926ddd79a", 
@@ -6596,7 +5965,10 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Iteratively advance to solution", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.785714285714286, 
     "id": "8791dd2f-1fc9-47a5-a05d-1752cdfb94fa", 
@@ -6611,9 +5983,7 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Need criteria for selecting helpful inspirations", 
-    "authors": [
-      "Dow, Steven P."
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.285714285714286, 
     "id": "73bc5ad9-18ef-4ffc-bd57-7f131f37a6b0", 
@@ -6642,7 +6012,9 @@
     ], 
     "distance_from_root_min": 0, 
     "name": "Analyze quantitative data", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
     "id": "a88085b7-81cd-4202-bc12-d7796fdf40a3", 
@@ -6656,7 +6028,11 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Faster departure from contribution", 
-    "authors": [], 
+    "authors": [
+      "Anthony Tomasic", 
+      "Aaron Steinfeld", 
+      "John Zimmerman"
+    ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.571428571428571, 
     "id": "1d5cec32-8c24-45fe-860a-f5d08466b1c1", 
@@ -6670,7 +6046,11 @@
     ], 
     "distance_from_root_min": 1, 
     "name": "Use quid pro quo system: trade contributions from users for access to crowdsourced data", 
-    "authors": [], 
+    "authors": [
+      "Anthony Tomasic", 
+      "Aaron Steinfeld", 
+      "John Zimmerman"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.571428571428571, 
     "id": "f1d45c50-9182-477a-8375-24ff9ce71bf0", 
@@ -6684,7 +6064,9 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Scaffold expertise", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
     "id": "1308b36d-5374-48a4-88a2-34ce2d8201df", 
@@ -6698,7 +6080,9 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Create consistent and accurate data categories for workers", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.857142857142857, 
     "id": "435a6e17-f11e-4259-9767-8e3e4a6c7988", 
@@ -6712,7 +6096,9 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Re-represent data; focus on salient dimensions", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.357142857142857, 
     "id": "7b55657e-6158-40ff-9752-7e7678d7241d", 
@@ -6726,7 +6112,9 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Use an interative clustering approach to provide workers with global view of data", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
     "id": "57b8776c-b769-40bf-8812-842732253e44", 
@@ -6740,7 +6128,9 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Predictively classify individual items in data", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
     "id": "ccc63910-57c3-433d-a5a9-d7d65d37c635", 
@@ -6754,7 +6144,9 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Provide context for individual items", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.5, 
     "id": "90f3ffe5-d739-47c1-9d9e-1a83a5dddd61", 
@@ -6768,7 +6160,11 @@
     ], 
     "distance_from_root_min": 0, 
     "name": "Improve user contributions for smaller PSSs", 
-    "authors": [], 
+    "authors": [
+      "Anthony Tomasic", 
+      "Aaron Steinfeld", 
+      "John Zimmerman"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
     "id": "d3ad43f9-34f5-4df3-b2f1-515beeb4e9f9", 
@@ -6782,7 +6178,11 @@
     ], 
     "distance_from_root_min": 1, 
     "name": "Grow and maintain lifespan of Participatory sensing systems (PSS)", 
-    "authors": [], 
+    "authors": [
+      "Anthony Tomasic", 
+      "Aaron Steinfeld", 
+      "John Zimmerman"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.928571428571429, 
     "id": "6002229b-19ed-48e4-bbc1-ec8b9cd71033", 
@@ -6796,7 +6196,11 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Frequently inject information", 
-    "authors": [], 
+    "authors": [
+      "Anthony Tomasic", 
+      "Aaron Steinfeld", 
+      "John Zimmerman"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.642857142857143, 
     "id": "46100865-cf58-4950-bd09-c2f665a94ec9", 
@@ -6852,7 +6256,9 @@
     ], 
     "distance_from_root_min": 0, 
     "name": "Improve online search", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
     "id": "7a011c7d-d554-4c5c-bedb-6f6b1397534f", 
@@ -6866,7 +6272,9 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Novices may not produce useful overall schemas", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.357142857142857, 
     "id": "91ba4aac-61c4-47e1-8d9b-df8ba42a2e10", 
@@ -6880,7 +6288,9 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Provide structured interface to capture information about dimensions of importance", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.857142857142857, 
     "id": "6e53d67f-51db-420c-97e1-8951a23d3b0a", 
@@ -6894,7 +6304,9 @@
     ], 
     "distance_from_root_min": 1, 
     "name": "Increase speed and depth of sensemaking across a variety of fields", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
     "id": "0e29c15c-2382-4435-bf5a-1da2b42e8d67", 
@@ -6908,7 +6320,9 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Leverage schemas other novices have produced as they learn about a domain", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 5.357142857142857, 
     "id": "a304d518-409c-4434-a872-99bd977390f7", 
@@ -6922,7 +6336,9 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Dimensions and attributes may be idiosyncratic across users", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "why-hard", 
     "distance_from_root_avg": 7.214285714285714, 
     "id": "90bba8fc-a94c-4d87-98e0-2e03f3800f2a", 
@@ -6936,7 +6352,9 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Surface commonly noted dimensions across users", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 8.214285714285714, 
     "id": "507a4c2a-40bc-4017-ac2b-fa69c5d74c37", 
@@ -6950,7 +6368,9 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Collect schemas from novices in a scalable way", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.285714285714286, 
     "id": "5482a6d9-01b4-4942-b4ea-01d70eec17df", 
@@ -6964,7 +6384,9 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Aggregate schemas across users", 
-    "authors": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6.214285714285714, 
     "id": "02410674-70e8-40d8-aa6b-c19442941847", 
@@ -7020,9 +6442,7 @@
     ], 
     "distance_from_root_min": 5, 
     "name": "Hard to assess diversity of ideas", 
-    "authors": [
-      "Dow, Steven P."
-    ], 
+    "authors": [], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.785714285714286, 
     "id": "19efe9a1c87fa5e377b3", 
@@ -7036,9 +6456,7 @@
     ], 
     "distance_from_root_min": 4, 
     "name": "Ensure access to diverse ideas", 
-    "authors": [
-      "Dow, Steven P."
-    ], 
+    "authors": [], 
     "type": "action", 
     "distance_from_root_avg": 6.285714285714286, 
     "id": "1abea0c5-0dd6-44a3-a3f0-95a986668df8", 
@@ -7052,7 +6470,10 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Understand differences between deleted and undeleted tweets in aggregate", 
-    "authors": [], 
+    "authors": [
+      "Alessandro Acquisti", 
+      "Norman Sadeh"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 7, 
     "id": "2d117ef3-8223-44ac-9da1-4950be5870ec", 
@@ -7066,7 +6487,10 @@
     ], 
     "distance_from_root_min": 2, 
     "name": "Help users better manage their content", 
-    "authors": [], 
+    "authors": [
+      "Alessandro Acquisti", 
+      "Norman Sadeh"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 6, 
     "id": "a04bc6ab-7867-4cd4-b909-6359a4f3406b", 
@@ -7080,7 +6504,10 @@
     ], 
     "distance_from_root_min": 3, 
     "name": "Prevent deletions with spell detection tool", 
-    "authors": [], 
+    "authors": [
+      "Alessandro Acquisti", 
+      "Norman Sadeh"
+    ], 
     "type": "action", 
     "distance_from_root_avg": 7, 
     "id": "a401df09-5de7-42d6-9cd6-30e2b9e11479", 
@@ -7095,9 +6522,8 @@
     "distance_from_root_min": 2, 
     "name": "Increase uptake of security features", 
     "authors": [
-      "Hong, Jason I.", 
-      "Dabbish, Laura A.", 
-      "Das, Sauvik."
+      "Laura Dabbish", 
+      "Jason Hong"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.428571428571429, 
@@ -7113,9 +6539,8 @@
     "distance_from_root_min": 3, 
     "name": "Expose users to feature-adopting friends from many, independent social contexts", 
     "authors": [
-      "Hong, Jason I.", 
-      "Dabbish, Laura A.", 
-      "Das, Sauvik."
+      "Laura Dabbish", 
+      "Jason Hong"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.428571428571429, 
@@ -7131,9 +6556,8 @@
     "distance_from_root_min": 0, 
     "name": "Improve decision making", 
     "authors": [
-      "Nguyen, Duyen T.", 
-      "Dabbish, Laura A.", 
-      "Kiesler, Sara"
+      "Sara Kiesler", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -7149,9 +6573,8 @@
     "distance_from_root_min": 3, 
     "name": "Reveal an advice giver's process while creating his/her recommendation", 
     "authors": [
-      "Nguyen, Duyen T.", 
-      "Dabbish, Laura A.", 
-      "Kiesler, Sara"
+      "Sara Kiesler", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 5.5, 
@@ -7167,9 +6590,8 @@
     "distance_from_root_min": 1, 
     "name": "Enable people to receive advice from others on the Internet", 
     "authors": [
-      "Nguyen, Duyen T.", 
-      "Dabbish, Laura A.", 
-      "Kiesler, Sara"
+      "Sara Kiesler", 
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 4.5, 
@@ -7185,9 +6607,8 @@
     "distance_from_root_min": 2, 
     "name": "People may not always trust advice from anonymous others", 
     "authors": [
-      "Nguyen, Duyen T.", 
-      "Dabbish, Laura A.", 
-      "Kiesler, Sara"
+      "Sara Kiesler", 
+      "Laura Dabbish"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 4.928571428571429, 
@@ -7203,7 +6624,7 @@
     "distance_from_root_min": 4, 
     "name": "Increase opportunities for devices to serendipitously form groups", 
     "authors": [
-      "system"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.214285714285714, 
@@ -7219,7 +6640,7 @@
     "distance_from_root_min": 3, 
     "name": "Abstract the process by which applications request and receive contextual information", 
     "authors": [
-      "system"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6.142857142857143, 
@@ -7235,7 +6656,7 @@
     "distance_from_root_min": 4, 
     "name": "Create context providers", 
     "authors": [
-      "system"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 7.142857142857143, 
@@ -7251,7 +6672,7 @@
     "distance_from_root_min": 4, 
     "name": "Computer mediated grouping frameworks tend to be overly specific", 
     "authors": [
-      "system"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.785714285714286, 
@@ -7267,7 +6688,7 @@
     "distance_from_root_min": 3, 
     "name": "Not always obvious beforehand which applications/devices to group with", 
     "authors": [
-      "system"
+      "Anind Dey"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 6.642857142857143, 
@@ -7284,9 +6705,7 @@
     "distance_from_root_min": 0, 
     "name": "Improve mobile computing", 
     "authors": [
-      "Adrian A. de Freitas", 
-      "system", 
-      "Anind K. Dey"
+      "Anind Dey"
     ], 
     "type": "action", 
     "distance_from_root_avg": 0, 
@@ -7302,8 +6721,7 @@
     "distance_from_root_min": 4, 
     "name": "Reveal work history of others", 
     "authors": [
-      "Dabbish, Laura A.", 
-      "Marlow, Jennifer"
+      "Laura Dabbish"
     ], 
     "type": "action", 
     "distance_from_root_avg": 6, 
@@ -7319,8 +6737,7 @@
     "distance_from_root_min": 3, 
     "name": "Initial positive impressions of a peer may lead to neglect of necessary revisions on peer's work", 
     "authors": [
-      "Dabbish, Laura A.", 
-      "Marlow, Jennifer"
+      "Laura Dabbish"
     ], 
     "type": "why-hard", 
     "distance_from_root_avg": 5.714285714285714, 
@@ -7328,5 +6745,998 @@
     "years": [
       2015
     ]
+  }, 
+  {
+    "paperID": [
+      "2017_1"
+    ], 
+    "name": "Shaping Pro and Anti-Social Behavior on Twitch Through Moderation and Example-Setting", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Robert Kraut", 
+      "Laura Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "2017_1"
+  }, 
+  {
+    "paperID": [
+      "2017_10"
+    ], 
+    "name": "What Makes a Strong Team? Using Collective Intelligence to Predict Team Performance in League of Legends", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Anita Williams Woolley"
+    ], 
+    "type": "paper", 
+    "id": "2017_10"
+  }, 
+  {
+    "paperID": [
+      "2017_11"
+    ], 
+    "name": "Team Dating Leads to Better Online Ad Hoc Collaborations", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "2017_11"
+  }, 
+  {
+    "paperID": [
+      "2017_4"
+    ], 
+    "name": "Deep Structures of Collaboration: Physiological Correlates of Collective Intelligence and Group Satisfaction", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Laura Dabbish", 
+      "Maria Tomprou", 
+      "Anita Williams Woolley"
+    ], 
+    "type": "paper", 
+    "id": "2017_4"
+  }, 
+  {
+    "paperID": [
+      "2017_5"
+    ], 
+    "name": "Fruitful Feedback: Positive Affective Language and Source Anonymity Improve Critique Reception and Work Outcomes", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Laura Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "2017_5"
+  }, 
+  {
+    "paperID": [
+      "2017_6"
+    ], 
+    "name": "Algorithmic Mediation in Group Decisions: Fairness Perceptions of Algorithmically Mediated vs. Discussion-Based Social Division", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Min Kyung Lee"
+    ], 
+    "type": "paper", 
+    "id": "2017_6"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Girls rule, boys drool: Extracting semantic and affective stereotypes from Twitter", 
+    "years": [
+      2017
+    ], 
+    "authors": [
+      "Kathleen Carley"
+    ], 
+    "type": "paper", 
+    "id": "2017_7"
+  }, 
+  {
+    "paperID": [
+      "2017_8"
+    ], 
+    "name": "Putting the Pieces Back Together Again:  Contest Webs for Large-Scale Problem Solving", 
+    "years": [
+      2017
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "2017_8"
+  }, 
+  {
+    "paperID": [
+      "2017_9"
+    ], 
+    "name": "Crowd Guilds: Worker-led Reputation and Feedback on Crowdsourcing Platforms", 
+    "years": [
+      2017
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "2017_9"
+  }, 
+  {
+    "paperID": [
+      "356QDHJ7"
+    ], 
+    "name": "Coding Varied Behavior Types Using the Crowd", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Jeffrey Bigham"
+    ], 
+    "type": "paper", 
+    "id": "356QDHJ7"
+  }, 
+  {
+    "paperID": [
+      "4C8T6PTV"
+    ], 
+    "name": "You Never Call, You Never Write: Call and SMS Logs Do Not Always Indicate Tie Strength", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jason Hong", 
+      "John Zimmerman"
+    ], 
+    "type": "paper", 
+    "id": "4C8T6PTV"
+  }, 
+  {
+    "paperID": [
+      "4IR7FP3G"
+    ], 
+    "name": "The Role of Social Influence in Security Feature Adoption", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Laura Dabbish", 
+      "Jason Hong"
+    ], 
+    "type": "paper", 
+    "id": "4IR7FP3G"
+  }, 
+  {
+    "paperID": [
+      "56QUJEMP"
+    ], 
+    "name": "Structuring, Aggregating, and Evaluating Crowdsourced Design Critique", 
+    "years": [
+      2015
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "56QUJEMP"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Massive Open Online Proctor: Protecting the Credibility of MOOCs Certificates", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Kai-min Chang", 
+      "Alexander Hauptmann"
+    ], 
+    "type": "paper", 
+    "id": "5G8U33QZ"
+  }, 
+  {
+    "paperID": [
+      "6UGSWD8D"
+    ], 
+    "name": "A Contingency View of Transferring and Adapting Best Practices Within Online Communities", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "6UGSWD8D"
+  }, 
+  {
+    "paperID": [
+      "7V9JCFSV"
+    ], 
+    "name": "Improving Crowd Innovation with Expert Facilitation", 
+    "years": [
+      2016
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "7V9JCFSV"
+  }, 
+  {
+    "paperID": [
+      "8M9FQCNU"
+    ], 
+    "name": "The Group Context Framework: An Extensible Toolkit for Opportunistic Grouping and Collaboration", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Anind Dey"
+    ], 
+    "type": "paper", 
+    "id": "8M9FQCNU"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q"
+    ], 
+    "name": "Making Decisions From a Distance: The Impact of Technological Mediation on Riskiness and Dehumanization", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "9895DC6Q"
+  }, 
+  {
+    "paperID": [
+      "9T2T3NWW"
+    ], 
+    "name": "Is It Good to Be Like Wikipedia?: Exploring the Trade-offs of Introducing Collaborative Editing Model to Q&A Sites", 
+    "years": [
+      2015
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "9T2T3NWW"
+  }, 
+  {
+    "paperID": [
+      "ABX4R7K5"
+    ], 
+    "name": "Collaborative Problem Solving: A Study of MathOverflow", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "ABX4R7K5"
+  }, 
+  {
+    "paperID": [
+      "AFWXF8CH"
+    ], 
+    "name": "And Now for Something Completely Different: Improving Crowdsourcing Workflows with Micro-Diversions", 
+    "years": [
+      2015
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "AFWXF8CH"
+  }, 
+  {
+    "paperID": [
+      "AMDVNRNA"
+    ], 
+    "name": "Time to Reflect: Supporting Health Services over Time by Focusing on Collaborative Reflection", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Sara Kiesler", 
+      "Anind Dey"
+    ], 
+    "type": "paper", 
+    "id": "AMDVNRNA"
+  }, 
+  {
+    "paperID": [
+      "CDAJEXM8"
+    ], 
+    "name": "Impression Formation in Social Work-sharing Sites", 
+    "years": [
+      2013
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "CDAJEXM8"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "I Would Like To..., I Shouldn'T..., I Wish I...: Exploring Behavior-Change Goals for Social Networking Sites", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Lorrie Faith Cranor", 
+      "Norman Sadeh", 
+      "Alessandro Acquisti"
+    ], 
+    "type": "paper", 
+    "id": "CZQ57NCZ"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I"
+    ], 
+    "name": "Crowd Synthesis: Extracting Categories and Clusters from Complex Data", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
+    "type": "paper", 
+    "id": "DW9W8Z9I"
+  }, 
+  {
+    "paperID": [
+      "EWDTT8PI"
+    ], 
+    "name": "How to Hackathon: Socio-technical Tradeoffs in Brief, Intensive Collocation", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "James Herbsleb"
+    ], 
+    "type": "paper", 
+    "id": "EWDTT8PI"
+  }, 
+  {
+    "paperID": [
+      "F5SXURFA"
+    ], 
+    "name": "Toward Collaborative Ideation at Scale: Leveraging Ideas from Others to Generate More Creative and Diverse Ideas", 
+    "years": [
+      2015
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "F5SXURFA"
+  }, 
+  {
+    "paperID": [
+      "F96H6I58"
+    ], 
+    "name": "IdeaHound: Self-sustainable Idea Generation in Creative Online Communities", 
+    "years": [
+      2016
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "F96H6I58"
+  }, 
+  {
+    "paperID": [
+      "FQVMU8GU"
+    ], 
+    "name": "Distributed Analogical Idea Generation with Multiple Constraints", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "FQVMU8GU"
+  }, 
+  {
+    "paperID": [
+      "GCGB74CJ"
+    ], 
+    "name": "Encouraging Outside-The-Box Thinking in Crowd Innovation Through Identifying Domains of Expertise", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "GCGB74CJ"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W"
+    ], 
+    "name": "Social Eye Tracking: Gaze Recall with Online Crowds", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Anind Dey", 
+      "Jodi Forlizzi", 
+      "Scott Hudson"
+    ], 
+    "type": "paper", 
+    "id": "GPBS8H6W"
+  }, 
+  {
+    "paperID": [
+      "GQPNFE6B"
+    ], 
+    "name": "Building Loyalty to Online Communities Through Bond and Identity-based Attachment to Sub-groups", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Laura Dabbish", 
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "GQPNFE6B"
+  }, 
+  {
+    "paperID": [
+      "H3HIEFKV"
+    ], 
+    "name": "Standing on the Schemas of Giants: Socially Augmented Information Foraging", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
+    "type": "paper", 
+    "id": "H3HIEFKV"
+  }, 
+  {
+    "paperID": [
+      "HTFNIQDD"
+    ], 
+    "name": "Exiting the Design Studio: Leveraging Online Participants for Early-Stage Design Feedback", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jodi Forlizzi"
+    ], 
+    "type": "paper", 
+    "id": "HTFNIQDD"
+  }, 
+  {
+    "paperID": [
+      "J7SB3TH5"
+    ], 
+    "name": "Tweets Are Forever: A Large-scale Quantitative Analysis of Deleted Tweets", 
+    "years": [
+      2013
+    ], 
+    "authors": [
+      "Alessandro Acquisti", 
+      "Norman Sadeh"
+    ], 
+    "type": "paper", 
+    "id": "J7SB3TH5"
+  }, 
+  {
+    "paperID": [
+      "KF3CZPHV"
+    ], 
+    "name": "Characterizing the Life Cycle of Online News Stories Using Social Media Reactions", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "KF3CZPHV"
+  }, 
+  {
+    "paperID": [
+      "MXXBE2S3"
+    ], 
+    "name": "Organizing Without Formal Organization: Group Identification, Goal Setting and Social Modeling in Directing Online Production", 
+    "years": [
+      2012
+    ], 
+    "authors": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "MXXBE2S3"
+  }, 
+  {
+    "paperID": [
+      "NINP5I8I"
+    ], 
+    "name": "Conceptual Distance Matters when Building on Others' Ideas in Crowd-collaborative Innovation Platforms", 
+    "years": [
+      2014
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "NINP5I8I"
+  }, 
+  {
+    "paperID": [
+      "NX42RPT2"
+    ], 
+    "name": "Using Multiple Contexts to Detect and Form Opportunistic Groups", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Anind Dey"
+    ], 
+    "type": "paper", 
+    "id": "NX42RPT2"
+  }, 
+  {
+    "paperID": [
+      "QVXBKCSS"
+    ], 
+    "name": "A Comparison of Social, Learning, and Financial Strategies on Crowd Engagement and Output Quality", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "QVXBKCSS"
+  }, 
+  {
+    "paperID": [
+      "SFF232HX"
+    ], 
+    "name": "HomeProxy: A Physical Proxy for Video Messaging in the Home", 
+    "years": [
+      2013
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "SFF232HX"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC"
+    ], 
+    "name": "From Personal Tool to Community Resource: What's the Extra Work and Who Will Do It?", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "James Herbsleb"
+    ], 
+    "type": "paper", 
+    "id": "SMZ5P2JC"
+  }, 
+  {
+    "paperID": [
+      "T4S3K5ZT"
+    ], 
+    "name": "A Classroom Study of Using Crowd Feedback in the Iterative Design Process", 
+    "years": [
+      2015
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "T4S3K5ZT"
+  }, 
+  {
+    "paperID": [
+      "T8P7HT8E"
+    ], 
+    "name": "The Effects of Visualizing Activity History on Attitudes and Behaviors in a Peer Production Context", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Laura Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "T8P7HT8E"
+  }, 
+  {
+    "paperID": [
+      "T9IJMSRB"
+    ], 
+    "name": "Personality Matters: Balancing for Personality Types Leads to Better Outcomes for Crowd Teams", 
+    "years": [
+      2016
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "T9IJMSRB"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E"
+    ], 
+    "name": "Accessible Crowdwork?: Understanding the Value in and Challenge of Microtask Employment for People with Disabilities", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Jeffrey Bigham"
+    ], 
+    "type": "paper", 
+    "id": "UQ4WC79E"
+  }, 
+  {
+    "paperID": [
+      "VM7EP4IA"
+    ], 
+    "name": "The Perverse Effects of Social Transparency on Online Advice Taking", 
+    "years": [
+      2015
+    ], 
+    "authors": [
+      "Sara Kiesler", 
+      "Laura Dabbish"
+    ], 
+    "type": "paper", 
+    "id": "VM7EP4IA"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX"
+    ], 
+    "name": "Modeling Self-Disclosure in Social Networking Sites", 
+    "years": [
+      2016
+    ], 
+    "authors": [
+      "Robert Kraut"
+    ], 
+    "type": "paper", 
+    "id": "XGBBFQWX"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Motivating Contribution in a Participatory Sensing System via Quid-pro-quo", 
+    "years": [
+      2014
+    ], 
+    "authors": [
+      "Anthony Tomasic", 
+      "Aaron Steinfeld", 
+      "John Zimmerman"
+    ], 
+    "type": "paper", 
+    "id": "XSJ9KCBQ"
+  }, 
+  {
+    "paperID": [
+      "Z56T9MF4"
+    ], 
+    "name": "Almost an Expert: The Effects of Rubrics and Expertise on Perceived Value of Crowdsourced Design Critiques", 
+    "years": [
+      2016
+    ], 
+    "authors": [], 
+    "type": "paper", 
+    "id": "Z56T9MF4"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Aaron Steinfeld", 
+    "years": [], 
+    "authors": [
+      "Aaron Steinfeld"
+    ], 
+    "type": "author", 
+    "id": "author-0"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ", 
+      "J7SB3TH5"
+    ], 
+    "name": "Alessandro Acquisti", 
+    "years": [], 
+    "authors": [
+      "Alessandro Acquisti"
+    ], 
+    "type": "author", 
+    "id": "author-1"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Alexander Hauptmann", 
+    "years": [], 
+    "authors": [
+      "Alexander Hauptmann"
+    ], 
+    "type": "author", 
+    "id": "author-2"
+  }, 
+  {
+    "paperID": [
+      "DW9W8Z9I", 
+      "MXXBE2S3", 
+      "6UGSWD8D", 
+      "ABX4R7K5", 
+      "QVXBKCSS", 
+      "FQVMU8GU", 
+      "H3HIEFKV", 
+      "GCGB74CJ"
+    ], 
+    "name": "Aniket Kittur", 
+    "years": [], 
+    "authors": [
+      "Aniket Kittur"
+    ], 
+    "type": "author", 
+    "id": "author-3"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W", 
+      "8M9FQCNU", 
+      "NX42RPT2", 
+      "AMDVNRNA"
+    ], 
+    "name": "Anind Dey", 
+    "years": [], 
+    "authors": [
+      "Anind Dey"
+    ], 
+    "type": "author", 
+    "id": "author-4"
+  }, 
+  {
+    "paperID": [
+      "2017_4", 
+      "2017_10"
+    ], 
+    "name": "Anita Williams Woolley", 
+    "years": [], 
+    "authors": [
+      "Anita Williams Woolley"
+    ], 
+    "type": "author", 
+    "id": "author-5"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ"
+    ], 
+    "name": "Anthony Tomasic", 
+    "years": [], 
+    "authors": [
+      "Anthony Tomasic"
+    ], 
+    "type": "author", 
+    "id": "author-6"
+  }, 
+  {
+    "paperID": [
+      "SMZ5P2JC", 
+      "EWDTT8PI"
+    ], 
+    "name": "James Herbsleb", 
+    "years": [], 
+    "authors": [
+      "James Herbsleb"
+    ], 
+    "type": "author", 
+    "id": "author-7"
+  }, 
+  {
+    "paperID": [
+      "4IR7FP3G", 
+      "4C8T6PTV"
+    ], 
+    "name": "Jason Hong", 
+    "years": [], 
+    "authors": [
+      "Jason Hong"
+    ], 
+    "type": "author", 
+    "id": "author-8"
+  }, 
+  {
+    "paperID": [
+      "UQ4WC79E", 
+      "356QDHJ7"
+    ], 
+    "name": "Jeffrey Bigham", 
+    "years": [], 
+    "authors": [
+      "Jeffrey Bigham"
+    ], 
+    "type": "author", 
+    "id": "author-9"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W", 
+      "HTFNIQDD"
+    ], 
+    "name": "Jodi Forlizzi", 
+    "years": [], 
+    "authors": [
+      "Jodi Forlizzi"
+    ], 
+    "type": "author", 
+    "id": "author-10"
+  }, 
+  {
+    "paperID": [
+      "XSJ9KCBQ", 
+      "4C8T6PTV"
+    ], 
+    "name": "John Zimmerman", 
+    "years": [], 
+    "authors": [
+      "John Zimmerman"
+    ], 
+    "type": "author", 
+    "id": "author-11"
+  }, 
+  {
+    "paperID": [
+      "5G8U33QZ"
+    ], 
+    "name": "Kai-min Chang", 
+    "years": [], 
+    "authors": [
+      "Kai-min Chang"
+    ], 
+    "type": "author", 
+    "id": "author-12"
+  }, 
+  {
+    "paperID": [
+      "2017_7"
+    ], 
+    "name": "Kathleen Carley", 
+    "years": [], 
+    "authors": [
+      "Kathleen Carley"
+    ], 
+    "type": "author", 
+    "id": "author-13"
+  }, 
+  {
+    "paperID": [
+      "4IR7FP3G", 
+      "GQPNFE6B", 
+      "2017_1", 
+      "9895DC6Q", 
+      "T8P7HT8E", 
+      "2017_5", 
+      "VM7EP4IA", 
+      "2017_4"
+    ], 
+    "name": "Laura Dabbish", 
+    "years": [], 
+    "authors": [
+      "Laura Dabbish"
+    ], 
+    "type": "author", 
+    "id": "author-14"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ"
+    ], 
+    "name": "Lorrie Faith Cranor", 
+    "years": [], 
+    "authors": [
+      "Lorrie Faith Cranor"
+    ], 
+    "type": "author", 
+    "id": "author-15"
+  }, 
+  {
+    "paperID": [
+      "2017_4"
+    ], 
+    "name": "Maria Tomprou", 
+    "years": [], 
+    "authors": [
+      "Maria Tomprou"
+    ], 
+    "type": "author", 
+    "id": "author-16"
+  }, 
+  {
+    "paperID": [
+      "9895DC6Q", 
+      "2017_6"
+    ], 
+    "name": "Min Kyung Lee", 
+    "years": [], 
+    "authors": [
+      "Min Kyung Lee"
+    ], 
+    "type": "author", 
+    "id": "author-17"
+  }, 
+  {
+    "paperID": [
+      "CZQ57NCZ", 
+      "J7SB3TH5"
+    ], 
+    "name": "Norman Sadeh", 
+    "years": [], 
+    "authors": [
+      "Norman Sadeh"
+    ], 
+    "type": "author", 
+    "id": "author-18"
+  }, 
+  {
+    "paperID": [
+      "XGBBFQWX", 
+      "6UGSWD8D", 
+      "GQPNFE6B", 
+      "2017_11", 
+      "GCGB74CJ", 
+      "QVXBKCSS", 
+      "MXXBE2S3", 
+      "2017_1", 
+      "FQVMU8GU", 
+      "ABX4R7K5"
+    ], 
+    "name": "Robert Kraut", 
+    "years": [], 
+    "authors": [
+      "Robert Kraut"
+    ], 
+    "type": "author", 
+    "id": "author-19"
+  }, 
+  {
+    "paperID": [
+      "VM7EP4IA", 
+      "AMDVNRNA"
+    ], 
+    "name": "Sara Kiesler", 
+    "years": [], 
+    "authors": [
+      "Sara Kiesler"
+    ], 
+    "type": "author", 
+    "id": "author-20"
+  }, 
+  {
+    "paperID": [
+      "GPBS8H6W"
+    ], 
+    "name": "Scott Hudson", 
+    "years": [], 
+    "authors": [
+      "Scott Hudson"
+    ], 
+    "type": "author", 
+    "id": "author-21"
   }
 ]

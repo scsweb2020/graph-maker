@@ -3,7 +3,24 @@ function textInit(selection){
     .attr('x',0)
     .attr('y',0)
     .attr('class','dataLabels')
-    .style('opacity', d => d.paperID.length >= 3 ? .7 : 0)
+    // .style('opacity', d => d.paperID.length >= 3 ? .7 : 0)
+    .style('opacity', function(d) {
+      // d => d.paperID.length >= 3 ? .7 : 0)
+      if (d.type == "paper") {
+        return 0;
+      } else {
+        // authors are always visible to start with
+        if (d.type == "author") {
+          return 0.7;
+        // } else if (d.paperID.length >= 3) {
+        // } else if (d.paperID.length >= 3 || d.distance_from_root_min == 0) {
+        } else if (d.distance_from_root_min == 0) {
+          return 0.7
+        } else {
+          return 0;
+        }
+      }
+    })
     .attr("font-size", d => sizeText(d, 'init'))
     .attr('id', function (d) { return 'label' + d.id; })
     .attr('dy', "1em")
@@ -37,7 +54,33 @@ function textInit(selection){
 function textReset(selection, purpose){
     selection.transition()
         .duration(toggleTime)
-        .style('opacity', d => d.paperID.length >= 3 ? .4 : 0)
+        // .style('opacity', d => d.paperID.length >= 3 ? .4 : 0)
+        .style('opacity', function(d) {
+          // d => d.paperID.length >= 3 ? .7 : 0)
+          if (d.type == "paper") {
+            return 0;
+          } else {
+            // authors are always visible to start with
+            if (purpose == "reset") {
+              if (d.type == "author") {
+                return 0.7;
+              } else if (d.distance_from_root_min == 0) {
+                return 0.7
+              } else {
+                return 0;
+              }
+            } else {
+              if (d.type == "author") {
+                return 0.7;
+              } else if (d.paperID.length >= 3) {
+                return 0.7
+              } else {
+                return 0;
+              }
+            }
+
+          }
+        })
     //         .attr("font-size", d => sizeText(d, 'init'))
     // .attr('id', function (d) { return 'label' + d.id; })
     // .attr('dy', "1em")

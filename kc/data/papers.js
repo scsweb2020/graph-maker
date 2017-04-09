@@ -1,13 +1,19 @@
 papers = [
   {
     "paperID": "6UGSWD8D", 
+    "author_arr_clean": [
+      "Robert Kraut", 
+      "Aniket Kittur"
+    ], 
     "title": "A Contingency View of Transferring and Adapting Best Practices Within Online Communities", 
     "url": "http://doi.acm.org/10.1145/2818048.2819976", 
     "nodeIDs": [
       "89ce5bbf-fccb-42b8-99d8-45aa0481f9c4", 
+      "author-19", 
       "73c0bf94-6395-4840-8dde-d050206f7067", 
       "509ac4f8-f4cd-488c-877a-657d3aa32153", 
       "9bdb9c66-7adc-4da1-b800-56ea238d5678", 
+      "author-3", 
       "df366ec9-124a-4155-b1ba-45a4fc23c7f5", 
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
       "74ddeb09-a146-40fd-9be5-1ca01f3fca8a"
@@ -20,15 +26,8 @@ papers = [
     ]
   }, 
   {
-    "paperID": "X49N6IXM", 
-    "title": "Algorithms at Work: Empirical Diversity, Analytic Vocabularies, Design Implications", 
-    "url": "http://doi.acm.org/10.1145/2818052.2855519", 
-    "nodeIDs": "", 
-    "year": 2016, 
-    "author_arr": ""
-  }, 
-  {
     "paperID": "Z56T9MF4", 
+    "author_arr_clean": [], 
     "title": "Almost an Expert: The Effects of Rubrics and Expertise on Perceived Value of Crowdsourced Design Critiques", 
     "url": "http://doi.acm.org/10.1145/2818048.2819953", 
     "nodeIDs": [
@@ -43,13 +42,19 @@ papers = [
     ], 
     "year": 2016, 
     "author_arr": [
+      "Alvin Yuan", 
       "Kurt Luther", 
-      "Sophie Vennix", 
-      "Steven P. Dow"
+      "Markus Krause", 
+      "Sophie Isabel Vennix", 
+      "Steven P Dow", 
+      "Bjorn Hartmann"
     ]
   }, 
   {
     "paperID": "356QDHJ7", 
+    "author_arr_clean": [
+      "Jeffrey Bigham"
+    ], 
     "title": "Coding Varied Behavior Types Using the Crowd", 
     "url": "http://doi.acm.org/10.1145/2818052.2874339", 
     "nodeIDs": [
@@ -57,31 +62,36 @@ papers = [
       "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
       "770fd8b6-df17-4034-99e8-93e137aa1a0a", 
       "a4dd71d7-0d23-4ea1-a1d8-6e8231a5bfe2", 
+      "author-9", 
       "5a497452-5a6d-409b-8e14-60f5a0b16189", 
       "228301dc-a290-4946-80d7-a9456cccc49b"
     ], 
     "year": 2016, 
     "author_arr": [
+      "Jinyeong Yim", 
+      "Jeel Jasani", 
+      "Aubrey Henderson", 
+      "Danai Koutra", 
       "Steven P. Dow", 
       "Winnie Leung", 
-      "Jeffrey Bigham", 
-      "Walter Lasecki"
+      "Ellen Lim", 
+      "Mitchell Gordon", 
+      "Jeffrey P. Bigham", 
+      "Walter S. Lasecki"
     ]
   }, 
   {
-    "paperID": "ASN4NII9", 
-    "title": "Constantly Connected: At What Price and with What Rewards?", 
-    "url": "http://doi.acm.org/10.1145/2818052.2893364", 
-    "nodeIDs": "", 
-    "year": 2016, 
-    "author_arr": ""
-  }, 
-  {
     "paperID": "FQVMU8GU", 
+    "author_arr_clean": [
+      "Robert Kraut", 
+      "Aniket Kittur"
+    ], 
     "title": "Distributed Analogical Idea Generation with Multiple Constraints", 
     "url": "http://doi.acm.org/10.1145/2818048.2835201", 
     "nodeIDs": [
+      "author-19", 
       "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f", 
+      "author-3", 
       "e78de520-2447-42f7-90f8-acf0f44b6714", 
       "d7727869-4038-47b8-825d-a4161d9c60ef", 
       "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
@@ -100,11 +110,17 @@ papers = [
   }, 
   {
     "paperID": "GCGB74CJ", 
+    "author_arr_clean": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
     "title": "Encouraging Outside-The-Box Thinking in Crowd Innovation Through Identifying Domains of Expertise", 
     "url": "http://doi.acm.org/10.1145/2818048.2820025", 
     "nodeIDs": [
+      "author-19", 
       "90c683b0-2d1c-4b8d-b2ea-7a2253ce176f", 
       "e78de520-2447-42f7-90f8-acf0f44b6714", 
+      "author-3", 
       "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
       "3f20a874-986a-4bf1-9798-b6cf1b365030", 
       "69e7f84a-ca58-4dff-8696-bed3754be543", 
@@ -114,12 +130,15 @@ papers = [
     "year": 2016, 
     "author_arr": [
       "Lixiu Yu", 
-      "Robert E. Kraut", 
-      "Aniket Kittur"
+      "Aniket Kittur", 
+      "Robert E. Kraut"
     ]
   }, 
   {
     "paperID": "EWDTT8PI", 
+    "author_arr_clean": [
+      "James Herbsleb"
+    ], 
     "title": "How to Hackathon: Socio-technical Tradeoffs in Brief, Intensive Collocation", 
     "url": "http://doi.acm.org/10.1145/2818048.2819946", 
     "nodeIDs": [
@@ -130,6 +149,7 @@ papers = [
       "9f1d8d4d-c426-423a-93d6-5144a9392b70", 
       "1239e975-7dc4-4adb-bc66-a48108633674", 
       "b803f814-c78c-4f77-a369-40646b1fc5de", 
+      "author-7", 
       "d1af15ac-261b-49cb-9cf3-29477b1e0dca", 
       "57f9bcf9-6ed1-4c9e-9eed-4aac4d19d0c3", 
       "766d5d54-d71b-4c44-a391-948ed5034c2f", 
@@ -162,26 +182,15 @@ papers = [
     ], 
     "year": 2016, 
     "author_arr": [
-      "Erik Trainer", 
+      "Erik H. Trainer", 
       "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
+      "Chalalai Chaihirunkarn", 
       "James D. Herbsleb"
     ]
   }, 
   {
-    "paperID": "MUV234CD", 
-    "title": "IdeaGens: Enabling Expert Facilitation of Crowd Brainstorming", 
-    "url": "http://doi.acm.org/10.1145/2818052.2874313", 
-    "nodeIDs": "", 
-    "year": 2016, 
-    "author_arr": [
-      "Joel Chan", 
-      "Steven Dang", 
-      "Steven P. Dow"
-    ]
-  }, 
-  {
     "paperID": "F96H6I58", 
+    "author_arr_clean": [], 
     "title": "IdeaHound: Self-sustainable Idea Generation in Creative Online Communities", 
     "url": "http://doi.acm.org/10.1145/2818052.2874335", 
     "nodeIDs": [
@@ -198,12 +207,16 @@ papers = [
     ], 
     "year": 2016, 
     "author_arr": [
+      "Pao Siangliulue", 
       "Joel Chan", 
-      "Steven P. Dow"
+      "Bernd Huber", 
+      "Steven P. Dow", 
+      "Krzysztof Z. Gajos"
     ]
   }, 
   {
     "paperID": "7V9JCFSV", 
+    "author_arr_clean": [], 
     "title": "Improving Crowd Innovation with Expert Facilitation", 
     "url": "http://doi.acm.org/10.1145/2818048.2820023", 
     "nodeIDs": [
@@ -230,6 +243,9 @@ papers = [
   }, 
   {
     "paperID": "XGBBFQWX", 
+    "author_arr_clean": [
+      "Robert Kraut"
+    ], 
     "title": "Modeling Self-Disclosure in Social Networking Sites", 
     "url": "http://doi.acm.org/10.1145/2818048.2820010", 
     "nodeIDs": [
@@ -239,6 +255,7 @@ papers = [
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
       "11f84eea-3a89-46a3-86da-2c936eef96c1", 
       "8ab5ca4e-2007-4705-9d30-4b844d104e4e", 
+      "author-19", 
       "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
       "2d20d07c-3616-4f7c-8ff9-124eba62c668", 
       "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
@@ -265,11 +282,13 @@ papers = [
     "year": 2016, 
     "author_arr": [
       "Yi-Chia Wang", 
-      "Robert E. Kraut"
+      "Moira Burke", 
+      "Robert Kraut"
     ]
   }, 
   {
     "paperID": "T9IJMSRB", 
+    "author_arr_clean": [], 
     "title": "Personality Matters: Balancing for Personality Types Leads to Better Outcomes for Crowd Teams", 
     "url": "http://doi.acm.org/10.1145/2818048.2819979", 
     "nodeIDs": [
@@ -284,11 +303,18 @@ papers = [
     ], 
     "year": 2016, 
     "author_arr": [
+      "Ioanna Lykourentzou", 
+      "Angeliki Antoniou", 
+      "Yannick Naudet", 
       "Steven P. Dow"
     ]
   }, 
   {
     "paperID": "AMDVNRNA", 
+    "author_arr_clean": [
+      "Anind Dey", 
+      "Sara Kiesler"
+    ], 
     "title": "Time to Reflect: Supporting Health Services over Time by Focusing on Collaborative Reflection", 
     "url": "http://doi.acm.org/10.1145/2818048.2820079", 
     "nodeIDs": [
@@ -301,9 +327,11 @@ papers = [
       "0c4b6bc5-614d-450f-9e6c-abc9e7411093", 
       "8b5c1a57-a7a0-4cd7-a700-788337f68fc7", 
       "08d49dc7-c09c-4c76-bf73-b5bf83b4ca13", 
+      "author-20", 
       "60cc50e1-7cbf-4b9b-96ae-8b47d53a5e9b", 
       "d7c733b2-270f-4661-9cfc-c37325af7b9e", 
       "fd02b50a-275e-4296-aa33-f21a35e25761", 
+      "author-4", 
       "0043d0e8-23f8-4589-9e56-e507520d87f4", 
       "e6c85cf6-ecc2-4806-92a8-b35ca342f332", 
       "244efb7e-e9c8-4f04-9efa-45a8b2728551", 
@@ -315,11 +343,13 @@ papers = [
     "author_arr": [
       "Gabriela Marcu", 
       "Anind K. Dey", 
-      "Sara Kiesler"
+      "Sara Kiesler", 
+      "Madhu Reddy"
     ]
   }, 
   {
     "paperID": "T4S3K5ZT", 
+    "author_arr_clean": [], 
     "title": "A Classroom Study of Using Crowd Feedback in the Iterative Design Process", 
     "url": "http://doi.acm.org/10.1145/2675133.2675140", 
     "nodeIDs": [
@@ -335,11 +365,17 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
-      "Steven P. Dow"
+      "Anbang Xu", 
+      "Huaming Rao", 
+      "Steven P. Dow", 
+      "Brian P. Bailey"
     ]
   }, 
   {
     "paperID": "UQ4WC79E", 
+    "author_arr_clean": [
+      "Jeffrey Bigham"
+    ], 
     "title": "Accessible Crowdwork?: Understanding the Value in and Challenge of Microtask Employment for People with Disabilities", 
     "url": "http://doi.acm.org/10.1145/2675133.2675158", 
     "nodeIDs": [
@@ -359,6 +395,7 @@ papers = [
       "c96a771e-237e-44a6-9bcb-8013c719d829", 
       "c469c384-ccc1-4be3-a459-b3da2cad8ae6", 
       "3a006a00-fd55-4350-8342-6c2d94822868", 
+      "author-9", 
       "9b8926e2-0d49-46c1-9af6-5041e7282b02", 
       "3a087f09-474d-4bba-8e0c-0de6d7afcc61", 
       "9d4e0b32-3203-478a-840d-2dffb66e5643", 
@@ -366,11 +403,16 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
-      "Jeffrey P. Bigham"
+      "Kathryn Zyskowski", 
+      "Meredith Ringel Morris", 
+      "Jeffrey P. Bigham", 
+      "Mary L. Gray", 
+      "Shaun K. Kane"
     ]
   }, 
   {
     "paperID": "AFWXF8CH", 
+    "author_arr_clean": [], 
     "title": "And Now for Something Completely Different: Improving Crowdsourcing Workflows with Micro-Diversions", 
     "url": "http://doi.acm.org/10.1145/2675133.2675260", 
     "nodeIDs": [
@@ -387,17 +429,24 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
-      "Jeffrey M. Rzeszotarski"
+      "Peng Dai", 
+      "Jeffrey M. Rzeszotarski", 
+      "Praveen Paritosh", 
+      "Ed H. Chi"
     ]
   }, 
   {
     "paperID": "HTFNIQDD", 
+    "author_arr_clean": [
+      "Jodi Forlizzi"
+    ], 
     "title": "Exiting the Design Studio: Leveraging Online Participants for Early-Stage Design Feedback", 
     "url": "http://doi.acm.org/10.1145/2675133.2675174", 
     "nodeIDs": [
       "7cc5b2db-fbe1-4d38-8450-8b65b2aa9094", 
       "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
       "b2a7a62a-a541-4569-a51f-372e7456dd9d", 
+      "author-10", 
       "723c7f0a-50e1-4eb9-9d49-8e8b22c9c1d6", 
       "d5f06177-4480-4395-9ec8-ec9eeb401e34", 
       "a5d98044-ac28-44e8-9d3d-d00305a46b3a", 
@@ -405,12 +454,17 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
+      "Xiaojuan Ma", 
+      "Li Yu", 
       "Jodi L. Forlizzi", 
       "Steven P. Dow"
     ]
   }, 
   {
     "paperID": "SMZ5P2JC", 
+    "author_arr_clean": [
+      "James Herbsleb"
+    ], 
     "title": "From Personal Tool to Community Resource: What's the Extra Work and Who Will Do It?", 
     "url": "http://doi.acm.org/10.1145/2675133.2675172", 
     "nodeIDs": [
@@ -422,6 +476,7 @@ papers = [
       "9a4d4ad4-6319-49e6-a431-3e850941dfcb", 
       "883ad7a8-62c9-489b-9d05-96ca44699bf8", 
       "7bd2b87a-a446-48cd-95ce-e6fc8419ff6d", 
+      "author-7", 
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
       "55327c5c-7331-4b14-a55b-b20bea74c8b8", 
       "9813e892-ea5a-4b17-8ae5-d136ca4c01e8", 
@@ -467,20 +522,28 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
-      "Erik Trainer", 
+      "Erik H. Trainer", 
+      "Chalalai Chaihirunkarn", 
       "Arun Kalyanasundaram", 
-      "Chalali Chaihirunkarn", 
       "James D. Herbsleb"
     ]
   }, 
   {
     "paperID": "CZQ57NCZ", 
+    "author_arr_clean": [
+      "Alessandro Acquisti", 
+      "Lorrie Faith Cranor", 
+      "Norman Sadeh"
+    ], 
     "title": "I Would Like To..., I Shouldn'T..., I Wish I...: Exploring Behavior-Change Goals for Social Networking Sites", 
     "url": "http://doi.acm.org/10.1145/2675133.2675193", 
     "nodeIDs": [
       "bb59499d-484f-4514-8395-1267fbd48f5f", 
+      "author-15", 
       "21a2f137-6da8-4b3d-80f2-f0eddf8c8c4d", 
+      "author-1", 
       "11af4fb4-0b6f-49cf-a30c-ce41b698eece", 
+      "author-18", 
       "6e769593-6960-47cf-8b5d-2bdbe7b0fa43", 
       "d4c6691e-f543-4346-ac7c-b9fe9b4adbbd", 
       "fdaf618e-62df-4850-8b41-e96f7e905d63", 
@@ -506,11 +569,15 @@ papers = [
     "author_arr": [
       "Manya Sleeper", 
       "Alessandro Acquisti", 
-      "Lorrie Faith Cranor"
+      "Lorrie Faith Cranor", 
+      "Patrick Gage Kelley", 
+      "Sean A. Munson", 
+      "Norman Sadeh"
     ]
   }, 
   {
     "paperID": "9T2T3NWW", 
+    "author_arr_clean": [], 
     "title": "Is It Good to Be Like Wikipedia?: Exploring the Trade-offs of Introducing Collaborative Editing Model to Q&A Sites", 
     "url": "http://doi.acm.org/10.1145/2675133.2675155", 
     "nodeIDs": [
@@ -520,19 +587,29 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
-      "Haiyi Zhu"
+      "Guo Li", 
+      "Haiyi Zhu", 
+      "Tun Lu", 
+      "Xianghua Ding", 
+      "Ning Gu"
     ]
   }, 
   {
     "paperID": "9895DC6Q", 
+    "author_arr_clean": [
+      "Min Kyung Lee", 
+      "Laura Dabbish"
+    ], 
     "title": "Making Decisions From a Distance: The Impact of Technological Mediation on Riskiness and Dehumanization", 
     "url": "http://doi.acm.org/10.1145/2675133.2675288", 
     "nodeIDs": [
       "f976117f-c783-4967-9c1c-95a2a004f4ac", 
       "110bdf5b-d42c-4aa1-a3f5-516f67285ff9", 
       "85bd7ad4-917c-4131-b238-2af755603f43", 
+      "author-14", 
       "fc86e953-0450-47e4-a21b-cdd112c0ecb0", 
       "b037271c-ec88-4bac-8a85-bb82e0070f39", 
+      "author-17", 
       "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
       "c353bdb1-0dae-4db2-b83c-626ebdf053bb"
     ], 
@@ -545,13 +622,19 @@ papers = [
   }, 
   {
     "paperID": "5G8U33QZ", 
+    "author_arr_clean": [
+      "Kai-min Chang", 
+      "Alexander Hauptmann"
+    ], 
     "title": "Massive Open Online Proctor: Protecting the Credibility of MOOCs Certificates", 
     "url": "http://doi.acm.org/10.1145/2675133.2675245", 
     "nodeIDs": [
+      "author-2", 
       "888b7b7f-fa9c-41d8-936f-e4d275367c78", 
       "e65deff0-689d-47ed-9601-3ce2c0b94047", 
       "db4ded4d-97bd-46bc-ba95-d3d3dc413287", 
       "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
+      "author-12", 
       "9ab7314d-721c-4905-a6b7-9546b6db94c6", 
       "f8dc39a4-8887-42ba-9dc9-7141a7519360", 
       "868c651f-924d-4518-b805-631f3ba4872e", 
@@ -569,11 +652,18 @@ papers = [
     "year": 2015, 
     "author_arr": [
       "Xuanchong Li", 
-      "Kai-min Chang"
+      "Kai-min Chang", 
+      "Yueran Yuan", 
+      "Alexander Hauptmann"
     ]
   }, 
   {
     "paperID": "GPBS8H6W", 
+    "author_arr_clean": [
+      "Jodi Forlizzi", 
+      "Scott Hudson", 
+      "Anind Dey"
+    ], 
     "title": "Social Eye Tracking: Gaze Recall with Online Crowds", 
     "url": "http://doi.acm.org/10.1145/2675133.2675249", 
     "nodeIDs": [
@@ -581,19 +671,26 @@ papers = [
       "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
       "f2825375-2fa4-4bd5-828c-984fe5666116", 
       "59513657-b9c7-4b32-bd17-567606e58944", 
+      "author-21", 
+      "author-10", 
       "790776bc-fde2-430f-8313-f68bab578ddc", 
       "5986092a-2cc4-40be-9a1c-9fce68a3dcfd", 
+      "author-4", 
       "e9a7ad9f-9905-4ded-b2a9-a3cc8a93126b"
     ], 
     "year": 2015, 
     "author_arr": [
+      "Shiwei Cheng", 
+      "Zhiqiang Sun", 
+      "Xiaojuan Ma", 
       "Jodi L. Forlizzi", 
-      "Scott Hudson", 
+      "Scott E. Hudson", 
       "Anind Dey"
     ]
   }, 
   {
     "paperID": "56QUJEMP", 
+    "author_arr_clean": [], 
     "title": "Structuring, Aggregating, and Evaluating Crowdsourced Design Critique", 
     "url": "http://doi.acm.org/10.1145/2675133.2675283", 
     "nodeIDs": [
@@ -611,37 +708,43 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
+      "Kurt Luther", 
+      "Jari-Lee Tolentino", 
+      "Wei Wu", 
+      "Amy Pavel", 
+      "Brian P. Bailey", 
+      "Maneesh Agrawala", 
+      "Bjrn Hartmann", 
       "Steven P. Dow"
     ]
   }, 
   {
     "paperID": "T8P7HT8E", 
+    "author_arr_clean": [
+      "Laura Dabbish"
+    ], 
     "title": "The Effects of Visualizing Activity History on Attitudes and Behaviors in a Peer Production Context", 
     "url": "http://doi.acm.org/10.1145/2675133.2675250", 
     "nodeIDs": [
       "0f5d7524-c494-4c7b-892d-de963c7fba1f", 
       "874932e0-80d6-4e90-948a-61ad1911c4f6", 
       "55327c5c-7331-4b14-a55b-b20bea74c8b8", 
+      "author-14", 
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
       "dbdb7a27-d630-4ef9-b7a4-5216de0d0b7a", 
       "16c6f1e7-5e1c-4787-83a3-9661945c16d3"
     ], 
     "year": 2015, 
     "author_arr": [
-      "Marlow, Jennifer", 
-      "Dabbish, Laura A."
+      "Jennifer Marlow", 
+      "Laura A. Dabbish"
     ]
   }, 
   {
-    "paperID": "D7TDBDC7", 
-    "title": "The Future of Networked Privacy: Challenges and Opportunities", 
-    "url": "http://doi.acm.org/10.1145/2685553.2685554", 
-    "nodeIDs": "", 
-    "year": 2015, 
-    "author_arr": ""
-  }, 
-  {
     "paperID": "8M9FQCNU", 
+    "author_arr_clean": [
+      "Anind Dey"
+    ], 
     "title": "The Group Context Framework: An Extensible Toolkit for Opportunistic Grouping and Collaboration", 
     "url": "http://doi.acm.org/10.1145/2675133.2675205", 
     "nodeIDs": [
@@ -650,51 +753,67 @@ papers = [
       "9ce5c2a5-eb06-44a1-9d34-4cf69e72567f", 
       "ba4e1ce2-0e67-4c54-9844-cc05661d799f", 
       "3ef0628e-f906-48ad-bb0b-b3a603f6fe97", 
+      "author-4", 
       "40ec1273-5635-4bc7-b537-f7eef7b76a62", 
       "426cb39f-eb58-44a1-9808-8a0c6c8171cc", 
       "8af17a88-a7a0-476a-802f-2a61f9bc8b6f"
     ], 
     "year": 2015, 
     "author_arr": [
-      "system"
+      "Adrian A. de Freitas", 
+      "Anind K. Dey"
     ]
   }, 
   {
     "paperID": "VM7EP4IA", 
+    "author_arr_clean": [
+      "Laura Dabbish", 
+      "Sara Kiesler"
+    ], 
     "title": "The Perverse Effects of Social Transparency on Online Advice Taking", 
     "url": "http://doi.acm.org/10.1145/2675133.2675253", 
     "nodeIDs": [
       "90a0611c1f781c32d7dc", 
-      "b46c901c-54da-4f98-afa2-37daee1f28f4", 
       "e714306a-01ea-47ac-9480-f69b77ee8eee", 
-      "ce6b0bc6-78f1-42db-82e2-e4624bdbebfe"
+      "b46c901c-54da-4f98-afa2-37daee1f28f4", 
+      "author-14", 
+      "ce6b0bc6-78f1-42db-82e2-e4624bdbebfe", 
+      "author-20"
     ], 
     "year": 2015, 
     "author_arr": [
-      "Nguyen, Duyen T.", 
-      "Dabbish, Laura A.", 
-      "Kiesler, Sara"
+      "Duyen T. Nguyen", 
+      "Laura A. Dabbish", 
+      "Sara Kiesler"
     ]
   }, 
   {
     "paperID": "4IR7FP3G", 
+    "author_arr_clean": [
+      "Laura Dabbish", 
+      "Jason Hong"
+    ], 
     "title": "The Role of Social Influence in Security Feature Adoption", 
     "url": "http://doi.acm.org/10.1145/2675133.2675225", 
     "nodeIDs": [
       "152599db-665f-4239-89b5-55951f28ef25", 
+      "author-14", 
       "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
+      "author-8", 
       "b8a0f48a-8d0c-4ca3-abc7-e9572ea0099f"
     ], 
     "year": 2015, 
     "author_arr": [
-      "Das, Sauvik.", 
-      "Dabbish, Laura A.", 
-      "Hong, Jason I."
+      "Sauvik Das", 
+      "Adam D.I. Kramer", 
+      "Laura A. Dabbish", 
+      "Jason I. Hong"
     ]
   }, 
   {
     "paperID": "F5SXURFA", 
+    "author_arr_clean": [], 
     "title": "Toward Collaborative Ideation at Scale: Leveraging Ideas from Others to Generate More Creative and Diverse Ideas", 
     "url": "http://doi.acm.org/10.1145/2675133.2675239", 
     "nodeIDs": [
@@ -710,17 +829,24 @@ papers = [
     ], 
     "year": 2015, 
     "author_arr": [
-      "Dow, Steven P."
+      "Pao Siangliulue", 
+      "Kenneth C. Arnold", 
+      "Krzysztof Z. Gajos", 
+      "Steven P. Dow"
     ]
   }, 
   {
     "paperID": "NX42RPT2", 
+    "author_arr_clean": [
+      "Anind Dey"
+    ], 
     "title": "Using Multiple Contexts to Detect and Form Opportunistic Groups", 
     "url": "http://doi.acm.org/10.1145/2675133.2675213", 
     "nodeIDs": [
       "ba2c38b5-42c4-4760-99e3-60e977074bef", 
       "f225c776-03f6-4057-b3f5-4507a350079f", 
       "3ef0628e-f906-48ad-bb0b-b3a603f6fe97", 
+      "author-4", 
       "2b29f775-4244-4bd6-9b5a-38f1cd3d2f3e", 
       "191ea86b-d412-4563-9ec2-28b1a078ea96", 
       "8af17a88-a7a0-476a-802f-2a61f9bc8b6f"
@@ -733,6 +859,10 @@ papers = [
   }, 
   {
     "paperID": "4C8T6PTV", 
+    "author_arr_clean": [
+      "Jason Hong", 
+      "John Zimmerman"
+    ], 
     "title": "You Never Call, You Never Write: Call and SMS Logs Do Not Always Indicate Tie Strength", 
     "url": "http://doi.acm.org/10.1145/2675133.2675143", 
     "nodeIDs": [
@@ -744,7 +874,9 @@ papers = [
       "a8f1ff55-3511-4eba-b737-4deec28b4b2e", 
       "e866927e-2d21-4b89-9f98-cf28aa315d19", 
       "f1e3fa90-98fd-4563-8f57-4d7f39587c79", 
+      "author-11", 
       "653e5b4b-cc8c-4f68-bf94-163f21cf1082", 
+      "author-8", 
       "c1b5845b-9359-49e5-8cca-85af51104202"
     ], 
     "year": 2015, 
@@ -757,11 +889,17 @@ papers = [
   }, 
   {
     "paperID": "QVXBKCSS", 
+    "author_arr_clean": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
     "title": "A Comparison of Social, Learning, and Financial Strategies on Crowd Engagement and Output Quality", 
     "url": "http://doi.acm.org/10.1145/2531602.2531729", 
     "nodeIDs": [
+      "author-19", 
       "8a57bdf0-1910-4bd5-ac3f-626e0d4ecf5e", 
       "3275ce46-222e-4d00-9acb-ece9f5817daa", 
+      "author-3", 
       "135af6e0-2b30-442f-a32e-0d6c5f3174b1", 
       "9b8926e2-0d49-46c1-9af6-5041e7282b02", 
       "80e1eebb-2b39-48d7-9bfd-f220a4bfe2c8", 
@@ -771,26 +909,37 @@ papers = [
     "year": 2014, 
     "author_arr": [
       "Lixiu Yu", 
-      "Paul Andre", 
+      "Paul Andr", 
       "Aniket Kittur", 
-      "Robert E. Kraut"
+      "Robert Kraut"
     ]
   }, 
   {
     "paperID": "GQPNFE6B", 
+    "author_arr_clean": [
+      "Laura Dabbish", 
+      "Robert Kraut"
+    ], 
     "title": "Building Loyalty to Online Communities Through Bond and Identity-based Attachment to Sub-groups", 
     "url": "http://doi.acm.org/10.1145/2531602.2531688", 
     "nodeIDs": [
-      "3038d66a-99a1-4ef0-a153-df6218742d89", 
+      "author-19", 
+      "b986cda3-d01f-49fe-b8d0-619926ddd79a", 
       "d51dae92-8bfd-487c-9ea1-42142070000d", 
-      "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
-      "b986cda3-d01f-49fe-b8d0-619926ddd79a"
+      "3038d66a-99a1-4ef0-a153-df6218742d89", 
+      "author-14", 
+      "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27"
     ], 
     "year": 2014, 
-    "author_arr": ""
+    "author_arr": [
+      "Yla R. Tausczik", 
+      "Laura A. Dabbish", 
+      "Robert E. Kraut"
+    ]
   }, 
   {
     "paperID": "KF3CZPHV", 
+    "author_arr_clean": [], 
     "title": "Characterizing the Life Cycle of Online News Stories Using Social Media Reactions", 
     "url": "http://doi.acm.org/10.1145/2531602.2531623", 
     "nodeIDs": [
@@ -801,23 +950,39 @@ papers = [
       "1ee7adf3-07bb-4b56-b57c-386401365e45"
     ], 
     "year": 2014, 
-    "author_arr": ""
+    "author_arr": [
+      "Carlos Castillo", 
+      "Mohammed El-Haddad", 
+      "J_rgen Pfeffer", 
+      "Matt Stempeck"
+    ]
   }, 
   {
     "paperID": "ABX4R7K5", 
+    "author_arr_clean": [
+      "Aniket Kittur", 
+      "Robert Kraut"
+    ], 
     "title": "Collaborative Problem Solving: A Study of MathOverflow", 
     "url": "http://doi.acm.org/10.1145/2531602.2531690", 
     "nodeIDs": [
+      "author-19", 
       "96d8e3eb-4179-4cb1-b297-d7345b8a0d7c", 
+      "author-3", 
       "8791dd2f-1fc9-47a5-a05d-1752cdfb94fa", 
       "cff701f4-1995-4e0f-b2a5-2cbd389a2c5c", 
       "5c21af6a-ffde-485e-9e33-af152b0db5b9"
     ], 
     "year": 2014, 
-    "author_arr": ""
+    "author_arr": [
+      "Yla R. Tausczik", 
+      "Aniket Kittur", 
+      "Robert E. Kraut"
+    ]
   }, 
   {
     "paperID": "NINP5I8I", 
+    "author_arr_clean": [], 
     "title": "Conceptual Distance Matters when Building on Others' Ideas in Crowd-collaborative Innovation Platforms", 
     "url": "http://doi.acm.org/10.1145/2556420.2556500", 
     "nodeIDs": [
@@ -828,10 +993,17 @@ papers = [
       "5c21af6a-ffde-485e-9e33-af152b0db5b9"
     ], 
     "year": 2014, 
-    "author_arr": ""
+    "author_arr": [
+      "Joel Chan", 
+      "Steven Dow", 
+      "Christian Schunn"
+    ]
   }, 
   {
     "paperID": "DW9W8Z9I", 
+    "author_arr_clean": [
+      "Aniket Kittur"
+    ], 
     "title": "Crowd Synthesis: Extracting Categories and Clusters from Complex Data", 
     "url": "http://doi.acm.org/10.1145/2531602.2531653", 
     "nodeIDs": [
@@ -840,6 +1012,7 @@ papers = [
       "7b55657e-6158-40ff-9752-7e7678d7241d", 
       "eb09c956-1e10-416d-83d0-1bce470be200", 
       "1c595cb2-e2a5-4ce6-9747-2cae367d2a51", 
+      "author-3", 
       "1308b36d-5374-48a4-88a2-34ce2d8201df", 
       "435a6e17-f11e-4259-9767-8e3e4a6c7988", 
       "770fd8b6-df17-4034-99e8-93e137aa1a0a", 
@@ -849,34 +1022,46 @@ papers = [
       "57b8776c-b769-40bf-8812-842732253e44"
     ], 
     "year": 2014, 
-    "author_arr": ""
+    "author_arr": [
+      "Paul Andr", 
+      "Aniket Kittur", 
+      "Steven P. Dow"
+    ]
   }, 
   {
     "paperID": "XSJ9KCBQ", 
+    "author_arr_clean": [
+      "Anthony Tomasic", 
+      "John Zimmerman", 
+      "Aaron Steinfeld"
+    ], 
     "title": "Motivating Contribution in a Participatory Sensing System via Quid-pro-quo", 
     "url": "http://doi.acm.org/10.1145/2531602.2531705", 
     "nodeIDs": [
       "1d5cec32-8c24-45fe-860a-f5d08466b1c1", 
       "6002229b-19ed-48e4-bbc1-ec8b9cd71033", 
       "f1d45c50-9182-477a-8375-24ff9ce71bf0", 
+      "author-11", 
       "c2efe6a6-ef85-4f2d-a42d-796993374f2c", 
       "d3ad43f9-34f5-4df3-b2f1-515beeb4e9f9", 
+      "author-0", 
+      "author-6", 
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
       "46100865-cf58-4950-bd09-c2f665a94ec9"
     ], 
     "year": 2014, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "KUFJGTHN", 
-    "title": "Sharing, Re-use and Circulation of Resources in Cooperative Scientific Work", 
-    "url": "http://doi.acm.org/10.1145/2556420.2558853", 
-    "nodeIDs": "", 
-    "year": 2014, 
-    "author_arr": ""
+    "author_arr": [
+      "Anthony Tomasic", 
+      "John Zimmerman", 
+      "Aaron Steinfeld", 
+      "Yun Huang"
+    ]
   }, 
   {
     "paperID": "H3HIEFKV", 
+    "author_arr_clean": [
+      "Aniket Kittur"
+    ], 
     "title": "Standing on the Schemas of Giants: Socially Augmented Information Foraging", 
     "url": "http://doi.acm.org/10.1145/2531602.2531644", 
     "nodeIDs": [
@@ -887,70 +1072,21 @@ papers = [
       "5482a6d9-01b4-4942-b4ea-01d70eec17df", 
       "0e29c15c-2382-4435-bf5a-1da2b42e8d67", 
       "6e53d67f-51db-420c-97e1-8951a23d3b0a", 
+      "author-3", 
       "507a4c2a-40bc-4017-ac2b-fa69c5d74c37", 
       "90bba8fc-a94c-4d87-98e0-2e03f3800f2a"
     ], 
     "year": 2014, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "HTVE4WHV", 
-    "title": "Teammate Inaccuracy Blindness: When Information Sharing Tools Hinder Collaborative Analysis", 
-    "url": "http://doi.acm.org/10.1145/2531602.2531681", 
-    "nodeIDs": "", 
-    "year": 2014, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "XXFW3TXP", 
-    "title": "The Identification of Deviance and Its Impact on Retention in a Multiplayer Game", 
-    "url": "http://doi.acm.org/10.1145/2531602.2531724", 
-    "nodeIDs": "", 
-    "year": 2014, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "ZG3TF6TC", 
-    "title": "The Role of Founders in Building Online Groups", 
-    "url": "http://doi.acm.org/10.1145/2531602.2531648", 
-    "nodeIDs": "", 
-    "year": 2014, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "N7BVZCU4", 
-    "title": "Understanding Factors of Successful Engagement Around Energy Consumption Between and Among Households", 
-    "url": "http://doi.acm.org/10.1145/2531602.2531626", 
-    "nodeIDs": "", 
-    "year": 2014, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "E6PHTSZ7", 
-    "title": "Co-worker Transparency in a Microtask Marketplace", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441921", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "CMZF22K2", 
-    "title": "Community, Impact and Credit: Where Should I Submit My Papers?", 
-    "url": "http://doi.acm.org/10.1145/2441955.2441980", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "TTQWXHH5", 
-    "title": "CrowdCamp 2013: Rapidly Iterating Crowd Ideas", 
-    "url": "http://doi.acm.org/10.1145/2441955.2442031", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
+    "author_arr": [
+      "Aniket Kittur", 
+      "Andrew M. Peters", 
+      "Abdigani Diriye", 
+      "Michael Bove"
+    ]
   }, 
   {
     "paperID": "SFF232HX", 
+    "author_arr_clean": [], 
     "title": "HomeProxy: A Physical Proxy for Video Messaging in the Home", 
     "url": "http://doi.acm.org/10.1145/2441955.2442025", 
     "nodeIDs": [
@@ -961,18 +1097,18 @@ papers = [
       "33179fe4-106d-42ce-a354-c2b096458845"
     ], 
     "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "5XDKB62D", 
-    "title": "Impression Formation in Online Peer Production: Activity Traces and Personal Profiles in Github", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441792", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
+    "author_arr": [
+      "John C. Tang", 
+      "Robert Xiao", 
+      "Aaron Hoff", 
+      "Gina Venolia", 
+      "Patrick Therien", 
+      "Asta Roseway"
+    ]
   }, 
   {
     "paperID": "CDAJEXM8", 
+    "author_arr_clean": [], 
     "title": "Impression Formation in Social Work-sharing Sites", 
     "url": "http://doi.acm.org/10.1145/2441955.2441974", 
     "nodeIDs": [
@@ -983,184 +1119,42 @@ papers = [
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27"
     ], 
     "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "9QNHS3MS", 
-    "title": "Incentives and Integration in Scientific Software Production", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441828", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "2UGE25MS", 
-    "title": "Micro-volunteering: Helping the Helpers in Development", 
-    "url": "http://doi.acm.org/10.1145/2441955.2441979", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "2BCWNDR9", 
-    "title": "Mining Smartphone Data to Classify Life-facets of Social Relationships", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441810", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "ARW8S66I", 
-    "title": "Redistributing Leadership in Online Creative Collaboration", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441891", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "3M6SH2W8", 
-    "title": "Sensr: Evaluating a Flexible Framework for Authoring Mobile Data-collection Tools for Citizen Science", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441940", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "I364T5QF", 
-    "title": "The Future of Crowd Work", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441923", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "P6KICF93", 
-    "title": "The Post That Wasn'T: Exploring Self-censorship on Facebook", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441865", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
+    "author_arr": [
+      "Jennifer Marlow"
+    ]
   }, 
   {
     "paperID": "J7SB3TH5", 
+    "author_arr_clean": [
+      "Norman Sadeh", 
+      "Alessandro Acquisti"
+    ], 
     "title": "Tweets Are Forever: A Large-scale Quantitative Analysis of Deleted Tweets", 
     "url": "http://doi.acm.org/10.1145/2441776.2441878", 
     "nodeIDs": [
+      "author-18", 
       "a04bc6ab-7867-4cd4-b909-6359a4f3406b", 
+      "author-1", 
       "a401df09-5de7-42d6-9cd6-30e2b9e11479", 
       "57ba11bd-8a07-441e-83ee-bfcb867d80c2", 
-      "2d117ef3-8223-44ac-9da1-4950be5870ec", 
-      "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27"
+      "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
+      "2d117ef3-8223-44ac-9da1-4950be5870ec"
     ], 
     "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "795GJNA5", 
-    "title": "Using Facebook After Losing a Job: Differential Benefits of Strong and Weak Ties", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441936", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "IHT6UK3P", 
-    "title": "What is a File?", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441903", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "687EGCD6", 
-    "title": "Your Process is Showing: Controversy Management and Perceived Quality in Wikipedia", 
-    "url": "http://doi.acm.org/10.1145/2441776.2441896", 
-    "nodeIDs": "", 
-    "year": 2013, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "MGSI73FJ", 
-    "title": "All-for-one and One-for-all?: A Multi-level Analysis of Communication Patterns and Individual Performance in Geographically Distributed Software Development", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145345", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "NE9XTH9J", 
-    "title": "Boundary Regulation in Social Media", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145320", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "TZ9DXU4R", 
-    "title": "Collaborative Workflow for Crowdsourcing Translation", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145382", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "6DR463PF", 
-    "title": "Conflict, Criticism, or Confidence: An Empirical Examination of the Gender Gap in Wikipedia Contributions", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145265", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "D6FQQZ8G", 
-    "title": "Coordination and Beyond: Social Functions of Groups in Open Content Production", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145270", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "JH5NITQJ", 
-    "title": "CrowdWeaver: Visually Managing Complex Crowd Work", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145357", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "HJ6ERRAG", 
-    "title": "Designing Interventions to Reduce Psychological Distance in Globally Distributed Teams", 
-    "url": "http://doi.acm.org/10.1145/2141512.2141568", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "RZS3VM87", 
-    "title": "Do Collaborators' Annotations Help or Hurt Asynchronous Analysis", 
-    "url": "http://doi.acm.org/10.1145/2141512.2141558", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "X73RI9CZ", 
-    "title": "Effectiveness of Shared Leadership in Online Communities", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145269", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "5IIFTNBS", 
-    "title": "Fresh Faces in the Crowd: Turnover, Identity, and Commitment in Online Groups", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145243", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
+    "author_arr": [
+      "Hazim Almuhimedi", 
+      "Shomir Wilson", 
+      "Bin Liu", 
+      "Norman Sadeh", 
+      "Alessandro Acquisti"
+    ]
   }, 
   {
     "paperID": "MXXBE2S3", 
+    "author_arr_clean": [
+      "Robert Kraut", 
+      "Aniket Kittur"
+    ], 
     "title": "Organizing Without Formal Organization: Group Identification, Goal Setting and Social Modeling in Directing Online Production", 
     "url": "http://doi.acm.org/10.1145/2145204.2145344", 
     "nodeIDs": [
@@ -1172,9 +1166,11 @@ papers = [
       "8c3d2ea9-a712-4be5-b29c-8a3a6ed16287", 
       "321acb3f-02ed-4b16-8925-e52bc5c3ed44", 
       "c2efe6a6-ef85-4f2d-a42d-796993374f2c", 
+      "author-3", 
       "2dffe0d4-9be0-4a7d-b50b-97a938f041b9", 
       "b08345c4-4b85-423c-9d56-bf140d84ce09", 
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
+      "author-19", 
       "4d8b9bbd-549d-4e0e-b3fe-070ceb08643f", 
       "eefa0bfd-f5dd-43f6-b550-40d3040b3573", 
       "2ce88f98-b137-4970-bb31-699186fe979b", 
@@ -1183,487 +1179,21 @@ papers = [
     "year": 2012, 
     "author_arr": [
       "Haiyi Zhu", 
-      "Robert E. Kraut", 
+      "Robert Kraut", 
       "Aniket Kittur"
     ]
   }, 
   {
-    "paperID": "KCUKNW5I", 
-    "title": "Shepherding the Crowd Yields Better Work", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145355", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "4CE8HZGD", 
-    "title": "Shepherding the Crowd Yields Better Work", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145355", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "S6UIGWCN", 
-    "title": "Social Coding in GitHub: Transparency and Collaboration in an Open Software Repository", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145396", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "XXZFS2F4", 
-    "title": "Social Media and Success in Open Source Projects", 
-    "url": "http://doi.acm.org/10.1145/2141512.2141583", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "W26S9CFK", 
-    "title": "Social Transparency in Networked Information Exchange: A Theoretical Framework", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145275", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "X7935HC7", 
-    "title": "The Future of Collaborative Software Development", 
-    "url": "http://doi.acm.org/10.1145/2141512.2141522", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "26QMQC76", 
-    "title": "To Stay or Leave?: The Relationship of Emotional and Informational Support to Commitment in Online Health Support Groups", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145329", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "WB4M3REZ", 
-    "title": "Tweeting is Believing?: Understanding Microblog Credibility Perceptions", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145274", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "3XDC3HN4", 
-    "title": "Who Gives a Tweet?: Evaluating Microblog Content Value", 
-    "url": "http://doi.acm.org/10.1145/2145204.2145277", 
-    "nodeIDs": "", 
-    "year": 2012, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "AGH4BWW7", 
-    "title": "Increasing Commitment to Online Communities by Designing for Social Presence", 
-    "url": "http://doi.acm.org/10.1145/1958824.1958874", 
-    "nodeIDs": "", 
-    "year": 2011, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "BEDMB927", 
-    "title": "Managing Multi-jurisdictional Requirements in the Cloud: Towards a Computational Legal Landscape", 
-    "url": "http://doi.acm.org/10.1145/2046660.2046678", 
-    "nodeIDs": "", 
-    "year": 2011, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "NH6TW75Q", 
-    "title": "Photo Sharing in Diverse Distributed Teams", 
-    "url": "http://doi.acm.org/10.1145/1958824.1958872", 
-    "nodeIDs": "", 
-    "year": 2011, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "SCDK9PTS", 
-    "title": "Research Team Integration: What It is and Why It Matters", 
-    "url": "http://doi.acm.org/10.1145/1958824.1958905", 
-    "nodeIDs": "", 
-    "year": 2011, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "TAWTVXP6", 
-    "title": "SISO: Simple Service Orchestration (Video Showcase)", 
-    "url": "http://doi.acm.org/10.1145/1958824.1958913", 
-    "nodeIDs": "", 
-    "year": 2011, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "7WIJMGJ7", 
-    "title": "Beyond Wikipedia: Coordination and Conflict in Online Production Groups", 
-    "url": "http://doi.acm.org/10.1145/1718918.1718959", 
-    "nodeIDs": "", 
-    "year": 2010, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "RVXCBNVX", 
-    "title": "Pitfalls of Information Access with Visualizations in Remote Collaborative Analysis", 
-    "url": "http://doi.acm.org/10.1145/1718918.1718988", 
-    "nodeIDs": "", 
-    "year": 2010, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "R5VKZPK6", 
-    "title": "Receptionist or Information Kiosk: How Do People Talk with a Robot?", 
-    "url": "http://doi.acm.org/10.1145/1718918.1718927", 
-    "nodeIDs": "", 
-    "year": 2010, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "E5FXJZW2", 
-    "title": "Social Use of Computer-mediated Communication by Adults on the Autism Spectrum", 
-    "url": "http://doi.acm.org/10.1145/1718918.1718991", 
-    "nodeIDs": "", 
-    "year": 2010, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "CE8VBHWS", 
-    "title": "Socialization Tactics in Wikipedia and Their Effects", 
-    "url": "http://doi.acm.org/10.1145/1718918.1718940", 
-    "nodeIDs": "", 
-    "year": 2010, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "MS5QJZ9S", 
-    "title": "Are You Sleeping?: Sharing Portrayed Sleeping Status Within a Social Network", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460660", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "WBZBDU5I", 
-    "title": "Can Markets Help?: Applying Market Mechanisms to Improve Synchronous Communication", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460648", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "CGUVT7DH", 
-    "title": "Can You Ever Trust a Wiki?: Impacting Perceived Trustworthiness in Wikipedia", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460639", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "MDSAGZ4M", 
-    "title": "Communication Networks in Geographically Distributed Software Development", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460654", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "3AH8QZMH", 
-    "title": "IM Waiting: Timing and Responsiveness in Semi-synchronous Communication", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460610", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "4KSBZB6C", 
-    "title": "Investigating the Effect of Discussion Forum Interface Affordances on Patterns of Conversational Interactions", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460650", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "2JKM2BKC", 
-    "title": "Jumpstarting Relationships with Online Games: Evidence from a Laboratory Investigation", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460620", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "64TE26NS", 
-    "title": "Mind Your Ps and Qs: The Impact of Politeness and Rudeness in Online Communities", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460609", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "FBF53XIR", 
-    "title": "Mopping Up: Modeling Wikipedia Promotion Decisions", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460571", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "AGZ5D4HI", 
-    "title": "Pushing Relevant Artifact Annotations in Collaborative Software Development", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460565", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "7T4RUQWU", 
-    "title": "Where Did We Turn Wrong?: Unpacking the Effect of Culture and Technology on Attributions of Team Performance", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460625", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "IE5H28ZR", 
-    "title": "Who Collaborates Successfully?: Prior Experience Reduces Collaboration Barriers in Distributed Interdisciplinary Research", 
-    "url": "http://doi.acm.org/10.1145/1460563.1460633", 
-    "nodeIDs": "", 
-    "year": 2008, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "UFDIHFKK", 
-    "title": "Communication Characteristics of Instant Messaging: Effects and Predictions of Interpersonal Relationships", 
-    "url": "http://doi.acm.org/10.1145/1180875.1180954", 
-    "nodeIDs": "", 
-    "year": 2006, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "D5K8KP6W", 
-    "title": "Cultural Differences in the Use of Instant Messaging in Asia and North America", 
-    "url": "http://doi.acm.org/10.1145/1180875.1180956", 
-    "nodeIDs": "", 
-    "year": 2006, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "XRH7NFVF", 
-    "title": "Email Overload at Work: An Analysis of Factors Associated with Email Strain", 
-    "url": "http://doi.acm.org/10.1145/1180875.1180941", 
-    "nodeIDs": "", 
-    "year": 2006, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "NZ9BDT62", 
-    "title": "Identification of Coordination Requirements: Implications for the Design of Collaboration and Awareness Tools", 
-    "url": "http://doi.acm.org/10.1145/1180875.1180929", 
-    "nodeIDs": "", 
-    "year": 2006, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "96QH4VVE", 
-    "title": "Action As Language in a Shared Visual Space", 
-    "url": "http://doi.acm.org/10.1145/1031607.1031687", 
-    "nodeIDs": "", 
-    "year": 2004, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "A9P9Z8EV", 
-    "title": "Collaborative Knowledge Management Supporting Mars Mission Scientists", 
-    "url": "http://doi.acm.org/10.1145/1031607.1031614", 
-    "nodeIDs": "", 
-    "year": 2004, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "FJ6KKZBW", 
-    "title": "Controlling Interruptions: Awareness Displays and Social Motivation for Coordination", 
-    "url": "http://doi.acm.org/10.1145/1031607.1031638", 
-    "nodeIDs": "", 
-    "year": 2004, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "CVS89IVI", 
-    "title": "Does CSCW Need Organization Theory?", 
-    "url": "http://doi.acm.org/10.1145/1031607.1031628", 
-    "nodeIDs": "", 
-    "year": 2004, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "7A4HN6H5", 
-    "title": "QnA: Augmenting an Instant Messaging Client to Balance User Responsiveness and Performance", 
-    "url": "http://doi.acm.org/10.1145/1031607.1031692", 
-    "nodeIDs": "", 
-    "year": 2004, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "GDDFURG2", 
-    "title": "Taking It out of Context: Collaborating Within and Across Cultures in Face-to-face Settings and via Instant Messaging", 
-    "url": "http://doi.acm.org/10.1145/1031607.1031712", 
-    "nodeIDs": "", 
-    "year": 2004, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "IVK8BMQ8", 
-    "title": "Using Social Psychology to Motivate Contributions to Online Communities", 
-    "url": "http://doi.acm.org/10.1145/1031607.1031642", 
-    "nodeIDs": "", 
-    "year": 2004, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "S7KJGVP7", 
-    "title": "Markets for Attention: Will Postage for Email Help?", 
-    "url": "http://doi.acm.org/10.1145/587078.587108", 
-    "nodeIDs": "", 
-    "year": 2002, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "E6ZFJ3DZ", 
-    "title": "The Use of Visual Information in Shared Visual Spaces: Informing the Development of Virtual Co-presence", 
-    "url": "http://doi.acm.org/10.1145/587078.587084", 
-    "nodeIDs": "", 
-    "year": 2002, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "GTPQ2A8I", 
-    "title": "What is Chat Doing in the Workplace?", 
-    "url": "http://doi.acm.org/10.1145/587078.587080", 
-    "nodeIDs": "", 
-    "year": 2002, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "M3IA59X7", 
-    "title": "Coordination of Communication: Effects of Shared Visual Context on Collaborative Work", 
-    "url": "http://doi.acm.org/10.1145/358916.358947", 
-    "nodeIDs": "", 
-    "year": 2000, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "V6SG9V7D", 
-    "title": "Collaboration Using Multiple PDAs Connected to a PC", 
-    "url": "http://doi.acm.org/10.1145/289444.289503", 
-    "nodeIDs": "", 
-    "year": 1998, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "9VRQTUUZ", 
-    "title": "Coordination, Overload and Team Performance: Effects of Team Communication Strategies", 
-    "url": "http://doi.acm.org/10.1145/289444.289502", 
-    "nodeIDs": "", 
-    "year": 1998, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "RDR787FB", 
-    "title": "Envisioning Communication: Task-tailorable Representations of Communication in Asynchronous Work", 
-    "url": "http://doi.acm.org/10.1145/289444.289501", 
-    "nodeIDs": "", 
-    "year": 1998, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "R7PIXQ6M", 
-    "title": "Ubiquitous Collaboration via Surface Representations", 
-    "url": "http://doi.acm.org/10.1145/289444.289487", 
-    "nodeIDs": "", 
-    "year": 1998, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "9P5ZXWZP", 
-    "title": "Collaboration in Performance of Physical Tasks: Effects on Outcomes and Communication", 
-    "url": "http://doi.acm.org/10.1145/240080.240190", 
-    "nodeIDs": "", 
-    "year": 1996, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "CMCIN8Q9", 
-    "title": "My Partner is a Real Dog: Cooperation with Social Agents", 
-    "url": "http://doi.acm.org/10.1145/240080.240351", 
-    "nodeIDs": "", 
-    "year": 1996, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "TRDCUDKK", 
-    "title": "Computer Support for Distributed Collaborative Writing: Defining Parameters of Interaction", 
-    "url": "http://doi.acm.org/10.1145/192844.192893", 
-    "nodeIDs": "", 
-    "year": 1994, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "982STA32", 
-    "title": "Life and Death of New Technology: Task, Utility and Social Influences on the Use of a Communication Medium", 
-    "url": "http://doi.acm.org/10.1145/192844.192858", 
-    "nodeIDs": "", 
-    "year": 1994, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "E3WSMEQZ", 
-    "title": "Flexible Diff-ing in a Collaborative Writing System", 
-    "url": "http://doi.acm.org/10.1145/143457.143473", 
-    "nodeIDs": "", 
-    "year": 1992, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "8ZV6BSV7", 
-    "title": "Problem or Solution? CSCW and the Paradox of Stalled Productivity", 
-    "url": "http://doi.acm.org/10.1145/143457.371585", 
-    "nodeIDs": "", 
-    "year": 1992, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "26D8QGFP", 
-    "title": "Determinants and Patterns of Control over Technology in a Computerized Meeting Room", 
-    "url": "http://doi.acm.org/10.1145/99332.99340", 
-    "nodeIDs": "", 
-    "year": 1990, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "A4X7UUFK", 
-    "title": "Issues in the Design of Computer Support for Co-authoring and Commenting", 
-    "url": "http://doi.acm.org/10.1145/99332.99354", 
-    "nodeIDs": "", 
-    "year": 1990, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "5AU89DEC", 
-    "title": "Cooperative Work in the Andrew Message System", 
-    "url": "http://doi.acm.org/10.1145/62266.62291", 
-    "nodeIDs": "", 
-    "year": 1988, 
-    "author_arr": ""
-  }, 
-  {
     "paperID": "2017_1", 
+    "author_arr_clean": [
+      "Robert Kraut", 
+      "Laura Dabbish"
+    ], 
     "title": "Shaping Pro and Anti-Social Behavior on Twitch Through Moderation and Example-Setting", 
     "url": "https://doi.org/10.1145/2998181.2998277", 
     "nodeIDs": [
+      "author-19", 
+      "author-14", 
       "b08345c4-4b85-423c-9d56-bf140d84ce09", 
       "04a932c3-7a25-4f9b-97a2-bf788d10e48b", 
       "8b84590b-41b5-4e8e-9ddf-5c5de9c07e27", 
@@ -1679,29 +1209,21 @@ papers = [
     ]
   }, 
   {
-    "paperID": "2017_2", 
-    "title": "The Impact of Assistive Technology on Communication Quality Between Deaf and Hearing Individuals", 
-    "url": NaN, 
-    "nodeIDs": "", 
-    "year": 2017, 
-    "author_arr": ""
-  }, 
-  {
-    "paperID": "2017_3", 
-    "title": "Photo Sharing in the Arab Gulf:  Expressing the Collective and Autonomous Selves", 
-    "url": NaN, 
-    "nodeIDs": "", 
-    "year": 2017, 
-    "author_arr": ""
-  }, 
-  {
     "paperID": "2017_4", 
+    "author_arr_clean": [
+      "Maria Tomprou", 
+      "Anita Williams Woolley", 
+      "Laura Dabbish"
+    ], 
     "title": "Deep Structures of Collaboration: Physiological Correlates of Collective Intelligence and Group Satisfaction", 
     "url": "https://doi.org/10.1145/2998181.2998250", 
     "nodeIDs": [
       "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
       "6ceff84e-07af-4f06-9f6e-392201580f44", 
+      "author-14", 
+      "author-16", 
       "ff34c8e5-049b-4f08-873f-1278ceb9904f", 
+      "author-5", 
       "9f3832ff-2745-4511-bb5f-047ed31ff6b3", 
       "d67a094c-7edd-46fe-84e3-c51c2c825ad1", 
       "99b94c34-6a98-4aad-a6b4-bd867d747a9b"
@@ -1710,12 +1232,16 @@ papers = [
     "author_arr": [
       "Prerna Chikersal", 
       "Maria Tomprou", 
+      "Young Ji Kim", 
       "Anita Williams Woolley", 
       "Laura A. Dabbish"
     ]
   }, 
   {
     "paperID": "2017_5", 
+    "author_arr_clean": [
+      "Laura Dabbish"
+    ], 
     "title": "Fruitful Feedback: Positive Affective Language and Source Anonymity Improve Critique Reception and Work Outcomes", 
     "url": "https://doi.org/10.1145/2998181.2998319", 
     "nodeIDs": [
@@ -1724,6 +1250,7 @@ papers = [
       "de9b0a0a-d2b0-4356-80dd-25a5e42c2fd7", 
       "2cb05a02-29f4-42ec-9537-e95a53388968", 
       "6813ceda-32ae-40b4-8754-a6b50368f183", 
+      "author-14", 
       "a93364dd-0bc2-4a0a-ab10-f2b97435e96c", 
       "86370122-6799-476c-b361-777c8c33426e", 
       "139031e5-e8e0-4db2-bbd9-1e7d185c402a", 
@@ -1732,31 +1259,39 @@ papers = [
     ], 
     "year": 2017, 
     "author_arr": [
+      "Duyen T. Nguyen", 
       "Thomas Garncarz", 
-      "Steven P. Dow", 
+      "Steven P Dow", 
       "Laura A. Dabbish", 
-      "Felicia Y Ng", 
-      ""
+      "Felicia Y Ng"
     ]
   }, 
   {
     "paperID": "2017_6", 
+    "author_arr_clean": [
+      "Min Kyung Lee"
+    ], 
     "title": "Algorithmic Mediation in Group Decisions: Fairness Perceptions of Algorithmically Mediated vs. Discussion-Based Social Division", 
     "url": "https://doi.org/10.1145/2998181.2998230", 
     "nodeIDs": [
       "1099606a-1dc8-4478-a7f9-9c90ff06dd90", 
-      "b281f9ae-76eb-411f-907e-b4a49d9f5a6e", 
       "48b55918-965b-46a4-9718-395755043726", 
-      "44d69a1f-f069-4220-b0a6-b5410f9d6f60", 
-      "07a87c72-20cd-4aa2-9ccd-b2111c8802c2"
+      "author-17", 
+      "07a87c72-20cd-4aa2-9ccd-b2111c8802c2", 
+      "b281f9ae-76eb-411f-907e-b4a49d9f5a6e", 
+      "44d69a1f-f069-4220-b0a6-b5410f9d6f60"
     ], 
     "year": 2017, 
     "author_arr": [
-      "Min Kyung Lee"
+      "Min Kyung Lee", 
+      "Su Baykal"
     ]
   }, 
   {
     "paperID": "2017_7", 
+    "author_arr_clean": [
+      "Kathleen Carley"
+    ], 
     "title": "Girls rule, boys drool: Extracting semantic and affective stereotypes from Twitter", 
     "url": "https://doi.org/10.1145/2998181.2998187", 
     "nodeIDs": [
@@ -1764,17 +1299,20 @@ papers = [
       "a88c4b07-1930-4f2e-911d-e55c197287a5", 
       "f16fc32d-f11a-42f5-b9b4-0dabba45bda6", 
       "f7bf566f-d87b-4554-96e0-ab4ddccbc47b", 
+      "author-13", 
       "5c89e26e-eabc-4b7d-91a6-ca9bfaead171", 
       "18e84ee9-1739-4bd4-92a3-7b8c75badd5b"
     ], 
     "year": 2017, 
     "author_arr": [
+      "Kenneth Joseph", 
       "Wei Wei", 
       "Kathleen M. Carley"
     ]
   }, 
   {
     "paperID": "2017_8", 
+    "author_arr_clean": [], 
     "title": "Putting the Pieces Back Together Again:  Contest Webs for Large-Scale Problem Solving", 
     "url": "https://doi.org/10.1145/2998181.2998343", 
     "nodeIDs": [
@@ -1788,11 +1326,18 @@ papers = [
     ], 
     "year": 2017, 
     "author_arr": [
+      "Thomas W. Malone", 
+      "Jeffrey V. Nickerson", 
+      "Robert J. Laubacher", 
+      "Laur H. Fisher", 
+      "Patrick de Boer", 
+      "Yue Han", 
       "W. Ben Towne"
     ]
   }, 
   {
     "paperID": "2017_9", 
+    "author_arr_clean": [], 
     "title": "Crowd Guilds: Worker-led Reputation and Feedback on Crowdsourcing Platforms", 
     "url": "https://doi.org/10.1145/2998181.2998234", 
     "nodeIDs": [
@@ -1813,11 +1358,23 @@ papers = [
     ], 
     "year": 2017, 
     "author_arr": [
-      "Mark E Whiting"
+      "Mark E Whiting", 
+      "Dilrukshi Gamage", 
+      "Snehalkumar (Neil) S Gaikwad", 
+      "Aaron Gilbee", 
+      "Shirish Goyal", 
+      "Alipta Ballav", 
+      "Dinesh Majeti", 
+      "Nalin Chhibber", 
+      "Rajan Vaish", 
+      "Michael S Bernstein"
     ]
   }, 
   {
     "paperID": "2017_10", 
+    "author_arr_clean": [
+      "Anita Williams Woolley"
+    ], 
     "title": "What Makes a Strong Team? Using Collective Intelligence to Predict Team Performance in League of Legends", 
     "url": "https://doi.org/10.1145/2998181.2998185", 
     "nodeIDs": [
@@ -1826,21 +1383,31 @@ papers = [
       "d0fb9517-65f9-43cd-ab21-a9aca387db55", 
       "9f3832ff-2745-4511-bb5f-047ed31ff6b3", 
       "cbffe84e-387e-4243-ba41-65b5989b7f42", 
+      "author-5", 
       "99b94c34-6a98-4aad-a6b4-bd867d747a9b"
     ], 
     "year": 2017, 
     "author_arr": [
-      "Anita Williams Woolley"
+      "Young Ji Kim", 
+      "David Engel", 
+      "Anita Williams Woolley", 
+      "Jeffrey Yu-Ting Lin", 
+      "Naomi McArthur", 
+      "Thomas W. Malone"
     ]
   }, 
   {
     "paperID": "2017_11", 
+    "author_arr_clean": [
+      "Robert Kraut"
+    ], 
     "title": "Team Dating Leads to Better Online Ad Hoc Collaborations", 
     "url": "https://doi.org/10.1145/2998181.2998322", 
     "nodeIDs": [
       "c6f1c438-4e85-418d-b4de-598a3561367b", 
       "7b981689-daf7-47ab-9bea-6430ab017d3e", 
       "3eb400bd-9967-4b7b-af9c-918dc1b6b523", 
+      "author-19", 
       "7fabfae8-c63a-4be1-8d90-2ef190a2bba7", 
       "99b94c34-6a98-4aad-a6b4-bd867d747a9b", 
       "6cd2ee83-5635-4b51-861c-beb8f95a3ba4", 
@@ -1851,8 +1418,9 @@ papers = [
     ], 
     "year": 2017, 
     "author_arr": [
-      "Robert E. Kraut", 
-      "Steven P. Dow"
+      "Ioanna Lykourentzou", 
+      "Robert E Kraut", 
+      "Steven P Dow"
     ]
   }
 ]

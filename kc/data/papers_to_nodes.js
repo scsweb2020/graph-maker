@@ -1,4 +1,4 @@
-{
+papers_to_nodes = {
   "4IR7FP3G": [
     "152599db-665f-4239-89b5-55951f28ef25", 
     "author-14", 

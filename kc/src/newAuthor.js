@@ -9,7 +9,7 @@
       // var colTitle = document.createElement("div");
       // colTitle.setAttribute("class", "col-xs-8 col-md-8 title");
       title.appendChild(document.createTextNode(item.name));
-     d.setAttribute("id", item.name);
+     d.setAttribute("id", item.id);
       d.appendChild(title);
       var meta = document.createElement("p");
       meta.setAttribute("class", "meta");

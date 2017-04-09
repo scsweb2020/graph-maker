@@ -1,4 +1,4 @@
-   var masterContextNodes;
+    var masterContextNodes;
     var masterContextPaperIDs;
     var focusNodeID = null;
     var masterContextLabels;
