@@ -8,13 +8,21 @@ plotControl = {
 };
 
 var g = svg.append("g");
+// d3.csv("data/activations0.75.csv").row((data) => {
+//   console.log('data',data)
+// })
+
+
 d3.queue() //if you want to load more than one file
 .defer(d3.json, 'data/graph.json')
 .defer(d3.json, "data/node_neighborhoods.json")
-.await(function (error, graph, node_neighborhoods) {
+.defer(d3.json, "data/activations0.75.json")
+.await(function (error, graph, node_neighborhoods, activations) {
+  console.log(activations)
   var distFromRootArr = distFromRoot(graph); //lots hardcoded
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);
-console.log(d3.extent(distFromRootArr))
+
+
   bboxes = calcBBoxes(graph);
   bboxes.forEach((box,i) => {
     graph.nodes[i].boxWidth = box.width;

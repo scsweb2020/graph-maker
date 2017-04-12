@@ -53,7 +53,7 @@ function neighboring(d) { //only function called on nodeClick
 
           // get paper details
           var meta = paperDetails(listOfNodes);
-          console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )
+        //   console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )
           // update the viz
 
           filterByNeighbors(focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta);
@@ -95,7 +95,7 @@ function neighboring(d) { //only function called on nodeClick
 
         // get paper details
         var meta = paperDetails(listOfNodes);
-        console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )
+        // console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )
         // update the viz
 
         filterByNeighbors(focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta);
@@ -136,7 +136,7 @@ function neighboring(d) { //only function called on nodeClick
 
         // get paper details
         var meta = paperDetails(listOfNodes);
-        console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )
+        // console.log('to filter by neighbo',focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta )
         // update the viz
 
         filterByNeighbors(focusNodeID, stringOfNodes, stringOfLabels, stringOfLinks, meta);
@@ -215,7 +215,7 @@ function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
 }
 
 function resetBaseLayer(purpose) {
-    console.log("calling reset base layer");
+    // console.log("calling reset base layer");
     d3.selectAll(".dataNodes").call(nodeReset, purpose)
     d3.selectAll(".dataLabels").call(textReset, purpose)
     d3.selectAll(".dataLinks").call(linkReset)
