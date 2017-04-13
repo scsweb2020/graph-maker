@@ -55,16 +55,8 @@ function nodeInit(selection) {
 
     })
     .on("click", function (d, i) {
-      var hasClass = d3.select(this).classed('leftClicked')
-      if (d3.select(this).classed('leftClicked')){
-        d3.select(this).classed('leftClicked', !hasClass)
-      } else {
         d3.select('.leftClicked').classed('leftClicked', false);
-      d3.select(this).classed('leftClicked', true);
-      }
-      
-
-      
+        d3.select(this).classed('leftClicked', true);
 
        // grab all the query nodes; add the clicked node to the query node list
        var allClickIDs = _.uniq(_.concat(window.dblClickedIDs, d.id));
