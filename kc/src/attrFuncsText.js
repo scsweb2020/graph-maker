@@ -25,8 +25,8 @@ function textInit(selection){
     .attr('id', function (d) { return 'label' + d.id; })
     .attr('dy', "1em")
     .attr('fill', (d,i) =>{
-      if (d.type === 'action' || d.type === 'paper'){
-          return 'white'
+      if (d.type === 'author'){
+          return 'darkgrey'
       } else {
         return 'white'
       }
@@ -81,6 +81,7 @@ function textReset(selection, purpose){
 
           }
         })
+        
     //         .attr("font-size", d => sizeText(d, 'init'))
     // .attr('id', function (d) { return 'label' + d.id; })
     // .attr('dy', "1em")

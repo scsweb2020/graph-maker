@@ -54,7 +54,6 @@ function nodeInit(selection) {
        } else {
          window.dblClickedIDs.push(d.id)
        }
-
     })
     .on("click", function (d, i) {
         d3.select('.leftClicked').classed('leftClicked', false);
@@ -94,7 +93,7 @@ function nodeInit(selection) {
         // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
         // console.log(window.activations[d.id], d.id, ix)
         // return window.activations[d.id][ix]
-        if (_.includes(window.dblClickedIDs, label.id)) {
+        if (_.includes(window.dblClickedIDs, label.id) || label.type === 'author') {
             return 1;
         } else {
             // return jStat.log([aggActivations[ix] * 1.5]); //
