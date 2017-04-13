@@ -21,6 +21,7 @@ d3.queue() //if you want to load more than one file
   graph.nodes =  _.sortBy(graph.nodes, [function(node) { return node.id; }])
   console.log('sorted graph nodes === sorted activation nodes', _.isEqual(graph.nodes.map(x=>x.id), activations.nodeIDs) )
   window.activations = activations; // global variable oh my
+  window.dblClickedIDs = [];
   var distFromRootArr = distFromRoot(graph); //lots hardcoded
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);
   console.log(activations)

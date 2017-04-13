@@ -42,16 +42,35 @@ function nodeInit(selection) {
       return bbox_array[i][1][1]*2;
     })
     .attr('ry', '5')
+    .on("contextmenu",  function (d,i)  {
+      var hasClass = d3.select(this).classed('rightClicked');
+      d3.select(this).classed('rightClicked', !hasClass);
+
+        d3.event.preventDefault();
+       if( _.includes(window.dblClickedIDs, d.id)) {
+          _.remove(window.dblClickedIDs, (n)=> n===d.id )
+       } else {
+         window.dblClickedIDs.push(d.id)
+       }
+
+    })
     .on("click", function (d, i) {
+       var allClickIDs = _.uniq(_.concat(window.dblClickedIDs, d.id))
+       var arr = allClickIDs.map( (cur, i) => window.activations[cur])
+       var zippedArr =  _.zip.apply(_, arr);
+       var geoMean = zippedArr.map(row => jStat(row).mean())
+       console.log(allClickIDs)
       selection.style('opacity', (data, ix) => {
         // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
         // console.log(window.activations[d.id], d.id, ix)
-        return window.activations[d.id][ix]
+        // return window.activations[d.id][ix]
+        return geoMean[ix] * 1.5 //
       })
       window.textSelection.style('opacity', (data, ix) => {
         // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
         // console.log(window.activations[d.id], d.id, ix)
-        return window.activations[d.id][ix]
+        // return window.activations[d.id][ix]
+        return geoMean[ix] * 1.5
       })
       // neighboring(d);
       // if (["action", "why-hard"].indexOf(d.type) >= 0) {
