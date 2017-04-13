@@ -8,7 +8,8 @@ function nodeInit(selection) {
     selection
     .attr("class", "dataNodes")
     .attr('id', function (d) { return 'id' + d.id; })
-    .style('opacity', function(d) {
+    .style('opacity', function(d,i) {
+      console.log(_.isEqual(window.activations.nodeIDs[i], d.id), 'ids match')
       // d => d.paperID.length >= 3 ? .7 : 0)
       if (d.type == "paper") {
         return 0;
@@ -41,8 +42,18 @@ function nodeInit(selection) {
       return bbox_array[i][1][1]*2;
     })
     .attr('ry', '5')
-    .on("click", function (d) {
-      neighboring(d);
+    .on("click", function (d, i) {
+      selection.style('opacity', (data, ix) => {
+        // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
+        // console.log(window.activations[d.id], d.id, ix)
+        return window.activations[d.id][ix]
+      })
+      window.textSelection.style('opacity', (data, ix) => {
+        // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
+        // console.log(window.activations[d.id], d.id, ix)
+        return window.activations[d.id][ix]
+      })
+      // neighboring(d);
       // if (["action", "why-hard"].indexOf(d.type) >= 0) {
       //   neighboring(d);
       // } else {
