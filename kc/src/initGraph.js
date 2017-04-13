@@ -16,7 +16,7 @@ var g = svg.append("g");
 d3.queue() //if you want to load more than one file
 .defer(d3.json, 'data/graph.json')
 .defer(d3.json, "data/node_neighborhoods.json")
-.defer(d3.json, "data/activations0.75.json")
+.defer(d3.json, "data/activations0.5.json")
 .await(function (error, graph, node_neighborhoods, activations) {
   graph.nodes =  _.sortBy(graph.nodes, [function(node) { return node.id; }])
   console.log('sorted graph nodes === sorted activation nodes', _.isEqual(graph.nodes.map(x=>x.id), activations.nodeIDs) )
