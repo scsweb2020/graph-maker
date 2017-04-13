@@ -43,6 +43,8 @@ function nodeInit(selection) {
     })
     .attr('ry', '5')
     .on("contextmenu",  function (d,i)  {
+      var hasClass = d3.select(this).classed('leftClicked');
+      d3.select(this).classed('leftClicked', false);
       var hasClass = d3.select(this).classed('rightClicked');
       d3.select(this).classed('rightClicked', !hasClass);
 
