@@ -54,71 +54,13 @@ function nodeInit(selection) {
        } else {
          window.dblClickedIDs.push(d.id)
        }
+       handleClick (selection, d, i)
+
     })
     .on("click", function (d, i) {
         d3.select('.leftClicked').classed('leftClicked', false);
         d3.select(this).classed('leftClicked', true);
-
-       // grab all the query nodes; add the clicked node to the query node list
-       var allClickIDs = _.uniq(_.concat(window.dblClickedIDs, d.id));
-       // retrieve the relevant activation vectors for each query node
-       // store in an array of arrays
-       var arr = allClickIDs.map( (cur, i) => window.activations[cur]);
-      //  var arr = [];
-      //  allClickIDs.forEach(function(cur, i) {
-      //    arr.push(window.activations[cur]);
-      //  });
-       // turn the M*N array of arrays into an array of rows,
-       // where each row is a M-length vector of activations for a single node
-       // across the M queries
-       var zippedArr =  _.zip.apply(_, arr);
-       // aggregates across the query activation vectors for each node
-       // dump into a single N-length array with the aggregated activations for each node
-       var aggActivations = zippedArr.map(row => jStat(row).geomean())
-       console.log(allClickIDs)
-       // loop over all the nodes
-      selection.style('opacity', (node, ix) => {
-        // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
-        // console.log(window.activations[d.id], d.id, ix)
-        // return window.activations[d.id][ix]
-        if (_.includes(window.dblClickedIDs, node.id)) {
-            return 1;
-        } else {
-            var thisActivation = jStat.log([1 + aggActivations[ix] * 1.5]); //
-            console.log("Node activation is: " + thisActivation);
-            return thisActivation
-        }
-      })
-      window.textSelection.style('opacity', (label, ix) => {
-        // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
-        // console.log(window.activations[d.id], d.id, ix)
-        // return window.activations[d.id][ix]
-        if (_.includes(window.dblClickedIDs, label.id) || label.type === 'author') {
-            return 1;
-        } else {
-            // return jStat.log([aggActivations[ix] * 1.5]); //
-            var thisActivation = jStat.log([1 + aggActivations[ix] * 1.5]); //
-            console.log("Node activation is: " + thisActivation);
-            return thisActivation
-        }
-      })
-      // neighboring(d);
-      // if (["action", "why-hard"].indexOf(d.type) >= 0) {
-      //   neighboring(d);
-      // } else {
-      //   var focusItemID = d.id;
-      //   if (focusItemID === lastClickedMetadataID && isFocusing) {
-      //     isFocusing = false;
-      //     clearFocus(focusNodeID);
-      //   } else {
-      //      isFocusing = true;
-      //      focus(focusNodeID, focusItemID, d.type); //click
-      //      $('.node-metadata').removeClass("selected");
-      //      // $(this).addClass("selected");
-      //      lastClickedMetadataID = focusItemID;
-      //   // focus(focusNodeID, d.id, d.type);
-      //   }
-      // }
+        handleClick (selection, d, i)
     })
     .on("mouseover", function (d) { // for tooltips
       //  if (d3.select(this).style('opacity') < 1) {
@@ -220,4 +162,59 @@ function nodeReset(selection, purpose){
         //    if(d.type=='paper')
         //        return topicRadius;
         // })
+}
+
+function handleClick (selection, d, i) {
+       // grab all the query nodes; add the clicked node to the query node list
+       var allClickIDs = _.uniq(_.concat(window.dblClickedIDs, d.id));
+       // retrieve the relevant activation vectors for each query node
+       // store in an array of arrays
+       var arr = allClickIDs.map( (cur, i) => window.activations[cur]);
+       // turn the M*N array of arrays into an array of rows,
+       // where each row is a M-length vector of activations for a single node
+       // across the M queries
+       var zippedArr =  _.zip.apply(_, arr);
+       // aggregates across the query activation vectors for each node
+       // dump into a single N-length array with the aggregated activations for each node
+       var aggActivations = zippedArr.map(row => jStat(row).geomean())
+
+
+       // loop over all the nodes
+      selection.style('opacity', function (node, ix)  {
+        // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
+        // console.log(window.activations[d.id], d.id, ix)
+        // return window.activations[d.id][ix]
+        var opacity = jStat.log([1 + aggActivations[ix] * 1.5]);
+
+        if (_.includes(window.dblClickedIDs, node.id)) {
+            return 1;
+
+        } else {
+            var thisActivation = opacity; //
+            return thisActivation
+            // return scale(aggActivations[ix])
+        }
+      })
+      window.textSelection.style('opacity', function (label, ix) {
+        // console.log(_.isEqual(window.activations.nodeIDs[ix], data.id), 'ids match')
+        // console.log(window.activations[d.id], d.id, ix)
+        // return window.activations[d.id][ix]
+       var opacity = jStat.log([1 + aggActivations[ix] * 1.5]);
+       if (opacity < .5) {
+          d3.select(this).style('fill', 'black').style('opacity', opacity + .5)
+        } else {
+          d3.select(this).style('fill', 'white')
+        }
+        if (_.includes(window.dblClickedIDs, label.id) || label.type === 'author') {
+            return 1;
+        } else {
+            // return jStat.log([aggActivations[ix] * 1.5]); //
+            var thisActivation = jStat.log([1 + aggActivations[ix] * 1.5]); //
+            return thisActivation
+          //  return scale(aggActivations[ix])
+        }
+        if (label.type === 'author') d3.select(this).style('fill', 'darkgrey')
+
+      })
+
 }
