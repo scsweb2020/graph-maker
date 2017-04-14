@@ -25,10 +25,10 @@ function textInit(selection){
     .attr('id', function (d) { return 'label' + d.id; })
     .attr('dy', "1em")
     .attr('fill', (d,i) =>{
-      if (d.type === 'author'){
+      if (d.type === 'author' || d.distance_from_root_min == 0){
           return 'darkgrey'
       } else {
-        return 'white'
+        return 'black'
       }
 
     })

@@ -19,12 +19,17 @@ d3.queue() //if you want to load more than one file
 .defer(d3.json, "data/activations0.5.json")
 .await(function (error, graph, node_neighborhoods, activations) {
   graph.nodes =  _.sortBy(graph.nodes, [function(node) { return node.id; }])
+  let nodeIDs = graph.nodes.map(x => x.id);
+  //get the nodes idxs for each link
+  // map over links and search nodes for ixs, add [ix1, ix2] to each link, 
+  const getIDs = (link) => [nodeIDs.indexOf(link.target), nodeIDs.indexOf(link.source)]
+  graph.links.map( (link,i) => graph.links[i].nodeIxs = getIDs(link) )
+
   console.log('sorted graph nodes === sorted activation nodes', _.isEqual(graph.nodes.map(x=>x.id), activations.nodeIDs) )
   window.activations = activations; // global variable oh my
   window.dblClickedIDs = [];
   var distFromRootArr = distFromRoot(graph); //lots hardcoded
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);
-  console.log(activations)
 
   bboxes = calcBBoxes(graph);
   bboxes.forEach((box,i) => {
@@ -89,6 +94,7 @@ if (plotControl.links) {
     .data(graph.links)
     .enter().append("line")
     .call(linkInit)
+    window.links = link;
 }
 
 if (plotControl.rects) {
