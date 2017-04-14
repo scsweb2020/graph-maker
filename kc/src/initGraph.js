@@ -26,9 +26,12 @@ d3.queue() //if you want to load more than one file
   // map over links and search nodes for ixs, add [ix1, ix2] to each link, 
   const getIDs = (link) => [nodeIDs.indexOf(link.target), nodeIDs.indexOf(link.source)]
   graph.links.map( (link,i) => graph.links[i].nodeIxs = getIDs(link) )
+  window.activationsAll = {25: activations25, 50: activations50, 75: activations75}
+  console.table(_.zip(window.activationsAll[25]["0a1bb031-b822-4908-975b-6d351ac6f758"],window.activationsAll[75]["0a1bb031-b822-4908-975b-6d351ac6f758"]) )
 
+  window.selectedActivation = '50'
   // console.log('sorted graph nodes === sorted activation nodes', _.isEqual(graph.nodes.map(x=>x.id), activations.nodeIDs) )
-  window.activations = activations50; // global variable oh my
+  window.activations = window.activationsAll[window.selectedActivation]; // global variable oh my
   window.dblClickedIDs = [];
   var distFromRootArr = distFromRoot(graph); //lots hardcoded
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);

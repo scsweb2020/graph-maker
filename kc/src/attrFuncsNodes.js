@@ -180,6 +180,7 @@ function nodeReset(selection, purpose) {
 }
 
 function handleClick(selection, d, i) {
+  window.activations = window.activationsAll[document.getElementById("drop").value]
   
   const scaleFunc = (ix) => {return (jStat.log([1 + aggActivations[ix]]))};
   // grab all the query nodes; add the clicked node to the query node list
@@ -234,3 +235,6 @@ function handleClick(selection, d, i) {
   })
 
 }
+document.getElementById("drop").addEventListener('change',function(){
+    document.querySelector('#UserName').value = this.value;
+});
