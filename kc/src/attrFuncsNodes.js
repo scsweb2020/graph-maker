@@ -44,10 +44,15 @@ function nodeInit(selection) {
     })
     .attr('ry', '5')
     .on("contextmenu", function (d, i) {
-      var hasClass = d3.select(this).classed('leftClicked');
+      var hasLeftClass = d3.select(this).classed('leftClicked');
       d3.select(this).classed('leftClicked', false);
-      var hasClass = d3.select(this).classed('rightClicked');
-      d3.select(this).classed('rightClicked', !hasClass);
+      var hasRightClass = d3.select(this).classed('rightClicked');
+      if (hasRightClass) {
+          d3.select('.leftClicked').classed('leftClicked', false);
+          d3.select(this).classed('leftClicked', true);
+      }
+      d3.select(this).classed('rightClicked', !hasRightClass);
+
 
       d3.event.preventDefault();
       if (_.includes(window.dblClickedIDs, d.id)) {

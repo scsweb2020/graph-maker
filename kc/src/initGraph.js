@@ -73,7 +73,13 @@ d3.queue() //if you want to load more than one file
     .force("center", d3.forceCenter(width / 2, (height / 2) + 300))
     .velocityDecay(.6)
     .force("collide", rectangleCollide)
+    setTimeout(() => simulation.stop(), 20000 )
 
+// var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(graph));
+// var dlAnchorElem = document.getElementById('downloadAnchorElem');
+// dlAnchorElem.setAttribute("href",     dataStr     );
+// dlAnchorElem.setAttribute("download", "scene.json");
+// dlAnchorElem.click();
 
   if (error) throw error;
 
