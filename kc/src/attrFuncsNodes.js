@@ -63,9 +63,19 @@ function nodeInit(selection) {
       handleClick(selection, d, i)
     })
     .on("click", function (d, i) {
-      d3.select('.leftClicked').classed('leftClicked', false);
-      d3.select(this).classed('leftClicked', true);
-      handleClick(selection, d, i)
+      var hadLeftClass = d3.select(this).classed('leftClicked');
+      if (hadLeftClass) {
+        d3.select(this).classed('leftClicked', false);
+        if (_.includes(window.dblClickedIDs, d.id)) {
+        _.remove(window.dblClickedIDs, (n) => n === d.id)
+        }
+        handleClick(selection, {id: ''},i)
+      } else {
+        d3.select('.leftClicked').classed('leftClicked', false);
+        d3.select(this).classed('leftClicked', true); 
+        handleClick(selection, d, i)
+
+      }
     })
     .on("mouseover", function (d) { // for tooltips
       //  if (d3.select(this).style('opacity') < 1) {
@@ -170,9 +180,14 @@ function nodeReset(selection, purpose) {
 }
 
 function handleClick(selection, d, i) {
+  
   const scaleFunc = (ix) => {return (jStat.log([1 + aggActivations[ix]]))};
   // grab all the query nodes; add the clicked node to the query node list
   var allClickIDs = _.uniq(_.concat(window.dblClickedIDs, d.id));
+  if (allClickIDs.length === 1 & allClickIDs[0] === ""){
+    resetBaseLayer('init')
+    return 0
+  }
   // retrieve the relevant activation vectors for each query node
   // store in an array of arrays
   var arr = allClickIDs.map((cur, i) => window.activations[cur]);

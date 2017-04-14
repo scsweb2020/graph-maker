@@ -16,8 +16,10 @@ var g = svg.append("g");
 d3.queue() //if you want to load more than one file
 .defer(d3.json, 'data/graph.json')
 .defer(d3.json, "data/node_neighborhoods.json")
+.defer(d3.json, "data/activations0.25.json")
 .defer(d3.json, "data/activations0.5.json")
-.await(function (error, graph, node_neighborhoods, activations) {
+.defer(d3.json, "data/activations0.75.json")
+.await(function (error, graph, node_neighborhoods, activations25, activations50, activations75) {
   graph.nodes =  _.sortBy(graph.nodes, [function(node) { return node.id; }])
   let nodeIDs = graph.nodes.map(x => x.id);
   //get the nodes idxs for each link
@@ -25,8 +27,8 @@ d3.queue() //if you want to load more than one file
   const getIDs = (link) => [nodeIDs.indexOf(link.target), nodeIDs.indexOf(link.source)]
   graph.links.map( (link,i) => graph.links[i].nodeIxs = getIDs(link) )
 
-  console.log('sorted graph nodes === sorted activation nodes', _.isEqual(graph.nodes.map(x=>x.id), activations.nodeIDs) )
-  window.activations = activations; // global variable oh my
+  // console.log('sorted graph nodes === sorted activation nodes', _.isEqual(graph.nodes.map(x=>x.id), activations.nodeIDs) )
+  window.activations = activations50; // global variable oh my
   window.dblClickedIDs = [];
   var distFromRootArr = distFromRoot(graph); //lots hardcoded
   var scaleY = d3.scaleLinear().domain(d3.extent(distFromRootArr)).range([0, height]);
@@ -73,7 +75,7 @@ d3.queue() //if you want to load more than one file
     .force("center", d3.forceCenter(width / 2, (height / 2) + 300))
     .velocityDecay(.6)
     .force("collide", rectangleCollide)
-    setTimeout(() => simulation.stop(), 20000 )
+    // setTimeout(() => simulation.stop(), 2000 )
 
 // var dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(graph));
 // var dlAnchorElem = document.getElementById('downloadAnchorElem');
