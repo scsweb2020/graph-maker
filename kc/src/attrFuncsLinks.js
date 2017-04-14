@@ -1,7 +1,8 @@
 function linkInit(selection){
     selection.classed("dataLinks", true)
+    .style("stroke-width", "1px")
     .style("stroke", function (d) {
-      if (d.type == "paper-edge") {
+      if (d.type === "paper-edge" || d.type === "author-paper-edge") {
         return "none";
       } else {
         return "#aaa";
@@ -16,7 +17,7 @@ function linkInit(selection){
       }
     })
     .attr("marker-end", function (d) {
-      if (d.type == "analogy" || d.type == "paper-edge" || d.type == "author-paper-edge") {
+      if (d.type === "analogy" || d.type === "paper-edge" || d.type === "author-paper-edge") {
         return null;
       } else {
         return "url(#arrow)";

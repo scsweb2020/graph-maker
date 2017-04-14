@@ -11,11 +11,11 @@ function textInit(selection){
       } else {
         // authors are always visible to start with
         if (d.type == "author") {
-          return 0.7;
+          return 1;
         // } else if (d.paperID.length >= 3) {
         // } else if (d.paperID.length >= 3 || d.distance_from_root_min == 0) {
         } else if (d.distance_from_root_min == 0) {
-          return 0.7
+          return 1
         } else {
           return 0;
         }
@@ -81,7 +81,7 @@ function textReset(selection, purpose){
 
           }
         })
-        
+
     //         .attr("font-size", d => sizeText(d, 'init'))
     // .attr('id', function (d) { return 'label' + d.id; })
     // .attr('dy', "1em")

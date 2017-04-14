@@ -79,8 +79,11 @@ body {
   }
 
 .dataLabels {
-  /*font-family: "Open Sans";
-  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;*/
+  font-family: "Open Sans";
+  font-weight: bold;
+  /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;*/
+  text-shadow: 0 1px 0 white, 1px 0 0 white, 0 -1px 0 white, -1px 0 0 white;
+  /*stroke: white;*/
   pointer-events: none;
   /*visibility: hidden;*/
 }
@@ -270,4 +273,14 @@ span {
   float: left;
   top: 50%;
   left: 50%;
+}
+
+.rightClicked {
+  stroke: black;
+  stroke-width: 5px;
+}
+
+.leftClicked {
+  stroke: darkgrey;
+  stroke-width: 5px;
 }

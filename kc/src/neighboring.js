@@ -216,7 +216,7 @@ function filterByNeighbors(focusNodeID, nodes, labels, links, meta) {
 
 function resetBaseLayer(purpose) {
     // console.log("calling reset base layer");
-    d3.selectAll(".dataNodes").call(nodeReset, purpose)
-    d3.selectAll(".dataLabels").call(textReset, purpose)
-    d3.selectAll(".dataLinks").call(linkReset)
+    d3.selectAll(".dataNodes").call(nodeInit)
+    d3.selectAll(".dataLabels").call(textInit)
+    d3.selectAll(".dataLinks").call(linkInit)
 }

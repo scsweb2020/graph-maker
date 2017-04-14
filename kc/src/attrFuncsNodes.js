@@ -9,22 +9,23 @@ function nodeInit(selection) {
     .attr("class", "dataNodes")
     .attr('id', function (d) { return 'id' + d.id; })
     .style('opacity', function (d, i) {
-      console.log(_.isEqual(window.activations.nodeIDs[i], d.id), 'ids match')
-      // d => d.paperID.length >= 3 ? .7 : 0)
-      if (d.type == "paper") {
-        return 0;
-      } else {
-        // authors are always visible to start with
-        if (d.type == "author") {
-          return 0.7;
-          // } else if (d.paperID.length >= 3) {
-          // } else if (d.paperID.length >= 3 || d.distance_from_root_min == 0) {
-        } else if (d.distance_from_root_min == 0) {
-          return 0.7
-        } else {
-          return 0;
-        }
-      }
+      return 0;
+      // console.log(_.isEqual(window.activations.nodeIDs[i], d.id), 'ids match')
+      // // d => d.paperID.length >= 3 ? .7 : 0)
+      // if (d.type == "paper") {
+      //   return 0;
+      // } else {
+      //   // authors are always visible to start with
+      //   if (d.type == "author") {
+      //     return 0.7;
+      //     // } else if (d.paperID.length >= 3) {
+      //     // } else if (d.paperID.length >= 3 || d.distance_from_root_min == 0) {
+      //   } else if (d.distance_from_root_min == 0) {
+      //     return 0.7
+      //   } else {
+      //     return 0;
+      //   }
+      // }
     })
     .style("fill", function (d) {
       if (d.type == 'author')
@@ -180,6 +181,9 @@ function handleClick(selection, d, i) {
     window.links.style('opacity', function (link, k) {
         var nodesMean = jStat([aggActivations[link.nodeIxs[0]],aggActivations[link.nodeIxs[1]]]).mean();
         return nodesMean < .2 ? .2 : nodesMean * 1.5; //links are mean of source/target opacity
+    }).style('stroke-width', function (link, k) {
+        var nodesMean = jStat([aggActivations[link.nodeIxs[0]],aggActivations[link.nodeIxs[1]]]).mean();
+        return nodesMean < .2 ? "1px" : "2px"; //links are mean of source/target opacity
     })
 
 
