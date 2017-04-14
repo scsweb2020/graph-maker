@@ -218,5 +218,5 @@ function resetBaseLayer(purpose) {
     // console.log("calling reset base layer");
     d3.selectAll(".dataNodes").call(nodeInit)
     d3.selectAll(".dataLabels").call(textInit)
-    d3.selectAll(".dataLinks").style('opacity', .2).style('stroke-width', 1)
+    d3.selectAll(".dataLinks").style('opacity', .4).style('stroke-width', 1)
 }

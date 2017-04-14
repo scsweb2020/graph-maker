@@ -72,7 +72,7 @@ function nodeInit(selection) {
         handleClick(selection, {id: ''},i)
       } else {
         d3.select('.leftClicked').classed('leftClicked', false);
-        d3.select(this).classed('leftClicked', true); 
+        d3.select(this).classed('leftClicked', true);
         handleClick(selection, d, i)
 
       }
@@ -181,7 +181,7 @@ function nodeReset(selection, purpose) {
 
 function handleClick(selection, d, i) {
   window.activations = window.activationsAll[document.getElementById("drop").value]
-  
+
   const scaleFunc = (ix) => {return (jStat.log([1 + aggActivations[ix]]))};
   // grab all the query nodes; add the clicked node to the query node list
   var allClickIDs = _.uniq(_.concat(window.dblClickedIDs, d.id));
@@ -200,8 +200,12 @@ function handleClick(selection, d, i) {
   // dump into a single N-length array with the aggregated activations for each node
   var aggActivations = zippedArr.map(row => jStat(row).geomean())
     window.links.style('opacity', function (link, k) {
-        var nodesMean = jStat([aggActivations[link.nodeIxs[0]],aggActivations[link.nodeIxs[1]]]).mean();
-        return nodesMean < .2 ? .2 : nodesMean * 1.5; //links are mean of source/target opacity
+        if (aggActivations[link.nodeIxs[0]] < .2) {
+          return .2;
+        } else {
+          var nodesMean = jStat([aggActivations[link.nodeIxs[0]],aggActivations[link.nodeIxs[1]]]).mean();
+          return nodesMean < .2 ? .2 : nodesMean * 1.5; //links are mean of source/target opacity
+        }
     }).style('stroke-width', function (link, k) {
         var nodesMean = jStat([aggActivations[link.nodeIxs[0]],aggActivations[link.nodeIxs[1]]]).mean();
         return nodesMean < .2 ? "1px" : "2px"; //links are mean of source/target opacity
