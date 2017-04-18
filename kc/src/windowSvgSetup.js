@@ -46,7 +46,7 @@
     svg.append("rect")
       .attr("width", windowWidth-20)
       .attr("height", windowHeight-20-footerHeight)
-      .style("fill", "none")
+      .style("fill", "black")
       .style("pointer-events", "all")
       .call(d3.zoom()
         .scaleExtent([1/10, 4])

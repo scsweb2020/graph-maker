@@ -80,9 +80,9 @@ body {
 
 .dataLabels {
   font-family: "Open Sans";
-  font-weight: bold;
+  /*font-weight: bold;*/
   /*text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;*/
-  text-shadow: 0 1px 0 white, 1px 0 0 white, 0 -1px 0 white, -1px 0 0 white;
+  /*text-shadow: 0 1px 0 white, 1px 0 0 white, 0 -1px 0 white, -1px 0 0 white;*/
   /*stroke: white;*/
   pointer-events: none;
   /*visibility: hidden;*/
@@ -108,7 +108,8 @@ div.tooltip {
 
 .mainContainer{
     position: absolute;
-    top: 65px;
+    top: 70px;
+    left: 30px;
     float: left;
 }
 

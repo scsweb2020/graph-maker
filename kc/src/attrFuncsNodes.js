@@ -29,11 +29,13 @@ function nodeInit(selection) {
     })
     .style("fill", function (d) {
       if (d.type == 'author')
-        return 'red';
+        return '#d9534f';
       else if (d.type == 'paper')
-        return '#00BFFF';
+        return '#5cb85c';
       else {
-        return '#247';
+        // return '#247';
+        // return '#8a5757';
+        return '#5bc0de';
       }
     })
     .attr("width", (d, i) => {
@@ -235,7 +237,7 @@ function handleClick(selection, d, i) {
     } else {
       return scaleFunc(ix);
     }
-    if (label.type === 'author') d3.select(this).style('fill', 'darkgrey')
+    // if (label.type === 'author') d3.select(this).style('fill', 'darkgrey')
   })
 
 }

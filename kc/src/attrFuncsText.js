@@ -24,14 +24,15 @@ function textInit(selection){
     .attr("font-size", d => sizeText(d, 'init'))
     .attr('id', function (d) { return 'label' + d.id; })
     .attr('dy', "1em")
-    .attr('fill', (d,i) =>{
-      if (d.type === 'author' || d.distance_from_root_min == 0){
-          return 'darkgrey'
-      } else {
-        return 'black'
-      }
-
-    })
+    .attr('fill', 'white')
+    // .attr('fill', (d,i) =>{
+    //   if (d.type === 'author' || d.distance_from_root_min == 0){
+    //       return 'darkgrey'
+    //   } else {
+    //     return 'black'
+    //   }
+    //
+    // })
     .text(d => d.name)
     .call(wrap, 125)
   }

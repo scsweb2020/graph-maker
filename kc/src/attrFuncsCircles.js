@@ -7,14 +7,16 @@ function circleInit(selection) {
     selection
     .attr("class", "circles")
     .attr('r', d => 8)
-    .style('opacity', .2)
+    .style('opacity', .5)
     .style("fill", function (d) {
       if (d.type == 'author')
-        return 'red';
+        return '#d9534f';
       else if (d.type == 'paper')
-        return '#00BFFF';
-      else {        
-        return '#247';
+        return '#5cb85c';
+      else {
+        // return '#247';
+        // return '#8a5757';
+        return '#5bc0de';
       }
     })
     .on("click", function (d) {
